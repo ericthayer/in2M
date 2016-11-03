@@ -1,0 +1,42 @@
+// Media Layout
+
+.l-media-grid {
+  justify-content: center;
+  > * {
+    //flex: 1 0 auto;
+    margin: 0;  
+    padding: .25rem;  
+  }
+	// 480
+	@media (min-width: $break-sm-phone) {
+		> * {
+  		
+  		width: 45%;
+  		 		
+      &:first-child {
+        width: 100%;
+      } 
+		}	
+	}		
+	// 667 ~ 992
+	@media (min-width: $break-ml-phone) and (max-width: $break-md-screen) {
+  	> * {
+    	width: 25%;
+    	&:first-child,
+    	&:nth-child(2),
+    	&:nth-child(3) {
+      	width: 33%;
+    	}
+  	}
+	}
+	// > 992
+	@media (min-width: $break-md-screen) {
+  	> * {
+    	width: 33%;
+    	&:first-child,
+    	&:first-child + * {
+      	width: 50%;
+    	}
+  	}
+	}
+}

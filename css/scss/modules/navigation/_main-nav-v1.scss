@@ -1,0 +1,159 @@
+// Main Navigation Styles
+
+.main-nav {
+  nav {
+    //display: none;
+  }
+  &.collapsible-expanded {
+    nav {
+      //display: block;
+    } 
+  }  
+}
+
+.mobile-menu-1 {
+  
+  .logo {
+    display: none;  
+  }
+  
+  .alt-logo {
+    display: block; 
+  }
+
+  .main-nav {
+    margin-bottom: 0;     
+    text-align: center;
+    > a {
+      color: #333;
+      background: #EEE;
+      font-weight: 500;
+      font-size: 1rem;
+      flex-grow: 1;
+      margin-right: 0;  
+      margin-left: 0;  
+      padding: 1rem .25rem;   
+      text-transform: uppercase;
+      transition: background .3s ease;
+      vertical-align: top;
+      width: 100%;  
+      -webkit-font-smoothing: antialiased;
+      &:hover {
+        background: #BBB;
+      }
+      // font type
+      @include fonts-loaded-KO29;
+      .fonts-loaded & {
+        font-size: 1.25rem;
+      } 
+    }
+    // < 180
+    @media (max-width: 11.25em) {
+      > a {
+        border-bottom: 1px solid #BBB;
+      }
+    }
+    // > 180 ~ 375
+    @media (min-width: 11.25em) and (max-width: $break-sm-phone) {
+      > a { 
+        width: 50%;
+        border-bottom: 1px solid #BBB;     
+        &:nth-child(odd) {
+          border-right: 1px solid #BBB;
+        } 
+      }
+    }
+    // > 375
+    @media (min-width: $break-sm-phone) {
+      > a {
+        border-right: 1px solid #BBB;
+        &:nth-child(-n+4) {
+          border-bottom: 1px solid #BBB;
+        } 
+        width: 25%;
+        &:nth-child(4n-4) {
+          border-right: none;
+        }
+      }
+    }
+    
+    // > 640
+    @media (min-width: $break-ml-phone - .01em) {
+      margin-bottom: 0;  
+      > a {
+        padding: 1rem;  
+      }
+    }
+  
+    // > 768
+    @media (min-width: $break-lg-phone) {
+      > a {
+        padding: 1.5rem 1rem; 
+      }
+    }
+    // > 1200
+    @media (min-width: $break-lg-screen) {
+      > a {
+        .fonts-loaded & {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+  
+  // > 320
+  @media (min-width: $break-tiny-phone) {
+    .logo {
+      display: block;  
+    }
+    
+    .alt-logo {
+      display: none; 
+    }
+  }
+  
+  // layout styles
+  
+  // > 600
+  @media (min-width: 600px) {
+    & > .container {
+      display: table;
+      width: 100%;   
+    }
+    .site-title,
+    .main-nav {
+      display: table-cell;
+      vertical-align: middle;
+    }
+    .site-title {
+      width: 25%;
+      a {
+        padding-top: 0;
+        padding-bottom: 0;
+      } 
+    }
+    .main-nav {
+      width: 75%;
+    }
+  }
+  // > 1200
+  @media (min-width: $break-lg-screen) {
+    .site-title {
+      width: 20%; 
+    }
+    .main-nav {
+      width: 80%; 
+    }
+  }
+  
+  // > 1600
+  @media (min-width: $break-xl-screen) {
+   .site-title {
+      width: 15%; 
+    }
+    .main-nav {
+      width: 85%; 
+    } 
+  }
+  
+}

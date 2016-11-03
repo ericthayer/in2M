@@ -1,0 +1,13 @@
+// Porthole.js
+
+[data-scroll-activate] .top-anchor {
+  opacity: 0;
+  bottom: 1rem; 
+  transition: bottom .3s ease-in, opacity .3s;
+}
+
+.inviewport .top-anchor {
+  opacity: 1;
+  bottom: 2rem; 
+  transition: bottom .3s ease-out, opacity .3s;
+}

@@ -1,0 +1,234 @@
+// Admin Bar
+
+.admin-bar {    
+  .container-flex {
+
+  }
+  
+  .user-avatar {
+  //border-radius: 50%;
+  //border: 3px solid #FFF;
+  //box-shadow: 0 0 0 2px #DDD;
+  //margin-right: .5rem;  
+  max-height: 50px;
+  max-width: 50px; 
+  img {
+  }
+    // < 291
+    @media (max-width: 18.188em) {
+      //margin-bottom: .45rem; 
+    }
+    // > 480
+    @media (min-width: $break-sm-phone) {
+      //margin-right: 0;  
+      //max-width: 4.5rem;
+    }
+    // > 640
+    @media (min-width: $break-ml-phone) {
+      //margin-right: 0;
+      //margin-left: .5rem;   
+    } 
+  }
+  
+  // < 640
+  @media (max-width: $break-ml-phone) {
+    .user-avatar {
+      pointer-events: none;
+    }
+  } 
+  
+  // > 640
+  @media (min-width: $break-ml-phone) {
+   // padding-top: 0;
+    padding-bottom: 0;
+    .user-avatar {
+      pointer-events: auto;
+    }  
+   > div {
+      //flex-direction: row-reverse;
+      //justify-content: flex-start;
+    }
+  } 
+ 
+   
+}
+
+// User Status Message
+
+.user-status { 
+}
+
+// Avatar
+
+.avatar {
+  line-height: 0;   
+}
+
+.user-avatar {  
+  height: 100%;
+  width: 100%;
+} 
+
+.user-avatar,
+.user-status-text {
+  display: inline-block; 
+  vertical-align: middle;  
+}
+
+
+// Status Message
+
+.user-status-text {
+  font-size: .875rem;
+  .cancel-button {
+    // < 640
+    @media (max-width: $break-ml-phone) {
+      display: none;  
+    }
+  }
+}
+
+.status-msg {
+  font-weight: bold;
+}
+
+// Profile Links
+
+.profile-links {
+  a {
+    font-size: .875rem;
+    &:first-child{
+ 
+    }
+    &:hover,
+    &:focus {
+      text-decoration: underline; 
+    }  
+  }
+}
+
+// > 175
+@media (min-width: 13em) {
+  .user-avatar {
+    //margin-right: .35rem;
+  }
+  .user-status-text {
+    //text-align: left; 
+  }  
+}
+
+// < 320
+@media (max-width: $break-tiny-phone) {
+  .user-status {
+    //margin-bottom: .5rem;
+   // text-align: center;
+  }  
+  .user-avatar { 
+    //margin-bottom: .35rem;
+  }
+  .user-status,
+  .header-search {
+   // flex: 1 0 100%;
+   // margin-right: auto;
+    //margin-left: auto;  
+    //width: 100%;     
+  }
+}
+
+
+// > 320
+@media (min-width: $break-tiny-phone) {
+  
+  .user-avatar {
+    //margin-right: .75rem; 
+    //margin-bottom: 0; 
+    //width: auto;  
+  }
+}
+
+// > 1200
+@media (min-width: $break-lg-screen) {
+  .admin-bar {
+    .user-status-text {
+   
+    }
+  }
+}
+
+.nav-collapse {
+  // > 640
+  @media (min-width: $break-ml-phone) {
+  	.admin-bar {
+    	flex-direction: row-reverse;
+    	justify-content: flex-end;
+    	padding-top: 0;
+    	padding-bottom: .5rem;  
+  	}
+  	.user-status {
+    	flex-direction: row-reverse;
+    	justify-content: flex-end;
+    	flex-grow: 0;
+    	margin-bottom: 0; 
+    	margin-left: .5rem;
+    	position: relative; 
+    	width: auto; 
+  	}
+  	.user-avatar {
+    	height: 40px;
+    	width: 40px;
+    	margin-right: 0;
+    	a {
+        height: 100%;
+        width: 100%;  
+    	}     
+  	}
+  	.user-status-text {
+    	display: none;  
+    	opacity: 0;  
+  	  position: absolute;
+      top: 47px;
+      right: 7px;
+      min-height: 80px;
+      min-width: 200px;
+      background: white;
+      padding: 1rem;
+      box-shadow: 4px 4px 0 #DDD;
+      border: 1px solid #DDD;
+      //transition: opacity .3s ease;
+      z-index: 1; 
+      .cancel-button {
+        position: absolute; 
+        top: -1px;
+        right: -1px;
+        @include hide-text;
+        &:after {
+          background: $c-777-grey;
+          content: 'x';
+          color: $EEE; 
+          position: absolute;
+          top: 0;
+          right: 0; 
+          height: 25px;
+          width: 25px;
+          //z-index: 100001;    
+        } 
+      }
+      &.is-visible {
+        display: block; 
+        opacity: 1; 
+        z-index: 3;
+      }
+      &.is-hidden {
+        
+      } 
+  	}
+  	.search-form {
+    	display: flex;
+    	flex-grow: 1;
+    	justify-content: flex-end;
+  	}
+  	.search-bar {
+    	max-width: 12em;
+  	}
+	}
+}

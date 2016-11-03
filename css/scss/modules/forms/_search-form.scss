@@ -1,0 +1,39 @@
+// Search Bar
+
+.search-bar {
+  @include clearfix;
+  input[type='search'] {
+    border-right: none;
+    border-radius: 3px 0 0 3px;
+    color: currentColor;
+    float: left;  
+    width: 85%;  
+  }
+  button {
+    border-radius: 0 3px 3px 0;
+    //color: currentColor;
+    float: left;  
+    margin-bottom: 0;
+    padding: 0;  
+    width: 15%;
+    text-align: center;
+    .icon {
+      margin: 0;  
+    }   
+  }
+  &.search-bar-clear {
+    input {
+                        
+    }
+    button {
+      //border: 1px solid currentColor;
+      border-left: none;
+    }
+  }
+}
+
+
+// CQ when Search Bar is longer than
+.search-bar:container("width >= 400px") { 
+  
+}

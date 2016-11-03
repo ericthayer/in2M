@@ -1,0 +1,54 @@
+// venobox.css
+.vbox-overlay *, 
+.vbox-overlay *:before, 
+.vbox-overlay *:after {
+  -webkit-backface-visibility: hidden;
+}
+
+// IOS preloader
+
+.vbox-preloader {
+  position:fixed; 
+  width:32px; 
+  height:32px;
+  left:50%; 
+  top:50%; 
+  margin-left:-16px; 
+  margin-top:-16px;
+  background-image: url("http://cdn.kyamedia.com/images/venobox/preload-ios.png");
+  text-indent: -100px;
+  overflow: hidden;
+  animation: playload 1.4s steps(12) infinite;
+}
+
+@keyframes playload  {
+   from  { background-position:  0px; }
+   to  { background-position: -384px; }
+}
+
+
+
+// PLease do NOT edit this! (or do it at your own risk)
+
+.vbox-open {
+  overflow: hidden;
+}
+.vbox-container {
+  position: relative;
+  background: #000;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.vbox-content {
+  text-align: center;
+  float: left;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.vbox-container img {
+  max-width: 100%;
+  height: auto;
+}

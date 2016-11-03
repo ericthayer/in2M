@@ -1,0 +1,225 @@
+// ********** "Cool Blue" Theme Color Variables ********** //
+
+// Brand Colors 
+
+$blue-90: hsl(201, 60%, 90%);
+$blue-80: hsl(201, 60%, 80%);
+$blue-70: hsl(201, 60%, 70%);
+$blue-60: hsl(201, 60%, 60%);
+$blue-50: hsl(201, 60%, 50%);
+$blue-40: hsl(201, 60%, 40%);
+$blue-30: hsl(201, 60%, 30%);
+$blue-20: hsl(201, 60%, 20%);
+$blue-10: hsl(201, 60%, 10%);
+
+$green-90: hsl(197, 31%, 90%);
+$green-80: hsl(197, 31%, 80%);
+$green-70: hsl(197, 31%, 70%);
+$green-60: hsl(197, 31%, 60%);
+$green-50: hsl(197, 31%, 50%);
+$green-40: hsl(197, 31%, 40%);
+$green-30: hsl(197, 31%, 30%);
+$green-20: hsl(197, 31%, 20%);
+$green-10: hsl(197, 31%, 10%);
+
+
+$teal: hsl(191, 53%, 43%);
+$teal-90: hsl(191, 53%, 90%);
+$teal-80: hsl(191, 53%, 80%);
+$teal-70: hsl(191, 53%, 70%);
+$teal-60: hsl(191, 53%, 60%);
+$teal-50: hsl(191, 53%, 50%);
+$teal-40: hsl(191, 53%, 40%);
+$teal-30: hsl(191, 53%, 30%);
+$teal-20: hsl(191, 53%, 20%);
+$teal-10: hsl(191, 53%, 10%);
+
+$grey-90: hsl(187, 12%, 90%);
+$grey-80: hsl(187, 12%, 80%);
+$grey-70: hsl(187, 12%, 70%);
+$grey-60: hsl(187, 12%, 60%);
+$grey-50: hsl(187, 12%, 50%);
+$grey-40: hsl(187, 12%, 40%);
+$grey-30: hsl(187, 12%, 30%);
+$grey-20: hsl(187, 12%, 20%);
+$grey-10: hsl(187, 12%, 10%);
+
+$grey-light: #CFD3D3;
+$grey-medium: #B6C4C6;
+$grey-dark: shade($grey-medium, 5%);
+
+$teal-light: #549E9E;
+$teal-medium: #3392A8;
+$teal-dark: shade($teal-medium, 75%);
+
+$green-light: #9EBFCC;
+$green-medium: shade($green-light, 80%);
+$green-dark: #3F6672;
+
+// Bronze
+
+$bronze: hsl(49, 15%, 61%);
+
+// BLUE
+
+.bg-blue-90 { background-color: $blue-90; }
+.bg-blue-80 { background-color: $blue-80; }
+.bg-blue-70 { background-color: $blue-70; }
+.bg-blue-60 { background-color: $blue-60; }
+.bg-blue-50 { background-color: $blue-50; }
+.bg-blue-40 { background-color: $blue-40; }
+.bg-blue-30 { background-color: $blue-30; }
+.bg-blue-20 { background-color: $blue-20; }
+.bg-blue-10 { background-color: $blue-10; }
+
+.c-blue-90 { color: $blue-90; }
+.c-blue-80 { color: $blue-80; }
+.c-blue-70 { color: $blue-70; }
+.c-blue-60 { color: $blue-60; }
+.c-blue-50 { color: $blue-50; }
+.c-blue-40 { color: $blue-40; }
+.c-blue-30 { color: $blue-30; }
+.c-blue-20 { color: $blue-20; }
+.c-blue-10 { color: $blue-10; }
+
+// GREEN
+
+.bg-green-90 { background-color: $green-90; }
+.bg-green-80 { background-color: $green-80; }
+.bg-green-70 { background-color: $green-70; }
+.bg-green-60 { background-color: $green-60; }
+.bg-green-50 { background-color: $green-50; }
+.bg-green-40 { background-color: $green-40; }
+.bg-green-30 { background-color: $green-30; }
+.bg-green-20 { background-color: $green-20; }
+.bg-green-10 { background-color: $green-10; }
+
+.bg-green-g-1 {
+  background-image: linear-gradient(to bottom, #97d0e5 0%,#597a87 100%);
+}
+
+.bg-green-g-2 {
+  background-image: linear-gradient(to top, #97d0e5 0%,#597a87 100%);
+}
+
+.c-green-90 { color: $green-90; }
+.c-green-80 { color: $green-80; }
+.c-green-70 { color: $green-70; }
+.c-green-60 { color: $green-60; }
+.c-green-50 { color: $green-50; }
+.c-green-40 { color: $green-40; }
+.c-green-30 { color: $green-30; }
+.c-green-20 { color: $green-20; }
+.c-green-10 { color: $green-10; }
+
+// TEAL
+
+.bg-blue { background-color: $teal; }
+
+.bg-blue-a-50 { 
+  background-color: hsl(191, 53%, 35%);
+  background-color: hsla(191, 53%, 25%, .5);
+}
+
+.bg-blue-a-25 { 
+  background-color: hsl(191, 53%, 35%);
+  background-color: hsla(191, 53%, 25%, .25);
+}
+
+.bg-blue-g-1 { 
+  background: $teal-40;
+  background-image: linear-gradient(to bottom, $teal-40 0%, $teal-60 60%);
+}
+
+.bg-blue-g-2 { 
+  background: $teal-40;
+  background: radial-gradient(ellipse at bottom, $teal-70 0%, $teal-40 75%);
+}
+
+.bg-blue-g-3 {
+  background: $teal-20;
+  background: radial-gradient(ellipse at bottom, $teal-40 0%, $teal-20 75%);
+}
+
+.bg-blue-g-4 {
+  background: $teal-20;
+  background: radial-gradient(ellipse at top, $teal-40 0%, $teal-20 75%);
+}
+
+.bg-blue-g-5 { 
+  background: $teal-40;
+  background-image: linear-gradient(to top, $teal-30 0%, $teal-50 100%);
+}
+
+.bg-black-a-50 {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%);
+}
+
+.bg-pricing {
+  background-image: url('../images/content-img/banner/img-banner-PRICING-BLUE-trans.svg'), linear-gradient(to top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%);
+  overflow: hidden;
+}
+
+.bg-support {
+  background-image: url('../images/content-img/banner/img-banner-INFO-BLUE-trans.svg'), linear-gradient(to top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%);
+}
+
+.bg-checkout {
+  background-image: url('../images/content-img/banner/img-banner-Launch-Blue-trans-50.svg'), linear-gradient(to top, rgba(0,0,0,0) 40%,rgba(0,0,0,.4) 100%);
+  background-size: cover;
+  background-position: center 10px;
+  background-blend-mode: screen;
+  // > 768
+  @media (min-width: $break-lg-phone) {
+    background-size: contain;
+    background-position: center 15px;
+  }
+}
+
+.bg-setup {
+  background-image: url('../images/content-img/banner/img-banner-Setup-Blue-trans.svg');
+  background-blend-mode: screen;
+}
+
+.bg-info-banner {
+  background-image: url('../images/hero-banner/bg-mobile-user-banner-dark-teal.jpg');
+  background-blend-mode: screen;
+}
+
+.bg-teal-90 { background-color: $teal-90; }
+.bg-teal-80 { background-color: $teal-80; }
+.bg-teal-70 { background-color: $teal-70; }
+.bg-teal-60 { background-color: $teal-60; }
+.bg-teal-50 { background-color: $teal-50; }
+.bg-teal-40 { background-color: $teal-40; }
+.bg-teal-30 { background-color: $teal-30; }
+.bg-teal-20 { background-color: $teal-20; }
+.bg-teal-10 { background-color: $teal-10; }
+
+.c-teal-90 { color: $teal-90; }
+.c-teal-80 { color: $teal-80; }
+.c-teal-70 { color: $teal-70; }
+.c-teal-60 { color: $teal-60; }
+.c-teal-50 { color: $teal-50; }
+.c-teal-40 { color: $teal-40; }
+.c-teal-30 { color: $teal-30; }
+.c-teal-20 { color: $teal-20; }
+.c-teal-10 { color: $teal-10; }
+
+// Grey
+
+.bg-grey-light { background-color: lighten($grey-90, 10%); }
+
+.bg-grey-g-1 {
+  background-image: linear-gradient(to bottom, $DDD 0%, $c-999-grey 100%);
+}
+
+.bg-grey-90 { background-color: $grey-90; }
+.bg-grey-80 { background-color: $grey-80; }
+.bg-grey-70 { background-color: $grey-70; }
+.bg-grey-60 { background-color: $grey-60; }
+.bg-grey-50 { background-color: $grey-50; }
+.bg-grey-40 { background-color: $grey-40; }
+.bg-grey-30 { background-color: $grey-30; }
+.bg-grey-20 { background-color: $grey-20; }
+.bg-grey-10 { background-color: $grey-10; }

@@ -1,0 +1,167 @@
+
+table a {
+  color: #0995DB;
+}
+
+// CSS only Responsive Tables
+// http://dbushell.com/2016/03/04/css-only-responsive-tables/
+// by David Bushell
+
+.rtable {
+  // IE needs inline-block to position scrolling shadows otherwise use:
+  display: inline-block;
+  max-width: min-content;
+
+  // display: inline-block;
+  vertical-align: top;
+  max-width: 100%;
+
+  overflow-x: auto;
+
+  // optional - looks better for small cell values
+  white-space: nowrap;
+
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: left;
+}
+
+.rtable,
+.rtable-flip tbody {
+  // optional - enable iOS momentum scrolling
+  -webkit-overflow-scrolling: touch;
+
+  // scrolling shadows
+  background: radial-gradient(left, ellipse, rgba(0,0,0, .2) 0%, rgba(0,0,0, 0) 75%) 0 center,
+              radial-gradient(right, ellipse, rgba(0,0,0, .2) 0%, rgba(0,0,0, 0) 75%) 100% center;
+  background-size: 10px 100%, 10px 100%;
+  background-attachment: scroll, scroll;
+  background-repeat: no-repeat;
+}
+
+// change these gradients from white to your background colour if it differs
+// gradient on the first cells to hide the left shadow
+.rtable td:first-child,
+.rtable-flip tbody tr:first-child {
+  background-image: linear-gradient(to right, rgba(249,249,249, 1) 50%, rgba(249,249,249, 0) 100%);
+  background-repeat: no-repeat;
+  background-size: 20px 100%;
+  border-left: 1px solid #F1F1F1;
+}
+
+// gradient on the last cells to hide the right shadow
+.rtable td:last-child,
+.rtable-flip tbody tr:last-child {
+  background-image: linear-gradient(to left, rgba(249,249,249, 1) 50%, rgba(249,249,249, 0) 100%);
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  background-size: 20px 100%;
+}
+
+.rtable th {
+  //text-align: left;
+  //text-transform: uppercase;
+  background: lighten(#0995DB, 35%);
+  &:last-child {
+    border-right: 1px solid rgba(#0995DB, .5);
+  }
+}
+
+.rtable th,
+.rtable td {
+  font-size: .75rem;
+  padding: .5rem .7rem;
+  //border: 1px solid #CCC;
+}
+
+.rtable th {
+  color: darken(#0995DB, 20%);
+  letter-spacing: .01em;
+  //font-weight: normal;
+  border-top: 1px solid rgba(#0995DB, .3);
+  //border-right: 1px solid rgba(#0995DB, .1);
+  border-bottom: 1px solid rgba(#0995DB, .4);
+  border-left: 1px solid rgba(#0995DB, .1);
+  text-shadow: 1px 1px 0 rgba(white, .4);
+}
+
+.rtable td {
+  //border-top: 1px solid #DDD;
+  border-right: 1px solid #F1F1F1;
+  border-bottom: 1px solid #DDD;
+  border-left: 1px solid #FFF;
+  //letter-spacing: -.005em; 
+  min-width: 7em;
+   &.cell-overflow {
+     background: radial-gradient(left, ellipse, rgba(0,0,0, .2) 0%, rgba(0,0,0, 0) 75%) 0 center,
+                 radial-gradient(right, ellipse, rgba(0,0,0, .2) 0%, rgba(0,0,0, 0) 75%) 100% center;
+     background-size: 0 100%, 5px 110%;
+     background-attachment: scroll, scroll;
+     background-repeat: no-repeat;
+     max-width: 125px;
+     overflow-x: scroll;
+   }
+}
+
+.rtable-flip {
+  //display: flex;
+  overflow: hidden;
+  background: none;
+}
+
+.rtable-flip thead {
+  //display: flex;
+  //flex-shrink: 0;
+  //min-width: min-content;
+}
+
+.rtable-flip tbody {
+  //display: flex;
+  position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.rtable-flip tr {
+  //display: flex;
+  //flex-direction: column;
+  min-width: min-content;
+  //flex-shrink: 0;
+}
+
+.rtable-flip td,
+.rtable-flip th {
+  display: block;
+}
+
+.rtable-flip td {
+  background-image: none !important;
+  // border-collapse is no longer active
+  border-left: 0;
+}
+
+// border-collapse is no longer active
+.rtable-flip th:not(:last-child),
+.rtable-flip td:not(:last-child) {
+  border-bottom: 0;
+}
+
+// Table Stretch
+
+.table-stretch-md {
+  // > 992
+  @media (min-width: $break-md-screen) {
+    display: table; 
+    width: 100%;  
+  }
+}
+
+
+.table-stretch-lg {
+  // > 1200
+  @media (min-width: $break-lg-screen) {
+    display: table; 
+    width: 100%;  
+  }
+}
+

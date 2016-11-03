@@ -1,0 +1,100 @@
+// Feature Layouts
+
+.f-layout-1 {
+  // > 992 ~ < 1600
+  @media (min-width: $break-md-screen) and (max-width: $break-xl-screen) {
+    .f-img-left,
+    .f-img-rt {
+      position: absolute;
+      min-width: 75%; 
+    }
+    
+    .f-img-rt {
+      
+    }
+  }
+}
+
+
+// Feature Item using Container Queries to adjust content based on the container size.
+// Currently used on sp-support.html
+
+.cq-feature:container("width >= 350px") {
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  
+  // Post Content
+  .post-content {
+    padding-left: 2rem;
+    width: 70%;
+  }
+  
+  .post-media {
+    margin-bottom: 0;
+    width: 30%;
+  }
+  
+  // Sales Teams
+  &.team {
+    padding: 2em; 
+  }
+}
+
+// Feature List
+// Using Container Queries on sp-pricing.html
+
+.feature-list {
+  > ul {
+    margin-bottom: 2rem;
+    transition: all .4s ease;
+  }
+  > ul > li {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .75rem;
+    text-align: center;
+    transition: flex-direction .4s ease; 
+    width: 100%;    
+  }
+  .btn {
+  
+  }
+}
+
+.savings {
+  //line-height: 1.7; 
+}
+
+
+.feature-list:container("width < 350px") {   
+  .contact-limit {
+    //display: none;  
+  }
+  > ul {
+    font-size: 1.25rem;
+  } 
+  > ul > li {
+    margin-bottom: 1em;  
+  }
+  .btn {
+    width: 100%;
+  }
+}
+
+.feature-list:container("width > 350px") { 
+  > ul {
+    
+  } 
+  > ul > li {
+    flex-direction: row;
+    justify-content: space-between;
+    > span:last-child {
+      text-align: right;
+    }
+  }
+  .btn {
+    width: 100%;
+  }
+}
+
+

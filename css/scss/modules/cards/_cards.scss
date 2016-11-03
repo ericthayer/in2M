@@ -1,0 +1,57 @@
+// Content Types
+
+.card {
+  //background: #DDD;
+  //margin: .5rem;  
+  h3 {
+    background: rgba(black, .3);
+    letter-spacing: .03rem;
+    margin-bottom: 0; 
+    padding: .75rem .5rem;  
+    //text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+  }
+  .icon-wrap {
+    //color: #777;
+    //font-size: 4.5rem;
+  }
+  .icon:not(.icon-delete):not(.icon-edit) {
+    height: 3.25em;
+    max-width: 3.25em;
+    width: 100%;
+    //padding: .5rem .75rem .25rem;   
+  }  
+}
+
+
+// Info Block
+
+.info-block {
+  // > 992
+  @media (min-width: $break-md-screen) {
+    
+  }
+}
+
+.dollar-sign {
+  display: inline-block;  
+  vertical-align: super;
+  margin-right: .25rem;   
+}
+
+// Pricing Cards
+
+.plan-card {
+  // > 480
+  @media (min-width: $break-sm-phone) {
+    > div:first-child {
+      min-height: 375px;  
+    }
+  }
+  // > 1200
+  @media (min-width: $break-xl-screen) {
+    > div:first-child {
+      //min-height: 380px;  
+    }
+  }
+}

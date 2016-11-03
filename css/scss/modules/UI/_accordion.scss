@@ -1,0 +1,58 @@
+.accordion {
+  
+}
+
+.collapsible {  
+  .icon,
+  [class^="icon-"] {
+    transition: transform .3s ease;
+  }
+  .icon-caret {
+    margin: 0;
+   }
+}
+
+.collapsible-collapsed {
+ .icon-caret { 
+  
+ }
+  
+}
+
+.icon-plus {
+  transform-origin: center;
+}
+
+.collapsible-header {
+  //transition: all .3s ease;
+}
+
+.collapsible-expanded {
+  
+  .icon-caret {
+    transform: rotate(-90deg);
+  }
+  .icon-plus {
+    transform-origin: center;
+    .icon {
+      
+      transform: rotate(-45deg);
+    }  
+  }
+  .collapsible-header {
+    //opacity: .7;
+    //padding-top: .5rem;
+    //padding-bottom: 1rem;   
+  }
+}
+
+
+.collapsible .collapsible > .collapsible-header {
+  //border-bottom: 1px solid #999;
+}
+
+.collapsible .collapsible  > .collapsible-content .collapsible-header {
+  border-bottom: 1px solid #888;
+}
+
+  

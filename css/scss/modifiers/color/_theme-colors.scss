@@ -1,0 +1,258 @@
+// Slightly lighten a color
+// @access public
+// @param {Color} $color - color to tint
+// @param {Number} $percentage - percentage of `$color` in returned color
+// @return {Color}
+@function tint($color, $percentage) {
+  @return mix($color, white, $percentage);
+}
+
+// Slightly darken a color
+// @access public
+// @param {Color} $color - color to shade
+// @param {Number} $percentage - percentage of `$color` in returned color
+// @return {Color}
+@function shade($color, $percentage) {
+  @return mix($color, black, $percentage);
+}
+
+
+.bg-bronze { background-color: $bronze; }
+
+.bg-bronze-g-1 {
+  background-image: linear-gradient(to bottom, hsl(49, 15%, 81%) 0%,#8c8774 100%);
+}
+
+.c-bronze {
+  color: $bronze;
+}
+
+// Gold
+
+$gold: hsl(46, 52%, 73%);
+
+$gold-50: hsl(45, 34%, 50%);
+
+.bg-gold {
+  background-color: $gold;
+}
+
+.bg-gold-50 {
+  background-color: $gold-50;
+}
+
+.bg-gold-g-1 {
+  background-image: linear-gradient(to bottom, $gold 0%, $gold-50 100%);
+}
+
+.c-gold-50 {
+  color: $gold-50;
+}
+
+
+
+
+//.c-grey-90 { color: $grey-90; }
+//.c-grey-80 { color: $grey-80; }
+//.c-grey-70 { color: $grey-70; }
+//.c-grey-60 { color: $grey-60; }
+//.c-grey-50 { color: $grey-50; }
+//.c-grey-40 { color: $grey-40; }
+//.c-grey-30 { color: $grey-30; }
+//.c-grey-20 { color: $grey-20; }
+//.c-grey-10 { color: $grey-10; }
+
+
+// Theme Colors
+$dark: #05415F; // hsl 200, 94%, 37%  
+$medium: #1C6B93; // hsl 200, 80%, 57%
+$primary: #2590C8; // hsl 200, 81%, 78%
+$secondary: #CCCCCC; // hsl 0, 0%, 80%
+$light: #F5F5F5; // hsl 0, 0%, 96%
+$accent: #72B4DB; // hsl 202, 47%, 85%
+
+// General Elements
+$text: #333;
+
+// Links
+$link: $blue-80;
+
+   
+// ********** Globals ********** //
+
+// text color
+body {   
+  color: $text;
+}
+
+
+// Links
+a {
+  //color: $link;
+  &:hover,
+  &:focus {
+    //color: lighten($link, 10%);
+  }
+  &:active {
+    //color: darken($link, 10%);
+  }
+}
+
+// ********** Typography ********** //
+
+      
+
+// ********** Buttons ********** //
+    
+button,
+.btn,
+[class^="btn-"] {
+  //background-color: $blue-20;
+  //color: #FFF;
+  a {
+    //color: #FFF;
+  }
+  &:hover,
+  &:focus {
+    background-color: lighten($blue-20, 15%);
+    color: white;
+    text-shadow: 0 0 5px rgba(black, .3);
+    .icon {
+      fill: white;
+    }
+    > a {
+      color: white;
+      text-shadow: 0 0 5px rgba(black, .3);
+      .icon {
+        fill: white;
+      }
+    }
+  }     
+  &.active {
+    //background-color: darken($btn-primary, 15%);
+    //color: #FFF;
+  }
+}
+
+
+// ********** Color States ********** //
+//  .tc = theme-color
+
+
+// ** Default  ** // 
+
+.tc-default {
+  background-color: transparent;
+  // Title
+  [class*="-title"] {
+    //color: darken($primary, 10%);
+  }                            
+  
+}
+
+// ** Neutral ** //
+
+.tc-neutral {
+  //background-color: lighten($secondary, 15%);
+  color: darken($text, 5%);
+  
+  // Title
+  [class*="-title"] {
+    //color: darken($primary, 10%);
+  }
+  
+  // Subtitle
+  .post-subtitle {
+    //color: lighten($text, 15%);
+  }
+  
+  // Text
+  [class*="-text"] {
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6, {
+      color: lighten($text, 15%);
+    }
+  }
+  a:not([class^="btn-"]) {
+    //color: $primary-dark;
+  }
+}    
+
+// ** Dark ** //
+
+.tc-dark {
+  //background-color: darken($primary-heavy, 21%);
+  color: #FFF;
+  .post-subtitle {
+    color: #FFF;
+  }
+  [class*="-text"] {
+    //color: $secondary;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: #FFF;
+    }
+  }
+  a:not([class^="btn-"]) {
+    //color: $primary-light;
+  }      
+}
+
+// ** Light ** //
+
+.tc-white {
+  color: $white-100;
+  a:not(.btn):not([class*=" btn-"]):not(button) {
+    color: $white-100;
+  }
+}
+
+.tc-blue-l {
+  //background-color: $blue-70;
+  color: $white-100;
+  a:not([class^="btn-"]):not([class^="btn "]) {
+    color: $white-100;
+  }
+  [class^="btn"]:not(.btn-outline) {
+    //background-color: $blue-medium;
+  }
+}
+
+.tc-blue-m {
+  //background-color: $blue-medium;
+  color: $white-100;
+  a:not([class^="btn-"]) {
+    color: $white-100;
+  }
+}
+
+.tc-blue-d {
+  //background-color: $blue-dark;
+  color: $white-100;
+  a:not([class^="btn-"]) {
+    color: $white-100;
+  }
+}
+
+// ** Override ** //
+
+.inline-color {
+  [class*="-title"],
+  .post-subtitle,
+  [class*="-text"],
+  a:not([class^="btn-"]) {
+    color: inherit;
+  } 
+}
+
+
+// *** END *** //

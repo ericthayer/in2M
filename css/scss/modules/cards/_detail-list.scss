@@ -1,0 +1,7 @@
+// Detail List
+
+.detail-list:container("width <= 250px") {
+  .container {
+    flex-direction: column-reverse;
+  }  
+}

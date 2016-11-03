@@ -1,0 +1,194 @@
+// JavaScript Disabled
+
+// ******** "No JavaScript" ALERTS ******** //
+// - To Be Used Only if we think an alert is necessary. 
+
+// ** VITAL ALERT ** //
+
+// Used in extreme cases when JavaScript is vital in order to accomplish a task. 
+// Only needed in certain cases, ex: online purchase or live event feed.
+// This includes a content overlay that disables the use of the page.
+
+@mixin no-js-vital-alert {
+  overflow: hidden;
+  position: relative;
+  height: auto !important;  
+  // top alert banner
+  &:before {
+  	 // Vital Message
+    content: "JavaScript is DISABLED. You MUST enable JavaScript to proceed. Thank You!";
+    color: #FFF;
+  	background: shade(red, 85%);
+  	font-weight: bold;
+  	position: fixed;
+  	padding: 1em;
+  	text-align: center;
+  	top:0;
+  	right: 0;
+  	width: 100%;
+  	z-index: 1001;
+  }
+	// disabled overlay
+	&:after {
+  	background: rgba(black, 0.75);
+  	content: "";
+  	cursor: not-allowed;  	
+  	position: absolute;
+  	height: 100%;
+  	width: 100%;
+  	bottom: 0;
+  	z-index: 1000;  
+	}
+}
+
+// ** SUBTLE ALERT ** //
+
+// Used when a prompt is needed to alert the user that JavaScript disabled.
+// It is NOT vital in order to accomplish a task but may make the user experience better.
+// The alert message fades out after 5 seconds.
+
+@mixin no-js-subtle-alert {
+    &:before {
+    // Subtle Message
+  	content: "Please enable JavaScript for a better user experience. Thank You!";
+  	color: #FFF;
+  	background: #d18787;
+  	font-weight: normal;
+  	display: block; 
+  	position: relative;
+  	padding: 1em;
+  	text-align: center;
+  	width: 100%;		 
+  }
+  &:before {
+    animation: fade .5s ease 1;
+    animation-fill-mode: forwards;
+    animation-delay: 5s;
+    // Keyframes
+    @keyframes fade {
+      0% { opacity :1; }
+      100% { opacity :0; }
+      0% { height: 50px; }
+      100% { height: 0; }
+      0% { padding: 1em; }
+      100% { padding: 0; }
+    }
+  } 
+} 
+
+// No JS
+
+.no-js {
+  // <noscript> tag layout
+  body noscript {
+    display: block;  
+  }
+  figure {
+    & > a:first-child {
+      display: none;  
+    }
+  }
+ .content-post
+ img,
+ figcaption {
+   opacity: 1;
+ }
+ 
+ img.lazyload {
+   display: none;
+ }
+ 
+ // iframe Source Fallback
+ 
+ .media-wrap {     
+  	&:after {
+    	color: darkRed;
+    	content: "Please enable JavaScript to view this video";
+    	font-size: 0.938em;
+    	font-weight: bold;
+    	line-height: 1.5em;
+    	margin-top: -1.5em;   
+    	position: absolute; 
+    	padding: 0 3em;
+    	text-align: center;
+    	top: 50%;
+    	right: 0;
+    	height: auto;
+    	word-wrap: break-word; 
+    	width: 100%;
+	  }
+  }
+  // Site Logo
+  .site-logo {
+    margin: 0 auto 0.25em;
+    // 320
+    @media (min-width: $break-sm-phone) {
+      margin: 0;
+    }   
+  }
+  
+  // Main Nav
+  
+  .nav-collapse {
+    overflow: visible;
+    max-height: 100%;
+    & > ul {
+      display: flex;
+      justify-content: center;
+      flex-flow: row wrap;
+      padding-top: 0;  
+    }
+    & > ul > li {
+      display: inline-block;  
+      float: none;
+      padding-top: 2%;   
+      width: 50%;
+      text-align: center; 
+      & > a {
+        background: none;
+        padding: 0;
+        height: auto; 
+        width: auto;     
+      }
+      i {
+        &:before {
+          margin-right: 0.1em;
+        }
+      }
+    }
+    // 667
+    @media (min-width: $break-ml-phone) {
+      & > ul { 
+        padding-bottom: 0.5em;  
+      }
+      & > ul > li {
+        width: 33%; 
+      }
+    }
+    // 768
+    @media (min-width: $break-lg-phone) {
+      & > ul { 
+        padding-bottom: 0;  
+      }
+      & > ul > li {
+        display: flex;  
+        flex: 1;
+        justify-content: flex-end;          
+        padding-top: 0;
+        padding-bottom: 0;   
+        width: auto;  
+      }
+    } 
+  }
+  
+  // Hero banner
+  
+  .post-text {
+    font-size: 2.75em; 
+    // 667
+    @media (min-width: $break-ml-phone) {
+      font-size: 2.75em;
+      font-size: 3.25vmax;    
+    } 
+  }
+}

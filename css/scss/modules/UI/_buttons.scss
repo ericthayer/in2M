@@ -1,0 +1,214 @@
+
+@mixin button {
+  //background-color: currentColor;
+  //color: currentColor;
+	border-radius: .3rem;
+	display: inline-block;
+	@include Whitney-Bold;	
+	line-height: 1.35; 
+	letter-spacing: .02rem; 		
+	//margin-bottom: .5em; 	
+	padding: {
+  	top: 1em;
+  	right: 1.75em;
+  	bottom: 1em;
+  	left: 1.75em;
+  }
+	text-align: center;	
+	text-decoration: none;
+	text-shadow: none;
+	transition: color .4s ease,
+	            opacity .4s ease,
+	            box-shadow .4s ease,
+	            background .4s ease;
+	vertical-align: middle;  
+	-webkit-font-smoothing: antialiased; 	
+	&:hover,
+	&:focus {
+  	//background-color: currentColor;
+		cursor: pointer;
+		//color: currentColor;
+	}
+	// < 375
+	@media (max-width: $break-375) {
+  	width: 100%;  
+	}
+}
+
+// Button CTA
+
+@mixin button-cta {
+  //border: none;
+  //background-color: $btn-primary;
+	//color: #FFF;
+	position: relative;
+  &:after {
+    background-color: darken($btn-primary, 10%);
+    border-radius: 0 2px 2px 0;
+    content: '\e80d';
+    color: #FFF;
+    // Add BS caret
+    //font-family:  $font-icon;
+    font-size: .983rem; 
+    margin-left: .5em;
+    line-height: 41px;  
+    height: 100%;
+    width: 3em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center; 
+    transition: all .4s ease; 
+  }
+  &:hover,
+	&:focus {
+		background-color: darken($btn-primary, 15%);
+	}
+  &:active {
+    background-color: darken($btn-primary, 20%);
+  }
+	&:hover:after,
+	&:focus:after {
+		background-color: lighten($btn-primary, 1%);
+		box-shadow: -1px 0 8px rgba(black, .25);
+		font-size: 1.1rem;
+		text-shadow: $blk-text-shadow-neg;    
+		//width: 3.25rem;  
+	}
+  &:active:after {
+    background-color: darken($btn-primary, 30%);
+  }
+  // > 320
+  @media (min-width: $break-tiny-phone) {
+    padding-right: 4em;
+    padding-left: 2em;     
+  }
+  // > 480
+  @media (min-width: $break-sm-phone) {
+    padding-right: 5em;   
+  }   
+}
+
+// Button Hero
+
+@mixin button-hero {
+  background: transparent;
+  border: .5em solid rgba(white, .25);
+  box-shadow: 0 0 0 1px rgba(white, .5) inset, 0 0 0 1px rgba(white, .5);
+  padding-top: .5em;
+  padding-bottom: .5em;
+  &:hover,
+  &:focus {
+    background: rgba(black, .15);
+    border: .5em solid rgba(white, .9);
+    box-shadow: 0 0 0 1px rgba(white, 0) inset, 0 0 0 1px rgba(white, 0);
+  }  
+}
+
+@mixin button-outline {  
+  background: transparent;
+  //border: 4px solid #DDD;
+  box-shadow: 0 0 0 .2em currentColor inset;
+  &:hover,
+	&:focus {
+    box-shadow: none;
+  }
+
+}
+
+@mixin button-reset {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  margin: 0;
+  padding: 0; 
+}
+
+// Anchors Buttons
+
+
+// Top Anchor button
+
+@mixin top-anchor {
+  display: none; 
+  background: #34bb6a;
+  color: #FFF;
+  margin-right: auto; 
+  margin-left: auto;  
+  padding: .5rem .875rem;
+  //position: relative;
+  //bottom: 0;
+  //right: 50%;
+  width: 100px;
+  //margin-left: -50px;
+  text-align: center;     
+}
+
+button,
+.btn,
+[class^="btn-"] {
+  @include button;
+}
+
+.btn-outline {
+  @include button-outline;
+}
+
+.btn-round {
+  border-radius: 3em;
+}
+
+.btn-sm {
+  font-size: .75em;
+  padding: .5em 1em;    
+}
+
+.btn-md {
+  font-size: .983em;
+  padding: .5em 1em;  
+}
+
+.btn-text,
+.toggle-button,
+.btn-reset {
+  @include button-reset;
+}
+
+// Button Wrap
+
+.button-wrap {
+  > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 1 45%;
+    margin: 0 .313em 1em;
+    padding: 1em 2em;
+    width: 100%;
+  }
+  // when parent container is less than 400px wide
+  &:container("width <= 25em") {
+    > * {
+      flex: 1 1 100%;
+      padding-right: .75em;
+      padding-left: .75em;
+    }
+  }
+  // when parent container is wider than 640px
+  &:container("width >= 40em") {
+    > * {
+      flex: 0 1 30%;
+      margin: 0 .313em .625em;
+    }
+  }
+}
+
+// Control Buttons
+
+.control-button:not(.compose) {
+  color: $c-777-grey;
+  &.active:not(.compose) {
+    color: $orange;
+    @include pseudo-arrow-bottom;
+  }
+}

@@ -1,0 +1,77 @@
+// Admin Bar
+
+.admin-bar {
+  display: none;
+  .avatar {
+    height: 2rem; 
+    width: 2rem; 
+  }
+  input[type='search'] {
+    //padding: .35em .5em; 
+  }
+  .nav-collapse & {
+    display: block; 
+  }
+  // > 640
+  @media (min-width: $break-ml-phone) {
+    display: block;
+    .nav-collapse & {
+      display: none; 
+    }  
+  }
+}
+
+// User Status Message
+
+.user-status {
+  font-size: .875em; 
+}
+
+// Avatar
+
+.avatar {
+  line-height: 0;   
+}
+
+.user-avatar {
+  //@extend %circle-mask;  
+  height: 100%;
+  width: 100%;
+  img {
+    min-height: 25px;
+    min-width: 25px;
+  } 
+} 
+
+.user-avatar,
+.user-status-text {
+  display: inline-block; 
+  vertical-align: middle;  
+}
+
+
+// Status Message
+
+.user-status-text {
+  
+}
+
+.status-msg {
+  @include Whitney-SemiBold;
+  font-weight: bold;
+  line-height: 1; 
+}
+
+// Profile Links
+
+.profile-links {
+  a {
+    &:first-child{
+ 
+    }
+    &:hover,
+    &:focus {
+      text-decoration: underline; 
+    }  
+  }
+}

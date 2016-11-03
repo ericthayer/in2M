@@ -1,0 +1,64 @@
+// Flex Layout
+
+.flex-layout {
+  @include clearfix;
+  display: flex;
+  flex-wrap: wrap;
+  //width: 100%;
+  > * {
+    flex: 1 1 auto;
+    float: left;  
+    min-width: 0;
+    min-height: 0;
+    //margin: .25rem;
+    //padding: .25rem; 
+  }
+}
+
+
+.l-flex-pad {
+  
+  > * {
+    padding: .25rem; 
+  }
+  
+  // > 480
+  @media (min-width: $break-sm-phone) {
+    
+    > * {
+      padding-right: 1rem;
+      padding-left: 1rem;  
+    }
+    
+  }
+  
+  
+  // > 540
+  @media (min-width: $break-md-phone) {
+    
+     > * {
+      padding-right: 1.5rem;
+      padding-left: 1.5rem;  
+    }
+    
+    
+  }
+  
+  // > 992
+  @media (min-width: $break-md-screen) {
+    
+     > * {
+      padding-right: 2rem;
+      padding-left: 2rem;  
+    }
+    
+  }
+  
+  
+  
+  
+}
+
+
+
+

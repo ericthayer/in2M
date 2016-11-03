@@ -1,0 +1,25 @@
+// Lazy Load Styles
+
+.lazyload {
+	opacity: 0;
+}
+
+.lazyloaded {
+	opacity: 1;
+	transition: opacity .3s;
+}
+
+// > 640
+@media (min-width: $break-ml-phone) {
+
+  .lazyload {
+  	transform: scale(.8);
+  }
+  
+  .lazyloaded {
+  	transform: scale(1);
+  	transition: opacity, .5s, scale 1s cubic-bezier(.42,.06,.65,.99);
+  	will-change: transform scale;  	 
+  }
+
+}

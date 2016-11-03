@@ -1,0 +1,86 @@
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+@font-face {
+  font-family: 'Knockout-94';
+  src: url("fonts/Knockout-HTF94-UltmtSumo.woff2") format("woff2"), url("fonts/Knockout-HTF94-UltmtSumo.woff") format("woff"), url("fonts/Knockout-HTF94-UltmtSumo.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Knockout-29';
+  src: url("fonts/Knockout-HTF29-JuniorLiteweight.woff2") format("woff2"), url("fonts/Knockout-HTF29-JuniorLiteweight.woff") format("woff"), url("fonts/Knockout-HTF29-JuniorLiteweight.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.demo-label {
+  background: #555;
+  border-bottom: 1px solid #676767;
+  color: #CCC;
+  font-weight: 400;
+  letter-spacing: .1em;
+  margin-bottom: 0;
+  padding-top: .35rem;
+  padding-right: .25rem;
+  padding-bottom: .35rem;
+  padding-left: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: all .3s ease, background .5s ease;
+  transition: all .3s ease, background .5s ease;
+  -webkit-font-smoothing: antialiased;
+}
+.demo-label:focus {
+  outline: 0;
+}
+.demo-label:last-child {
+  border-bottom: none;
+}
+
+.fonts-loaded .demo .collapsible-header {
+  font-family: "Knockout-29", "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: normal;
+}
+.demo .collapsible .icon {
+  -webkit-transition: -webkit-transform .3s ease;
+  transition: -webkit-transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
+}
+.demo .collapsible-collapsed .icon {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+.demo .collapsible-content .demo-label {
+  background: #777;
+  border-bottom: 1px solid #888;
+}
+.demo .collapsible-expanded > .demo-label {
+  background: #CCC;
+  border-bottom: 1px solid #555;
+  border-bottom: none;
+  color: #777;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.demo .collapsible-expanded > .icon {
+  -webkit-transform: rotate(90deg) rotateX(-180deg);
+          transform: rotate(90deg) rotateX(-180deg);
+}
+.demo .collapsible-expanded .collapsible-content .collapsible-content > .demo-label {
+  background: #BBB;
+  border-bottom: 1px solid #999;
+  color: #555;
+}
+.demo .collapsible-expanded .collapsible-content .collapsible-expanded > .demo-label {
+  background: #BBB;
+  color: #555;
+}
+
+.modal-sample > a {
+  margin-right: .5rem;
+  margin-left: .5rem;
+}

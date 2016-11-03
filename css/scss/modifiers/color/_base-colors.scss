@@ -1,0 +1,80 @@
+// *** Modifiers *** //
+
+// BACKGROUND
+
+.bg-white { background-color: $white-100; }
+.bg-black { background-color: $black; }
+
+.bg-black-a-50 {
+  background-color: $black-a-50;
+}
+
+.bg-black-a-30 {
+  background-color: $black-a-30;
+}
+
+.bg-black-a-20 {
+  background-color: $black-a-20;
+}
+
+.bg-black-a-10 {
+  background-color: $black-a-10;
+}
+
+.bg-black-g-1 {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%);
+}
+
+.bg-EEE { background-color: $EEE; }
+.bg-DDD { background-color: $DDD; }
+
+.bg-white-80 { background-color: $white-80; }
+.bg-BBB { background-color: $BBB; }
+.bg-white-70 { background-color: $white-70; }
+
+.bg-999 { background-color: $c-999-grey; }
+.bg-777 { background-color: $c-777-grey; }
+.bg-555 { background-color: $c-555-grey; }
+
+.bg-white-25 { background-color: $white-25; }
+.bg-333 { background-color: $c-333-grey; }
+.bg-white-10 { background-color: $white-10; }
+
+// BORDERS
+
+.bor-c-white { border-color: $white-100; }
+.bor-c-black { border-color: $black; }
+
+.bor-c-EEE { border-color: $EEE; }
+.bor-c-DDD { border-color: $DDD; }
+.bor-c-BBB { border-color: $BBB; }
+.bor-c-999 { border-color: $c-999-grey; }
+.bor-c-777 { border-color: $c-777-grey; }
+.bor-c-333 { border-color: $c-333-grey; }
+
+// BOX-SHADOW - Do We Need This ?
+
+//.shadow-c-white { border-color: $white-100; }
+//.shadow-c-black { border-color: $black; }
+//
+//.shadow-c-EEE { border-color: $EEE; }
+//.shadow-c-DDD { border-color: $DDD; }
+//.shadow-c-BBB { border-color: $BBB; }
+//.shadow-c-999 { border-color: $c-999-grey; }
+//.shadow-c-777 { border-color: $c-777-grey; }
+//.shadow-c-333 { border-color: $c-333-grey; }
+
+// COLOR - greyscale
+
+.c-white { color: $white-100; }
+.c-black { color: $black; }
+
+.c-EEE { color: $EEE; }
+.c-DDD { color: $DDD; }
+.c-BBB { color: $DDD; }
+.c-AAA { color: $AAA; }
+.c-999 { color: $c-999-grey; }
+.c-777 { color: $c-777-grey; }
+.c-555 { color: $c-555-grey; }
+.c-333 { color: $c-333-grey; }
+

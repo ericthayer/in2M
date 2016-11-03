@@ -1,0 +1,83 @@
+// Notification UI
+
+// Message List
+
+.message-list,
+.control-bar {
+  //z-index: 1; 
+}
+
+// Compose Panel
+
+.compose-panel {
+  margin-bottom: 0; 
+  padding: 0; 
+}
+
+/*
+.compose-panel {
+  position: fixed;   
+  transition: min-height .4s ease,
+              opacity .4s ease,
+              width .4s ease;
+  top: 0;
+  left: 0;
+  overflow-y: scroll; 
+  //z-index: 0;
+  width: 100%;   
+  &.collapsible-collapsed {
+    display: block; 
+    opacity: 0; 
+  }
+  &.collapsible-expanded {
+    opacity: 1;
+    z-index: 4;  
+  }
+  .headroom & {
+    //position: relative; 
+    .collapsible-content {
+      //position: fixed;
+    }
+    //position: fixed;
+    //height: 100%;   
+  }
+  textarea {
+    min-height: 2em; 
+    resize: vertical;
+  }
+  // < 768 wide & tall
+  @media (max-width: $break-lg-phone) and (max-height: $break-lg-phone) {
+    height: 100%;  
+    &.collapsible-collapsed {
+      //min-height: 0; 
+    }
+    &.collapsible-expanded {
+      //margin-bottom: 1rem;  
+      //min-height: 100%;   
+    }
+  }
+  // > 768
+  @media (min-width: $break-lg-phone) {
+    //position: relative;   
+    top: 50%;
+    left: 50%;
+    margin-top: -215px;
+    margin-left: -215px;
+    height: 430px;  
+    width: 430px;      
+    &.collapsible-collapsed {
+      //width: 0; 
+    }
+    &.collapsible-expanded {
+      //box-shadow: 0 0 50px 0 $black-a-50;
+      //margin-left: 1rem; 
+      //width: 30em;          
+    }
+  }
+  // < 430 tall
+  @media (max-height: 430px) {
+    top: 0;
+    margin-top: 0;   
+  }
+}
+*/

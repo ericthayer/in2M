@@ -1,0 +1,2342 @@
+<!doctype html>
+<!--#if expr="$HTTP_COOKIE=/fonts\-loaded\=true/" -->
+<html lang="en" class="fonts-loaded">
+<!--#else -->
+<html lang="en">
+<!--#endif -->
+  <head>
+    <!-- FontFaceObserver -->
+    <script>
+(function(){'use strict';var f,g=[];function l(a){g.push(a);1==g.length&&f()}function m(){for(;g.length;)g[0](),g.shift()}f=function(){setTimeout(m)};function n(a){this.a=p;this.b=void 0;this.f=[];var b=this;try{a(function(a){q(b,a)},function(a){r(b,a)})}catch(c){r(b,c)}}var p=2;function t(a){return new n(function(b,c){c(a)})}function u(a){return new n(function(b){b(a)})}function q(a,b){if(a.a==p){if(b==a)throw new TypeError;var c=!1;try{var d=b&&b.then;if(null!=b&&"object"==typeof b&&"function"==typeof d){d.call(b,function(b){c||q(a,b);c=!0},function(b){c||r(a,b);c=!0});return}}catch(e){c||r(a,e);return}a.a=0;a.b=b;v(a)}}
+function r(a,b){if(a.a==p){if(b==a)throw new TypeError;a.a=1;a.b=b;v(a)}}function v(a){l(function(){if(a.a!=p)for(;a.f.length;){var b=a.f.shift(),c=b[0],d=b[1],e=b[2],b=b[3];try{0==a.a?"function"==typeof c?e(c.call(void 0,a.b)):e(a.b):1==a.a&&("function"==typeof d?e(d.call(void 0,a.b)):b(a.b))}catch(h){b(h)}}})}n.prototype.g=function(a){return this.c(void 0,a)};n.prototype.c=function(a,b){var c=this;return new n(function(d,e){c.f.push([a,b,d,e]);v(c)})};
+function w(a){return new n(function(b,c){function d(c){return function(d){h[c]=d;e+=1;e==a.length&&b(h)}}var e=0,h=[];0==a.length&&b(h);for(var k=0;k<a.length;k+=1)u(a[k]).c(d(k),c)})}function x(a){return new n(function(b,c){for(var d=0;d<a.length;d+=1)u(a[d]).c(b,c)})};window.Promise||(window.Promise=n,window.Promise.resolve=u,window.Promise.reject=t,window.Promise.race=x,window.Promise.all=w,window.Promise.prototype.then=n.prototype.c,window.Promise.prototype["catch"]=n.prototype.g);}());
+
+(function(){var k=!!document.addEventListener;function l(a,b){k?a.addEventListener("scroll",b,!1):a.attachEvent("scroll",b)}function v(a){document.body?a():k?document.addEventListener("DOMContentLoaded",a):document.attachEvent("onreadystatechange",function(){"interactive"!=document.readyState&&"complete"!=document.readyState||a()})};function w(a){this.a=document.createElement("div");this.a.setAttribute("aria-hidden","true");this.a.appendChild(document.createTextNode(a));this.b=document.createElement("span");this.c=document.createElement("span");this.h=document.createElement("span");this.f=document.createElement("span");this.g=-1;this.b.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;";this.c.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;";
+this.f.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;";this.h.style.cssText="display:inline-block;width:200%;height:200%;font-size:16px;max-width:none;";this.b.appendChild(this.h);this.c.appendChild(this.f);this.a.appendChild(this.b);this.a.appendChild(this.c)}
+function y(a,b){a.a.style.cssText="max-width:none;min-width:20px;min-height:20px;display:inline-block;overflow:hidden;position:absolute;width:auto;margin:0;padding:0;top:-999px;left:-999px;white-space:nowrap;font:"+b+";"}function z(a){var b=a.a.offsetWidth,c=b+100;a.f.style.width=c+"px";a.c.scrollLeft=c;a.b.scrollLeft=a.b.scrollWidth+100;return a.g!==b?(a.g=b,!0):!1}function A(a,b){function c(){var a=m;z(a)&&null!==a.a.parentNode&&b(a.g)}var m=a;l(a.b,c);l(a.c,c);z(a)};function B(a,b){var c=b||{};this.family=a;this.style=c.style||"normal";this.weight=c.weight||"normal";this.stretch=c.stretch||"normal"}var C=null,D=null,H=!!window.FontFace;function I(){if(null===D){var a=document.createElement("div");try{a.style.font="condensed 100px sans-serif"}catch(b){}D=""!==a.style.font}return D}function J(a,b){return[a.style,a.weight,I()?a.stretch:"","100px",b].join(" ")}
+B.prototype.load=function(a,b){var c=this,m=a||"BESbswy",x=b||3E3,E=(new Date).getTime();return new Promise(function(a,b){if(H){var K=new Promise(function(a,b){function e(){(new Date).getTime()-E>=x?b():document.fonts.load(J(c,c.family),m).then(function(c){1<=c.length?a():setTimeout(e,25)},function(){b()})}e()}),L=new Promise(function(a,c){setTimeout(c,x)});Promise.race([L,K]).then(function(){a(c)},function(){b(c)})}else v(function(){function q(){var b;if(b=-1!=f&&-1!=g||-1!=f&&-1!=h||-1!=g&&-1!=
+h)(b=f!=g&&f!=h&&g!=h)||(null===C&&(b=/AppleWebKit\/([0-9]+)(?:\.([0-9]+))/.exec(window.navigator.userAgent),C=!!b&&(536>parseInt(b[1],10)||536===parseInt(b[1],10)&&11>=parseInt(b[2],10))),b=C&&(f==r&&g==r&&h==r||f==t&&g==t&&h==t||f==u&&g==u&&h==u)),b=!b;b&&(null!==d.parentNode&&d.parentNode.removeChild(d),clearTimeout(G),a(c))}function F(){if((new Date).getTime()-E>=x)null!==d.parentNode&&d.parentNode.removeChild(d),b(c);else{var a=document.hidden;if(!0===a||void 0===a)f=e.a.offsetWidth,g=n.a.offsetWidth,
+h=p.a.offsetWidth,q();G=setTimeout(F,50)}}var e=new w(m),n=new w(m),p=new w(m),f=-1,g=-1,h=-1,r=-1,t=-1,u=-1,d=document.createElement("div"),G=0;d.dir="ltr";y(e,J(c,"sans-serif"));y(n,J(c,"serif"));y(p,J(c,"monospace"));d.appendChild(e.a);d.appendChild(n.a);d.appendChild(p.a);document.body.appendChild(d);r=e.a.offsetWidth;t=n.a.offsetWidth;u=p.a.offsetWidth;F();A(e,function(a){f=a;q()});y(e,J(c,'"'+c.family+'",sans-serif'));A(n,function(a){g=a;q()});y(n,J(c,'"'+c.family+'",serif'));A(p,function(a){h=
+a;q()});y(p,J(c,'"'+c.family+'",monospace'))})})};window.FontFaceObserver=B;window.FontFaceObserver.prototype.check=window.FontFaceObserver.prototype.load=B.prototype.load;"undefined"!==typeof module&&(module.exports=window.FontFaceObserver);}());
+
+ (function( w ){
+	// if the class is already set, we're good.
+	if( w.document.documentElement.className.indexOf( "fonts-loaded" ) > -1 ){
+		return;
+	}
+	var fontA = new w.FontFaceObserver( "Knockout-94", {
+	});
+	var fontB = new w.FontFaceObserver( "Knockout-29", {
+	});
+	w.Promise
+		.all([fontA.check(),fontB.check()])
+		.then(function(){
+			w.document.documentElement.className += " fonts-loaded";
+			
+			sessionStorage.fontsloaded = true;
+		});
+}( this ));
+
+</script>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>in2Marketplace :: A powerful retail marketing platform and brand management tool</title>
+    <meta name="description" content="A powerful retail marketing platform and brand management tool">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="msapplication-TileColor" content="#302A2A">
+    <meta name="msapplication-TileImage" content="images/icons/favicon-144.png">
+    <!--[if IEMobile]><meta http-equiv="cleartype" content="on" /><![endif]-->
+    <link rel="apple-touch-icon" href="images/icons/favicon-180.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/demo.css">
+    <!-- Non-Critical CSS --> 
+    <script>
+       // loadCSS: load a CSS file asynchronously. [c]2016 @scottjehl, Filament Group, Inc. Licensed MIT
+      (function(w){
+      	"use strict";
+      	/* exported loadCSS */
+      	var loadCSS = function( href, before, media ){
+      		// Arguments explained:
+      		// `href` [REQUIRED] is the URL for your CSS file.
+      		// `before` [OPTIONAL] is the element the script should use as a reference for injecting our stylesheet <link> before
+      			// By default, loadCSS attempts to inject the link after the last stylesheet or script in the DOM. However, you might desire a more specific location in your document.
+      		// `media` [OPTIONAL] is the media type or query of the stylesheet. By default it will be 'all'
+      		var doc = w.document;
+      		var ss = doc.createElement( "link" );
+      		var ref;
+      		if( before ){
+      			ref = before;
+      		}
+      		else {
+      			var refs = ( doc.body || doc.getElementsByTagName( "head" )[ 0 ] ).childNodes;
+      			ref = refs[ refs.length - 1];
+      		}
+      
+      		var sheets = doc.styleSheets;
+      		ss.rel = "stylesheet";
+      		ss.href = href;
+      		// temporarily set media to something inapplicable to ensure it'll fetch without blocking render
+      		ss.media = "only x";
+      
+      		// wait until body is defined before injecting link. This ensures a non-blocking load in IE11.
+      		function ready( cb ){
+      			if( doc.body ){
+      				return cb();
+      			}
+      			setTimeout(function(){
+      				ready( cb );
+      			});
+      		}
+      		// Inject link
+      			// Note: the ternary preserves the existing behavior of "before" argument, but we could choose to change the argument to "after" in a later release and standardize on ref.nextSibling for all refs
+      			// Note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
+      		ready( function(){
+      			ref.parentNode.insertBefore( ss, ( before ? ref : ref.nextSibling ) );
+      		});
+      		// A method (exposed on return object for external use) that mimics onload by polling until document.styleSheets until it includes the new sheet.
+      		var onloadcssdefined = function( cb ){
+      			var resolvedHref = ss.href;
+      			var i = sheets.length;
+      			while( i-- ){
+      				if( sheets[ i ].href === resolvedHref ){
+      					return cb();
+      				}
+      			}
+      			setTimeout(function() {
+      				onloadcssdefined( cb );
+      			});
+      		};
+      
+      		function loadCB(){
+      			if( ss.addEventListener ){
+      				ss.removeEventListener( "load", loadCB );
+      			}
+      			ss.media = media || "all";
+      		}
+      
+      		// once loaded, set link's media back to `all` so that the stylesheet applies once it loads
+      		if( ss.addEventListener ){
+      			ss.addEventListener( "load", loadCB);
+      		}
+      		ss.onloadcssdefined = onloadcssdefined;
+      		onloadcssdefined( loadCB );
+      		return ss;
+      	};
+      	// commonjs
+      	if( typeof exports !== "undefined" ){
+      		exports.loadCSS = loadCSS;
+      	}
+      	else {
+      		w.loadCSS = loadCSS;
+      	}
+      }( typeof global !== "undefined" ? global : this ));
+      
+      loadCSS( "css/async.css" );
+    
+    </script>
+  </head>
+  <body>
+	  <!--[if lt IE 10]>
+      <p class="update-browser">This browser version is not recommended. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+		
+		<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+		
+  		<!-- icon book -->
+      <symbol id="icon-book" viewBox="0 0 650 1024" aria-labelledby="book-title book-desc">
+        <title id="book-title">Book</title>
+        <desc id="book-desc">A book icon</desc>
+        <path class="path1" d="M614.4 225.28h35.84v688.128h-514.048c-75.776 0-136.192-53.248-136.192-131.072v-594.944c0-41.984 34.816-76.8 76.8-76.8h476.16v589.824h-416.768c-53.248 0-90.112 28.672-90.112 79.872v2.048c0 51.2 36.864 84.992 90.112 84.992h478.208v-642.048zM552.96 800.768h-411.648c-12.288 0-22.528-7.168-22.528-19.456 0-10.24 10.24-16.384 22.528-16.384h411.648v35.84z"></path>
+      </symbol>
+      
+      <!-- icon megaphone -->
+      <symbol id="icon-megaphone" viewBox="0 0 881 1024" aria-labelledby="megaphone-title megaphone-desc">
+        <title id="megaphone-title">Megaphone</title>
+        <desc id="megaphone-desc">A megaphone icon</desc>
+        <path d="M811.008 358.4q59.392 141.312 68.608 264.192t-39.936 143.36q-28.672 12.288-62.464-3.072t-66.56-40.96-101.376-41.984-152.576-8.192q-28.672 4.096-43.008 19.456t-6.144 37.888q22.528 57.344 47.104 110.592 4.096 10.24 24.576 22.528t24.576 20.48q14.336 34.816-22.528 47.104-51.2 22.528-104.448 40.96-30.72 10.24-55.296-43.008-32.768-77.824-59.392-135.168-6.144-12.288-34.816-17.408t-47.104-31.744q-30.72 10.24-38.912 14.336-34.816 12.288-75.776-12.288t-55.296-61.44q-17.408-32.768-5.12-80.896t44.032-62.464q129.024-53.248 218.112-110.592t126.976-105.472 60.416-94.208 25.6-79.872 15.36-60.416 36.864-36.864q49.152-20.48 133.12 71.68t145.408 233.472zM782.336 665.6q8.192-4.096 10.24-38.912t-11.264-100.352-41.984-131.072q-28.672-67.584-68.608-125.952t-68.608-86.016-36.864-23.552-10.24 43.008 10.24 107.52 40.96 136.192 69.632 121.856 69.632 77.824 36.864 19.456z"></path>
+      </symbol>
+      
+      <!-- icon chat -->
+      <symbol id="icon-chat" viewBox="0 0 795 1024" aria-labelledby="chat-title chat-desc">
+        <title id="chat-title">Chat</title>
+        <desc id="chat-desc">A chat bubble</desc>
+        <path d="M87.040 103.424h622.592c58.368 0 84.992 26.624 84.992 87.040v396.288c0 56.32-26.624 83.968-84.992 83.968h-280.576l-310.272 249.856 64.512-249.856h-96.256c-58.368 0-87.040-27.648-87.040-86.016v-394.24c0-60.416 28.672-88.064 87.040-87.040zM163.84 264.192v84.992h466.944v-84.992h-466.944zM630.784 508.928v-83.968h-466.944v83.968h466.944z"></path>
+      </symbol>
+      
+      <!-- icon calendar -->
+      <symbol id="icon-calendar" viewBox="0 0 922 1024" aria-labelledby="cal-title cal-desc">
+        <title id="cal-title ">Calendar</title>
+        <desc id="cal-desc">A calendar symbol</desc>
+        <path d="M819.2 153.6q43.008 0 72.704 29.696t29.696 72.704v614.4q0 40.96-29.696 71.68t-72.704 30.72h-716.8q-40.96 0-71.68-30.72t-30.72-71.68v-614.4q0-43.008 30.72-72.704t71.68-29.696h47.104v102.4h163.84v-102.4h296.96v102.4h163.84v-102.4h45.056zM819.2 870.4v-409.6h-716.8v409.6h716.8zM266.24 51.2v174.080h-71.68v-174.080h71.68zM727.040 51.2v174.080h-71.68v-174.080h71.68z"></path>
+      </symbol>
+      
+      <!-- icon calendar alt -->
+      <symbol id="icon-calendar-alt" viewBox="0 0 950 1024" aria-labelledby="cal-alt-title cal-alt-desc">
+        <title id="cal-alt-title">Calendar alternative</title>
+        <desc id="cal-alt-desc">A calendar symbol</desc>
+        <path d="M72.704 951.296h164.864v-164.864h-164.864v164.864zM274.432 951.296h182.272v-164.864h-182.272v164.864zM72.704 749.568h164.864v-182.272h-164.864v182.272zM274.432 749.568h182.272v-182.272h-182.272v182.272zM72.704 530.432h164.864v-164.864h-164.864v164.864zM493.568 951.296h183.296v-164.864h-183.296v164.864zM274.432 530.432h182.272v-164.864h-182.272v164.864zM712.704 951.296h164.864v-164.864h-164.864v164.864zM493.568 749.568h183.296v-182.272h-183.296v182.272zM292.864 256v-164.864q0-7.168-6.144-12.288t-12.288-6.144h-36.864q-7.168 0-12.288 6.144t-6.144 12.288v164.864q0 7.168 6.144 13.312t12.288 5.12h36.864q7.168 0 12.288-5.12t6.144-13.312zM712.704 749.568h164.864v-182.272h-164.864v182.272zM493.568 530.432h183.296v-164.864h-183.296v164.864zM712.704 530.432h164.864v-164.864h-164.864v164.864zM731.136 256v-164.864q0-7.168-5.12-12.288t-13.312-6.144h-35.84q-8.192 0-13.312 6.144t-5.12 12.288v164.864q0 7.168 5.12 13.312t13.312 5.12h35.84q8.192 0 13.312-5.12t5.12-13.312zM951.296 219.136v732.16q0 29.696-22.528 51.2t-51.2 21.504h-804.864q-29.696 0-51.2-21.504t-21.504-51.2v-732.16q0-29.696 21.504-51.2t51.2-21.504h73.728v-55.296q0-36.864 26.624-64.512t64.512-26.624h36.864q37.888 0 64.512 26.624t26.624 64.512v55.296h219.136v-55.296q0-36.864 27.648-64.512t64.512-26.624h35.84q37.888 0 64.512 26.624t27.648 64.512v55.296h72.704q29.696 0 51.2 21.504t22.528 51.2z"></path>
+      </symbol>
+      
+      <!-- icon menu -->
+      <symbol id="icon-menu" viewBox="0 0 717 1024" aria-labelledby="menu-title menu-desc">
+        <title id="menu-title">Menu</title>
+        <desc id="menu-desc">A menu symbol for navigation</desc>
+      <path d="M665.6 460.8q22.528 0 36.864 15.36t14.336 35.84-15.36 35.84-35.84 15.36h-614.4q-20.48 0-35.84-15.36t-15.36-35.84 14.336-35.84 36.864-15.36h614.4zM51.2 358.4q-20.48 0-35.84-15.36t-15.36-35.84 14.336-35.84 36.864-15.36h614.4q22.528 0 36.864 15.36t14.336 35.84-15.36 35.84-35.84 15.36h-614.4zM665.6 665.6q22.528 0 36.864 15.36t14.336 35.84-15.36 35.84-35.84 15.36h-614.4q-20.48 0-35.84-15.36t-15.36-35.84 14.336-35.84 36.864-15.36h614.4z"></path>
+      </symbol>
+      
+      <!-- icon print -->
+      <symbol id="icon-print" viewBox="0 0 1004 1024" aria-labelledby="print-title print-desc">
+        <title id="print-title">print</title>
+        <desc id="print-desc">A computer printer symbol</desc>
+        <path d="M67.584 331.776q-26.624 0-22.528-22.528 4.096-10.24 12.288-14.336 2.048 0 50.176-17.408t95.232-32.768 59.392-15.36h45.056v-153.6h389.12v153.6h47.104q12.288 0 58.368 15.36t94.208 32.768 50.176 17.408q18.432 8.192 12.288 26.624-4.096 10.24-20.48 10.24h-870.4zM948.224 389.12q20.48 0 37.888 19.456t17.408 41.984v178.176q0 22.528-17.408 41.984t-37.888 19.456h-102.4l45.056 256h-778.24l45.056-256h-100.352q-20.48 0-38.912-19.456t-18.432-41.984v-178.176q0-22.528 18.432-41.984t38.912-19.456h890.88zM215.040 843.776h573.44l-71.68-331.776h-430.080z"></path>
+      </symbol>
+      
+      <!-- icon location -->
+      <symbol id="icon-location" viewBox="0 0 512 1024" aria-labelledby="location-title location-desc">
+        <title id="location-title">Location</title>
+        <desc id="location-desc">A map location marker</desc>
+        <path d="M256 102.4q106.496 0 181.248 74.752t74.752 181.248q0 108.544-63.488 248.832t-129.024 228.352l-63.488 86.016q-10.24-12.288-27.648-35.84t-61.44-91.136-77.824-133.12-61.44-150.528-27.648-152.576q0-106.496 74.752-181.248t181.248-74.752zM256 499.712q57.344 0 98.304-40.96t40.96-98.304-40.96-97.28-98.304-39.936-97.28 39.936-39.936 97.28 39.936 98.304 97.28 40.96z"></path>
+      </symbol>
+      
+      <!-- icon location alt -->
+      <symbol id="icon-location-alt" viewBox="0 0 494 1024" aria-labelledby="location-alt-title location-alt-desc">
+        <title id="location-alt-title">Location alternative</title>
+        <desc id="location-alt-desc">A map location marker</desc>
+        <path d="M247.808 54.272q94.208 0 160.768 67.584t66.56 160.768q0 56.32-56.32 228.352t-113.664 315.392l-58.368 143.36q-25.6-62.464-63.488-159.744t-101.376-283.648-63.488-243.712q0-94.208 67.584-160.768t161.792-67.584zM247.808 397.312q46.080 0 79.872-33.792t33.792-79.872-33.792-80.896-79.872-33.792-80.896 33.792-33.792 80.896 33.792 79.872 80.896 33.792z"></path>
+      </symbol>
+      
+      <!-- icon phone -->
+      <symbol id="icon-phone" viewBox="0 0 804 1024" aria-labelledby="phone-title phone-desc">
+        <title id="phone-title">Phone</title>
+        <desc id="phone-desc">A phone symbol</desc>
+        <path d="M804.864 708.608q0 15.36-6.144 39.936t-12.288 38.912q-11.264 28.672-69.632 61.44-53.248 28.672-105.472 28.672-16.384 0-30.72-2.048t-32.768-7.168-26.624-8.192-31.744-11.264-28.672-10.24q-55.296-20.48-99.328-48.128-73.728-45.056-151.552-122.88t-122.88-151.552q-27.648-44.032-47.104-99.328-2.048-5.12-10.24-28.672t-12.288-31.744-8.192-26.624-7.168-32.768-2.048-29.696q0-53.248 29.696-106.496 31.744-57.344 60.416-69.632 14.336-6.144 38.912-12.288t39.936-6.144q8.192 0 12.288 2.048 10.24 3.072 30.72 44.032 6.144 10.24 16.384 30.72t20.48 35.84 17.408 30.72q2.048 2.048 10.24 14.336t12.288 20.48 4.096 16.384q0 11.264-16.384 28.672t-35.84 30.72-34.816 30.72-16.384 25.6q0 5.12 3.072 13.312t4.096 11.264 8.192 14.336 7.168 10.24q43.008 78.848 99.328 135.168t134.144 99.328q1.024 0 10.24 6.144t14.336 8.192 11.264 5.12 13.312 2.048q10.24 0 25.6-15.36t30.72-35.84 31.744-35.84 28.672-16.384q7.168 0 15.36 4.096t20.48 12.288 14.336 10.24q14.336 8.192 30.72 17.408t35.84 20.48 31.744 17.408q39.936 19.456 43.008 29.696 2.048 4.096 2.048 12.288z"></path>
+      </symbol>
+      
+      <!-- icon user -->
+      <symbol id="icon-user" viewBox="0 0 1000 1024" aria-labelledby="user-title user-desc">
+        <title id="user-title">User</title>
+        <desc id="user-desc">A human silhouette indicating login</desc>
+        <path d="M0 992.256q0-9.216 1.024-23.552t11.264-45.056 26.624-49.152q17.408-17.408 66.56-37.888t110.592-43.008 92.16-36.864q36.864-18.432 56.32-55.296t20.48-74.752q0-27.648-31.744-63.488-18.432-21.504-31.744-60.416-45.056-18.432-45.056-73.728 0-41.984 15.36-60.416-4.096-27.648-9.216-81.92-1.024-8.192-2.048-21.504t2.048-45.056 15.36-54.272q19.456-33.792 48.128-46.080t48.128-5.12q1.024 0 1.024 0 1.024-5.12 4.096-13.312t14.336-22.528 25.6-20.48q8.192-4.096 25.6-6.144t44.032-1.024 53.248 8.192 55.296 21.504 50.176 38.912 35.84 60.416 15.36 86.016q0 10.24 0 20.48-4.096 46.080-9.216 81.92 14.336 18.432 14.336 60.416 0 55.296-45.056 73.728-13.312 38.912-31.744 60.416-31.744 35.84-31.744 63.488 0 38.912 20.48 74.752t56.32 55.296q29.696 15.36 92.16 36.864t111.616 43.008 65.536 37.888q18.432 17.408 27.648 46.080t10.24 51.2l1.024 20.48h-1000.448z"></path>
+      </symbol>
+      
+      <!-- icon document -->
+      <symbol id="icon-doc" viewBox="0 0 639 1024" aria-labelledby="doc-title doc-desc">
+        <title id="doc-title">Document</title>
+        <desc id="doc-desc">A document symbol</desc>
+        <path d="M0 122.88h429.056l209.92 215.040v563.2h-638.976v-778.24zM92.16 215.040v593.92h454.656v-440.32h-164.864v-153.6h-289.792zM154.624 472.064h325.632v35.84h-325.632v-35.84zM154.624 574.464h325.632v35.84h-325.632v-35.84zM154.624 676.864h325.632v35.84h-325.632v-35.84z"></path>
+      </symbol>
+      
+      <!-- icon Facebook -->
+      <symbol id="icon-facebook" viewBox="0 0 512 1024" aria-labelledby="fb-title fb-desc">
+        <title class="fb-title">Facebook</title>
+        <desc id="fb-desc">Facebook social media icon</desc>
+        <path d="M512 210.944h-145.408q-14.336 0-25.6 15.36t-11.264 37.888v104.448h182.272v151.552h-182.272v452.608h-174.080v-452.608h-155.648v-151.552h155.648v-88.064q0-96.256 60.416-162.816t150.528-66.56h145.408v159.744z"></path>
+      </symbol>
+      
+      <!-- icon Facebook circled -->
+      <symbol id="icon-facebook-circled" viewBox="0 0 983 1024" aria-labelledby="fb-cir-title fb-cir-desc">
+        <title id="fb-cir-title">Facebook</title>
+        <desc id="fb-cir-desc">Facebook social media icon</desc>
+        <path d="M491.52 20.48q204.8 0 348.16 143.36t143.36 348.16q0 202.752-143.36 347.136t-348.16 144.384-348.16-144.384-143.36-347.136q0-204.8 143.36-348.16t348.16-143.36zM608.256 358.4v-79.872h-73.728q-45.056 0-75.776 33.792t-30.72 82.944v45.056h-77.824v75.776h77.824v227.328h88.064v-227.328h92.16v-75.776h-92.16v-53.248q0-28.672 18.432-28.672h73.728z"></path>
+      </symbol>
+      
+      <!-- icon Twitter -->
+      <symbol id="icon-twitter" viewBox="0 0 942 1024" aria-labelledby="twitter-title twitter-desc">
+        <title id="twitter-title">Twitter</title>
+        <desc id="twitter-desc">Twitter social media icon</desc>
+        <path d="M942.080 219.136q-36.864 55.296-96.256 100.352v24.576q0 133.12-61.44 256t-190.464 207.872-296.96 84.992q-163.84 0-296.96-86.016 14.336 2.048 47.104 2.048 135.168 0 239.616-81.92-63.488-2.048-112.64-38.912t-67.584-96.256q10.24 4.096 34.816 4.096 26.624 0 51.2-6.144-67.584-14.336-110.592-67.584t-43.008-122.88v-2.048q36.864 20.48 86.016 24.576-86.016-59.392-86.016-161.792 0-49.152 26.624-96.256 157.696 192.512 399.36 200.704-6.144-18.432-6.144-43.008 0-79.872 56.32-136.192t138.24-56.32q83.968 0 139.264 59.392 61.44-12.288 122.88-45.056-20.48 67.584-83.968 106.496 57.344-8.192 110.592-30.72z"></path>
+      </symbol>
+      
+      <!-- icon Twitter circled -->
+      <symbol id="icon-twitter-circled" viewBox="0 0 983 1024" aria-labelledby="twitter-cir-title twitter-cir-desc">
+        <title id="twitter-cir-title">Twitter circled</title>
+        <desc id="twitter-cir-desc">Twitter social media icon</desc>
+        <path d="M491.52 20.48q204.8 0 348.16 143.36t143.36 348.16q0 202.752-143.36 347.136t-348.16 144.384q-202.752 0-347.136-144.384t-144.384-347.136q0-204.8 144.384-348.16t347.136-143.36zM692.224 421.888q30.72-22.528 47.104-49.152-32.768 12.288-55.296 14.336 30.72-18.432 43.008-53.248-30.72 16.384-61.44 22.528-28.672-28.672-71.68-28.672-40.96 0-68.608 28.672t-27.648 67.584q0 2.048 1.024 10.24t1.024 12.288q-122.88-6.144-198.656-102.4-14.336 24.576-14.336 49.152 0 51.2 45.056 79.872-26.624 0-45.056-12.288v2.048q0 34.816 21.504 61.44t56.32 32.768q-16.384 4.096-24.576 4.096-12.288 0-18.432-2.048 20.48 67.584 90.112 67.584-51.2 40.96-120.832 40.96h-22.528q69.632 43.008 147.456 43.008 124.928 0 200.704-84.992t75.776-191.488v-12.288z"></path>
+      </symbol>
+      
+      <!-- icon YouTube -->
+      <symbol id="icon-youtube" viewBox="0 0 878 1024" aria-labelledby="yt-title yt-desc">
+        <title id="yt-title">YouTube</title>
+        <desc id="yt-desc">YouTube social media icon</desc>
+        <path d="M555.008 710.656v120.832q0 37.888-22.528 37.888-13.312 0-25.6-12.288v-172.032q12.288-12.288 25.6-12.288 22.528 0 22.528 37.888zM747.52 711.68v25.6h-51.2v-25.6q0-38.912 25.6-38.912t25.6 38.912zM195.584 586.752h61.44v-53.248h-178.176v53.248h60.416v325.632h56.32v-325.632zM360.448 912.384h51.2v-282.624h-51.2v216.064q-17.408 23.552-32.768 23.552-10.24 0-11.264-11.264-1.024-2.048-1.024-20.48v-207.872h-51.2v223.232q0 28.672 5.12 41.984 7.168 21.504 32.768 21.504 27.648 0 58.368-34.816v30.72zM606.208 827.392v-112.64q0-41.984-5.12-56.32-10.24-31.744-40.96-31.744-28.672 0-53.248 30.72v-123.904h-51.2v378.88h51.2v-27.648q25.6 31.744 53.248 31.744 30.72 0 40.96-31.744 5.12-15.36 5.12-57.344zM798.72 821.248v-7.168h-52.224q0 29.696-1.024 34.816-4.096 20.48-22.528 20.48-26.624 0-26.624-38.912v-50.176h102.4v-58.368q0-45.056-15.36-66.56-22.528-28.672-60.416-28.672-38.912 0-61.44 28.672-15.36 21.504-15.36 66.56v98.304q0 45.056 16.384 66.56 22.528 29.696 61.44 29.696 40.96 0 61.44-30.72 10.24-15.36 12.288-30.72 1.024-5.12 1.024-33.792zM451.584 300.032v-119.808q0-39.936-24.576-39.936t-24.576 39.936v119.808q0 39.936 24.576 39.936t24.576-39.936zM862.208 729.088q0 134.144-14.336 199.68-8.192 33.792-33.792 57.344t-58.368 25.6q-104.448 12.288-316.416 12.288t-317.44-12.288q-32.768-3.072-58.368-25.6t-32.768-57.344q-15.36-63.488-15.36-199.68 0-134.144 15.36-199.68 7.168-33.792 32.768-57.344t58.368-26.624q105.472-11.264 317.44-11.264t316.416 11.264q33.792 4.096 58.368 26.624t33.792 57.344q14.336 63.488 14.336 199.68zM291.84 0h58.368l-68.608 228.352v154.624h-57.344v-154.624q-8.192-43.008-34.816-121.856-21.504-58.368-37.888-106.496h61.44l39.936 150.528zM503.808 190.464v99.328q0 47.104-16.384 67.584-21.504 29.696-60.416 29.696t-60.416-29.696q-15.36-21.504-15.36-67.584v-99.328q0-46.080 15.36-66.56 21.504-29.696 60.416-29.696t60.416 29.696q16.384 20.48 16.384 66.56zM695.296 97.28v285.696h-52.224v-31.744q-30.72 35.84-59.392 35.84-25.6 0-33.792-21.504-4.096-13.312-4.096-43.008v-225.28h52.224v209.92q0 19.456 0 20.48 2.048 12.288 12.288 12.288 15.36 0 32.768-24.576v-218.112h52.224z"></path>
+      </symbol>
+      
+      <!-- icon YouTube circled -->
+      <symbol id="icon-youtube-circled" viewBox="0 0 1024 1024" aria-labelledby="yt-cir-title yt-cir-desc">
+        <title id="yt-cir-title">YouTube</title>
+        <desc id="yt-cir-desc">YouTube social media icon</desc>
+        <path d="M0 512q0-211.968 150.528-362.496t361.472-149.504 362.496 149.504 149.504 362.496-149.504 362.496-362.496 149.504-361.472-149.504-150.528-362.496zM384 768l384-256-384-256v512z"></path>
+      </symbol>
+      
+      <!-- icon YouTube "Play" -->
+      <symbol id="icon-youtube-play" viewBox="0 0 1024 1024" aria-labelledby="yt-play-title yt-play-desc">
+        <title id="yt-play-title">YouTube Play icon</title>
+        <desc id="yt-play-desc">YouTube social media icon</desc>
+        <path d="M731.136 512q0-21.504-16.384-30.72l-292.864-183.296q-17.408-11.264-36.864-1.024t-19.456 31.744v366.592q0 21.504 19.456 31.744 9.216 4.096 17.408 4.096 11.264 0 19.456-5.12l292.864-183.296q16.384-9.216 16.384-30.72zM1024 512q0 55.296-1.024 86.016t-4.096 77.824-13.312 83.968q-9.216 41.984-38.912 70.656t-71.68 32.768q-125.952 14.336-382.976 14.336t-382.976-14.336q-40.96-4.096-71.68-32.768t-39.936-70.656q-7.168-36.864-12.288-83.968t-4.096-77.824-1.024-86.016 1.024-86.016 4.096-77.824 13.312-83.968q9.216-41.984 38.912-70.656t71.68-32.768q125.952-14.336 382.976-14.336t382.976 14.336q40.96 4.096 71.68 32.768t39.936 70.656q8.192 36.864 12.288 83.968t4.096 77.824 1.024 86.016z"></path>
+      </symbol>
+       
+      <!-- icon Vimeo -->    
+      <symbol id="icon-vimeo" viewBox="0 0 923 1024" aria-labelledby="vimeo-title vimeo-desc">
+        <title id="vimeo-title">Vimeo</title>
+        <desc id="vimeo-desc">Vimeo social media icon</desc>
+        <path d="M917.504 299.008q-32.768 190.464-175.104 359.424t-250.88 242.688q-43.008 28.672-82.944 17.408t-67.584-38.912-44.032-62.464q-16.384-32.768-79.872-244.736t-75.776-228.352q-16.384-12.288-38.912-5.12t-45.056 21.504l-20.48 14.336-36.864-51.2q18.432-20.48 47.104-53.248t102.4-91.136 126.976-68.608q30.72-6.144 54.272 7.168t36.864 35.84 23.552 61.44 15.36 71.68 12.288 76.8 13.312 68.608q14.336 55.296 21.504 81.92t17.408 55.296 18.432 39.936 18.432 11.264q40.96 0 129.024-169.984 43.008-77.824 6.144-126.976t-114.688-2.048q22.528-129.024 143.36-192.512 106.496-55.296 186.368-8.192 81.92 47.104 59.392 178.176z"></path>
+      </symbol>
+      
+      <!-- icon Vimeo circled -->
+      <symbol id="icon-vimeo-circled" viewBox="0 0 983 1024" aria-labelledby="vimeo-cir-title vimeo-cir-desc">
+        <title id="vimeo-cir-title">Vimeo circled</title>
+        <desc id="vimeo-cir-desc">Vimeo social media icon</desc>
+        <path d="M491.52 20.48q204.8 0 348.16 143.36t143.36 348.16q0 202.752-143.36 347.136t-348.16 144.384q-202.752 0-347.136-144.384t-144.384-347.136q0-204.8 144.384-348.16t347.136-143.36zM716.8 415.744q14.336-83.968-49.152-96.256-61.44-14.336-112.64 40.96-28.672 28.672-34.816 67.584 38.912-24.576 57.344 1.024t-2.048 64.512q-45.056 86.016-65.536 86.016-14.336 0-36.864-96.256-4.096-14.336-8.192-40.96t-8.192-46.080-12.288-39.936-20.48-29.696-30.72-5.12q-26.624 6.144-61.44 32.768t-57.344 51.2l-20.48 24.576 18.432 24.576q4.096-4.096 10.24-8.192t22.528-10.24 20.48 2.048q6.144 8.192 37.888 115.712t39.936 123.904q14.336 28.672 38.912 44.032t59.392-1.024q55.296-36.864 126.976-122.88t88.064-182.272z"></path>
+      </symbol>
+      
+      <!-- icon LinkedIn -->    
+      <symbol id="icon-linkedin" viewBox="0 0 1071 1024" aria-labelledby="linkedin-title linkedin-desc">
+        <title id="linkedin-title">LinkedIn</title>
+        <desc id="linkedin-desc">LinkedIn social media icon</desc>
+        <path d="M243.712 1024v-691.2h-230.4v691.2h230.4zM128 238.592c80.896 0 130.048-53.248 130.048-118.784-1.024-68.608-49.152-119.808-128-119.808s-130.048 51.2-130.048 119.808c0 65.536 50.176 118.784 126.976 118.784h1.024zM370.688 1024h229.376v-386.048c0-20.48 1.024-40.96 7.168-56.32 17.408-40.96 54.272-83.968 117.76-83.968 83.968 0 116.736 63.488 116.736 156.672v369.664h229.376v-396.288c0-211.968-112.64-311.296-264.192-311.296-123.904 0-178.176 69.632-208.896 116.736h2.048v-100.352h-229.376c3.072 65.536 0 691.2 0 691.2z"></path>
+      </symbol>
+      
+      <!-- icon LinkedIn circled -->
+      <symbol id="icon-linkedin-circled" viewBox="0 0 983 1024" aria-labelledby="linkedin-cir-title linkedin-cir-desc">
+        <title id="linkedin-cir-title">LinkedIn circled</title>
+        <desc id="linkedin-cir-desc">LinkedIn social media icon</desc>
+        <path d="M491.52 20.48q204.8 0 348.16 143.36t143.36 348.16q0 202.752-143.36 347.136t-348.16 144.384q-202.752 0-347.136-144.384t-144.384-347.136q0-204.8 144.384-348.16t347.136-143.36zM370.688 714.752v-319.488h-98.304v319.488h98.304zM321.536 354.304q53.248 0 53.248-49.152t-53.248-49.152q-22.528 0-37.888 14.336t-15.36 34.816q0 49.152 53.248 49.152zM735.232 714.752v-188.416q0-67.584-31.744-103.424t-82.944-35.84q-67.584 0-98.304 51.2h-2.048l-6.144-43.008h-86.016q2.048 28.672 2.048 102.4v217.088h100.352v-184.32q0-18.432 4.096-24.576 12.288-38.912 51.2-38.912 49.152 0 49.152 69.632v178.176h100.352z"></path>
+      </symbol>
+      
+      <!-- icon Instagram -->
+      <symbol id="icon-instagram" viewBox="0 0 881 1024" aria-labelledby="instagram-title instagram-desc">
+        <title id="instagram-title">Instagram</title>
+        <desc id="instagram-desc">Instagram social media icon</desc>
+        <path d="M706.56 512q0-26.624-6.144-51.2h180.224v352.256q0 57.344-39.936 98.304t-97.28 40.96h-606.208q-57.344 0-97.28-40.96t-39.936-98.304v-352.256h178.176q-4.096 32.768-4.096 51.2 0 108.544 77.824 187.392t188.416 78.848q108.544 0 187.392-78.848t78.848-187.392zM743.424 71.68q57.344 0 97.28 39.936t39.936 97.28v149.504h-223.232q-79.872-112.64-217.088-112.64-141.312 0-217.088 112.64h-223.232v-149.504q0-57.344 39.936-97.28t97.28-39.936h606.208zM808.96 241.664v-73.728q0-24.576-24.576-24.576h-73.728q-24.576 0-24.576 24.576v73.728q0 8.192 7.168 16.384t17.408 8.192h73.728q24.576 0 24.576-24.576zM604.16 512q0 67.584-48.128 115.712t-115.712 48.128-115.712-48.128-48.128-115.712q0-69.632 48.128-116.736t115.712-47.104 115.712 47.104 48.128 116.736z"></path>
+      </symbol>
+      
+      <!-- icon Instagram circled -->
+      <symbol id="icon-instagram-circled" viewBox="0 0 1024 1024" aria-labelledby="instagram-cir-title instagram-cir-desc">
+        <title id="instagram-cir-title">Instagram circled</title>
+        <desc id="instagram-cir-desc">Instagram social media icon</desc>
+        <path d="M512 351.027c0.769-0.014 1.677-0.022 2.586-0.022 39.003 0 74.633 14.441 101.835 38.267l319.31-0.153c-4.311-49.727-47.286-128.31-110.091-185.488-78.419-81.265-187.899-131.566-309.128-131.566-1.587 0-3.171 0.009-4.754 0.026-0.297-0.004-0.934-0.006-1.571-0.006-122.082 0-232.283 50.866-310.567 132.561-38.004 24.585-89.065 97.369-110.602 181.947l318.943 2.527c27.024-23.672 62.652-38.111 101.653-38.111 0.839 0 1.676 0.007 2.511 0.020zM675.84 243.507c0-10.067 8.161-18.227 18.227-18.227 0 0 0 0 0 0h86.221c0 0 0 0 0 0 10.067 0 18.227 8.161 18.227 18.227v86.221c0 10.067-8.161 18.227-18.227 18.227 0 0 0 0 0 0h-86.221c0 0-0.001 0-0.001 0-9.995 0-18.11-8.044-18.226-18.011v-86.437zM954.368 514.253c0.033 1.956 0.051 4.264 0.051 6.576 0 119.269-49.444 226.99-128.953 303.784-77.504 80.621-186.096 130.634-306.369 130.634-2.495 0-4.986-0.022-7.471-0.064-1.856 0.047-4.486 0.071-7.121 0.071-119.921 0-228.279-49.506-305.753-129.195-79.821-78.669-129.211-187.832-129.211-308.53 0-23.641 1.895-46.839 5.541-69.451l287.619 2.482c-7.389 17.728-11.681 38.324-11.681 59.922 0 0.534 0.003 1.067 0.008 1.599 0.231 88.728 72.163 160.659 160.95 160.891 0.74 0.012 1.587 0.019 2.436 0.019 43.676 0 83.116-18.132 111.205-47.28 29.246-28.438 47.364-68.095 47.364-111.984 0-0.607-0.003-1.214-0.010-1.82 0.008-0.46 0.012-1.113 0.012-1.767 0-21.463-4.217-41.941-11.867-60.652l288.131 1.070c3.028 17.717 4.998 40.428 5.12 63.575zM512 444.416c0.019 0 0.041 0 0.064 0 37.326 0 67.584 30.258 67.584 67.584 0 18.628-7.536 35.495-19.726 47.72-12.236 12.271-29.16 19.864-47.858 19.864-37.326 0-67.584-30.258-67.584-67.584 0-37.303 30.222-67.548 67.517-67.584z"></path>
+      </symbol>
+      
+      <!-- icon Pinterest -->
+      <symbol id="icon-pinterest" viewBox="0 0 797 1024" aria-labelledby="pinterest-title pinterest-desc">
+        <title id="pinterest-title">Pinterest</title>
+        <desc id="pinterest-desc">Pinterest social media icon</desc>
+        <path d="M327.68 675.84q-26.624 133.12-59.392 216.064t-98.304 132.096q-6.144-75.776-7.168-122.88t11.264-112.64 22.528-106.496 26.624-101.376 24.576-101.376q-24.576-53.248-19.456-118.784t49.152-108.544 101.376-20.48q40.96 16.384 45.056 60.416t-13.312 97.28-32.768 105.472-4.096 92.16 64.512 50.176q69.632 14.336 123.904-38.912t75.776-134.144 11.264-166.912-55.296-131.072q-63.488-65.536-154.624-71.68t-166.912 33.792-122.88 119.808-32.768 174.080q4.096 22.528 22.528 53.248t21.504 48.128-17.408 68.608q-149.504-34.816-143.36-235.52 4.096-141.312 107.52-239.616t238.592-114.688q167.936-18.432 296.96 58.368t147.456 224.256q26.624 180.224-67.584 324.608t-258.048 132.096q-22.528-2.048-43.008-9.216t-30.72-13.312-31.744-21.504-31.744-21.504z"></path>
+      </symbol> 
+      
+      <!-- icon Pinterest circled -->
+      <symbol id="icon-pinterest-circled" viewBox="0 0 983 1024" aria-labelledby="pinterest-cir-title pinterest-cir-desc">
+        <title id="pinterest-cir-title">Pinterest circled</title>
+        <desc id="pinterest-cir-desc">Pinterest social media icon</desc>
+        <path d="M491.52 20.48q204.8 0 348.16 143.36t143.36 348.16q0 202.752-143.36 347.136t-348.16 144.384-348.16-144.384-143.36-347.136q0-204.8 143.36-348.16t348.16-143.36zM524.288 626.688q83.968 8.192 131.072-65.536t34.816-165.888q-10.24-73.728-75.776-112.64t-149.504-28.672q-67.584 8.192-119.808 57.344t-54.272 120.832q-4.096 102.4 71.68 118.784 10.24-24.576 9.216-33.792t-10.24-24.576-11.264-27.648q-14.336-98.304 79.872-147.456t161.792 18.432q49.152 49.152 20.48 151.552t-100.352 88.064q-40.96-8.192-33.792-55.296t24.576-88.064-21.504-61.44q-43.008-18.432-66.56 33.792t1.024 91.136q-4.096 20.48-21.504 84.992t-18.432 89.088 1.024 100.352q53.248-38.912 79.872-176.128 47.104 30.72 67.584 32.768z"></path>
+      </symbol>   
+      
+      <!-- icon mobile -->
+      <symbol id="icon-mobile" viewBox="0 0 594 1024" aria-labelledby="mobile-title mobile-desc">
+        <title id="mobile-title">Mobile</title>
+        <desc id="mobile-desc">A mobile phone</desc>
+        <path d="M491.52 10.24q43.008 0 72.704 29.696t29.696 72.704v798.72q0 40.96-29.696 71.68t-72.704 30.72h-389.12q-40.96 0-71.68-30.72t-30.72-71.68v-798.72q0-43.008 30.72-72.704t71.68-29.696h389.12zM296.96 972.8q30.72 0 51.2-15.36t20.48-35.84q0-22.528-20.48-36.864t-51.2-14.336q-28.672 0-50.176 15.36t-21.504 35.84 21.504 35.84 50.176 15.36zM512 819.2v-675.84h-430.080v675.84h430.080z"></path>
+      </symbol>
+      
+      <!-- icon tablet -->
+      <symbol id="icon-tablet" viewBox="0 0 657 1024" aria-labelledby="tablet-title tablet-desc">
+        <title id="tablet-title">Tablet</title>
+        <desc id="tablet-desc">A tablet symbol</desc>
+        <path d="M365.568 804.864q0-15.36-10.24-25.6t-26.624-11.264-25.6 11.264-10.24 25.6 10.24 25.6 25.6 10.24 26.624-10.24 10.24-25.6zM584.704 712.704v-547.84q0-8.192-5.12-13.312t-12.288-5.12h-476.16q-7.168 0-12.288 5.12t-6.144 13.312v547.84q0 8.192 6.144 13.312t12.288 5.12h476.16q7.168 0 12.288-5.12t5.12-13.312zM658.432 164.864v621.568q0 37.888-26.624 64.512t-64.512 26.624h-476.16q-36.864 0-64.512-26.624t-26.624-64.512v-621.568q0-37.888 26.624-64.512t64.512-27.648h476.16q36.864 0 64.512 27.648t26.624 64.512z"></path>
+      </symbol>
+      
+      <!-- icon laptop -->
+      <symbol id="icon-laptop" viewBox="0 0 1024 1024" aria-labelledby="laptop-title laptop-desc">
+        <title id="laptop-title">Laptop</title>
+        <desc id="laptop-desc">A laptop computer symbol</desc>
+        <path d="M0 822.272v-90.112h1024v90.112l-52.224 53.248h-919.552zM102.4 684.032v-536.576h819.2v536.576h-819.2zM203.776 585.728h616.448v-342.016h-616.448v342.016zM417.792 843.776h188.416v-81.92h-188.416v81.92z"></path>
+      </symbol>
+      
+      <!-- icon desktop -->
+      <symbol id="icon-desktop" viewBox="0 0 1024 1024" aria-labelledby="desktop-title desktop-desc">
+        <title id="desktop-title">Desktop</title>
+        <desc id="desktop-desc">A desktop computer display</desc>
+        <path d="M0 763.904v-675.84h1024v675.84h-371.712v98.304h90.112v73.728h-460.8v-73.728h90.112v-98.304h-371.712zM125.952 635.904h772.096v-419.84h-772.096v419.84z"></path>
+      </symbol>
+      
+      <!-- icon pencil -->
+      <symbol id="icon-pencil" viewBox="0 0 714 1024" aria-labelledby="pencil-title pencil-desc">
+      <title id="pencil-title">Pencil</title>
+      <desc id="pencil-desc">A pencil symbol</desc>
+      <path d="M311.296 552.96l61.44-119.808 231.424-231.424c14.336 8.192 20.48 12.288 34.816 26.624s17.408 20.48 26.624 34.816l-231.424 231.424-120.832 61.44zM0 863.232l115.712-454.656 242.688-241.664s81.92-23.552 168.96 0l-210.944 209.92-153.6 78.848-33.792 182.272c43.008 43.008 65.536 66.56 100.352 99.328l180.224-33.792 79.872-153.6 212.992-214.016c27.648 91.136-2.048 173.056-2.048 173.056l-241.664 242.688-455.68 115.712z"></path>
+      </symbol>
+      
+      <!-- icon ok -->
+      <symbol id="icon-ok" viewBox="0 0 950 1024" aria-labelledby="ok-title ok-desc">
+        <title id="ok-title">Ok</title>
+        <desc id="ok-desc">A checkmark symbol</desc>
+        <path d="M476.16 54.272q188.416 0 322.56 134.144t134.144 323.584-134.144 322.56-322.56 135.168-323.584-135.168-134.144-322.56 134.144-323.584 323.584-134.144zM404.48 722.944l356.352-356.352-80.896-80.896-275.456 274.432-129.024-129.024-80.896 79.872z"></path>
+      </symbol>
+      
+      <!-- icon cancel -->
+      <symbol id="icon-cancel" viewBox="0 0 950 1024" aria-labelledby="cancel-title cancel-desc">
+        <title id="cancel-title">cancel-circle</title>
+        <desc id="cancel-desc">A X symbol</desc>
+        <path d="M656.384 641.024q0-14.336-10.24-25.6l-103.424-103.424 103.424-103.424q10.24-11.264 10.24-25.6 0-15.36-10.24-26.624l-52.224-51.2q-10.24-11.264-25.6-11.264t-25.6 11.264l-103.424 103.424-103.424-103.424q-11.264-11.264-26.624-11.264t-25.6 11.264l-51.2 51.2q-11.264 11.264-11.264 26.624 0 14.336 11.264 25.6l103.424 103.424-103.424 103.424q-11.264 11.264-11.264 25.6 0 15.36 11.264 26.624l51.2 51.2q10.24 11.264 25.6 11.264t26.624-11.264l103.424-103.424 103.424 103.424q10.24 11.264 25.6 11.264t25.6-11.264l52.224-51.2q10.24-11.264 10.24-26.624zM877.568 512q0 119.808-58.368 220.16t-159.744 159.744-220.16 59.392-221.184-59.392-158.72-159.744-59.392-220.16 59.392-220.16 158.72-159.744 221.184-59.392 220.16 59.392 159.744 159.744 58.368 220.16z"></path>
+      </symbol>
+      
+      <!-- icon plus -->
+      <symbol id="icon-plus" viewBox="0 0 950 1024" aria-labelledby="plus-title plus-desc">
+        <title id="plus-title">Plus</title>
+        <desc id="plus-desc">An addition symbol</desc>
+        <path d="M695.296 548.864v-73.728q0-14.336-11.264-25.6t-25.6-10.24h-146.432v-146.432q0-15.36-11.264-25.6t-25.6-11.264h-72.704q-15.36 0-25.6 11.264t-11.264 25.6v146.432h-146.432q-14.336 0-25.6 10.24t-10.24 25.6v73.728q0 14.336 10.24 25.6t25.6 11.264h146.432v145.408q0 15.36 11.264 25.6t25.6 11.264h72.704q15.36 0 25.6-11.264t11.264-25.6v-145.408h146.432q14.336 0 25.6-11.264t11.264-25.6zM877.568 512q0 119.808-58.368 220.16t-159.744 159.744-220.16 59.392-221.184-59.392-158.72-159.744-59.392-220.16 59.392-220.16 158.72-159.744 221.184-59.392 220.16 59.392 159.744 159.744 58.368 220.16z"></path>
+      </symbol>
+      
+      <!-- icon minus -->
+      <symbol id="icon-minus" viewBox="0 0 950 1024" aria-labelledby="minus-title minus-desc">
+        <title id="minus-title">Minus</title>
+        <desc id="minus-desc">A subtraction symbol</desc>
+        <path d="M476.16 54.272q188.416 0 322.56 134.144t134.144 323.584-134.144 322.56-322.56 135.168-323.584-135.168-134.144-322.56 134.144-323.584 323.584-134.144zM704.512 568.32v-114.688h-457.728v114.688h457.728z"></path>
+      </symbol>
+      
+      <!-- icon heart -->
+      <symbol id="icon-heart" viewBox="0 0 778 1024" aria-labelledby="heart-title heart-desc">
+        <title id="heart-title">Heart</title>
+        <desc id="heart-desc">A heart symbol</desc>
+        <path d="M389.12 851.968l-291.84-289.792c-67.584-66.56-97.28-140.288-97.28-204.8 0-111.616 74.752-186.368 187.392-186.368 104.448 0 140.288 49.152 201.728 119.808 61.44-70.656 97.28-119.808 202.752-119.808 112.64 0 186.368 74.752 186.368 186.368 0 64.512-29.696 138.24-97.28 204.8z"></path>
+      </symbol>
+      
+      <!-- icon star -->
+      <symbol id="icon-star" viewBox="0 0 858 1024" aria-labelledby="star-title star-desc">
+        <title id="star-title">Star</title>
+        <desc id="star-desc">A star symbol</desc>
+      <path d="M327.68 414.72l101.376-310.272 101.376 310.272h327.68l-265.216 191.488 101.376 313.344-265.216-192.512-266.24 192.512 102.4-313.344-265.216-191.488h327.68z"></path>
+      </symbol>
+      
+      <!-- icon videocam -->
+      <symbol id="icon-videocam" viewBox="0 0 1020 1024" aria-labelledby="videocam-title videocam-desc">
+        <title id="videocam-title">Videocam</title>
+        <desc id="videocam-desc">A video camera symbol</desc>
+        <path d="M758.784 446.464l261.12-162.816v455.68l-261.12-161.792v-131.072zM0 768v-512h699.392v512h-699.392z"></path>
+      </symbol>
+      
+      <!-- icon caret -->
+      <symbol id="icon-caret" viewBox="0 0 366 1024" aria-labelledby="caret-title caret-desc">
+      <title id="caret-title">Caret</title>
+      <desc id="caret-desc">A small triangle symbol</desc>
+      <path d="M365.568 256v512q0 14.336-10.24 25.6t-26.624 11.264-25.6-11.264l-256-256q-10.24-11.264-10.24-25.6t10.24-25.6l256-256q11.264-11.264 25.6-11.264t26.624 11.264 10.24 25.6z"></path>
+      </symbol>
+      
+      <!-- icon newspaper -->
+      <symbol id="icon-newspaper" viewBox="0 0 819 1024" aria-labelledby="newspaper-title newspaper-desc">
+        <title id="newspaper-title">Newspaper</title>
+        <desc id="newspaper-desc">A newspaper symbol</desc>
+        <path d="M716.8 51.2q43.008 0 72.704 29.696t29.696 72.704v716.8q0 40.96-29.696 71.68t-72.704 30.72h-614.4q-40.96 0-71.68-30.72t-30.72-71.68v-716.8q0-43.008 30.72-72.704t71.68-29.696h614.4zM716.8 870.4v-716.8h-614.4v716.8h614.4zM460.8 614.4v51.2h-256v-51.2h256zM614.4 409.6v51.2h-204.8v-51.2h204.8zM409.6 358.4v-102.4h204.8v102.4h-204.8zM358.4 256v204.8h-153.6v-204.8h153.6zM307.2 512v51.2h-102.4v-51.2h102.4zM358.4 563.2v-51.2h256v51.2h-256zM614.4 716.8v51.2h-409.6v-51.2h409.6zM512 665.6v-51.2h102.4v51.2h-102.4z"></path>
+      </symbol>
+      
+      <!-- icon cart -->
+      <symbol id="icon-cart" viewBox="0 0 922 1024" aria-labelledby="cart-title cart-desc">
+        <title id="cart-title">Cart</title>
+        <desc id="cart-desc">A shopping cart</desc>
+        <path d="M153.6 870.4q0-40.96 30.72-71.68t71.68-30.72q43.008 0 72.704 30.72t29.696 71.68q0 43.008-29.696 72.704t-72.704 29.696q-40.96 0-71.68-29.696t-30.72-72.704zM665.6 870.4q0-40.96 30.72-71.68t71.68-30.72q43.008 0 72.704 30.72t29.696 71.68q0 43.008-29.696 72.704t-72.704 29.696q-40.96 0-71.68-29.696t-30.72-72.704zM335.872 628.736q-36.864 10.24-34.816 23.552t45.056 13.312h575.488v77.824q0 20.48-20.48 20.48h-669.696q-20.48 0-20.48-20.48v-77.824l-10.24-47.104-100.352-464.896h-100.352v-81.92q0-20.48 20.48-20.48h159.744q20.48 0 20.48 20.48v88.064h720.896v280.576q0 22.528-18.432 26.624z"></path>
+      </symbol>
+      
+      <!-- icon tools -->
+      <symbol id="icon-tools" viewBox="0 0 1024 1024" aria-labelledby="tools-title tools-desc">
+        <title id="tools-title">Tools</title>
+        <desc id="tools-desc">A hammer and a wrench symbol</desc>
+        <path d="M158.72 352.256q-8.192 8.192-11.264 22.528t-3.072 25.6-2.048 11.264q-2.048 2.048-17.408 15.36t-19.456 17.408q-16.384 14.336-28.672-4.096l-71.68-77.824q-11.264-12.288 2.048-24.576 2.048-2.048 18.432-14.336t20.48-16.384q6.144-6.144 27.648-6.144t37.888-14.336q14.336-14.336 18.432-38.912t10.24-30.72q2.048 0 9.216-7.168t26.624-22.528 41.984-31.744q137.216-92.16 190.464-98.304 124.928 0 151.552 2.048 12.288 0-8.192 8.192-122.88 53.248-155.648 77.824-81.92 57.344-36.864 116.736 34.816 47.104 38.912 49.152 8.192 8.192-2.048 14.336-2.048 2.048-38.912 35.84t-38.912 35.84q-14.336 8.192-18.432 4.096-43.008-49.152-72.704-61.44t-68.608 12.288zM451.584 378.88l419.84 487.424q18.432 22.528-2.048 38.912l-49.152 43.008q-22.528 14.336-38.912-4.096l-423.936-483.328q-8.192-8.192 0-20.48l73.728-63.488q12.288-8.192 20.48 2.048zM1018.88 172.032q16.384 106.496-16.384 169.984-51.2 90.112-157.696 63.488-57.344-12.288-102.4 32.768l-83.968 79.872-69.632-79.872 69.632-71.68q24.576-24.576 31.744-54.272t6.144-66.56 5.12-59.392q12.288-57.344 143.36-114.688 12.288-6.144 18.432 3.072t2.048 15.36q-12.288 12.288-47.104 81.92-14.336 10.24-12.288 35.84t40.96 54.272q59.392 40.96 98.304-22.528 6.144-12.288 26.624-41.984t22.528-33.792q4.096-10.24 13.312-9.216t11.264 17.408zM140.288 872.448l260.096-253.952 77.824 88.064-251.904 247.808q-20.48 20.48-38.912 4.096l-47.104-47.104q-22.528-18.432 0-38.912z"></path>
+      </symbol>
+      
+      <!-- icon flag -->    
+      <symbol id="icon-flag" viewBox="0 0 922 1024" aria-labelledby="flag-title flag-desc">
+        <title id="flag-title">Flag</title>
+        <desc id="flag-desc">A flag symbol</desc>
+        <path d="M894.976 239.616q14.336-6.144 22.528 1.024t0 19.456q-98.304 141.312-167.936 218.112t-112.64 92.16-74.752 2.048-61.44-37.888-64.512-40.96-95.232 4.096-142.336 88.064l92.16 360.448h-102.4l-188.416-737.28 94.208-34.816q92.16-67.584 155.648-88.064t100.352-3.072 65.536 52.224 63.488 72.704 80.896 63.488 132.096 20.48 202.752-52.224z"></path>
+      </symbol>
+      
+      <!-- icon home -->
+      <symbol id="icon-home" viewBox="0 0 950 1024" aria-labelledby="home-title home-desc">
+        <title id="home-title">home</title>
+        <desc id="home-desc"></desc>
+        <path d="M804.864 567.296v273.408q0 15.36-11.264 26.624t-25.6 10.24h-219.136v-219.136h-146.432v219.136h-219.136q-15.36 0-25.6-10.24t-11.264-26.624v-273.408q0-1.024 0-2.048t0-2.048l328.704-270.336 328.704 270.336q1.024 1.024 1.024 4.096zM931.84 527.36l-34.816 41.984q-5.12 5.12-12.288 6.144h-2.048q-7.168 0-12.288-3.072l-395.264-329.728-395.264 329.728q-7.168 4.096-13.312 4.096-7.168-2.048-12.288-7.168l-35.84-41.984q-4.096-5.12-3.072-13.312t6.144-12.288l410.624-342.016q18.432-15.36 43.008-15.36t44.032 15.36l139.264 116.736v-111.616q0-8.192 5.12-13.312t13.312-5.12h109.568q8.192 0 13.312 5.12t5.12 13.312v232.448l124.928 104.448q5.12 5.12 6.144 12.288t-4.096 13.312z"></path>
+      </symbol>
+      
+      <!-- icon photo -->
+      <symbol id="icon-photo" viewBox="0 0 1024 1024" aria-labelledby="photo-title photo-desc">
+        <title id="photo-title">Photo</title>
+        <desc id="photo-desc">A photograph symbol</desc>
+        <path d="M0 940.032v-856.064h1024v856.064h-1024zM77.824 860.16h868.352v-696.32h-868.352v696.32zM169.984 778.24v-60.416l153.6-199.68 104.448 88.064 197.632-297.984 228.352 233.472v236.544h-684.032zM169.984 352.256q0-37.888 24.576-63.488t63.488-24.576q33.792 0 59.392 24.576t24.576 63.488q0 33.792-24.576 58.368t-59.392 25.6q-37.888 0-63.488-25.6t-24.576-58.368z"></path>
+      </symbol>
+      
+      <!-- icon audio -->
+      <symbol id="icon-audio" viewBox="0 0 906 1024" aria-labelledby="audio-title audio-desc">
+        <title id="audio-title">Audio</title>
+        <desc id="audio-desc">A speaker with sound symbol</desc>
+        <path d="M471.040 125.952v772.096l-239.616-239.616h-231.424v-292.864h231.424zM607.232 742.4l-66.56-64.512c46.080-46.080 69.632-110.592 69.632-172.032 0-60.416-21.504-117.76-64.512-162.816l62.464-62.464c62.464 64.512 99.328 147.456 99.328 233.472 0 77.824-30.72 159.744-100.352 228.352zM755.712 876.544l-71.68-70.656c78.848-78.848 118.784-186.368 118.784-294.912 0-107.52-39.936-216.064-118.784-295.936l67.584-67.584c99.328 100.352 154.624 234.496 154.624 369.664 0 126.976-47.104 254.976-150.528 358.4z"></path>
+      </symbol>
+      
+      <!-- icon cog -->
+      <symbol id="icon-cog" viewBox="0 0 860 1024" aria-labelledby="cog-title cog-desc">
+        <title id="cog-title">Cog</title>
+        <desc id="cog-desc">A group of cogs symbol</desc>
+        <path d="M778.24 512q0 73.728 81.92 124.928-12.288 40.96-34.816 83.968-71.68-18.432-139.264 45.056-55.296 59.392-34.816 139.264-40.96 20.48-86.016 36.864-47.104-83.968-135.168-83.968t-135.168 83.968q-45.056-16.384-86.016-36.864 20.48-81.92-34.816-139.264-55.296-55.296-139.264-34.816-14.336-26.624-34.816-83.968 83.968-53.248 83.968-135.168 0-73.728-83.968-126.976 20.48-57.344 34.816-83.968 75.776 18.432 139.264-45.056 55.296-57.344 34.816-139.264 43.008-22.528 86.016-34.816 47.104 81.92 135.168 81.92t135.168-81.92q43.008 12.288 86.016 34.816-20.48 79.872 34.816 139.264 67.584 63.488 139.264 45.056 22.528 43.008 34.816 83.968-81.92 51.2-81.92 126.976zM430.080 698.368q77.824 0 132.096-54.272t54.272-132.096-54.272-133.12-132.096-55.296-132.096 55.296-54.272 133.12 54.272 132.096 132.096 54.272z"></path>
+      </symbol>
+      
+      <!-- icon rss -->
+      <symbol id="icon-rss" viewBox="0 0 721 1024" aria-labelledby="rss-title rss-desc">
+        <title id="rss-title">RSS</title>
+        <desc id="rss-desc">A RSS feed symbol</desc>
+        <path d="M188.416 775.168c0 52.224-44.032 93.184-95.232 93.184s-93.184-40.96-93.184-93.184c0-51.2 41.984-93.184 93.184-93.184s95.232 41.984 95.232 93.184zM455.68 862.208h-128c0-178.176-143.36-330.752-322.56-330.752v-120.832c236.544 0 450.56 166.912 450.56 451.584zM720.896 862.208h-139.264c0-307.2-268.288-574.464-576.512-574.464v-132.096c378.88 0 715.776 287.744 715.776 706.56z"></path>
+      </symbol>
+      
+      <!-- icon comment -->
+      <symbol id="icon-comment" viewBox="0 0 1207 1024" aria-labelledby="comment-title comment-desc">
+        <title id="comment-title">Comment</title>
+        <desc id="comment-desc">A speech bubble symbol</desc>
+        <path d="M1207.296 476.16q0 129.024-80.896 238.592t-220.16 174.080-303.104 63.488q-124.928 0-239.616-39.936l2.048 3.072-365.568 109.568q45.056-60.416 72.704-129.024t31.744-108.544l4.096-38.912q-108.544-122.88-108.544-272.384 0-129.024 80.896-238.592t220.16-173.056 302.080-63.488 303.104 63.488 220.16 173.056 80.896 238.592z"></path>
+      </symbol>
+      
+      <!-- icon link -->
+      <symbol id="icon-link" viewBox="0 0 1024 1024" aria-labelledby="link-title link-desc">
+        <title id="link-title">Link</title>
+        <desc id="link-desc">A chain link symbol</desc>
+        <path d="M1024 273.408q0 114.688-79.872 192.512l-179.2 180.224q-79.872 79.872-193.536 79.872-99.328 0-175.104-64.512l117.76-117.76q26.624 17.408 57.344 17.408 45.056 0 76.8-31.744l179.2-180.224q31.744-29.696 31.744-75.776 0-45.056-30.72-76.8t-76.8-30.72q-25.6 0-50.176 12.288t-33.792 34.816h-243.712l135.168-132.096q81.92-79.872 192.512-79.872 112.64 0 192.512 79.872t79.872 192.512zM627.712 364.544l-117.76 117.76q-26.624-17.408-57.344-17.408-45.056 0-76.8 31.744l-179.2 180.224q-31.744 29.696-31.744 75.776 0 45.056 31.744 75.776t75.776 31.744q25.6 0 51.2-12.288t32.768-34.816h243.712l-135.168 132.096q-81.92 79.872-192.512 79.872-112.64 0-192.512-79.872t-79.872-192.512q0-114.688 79.872-192.512l179.2-180.224q79.872-79.872 193.536-79.872 99.328 0 175.104 64.512z"></path>
+      </symbol>
+      
+      <!-- icon export -->
+      <symbol id="icon-export" viewBox="0 0 1024 1024" aria-labelledby="export-title export-desc">
+        <title id="export-title">Export</title>
+        <desc id="export-desc">An export arrow symbol</desc>
+        <path d="M768 808.96v-57.344l102.4-83.968v192.512q0 20.48-15.36 35.84t-35.84 15.36h-768q-20.48 0-35.84-15.36t-15.36-35.84v-563.2q0-22.528 14.336-36.864t36.864-14.336h294.912q-32.768 24.576-60.416 50.176t-39.936 39.936l-10.24 12.288h-133.12v460.8h665.6zM684.032 452.608q-169.984 0-247.808 41.984t-163.84 185.344q0-8.192 1.024-22.528t9.216-57.344 22.528-80.896 45.056-84.992 71.68-80.896 109.568-57.344 152.576-23.552v-159.744l339.968 256-339.968 266.24v-182.272z"></path>
+      </symbol>
+         
+      <!-- icon envelope -->
+      <symbol id="icon-envelope" viewBox="0 0 1024 1024" aria-labelledby="envelope-title envelope-desc">
+        <title id="envelope-title">Envelope</title>
+        <desc id="envelope-desc">An envelope symbol</desc>
+        <path d="M1024 405.504v453.632q0 37.888-26.624 64.512t-64.512 27.648h-841.728q-36.864 0-64.512-27.648t-26.624-64.512v-453.632q25.6 28.672 57.344 50.176 206.848 140.288 284.672 196.608 32.768 24.576 52.224 37.888t54.272 27.648 62.464 13.312h2.048q28.672 0 62.464-13.312t54.272-27.648 52.224-37.888q97.28-69.632 284.672-196.608 32.768-22.528 57.344-50.176zM1024 237.568q0 45.056-27.648 86.016t-69.632 70.656q-215.040 149.504-268.288 185.344-5.12 4.096-23.552 17.408t-30.72 22.528-29.696 18.432-33.792 15.36-27.648 5.12h-2.048q-12.288 0-27.648-5.12t-33.792-15.36-29.696-18.432-30.72-22.528-23.552-17.408q-52.224-35.84-150.528-103.424t-116.736-81.92q-35.84-23.552-66.56-65.536t-31.744-78.848q0-44.032 23.552-73.728t67.584-29.696h841.728q36.864 0 63.488 26.624t27.648 64.512z"></path>
+      </symbol>
+      
+      <!-- icon search -->
+      <symbol id="icon-search" viewBox="0 0 808 1024" aria-labelledby="search-title search-desc">
+        <title id="search-title">Search</title>
+        <desc id="search-desc">A magnifying glass symbol</desc>
+        <path d="M790.528 790.528q30.72 34.816 6.144 63.488l-47.104 47.104q-36.864 32.768-69.632 0l-194.56-194.56q-75.776 43.008-159.744 43.008-131.072 0-228.352-97.28t-97.28-228.352 92.16-224.256 223.232-93.184 229.376 97.28 98.304 228.352q0 90.112-47.104 165.888zM96.256 423.936q0 90.112 69.632 159.744t159.744 69.632 154.624-64.512 64.512-156.672q0-90.112-69.632-158.72t-159.744-68.608-154.624 64.512-64.512 154.624z"></path>
+      </symbol>
+      
+      <!-- icon info -->
+      <symbol id="icon-info" viewBox="0 0 471 1024" aria-labelledby="info-title info-desc">
+        <title id="info-title">Info</title>
+        <desc id="info-desc">An information symbol</desc>
+        <path class="path1" d="M360.448 0q49.152 0 75.776 27.648t26.624 70.656q0 51.2-39.936 90.112t-97.28 38.912q-49.152 0-75.776-26.624t-24.576-73.728q0-47.104 35.84-87.040t99.328-39.936zM149.504 1024q-102.4 0-55.296-182.272l61.44-260.096q14.336-57.344 0-57.344-12.288 0-55.296 18.432t-73.728 38.912l-26.624-45.056q92.16-79.872 193.536-129.024t154.624-49.152q79.872 0 36.864 165.888l-71.68 272.384q-16.384 65.536 6.144 65.536 45.056 0 120.832-61.44l30.72 40.96q-86.016 88.064-179.2 135.168t-142.336 47.104z"></path>
+      </symbol>
+      
+      <!-- icon info circled -->
+      <symbol id="icon-info-circled" viewBox="0 0 942 1024" aria-labelledby="info-cir-title info-cir-desc">
+      <title id="info-cir-title">Info circled</title>
+      <desc id="info-cir-desc">An information symbol</desc>
+      <path d="M464.896 40.96q194.56-2.048 333.824 133.12t143.36 329.728q2.048 194.56-134.144 334.848t-330.752 144.384q-194.56 2.048-334.848-134.144t-142.336-330.752q-4.096-194.56 133.12-334.848t331.776-142.336zM518.144 196.608q-43.008 0-66.56 24.576t-23.552 51.2q-2.048 28.672 15.36 45.056t50.176 16.384q38.912 0 62.464-22.528t23.552-55.296q0-59.392-61.44-59.392zM395.264 804.864q30.72 0 86.016-26.624t108.544-79.872l-18.432-24.576q-49.152 36.864-73.728 36.864-14.336 0-4.096-38.912l43.008-163.84q26.624-98.304-22.528-98.304-30.72 0-91.136 29.696t-117.76 76.8l16.384 26.624q53.248-34.816 75.776-34.816 12.288 0 0 34.816l-36.864 155.648q-26.624 106.496 34.816 106.496z"></path>
+      </symbol>
+      
+      <!-- icon help circled -->
+      <symbol id="icon-help" viewBox="0 0 942 1024" aria-labelledby="help-title help-desc">
+        <title id="help-title">Help circled</title>
+        <desc id="help-desc">A question mark symbol</desc>
+        <path d="M464.896 40.96q194.56-2.048 333.824 133.12t143.36 329.728q2.048 194.56-134.144 334.848t-330.752 144.384q-194.56 2.048-334.848-134.144t-142.336-330.752q-4.096-194.56 133.12-334.848t331.776-142.336zM462.848 798.72q30.72 0 50.176-19.456t19.456-48.128q2.048-30.72-17.408-50.176t-50.176-19.456h-2.048q-28.672 0-48.128 18.432t-21.504 47.104q0 30.72 19.456 50.176t48.128 21.504h2.048zM632.832 462.848q26.624-34.816 26.624-79.872 0-79.872-55.296-118.784-53.248-38.912-137.216-38.912-65.536 0-106.496 26.624-69.632 43.008-73.728 149.504v4.096h112.64v-4.096q0-26.624 16.384-55.296 16.384-24.576 55.296-24.576 40.96 0 53.248 20.48 16.384 20.48 16.384 45.056 0 18.432-16.384 40.96-8.192 12.288-20.48 20.48l-6.144 4.096q-6.144 4.096-16.384 11.264t-20.48 15.36-21.504 17.408-17.408 17.408q-14.336 20.48-18.432 79.872v8.192h110.592v-4.096q0-12.288 4.096-28.672 6.144-20.48 28.672-36.864l28.672-18.432q47.104-34.816 57.344-51.2z"></path>
+      </symbol>
+      
+      <!-- icon clock -->    
+      <symbol id="icon-clock" viewBox="0 0 959 1024" aria-labelledby="clock-title clock-desc">
+        <title id="clock-title">Clock</title>
+        <desc id="clock-desc">A clock symbol</desc>
+        <path d="M0 512q0-97.28 37.888-186.368t102.4-152.576 153.6-102.4 186.368-37.888 186.368 37.888 152.576 102.4 102.4 152.576 37.888 186.368-37.888 186.368-102.4 153.6-152.576 102.4-186.368 37.888-186.368-37.888-153.6-102.4-102.4-153.6-37.888-186.368zM119.808 512q0 98.304 48.128 181.248t131.072 131.072 181.248 48.128q97.28 0 180.224-48.128t131.072-131.072 48.128-181.248q0-97.28-48.128-180.224t-131.072-131.072-180.224-48.128q-73.728 0-140.288 28.672t-114.688 76.8-76.8 114.688-28.672 139.264zM419.84 512v-229.376q0-24.576 17.408-41.984t43.008-18.432 41.984 18.432 17.408 41.984v204.8l145.408 144.384q17.408 17.408 17.408 43.008t-17.408 41.984-41.984 17.408q-25.6 0-43.008-17.408l-162.816-161.792q-1.024-2.048-4.096-5.12t-3.072-4.096q-1.024-2.048-2.048-4.096l-2.048-3.072t-1.024-4.096q-1.024 0-2.048-5.12-2.048-5.12-2.048-5.12-1.024-6.144-1.024-12.288z"></path>
+      </symbol>
+      
+      <!-- icon globe -->    
+      <symbol id="icon-globe" viewBox="0 0 992 1024" aria-labelledby="globe-title globe-desc">
+      <title id="globe-title">Globe</title>
+      <desc id="globe-desc">A globe symbol</desc>
+      <path class="path1" d="M0 495.616q0-205.824 145.408-350.208t350.208-145.408 351.232 145.408 145.408 350.208-145.408 351.232-351.232 145.408-350.208-145.408-145.408-351.232zM64.512 512q7.168 169.984 128 289.792 53.248-37.888 111.616-61.44-44.032-108.544-48.128-228.352h-191.488zM64.512 480.256h191.488q4.096-106.496 37.888-200.704-63.488-25.6-119.808-69.632-104.448 115.712-109.568 270.336zM195.584 186.368q52.224 39.936 110.592 63.488 44.032-103.424 119.808-180.224-134.144 22.528-230.4 116.736zM216.064 824.32q90.112 77.824 209.92 97.28-65.536-65.536-107.52-151.552-54.272 19.456-102.4 54.272zM287.744 512q4.096 113.664 46.080 218.112 70.656-22.528 146.432-26.624v-191.488h-192.512zM287.744 480.256h192.512v-160.768q-79.872-3.072-156.672-29.696-31.744 90.112-35.84 190.464zM335.872 260.096q70.656 23.552 144.384 27.648v-223.232h-2.048q-92.16 77.824-142.336 195.584zM348.16 757.76q50.176 102.4 130.048 169.984h2.048v-191.488q-70.656 4.096-132.096 21.504zM512 927.744h2.048q79.872-67.584 130.048-169.984-62.464-17.408-132.096-21.504v191.488zM512 703.488q75.776 4.096 146.432 26.624 41.984-104.448 46.080-218.112h-192.512v191.488zM512 480.256h192.512q-4.096-100.352-36.864-190.464-75.776 26.624-155.648 29.696v160.768zM512 287.744q73.728-4.096 144.384-27.648-50.176-117.76-142.336-195.584h-2.048v223.232zM566.272 921.6q119.808-19.456 209.92-97.28-48.128-34.816-102.4-54.272-41.984 86.016-107.52 151.552zM566.272 69.632q75.776 76.8 119.808 180.224 58.368-23.552 109.568-63.488-95.232-94.208-229.376-116.736zM688.128 740.352q58.368 23.552 111.616 61.44 119.808-119.808 128-289.792h-191.488q-4.096 119.808-48.128 228.352zM698.368 279.552q33.792 94.208 37.888 200.704h191.488q-6.144-154.624-109.568-270.336-56.32 44.032-119.808 69.632z"></path>
+      </symbol>
+      
+      <!-- icon globe alt -->    
+      <symbol id="icon-globe-alt" viewBox="0 0 1024 1024" aria-labelledby="globe-alt-title globe-alt-desc">
+        <title id="globe-alt-title">Globe alternative</title>
+        <desc id="globe-alt-desc">A globe symbol</desc>
+        <path class="path1" d="M0 512q0-211.968 150.528-362.496t361.472-149.504 362.496 149.504 149.504 362.496-149.504 362.496-362.496 149.504-361.472-149.504-150.528-362.496zM128 453.632q22.528 28.672 48.128 44.032t66.56 30.72 59.392 21.504q4.096 6.144 15.36 15.36t14.336 10.24q0 6.144-2.048 16.384-2.048 22.528 1.024 39.936t8.192 27.648 16.384 29.696 16.384 28.672q2.048 6.144 0 14.336-2.048 15.36-8.192 65.536t-7.168 77.824q39.936 24.576 77.824 26.624 4.096-8.192 8.192-18.432 4.096-8.192 8.192-20.48t13.312-29.696q0-13.312 5.12-25.6t11.264-18.432q6.144-7.168 13.312-13.312 20.48-16.384 36.864-32.768t17.408-25.6q8.192-31.744 10.24-69.632 0-12.288-9.216-20.48t-20.48-15.36q-18.432-8.192-47.104-35.84t-43.008-32.768q-18.432-8.192-34.816-9.216t-31.744 1.024q-13.312 4.096-33.792 2.048-4.096-6.144-8.192-8.192-8.192-3.072-2.048-9.216 4.096-8.192-3.072-11.264t-14.336-1.024q-8.192-23.552-8.192-37.888 14.336 12.288 23.552 17.408t18.432 8.192 14.336 2.048q9.216-4.096 11.264-19.456t-2.048-44.032q4.096-4.096 4.096-8.192 4.096-18.432 11.264-23.552t7.168-6.144q4.096 0 4.096-2.048 4.096-2.048 15.36-4.096 6.144-2.048 10.24-3.072t10.24-3.072q8.192-4.096 4.096-12.288h-2.048q17.408-10.24 35.84-41.984-12.288-19.456-35.84-31.744-8.192-10.24-20.48-6.144-5.12 0-14.336-6.144t-13.312-8.192-12.288-3.072q-13.312-8.192-26.624-21.504t-21.504-26.624q-3.072-10.24-17.408-14.336-10.24-2.048-20.48-2.048h-11.264q-56.32 44.032-95.232 106.496t-51.2 137.216zM390.144 149.504q25.6 14.336 61.44 26.624t70.656 12.288q23.552 0 52.224-16.384 27.648-20.48 77.824-10.24 8.192 2.048 13.312 2.048-35.84-16.384-75.776-23.552t-81.92-8.192q-61.44 0-117.76 17.408zM558.080 541.696q4.096 26.624 19.456 39.936 12.288 12.288 26.624 14.336t25.6 0 28.672 2.048q7.168 4.096 9.216 4.096-6.144 13.312-4.096 21.504 0 4.096 6.144 19.456t6.144 24.576q-4.096 50.176 0 62.464 6.144 12.288 14.336 33.792t14.336 33.792q3.072 8.192 13.312 10.24 20.48 4.096 48.128-23.552 20.48-24.576 23.552-52.224 2.048-10.24 8.192-22.528t10.24-25.6q2.048-6.144 0-14.336 14.336-21.504 14.336-39.936v-14.336q2.048-3.072 9.216-10.24t12.288-11.264q6.144-23.552 2.048-31.744 0-2.048-4.096-4.096l-17.408-6.144q11.264-25.6 35.84-20.48l31.744-9.216v-6.144q0-92.16-36.864-166.912t-101.376-129.024q-103.424 11.264-130.048 46.080-11.264 19.456-15.36 33.792-2.048 8.192-5.12 20.48t-4.096 17.408-5.12 12.288-12.288 17.408q-4.096 4.096-4.096 11.264t6.144 19.456q6.144 9.216 6.144 17.408 29.696 0 37.888-10.24l72.704 6.144q25.6-31.744 57.344 0 8.192 8.192 18.432 26.624l-29.696 19.456q-20.48-10.24-34.816-15.36t-28.672-8.192-22.528-1.024-31.744 4.096-36.864 3.072l-4.096 7.168t-6.144 7.168-7.168 3.072q-2.048 4.096-2.048 10.24v8.192q-22.528 27.648-14.336 65.536z"></path>
+      </symbol>
+
+    </svg>
+		
+		<!-- Site Wrap -->
+		<div class="site-wrap demo">
+  		
+  		<!-- Admin Bar -->
+  		<div class="collapsible collapsible-collapsed">
+        <h6 class="collapsible-header demo-label flex jc-between md-jc-start"><span>Admin Bar</span> <svg class="icon"><use xlink:href="#icon-caret" /></svg> </h6>
+        <div class="collapsible-content">
+          
+    		  <!-- Admin Bar -->
+      		<div class="admin-bar pt-pb-1">
+        		<div class="container flex flex-wrap ai-center jc-between"> 
+          		<!-- User Status -->
+              <div class="user-status flex ai-center jc-center sm-jc-start sm-flex-g-1">
+                <div class="avatar user-avatar"><img src="images/UI/slug-avatar.svg" alt="user avatar"></div>
+                <div class="user-status-text flex flex-wrap flex-d-col ai-start">
+                  <div class="status-msg mb-tiny"><span class="user-name">Super Admin</span></div>
+                  <div class="profile-links flex ai-center">
+                    <a class="#" href="#">Dashboard</a>
+                    <a class="#" href="#">Logout</a>
+                  </div>
+                </div>
+              </div>
+          		<!-- Search -->
+          		<div class="search-form header-search">
+            		<label class="sr-only" for="search-form">Search</label>
+            		<!-- Search Bar -->
+            		<div class="search-bar flex flex-wrap jc-between">
+                  <input id="search-form" type="search" placeholder="search">
+                  <button type="submit"> <svg class="icon"><use xlink:href="#icon-search" /></svg>
+                  </button>
+            		</div>
+          		</div>
+        		</div>
+      		</div>
+  		
+        </div>
+  		</div>
+  		
+  		<!-- Header v1 -->
+  		<div class="collapsible collapsible-collapsed">
+        <h6 class="collapsible-header demo-label flex jc-between md-jc-start"><span>Header 1</span> <svg class="icon"><use xlink:href="#icon-caret" /></svg> </h6>
+        <div class="collapsible-content">
+          
+          <!-- Header v1 -->
+      		<header class="site-header mobile-menu-1" role="banner">
+        		<div class="container pr-pl-0">
+        		  <h1 class="site-title header-logo"><a class="pt-pb-1 pr-pl-1" href="https://www.in2Marketplace.com"><img class="logo mr-ml-a" src="images/UI/in2Marketplace-logo.svg" alt="in2Marketplace.com"><img class="alt-logo mr-ml-a" src="images/UI/in2M-icon-v2.svg" alt="in2Marketplace.com"><span class="sr-only">in2Marketplace.com</span></a></h1>
+                <nav class="main-nav flex flex-wrap w-100" role="navigation"><a href="#">Setup</a><a href="#section">Manage</a><a href="#section">Packages</a><a href="#section">Offers</a><a href="#section">Campaign</a><a href="#section">Log a Ticket</a><a href="#section">Reports</a><a href="#contact-home">Contact Us</a></nav>
+        		</div>
+      		</header>
+      		
+        </div>
+  		</div>
+  		
+		  <!-- Header v2 -->
+		  <div class="collapsible collapsible-collapsed">
+        <h6 class="collapsible-header demo-label flex jc-between md-jc-start"><span>Header 2</span> <svg class="icon"><use xlink:href="#icon-caret" /></svg> </h6>
+        <div class="collapsible-content">
+          
+          <!-- Header v2 (default)-->  
+          <header class="site-header mobile-menu-2 pt-pb-1" role="banner">
+        		<div class="container flex flex-wrap ai-center jc-between">
+          		  <h1 class="site-title header-logo"><a href="https://www.in2Marketplace.com"><img class="logo" src="images/UI/in2M-icon-v2.svg" alt="in2Marketplace.com"><img class="alt-logo" src="images/UI/in2M-icon-v2.svg" alt="in2Marketplace.com"><span class="sr-only">in2Marketplace.com</span></a></h1>
+          		  <!-- Use .nav-toggle CLASS if you want to control button via CSS -->
+          		  <!-- <button href="#" id="nav-toggle" class="nav-toggle hidden" aria-hidden="false" aria-expanded="false">Menu</button> -->
+          		  
+          		  <button href="#" id="nav-toggle" class="nav-toggle-html" aria-hidden="false" aria-expanded="false">
+                    <div class="nav-icon"></div>
+          		  </button>
+          		  <!-- Main Nav -->
+                <section class="main-nav flex flex-wrap ai-center jc-end sm-flex-g-1" role="navigation">
+                  <!-- Nav -->
+          	      <script src="js/libs/responsive-nav.js"></script>
+                  <nav class="nav-collapse" role="navigation">
+                    <ul>         	                   		            
+                      <li class="dropdown">
+                      	<a href="setup.html"><svg class="icon"><use xlink:href="#icon-tools" /></svg>Setup</a>
+          								<ul class="sub-menu">
+          									<li><a href="#">Capacity</a></li>
+          									<li><a href="#">Short Codes</a></li>
+          									<li><a href="#">Campaigns</a></li>
+          									<li><a href="#">Addons</a></li>
+          									<li><a href="#">Create</a></li>
+          									<li><a href="#">Create</a></li>
+          									 <li class="dropdown">
+                              <a href="#">Email Templates</a>
+                              <ul class="sub-menu">
+                                <li><a href="#">Sub Sublink</a></li>
+                                <li><a href="#">Sub Sublink</a></li>
+                                <li><a href="#">Sub Sublink</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="#">Sub link</a></li>					 
+          								</ul>
+                      </li>
+                      <li class="dropdown">
+                      	<a href="create.html"><svg class="icon"><use xlink:href="#icon-doc" /></svg>Create</a>
+          								<ul class="sub-menu">
+          									<li><a href="email-templates.html">Email Templates</a></li>
+          									<li><a href="sa-create-sales-company.html">Sales Company Admin</a></li>
+          									<li><a href="sales-company.html">Sales Company</a></li>
+          									<li><a href="sales-person.html">Sales Person</a></li>					 
+          								</ul>
+                      </li>
+                      <li class="dropdown">
+                      	<a href="manage.html"> <svg class="icon"><use xlink:href="#icon-cog" /></svg>Manage</a>
+          								<ul class="sub-menu">
+          									<li><a href="email-templates.html">Email Templates</a></li>
+          									<li><a href="sa-create-sales-company.html">Sales Company Admin</a></li>
+          									<li><a href="sales-company.html">Sales Company</a></li>
+          									<li><a href="sales-person.html">Sales Person</a></li>
+          									 <li class="dropdown hidden">
+                              <a href="#">Email Templates</a>
+                              <ul class="sub-menu">
+                                <li><a href="#">Sub Sublink</a></li>
+                                <li><a href="#">Sub Sublink</a></li>
+                                <li><a href="#">Sub Sublink</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="#">Sub link</a></li>					 
+          								</ul>
+                      </li>
+                      <li><a href=".html"> <svg class="icon"><use xlink:href="#icon-user" /></svg>Admin</a></li>
+                    </ul>
+                  </nav>
+                  <script src="js/libs/mobile-nav.js"></script>
+               </section>
+              
+            </div>
+      		</header>
+          
+          <!-- Header v2 (with user status) -->  
+          <!-- <header class="site-header mobile-menu-2 pt-pb-1" role="banner">
+        		<div class="container flex flex-wrap ai-center jc-between">
+          		<!-- User Status --
+          		<div class="user-status flex ai-center sm-flex-g-1">
+            		<div class="avatar user-avatar"><img src="images/UI/slug-avatar.svg" alt="user avatar"></div>
+            		<div class="user-status-text flex flex-wrap flex-d-col ai-start"> 
+              		<div class="status-msg mb-tiny"><span class="user-name">Super Admin</span></div>
+              		<div class="profile-links flex ai-center">
+                		<a class="#" href="#">Dashboard</a>
+                		<a class="#" href="#">Logout</a>
+                  </div>
+                </div>
+          		</div>
+          		<h1 class="site-title header-logo hidden"><a href="https://www.in2Marketplace.com"><img class="logo" src="images/UI/in2M-icon-v2.svg" alt="in2Marketplace.com"><img class="alt-logo" src="images/UI/in2M-icon-v2.svg" alt="in2Marketplace.com"><span class="sr-only">in2Marketplace.com</span></a></h1>
+          		      		
+          		  <!-- Main Nav --
+                <section class="main-nav md-flex flex-wrap ai-center jc-end sm-flex-g-1 md-mw-25em" role="navigation">
+                  <!-- Nav --
+          	      <script src="js/libs/responsive-nav.js"></script>
+                  <nav class="nav-collapse" role="navigation">
+                    <ul>
+                      <li class="active"><a href="super-admin.html"><svg class="icon icon-home m-0-important hidden"><use xlink:href="#icon-home" /></svg>Home</a></li>         	                   		            
+                      <li class="dropdown">
+                      	<a href="setup.html"><svg class="icon"><use xlink:href="#icon-tools" /></svg>Setup</a>
+          								<ul class="sub-menu">
+          									<li><a href="capacity.html">Capacity</a></li>
+          									<li><a href="short-codes.html">Short Codes</a></li>
+          									<li><a href="campaigns.html">Campaigns</a></li>
+          									<li><a href="addons.html">Addons</a></li>
+                            <li><a href="email-templates.html">Email Templates</a></li>					 
+          								</ul>
+                      </li>
+                      <li class="dropdown">
+                      	<a href="dashboard.html"> <svg class="icon"><use xlink:href="#icon-pencil" /></svg>Create</a>
+          								<ul class="sub-menu">
+          									<li><a href="sa-create-sales-company.html">Sales Company Admin</a></li>
+          									<li><a href="sales-company.html">Sales Company</a></li>
+          									<li><a href="sales-person.html">Sales Person</a></li>					 
+          								</ul>
+                      </li>
+                      <li class="dropdown">
+                      	<a href="manage.html"> <svg class="icon"><use xlink:href="#icon-user" /></svg>Manage</a>
+          								<ul class="sub-menu">
+          									<li><a href="sa-create-sales-company.html">Sales Company Admin</a></li>
+          									<li><a href="sales-company.html">Sales Company</a></li>
+          									<li><a href="sales-person.html">Sales Person</a></li>
+          									 <li class="dropdown hidden">
+                              <a href="#">Email Templates</a>
+                              <ul class="sub-menu">
+                                <li><a href="#">Sub Sublink</a></li>
+                                <li><a href="#">Sub Sublink</a></li>
+                                <li><a href="#">Sub Sublink</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="#">Sub link</a></li>					 
+          								</ul>
+                      </li>                      
+                    </ul>
+                  </nav>
+                  <script src="js/libs/mobile-nav.js"></script>
+               </section>
+              
+            </div>
+      		</header>-->
+          
+        </div>
+  		</div>
+
+      <!-- Main Content -->
+  		<main class="main-content">
+    		
+    		<!-- Buttons -->
+    		<div class="collapsible collapsible-collapsed">
+    		  <h6 class="collapsible-header demo-label flex jc-between md-jc-start"><span>Buttons</span><svg class="icon"><use xlink:href="#icon-caret" /></svg></h6>
+    		  <!-- module -->
+    		  <div class="collapsible-content pt-pb-2 pr-pl-2">
+    		    
+    		    
+    		    <!-- Buttons -->
+            <div class="button-wrap flex-grid l-flex-grid">
+              <button class="btn">button</button>
+              <div class="btn">div</div>
+              <span class="btn">span</span>
+              <a href="#" class="btn">a</a>
+              <p class="btn">p</p>
+              <input class="btn" type="submit" value="input">
+            </div>
+    		    
+    		  </div>
+    		</div>
+    		
+    		<!-- Hero Banner -->
+    		<div class="collapsible collapsible-collapsed">
+          <h6 class="collapsible-header demo-label flex jc-between md-jc-start"><span>Hero Banner</span> <svg class="icon"><use xlink:href="#icon-caret" /></svg> </h6>
+          <div class="collapsible-content">
+            
+            <section class="hero-banner sm-pt-pb-1 lg-pt-pb-4">
+              <!-- Hero Content -->
+              <div class="container">
+               	<!-- Post -->
+                <article class="cq content-post">
+                  <div class="post-wrap flex-layout l-flex-pad flex-d-col-rev sm-text-center md-text-left md-flex-d-row md-ai-center md-jc-between">
+                    <!-- Post Content -->
+                    <div class="post-content">
+                      <!-- Post Title -->
+                      <h2 class="post-title">This is the Hero Banner</h2>
+                      <!-- Post Subtitle -->
+                      <p class="post-subtitle">Hero Subtitle</p>
+                      <!-- Post Text -->
+                      <div class="post-text">
+                        Explicabo, ducimus, reiciendis quia hic quas quos culpa inventore perspiciatis maiores nemo rem officiis volutatibus.
+                      </div>
+                      <!-- Button Wrap -->
+                      <div class="cq button-wrap pt-1">  
+                        <a class="btn-primary" href="#">Primary</a>
+                        <a class="btn-secondary" href="#">Secondary</a>
+                      </div>                
+                    </div>
+                    <!-- Post Media -->
+                    <div class="post-media md-flex-2">
+                      <!-- Image -->
+                      <figure class="media-item lazyload">
+              		  <a href="#"><img data-src="images/content-img/16x9/img-16x9-MD.jpg" data-srcset="images/content-img/16x9/img-16x9-XL.jpg 2500w, images/content-img/16x9/img-16x9-LG.jpg 1875w, images/content-img/16x9/img-16x9-MD.jpg 1250w, images/content-img/16x9/img-16x9-SM.jpg 625w" alt="16:9 responsive image" class="lazyload"></a>        		  
+              			    <noscript>
+                          <a href="#">
+                            <img src="images/content-img/16x9/img-16x9-MD.jpg" alt="16:9 responsive image">
+                          </a>
+                        </noscript>
+                        <!-- Image Caption -->
+              			    <figcaption>
+              			       <!-- <p class="image-caption">Image Caption</p> -->
+                        </figcaption>
+              			  </figure>
+                    </div>
+                  </div>
+                </article>	   
+              </div>
+            </section>
+            
+          </div>
+    		</div>
+        
+        <!-- Media Grid -->
+        <div class="collapsible collapsible-collapsed">
+          <h6 class="collapsible-header demo-label flex jc-between md-jc-start"><span>Media Grid</span> <svg class="icon"><use xlink:href="#icon-caret" /></svg> </h6>
+          <div class="collapsible-content">
+            
+            <!-- Offers -->
+        		<section class="mod-block pt-pb-2">
+          		<div class="container">
+            		<div class="text-block sm-text-center"> 
+            		<h2>Offers</h2>
+              		<p class="sm-pr-pl-3 mb-2 sub-header">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum velit aut distinctio adipisci illum! Suscipit, perspiciatis dolorum vel explicabo labore.</p>
+            		</div>
+                <!-- Work Examples -->
+            		<div class="flex-grid l-media-grid">
+            		  <figure class="media-item lazyload">
+              		  <a href="#"><img data-src="images/content-img/16x9/img-16x9-MD.jpg" data-srcset="images/content-img/16x9/img-16x9-XL.jpg 2500w, images/content-img/16x9/img-16x9-LG.jpg 1875w, images/content-img/16x9/img-16x9-MD.jpg 1250w, images/content-img/16x9/img-16x9-SM.jpg 625w" alt="16:9 responsive image" class="lazyload"></a>
+              		  <noscript>
+                      <a href="#">
+                        <img src="images/content-img/16x9/img-16x9-MD.jpg" alt="16:9 responsive image">
+                      </a>
+                    </noscript>
+                    <!-- Image Caption -->
+            		    <figcaption>
+            		       <p class="image-caption"><a href="#">Image Caption</a></p>
+                    </figcaption>
+            		  </figure>
+            		  <figure class="media-item lazyload">
+              		  <a href="#"><img data-src="images/content-img/16x9/img-16x9-MD.jpg" data-srcset="images/content-img/16x9/img-16x9-XL.jpg 2500w, images/content-img/16x9/img-16x9-LG.jpg 1875w, images/content-img/16x9/img-16x9-MD.jpg 1250w, images/content-img/16x9/img-16x9-SM.jpg 625w" alt="16:9 responsive image" class="lazyload"></a>
+              		  <noscript>
+                      <a href="#">
+                        <img src="images/content-img/16x9/img-16x9-MD.jpg" alt="16:9 responsive image">
+                      </a>
+                    </noscript>
+                    <!-- Image Caption -->
+            		    <figcaption>
+            		       <p class="image-caption"><a href="#">Image Caption</a></p>
+                    </figcaption>
+            		  </figure>
+            		  <figure class="media-item lazyload">
+              		  <a href="#"><img data-src="images/content-img/16x9/img-16x9-MD.jpg" data-srcset="images/content-img/16x9/img-16x9-XL.jpg 2500w, images/content-img/16x9/img-16x9-LG.jpg 1875w, images/content-img/16x9/img-16x9-MD.jpg 1250w, images/content-img/16x9/img-16x9-SM.jpg 625w" alt="16:9 responsive image" class="lazyload"></a>
+              		  <noscript>
+                      <a href="#">
+                        <img src="images/content-img/16x9/img-16x9-MD.jpg" alt="16:9 responsive image">
+                      </a>
+                    </noscript>
+                    <!-- Image Caption -->
+            		    <figcaption>
+            		       <p class="image-caption"><a href="#">Image Caption</a></p>
+                    </figcaption>
+            		  </figure>
+            		  <figure class="media-item lazyload">
+              		  <a href="#"><img data-src="images/content-img/16x9/img-16x9-MD.jpg" data-srcset="images/content-img/16x9/img-16x9-XL.jpg 2500w, images/content-img/16x9/img-16x9-LG.jpg 1875w, images/content-img/16x9/img-16x9-MD.jpg 1250w, images/content-img/16x9/img-16x9-SM.jpg 625w" alt="16:9 responsive image" class="lazyload"></a>
+              		  <noscript>
+                      <a href="#">
+                        <img src="images/content-img/16x9/img-16x9-MD.jpg" alt="16:9 responsive image">
+                      </a>
+                    </noscript>
+                    <!-- Image Caption -->
+            		    <figcaption>
+            		       <p class="image-caption"><a href="#">Image Caption</a></p>
+                    </figcaption>
+            		  </figure>
+            		  <figure class="media-item lazyload">
+              		  <a href="#"><img data-src="images/content-img/16x9/img-16x9-MD.jpg" data-srcset="images/content-img/16x9/img-16x9-XL.jpg 2500w, images/content-img/16x9/img-16x9-LG.jpg 1875w, images/content-img/16x9/img-16x9-MD.jpg 1250w, images/content-img/16x9/img-16x9-SM.jpg 625w" alt="16:9 responsive image" class="lazyload"></a>
+              		  <noscript>
+                      <a href="#">
+                        <img src="images/content-img/16x9/img-16x9-MD.jpg" alt="16:9 responsive image">
+                      </a>
+                    </noscript>
+                    <!-- Image Caption -->
+            		    <figcaption>
+            		       <p class="image-caption"><a href="#">Image Caption</a></p>
+                    </figcaption>
+            		  </figure>
+            		</div>
+          		</div>
+        		</section>
+        		
+          </div>
+        </div>
+        
+        <!-- Accordion -->
+        <div class="collapsible collapsible-collapsed">
+          <h3 class="collapsible-header h6 demo-label flex jc-between md-jc-start"><span>Accordion</span><svg class="icon"><use xlink:href="#icon-caret" /></svg></h3>
+          <!-- demo -->
+          <div class="collapsible-content">
+            
+            <!-- Accordion -->
+            <section class="mod-block"> 
+              <div class="container p-0">          
+                <!-- Accordion Section -->          
+                <div class="collapsible collapsible-collapsed" data-collapsible-set="demo-set1">
+                	<h4 class="collapsible-header h6 demo-label flex jc-between md-jc-start"><span>Section 1</span><svg class="icon"><use xlink:href="#icon-caret" /></svg></h4>
+                	<div class="collapsible-content pt-pb-2 pr-pl-1"><p>And this is the accordion tab content</p></div>
+                </div>
+                <!-- Accordion Section -->
+                <div class="collapsible collapsible-collapsed" data-collapsible-set="demo-set1">
+                	<h4 class="collapsible-header h6 demo-label flex jc-between md-jc-start"><span>Section 2</span><svg class="icon"><use xlink:href="#icon-caret" /></svg></h4>
+                	<div class="collapsible-content pt-pb-2 pr-pl-1"><p>And this is the accordion tab content</p></div>
+                </div>
+                <!-- Accordion Section -->
+                <div class="collapsible collapsible-collapsed" data-collapsible-set="demo-set1">
+                	<h4 class="collapsible-header h6 demo-label flex jc-between md-jc-start"><span>Section 3</span><svg class="icon"><use xlink:href="#icon-caret" /></svg></h4>
+                	<div class="collapsible-content pt-pb-2 pr-pl-1"><p>And this is the accordion tab content</p></div>
+                </div>
+                <!-- Accordion Section -->
+                <div class="collapsible collapsible-collapsed" data-collapsible-set="demo-set1">
+                	<h4 class="collapsible-header h6 demo-label flex jc-between md-jc-start"><span>Section 4</span><svg class="icon"><use xlink:href="#icon-caret" /></svg></h4>
+                	<div class="collapsible-content pt-pb-2 pr-pl-1"><p>And this is the accordion tab content</p></div>
+                </div>
+            </div>
+            </section>
+            
+          </div>
+        </div>
+        
+        <!-- Forms -->
+        <div class="collapsible collapsible-expanded">
+          <h3 class="collapsible-header h6 demo-label flex jc-between md-jc-start"><span>Forms</span><svg class="icon"><use xlink:href="#icon-caret" /></svg></h3>
+          <!-- demo -->
+          <div class="collapsible-content">
+            
+            <!-- form elements -->            
+            <div class="collapsible collapsible-collapsed" data-collapsible-set="demo-set2">
+            	<h4 class="collapsible-header h6 demo-label flex jc-between md-jc-start"><span>Elements</span><svg class="icon"><use xlink:href="#icon-caret" /></svg></h4>
+            	<!-- module -->
+            	<div class="collapsible-content pt-pb-2 pr-pl-1">
+              	
+              	<!-- Form Elements -->
+                <section class="mod-block pt-pb-2">
+                  <div class="container sm-mw-25em">
+                    <!-- Form Intro -->
+                    <div class="form-section text-block sm-text-center mb-2">
+                      <h2>Form Elements</h2>
+                      <p>This is a collection of things we need for forms.</p>
+                    </div>
+                    <!-- Form Build -->
+                    <div class="form-section c-form">
+                      <form name="FormElements">
+                        <div class="form-wrap">
+                          <!-- Text -->
+                          <div class="form-row mb-2">
+                            <label for="" id="-ariaLabel">Text Input</label>
+                            <input id="" name="" type="text" aria-labelledby="-ariaLabel">
+                          </div>
+                
+                          <!-- Input SM -->
+                          <div class="form-row input-sm mb-2">
+                            <label for="" id="-ariaLabel">Input SM</label>
+                            <input id="" name="" type="text" aria-labelledby="-ariaLabel" placeholder="input-sm">
+                          </div>
+                
+                          <!-- Input MD -->
+                          <div class="form-row input-md mb-2">
+                            <label for="" id="-ariaLabel">Input MD</label>
+                            <input id="" name="" type="text" aria-labelledby="-ariaLabel" placeholder="input-md">
+                          </div>
+                
+                          <!-- Input LG -->
+                          <div class="form-row input-lg mb-2">
+                            <label for="" id="-ariaLabel">Input LG</label>
+                            <input id="" name="" type="text" aria-labelledby="-ariaLabel" placeholder="input-lg">
+                          </div>
+                
+                          <!-- Input XL -->
+                          <div class="form-row input-xl mb-2">
+                            <label for="" id="-ariaLabel">Input XL</label>
+                            <input id="" name="" type="text" aria-labelledby="-ariaLabel" placeholder="input-xl">
+                          </div>
+                
+                          <!-- Input Jumbo -->
+                          <div class="form-row input-jumbo mb-2">
+                            <label for="" id="-ariaLabel">Input Jumbo</label>
+                            <input id="" name="" type="text" aria-labelledby="-ariaLabel" placeholder="input-jumbo">
+                          </div>
+                
+                          <!-- Input Lengths -->
+                          <div class="form-row mb-2">
+                            <label for="" id="-ariaLabel">Text Input</label>
+                            <input id="" name="" type="text" aria-labelledby="-ariaLabel">
+                          </div>
+                
+                          <!-- Required Text -->
+                          <div class="form-row mb-2">
+                            <label for="" id="-ariaLabel">Required Text <span class="req-mark">*</span></label>
+                            <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="required" title="This is a required field" required>
+                          </div>
+                
+                          <!-- Disabled Text -->
+                          <div class="form-row mb-2 disabled">
+                            <label for="" id="-ariaLabel">Disabled Text</label>
+                            <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="disabled" title="This is a disabled field" disabled>
+                          </div>
+                
+                          <!-- Email -->
+                          <div class="form-row mb-2">
+                            <label for="" id="-ariaLabel">Email <span class="req-mark">*</span></label>
+                            <input id="" name="" type="email" autocorrect="off" autocapitalize="none" spellcheck="false" aria-labelledby="-ariaLabel" class="required" title="This is a required field" required>
+                          </div>
+                
+                          <!-- Telephone -->
+                          <div class="form-row mb-2">
+                            <label for="" id="-ariaLabel">Telephone <span class="req-mark">*</span></label>
+                            <input id="" name="" type="tel" pattern="[0-9]*" maxlength="10" aria-labelledby="-ariaLabel" class="required" title="This is a required field" required>
+                          </div>
+                
+                          <!-- Passwords -->
+                          <div class="form-group bor-1-DDD mb-2 pt-pb-2 pr-pl-2">
+                
+                            <!-- Password -->
+                            <div class="form-row mb-2">
+                              <label for="" id="-ariaLabel">Password <span class="req-mark">*</span></label>
+                              <span class="input-helper text-sm mb-2">Minimum 6 characters with an uppercase letter, a lowercase letter, and a number.</span>
+                              <input id="" name="" type="password" class="required" minlength="6" aria-labelledby="-ariaLabel" class="required" title="This is a required field" autocorrect="off" autocapitalize="none" spellcheck="false">
+                            </div>
+                
+                            <!-- Confirm Password -->
+                            <div class="form-row mb-2">
+                              <label for="" id="-ariaLabel">Confirm Password <span class="req-mark">*</span></label>
+                              <input id="" name="" type="password" minlength="6" aria-labelledby="-ariaLabel" class="required" title="This is a required field" data-password-confirm autocorrect="off" autocapitalize="none" spellcheck="false">
+                            </div>
+                
+                            <!-- end / form-group -->
+                          </div>
+                
+                          <!-- File -->
+                          <div class="form-row bor-1-DDD mb-2 pt-pb-1 pr-pl-1">
+                            <label class="label-overlay" for="" id="">Upload File</label>
+                            <input class="file-input bg-white bor-1-DDD mb-2 text-sm w-100" type="file" aria-labelledby="-ariaLabel">
+                          </div>
+                
+                          <!-- Textarea -->
+                          <div class="form-row mb-2">
+                            <label for="" id="-ariaLabel">Textarea</label>
+                            <textarea maxlength="250" aria-labelledby="-ariaLabel"></textarea>
+                          </div>
+                
+                          <!-- Card Number -->
+                          <div class="form-row mb-2">
+                            <label for="" id="-ariaLabel">Card Number <span class="req-mark">*</span></label>
+                            <input type="number" inputmode="numeric" pattern="[0-9]*" maxlength="16" placeholder="0000 0000 0000 0000" class="required" aria-labelledby="-ariaLabel" title="This is a required field" required>
+                          </div>
+                
+                          <!-- Zip Code -->
+                          <div class="form-row mb-2">
+                            <label for="" id="-ariaLabel">Zip Code <span class="req-mark">*</span></label>
+                            <input type="number" inputmode="numeric" pattern="[0-9]*" maxlength="5" placeholder="00000" class="required" aria-labelledby="-ariaLabel" title="This is a required field" required>
+                          </div>
+                
+                          <!-- Zip Code 9 Digits -->
+                          <div class="form-row mb-2">
+                            <label for="" id="-ariaLabel">Zip Code (9 digits) <span class="req-mark">*</span></label>
+                            <input type="number" inputmode="numeric" pattern="[0-9]*" maxlength="9" placeholder="000000000" class="required" aria-labelledby="-ariaLabel" title="This is a required field" required>
+                          </div>
+                          
+                           <!-- Datepicker (do I need both for-group & input-group?)-->
+                          <div class="form-group mb-2">
+                
+                            <!-- SMS Allocation -->
+                            <div class="form-row sm-flex-g-1 md-w-60 mb-1 sm-mb-0 sm-mr-tiny">
+                              <label for="" id="-ariaLabel">SMS Allocated <span class="req-mark">*</span></label>
+                              <input type="number" inputmode="numeric" pattern="[0-9]*" placeholder="SMS allocated" class="required" aria-labelledby="-ariaLabel" class="required" title="This is a required input" required>
+                            </div>
+                            
+                            <!-- Active Date -->
+                            <div class="form-row sm-flex-g-1 md-w-20 mb-1 sm-mb-0 sm-mr-tiny">
+                              <label for="active-date" id="activeDate-ariaLabel">Active Date <span class="req-mark">*</span></label>
+                              <input id="active-date" name="activeDate-ariaLabel" type="text" placeholder="&nbsp;" class="date-input required" aria-labelledby="activeDate-ariaLabel" required>
+                            </div>
+                            <div class="form-row sm-flex-g-1 md-w-20 mb-1 sm-mb-0 sm-mr-tiny">
+                              <label for="expiry-date" id="expiryDate-ariaLabel">Expiry Date <span class="req-mark">*</span></label>
+                              <input id="expiry-date" name="expiryDate-ariaLabel" type="text" placeholder="&nbsp;" class="date-input required" aria-labelledby="expiryDate-ariaLabel" required>
+                            </div>
+        
+                
+                          </div>
+                
+                          <!-- Select -->
+                          <div class="form-row mb-2">
+                            <label for="" id="-ariaLabel">Select</label>
+                            <div class="custom-select">
+                              <select>
+                                <option selected disabled>Month…</option>
+                                <option>January</option>
+                                <option>February</option>
+                                <option>March</option>
+                                <option>April</option>
+                                <option>May</option>
+                                <option>June</option>
+                                <option>July</option>
+                                <option>August</option>
+                                <option>September</option>
+                                <option>October</option>
+                                <option>November</option>
+                                <option>December</option>
+                              </select>
+                            </div>
+                          </div>
+                
+                          <!-- Checkbox Group -->
+                          <div class="form-row mb-2">
+                            <span class="form-label">Checkbox Group</span>
+                            <div class="form-group bg-white bor-1-DDD mb-2 pt-pb-1 pr-pl-1">
+                              <label class="checkbox flex flex-wrap ai-center mb-2 w-100">
+                                <input type="checkbox" name="opt1">
+                                <span class="item-desc">Description in sentence form.</span>
+                              </label>
+                              <label class="checkbox flex flex-wrap mb-2 w-100">
+                                <input type="checkbox" name="opt2">
+                                <span class="item-desc">Description in sentence form.</span>
+                              </label>
+                              <label class="checkbox flex flex-wrap w-100">
+                                <input type="checkbox" name="opt3">
+                                <span class="item-desc">Description in sentence form.</span>
+                              </label>
+                            </div>
+                          </div>
+                
+                          <!-- Radio Group -->
+                          <div class="form-row mb-2">
+                            <span class="form-label">Radio Selection</span>
+                            <div class="form-group bg-white bor-1-DDD mb-2 pt-pb-1 pr-pl-1">
+                              <label class="radiobutton flex flex-wrap mb-2 w-100">
+                                <input type="radio" name="option1" aria-labelledby="-ariaLabel">
+                                <span class="item-desc">Description in sentence form.</span>
+                              </label>
+                              <label class="radiobutton flex flex-wrap w-100">
+                                <input type="radio" name="option1" aria-labelledby="-ariaLabel">
+                                <span class="item-desc">Another description in sentence form.</span>
+                              </label>
+                            </div>
+                          </div>
+                
+                          <!-- Terms -->
+                          <div class="form-row bg-white bor-1-DDD mb-2 pt-pb-1 pr-pl-1">
+                            <label class="checkbox flex flex-wrap w-100">
+                              <input type="checkbox" name="agree" required value="terms-and-conditions">
+                              <span class="item-desc">I agree to the <a href="#">Terms &amp; Conditions</a></span>
+                            </label>
+                          </div>
+                
+                          <!-- Terms - invalid -->
+                          <div class="form-row bg-white bor-1-DDD mb-2 pt-pb-1 pr-pl-1 invalid">
+                            <label class="checkbox flex flex-wrap pb-sm w-100">
+                              <input type="checkbox" name="checkbox-err" required value="terms-and-conditions">
+                              <span class="item-desc">I agree to the <a href="#">Terms &amp; Conditions</a></span>
+                            </label>
+                            <div class="error-msg text-sm">Please agree to the Terms &amp; Conditions to continue.</div>
+                          </div>
+                          <!-- Buttons -->
+                          <div class="form-row button-wrap flex flex-wrap sm-jc-between mb-2">
+                            <input class="btn-outline save-button" type="submit" value="save">
+                            <input class="btn-primary submit-button" type="submit" value="submit">
+                          </div>
+                          
+                          <!-- Submit -->
+                          <div class="form-row mb-2 submit-input">
+                            <input class="btn-primary submit-button" type="submit" value="submit">
+                          </div>
+                
+                          <!-- end / form-wrap -->
+                        </div>
+                      </form>
+                    </div>
+                    <!-- end / form elements -->
+                  </div>
+                </section>
+          		  
+          		  <!-- end / -->
+            	</div>
+            </div>
+            
+            <!-- forms input sizes -->
+            <div class="collapsible collapsible-collapsed" data-collapsible-set="demo-set3">
+            	<h4 class="collapsible-header h6 demo-label flex jc-between md-jc-start"><span>Input Sizes</span><svg class="icon"><use xlink:href="#icon-caret" /></svg></h4>
+            	<!-- module -->
+              <div class="collapsible-content pt-pb-2 pr-pl-1">
+              	
+              	<!-- Form Input Sizes -->
+                <section class="mod-block pt-pb-2">
+                  <div class="container sm-mw-25em">
+                    <!-- Form Intro -->
+                    <div class="form-section text-block sm-text-center">
+                      <h2>Form Input Sizes</h2>
+                      <p>Different input styles.</p>
+                    </div>
+                    <!-- Form Build -->
+                    <div class="form-section c-form">
+                      <form name="InputSizes">
+                        <div class="form-wrap">
+                
+                          <!-- Text -->
+                          <div class="form-row mb-2">
+                            <label for="" id="-ariaLabel">Text Input</label>
+                            <input id="" name="" type="text" aria-labelledby="-ariaLabel">
+                          </div>
+                
+                          <!-- Input SM -->
+                          <div class="form-row input-sm mb-2">
+                            <label for="" id="-ariaLabel">Input SM</label>
+                            <input id="" name="" type="text" aria-labelledby="-ariaLabel" placeholder="input-sm">
+                          </div>
+                
+                          <!-- Input MD -->
+                          <div class="form-row input-md mb-2">
+                            <label for="" id="-ariaLabel">Input MD</label>
+                            <input id="" name="" type="text" aria-labelledby="-ariaLabel" placeholder="input-md">
+                          </div>
+                
+                          <!-- Input LG -->
+                          <div class="form-row input-lg mb-2">
+                            <label for="" id="-ariaLabel">Input LG</label>
+                            <input id="" name="" type="text" aria-labelledby="-ariaLabel" placeholder="input-lg">
+                          </div>
+                
+                          <!-- Input XL -->
+                          <div class="form-row input-xl mb-2">
+                            <label for="" id="-ariaLabel">Input XL</label>
+                            <input id="" name="" type="text" aria-labelledby="-ariaLabel" placeholder="input-xl">
+                          </div>
+                
+                          <!-- Input Jumbo -->
+                          <div class="form-row input-jumbo mb-2">
+                            <label for="" id="-ariaLabel">Input Jumbo</label>
+                            <input id="" name="" type="text" aria-labelledby="-ariaLabel" placeholder="input-jumbo">
+                          </div>
+                
+                          <!-- end / form-wrap -->
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </section>
+          		  
+          		  <!-- end / -->
+            	</div>
+            </div>
+            
+            <!-- form layout -->
+            <div class="collapsible collapsible-collapsed" data-collapsible-set="demo-set2">
+            	<h4 class="collapsible-header h6 demo-label flex jc-between md-jc-start"><span>Layout</span><svg class="icon"><use xlink:href="#icon-caret" /></svg></h4>
+            	<!-- module -->
+            	<div class="collapsible-content pt-pb-2 pr-pl-1">
+            
+                  <!-- Form Layout -->
+                  <section class="mod-block pt-pb-2">
+                    <div class="container sm-mw-35em">
+                      <!-- Form Intro -->
+                      <div class="form-section text-block sm-text-center mb-2">
+                        <h2>Form Layout</h2>
+                        <p>This shows layout options and input sections.</p>
+                      </div>
+                      <!-- Form Build -->
+                      <div class="form-section c-form">
+                        <form name="FormName">
+                          <div class="form-wrap">
+                  
+                            <!-- Name -->
+                            <div class="form-group sm-flex sm-jc-between mb-1">
+                              <!-- First Name -->
+                              <div class="form-row sm-flex-g-1 md-w-35 mb-1 sm-mb-0 sm-mr-tiny">
+                                <label for="" id="-ariaLabel">First Name <span class="req-mark">*</span></label>
+                                <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="required" title="This is a required input" required>
+                              </div>
+                              <!-- Last Name -->
+                              <div class="form-row sm-flex-g-1 md-w-65 sm-ml-tiny">
+                                <label for="" id="-ariaLabel">Last Name <span class="req-mark">*</span></label>
+                                <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="required" title="This is a required input" required>
+                              </div>
+                            </div>
+                  
+                            <!-- Email & Telephone -->
+                            <div class="form-group sm-flex sm-jc-between mb-1">
+                  
+                              <!-- Email -->
+                              <div class="form-row sm-flex-g-1 md-w-65 mb-1 sm-mb-0 sm-mr-tiny">
+                                <label for="" id="-ariaLabel">Email <span class="req-mark">*</span></label>
+                                <input id="" name="" type="email" autocorrect="off" autocapitalize="none" spellcheck="false" aria-labelledby="-ariaLabel" class="required" title="This is a required field" required>
+                              </div>
+                  
+                              <!-- Telephone -->
+                              <div class="form-row sm-flex-g-1 md-w-35 sm-ml-tiny">
+                                <label for="" id="-ariaLabel">Telephone <span class="req-mark">*</span></label>
+                                <input id="" name="" type="tel" pattern="[0-9]*" maxlength="10" aria-labelledby="-ariaLabel" class="required" title="This is a required field" required>
+                              </div>
+                  
+                              <!-- end / form-group -->
+                            </div>
+                  
+                  
+                            <!-- Credit Card -->
+                            <div class="form-group sm-flex sm-jc-between mb-1">
+                  
+                              <!-- Card Number -->
+                              <div class="form-row sm-flex-g-1 md-w-65 mb-1 sm-mb-0 sm-mr-tiny">
+                                <label for="" id="-ariaLabel">Card Number <span class="req-mark">*</span></label>
+                                <input type="number" inputmode="numeric" pattern="[0-9]*" maxlength="16" placeholder="0000 0000 0000 0000" class="required" aria-labelledby="-ariaLabel" title="This is a required field" required>
+                              </div>
+                  
+                              <!-- Card Types -->
+                              <div class="form-row sm-flex-g-1 md-w-35 mb-1 sm-mb-0 sm-ml-sm">
+                                <div class="cc-icons">
+                                  <p class="form-label mb-0">We accept:</p>
+                                  <span class="creditcard-icon creditcarddisplay_type-visa icon-card-visa">Visa</span>
+                                  <span class="creditcard-icon creditcarddisplay_type-mastercard icon-card-mastercard">Mastercard</span>
+                                  <span class="creditcard-icon creditcarddisplay_type-amex icon-card-amex">AMEX</span>
+                                  <span class="creditcard-icon creditcarddisplay_type-discover icon-card-discover">Discover</span>
+                                </div>
+                              </div>
+                  
+                  
+                            </div>
+                  
+                  
+                            <!-- Credit Card Info -->
+                            <div class="form-group sm-flex sm-jc-between mb-1">
+                  
+                              <!-- Select -->
+                              <div class="form-row sm-flex-g-1 sm-w-40 md-w-45 mb-1 sm-mb-0 sm-mr-tiny">
+                                <label for="" id="-ariaLabel">Expires <span class="req-mark">*</span></label>
+                                <div class="custom-select">
+                                  <select required>
+                                    <option value="-1" selected disabled>Month</option>
+                                    <option value="1">01 - January</option>
+                                    <option value="2">02 - February</option>
+                                    <option value="3">03 - March</option>
+                                    <option value="4">04 - April</option>
+                                    <option value="5">05 - May</option>
+                                    <option value="6">06 - June</option>
+                                    <option value="7">07 - July</option>
+                                    <option value="8">08 - August</option>
+                                    <option value="9">09 - September</option>
+                                    <option value="10">10 - October</option>
+                                    <option value="11">11 - November</option>
+                                    <option value="12">12 - December</option>
+                                  </select>
+                                </div>
+                                <!-- end / custom select -->
+                              </div>
+                  
+                              <!-- Select -->
+                              <div class="form-row sm-flex-g-1 sm-w-35 md-w-35 mb-1 sm-mb-0 sm-ml-tiny sm-mr-tiny">
+                                <label for="" id="-ariaLabel">Year <span class="req-mark">*</span></label>
+                                <div class="custom-select">
+                                  <select required>
+                                    <option value="-1" selected disabled>Year</option>
+                                    <option value="2016">2016</option>
+                                    <option value="2017">2017</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                  </select>
+                                </div>
+                                <!-- end / custom select -->
+                              </div>
+                  
+                              <!-- Card Number -->
+                              <div class="form-row sm-flex-g-1 sm-w-25 md-w-20 mb-1 sm-mb-0 sm-ml-tiny">
+                                <label for="" id="-ariaLabel">Code <span class="req-mark">*</span></label>
+                                <input type="number" inputmode="numeric" pattern="[0-9]*" maxlength="4" placeholder="0000" class="required" aria-labelledby="-ariaLabel" title="This is a required field" required>
+                              </div>
+                  
+                  
+                            </div>
+                  
+                            <!-- Address -->
+                            <div class="form-group sm-flex sm-jc-between mb-1 hidden">
+                  
+                              <!-- Select -->
+                              <div class="form-row sm-flex-g-1 md-w-65 mb-1 sm-mb-0">
+                                <label for="" id="-ariaLabel">Select</label>
+                                <div class="custom-select">
+                                  <select>
+                                    <option selected disabled>Month…</option>
+                                    <option>January</option>
+                                    <option>February</option>
+                                    <option>March</option>
+                                    <option>April</option>
+                                    <option>May</option>
+                                    <option>June</option>
+                                    <option>July</option>
+                                    <option>August</option>
+                                    <option>September</option>
+                                    <option>October</option>
+                                    <option>November</option>
+                                    <option>December</option>
+                                  </select>
+                                </div>
+                              </div>
+                  
+                  
+                            </div>
+                  
+                            <!-- Textarea -->
+                            <div class="form-row mb-1">
+                              <label for="" id="-ariaLabel">Textarea</label>
+                              <textarea maxlength="250" aria-labelledby="-ariaLabel"></textarea>
+                            </div>
+                  
+                  
+                            <!-- Buttons -->
+                            <div class="form-row button-wrap flex flex-wrap sm-jc-between">
+                              <input class="btn-outline save-button" type="submit" value="save">
+                              <input class="btn-primary submit-button" type="submit" value="submit">
+                            </div>
+                  
+                            <!-- end / form-wrap -->
+                          </div>
+                        </form>
+                      </div>
+                      <!-- end / -->
+                    </div>
+                   </section>
+            
+                <!-- end / -->
+            	</div>
+            </div>
+            
+            <!-- login form -->
+            <div class="collapsible collapsible-collapsed" data-collapsible-set="demo-set2">
+            	<h4 class="collapsible-header h6 demo-label flex jc-between md-jc-start"><span>Login Form</span><svg class="icon"><use xlink:href="#icon-caret" /></svg></h4>
+            	<!-- module -->
+            	<div class="collapsible-content">
+              	
+              	<!-- Login Form -->
+                <section class="mod-block pt-pb-2">
+                  <div class="container sm-mw-25em">                
+                    <!-- Form Intro -->
+                    <div class="form-section text-block sm-text-center">
+                      <h2>Login Form</h2>
+                      <p>Please login with with your credentials.</p>
+                    </div>
+                    <!-- Form Build -->
+                    <div class="form-section c-form login-form">
+                      <!-- Form -->
+                      <form name="LoginForm">
+                        <div class="form-wrap">
+                
+                          <!-- Required Text -->
+                          <div class="form-row mb-1">
+                            <label for="" id="-ariaLabel">Username <span class="req-mark">*</span></label>
+                            <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="required" title="This is a required field" required>
+                          </div>
+                
+                          <!-- Password -->
+                          <div class="form-row mb-1">
+                            <label for="" id="-ariaLabel">Password <span class="req-mark">*</span></label>
+                            <input id="" name="" type="password" minlength="6" required>
+                          </div>
+                
+                          <!-- Remember Me / Forgot Password -->
+                          <div class="form-row form-helpers flex flex-wrap jc-between mb-1">
+                            <!-- Remember Password -->
+                            <label class="checkbox-save">
+                              <input type="checkbox" name="opt1" id="opt1">
+                              <span class="text-sm">Remember Me</span>
+                            </label>
+                            <!-- Reset Password -->
+                            <label class="password-link">
+                              <span class="text-sm"><a href="#">Reset Password</a></span>
+                            </label>
+                          </div>
+                          
+                          <!-- Submit -->
+                          <div class="form-row submit-input-row">
+                            <input class="btn-primary submit-button" type="submit" value="sign in">
+                          </div>
+                
+                          <!-- end / form-wrap -->
+                        </div>
+                      </form>
+                    </div>                
+                  </div>
+                </section>
+                
+          		  <!-- end / -->
+            	</div>
+            </div>           
+            
+            <!-- SA - setup capacity -->
+            <div class="collapsible collapsible-expanded" data-collapsible-set="demo-set2">
+            	<h4 class="collapsible-header h6 demo-label flex jc-between md-jc-start"><span>SA - Setup Capacity</span><svg class="icon"><use xlink:href="#icon-caret" /></svg></h4>
+            	<!-- module -->          	
+            	<div class="collapsible-content pt-pb-2 pr-pl-1">
+
+                <!-- Form - Setup Capacity -->
+                <section class="mod-block pt-pb-2">
+                  <div class="container sm-mw-35em">
+                    <!-- Form Intro -->
+                    <div class="form-section text-block text-center mb-2">
+                      <h2 id="capacity" class="mb-tiny">Setup Capacity</h2>
+                      <p>Super Admin capacity setup form.</p>
+                      <!-- end / -->
+                    </div>
+                    <!-- Form Build -->
+                    <div class="form-section c-form">
+                      <h4 class="section-title-sm text-left mb-1">Capacity</h4>
+                      <!-- Data List (this should probably be a table) -->
+                      <ul class="data-list p-0 w-100">
+                        <li class="flex flex-d-col sm-flex-d-row mb-1-pt5 sm-jc-between">
+                          <span class="pr-1">MNO Name</span>
+                          <span class="pr-1">100000 SMS</span>
+                          <span class="icon-group">
+                            <a href="#">
+                              <svg class="icon mr-ml-0">
+                                <use xlink:href="#icon-plus" />
+                              </svg>
+                              <span class="sr-only">Add SMS Capacity</span>
+                            </a>
+                            <a href="#">
+                              <svg class="icon mr-ml-0">
+                                <use xlink:href="#icon-minus" />
+                              </svg>
+                              <span class="sr-only">Delete SMS Capacity</span>
+                            </a>
+                            <a href="#">
+                              <svg class="icon mr-ml-0  ">
+                                <use xlink:href="#icon-pencil" />
+                              </svg>
+                              <span class="sr-only">Edit SMS Capacity</span>
+                            </a>
+                          </span>
+                        </li>
+                      </ul>
+                      <form name="SetupCapacity">
+                        <div class="form-wrap">
+                          <!-- Provider Name -->
+                          <div class="form-group sm-flex sm-jc-between mb-1">
+                            <!-- First Name -->
+                            <div class="form-row sm-flex-g-1 md-w-50 mb-1 sm-mb-0 sm-mr-tiny">
+                              <label for="" id="-ariaLabel">First Name <span class="req-mark">*</span></label>
+                              <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="required" title="This is a required input" required>
+                            </div>
+                            <!-- Last Name -->
+                            <div class="form-row sm-flex-g-1 md-w-50 sm-ml-tiny">
+                              <label for="" id="-ariaLabel">Last Name <span class="req-mark">*</span></label>
+                              <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="required" title="This is a required input" required>
+                            </div>
+                          </div>
+                          <!-- SMS Allocated & Dates -->
+                          <div class="form-group sm-flex sm-jc-between mb-1">
+                            <!-- SMS Allocation -->
+                            <div class="form-row sm-flex-g-1 md-w-50 mb-1 sm-mb-0 sm-mr-tiny">
+                              <label for="" id="-ariaLabel">SMS Allocated <span class="req-mark">*</span></label>
+                              <input type="number" inputmode="numeric" pattern="[0-9]*" placeholder="SMS allocated" class="required" aria-labelledby="-ariaLabel" class="required" title="This is a required input" required>
+                            </div>
+                            <!-- Active Date -->
+                            <div class="form-row sm-flex-g-1 md-w-25 mb-1 sm-mb-0 sm-mr-tiny">
+                              <label for="active-date" id="activeDate-ariaLabel">Active Date <span class="req-mark">*</span></label>
+                              <input id="active-date" name="activeDate-ariaLabel" type="text" placeholder="&nbsp;" class="date-input required" aria-labelledby="activeDate-ariaLabel" required>
+                            </div>
+                            <div class="form-row sm-flex-g-1 md-w-25 mb-1 sm-mb-0 sm-ml-tiny">
+                              <label for="expiry-date" id="expiryDate-ariaLabel">Expiry Date <span class="req-mark">*</span></label>
+                              <input id="expiry-date" name="expiryDate-ariaLabel" type="text" placeholder="&nbsp;" class="date-input required" aria-labelledby="expiryDate-ariaLabel" required>
+                            </div>
+                          </div>
+                          <!-- Buttons -->
+                          <div class="form-row button-wrap flex flex-d-col sm-flex-d-row sm-jc-between">
+                            <button class="btn-outline cancel-button mb-1 sm-mb-0 sm-mr-sm">cancel</button>
+                            <input class="btn-primary save-button mb-1 sm-mb-0 sm-ml-sm" type="submit" value="save">
+                          </div>
+                          <!-- end / form-wrap -->
+                        </div>
+                      </form>
+                    </div>
+                    <!-- end / -->
+                  </div>
+                </section>
+              
+              <!-- end / -->
+              </div>
+            </div>
+            
+            <!-- SA - retire packs -->
+            <div class="collapsible collapsible-expanded" data-collapsible-set="demo-set2">
+            	<h4 class="collapsible-header h6 demo-label flex jc-between md-jc-start"><span>SA - Retire Packs</span><svg class="icon"><use xlink:href="#icon-caret" /></svg></h4>
+            	<!-- module -->          	
+            	<div class="collapsible-content pt-pb-2 pr-pl-1">
+              	
+              	<!-- Form - Retire Campaign Packs -->
+                <section class="mod-block pt-pb-2">
+                  <div class="container sm-mw-35em">
+                    <!-- Form Intro -->
+                    <div class="form-section text-block text-center mb-2">
+                      <h2 id="campaigns" class="mb-tiny">Retire Campaigns</h2>
+                      <p>Super Admin campaign setup form.</p>
+                      <ul class="data-list text-center pt-1 pr-pl-0 w-100">
+                        <li class="flex flex-d-col sm-flex-d-row sm-jc-between mb-1-pt5">
+                          <span class="pr-1">Campaign Pack Name</span>
+                          <span class="pr-1">Active - 7/2/2016</span>
+                          <span class="icon-group">
+                            <a href="#">
+                              <svg class="icon mr-ml-0">
+                                <use xlink:href="#icon-plus" />
+                              </svg>
+                              <span class="sr-only">Add Short Code</span>
+                            </a>
+                            <a href="#">
+                              <svg class="icon mr-ml-0">
+                                <use xlink:href="#icon-minus" />
+                              </svg>
+                              <span class="sr-only">Delete Short Code</span>
+                            </a>
+                            <a href="#">
+                              <svg class="icon mr-ml-0">
+                                <use xlink:href="#icon-pencil" />
+                              </svg>
+                              <span class="sr-only">Edit Short Code</span>
+                            </a>
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- Form Build -->
+                    <div class="form-section c-form">
+                      <h4 class="section-title-sm mb-1">Retire Pack</h4>
+                      <form name="RetireCampaignPacks">
+                        <div class="form-wrap">
+                          <!-- Pack Name & Price -->
+                          <div class="form-group sm-flex sm-ai-center sm-jc-between sm-w-70 mb-1">
+                            <!-- Retire Date -->                            
+                            <div class="form-row sm-flex-g-1 md-w-50 mb-1 sm-mb-0 sm-mr-tiny">
+                              <label for="campaign-retire-date" id="retireDate-ariaLabel">Retire Date <span class="req-mark">*</span></label>
+                              <input id="campaign-retire-date" name="retireDate-ariaLabel" type="text" class="date-input required" aria-labelledby="retireDate-ariaLabel" required>
+                            </div>
+                            <div class="form-row sm-flex-g-1 md-w-50 mb-1 sm-mb-0 sm-ml-tiny">
+                              <label class="checkbox flex flex-wrap ai-center w-100">
+                              <input type="checkbox" name="opt1">
+                              <span class="item-desc">Delete Immediatley</span>
+                              </label>                      
+                            </div>
+                            <!-- end / -->
+                          </div>
+                          <!-- Buttons -->
+                          <div class="form-row button-wrap flex flex-d-col sm-flex-d-row sm-jc-between">
+                            <button class="btn-outline cancel-button mb-1 sm-mb-0 sm-mr-sm">cancel</button>
+                            <input class="btn-primary save-button mb-1 sm-mb-0 sm-ml-sm" type="submit" value="save" data-remodal-target="retired-campaign">
+                          </div>
+                          <!-- Campagin Created -->
+                          <div class="remodal" data-remodal-id="setup-campaign" role="dialog" aria-labelledby="setup-campaign-title" aria-describedby="setup-campaign-desc">
+                            <!-- Close Button -->
+                            <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                            <!-- Modal Content -->
+                            <div class="modal-content">
+                              <!-- Title -->
+                              <h2 id="setup-campaign-title">Campaign Created</h2>
+                              <!-- Description -->
+                              <div id="setup-campaign-desc" class="post-text">
+                              </div>
+                            </div>
+                            <!-- Modal Buttons -->
+                            <div class="modal-buttons">
+                              <button data-remodal-action="cancel" class="btn-cancel">cancel</button>
+                              <button data-remodal-action="confirm" class="btn-primary">OK</button>
+                            </div>
+                          </div>
+                          <!-- Campagin Retired -->
+                          <div class="remodal" data-remodal-id="retired-campaign" role="dialog" aria-labelledby="retired-campaign-title" aria-describedby="retired-campaign-desc">
+                            <!-- Close Button -->
+                            <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                            <!-- Modal Content -->
+                            <div class="modal-content">
+                              <!-- Title -->
+                              <h2 id="retired-campaign-title">Campaign Retired</h2>
+                              <!-- Description -->
+                              <div id="retired-campaign-desc" class="post-text">
+                              </div>
+                            </div>
+                            <!-- Modal Buttons -->
+                            <div class="modal-buttons">
+                              <button data-remodal-action="cancel" class="btn-cancel">cancel</button>
+                              <button data-remodal-action="confirm" class="btn-primary">OK</button>
+                            </div>
+                          </div>
+                          <!-- end / form-wrap -->
+                        </div>
+                      </form>
+                    </div>
+                    <!-- end / -->
+                  </div>
+                </section>
+            
+                <!-- end / -->
+              </div>
+            </div>
+            
+            
+            <!-- SA - setup short codes -->
+            <div class="collapsible collapsible-expanded" data-collapsible-set="demo-set2">
+            	<h4 class="collapsible-header h6 demo-label flex jc-between md-jc-start"><span>SA - Setup Short Codes</span><svg class="icon"><use xlink:href="#icon-caret" /></svg></h4>
+            	<!-- module -->          	
+            	<div class="collapsible-content pt-pb-2 pr-pl-1">
+                <!-- Form - Short Codes -->
+                <section class="mod-block pt-pb-2">
+                  <div class="container sm-mw-35em">
+                    <!-- Form Intro -->
+                    <div class="form-section text-block text-center mb-2">
+                      <h2 id="short-codes" class="mb-tiny">Setup Short Codes</h2>
+                      <p>Super Admin short code setup form.</p>
+                    </div>
+                    <!-- Form Build -->
+                    <div class="form-section c-form">
+                      <h4 class="section-title-sm mb-1">Short Codes</h4>
+                      <!-- Data List (this should probably be a table) -->
+                      <ul class="data-list text-center p-0 w-100">
+                        <li class="flex flex-d-col sm-flex-d-row sm-jc-between mb-1-pt5">
+                          <span class="pr-1">MNO Name</span>
+                          <span class="pr-1">Code ####</span>
+                          <span class="icon-group">
+                            <a href="#">
+                              <svg class="icon mr-ml-0">
+                                <use xlink:href="#icon-plus" />
+                              </svg>
+                              <span class="sr-only">Add Short Code</span>
+                            </a>
+                            <a href="#">
+                              <svg class="icon mr-ml-0">
+                                <use xlink:href="#icon-minus" />
+                              </svg>
+                              <span class="sr-only">Delete Short Code</span>
+                            </a>
+                            <a href="#">
+                              <svg class="icon mr-ml-0">
+                                <use xlink:href="#icon-pencil" />
+                              </svg>
+                              <span class="sr-only">Edit Short Code</span>
+                            </a>
+                          </span>
+                        </li>
+                      </ul>
+                      <form name="ShortCodes">
+                        <div class="form-wrap">
+                          <!-- Short Code & MNO -->
+                          <div class="form-group sm-flex sm-jc-between mb-1">
+                            <!-- Short Code -->
+                            <div class="form-row sm-flex-g-1 md-w-30 mb-1 sm-mb-0 sm-mr-tiny">
+                              <label for="" id="-ariaLabel">Short Code<span class="req-mark">*</span></label>
+                              <input type="number" inputmode="numeric" pattern="[0-9]*" maxlength="5" placeholder="00000" class="required" aria-labelledby="-ariaLabel" title="This is a required field" required>
+                            </div>
+                            <!-- MNO -->
+                            <div class="form-row sm-flex-g-1 md-w-70 sm-ml-tiny">
+                              <label for="" id="-ariaLabel">MNO Name <span class="req-mark">*</span></label>
+                              <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="required" title="This is a required input" required>
+                            </div>
+                          </div>
+                          <!-- Active Dates -->
+                          <div class="form-group sm-flex sm-jc-between mb-1">
+                            <!-- Active Date -->
+                            <div class="form-row sm-flex-g-1 md-w-50 mb-1 sm-mb-0 sm-mr-tiny">
+                              <label for="active-date" id="activeDate-ariaLabel">Active Date <span class="req-mark">*</span></label>
+                              <input id="active-date" name="activeDate-ariaLabel" type="text" placeholder="&nbsp;" class="date-input required" aria-labelledby="activeDate-ariaLabel" required>
+                            </div>
+                            <div class="form-row sm-flex-g-1 md-w-50 mb-1 sm-mb-0 sm-ml-tiny">
+                              <label for="expiry-date" id="expiryDate-ariaLabel">Expiry Date <span class="req-mark">*</span></label>
+                              <input id="expiry-date" name="expiryDate-ariaLabel" type="text" placeholder="&nbsp;" class="date-input required" aria-labelledby="expiryDate-ariaLabel" required>
+                            </div>
+                          </div>
+                          <!-- Buttons -->
+                          <div class="form-row button-wrap flex flex-d-col sm-flex-d-row sm-jc-between">
+                            <button class="btn-outline cancel-button mb-1 sm-mb-0 sm-mr-sm">cancel</button>
+                            <input class="btn-primary save-button mb-1 sm-mb-0 sm-ml-sm" type="submit" value="save">
+                          </div>
+                          <!-- end / form-wrap -->
+                        </div>
+                      </form>
+                    </div>
+                    <!-- Assign Short Code -->
+                    <div class="form-section">
+                    </div>
+                    <!-- end / -->
+                  </div>
+                </section>
+          
+                <!-- end / -->
+              </div>
+            </div>
+            
+            
+             <!-- SA - setup campaigns -->
+            <div class="collapsible collapsible-expanded" data-collapsible-set="demo-set2">
+            	<h4 class="collapsible-header h6 demo-label flex jc-between md-jc-start"><span>SA - Setup Campaigns</span><svg class="icon"><use xlink:href="#icon-caret" /></svg></h4>
+            	<!-- module -->          	
+            	<div class="collapsible-content pt-pb-2 pr-pl-1">
+                <!-- Form - Setup Campaign Packs -->
+                <section class="mod-block pt-pb-2">
+                  <div class="container sm-mw-35em">
+                    <!-- Form Intro -->
+                    <div class="form-section text-block text-center mb-2">
+                      <h2 id="campaigns" class="mb-tiny">Setup Campaigns</h2>
+                      <p>Super Admin campaign setup form.</p>
+                      <ul class="data-list text-center p-0 w-100">
+                        <li class="flex flex-d-col sm-flex-d-row sm-jc-between mb-1-pt5">
+                          <span class="pr-1">Campaign Pack Name</span>
+                          <span class="pr-1">Active - 7/2/2016</span>
+                          <span class="icon-group">
+                            <a href="#">
+                              <svg class="icon mr-ml-0">
+                                <use xlink:href="#icon-plus" />
+                              </svg>
+                              <span class="sr-only">Add Short Code</span>
+                            </a>
+                            <a href="#">
+                              <svg class="icon mr-ml-0">
+                                <use xlink:href="#icon-minus" />
+                              </svg>
+                              <span class="sr-only">Delete Short Code</span>
+                            </a>
+                            <a href="#">
+                              <svg class="icon mr-ml-0">
+                                <use xlink:href="#icon-pencil" />
+                              </svg>
+                              <span class="sr-only">Edit Short Code</span>
+                            </a>
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- Form Build -->
+                    <div class="form-section c-form">
+                      <h4 class="section-title-sm mb-1">New Pack</h4>
+                      <form name="CampaignPacks">
+                        <div class="form-wrap">
+                          <!-- Pack Name & Price -->
+                          <div class="form-group sm-flex sm-jc-between mb-1">
+                            <!-- Pack Name -->
+                            <div class="form-row sm-flex-g-1 md-w-60 mb-1 sm-mb-0 sm-mr-tiny">
+                              <label for="" id="-ariaLabel">Pack Name<span class="req-mark">*</span></label>
+                              <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="required" title="This is a required input" required>
+                            </div>
+                            <!-- Price -->
+                            <div class="form-row sm-flex-g-1 md-w-40 sm-ml-tiny">
+                              <label for="" id="-ariaLabel">Price <span class="req-mark">*</span></label>
+                              <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="required" title="This is a required input" required>
+                            </div>
+                            <!-- end / -->
+                          </div>
+                          <!-- Validity -->
+                          <div class="form-group sm-flex sm-jc-between mb-1">
+                            <!-- Days -->
+                            <div class="form-row sm-flex-g-1 mb-1 sm-mr-tiny md-w-40">
+                              <label for="" id="-ariaLabel">Days<span class="req-mark">*</span></label>
+                              <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="required" title="This is a required input" required>
+                            </div>
+                            <!-- Months -->
+                            <div class="form-row sm-flex-g-1 mb-1 sm-ml-tiny sm-mr-tiny md-w-35">
+                              <label for="" id="-ariaLabel">Months<span class="req-mark">*</span></label>
+                              <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="required" title="This is a required input" required>
+                            </div>
+                            <!-- Years -->
+                            <div class="form-row sm-flex-g-1 mb-1 sm-ml-tiny md-w-25">
+                              <label for="" id="-ariaLabel">Years<span class="req-mark">*</span></label>
+                              <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="required" title="This is a required input" required>
+                            </div>
+                            <!-- end / -->
+                          </div>
+                          <!-- Allocate SMS & Email -->
+                          <div class="form-group sm-flex sm-jc-between mb-1">
+                            <!-- SMS -->
+                            <div class="form-row sm-flex-g-1 sm-mr-tiny mb-1 md-w-50">
+                              <label for="" id="-ariaLabel">SMS<span class="req-mark">*</span></label>
+                              <input type="number" inputmode="numeric" pattern="[0-9]*" maxlength="10" placeholder="0000000000" class="required" aria-labelledby="-ariaLabel" title="This is a required field" required>
+                            </div>
+                            <!-- Emails -->
+                            <div class="form-row sm-flex-g-1 sm-ml-tiny md-w-50">
+                              <label for="" id="-ariaLabel">Emails<span class="req-mark">*</span></label>
+                              <input type="number" inputmode="numeric" pattern="[0-9]*" maxlength="10" placeholder="0000000000" class="required" aria-labelledby="-ariaLabel" title="This is a required field" required>
+                            </div>
+                            <!-- end / -->
+                          </div>
+                          <!-- Quota -->
+                          <div class="form-row mb-1">
+                            <span class="form-label pb-sm">Usage</span>
+                            <div class="form-group sm-flex sm-jc-start">
+                              <label class="radiobutton mb-sm sm-mb-0 sm-mr-1">
+                              <input type="radio" name="option1" aria-labelledby="-ariaLabel">
+                              <span class="item-desc">No restrictions</span>
+                              </label>
+                              <label class="radiobutton">
+                              <input type="radio" name="option1" aria-labelledby="-ariaLabel">
+                              <span class="item-desc">Limit to monthly quota</span>
+                              </label>
+                            </div>
+                          </div>
+                          <!-- Buttons -->
+                          <div class="form-row button-wrap flex flex-d-col sm-flex-d-row sm-jc-between">
+                            <button class="btn-outline cancel-button mb-1 sm-mb-0 sm-mr-sm">cancel</button>
+                            <input class="btn-primary save-button mb-1 sm-mb-0 sm-ml-sm" type="submit" value="save" data-remodal-target="setup-campaign">
+                          </div>
+                          <!-- Campagin Created -->
+                          <div class="remodal" data-remodal-id="setup-campaign" role="dialog" aria-labelledby="setup-campaign-title" aria-describedby="setup-campaign-desc">
+                            <!-- Close Button -->
+                            <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                            <!-- Modal Content -->
+                            <div class="modal-content">
+                              <!-- Title -->
+                              <h2 id="setup-campaign-title">Campaign Created</h2>
+                              <!-- Description -->
+                              <div id="setup-campaign-desc" class="post-text">
+                              </div>
+                            </div>
+                            <!-- Modal Buttons -->
+                            <div class="modal-buttons">
+                              <button data-remodal-action="cancel" class="btn-cancel">cancel</button>
+                              <button data-remodal-action="confirm" class="btn-primary">OK</button>
+                            </div>
+                          </div>
+                          <!-- end / form-wrap -->
+                        </div>
+                      </form>
+                    </div>
+                    <!-- end / -->
+                  </div>
+                </section>
+            
+            
+                <!-- end / -->
+              </div>
+            </div>
+            
+            
+            <!-- end / forms -->
+          </div>
+        </div>
+
+    		<!-- Modals -->
+    		<div class="collapsible collapsible-collapsed">
+          <h6 class="collapsible-header demo-label flex jc-between md-jc-start"><span>Modals</span> <svg class="icon"><use xlink:href="#icon-caret" /></svg> </h6>
+          <div class="collapsible-content">
+            
+            <!-- Modals -->
+        		<section class="mod-block pt-pb-1">
+        		  <div class="container flex flex-wrap">
+          		  <!-- Modal w/ Plain HTML -->
+      	       <div class="modal-sample">
+        	       
+        	       <!-- Modal Button -->
+        	       <a class="btn" href="#modal-one">Plain HTML</a>
+        	        	       
+        	       <!-- Modal One -->
+        	       <div class="remodal" data-remodal-id="modal-one" role="dialog" aria-labelledby="modal-one-title" aria-describedby="modal-one-desc">
+          	       <!-- Close Button -->
+                  <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                  <!-- Modal Content -->
+                  <div class="modal-content">                  
+                    <!-- Title -->
+                    <h2 id="modal-one-title">Heading h2</h2>
+                    <h3>Heading h3</h3>
+                    <h4>Heading h4</h4>  		                    
+                    <!-- Description -->
+                    <div id="modal-one-desc" class="post-text">
+                        Mollitia quas officiis neque odio dolore fugiat cupiditate reprehenderit ad inventore tenetur voluptas! Reprehenderit, modi, at, enim expedita officia assumenda nam nulla explicabo quos eius recusandae aliquam.
+                      <ul>                        
+                        <li>This is a Post List Item that does not link.</li>
+                        <li><a href="#">Maybe you want to make this Post List Item clickable?</a></li>
+                      </ul>
+                    </div>                
+                  </div>
+                  <!-- Modal Buttons -->
+                  <div class="modal-buttons">
+                    <button data-remodal-action="cancel" class="btn-cancel">cancel</button>
+                    <button data-remodal-action="confirm" class="btn-primary">OK</button>
+                  </div>
+                </div> 
+        	       
+        	     <!-- END --> 	       
+      	       </div>
+      	       
+      	       <!-- Modal w/ Content Post -->
+      	       <div class="modal-sample">
+        	       
+        	       <!-- Modal Button -->
+        	       <a class="btn" href="#modal-two">Content Post</a>
+        	        	       
+        	       <!-- Modal Two -->
+        	       <div class="remodal" data-remodal-id="modal-two" role="dialog" aria-labelledby="modal-two-title" aria-describedby="modal-two-desc">
+          	       <!-- Close Button -->
+                  <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                  <!-- Modal Content -->
+                  <div class="modal-content">
+                    <!-- Content Post -->
+                    <article class="cq content-post">
+                      <div class="post-wrap">
+                        <!-- Post Content -->
+                        <div class="post-content">
+                          <!-- Post Title -->
+                          <h2 id="modal-two-title" class="post-title">Content Post Title</h2>
+                          <!-- Post Subtitle -->
+                          <p id="modal-two-desc" class="post-subtitle">This is a Subtitle</p>
+                          <!-- Post Text -->
+                          <div class="post-text">
+                            Voluptates veritatis tempore odit id. Aspernatur, mollitia, asperiores, voluptates, odit sunt ipsam voluptatibus dolorem quis culpa sed dignissimos doloribus saepe incidunt iure tempora blanditiis.
+                            
+                            <h3>Content Post Sub Header</h3>
+                            <!-- Post List -->
+                            <ul>                        
+                              <li>This is a Post List Item that does not link.</li>
+                              <li><a href="#">Maybe you want to make this Post List Item clickable?</a></li>
+                              <li><a href="#">An example of a Post List Item with really, really long text.</a></li>
+                              <li><a href="#">More post information goes here.</a></li>
+                              <li><a href="#">This is another list item link.</a></li>
+                              <li><a href="#">Another example of Post List text.</a></li>
+                            </ul>
+                          </div>
+                          <!-- Post Link -->
+                          <a class="btn-primary" href="#">Post Link</a>
+                        </div>
+                        <!-- Post Media -->
+                        <div class="post-media">
+                          <!-- Image -->
+                          <figure>
+                            <a href="#">
+                              <img data-src="http://placehold.it/1200x675/debffb?text=1200x675" alt="">
+                            </a>
+                            <noscript>
+                              <a href="#">
+                                <img src="http://placehold.it/1200x675/debffb?text=1200x675" alt="">
+                              </a>
+                            </noscript>
+                            <!-- Image Caption-->		         
+                            <a href="#">
+                              <figcaption>
+                                <p class="image-caption">Default Caption</p>
+                              </figcaption>
+                            </a>
+                          </figure>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+        	       
+      	       <!-- END -->
+      	       </div>
+      	       
+      	       <!-- Modal w/ Contact Form -->
+      	       <div class="modal-sample">
+        	       
+        	       <!-- Modal Button -->
+        	       <a class="btn" href="#modal-three">Contact Form</a>
+        	        	       
+        	       <!-- Modal Three -->
+        	       <div class="remodal" data-remodal-id="modal-three" role="dialog" aria-labelledby="modal-three-title" aria-describedby="modal-three-desc">
+          	       <!-- Close Button -->
+                  <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                  <!-- Modal Content -->
+                  <div class="modal-content">
+                    <!-- Contact Form -->
+                    <div class="qc-form">
+                      <!-- Form Headline -->
+                      <h4 id="modal-three-title" class="form-headline">This is the "form-headline". Use this as a way to draw attention to the form.</h4>
+                      <div id="">
+                        <div id="">
+                        </div>
+                        <div id="" class="FormPanel">
+                          <table class="EditingFormTable">
+                            <tbody>
+                              <tr id="">
+                                <td class="FieldLabel"><label id="" class="EditingFormLabel" for="">Name:</label></td>
+                                <td class="EditingFormValueCell">
+                                  <div id="" class="EditingFormControlNestedControl editing-form-control-nested-control">
+                                    <input name="" type="text" maxlength="200" id="" class="form-control">
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr id="">
+                                <td class="FieldLabel"><label id="" class="EditingFormLabel" for="">Email:</label></td>
+                                <td class="EditingFormValueCell">
+                                  <div id="" class="EditingFormControlNestedControl editing-form-control-nested-control">
+                                    <input name="" type="text" maxlength="200" id="" class="form-control">
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr id="">
+                                <td class="FieldLabel"><label id="" class="EditingFormLabel" for="">Company:</label></td>
+                                <td class="EditingFormValueCell">
+                                  <div id="" class="EditingFormControlNestedControl editing-form-control-nested-control">
+                                    <input name="" type="text" maxlength="200" id="" class="form-control">
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr id="">
+                                <td class="FieldLabel"><label id="" class="EditingFormLabel" for="">Phone:</label></td>
+                                <td class="EditingFormValueCell">
+                                  <div id="" class="EditingFormControlNestedControl editing-form-control-nested-control">
+                                    <input name="" type="text" maxlength="200" id="" class="form-control">
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr id="">
+                                <td class="FieldLabel"><label id="" class="EditingFormLabel" for="">Message:</label></td>
+                                <td class="EditingFormValueCell">
+                                  <div id="" class="EditingFormControlNestedControl editing-form-control-nested-control">
+                                    <textarea name="" rows="2" cols="20" id="" class="form-control"></textarea>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="EditingFormButtonLeftCell"></td>
+                                <td class="EditingFormButtonCell"><input type="submit" name="" value="Submit" id="" class="FormButton btn btn-primary"></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        	     
+        	     <!-- END -->  	       
+      	       </div>
+      	       
+      	       <!-- Modal w/ User Prompt -->
+      	       <div class="modal-sample">
+        	       
+        	       <!-- Modal Button -->
+        	       <a class="btn" href="#modal-four">User Prompt</a>
+        	       	       
+        	       <!-- Modal Four -->
+        	       <div class="remodal" data-remodal-id="modal-four" role="dialog" aria-labelledby="modal-four-title" aria-describedby="modal-four-desc">
+          	       <!-- Close Button -->
+                  <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                  <!-- Modal Content -->
+                  <div class="modal-content">
+                    <!-- *** This is where vital info goes *** -->
+                    
+                    <!-- Title -->
+                    <h2 id="modal-four-title">Important!</h2>
+                    <h3>Vital Information Below</h3>  		                    
+                    <!-- Description -->
+                    <div id="modal-four-desc" class="post-text">
+                      Use this as a way to get the user's attention. This can possibly be a way to determine a user action or a way to make the user read something important.
+                    </div>
+                    
+                  </div>
+                  <!-- Modal Buttons -->
+                  <div class="modal-buttons">
+                    <button data-remodal-action="cancel" class="btn-cancel">Go Back</button>
+                    <button data-remodal-action="confirm" class="btn-primary">Continue</button>
+                  </div>
+                </div>
+        	       
+        	     <!-- END -->  	       
+      	       </div>
+      	       
+      	       <!-- Modal w/ User Sign Up -->
+      	       <div class="modal-sample">
+        	       
+        	       <!-- Modal Button -->
+        	       <a class="btn" href="#modal-five">Signup</a>
+        	       	       
+        	       <!-- Modal Five -->
+        	       <div class="remodal" data-remodal-id="modal-five" role="dialog" aria-labelledby="modal-five-title" aria-describedby="modal-five-desc">
+          	       <!-- Close Button -->
+                  <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                  <!-- Modal Content -->
+                  <div class="modal-content">
+                    <!-- Sign Up Form -->
+                    <div class="qc-form">
+                      <!-- Form Headline -->
+                      <h4 class="form-headline">Sign Up With Us!</h4>
+                      <div id="">
+                        <div id="">
+                        </div>
+                        <div id="" class="FormPanel">
+                          <table class="EditingFormTable">
+                            <tbody>
+                              <tr id="">
+                                <td class="FieldLabel"><label id="" class="EditingFormLabel" for="">Name:</label></td>
+                                <td class="EditingFormValueCell">
+                                  <div id="" class="EditingFormControlNestedControl editing-form-control-nested-control">
+                                    <input name="" type="text" maxlength="200" id="" class="form-control">
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr id="">
+                                <td class="FieldLabel"><label id="" class="EditingFormLabel" for="">Email:</label></td>
+                                <td class="EditingFormValueCell">
+                                  <div id="" class="EditingFormControlNestedControl editing-form-control-nested-control">
+                                    <input name="" type="text" maxlength="200" id="" class="form-control">
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="EditingFormButtonLeftCell"></td>
+                                <td class="EditingFormButtonCell"><input type="submit" name="" value="Sign Up" id="" class="FormButton btn btn-primary"></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        	     
+        	     <!-- END -->   	       
+      	       </div>
+      	       
+      	       <!-- Modal w/ Media Detail -->
+      	       <div class="modal-sample">
+        	       
+        	       <!-- Modal Button -->
+        	       <a class="btn" href="#modal-six">Media Detail</a>
+        	        	       
+        	       <!-- Modal Six -->
+        	       <div class="remodal" data-remodal-id="modal-six" role="dialog" aria-labelledby="modal-six-title" aria-describedby="modal-six-desc">
+          	       <!-- Close Button -->
+                  <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                  <!-- Modal Content -->
+                  <div class="modal-content">                  
+                    <!-- Image -->
+                    <figure>
+                      <img src="http://placehold.it/2000x1125/a6e0ad?text=2000x1125" alt="Responsive Feature Post">
+                    </figure>
+                    <!-- Video -->
+                    <div class="media-wrap">
+                      <iframe width="100%" data-src="https://www.youtube.com/embed/ElAJbhkH2lU?rel=0" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <!-- Title -->
+                    <h2 id="modal-six-title">Media Detail</h2>		                    
+                    <!-- Description -->
+                    <div id="modal-six-desc" class="post-text">
+                         Option to display image or video player with title and description. The buttons below are optional and can be used as needed.
+                    </div>
+                  </div>
+                  <!-- Modal Buttons -->
+                  <div class="modal-buttons">
+                    <button data-remodal-action="cancel" class="btn-cancel">Close</button>
+                    <button data-remodal-action="confirm" class="btn-primary">Share</button>
+                  </div>
+                </div>
+        	     
+        	     <!-- END -->  	       
+      	       </div>
+      	       
+      	       <!-- Modal w/ iframe -->
+      	       <div class="modal-sample">
+        	       
+        	       <!-- Modal Button -->
+        	       <a class="btn" href="#modal-seven">iframe</a>
+        	        	       
+        	       <!-- Modal Seven -->
+        	       <div class="remodal" data-remodal-id="modal-seven" role="dialog" aria-labelledby="modal-seven-title" aria-describedby="modal-seven-desc">
+          	       <!-- Close Button -->
+                  <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                  <!-- Modal Content -->
+                  <div class="modal-content">                  
+                    
+                    <!-- Title -->
+                    <h2 id="modal-seven-title">iDonate</h2>		                    
+                    <!-- Description -->
+                    <div id="modal-seven-desc" class="post-text">
+                         Option to display giving functionality.
+                    </div>
+                    <div data-idonate-embed='d99b4faf-eef0-4def-8ab7-563f246579a3'></div>
+    <!-- <script src='https://v2-idonate-embed-staging.herokuapp.com/idonate.js' defer></script> -->
+                  </div>
+                </div>
+        	     
+        	     <!-- END -->  	       
+      	       </div>
+      	       
+      	       <!-- end / modal container -->
+        		  </div>
+        		</section>
+        		
+          </div>
+    		</div> 
+    		
+
+    		<!-- end / main-content -->
+  		</main>
+  		
+  		<!-- Footer -->
+  		<footer class="site-footer pt-pb-2" role="contentinfo">
+    		<div class="container flex flex-wrap flex-d-col sm-flex-d-row ai-center jc-between">
+      		<!-- Footer Logo-->
+      		<div class="footer-logo mb-sm sm-mb-0"><a href="#"><img src="images/UI/in2M-icon-v2.svg" alt="in2Marketplace.com" title="in2Marketplace.com"></a></div>
+      		<h6 class="h5 all-caps mb-0 sm-pt-sm">HTML Review</h6>
+      		<!-- Footer Menu -->
+      		<nav class="nav-menu site-footer-menu sm-text-center hidden"><a href="#">Footer Nav</a><a href="#">Nav Item</a><a href="#">Footer Nav</a><a href="#">Nav Item</a><a href="#">Footer Nav</a><a href="#">Nav Item</a></nav>
+        </div>
+  		</footer>
+  		
+  		<!-- end / site-wrap-->
+		</div>
+		
+    <!-- Dependencies -->
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/libs/jquery.1.11.2.min.js"><\/script>')</script>
+<script src="js/min/script.min.js"></script>
+		
+		<!--
+<script src="js/collapsible.js"></script>
+		<script>document.documentElement.className += " enhanced";</script>
+-->
+  </body>
+</html>

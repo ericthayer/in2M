@@ -1,0 +1,475 @@
+<!doctype html>
+<!--#if expr="$HTTP_COOKIE=/fonts\-loaded\=true/" -->
+<html lang="en" class="no-js fonts-loaded">
+<!--#else -->
+<html lang="en" class="no-js">
+  <!--#endif -->
+  <head>
+    <!-- FontFaceObserver -->
+    <script>
+      (function(){'use strict';var f,g=[];function l(a){g.push(a);1==g.length&&f()}function m(){for(;g.length;)g[0](),g.shift()}f=function(){setTimeout(m)};function n(a){this.a=p;this.b=void 0;this.f=[];var b=this;try{a(function(a){q(b,a)},function(a){r(b,a)})}catch(c){r(b,c)}}var p=2;function t(a){return new n(function(b,c){c(a)})}function u(a){return new n(function(b){b(a)})}function q(a,b){if(a.a==p){if(b==a)throw new TypeError;var c=!1;try{var d=b&&b.then;if(null!=b&&"object"==typeof b&&"function"==typeof d){d.call(b,function(b){c||q(a,b);c=!0},function(b){c||r(a,b);c=!0});return}}catch(e){c||r(a,e);return}a.a=0;a.b=b;v(a)}}
+function r(a,b){if(a.a==p){if(b==a)throw new TypeError;a.a=1;a.b=b;v(a)}}function v(a){l(function(){if(a.a!=p)for(;a.f.length;){var b=a.f.shift(),c=b[0],d=b[1],e=b[2],b=b[3];try{0==a.a?"function"==typeof c?e(c.call(void 0,a.b)):e(a.b):1==a.a&&("function"==typeof d?e(d.call(void 0,a.b)):b(a.b))}catch(h){b(h)}}})}n.prototype.g=function(a){return this.c(void 0,a)};n.prototype.c=function(a,b){var c=this;return new n(function(d,e){c.f.push([a,b,d,e]);v(c)})};
+function w(a){return new n(function(b,c){function d(c){return function(d){h[c]=d;e+=1;e==a.length&&b(h)}}var e=0,h=[];0==a.length&&b(h);for(var k=0;k<a.length;k+=1)u(a[k]).c(d(k),c)})}function x(a){return new n(function(b,c){for(var d=0;d<a.length;d+=1)u(a[d]).c(b,c)})};window.Promise||(window.Promise=n,window.Promise.resolve=u,window.Promise.reject=t,window.Promise.race=x,window.Promise.all=w,window.Promise.prototype.then=n.prototype.c,window.Promise.prototype["catch"]=n.prototype.g);}());
+
+(function(){function l(a,b){document.addEventListener?a.addEventListener("scroll",b,!1):a.attachEvent("scroll",b)}function m(a){document.body?a():document.addEventListener?document.addEventListener("DOMContentLoaded",function c(){document.removeEventListener("DOMContentLoaded",c);a()}):document.attachEvent("onreadystatechange",function k(){if("interactive"==document.readyState||"complete"==document.readyState)document.detachEvent("onreadystatechange",k),a()})};function r(a){this.a=document.createElement("div");this.a.setAttribute("aria-hidden","true");this.a.appendChild(document.createTextNode(a));this.b=document.createElement("span");this.c=document.createElement("span");this.h=document.createElement("span");this.f=document.createElement("span");this.g=-1;this.b.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;";this.c.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;";
+this.f.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;";this.h.style.cssText="display:inline-block;width:200%;height:200%;font-size:16px;max-width:none;";this.b.appendChild(this.h);this.c.appendChild(this.f);this.a.appendChild(this.b);this.a.appendChild(this.c)}
+function x(a,b){a.a.style.cssText="max-width:none;min-width:20px;min-height:20px;display:inline-block;overflow:hidden;position:absolute;width:auto;margin:0;padding:0;top:-999px;left:-999px;white-space:nowrap;font:"+b+";"}function y(a){var b=a.a.offsetWidth,c=b+100;a.f.style.width=c+"px";a.c.scrollLeft=c;a.b.scrollLeft=a.b.scrollWidth+100;return a.g!==b?(a.g=b,!0):!1}function z(a,b){function c(){var a=k;y(a)&&null!==a.a.parentNode&&b(a.g)}var k=a;l(a.b,c);l(a.c,c);y(a)};function A(a,b){var c=b||{};this.family=a;this.style=c.style||"normal";this.weight=c.weight||"normal";this.stretch=c.stretch||"normal"}var B=null,D=null,E=null;function H(){if(null===D){var a=document.createElement("div");try{a.style.font="condensed 100px sans-serif"}catch(b){}D=""!==a.style.font}return D}function I(a,b){return[a.style,a.weight,H()?a.stretch:"","100px",b].join(" ")}
+A.prototype.load=function(a,b){var c=this,k=a||"BESbswy",q=0,C=b||3E3,F=(new Date).getTime();return new Promise(function(a,b){null===E&&(E=!!document.fonts);if(E){var J=new Promise(function(a,b){function e(){(new Date).getTime()-F>=C?b():document.fonts.load(I(c,'"'+c.family+'"'),k).then(function(c){1<=c.length?a():setTimeout(e,25)},function(){b()})}e()}),K=new Promise(function(a,c){q=setTimeout(c,C)});Promise.race([K,J]).then(function(){clearTimeout(q);a(c)},function(){b(c)})}else m(function(){function t(){var b;
+if(b=-1!=f&&-1!=g||-1!=f&&-1!=h||-1!=g&&-1!=h)(b=f!=g&&f!=h&&g!=h)||(null===B&&(b=/AppleWebKit\/([0-9]+)(?:\.([0-9]+))/.exec(window.navigator.userAgent),B=!!b&&(536>parseInt(b[1],10)||536===parseInt(b[1],10)&&11>=parseInt(b[2],10))),b=B&&(f==u&&g==u&&h==u||f==v&&g==v&&h==v||f==w&&g==w&&h==w)),b=!b;b&&(null!==d.parentNode&&d.parentNode.removeChild(d),clearTimeout(q),a(c))}function G(){if((new Date).getTime()-F>=C)null!==d.parentNode&&d.parentNode.removeChild(d),b(c);else{var a=document.hidden;if(!0===
+a||void 0===a)f=e.a.offsetWidth,g=n.a.offsetWidth,h=p.a.offsetWidth,t();q=setTimeout(G,50)}}var e=new r(k),n=new r(k),p=new r(k),f=-1,g=-1,h=-1,u=-1,v=-1,w=-1,d=document.createElement("div");d.dir="ltr";x(e,I(c,"sans-serif"));x(n,I(c,"serif"));x(p,I(c,"monospace"));d.appendChild(e.a);d.appendChild(n.a);d.appendChild(p.a);document.body.appendChild(d);u=e.a.offsetWidth;v=n.a.offsetWidth;w=p.a.offsetWidth;G();z(e,function(a){f=a;t()});x(e,I(c,'"'+c.family+'",sans-serif'));z(n,function(a){g=a;t()});x(n,
+I(c,'"'+c.family+'",serif'));z(p,function(a){h=a;t()});x(p,I(c,'"'+c.family+'",monospace'))})})};"undefined"!==typeof module?module.exports=A:(window.FontFaceObserver=A,window.FontFaceObserver.prototype.load=A.prototype.load);}());
+      
+       (function( w ){
+      	// if the class is already set, we're good.
+      	if( w.document.documentElement.className.indexOf( "fonts-loaded" ) > -1 ){
+      		return;
+      	}
+      	var fontA = new w.FontFaceObserver( "Whitney-Medium", {
+      	});
+      	var fontB = new w.FontFaceObserver( "Whitney-SemiBold", {
+      	});
+      	var fontC = new w.FontFaceObserver( "Whitney-Bold", {
+      	});
+      	w.Promise.all([fontA.load(),fontB.load(),fontC.load()])
+      		.then(function(){
+      			w.document.documentElement.className += " fonts-loaded";      			
+      			sessionStorage.fontsloaded = true;
+      		});
+      }( this ));
+      
+    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>in2Marketplace :: Super Admin - Create Sales Group</title>
+    <meta name="description" content="A powerful retail marketing platform and brand management tool">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="msapplication-TileColor" content="#302A2A">
+    <meta name="msapplication-TileImage" content="../images/icons/favicon-144.png">
+    <!--[if IEMobile]>
+    <meta http-equiv="cleartype" content="on" />
+    <![endif]-->
+    <link rel="apple-touch-icon" href="../images/icons/favicon-180.png">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Modernizr -->
+    <script>!function(n,e,s){function o(n,e){return typeof n===e}function a(){var n,e,s,a,i,l,r;for(var c in f)if(f.hasOwnProperty(c)){if(n=[],e=f[c],e.name&&(n.push(e.name.toLowerCase()),e.options&&e.options.aliases&&e.options.aliases.length))for(s=0;s<e.options.aliases.length;s++)n.push(e.options.aliases[s].toLowerCase());for(a=o(e.fn,"function")?e.fn():e.fn,i=0;i<n.length;i++)l=n[i],r=l.split("."),1===r.length?Modernizr[r[0]]=a:(!Modernizr[r[0]]||Modernizr[r[0]]instanceof Boolean||(Modernizr[r[0]]=new Boolean(Modernizr[r[0]])),Modernizr[r[0]][r[1]]=a),t.push((a?"":"no-")+r.join("-"))}}function i(n){var e=r.className,s=Modernizr._config.classPrefix||"";if(c&&(e=e.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+s+"no-js(\\s|$)");e=e.replace(o,"$1"+s+"js$2")}Modernizr._config.enableClasses&&(e+=" "+s+n.join(" "+s),c?r.className.baseVal=e:r.className=e)}var t=[],f=[],l={_version:"3.3.1",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(n,e){var s=this;setTimeout(function(){e(s[n])},0)},addTest:function(n,e,s){f.push({name:n,fn:e,options:s})},addAsyncTest:function(n){f.push({name:null,fn:n})}},Modernizr=function(){};Modernizr.prototype=l,Modernizr=new Modernizr;var r=e.documentElement,c="svg"===r.nodeName.toLowerCase();a(),i(t),delete l.addTest,delete l.addAsyncTest;for(var u=0;u<Modernizr._q.length;u++)Modernizr._q[u]();n.Modernizr=Modernizr}(window,document);</script>
+    <!-- Non-Critical CSS - loadCSS: load a CSS file asynchronously. [c]2016 @scottjehl, Filament Group, Inc. Licensed MIT -->
+    <script>(function(a){var b=function(c,k,d){var l=a.document;var m=l.createElement("link");var e;if(k){e=k}else{var i=(l.body||l.getElementsByTagName("head")[0]).childNodes;e=i[i.length-1]}var f=l.styleSheets;m.rel="stylesheet";m.href=c;m.media="only x";function j(n){if(l.body){return n()}setTimeout(function(){j(n)})}j(function(){e.parentNode.insertBefore(m,(k?e:e.nextSibling))});var h=function(o){var n=m.href;var p=f.length;while(p--){if(f[p].href===n){return o()}}setTimeout(function(){h(o)})};function g(){if(m.addEventListener){m.removeEventListener("load",g)}m.media=d||"all"}if(m.addEventListener){m.addEventListener("load",g)}m.onloadcssdefined=h;h(g);return m};if(typeof exports!=="undefined"){exports.loadCSS=b}else{a.loadCSS=b}}(typeof global!=="undefined"?global:this));loadCSS("../css/async.css");</script>
+  </head>
+  <body class="logged-in super-admin">
+    <!--[if lt IE 10]>
+<p class="update-browser">This browser version is not recommended. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+    <!-- Site Wrap  -->
+    <div class="site-wrap">
+      
+      <!-- Admin Bar -->
+  		<div class="admin-bar bg-EEE w-100">
+    		<div class="container flex flex-wrap ai-center jc-between pt-pb-1 sm-jc-center sm-jc-between"> 
+      		<!-- User Status -->
+          <div class="user-status flex ai-center jc-center mb-1 w-100 sm-jc-start sm-mb-0 sm-w-30">
+            <div class="avatar user-avatar img-1-1-tiny mr-sm sm-mr-1"><img class="" src="../images/UI/slug-avatar.svg" alt="user avatar"></div>
+            <div class="user-status-text flex flex-wrap flex-d-col ai-start">
+              <div class="status-msg mb-tiny"><span class="user-name">Super Admin</span></div>
+              <div class="profile-links flex ai-center">
+                <a class="pr-sm" href="#">Dashboard</a>
+                <a href="#">Logout</a>
+              </div>
+            </div>
+          </div>
+      		<!-- Search -->
+      		<div class="search-form header-search mr-ml-a w-100 mw-15em sm-w-70 sm-mr-0">
+        		<label class="sr-only" for="search-form">Search</label>
+        		<!-- Search Bar -->
+        		<div class="search-bar flex flex-wrap jc-between">
+              <input class="bor-1 bor-solid bor-c-DDD" id="search-form" type="search" placeholder="search">
+              <button class="c-777" type="submit"> <svg class="icon"><use xlink:href="#icon-search" /></svg>
+              </button>
+        		</div>
+      		</div>
+    		</div>
+  		</div>
+      
+      <!-- Header -->  
+      <header class="site-header bg-white bg-no-repeat bg-center bg-cover c-blue-40" role="banner">
+        <!-- Nav -->
+        <div class="container flex flex-wrap ai-center jc-between pt-pb-1">
+          <!-- Site Logo -->
+          <h1 class="site-title"><a href="super-admin.html"><img class="header-logo mw-8em" src="../images/UI/in2m-logo-color.svg" alt="in2Marketplace.com"><span class="sr-only">in2Marketplace.com</span></a></h1>
+           
+           <button id="nav-toggle" class="bg-blue-40 nav-toggle-html" aria-hidden="false" aria-expanded="false">
+            <div class="nav-icon c-white"></div>
+          </button>
+          <!-- Main Nav -->
+          <section class="main-nav flex flex-wrap ai-center jc-center sm-flex-g-1">
+            <!-- Nav -->
+            <script src="../js/libs/responsive-nav.js"></script>
+            <nav class="nav-collapse" role="navigation">
+              <!-- Admin Bar -->
+          		<div class="admin-bar w-100">
+            		<div class="container flex flex-wrap ai-center jc-between pt-pb-1 sm-jc-center md-jc-between"> 
+              		<!-- User Status -->
+                  <div class="user-status flex ai-center jc-center mb-1 w-100 sm-jc-center md-jc-start md-mb-0 md-w-30">
+                    <div class="avatar user-avatar img-1-1-tiny mr-sm x-sm-mr-1"><img class="" src="../images/UI/slug-avatar.svg" alt="user avatar"></div>
+                    <div class="user-status-text flex flex-wrap flex-d-col ai-start">
+                      <div class="status-msg mb-tiny"><span class="user-name">Jenny Salesperson</span></div>
+                      <div class="profile-links flex ai-center">
+                        <a class="pr-sm" href="#">Dashboard</a>
+                        <a href="#">Logout</a>
+                      </div>
+                    </div>
+                  </div>
+              		<!-- Search -->
+              		<div class="search-form header-search mr-ml-a w-100 mw-15em md-w-70 md-mr-0">
+                		<label class="sr-only" for="search-form">Search</label>
+                		<!-- Search Bar -->
+                		<div class="search-bar flex flex-wrap jc-between">
+                      <input class="bor-1 bor-solid bor-c-DDD" id="search-form" type="search" placeholder="search">
+                      <button class="bg-blue-30 c-white" type="submit"> <svg class="icon"><use xlink:href="#icon-search" /></svg>
+                      </button>
+                		</div>
+              		</div>
+            		</div>
+          		</div>
+              <ul class="list-reset">
+                <li class="nav-cta"><a href="#">Contact</a></li>
+                <li class="dropdown">
+                  <a href="#">View</a>
+                  <ul class="sub-menu c-blue-30">
+                    <li><a href="sa-view-sales-org.html">Sales Organizations</a></li>
+                    <li><a href="sa-view-packages-offers.html">Packages & Offers</a></li>
+                    <li><a href="sa-view-commissions.html">Commissions</a></li>
+                    <li><a href="sa-view-notifications.html">Notifications</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#">Setup</a>
+                  <ul class="sub-menu">
+                    <li><a href="sa-setup-capacity.html">Capacity</a></li>
+                    <li><a href="sa-setup-short-codes.html">Short Codes</a></li>
+                    <li><a href="sa-setup-packages.html">Packages</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown active">
+                  <a href="#">Create</a>
+                  <ul class="sub-menu">
+                    <li><a href="sa-create-super-admin.html">Super Admin Profile</a></li>
+                    <li><a href="sa-create-sales-company.html">Sales Company</a></li>
+                    <li><a href="sa-create-sales-group.html">Sales Group</a></li>
+                    <li><a href="sa-create-sales-person.html">Sales Person</a></li>
+                    <li><a href="sa-create-email-templates.html">Email Templates</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#">Manage</a>
+                  <ul class="sub-menu">
+                    <li><a href="sa-manage-super-admin.html">Super Admin Profile</a></li>
+                    <li><a href="sa-manage-sales-company.html">Sales Company</a></li>
+                    <li><a href="sa-manage-sales-group.html">Sales Group</a></li>
+                    <li><a href="sa-manage-sales-person.html">Sales Person</a></li>
+                    <li><a href="sa-manage-retail-customers.html">Retail Customers</a></li>
+                    <li><a href="sa-manage-packages.html">Packages</a></li>
+                    <li class="dropdown">
+                      <a href="#">Email Templates</a>
+                      <ul class="sub-menu">
+                        <li><a href="#">Sub Sublink</a></li>
+                        <li><a href="#">Sub Sublink</a></li>
+                        <li><a href="#">Sub Sublink</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>                  
+                <!-- end / -->
+              </ul>
+            </nav>
+            <script src="../js/libs/mobile-nav.js"></script>
+          </section>
+        </div>
+        <!-- Fixed Nav -->
+        <div class="container fixed-nav md-flex flex-wrap ai-center jc-between">
+          <!-- Site Logo -->
+          <h1 class="site-title"><a href="super-admin.html"><img class="header-logo mw-8em" src="../images/UI/in2m-logo-white.svg" alt="in2Marketplace.com"><span class="sr-only">in2Marketplace.com</span></a></h1>
+          <!-- Main Nav -->
+          <section class="main-nav scroll-nav flex flex-wrap ai-center jc-center sm-flex-g-1 tc-white" role="navigation">
+            <nav class="nav-collapse" role="navigation">
+              <ul class="list-reset">
+                <li class="nav-cta"><a href="#">Contact</a></li>
+                <li class="dropdown">
+                  <a href="#">View</a>
+                  <ul class="sub-menu c-blue-30">
+                    <li><a href="sa-view-sales-org.html">Sales Organizations</a></li>
+                    <li><a href="sa-view-packages-offers.html">Packages & Offers</a></li>
+                    <li><a href="sa-view-commissions.html">Commissions</a></li>
+                    <li><a href="sa-view-notifications.html">Notifications</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#">Setup</a>
+                  <ul class="sub-menu">
+                    <li><a href="sa-setup-capacity.html">Capacity</a></li>
+                    <li><a href="sa-setup-short-codes.html">Short Codes</a></li>
+                    <li><a href="sa-setup-packages.html">Packages</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown active">
+                  <a href="#">Create</a>
+                  <ul class="sub-menu">
+                    <li><a href="sa-create-super-admin.html">Super Admin Profile</a></li>
+                    <li><a href="sa-create-sales-company.html">Sales Company</a></li>
+                    <li><a href="sa-create-sales-group.html">Sales Group</a></li>
+                    <li><a href="sa-create-sales-person.html">Sales Person</a></li>
+                    <li><a href="sa-create-email-templates.html">Email Templates</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#">Manage</a>
+                  <ul class="sub-menu">
+                    <li><a href="sa-manage-super-admin.html">Super Admin Profile</a></li>
+                    <li><a href="sa-manage-sales-company.html">Sales Company</a></li>
+                    <li><a href="sa-manage-sales-group.html">Sales Group</a></li>
+                    <li><a href="sa-manage-sales-person.html">Sales Person</a></li>
+                    <li><a href="sa-manage-retail-customers.html">Retail Customers</a></li>
+                    <li><a href="sa-manage-packages.html">Packages</a></li>
+                    <li class="dropdown">
+                      <a href="#">Email Templates</a>
+                      <ul class="sub-menu">
+                        <li><a href="#">Sub Sublink</a></li>
+                        <li><a href="#">Sub Sublink</a></li>
+                        <li><a href="#">Sub Sublink</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>                  
+                <!-- end / -->
+              </ul>
+            </nav>
+          </section>
+        </div>
+        <!-- Text Block -->
+        <section class="bg-orange bg-cover bg-center c-white pt-pb-4 text-s-black-50">
+        	<div class="container mw-56em md-pt-pb-1">
+          	<h2 id="checkout" class="mb-sm text-center w-100">Create Sales Group</h2>
+            <h3 class="antialiased mr-ml-a mb-0 text-center text-lg mw-48em">This is where a "Super Admin" or authorized user to create a Sales Group.</h3>
+        	</div>
+        </section>
+      </header>
+
+      <!-- Main Content -->
+      <main class="main-content pt-pb-3">
+        
+        <!-- Page Title -->
+      	<div class="container sr-only">
+        	<h1 class="page-title text-center mb-0">Super Admin Create Sales Group</h1>
+      	</div>
+
+        <!-- Form - Create Sales Group -->
+        <section class="mod-block pb-2">
+          <div class="container">
+
+            <!-- Form Build -->
+            <div class="form-section mr-ml-a mw-48em">
+              <form name="CreateSalesGroup">
+                <!-- Form Header -->
+                <div class="bor-bot-1 bor-bot-s bor-c-DDD mb-1 pb-sm sm-flex sm-ai-center sm-jc-between">
+                  
+                  <h2 class="text-center text-lg mb-1 sm-text-left sm-mr-1 sm-mb-0 sm-w-40">Create Sales Group</h2>
+                 
+                  <!-- Group Name -->
+                  <div class="form-row text-center mb-1 sm-text-sm sm-flex sm-flex-g-0 sm-ai-end sm-jc-between sm-mb-0 sm-w-60">
+                   <label for="-ariaLabel" class="sm-text-right sm-pr-sm sm-w-80">Group Name <span class="req-mark">*</span></label>
+                   <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="bor-1 bor-solid bor-c-DDD input-sm mw-10em" required>
+                  </div>
+
+                </div>                  
+                
+                <div class="form-wrap">
+                  
+                  <!-- Group ID & Team -->
+                  <div class="form-group pb-0 sm-flex sm-jc-between">
+                    
+                    <!-- ID -->
+                    <div class="form-row sm-flex-g-1 mb-1 sm-mr-tiny sm-mb-0 sm-w-20">
+                      <label for="" id="-ariaLabel">Group ID</label>
+                      <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="disabled" title="This is a required field" value="358" disabled>
+
+                    </div>
+                    
+                    <!-- Team -->
+                    <div class="form-row sm-flex-g-1 sm-mr-ml-tiny sm-w-40">
+                      <label for="" id="-ariaLabel">Team <span class="req-mark">*</span></label>
+                      <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="required" title="This is a required field" required>
+                    </div>
+                    
+                    <!-- Area -->
+                    <div class="form-row sm-flex-g-1 sm-ml-tiny sm-w-40">
+                      <label for="" id="-ariaLabel">Area <span class="req-mark">*</span></label>
+                      <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="required" title="This is a required field" required>
+                    </div>                      
+
+                    <!-- end / -->
+                  </div>
+
+                  <!-- Dates -->
+                  <div class="form-group pb-0 sm-flex sm-jc-between hidden">
+                                          
+                    <!-- Creation Date -->
+                    <div class="form-row mb-1 sm-flex-g-1 sm-mr-tiny sm-mb-0 sm-w-50">
+                      <label for="" id="-ariaLabel">Creation Date <span class="req-mark">*</span></label>
+                      <input id="" name="-ariaLabel" type="text" placeholder="&nbsp;" class="date-input required" aria-labelledby="-ariaLabel" class="required" title="This is a required input" required>
+                    </div>
+                    
+                    <!-- Last Changed Date -->
+                    <div class="form-row sm-flex-g-1 sm-ml-tiny sm-mb-0 sm-w-50">
+                      <label for="" id="-ariaLabel">Last Changed</label>
+                      <input id="" name="-ariaLabel" type="text" placeholder="&nbsp;" class="date-input" aria-labelledby="-ariaLabel">
+                    </div>
+                    
+                    <!-- end / -->
+                  </div>
+                  
+                  <!-- Coverage Area & Business Description -->
+                  <div class="form-group mb-1-pt5 sm-flex sm-jc-between">
+                    <!-- Coverage -->
+                    <div class="form-row mb-1 sm-flex-g-1 sm-mr-tiny sm-mb-0 sm-w-50">
+                      <label for="" id="-ariaLabel">Coverage Area</label>
+                      <textarea maxlength="100" aria-labelledby="-ariaLabel"></textarea>
+                    </div>
+                    <!-- Line of Business -->
+                    <div class="form-row sm-flex-g-1 sm-ml-tiny sm-mb-0 sm-w-50">
+                      <label for="" id="-ariaLabel">Line of Business</label>
+                      <textarea maxlength="100" aria-labelledby="-ariaLabel"></textarea>
+                    </div>
+                  </div>
+                  
+
+                  <!-- Buttons -->
+                  <div class="form-row button-wrap flex flex-d-col-rev sm-flex-d-row sm-jc-center">
+                    <button onclick="$('form[name="CreateSalesGroup"] input').val('');" class="cancel-button btn-outline btn-round all-caps c-777 mb-1 sm-mb-0 sm-mr-sm" type="reset">Cancel</button>
+                    <input class="btn-round all-caps bg-green c-white text-sm mb-1 sm-mb-0 sm-ml-sm" type="submit" value="Save" data-remodal-target="create-sales-group-confirmation">
+                  </div>
+                  
+                  <!-- end / form-wrap -->
+                </div>
+              </form>
+            </div>
+
+            <!-- end / -->
+          </div>
+        </section>
+
+        <!-- end / main-content -->
+      </main>
+
+      <!-- Footer -->
+      <footer class="site-footer bg-blue-20 c-white text-center md-text-left pt-pb-4" role="contentinfo">
+        <div class="container flex flex-d-col jc-center md-flex-d-row md-ai-center md-jc-between">
+          
+          <!-- top row -->
+          <div class="mb-0 md-flex md-jc-between lg-jc-end">
+            
+            <!-- Footer Contact -->
+            <div class="footer-contact mr-ml-a mb-3 md-ml-0 md-mb-0 md-pr-3 md-w-50">
+              <!-- Logo -->
+              <a class="block mb-sm" href="super-admin.html"><img class="footer-logo" src="../images/UI/in2m-logo-white.svg" alt="in2Marketplace.com" title="in2Marketplace.com"></a>
+              <!-- Copyrights -->
+              <div class="flex jc-center mb-1 md-jc-start">
+                  <p class="antialiased mb-0 mr-sm">&copy; 2016 <a class="bor-bot-none c-white" href="http://concordusapps.com/">Concordus</a> / <a class="bor-bot-none c-white" href="http://6dtech.co.in/">6d</a></p><a class="mr-sm" href="#"><svg class="icon c-blue-60 mr-ml-0"><use xlink:href="#icon-facebook" /></svg><span class="sr-only">Find us on Facebook</span></a>
+                  <a class="mr-sm" href="#"><svg class="icon c-blue-60 mr-ml-0"><use xlink:href="#icon-twitter" /></svg><span class="sr-only">Follow us on Twitter</span></a>
+              </div>
+              <!-- Message -->
+              <p class="antialiased mr-ml-a pr-pl-4 text-base md-pr-pl-0">Something about the company should go here. We can talk about whatever we think is best to relate to the potential customer.</p>
+              <p class="c-blue-90 mb-sm">Talk With Us <a class="c-blue-60 text-d-none ml-sm" href="tel:8005551234">(800) 555-1234</a></p>
+              <p class="c-blue-90">Send Email <a class="c-blue-60 text-d-none ml-sm" href="tel:8005551234">contact@in2marketplace.com</a></p>
+            </div>
+            
+            <!-- Footer Links -->
+            <div class="md-flex md-jc-between md-w-50 lg-w-40">
+              <!-- Resources -->
+              <div class="mb-3 md-mb-0 md-pr-2 md-w-60">
+                <h4 class="c-blue-90 mb-sm text-lg">Get Help</h4>                  
+                <!-- Footer Menus -->
+                <div class="md-flex md-jc-between">
+                  <ul class="footer-menu c-blue-60 list-reset mb-0 pl-0 text-md md-text-left">
+                    <li><a href="#">Product Support</a></li>
+                    <li><a href="#">Tutorials</a></li>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Terms / Privacy</a></li>
+                    <li class="pt-1">
+                      <div class="search-bar c-blue-60 flex flex-wrap mr-ml-a mw-15em">
+                        <input class="bg-trans bor-2 bor-solid bor-top-2 bor-bot-2 bor-left-2 c-blue-60" id="search-form" type="search" role="search">
+                        <button class="bg-none bor-2 bor-solid bor-top-2 bor-bot-2 bor-left-none c-blue-60" type="submit"><svg class="icon"><use xlink:href="#icon-search" /></svg>
+                        </button>
+                  		</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Contact -->
+              <div class="md-jc-end md-mb-0">
+               <h4 class="c-blue-90 mb-sm text-lg">Connect</h4>
+                <ul class="footer-menu c-blue-60 list-reset mb-0 pl-0 text-md">
+                  <li><a href="#">Rep Finder</a></li>
+                  <li><a href="#">Request Demo</a></li>
+                  <li><a href="#">View Blog</a></li>
+                  <li><a href="#">Join Team</a></li>
+                  <li class="mr-ml-a pt-1 mw-15em hidden"><a class="btn-md all-caps bg-trans c-blue-50 bor-2 bor-solid text-sm w-100" href="sp-login.html">Login</a></li>
+                </ul>
+              </div>
+              
+              <!-- end / -->
+            </div>
+            
+            <!-- end / bottom row -->
+          </div>
+
+        </div>
+      </footer>
+      
+      <!-- end / site-wrap-->
+    </div>
+
+    <!-- Create Sales Group Confirmation -->
+    <div class="remodal" data-remodal-id="create-sales-group-confirmation" role="dialog" aria-labelledby="create-sales-group-title" aria-describedby="create-sales-group-desc">
+      <!-- Close Button -->
+      <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+      <!-- Modal Content -->
+      <div class="modal-content">
+        <!-- Title -->
+        <h2 id="create-sales-group-title">Sales Group Created</h2>
+        <!-- Description -->
+        <div id="create-sales-group-desc" class="post-text">
+        </div>
+      </div>
+      <!-- Modal Buttons -->
+      <div class="modal-buttons">
+        <button data-remodal-action="confirm" class="btn-round all-caps bg-green c-white text-sm">close</button>
+      </div>
+    </div>
+
+    <!-- Delete Confirmation -->
+    <div class="remodal" data-remodal-id="delete-confirm" role="dialog" aria-labelledby="delete-confirm-title" aria-describedby="delete-confirm-desc">
+      <!-- Close Button -->
+      <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+      <!-- Modal Content -->
+      <div class="modal-content">
+        <!-- Title -->
+        <h2 id="delete-confirm-title">Are You Sure?</h2>
+        <!-- Description -->
+        <div id="delete-confirm-desc" class="post-text">
+          <p>Please confirm you want to <strong>delete</strong> this by clicking "yes"</p>
+        </div>
+      </div>
+      <!-- Modal Buttons -->
+      <div class="modal-buttons">
+        <button data-remodal-action="cancel" class="btn-outline c-blue-40 text-sm all-caps mb-sm sm-mr-sm sm-mb-0">cancel</button>
+        <button data-remodal-action="confirm" class="btn-round all-caps bg-green c-white text-sm">yes</button>
+      </div>
+    </div>
+
+    <!-- Dependencies -->
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../js/libs/jquery.1.11.2.min.js"><\/script>')</script>
+    <script src="../js/min/script.min.js"></script>
+  </body>
+</html>

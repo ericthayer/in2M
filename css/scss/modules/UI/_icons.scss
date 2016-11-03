@@ -1,0 +1,28 @@
+.icon {
+  display: inline-block;
+  fill: currentColor;
+  height: 1em;
+  width: 1em;   
+  vertical-align: middle;
+  position: relative;
+  top: -.0625em;
+  margin-right: 0.25em;
+  margin-left: 0.25em;   
+  text-align: center;
+  transform-origin: center;
+  transition: transform .3 ease;
+  td.icon-group & {
+    height: 1.5em;
+    width: 1.5em; 
+  }  
+}
+
+.icon-caret {
+  transition: transform .3 ease;
+}
+
+
+.icon-delete,
+.icon-cancel {
+  fill: darkRed;
+}

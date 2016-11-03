@@ -1,0 +1,115 @@
+// Circle Mask
+
+%circle-mask {
+	@include circle-mask;
+	figcaption {
+		@include circle-mask;
+		height: 40%;  
+		width: 100%;				
+		padding: 0;			
+		bottom: 0;				
+		//padding: 1em 2em;
+		text-align: center;
+		//display: flex;
+		//justify-content: center;
+		a {
+			//display: flex;
+		}
+	}
+	
+	// Figcaption Animations 
+	 
+	.slide-down {
+  	height: 100%; 
+	}
+	.slide-down,
+	.slide-left,
+	.slide-right {
+  
+	}
+	
+	// Image Caption		
+	.image-caption {
+		float: none;		
+		text-align: center;	
+	}
+}
+
+// Rounded Thumbnail
+
+.rounded-mask {
+	@include rounded-mask;
+	image {
+  	border-radius: 15px;
+	}
+	figcaption {
+		//border-radius: 0 0 15px 15px;
+	}
+}
+
+// Media Item (image or iframe only)
+
+.media-item {
+  line-height: 0;
+  //will-change: transform scale;  
+}
+
+// Image Sizes
+
+.img-sm {
+  width: 35%; 
+}
+
+.img-md {
+  width: 50%; 
+}
+
+.img-lg {
+  width: 75%; 
+}
+
+// 1:1 ratio
+
+.img-1-1-tiny {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.img-1-1-sm {
+  max-height: 4rem;
+  max-width: 4rem;
+}
+
+.img-1-1-md {
+  max-height: 6rem;
+  max-width: 6rem;
+}
+
+.img-1-1-lg {
+  max-height: 10rem;
+  max-width: 10rem;   
+}
+
+.img-style-1 {
+  @include white-img-box-round;
+}
+
+.img-mask-h-300 {
+  max-height: 150px;
+  overflow: hidden;  
+  // > 375
+  @media (min-width: $break-375) {
+    max-height: 300px;
+  }   
+}
+
+.hero-svg-mask {
+  overflow: hidden;
+  position: relative; 
+  > * {
+    position: relative;
+    bottom: -5px;
+    height: 100%;
+    width: 100%;   
+  } 
+}

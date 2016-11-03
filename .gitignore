@@ -1,0 +1,10 @@
+
+*.scssc
+
+*.svn
+
+*.DS_Store
+
+*.sass-cache
+
+*.svn-base

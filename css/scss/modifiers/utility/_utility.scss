@@ -1,0 +1,491 @@
+// BG alignment
+
+.bg-top {
+  background-position: center top;
+}
+
+.bg-right {
+  background-position: right center;
+}
+
+.bg-bottom {
+  background-position: center bottom;
+}
+
+.bg-left {
+  background-position: left center;
+}
+
+.bg-left-top {
+  background-position: left top;
+}
+
+.bg-right-top {
+  background-position: right top;
+}
+
+.bg-left-bottom {
+  background-position: left bottom;
+}
+
+.bg-right-bottom {
+  background-position: right bottom;
+}
+
+.bg-center {
+  background-position: center center;
+}
+
+.bg-repeat-x {
+  background-repeat: repeat-x;
+}
+
+.bg-repeat-y {
+  background-repeat: repeat-y;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-contain {
+  background-size: contain;
+}
+
+.bg-50 {
+  background-size: 50%;  
+}
+
+.bg-none {
+  background: none; 
+}
+
+.bg-trans {
+  background: transparent;  
+}
+
+// Border Radius
+
+.bor-rad-0 {
+  border-radius: 0;
+}
+
+.bor-rad-2 {
+  border-radius: 2px;
+}
+
+.bor-rad-3 {
+  border-radius: 3px;
+}
+
+.bor-rad-4 {
+  border-radius: 4px;
+}
+
+.bor-rad-5 {
+  border-radius: 5px;
+}
+
+.bor-rad-10 {
+  border-radius: 10px;
+}
+
+.bor-rad-15 {
+  border-radius: 15px;
+}
+
+// Border Radius Top
+
+.bor-top-rad-2 {
+  border-radius: 2px 2px 0 0;
+}
+
+.bor-top-rad-3 {
+  border-radius: 3px 3px 0 0;
+}
+
+.bor-top-rad-4 {
+  border-radius: 4px 4px 0 0;
+}
+
+.bor-top-rad-5 {
+  border-radius: 5px 5px 0 0;
+}
+
+.bor-top-rad-10 {
+  border-radius: 10px 10px 0 0;
+}
+
+.bor-top-rad-15 {
+  border-radius: 15px 15px 0 0;
+}
+
+// Border Radius RIght
+
+.bor-rt-rad-2 {
+  border-radius: 0 2px 2px 0;
+}
+
+.bor-rt-rad-3 {
+  border-radius: 0 3px 3px 0;
+}
+
+.bor-rt-rad-4 {
+  border-radius: 0 4px 4px 0;
+}
+
+.bor-rt-rad-5 {
+  border-radius: 0 5px 5px 0;
+}
+
+.bor-rt-rad-10 {
+  border-radius: 0 10px 10px 0;
+}
+
+.bor-rt-rad-15 {
+  border-radius: 0 15px 15px 0;
+}
+
+// Border Radius Bottom
+
+.bor-bot-rad-2 {
+  border-radius:  0 0 2px 2px;
+}
+
+.bor-bot-rad-3 {
+  border-radius: 0 0 3px 3px;
+}
+
+.bor-bot-rad-4 {
+  border-radius: 0 0 4px 4px;
+}
+
+.bor-bot-rad-5 {
+  border-radius: 0 0 5px 5px;
+}
+
+.bor-bot-rad-10 {
+  border-radius: 0 0 10px 10px;
+}
+
+.bor-bot-rad-15 {
+  border-radius: 0 0 15px 15px;
+}
+
+// Border Radius Left
+
+.bor-left-rad-2 {
+  border-radius: 2px 2px 0 0;
+}
+
+.bor-left-rad-3 {
+  border-radius: 3px 3px 0 0;
+}
+
+.bor-left-rad-4 {
+  border-radius: 4px 4px 0 0;
+}
+
+.bor-left-rad-5 {
+  border-radius: 5px 5px 0 0;
+}
+
+.bor-left-rad-10 {
+  border-radius: 10px 10px 0 0;
+}
+
+.bor-left-rad-15 {
+  border-radius: 15px 15px 0 0;
+}
+
+// Border Styles
+
+.bor-solid {
+  border-style: solid;
+}
+
+.bor-top-s {
+  border-top-style: solid;
+}
+
+.bor-rt-s {
+  border-right-style: solid;
+}
+
+.bor-bot-s {
+  border-bottom-style: solid;
+}
+
+.bor-left-s {
+  border-left-style: solid;
+}
+
+.bor-dotted {
+  border-style: dotted;
+}
+
+.bor-none {
+  border: none;
+}
+
+.bor-top-none {
+  border-top: none;
+}
+
+.bor-rt-none {
+  border-right: none;
+}
+
+.bor-bot-none {
+  border-bottom: none;
+}
+
+.bor-left-none {
+  border-left: none;
+}
+
+.bor-0 {
+  border-width: 0;
+}
+
+.bor-top-0 {
+  border-top-width: 0;
+}
+
+.bor-rt-0 {
+  border-right-width: 0;
+}
+
+.bor-bot-0 {
+  border-bottom-width: 0;
+}
+
+.bor-left-0 {
+  border-bottom-width: 0;
+}
+
+.bor-1 {
+  border-width: 1px;
+}
+
+.bor-2 {
+  border-width: 2px;
+}
+
+.bor-3 {
+  border-width: 3px;
+}
+
+.bor-top-1 {
+  border-top-width: 1px;
+}
+
+.bor-top-2 {
+  border-top-width: 2px;
+}
+
+.bor-top-3 {
+  border-top-width: 3px;
+}
+
+.bor-top-4 {
+  border-top-width: 4px;
+}
+
+.bor-rt-1 {
+  border-top-width: 1px;
+}
+
+.bor-rt-2 {
+  border-top-width: 2px;
+}
+
+.bor-rt-3 {
+  border-top-width: 3px;
+}
+
+.bor-rt-4 {
+  border-top-width: 4px;
+}
+
+.bor-bot-1 {
+  border-bottom-width: 1px;
+}
+
+.bor-bot-2 {
+  border-bottom-width: 2px;
+}
+
+.bor-bot-3 {
+  border-bottom-width: 3px;
+}
+
+.bor-bot-4 {
+  border-bottom-width: 4px;
+}
+
+.bor-left-1 {
+  border-left-width: 1px;
+}
+
+.bor-left-2 {
+  border-left-width: 2px;
+}
+
+.bor-left-3 {
+  border-left-width: 3px;
+}
+
+.bor-left-4 {
+  border-left-width: 4px;
+}
+
+// Box Shadow
+
+.bs-a-25 {
+  box-shadow: 0 0 15px rgba(black, .25);
+}
+
+.bs-a-40 {
+  box-shadow: 0 0 15px rgba(black, .4);
+}
+
+.bs-a-75 {
+  box-shadow: 0 0 15px rgba(black, .75);
+}
+
+.bs-5-a-15 {
+  box-shadow: 5px 5px 0 rgba(black, .15);
+}
+
+
+// Opacity
+
+.o-10 { opacity: 100%; }
+
+.o-9 { @include opacity(.9); }
+
+.o-8 { @include opacity(.8); }
+
+.o-7 { @include opacity(.7); }
+
+.o-6 { @include opacity(.6); }
+
+.o-5 { @include opacity(.5); }
+
+.o-4 { @include opacity(.4); }
+
+.o-3 { @include opacity(.3); }
+
+.o-2 { @include opacity(.2); }
+
+.o-1 { @include opacity(.1); }
+
+.o-0 { opacity: 0; }
+
+// Psuedo Element BG repeat
+
+.bg-after-left,
+.bg-after-rt {
+  > .container {
+    position: relative; 
+    z-index: 1; 
+  }
+  &:after {
+    background-color: currentColor;
+    content: '';
+    position: absolute;
+    top: 0; 
+    height: 100%;
+    width: 100%;
+    z-index: 0; 
+  }
+}
+
+.bg-after-left:after {
+  left: -100%;  
+}
+
+.bg-after-rt:after {
+  right: -100%; 
+}
+
+// > 480
+@media (min-width: $break-sm-phone) {
+  
+  .sm-bg-after-left,
+  .sm-bg-after-rt {
+    &:after {
+      background-color: currentColor;
+      content: '';
+      position: absolute;
+      top: 0; 
+      height: 100%;
+      width: 100%;
+    }
+  }
+  
+  .sm-bg-after-left:after {
+    left: -100%;  
+  }
+  
+  .sm-bg-after-rt:after {
+    right: -100%; 
+  }
+  
+}
+
+// > 768
+@media (min-width: $break-lg-phone) {
+  
+  .md-bg-after-left,
+  .md-bg-after-rt {
+    &:after {
+      background-color: currentColor;
+      content: '';
+      position: absolute;
+      top: 0; 
+      height: 100%;
+      width: 100%;
+    }
+  }
+  
+  .md-bg-after-left:after {
+    left: -100%;  
+  }
+  
+  .md-bg-after-rt:after {
+    right: -100%; 
+  }
+  
+}
+
+// > 992
+@media (min-width: $break-md-screen) {
+  
+  .lg-bg-after-left,
+  .lg-bg-after-rt {
+    &:after {
+      background-color: currentColor;
+      content: '';
+      position: absolute;
+      top: 0; 
+      height: 100%;
+      width: 100%;
+      z-index: 0; 
+    }
+  }
+  
+  .lg-bg-after-left:after {
+    left: -100%;  
+  }
+  
+  .lg-bg-after-rt:after {
+    right: -100%; 
+  }
+  
+}

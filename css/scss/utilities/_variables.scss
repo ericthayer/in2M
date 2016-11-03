@@ -1,0 +1,64 @@
+// Media Queries
+
+$break-240: 15em; // 240px
+
+$break-tiny-phone: 20em; // 320px
+
+$break-375: 23.43em; // 375px
+ 
+$break-sm-phone: 30em; // 480px
+
+$break-md-phone: 33.65em; // 540px
+
+$break-ml-phone: 40em; // 640px
+
+$break-lg-phone: 48em; // 768px
+
+$break-900: 56.25em; // 900px 
+
+$break-md-screen: 62.50em; // 1000px
+
+$break-lg-screen: 75em; // 1200px 
+
+$break-xl-screen: 100em; // 1600px
+
+$break-xxl-screen: 125em; // 2000px
+
+$break-widescreen: 150em; // 2400px
+
+// Default Font Stacks
+
+$sans-serif: 'Helvetica Neue', Helvetica, sans-serif;
+
+$serif: 'Cambria', Georgia, serif;
+
+$KO94: 'Knockout-94', $sans-serif;
+
+$KO29: 'Knockout-29', $sans-serif;
+
+$Whitney-Bold: 'Whitney-Bold', $sans-serif;
+
+$Whitney-SemiBold: 'Whitney-SemiBold', $sans-serif;
+
+$Whitney-Med: 'Whitney-Medium', $sans-serif;
+
+$FilsonPro: 'filson-pro', $sans-serif; 
+
+// Colors
+
+$light-tan: #DDDACC;
+
+$light-blue: #9EBFCB;
+
+$med-green: #539F9E;
+
+$p-link: #3A8DDA;
+
+
+// Specific Helpers
+
+$wht-text-shadow: 0 1px 0 rgba(white, 0.35);
+
+$blk-text-shadow: 1px 1px 0 rgba(black, 0.15);
+
+$blk-text-shadow-neg: 0 -1px 1px rgba(black, 0.25);
