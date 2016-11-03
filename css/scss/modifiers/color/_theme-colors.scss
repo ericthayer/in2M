@@ -103,15 +103,11 @@ a {
       
 
 // ********** Buttons ********** //
+
     
-button,
+button:not(.search-button),
 .btn,
-[class^="btn-"]:not([class*="bg"]) {
-  background-color: $DDD;
-  //color: #FFF;
-  a {
-    //color: #FFF;
-  }
+[class^="btn-"] { 
   &:hover,
   &:focus {
     background-color: lighten($blue-20, 15%);

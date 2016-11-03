@@ -1357,40 +1357,35 @@ body {
   color: #333;
 }
 
-button,
-.btn,
-[class^="btn-"]:not([class*="bg"]) {
-  background-color: #dedede;
-}
-button:hover, button:focus,
+button:not(.search-button):hover, button:not(.search-button):focus,
 .btn:hover,
 .btn:focus,
-[class^="btn-"]:not([class*="bg"]):hover,
-[class^="btn-"]:not([class*="bg"]):focus {
+[class^="btn-"]:hover,
+[class^="btn-"]:focus {
   background-color: #006eb3;
   color: white;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
-button:hover .icon, button:focus .icon,
+button:not(.search-button):hover .icon, button:not(.search-button):focus .icon,
 .btn:hover .icon,
 .btn:focus .icon,
-[class^="btn-"]:not([class*="bg"]):hover .icon,
-[class^="btn-"]:not([class*="bg"]):focus .icon {
+[class^="btn-"]:hover .icon,
+[class^="btn-"]:focus .icon {
   fill: white;
 }
-button:hover > a, button:focus > a,
+button:not(.search-button):hover > a, button:not(.search-button):focus > a,
 .btn:hover > a,
 .btn:focus > a,
-[class^="btn-"]:not([class*="bg"]):hover > a,
-[class^="btn-"]:not([class*="bg"]):focus > a {
+[class^="btn-"]:hover > a,
+[class^="btn-"]:focus > a {
   color: white;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
-button:hover > a .icon, button:focus > a .icon,
+button:not(.search-button):hover > a .icon, button:not(.search-button):focus > a .icon,
 .btn:hover > a .icon,
 .btn:focus > a .icon,
-[class^="btn-"]:not([class*="bg"]):hover > a .icon,
-[class^="btn-"]:not([class*="bg"]):focus > a .icon {
+[class^="btn-"]:hover > a .icon,
+[class^="btn-"]:focus > a .icon {
   fill: white;
 }
 
@@ -4233,9 +4228,6 @@ textarea.disabled {
 }
 .search-bar button .icon {
   margin: 0;
-}
-.search-bar button:hover {
-  border: 1px solid transparent;
 }
 .search-bar.search-bar-clear button {
   border-left: none;

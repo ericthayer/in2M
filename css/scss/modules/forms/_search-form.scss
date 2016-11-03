@@ -19,9 +19,14 @@
     .icon {
       margin: 0;  
     }
-    &:hover {
-      //background: none;
-      border: 1px solid transparent;
+    &:hover,
+    &:focus  {
+      //background: transparent;
+      //border: 1px solid transparent;
+      //color: currentColor;
+      .icon {
+        //fill: currentColor;
+      }
     }   
   }
   &.search-bar-clear {
