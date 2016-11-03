@@ -1,7 +1,5 @@
 
 @mixin button {
-  //background-color: currentColor;
-  //color: currentColor;
 	border-radius: .3rem;
 	display: inline-block;
 	@include Whitney-Bold;	
@@ -20,7 +18,8 @@
 	transition: color .4s ease,
 	            opacity .4s ease,
 	            box-shadow .4s ease,
-	            background .4s ease;
+	            border .4s ease,
+              background .4s ease;
 	vertical-align: middle;  
 	-webkit-font-smoothing: antialiased; 	
 	&:hover,
@@ -149,6 +148,13 @@ button,
 [class^="btn-"] {
   @include button;
 }
+
+button:not([class*="bg-"]):not([class*="c-"]),
+.btn:not([class*=" bg-"]):not([class*=" c-"]),
+[class^="btn-"]:not([class*=" bg-"]):not([class*=" c-"]) {
+  background-color: $DDD;
+}
+
 
 .btn-outline {
   @include button-outline;

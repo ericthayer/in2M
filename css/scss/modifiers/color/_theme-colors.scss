@@ -106,8 +106,8 @@ a {
     
 button,
 .btn,
-[class^="btn-"] {
-  //background-color: $blue-20;
+[class^="btn-"]:not([class*="bg"]) {
+  background-color: $DDD;
   //color: #FFF;
   a {
     //color: #FFF;

@@ -32,7 +32,7 @@
     &:last-child {
       margin-bottom: 0; 
     } 
-    > a {
+    > a:not(button):not(.btn):not([class^="btn-"]) {
       color: currentColor; 
     }
   }

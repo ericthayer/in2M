@@ -173,12 +173,12 @@ $bronze: hsl(49, 15%, 61%);
 
 .bg-purple-g-1 {
   background: $purple;
-  background-image: linear-gradient(to bottom, $purple-10 0%, $purple-90 60%);
+  background-image: linear-gradient(to bottom, $purple-30 0%, $purple-50 60%);
 }
 
 .bg-purple-g-2 { 
   background: $purple-40;
-  background-image: radial-gradient(ellipse at bottom, $purple-70 0%, $purple-40 75%);
+  background-image: linear-gradient(to top, $purple-30 0%, $purple-50 60%);
 }
 
 .bg-purple-g-3 {
@@ -192,6 +192,21 @@ $bronze: hsl(49, 15%, 61%);
 }
 
 .bg-purple-g-5 { 
+  background: $purple-40;
+  background-image: linear-gradient(to top, $purple-20 0%, $purple-50 100%);
+}
+
+.bg-purple-g-6 { 
+  background: $purple-40;
+  background-image: linear-gradient(45deg, $purple-20 0%, $purple-50 80%);
+}
+
+.bg-purple-g-7 { 
+  background: $purple-40;
+  background-image: linear-gradient(125deg, $purple-20 0%, $purple-50 80%);
+}
+
+.bg-purple-g-8 { 
   background: $purple-40;
   background-image: linear-gradient(to top, $purple-30 0%, $purple-50 100%);
 }

@@ -3,15 +3,14 @@
 .search-bar {
   @include clearfix;
   input[type='search'] {
+    color: currentColor;
     border-right: none;
     border-radius: 3px 0 0 3px;
-    color: currentColor;
     float: left;  
     width: 85%;  
   }
   button {
     border-radius: 0 3px 3px 0;
-    //color: currentColor;
     float: left;  
     margin-bottom: 0;
     padding: 0;  
@@ -19,6 +18,10 @@
     text-align: center;
     .icon {
       margin: 0;  
+    }
+    &:hover {
+      //background: none;
+      border: 1px solid transparent;
     }   
   }
   &.search-bar-clear {
@@ -29,6 +32,12 @@
       //border: 1px solid currentColor;
       border-left: none;
     }
+  }
+}
+
+.search-bar {
+  input[type='search']:not([class*=" bg-"]):not([class*=" c-"]) {
+    color: currentColor;
   }
 }
 

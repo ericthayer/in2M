@@ -977,14 +977,14 @@ html {
 
 .bg-purple-g-1 {
   background: #6b50aa;
-  background-image: -webkit-linear-gradient(top, #161023 0%, #e2dcef 60%);
-  background-image: linear-gradient(to bottom, #161023 0%, #e2dcef 60%);
+  background-image: -webkit-linear-gradient(top, #413168 0%, #6d52ad 60%);
+  background-image: linear-gradient(to bottom, #413168 0%, #6d52ad 60%);
 }
 
 .bg-purple-g-2 {
   background: #57418b;
-  background-image: -webkit-radial-gradient(bottom ellipse, #a797ce 0%, #57418b 75%);
-  background-image: radial-gradient(ellipse at bottom, #a797ce 0%, #57418b 75%);
+  background-image: -webkit-linear-gradient(bottom, #413168 0%, #6d52ad 60%);
+  background-image: linear-gradient(to top, #413168 0%, #6d52ad 60%);
 }
 
 .bg-purple-g-3 {
@@ -1000,6 +1000,24 @@ html {
 }
 
 .bg-purple-g-5 {
+  background: #57418b;
+  background-image: -webkit-linear-gradient(bottom, #2c2145 0%, #6d52ad 100%);
+  background-image: linear-gradient(to top, #2c2145 0%, #6d52ad 100%);
+}
+
+.bg-purple-g-6 {
+  background: #57418b;
+  background-image: -webkit-linear-gradient(45deg, #2c2145 0%, #6d52ad 80%);
+  background-image: linear-gradient(45deg, #2c2145 0%, #6d52ad 80%);
+}
+
+.bg-purple-g-7 {
+  background: #57418b;
+  background-image: -webkit-linear-gradient(325deg, #2c2145 0%, #6d52ad 80%);
+  background-image: linear-gradient(125deg, #2c2145 0%, #6d52ad 80%);
+}
+
+.bg-purple-g-8 {
   background: #57418b;
   background-image: -webkit-linear-gradient(bottom, #413168 0%, #6d52ad 100%);
   background-image: linear-gradient(to top, #413168 0%, #6d52ad 100%);
@@ -1339,11 +1357,16 @@ body {
   color: #333;
 }
 
+button,
+.btn,
+[class^="btn-"]:not([class*="bg"]) {
+  background-color: #dedede;
+}
 button:hover, button:focus,
 .btn:hover,
 .btn:focus,
-[class^="btn-"]:hover,
-[class^="btn-"]:focus {
+[class^="btn-"]:not([class*="bg"]):hover,
+[class^="btn-"]:not([class*="bg"]):focus {
   background-color: #006eb3;
   color: white;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
@@ -1351,23 +1374,23 @@ button:hover, button:focus,
 button:hover .icon, button:focus .icon,
 .btn:hover .icon,
 .btn:focus .icon,
-[class^="btn-"]:hover .icon,
-[class^="btn-"]:focus .icon {
+[class^="btn-"]:not([class*="bg"]):hover .icon,
+[class^="btn-"]:not([class*="bg"]):focus .icon {
   fill: white;
 }
 button:hover > a, button:focus > a,
 .btn:hover > a,
 .btn:focus > a,
-[class^="btn-"]:hover > a,
-[class^="btn-"]:focus > a {
+[class^="btn-"]:not([class*="bg"]):hover > a,
+[class^="btn-"]:not([class*="bg"]):focus > a {
   color: white;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 button:hover > a .icon, button:focus > a .icon,
 .btn:hover > a .icon,
 .btn:focus > a .icon,
-[class^="btn-"]:hover > a .icon,
-[class^="btn-"]:focus > a .icon {
+[class^="btn-"]:not([class*="bg"]):hover > a .icon,
+[class^="btn-"]:not([class*="bg"]):focus > a .icon {
   fill: white;
 }
 
@@ -2124,7 +2147,7 @@ html.remodal-is-locked {
 .footer-menu > li:last-child {
   margin-bottom: 0;
 }
-.footer-menu > li > a {
+.footer-menu > li > a:not(button):not(.btn):not([class^="btn-"]) {
   color: currentColor;
 }
 
@@ -2177,8 +2200,8 @@ button,
   text-align: center;
   text-decoration: none;
   text-shadow: none;
-  -webkit-transition: color .4s ease, opacity .4s ease, box-shadow .4s ease, background .4s ease;
-  transition: color .4s ease, opacity .4s ease, box-shadow .4s ease, background .4s ease;
+  -webkit-transition: color .4s ease, opacity .4s ease, box-shadow .4s ease, border .4s ease, background .4s ease;
+  transition: color .4s ease, opacity .4s ease, box-shadow .4s ease, border .4s ease, background .4s ease;
   vertical-align: middle;
   -webkit-font-smoothing: antialiased;
 }
@@ -2201,6 +2224,12 @@ button:hover, button:focus,
   [class^="btn-"] {
     width: 100%;
   }
+}
+
+button:not([class*="bg-"]):not([class*="c-"]),
+.btn:not([class*=" bg-"]):not([class*=" c-"]),
+[class^="btn-"]:not([class*=" bg-"]):not([class*=" c-"]) {
+  background-color: #dedede;
 }
 
 .btn-outline {
@@ -4188,9 +4217,9 @@ textarea.disabled {
   clear: both;
 }
 .search-bar input[type='search'] {
+  color: currentColor;
   border-right: none;
   border-radius: 3px 0 0 3px;
-  color: currentColor;
   float: left;
   width: 85%;
 }
@@ -4205,8 +4234,15 @@ textarea.disabled {
 .search-bar button .icon {
   margin: 0;
 }
+.search-bar button:hover {
+  border: 1px solid transparent;
+}
 .search-bar.search-bar-clear button {
   border-left: none;
+}
+
+.search-bar input[type='search']:not([class*=" bg-"]):not([class*=" c-"]) {
+  color: currentColor;
 }
 
 .card h3 {
