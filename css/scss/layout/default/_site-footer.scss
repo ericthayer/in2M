@@ -36,5 +36,12 @@
       color: currentColor; 
     }
   }
+  input[type='search'] {
+    //line-height: 1.35;
+  }
+  [class^="btn-"] {
+    //line-height: 1.2;
+    //max-height: 40px;
+  }
 }
 
