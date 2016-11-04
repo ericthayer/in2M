@@ -1175,8 +1175,8 @@ html {
 
 .bg-orange-g-1 {
   background: #e48a1b;
-  background-image: -webkit-linear-gradient(top, #2e1c05 0%, #fae8d1 60%);
-  background-image: linear-gradient(to bottom, #2e1c05 0%, #fae8d1 60%);
+  background-image: -webkit-linear-gradient(top, #895310 0%, #eaa148 90%);
+  background-image: linear-gradient(to bottom, #895310 0%, #eaa148 90%);
 }
 
 .bg-orange-g-2 {

@@ -5,11 +5,11 @@ $blue: hsl(203, 100%, 30%); // #005e99
 $green: hsl(86, 54%, 50%); // #89c43b
 $orange: hsl(33, 79%, 50%); // #e48a1b
 $grey: hsl(0, 0%, 80%); // #cccccc
+$purple: hsl(258, 36%, 49%); // #694FA8;
 
 // Accent Brand Colors
 
 // Purple
-$purple: hsl(258, 36%, 49%); // #694FA8;
 $purple-90: hsl(258, 36%, 90%);
 $purple-80: hsl(258, 36%, 80%);
 $purple-70: hsl(258, 36%, 70%);
@@ -279,7 +279,7 @@ $bronze: hsl(49, 15%, 61%);
 
 .bg-orange-g-1 {
   background: $orange;
-  background-image: linear-gradient(to bottom, $orange-10 0%, $orange-90 60%);
+  background-image: linear-gradient(to bottom, $orange-30 0%, $orange-60 90%);
 }
 
 .bg-orange-g-2 { 
