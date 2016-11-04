@@ -5,7 +5,7 @@
 // https://s3-us-west-2.amazonaws.com/s.cdpn.io/97621/in2m-svg-icons.svg
 
 var ajax = new XMLHttpRequest();
-ajax.open("GET", "https://raw.githubusercontent.com/ericthayer/in2Marketplace.com/master/images/UI/ui-icons/in2m-svg-icons.svg", true);
+ajax.open("GET", "../images/UI/ui-icons/in2m-svg-icons.svg", true);
 ajax.send();
 ajax.onload = function(e) {
   var div = document.createElement("div");
