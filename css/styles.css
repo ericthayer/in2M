@@ -3092,6 +3092,35 @@ table a {
   z-index: 1;
 }
 
+.terms {
+  background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 100%) 0 bottom;
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.65) 100%) 0 bottom;
+  background: -webkit-radial-gradient(bottom, ellipse, rgba(0, 0, 0, 0.5) 0%, transparent 75%) 0 bottom, #EEE;
+  background: radial-gradient(bottom, ellipse, rgba(0, 0, 0, 0.5) 0%, transparent 75%) 0 bottom, #EEE;
+  background-size: 100% 5%;
+  background-attachment: scroll, scroll;
+  background-repeat: no-repeat;
+  max-height: 25em;
+  overflow-y: scroll;
+}
+.terms > * {
+  padding-right: 1em;
+  padding-left: 1em;
+}
+.terms p:last-child {
+  position: relative;
+}
+.terms p:last-child:after {
+  background: #eee;
+  content: "";
+  position: absolute;
+  bottom: -2em;
+  left: 0;
+  height: 2em;
+  width: 100%;
+  z-index: 1000;
+}
+
 nav a {
   display: inline-block;
   line-height: 1;
