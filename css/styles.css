@@ -926,6 +926,10 @@ html {
   background-image: linear-gradient(to top, #005e99 0%, #009dff 100%);
 }
 
+.bg-purple {
+  background-color: #6d52ad;
+}
+
 .bg-purple-90 {
   background-color: #e2dcef;
 }
