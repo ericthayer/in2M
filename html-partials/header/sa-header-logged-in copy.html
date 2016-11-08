@@ -1,0 +1,126 @@
+<div class="admin-bar bg-grey-light w-100">
+    <div class="container flex flex-wrap ai-center jc-between pt-pb-sm sm-jc-center sm-jc-between">
+      <!-- User Status -->
+      <div class="user-status flex ai-center jc-center mb-1 w-100 sm-jc-start sm-mb-0 sm-w-30">
+        <div class="avatar user-avatar mr-sm sm-mr-1"><img class="" src="../images/UI/slug-avatar-square.svg" alt="user avatar"></div>
+        <div class="user-status-text flex flex-wrap flex-d-col ai-start">
+          <div class="status-msg mb-tiny"><span class="user-name">Super Admin</span></div>
+          <div class="profile-links flex ai-center">
+            <a class="pr-sm" href="#">Dashboard</a>
+            <a href="#">Logout</a>
+          </div>
+        </div>
+      </div>
+      <!-- Search -->
+      <div class="search-form header-search mr-ml-a w-100 mw-15em sm-w-70 sm-mr-0">
+        <label class="sr-only" for="search-form">Search</label>
+        <!-- Search Bar -->
+        <div class="search-bar flex flex-wrap jc-between">
+          <input class="bor-1 bor-solid bor-c-DDD" id="search-form" type="search" placeholder="search">
+          <button class="bor-1 bor-solid bor-c-DDD bor-left-none bg-white c-777" type="submit"> <svg class="icon"><use xlink:href="#icon-search" /></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+	
+<!-- Header -->  
+<header class="site-header bg-white c-blue-40" role="banner">
+  <!-- Nav -->
+  <div class="container flex flex-wrap ai-center jc-between pt-pb-1">
+    <!-- Site Logo -->
+    <h1 class="site-title"><a href="super-admin.html">
+      <img class="header-logo mw-8em" srcset="../images/UI/in2m-logo-color.svg 600w, ../images/UI/in2m-logo-icon-color.svg" src="../images/UI/in2m-logo-color.svg" alt="in2Marketplace.com"><span class="sr-only">in2Marketplace.com</span></a>
+    </h1>
+    <!-- Nav Toggle -->
+    <button id="nav-toggle" class="bg-blue-40 nav-toggle-html" aria-hidden="false" aria-expanded="false">
+      <div class="nav-icon c-white"></div>
+    </button>
+    <!-- Main Nav -->
+    <section class="main-nav flex flex-wrap ai-center jc-center sm-flex-g-1">
+      <!-- Nav -->
+      <script src="../js/libs/responsive-nav.js"></script>
+      <nav class="nav-collapse" role="navigation">
+        <!-- Admin Bar -->
+        <div class="admin-bar w-100">
+          <div class="container flex flex-wrap ai-center jc-between pt-pb-1 pr-pl-0 sm-flex-nowrap sm-jc-start"> 
+            <!-- User Status -->
+            <div class="user-status flex ai-center jc-center mb-1 w-100 sm-jc-start sm-mb-0 sm-w-a">
+              <div class="avatar user-avatar img-1-1-tiny mr-sm x-sm-mr-1"><img class="" src="../images/UI/slug-avatar-square.svg" alt="user avatar"></div>
+              <div class="user-status-text flex flex-wrap flex-d-col ai-start">
+                <div class="status-msg mb-tiny"><span class="user-name">Jenny Salesperson</span></div>
+                <div class="profile-links flex ai-center">
+                  <a class="pr-sm" href="#">Dashboard</a>
+                  <a href="#">Logout</a>
+                </div>
+              </div>
+            </div>
+            <!-- Search -->
+            <div class="search-form header-search mr-ml-a mw-20em w-100 sm-mr-0 sm-pl-1 sm-w-a">
+              <label class="sr-only" for="search-form">Search</label>
+              <!-- Search Bar -->
+              <div class="search-bar flex flex-wrap jc-between">
+                <input class="bor-1 bor-solid bor-c-DDD" id="search-form" type="search" placeholder="search">
+                <button class="bor-1 bor-solid bor-c-DDD bor-left-none bg-white c-777" type="submit"> <svg class="icon"><use xlink:href="#icon-search" /></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul class="list-reset">
+          <li class="nav-cta text-center"><a class="btn-round bg-blue-50 c-white all-caps mr-0 mw-20em pr-pl-1 text-base w-100" href="#">Contact</a></li>
+          <li class="dropdown">
+            <a href="#">View</a>
+            <ul class="sub-menu">
+              <li><a href="sa-view-sales-org.html">Sales Organizations</a></li>
+              <li><a href="sa-view-packages-offers.html">Packages & Offers</a></li>
+              <li><a href="sa-view-commissions.html">Commissions</a></li>
+              <li><a href="sa-view-notifications.html">Notifications</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#">Setup</a>
+            <ul class="sub-menu">
+              <li><a href="sa-setup-capacity.html">Capacity</a></li>
+              <li><a href="sa-setup-short-codes.html">Short Codes</a></li>
+              <li><a href="sa-setup-packages.html">Packages</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#">Create</a>
+            <ul class="sub-menu">
+              <li><a href="sa-create-super-admin.html">Super Admin Profile</a></li>
+              <li><a href="sa-create-sales-company.html">Sales Company</a></li>
+              <li><a href="sa-create-sales-group.html">Sales Group</a></li>
+              <li><a href="sa-create-sales-person.html">Sales Person</a></li>
+              <li><a href="sa-create-email-templates.html">Email Templates</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#">Manage</a>
+            <ul class="sub-menu">
+              <li><a href="sa-manage-super-admin.html">Super Admin Profile</a></li>
+              <li><a href="sa-manage-sales-company.html">Sales Company</a></li>
+              <li><a href="sa-manage-sales-group.html">Sales Group</a></li>
+              <li><a href="sa-manage-sales-person.html">Sales Person</a></li>
+              <li><a href="sa-manage-retail-customers.html">Retail Customers</a></li>
+              <li><a href="sa-manage-packages.html">Packages</a></li>
+              <li>
+                <a href="#">Email Templates</a>
+              </li>
+            </ul>
+          </li>                  
+          <!-- end / -->
+        </ul>
+      </nav>
+      <script src="../js/libs/mobile-nav.js"></script>
+    </section>
+  </div>
+  <!-- Text Block -->
+  <section class="text-block bg-orange c-white pt-pb-4 text-s-black-50">
+  	<div class="container mw-56em md-pt-pb-1">
+    	<h2 class="mb-sm text-center w-100">Super Admin</h2>
+      <h3 class="antialiased mr-ml-a mb-0 text-center text-lg mw-35em">This is the master page template for a <strong>Super Admin</strong> or when an authorized user is logged in. Try and use this ".text-block" space for important information. Please leave out of the document if not used.</h3>
+  	</div>
+  </section>
+</header>
