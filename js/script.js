@@ -774,6 +774,9 @@ document.documentElement.className += " enhanced";
 
 $(document).ready(function() {
   
+	// initialize modules
+	$( document ).trigger( "enhance" );
+  
   $("[data-append],[data-replace],[data-after],[data-before]").ajaxInclude();
 
   $( ".date-input" ).datepicker({

@@ -6,18 +6,16 @@
     <!--#endif -->
     <head>
       <!-- FontFaceObserver -->
-      <script>
+      <!-- FontFaceObserver -->
+      <script>      
         (function(){'use strict';var f,g=[];function l(a){g.push(a);1==g.length&&f()}function m(){for(;g.length;)g[0](),g.shift()}f=function(){setTimeout(m)};function n(a){this.a=p;this.b=void 0;this.f=[];var b=this;try{a(function(a){q(b,a)},function(a){r(b,a)})}catch(c){r(b,c)}}var p=2;function t(a){return new n(function(b,c){c(a)})}function u(a){return new n(function(b){b(a)})}function q(a,b){if(a.a==p){if(b==a)throw new TypeError;var c=!1;try{var d=b&&b.then;if(null!=b&&"object"==typeof b&&"function"==typeof d){d.call(b,function(b){c||q(a,b);c=!0},function(b){c||r(a,b);c=!0});return}}catch(e){c||r(a,e);return}a.a=0;a.b=b;v(a)}}
+        
         function r(a,b){if(a.a==p){if(b==a)throw new TypeError;a.a=1;a.b=b;v(a)}}function v(a){l(function(){if(a.a!=p)for(;a.f.length;){var b=a.f.shift(),c=b[0],d=b[1],e=b[2],b=b[3];try{0==a.a?"function"==typeof c?e(c.call(void 0,a.b)):e(a.b):1==a.a&&("function"==typeof d?e(d.call(void 0,a.b)):b(a.b))}catch(h){b(h)}}})}n.prototype.g=function(a){return this.c(void 0,a)};n.prototype.c=function(a,b){var c=this;return new n(function(d,e){c.f.push([a,b,d,e]);v(c)})};
+        
         function w(a){return new n(function(b,c){function d(c){return function(d){h[c]=d;e+=1;e==a.length&&b(h)}}var e=0,h=[];0==a.length&&b(h);for(var k=0;k<a.length;k+=1)u(a[k]).c(d(k),c)})}function x(a){return new n(function(b,c){for(var d=0;d<a.length;d+=1)u(a[d]).c(b,c)})};window.Promise||(window.Promise=n,window.Promise.resolve=u,window.Promise.reject=t,window.Promise.race=x,window.Promise.all=w,window.Promise.prototype.then=n.prototype.c,window.Promise.prototype["catch"]=n.prototype.g);}());
         
-        (function(){var k=!!document.addEventListener;function l(a,b){k?a.addEventListener("scroll",b,!1):a.attachEvent("scroll",b)}function v(a){document.body?a():k?document.addEventListener("DOMContentLoaded",a):document.attachEvent("onreadystatechange",function(){"interactive"!=document.readyState&&"complete"!=document.readyState||a()})};function w(a){this.a=document.createElement("div");this.a.setAttribute("aria-hidden","true");this.a.appendChild(document.createTextNode(a));this.b=document.createElement("span");this.c=document.createElement("span");this.h=document.createElement("span");this.f=document.createElement("span");this.g=-1;this.b.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;";this.c.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;";
-        this.f.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;";this.h.style.cssText="display:inline-block;width:200%;height:200%;font-size:16px;max-width:none;";this.b.appendChild(this.h);this.c.appendChild(this.f);this.a.appendChild(this.b);this.a.appendChild(this.c)}
-        function y(a,b){a.a.style.cssText="max-width:none;min-width:20px;min-height:20px;display:inline-block;overflow:hidden;position:absolute;width:auto;margin:0;padding:0;top:-999px;left:-999px;white-space:nowrap;font:"+b+";"}function z(a){var b=a.a.offsetWidth,c=b+100;a.f.style.width=c+"px";a.c.scrollLeft=c;a.b.scrollLeft=a.b.scrollWidth+100;return a.g!==b?(a.g=b,!0):!1}function A(a,b){function c(){var a=m;z(a)&&null!==a.a.parentNode&&b(a.g)}var m=a;l(a.b,c);l(a.c,c);z(a)};function B(a,b){var c=b||{};this.family=a;this.style=c.style||"normal";this.weight=c.weight||"normal";this.stretch=c.stretch||"normal"}var C=null,D=null,H=!!window.FontFace;function I(){if(null===D){var a=document.createElement("div");try{a.style.font="condensed 100px sans-serif"}catch(b){}D=""!==a.style.font}return D}function J(a,b){return[a.style,a.weight,I()?a.stretch:"","100px",b].join(" ")}
-        B.prototype.load=function(a,b){var c=this,m=a||"BESbswy",x=b||3E3,E=(new Date).getTime();return new Promise(function(a,b){if(H){var K=new Promise(function(a,b){function e(){(new Date).getTime()-E>=x?b():document.fonts.load(J(c,c.family),m).then(function(c){1<=c.length?a():setTimeout(e,25)},function(){b()})}e()}),L=new Promise(function(a,c){setTimeout(c,x)});Promise.race([L,K]).then(function(){a(c)},function(){b(c)})}else v(function(){function q(){var b;if(b=-1!=f&&-1!=g||-1!=f&&-1!=h||-1!=g&&-1!=
-        h)(b=f!=g&&f!=h&&g!=h)||(null===C&&(b=/AppleWebKit\/([0-9]+)(?:\.([0-9]+))/.exec(window.navigator.userAgent),C=!!b&&(536>parseInt(b[1],10)||536===parseInt(b[1],10)&&11>=parseInt(b[2],10))),b=C&&(f==r&&g==r&&h==r||f==t&&g==t&&h==t||f==u&&g==u&&h==u)),b=!b;b&&(null!==d.parentNode&&d.parentNode.removeChild(d),clearTimeout(G),a(c))}function F(){if((new Date).getTime()-E>=x)null!==d.parentNode&&d.parentNode.removeChild(d),b(c);else{var a=document.hidden;if(!0===a||void 0===a)f=e.a.offsetWidth,g=n.a.offsetWidth,
-        h=p.a.offsetWidth,q();G=setTimeout(F,50)}}var e=new w(m),n=new w(m),p=new w(m),f=-1,g=-1,h=-1,r=-1,t=-1,u=-1,d=document.createElement("div"),G=0;d.dir="ltr";y(e,J(c,"sans-serif"));y(n,J(c,"serif"));y(p,J(c,"monospace"));d.appendChild(e.a);d.appendChild(n.a);d.appendChild(p.a);document.body.appendChild(d);r=e.a.offsetWidth;t=n.a.offsetWidth;u=p.a.offsetWidth;F();A(e,function(a){f=a;q()});y(e,J(c,'"'+c.family+'",sans-serif'));A(n,function(a){g=a;q()});y(n,J(c,'"'+c.family+'",serif'));A(p,function(a){h=
-        a;q()});y(p,J(c,'"'+c.family+'",monospace'))})})};window.FontFaceObserver=B;window.FontFaceObserver.prototype.check=window.FontFaceObserver.prototype.load=B.prototype.load;"undefined"!==typeof module&&(module.exports=window.FontFaceObserver);}());
+        (function(){function l(a,b){document.addEventListener?a.addEventListener("scroll",b,!1):a.attachEvent("scroll",b)}function m(a){document.body?a():document.addEventListener?document.addEventListener("DOMContentLoaded",function c(){document.removeEventListener("DOMContentLoaded",c);a()}):document.attachEvent("onreadystatechange",function k(){if("interactive"==document.readyState||"complete"==document.readyState)document.detachEvent("onreadystatechange",k),a()})};function r(a){this.a=document.createElement("div");this.a.setAttribute("aria-hidden","true");this.a.appendChild(document.createTextNode(a));this.b=document.createElement("span");this.c=document.createElement("span");this.h=document.createElement("span");this.f=document.createElement("span");this.g=-1;this.b.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;";this.c.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;";this.f.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;";this.h.style.cssText="display:inline-block;width:200%;height:200%;font-size:16px;max-width:none;";this.b.appendChild(this.h);this.c.appendChild(this.f);this.a.appendChild(this.b);this.a.appendChild(this.c)}
+        function x(a,b){a.a.style.cssText="max-width:none;min-width:20px;min-height:20px;display:inline-block;overflow:hidden;position:absolute;width:auto;margin:0;padding:0;top:-999px;left:-999px;white-space:nowrap;font:"+b+";"}function y(a){var b=a.a.offsetWidth,c=b+100;a.f.style.width=c+"px";a.c.scrollLeft=c;a.b.scrollLeft=a.b.scrollWidth+100;return a.g!==b?(a.g=b,!0):!1}function z(a,b){function c(){var a=k;y(a)&&null!==a.a.parentNode&&b(a.g)}var k=a;l(a.b,c);l(a.c,c);y(a)};function A(a,b){var c=b||{};this.family=a;this.style=c.style||"normal";this.weight=c.weight||"normal";this.stretch=c.stretch||"normal"}var B=null,D=null,E=null;function H(){if(null===D){var a=document.createElement("div");try{a.style.font="condensed 100px sans-serif"}catch(b){}D=""!==a.style.font}return D}function I(a,b){return[a.style,a.weight,H()?a.stretch:"","100px",b].join(" ")}A.prototype.load=function(a,b){var c=this,k=a||"BESbswy",q=0,C=b||3E3,F=(new Date).getTime();return new Promise(function(a,b){null===E&&(E=!!document.fonts);if(E){var J=new Promise(function(a,b){function e(){(new Date).getTime()-F>=C?b():document.fonts.load(I(c,'"'+c.family+'"'),k).then(function(c){1<=c.length?a():setTimeout(e,25)},function(){b()})}e()}),K=new Promise(function(a,c){q=setTimeout(c,C)});Promise.race([K,J]).then(function(){clearTimeout(q);a(c)},function(){b(c)})}else m(function(){function t(){var b;if(b=-1!=f&&-1!=g||-1!=f&&-1!=h||-1!=g&&-1!=h)(b=f!=g&&f!=h&&g!=h)||(null===B&&(b=/AppleWebKit\/([0-9]+)(?:\.([0-9]+))/.exec(window.navigator.userAgent),B=!!b&&(536>parseInt(b[1],10)||536===parseInt(b[1],10)&&11>=parseInt(b[2],10))),b=B&&(f==u&&g==u&&h==u||f==v&&g==v&&h==v||f==w&&g==w&&h==w)),b=!b;b&&(null!==d.parentNode&&d.parentNode.removeChild(d),clearTimeout(q),a(c))}function G(){if((new Date).getTime()-F>=C)null!==d.parentNode&&d.parentNode.removeChild(d),b(c);else{var a=document.hidden;if(!0===a||void 0===a)f=e.a.offsetWidth,g=n.a.offsetWidth,h=p.a.offsetWidth,t();q=setTimeout(G,50)}}var e=new r(k),n=new r(k),p=new r(k),f=-1,g=-1,h=-1,u=-1,v=-1,w=-1,d=document.createElement("div");d.dir="ltr";x(e,I(c,"sans-serif"));x(n,I(c,"serif"));x(p,I(c,"monospace"));d.appendChild(e.a);d.appendChild(n.a);d.appendChild(p.a);document.body.appendChild(d);u=e.a.offsetWidth;v=n.a.offsetWidth;w=p.a.offsetWidth;G();z(e,function(a){f=a;t()});x(e,I(c,'"'+c.family+'",sans-serif'));z(n,function(a){g=a;t()});x(n,I(c,'"'+c.family+'",serif'));z(p,function(a){h=a;t()});x(p,I(c,'"'+c.family+'",monospace'))})})};"undefined"!==typeof module?module.exports=A:(window.FontFaceObserver=A,window.FontFaceObserver.prototype.load=A.prototype.load);}());
         
          (function( w ){
         	// if the class is already set, we're good.
@@ -30,11 +28,9 @@
         	});
         	var fontC = new w.FontFaceObserver( "Whitney-Bold", {
         	});
-        	w.Promise
-        		.all([fontA.check(),fontB.check(),fontC.check()])
+        	w.Promise.all([fontA.load(),fontB.load(),fontC.load()])
         		.then(function(){
-        			w.document.documentElement.className += " fonts-loaded";
-        			
+        			w.document.documentElement.className += " fonts-loaded";      			
         			sessionStorage.fontsloaded = true;
         		});
         }( this ));
@@ -58,7 +54,7 @@
       <!-- Non-Critical CSS - loadCSS: load a CSS file asynchronously. [c]2016 @scottjehl, Filament Group, Inc. Licensed MIT -->
       <script>(function(a){var b=function(c,k,d){var l=a.document;var m=l.createElement("link");var e;if(k){e=k}else{var i=(l.body||l.getElementsByTagName("head")[0]).childNodes;e=i[i.length-1]}var f=l.styleSheets;m.rel="stylesheet";m.href=c;m.media="only x";function j(n){if(l.body){return n()}setTimeout(function(){j(n)})}j(function(){e.parentNode.insertBefore(m,(k?e:e.nextSibling))});var h=function(o){var n=m.href;var p=f.length;while(p--){if(f[p].href===n){return o()}}setTimeout(function(){h(o)})};function g(){if(m.addEventListener){m.removeEventListener("load",g)}m.media=d||"all"}if(m.addEventListener){m.addEventListener("load",g)}m.onloadcssdefined=h;h(g);return m};if(typeof exports!=="undefined"){exports.loadCSS=b}else{a.loadCSS=b}}(typeof global!=="undefined"?global:this));loadCSS("../css/async.css");</script>
     </head>
-    <body>
+    <body class="logged-in retail-admin">
       <!--[if lt IE 10]>
       <p class="update-browser">This browser version is not recommended. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
       <![endif]-->
@@ -66,174 +62,64 @@
       <!-- Site Wrap  -->
       <div class="site-wrap">
         
-        <!-- Header v2 -->  
-        <header class="site-header pt-pb-1" role="banner">
-          <div class="container flex flex-wrap ai-center jc-between">
-            <!-- Site Logo -->
-            <h1 class="site-title"><a href="retail-admin.html"><img class="header-logo mw-8em" src="../images/UI/in2m-logo-color.svg" alt="in2Marketplace.com"><span class="sr-only">in2Marketplace.com</span></a></h1>
-             
-             <button href="#" id="nav-toggle" class="nav-toggle-html" aria-hidden="false" aria-expanded="false">
-              <div class="nav-icon"></div>
-            </button>
-            <!-- Main Nav -->
-            <section class="main-nav flex flex-wrap ai-center jc-end sm-flex-g-1" role="navigation">
-              <!-- Nav -->
-              <script src="../js/libs/responsive-nav.js"></script>
-              <nav class="nav-collapse" role="navigation">
-                <!-- Admin Bar -->
-            		<div class="admin-bar pt-1 hidden">
-              		<div class="container flex flex-wrap ai-center jc-between md-jc-end"> 
-                		<!-- User Status -->
-                    <div class="user-status flex ai-center jc-center sm-jc-start sm-flex-g-1">
-                      <div class="avatar user-avatar"><img src="../images/UI/slug-avatar.svg" alt="user avatar"></div>
-                      <div class="user-status-text flex flex-wrap flex-d-col ai-start">
-                        <div class="status-msg mb-tiny"><span class="user-name">Super Admin</span></div>
-                        <div class="profile-links flex ai-center">
-                          <a class="#" href="#">Dashboard</a>
-                          <a class="#" href="#">Logout</a>
-                        </div>
-                      </div>
-                    </div>
-                		<!-- Search -->
-                		<div class="search-form header-search">
-                  		<label class="sr-only" for="search-form">Search</label>
-                  		<!-- Search Bar -->
-                  		<div class="search-bar flex flex-wrap jc-between">
-                        <input id="search-form" type="search" placeholder="search">
-                        <button type="submit"> <svg class="icon"><use xlink:href="#icon-search" /></svg>
-                        </button>
-                  		</div>
-                		</div>
-                		
-              		</div>
-            		</div>
-                <ul>
-                  <li>
-                    <a href="ra-register.html">
-                      <svg class="icon">
-                        <use xlink:href="#icon-tools" />
-                      </svg>
-                      Register
-                    </a>
-                  </li>
-                  <li class="hidden">
-                    <a href="ra-view-usage.html">
-                      <svg class="icon">
-                        <use xlink:href="#icon-tools" />
-                      </svg>
-                      Purchase
-                    </a>
-                  </li>
-                  <li class="dropdown">
-                    <a href="#">
-                      <svg class="icon">
-                        <use xlink:href="#icon-tools" />
-                      </svg>
-                      View
-                    </a>
-                    <ul class="sub-menu">
-                      <li>
-                        <a href="ra-view-usage.html">
-                          <svg class="icon">
-                            <use xlink:href="#icon-tools" />
-                          </svg>
-                          Usage
-                        </a>
-                      </li>
-                      <li>
-                        <a href="ra-view-reports.html">
-                          <svg class="icon">
-                            <use xlink:href="#icon-tools" />
-                          </svg>
-                          Reports
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="dropdown">
-                    <a href="#">
-                      <svg class="icon">
-                        <use xlink:href="#icon-pencil" />
-                      </svg>
-                      Create
-                    </a>
-                    <ul class="sub-menu">
-                      <li><a href="ra-create-campaign.html">New Campaign</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown">
-                    <a href="#">
-                      <svg class="icon">
-                        <use xlink:href="#icon-user" />
-                      </svg>
-                      Manage
-                    </a>
-                    <ul class="sub-menu">
-                      <li><a href="ra-retail-admin.html">Retail Admin Profile</a></li>
-                      <li><a href="ra-manage-consumers.html">Consumers</a></li>
-                      <li><a href="ra-manage-packages.html">Packages</a></li>
-                      <li><a href="ra-manage-users.html">Users</a></li>
-                      <li class="hidden"><a href="ra-manage-campaigns.html">Campaigns</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </nav>
-              <script src="../js/libs/mobile-nav.js"></script>
-            </section>
-          </div>
-        </header>
-        
+        <!-- Header -->  
+        <div data-replace="ra-partials/ra-header-logged-in.html"></div>
+
         <!-- Main Content -->
-        <main class="main-content pt-3">
+        <main class="main-content">
           
-          <!-- Main Promo -->
-          <section class="hero-banner tc-dark sm-pb-4 lg-pt-2">
-            <!-- Hero Content -->
-            <div class="container">
-             	<!-- Post -->
-              <article class="flex-layout l-flex-pad flex-d-col-rev sm-text-center md-text-left md-flex-d-row md-ai-center md-jc-between">         
+          <!-- Main Promo (image right) -->
+          <section class="hero-banner bg-purple c-white pt-2 text-s-black-50 md-pb-4">
+            <div class="container md-pt-pb-1">
+              <!-- Post -->
+              <article class="flex flex-d-col text-center md-text-left md-flex-d-row md-flex-wrap md-ai-center md-jc-between">
                 <!-- Post Content -->
-                <div>
+                <div class="post-content mb-2 md-mb-0 md-pr-1 md-w-60 lg-w-50">
                   <!-- Text -->
                   <div class="text-wrap">
-                    <h2 class="title mb-sm">Retail Admin Promo</h2>
-                    <p class="subtitle h4">Promo Subtitle</p>
-                    <p>Explicabo, ducimus, reiciendis quia hic quas quos culpa inventore perspiciatis maiores nemo rem officiis volutatibus.</p>
+                    <h2 class="mb-sm">Powerful Retail Messaging & Marketing Solutions</h2>
+                    <p class="h3 antialiased mr-ml-a mw-35em text-lg ">in2M's automated communications platform is the most complete texting solution. Now, send the right messages to the right people at the right time - all automatically.</p>
                   </div>
-                  <!-- Buttons-->
-                  <div class="button-wrap pt-1">  
-                    <a class="btn-primary" href="#">Call to Action</a>
-                  </div>                
+                  <!-- Hero Buttons-->
+                  <div class="button-wrap flex flex-wrap jc-center pt-1 md-jc-start">
+                    <a class="btn-round all-caps bg-blue-70 c-blue-30" href="#" data-remodal-target="demo-video">View Demo</a>
+                    <a class="btn-round all-caps bg-blue-30 c-white" href="#">Get Started</a>
+                  </div>
                 </div>
                 <!-- Post Media -->
-                <div>
+                <div class="post-media pr-pl-1 md-pr-0 md-pl-2 md-w-40 lg-w-50">
                   <!-- Image -->
-                  <figure class="media-item lazyload">
-            		  <a href="#"><img data-src="../images/content-img/16x9/img-16x9-MD.jpg" data-srcset="../images/content-img/16x9/img-16x9-XL.jpg 2500w, ../images/content-img/16x9/img-16x9-LG.jpg 1875w, ../images/content-img/16x9/img-16x9-MD.jpg 1250w, ../images/content-img/16x9/img-16x9-SM.jpg 625w" alt="16:9 responsive image" class="lazyload"></a>        		  
-          			    <noscript>
-                      <a href="#">
-                        <img src="../images/content-img/16x9/img-16x9-MD.jpg" alt="16:9 responsive image">
-                      </a>
-                    </noscript>
-                    <!-- Image Caption -->
-          			    <figcaption>
-          			       <!-- <p class="image-caption">Image Caption</p> -->
-                    </figcaption>
-          			  </figure>
+                  <figure class="media-item mb-0 lazyload">
+                    <picture>
+                      <source srcset="../images/content-img/img-mobile-devices-2.svg" media="(min-width: 48em)" />
+                      <source srcset="../images/content-img/img-mobile-devices-2-SM.svg" />
+                      <img srcset="../images/content-img/img-mobile-devices-2-SM.svg" alt="in2Marketplace" />
+                      <noscript>
+                        <img src="../images/content-img/img-mobile-devices-2.svg" alt="in2Marketplace" />
+                      </noscript>
+                    </picture>
+                  </figure>
                 </div>
-              </article>	   
+              </article>
             </div>
           </section>
           
-          <!-- Content Banner (Info & Help Buttons) -->
-          <section class="mod-block bg-white mb-2 pt-pb-3 text-center">
-            <div class="container">
+          <!-- CTA Banner (Info & Help Buttons) -->
+          <section class="cta-banner bg-info-banner bg-no-repeat bg-cover bg-blue-20 tc-white text-center pt-pb-2 md-pt-pb-4">
+            <div class="container md-pt-pb-4">
               <!-- Buttons -->
-              <div class="button-wrap flex flex-d-col sm-flex-d-row sm-jc-center">
-                <a href="#" class="btn-outline mb-sm sm-mr-sm sm-mb-0">Discover in2M</a>
-                <a href="#" class="btn-outline sm-ml-sm">Why in2M?</a>
+              <div class="button-wrap flex flex-d-col jc-center pt-1 x-sm-flex-d-row x-sm-flex-wrap">
+                <a class="btn btn-outline btn-round c-white flex-g-1 mr-ml-a mb-1 pt-pb-1 pr-pl-3 text-lg x-sm-mr-ml-sm x-sm-mb-sm md-flex-g-0"
+                  href="#" data-remodal-target="demo-video">Discover in2M</a>
+                <a class="btn btn-outline btn-round c-white flex-g-1 mr-ml-a mb-1 pt-pb-1 pr-pl-3 text-lg x-sm-mr-ml-sm x-sm-mb-sm md-flex-g-0"
+                  href="#">Success Stories</a>
               </div>
-              <a href="#" class="block text-center mr-ml-a pt-1"> <svg class="icon"><use xlink:href="#icon-help" /></svg> Help & Support</a>
+              <a href="#" class="block text-center h6 mr-ml-a pt-1">
+                <svg class="icon">
+                  <use xlink:href="#icon-help" />
+                </svg>
+                Help & Support
+              </a>
             </div>
           </section>
           
@@ -1021,15 +907,7 @@
         </main>
         
         <!-- Footer -->
-        <footer class="site-footer text-center md-text-left pt-pb-2" role="contentinfo">
-          <div class="container flex flex-wrap flex-d-col jc-center md-flex-d-row md-ai-center md-jc-between">
-            <!-- Footer Logo-->
-            <div class="footer-logo mr-ml-a mb-sm md-ml-0 md-mb-0"><a href="#"><img src="../images/UI/in2m-logo-phonetag-teal.svg" alt="in2Marketplace.com" title="in2Marketplace.com"></a></div>
-            <h6 class="h5 all-caps mb-0 sm-pt-sm hidden">HTML Review</h6>
-            <!-- Footer Menu -->
-            <nav class="nav-menu site-footer-menu"><a href="#">Footer Nav</a><a href="#">Nav Item</a><a href="#">Footer Nav</a><a href="#">Nav Item</a><a href="#">Footer Nav</a><a href="#">Nav Item</a></nav>
-          </div>
-        </footer>
+        <div data-replace="../global-partials/footer/footer-logged-in-blue.html"></div>        
         
         <!-- end / site-wrap-->
       </div>

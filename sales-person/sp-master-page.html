@@ -1,0 +1,296 @@
+<!doctype html>
+<!--#if expr="$HTTP_COOKIE=/fonts\-loaded\=true/" -->
+<html lang="en" class="no-js fonts-loaded">
+  <!--#else -->
+<html lang="en" class="no-js">
+  <!--#endif -->
+  <head>
+    <!-- FontFaceObserver -->
+    <script>      
+      (function(){'use strict';var f,g=[];function l(a){g.push(a);1==g.length&&f()}function m(){for(;g.length;)g[0](),g.shift()}f=function(){setTimeout(m)};function n(a){this.a=p;this.b=void 0;this.f=[];var b=this;try{a(function(a){q(b,a)},function(a){r(b,a)})}catch(c){r(b,c)}}var p=2;function t(a){return new n(function(b,c){c(a)})}function u(a){return new n(function(b){b(a)})}function q(a,b){if(a.a==p){if(b==a)throw new TypeError;var c=!1;try{var d=b&&b.then;if(null!=b&&"object"==typeof b&&"function"==typeof d){d.call(b,function(b){c||q(a,b);c=!0},function(b){c||r(a,b);c=!0});return}}catch(e){c||r(a,e);return}a.a=0;a.b=b;v(a)}}
+      
+      function r(a,b){if(a.a==p){if(b==a)throw new TypeError;a.a=1;a.b=b;v(a)}}function v(a){l(function(){if(a.a!=p)for(;a.f.length;){var b=a.f.shift(),c=b[0],d=b[1],e=b[2],b=b[3];try{0==a.a?"function"==typeof c?e(c.call(void 0,a.b)):e(a.b):1==a.a&&("function"==typeof d?e(d.call(void 0,a.b)):b(a.b))}catch(h){b(h)}}})}n.prototype.g=function(a){return this.c(void 0,a)};n.prototype.c=function(a,b){var c=this;return new n(function(d,e){c.f.push([a,b,d,e]);v(c)})};
+      
+      function w(a){return new n(function(b,c){function d(c){return function(d){h[c]=d;e+=1;e==a.length&&b(h)}}var e=0,h=[];0==a.length&&b(h);for(var k=0;k<a.length;k+=1)u(a[k]).c(d(k),c)})}function x(a){return new n(function(b,c){for(var d=0;d<a.length;d+=1)u(a[d]).c(b,c)})};window.Promise||(window.Promise=n,window.Promise.resolve=u,window.Promise.reject=t,window.Promise.race=x,window.Promise.all=w,window.Promise.prototype.then=n.prototype.c,window.Promise.prototype["catch"]=n.prototype.g);}());
+      
+      (function(){function l(a,b){document.addEventListener?a.addEventListener("scroll",b,!1):a.attachEvent("scroll",b)}function m(a){document.body?a():document.addEventListener?document.addEventListener("DOMContentLoaded",function c(){document.removeEventListener("DOMContentLoaded",c);a()}):document.attachEvent("onreadystatechange",function k(){if("interactive"==document.readyState||"complete"==document.readyState)document.detachEvent("onreadystatechange",k),a()})};function r(a){this.a=document.createElement("div");this.a.setAttribute("aria-hidden","true");this.a.appendChild(document.createTextNode(a));this.b=document.createElement("span");this.c=document.createElement("span");this.h=document.createElement("span");this.f=document.createElement("span");this.g=-1;this.b.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;";this.c.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;";this.f.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;";this.h.style.cssText="display:inline-block;width:200%;height:200%;font-size:16px;max-width:none;";this.b.appendChild(this.h);this.c.appendChild(this.f);this.a.appendChild(this.b);this.a.appendChild(this.c)}
+      function x(a,b){a.a.style.cssText="max-width:none;min-width:20px;min-height:20px;display:inline-block;overflow:hidden;position:absolute;width:auto;margin:0;padding:0;top:-999px;left:-999px;white-space:nowrap;font:"+b+";"}function y(a){var b=a.a.offsetWidth,c=b+100;a.f.style.width=c+"px";a.c.scrollLeft=c;a.b.scrollLeft=a.b.scrollWidth+100;return a.g!==b?(a.g=b,!0):!1}function z(a,b){function c(){var a=k;y(a)&&null!==a.a.parentNode&&b(a.g)}var k=a;l(a.b,c);l(a.c,c);y(a)};function A(a,b){var c=b||{};this.family=a;this.style=c.style||"normal";this.weight=c.weight||"normal";this.stretch=c.stretch||"normal"}var B=null,D=null,E=null;function H(){if(null===D){var a=document.createElement("div");try{a.style.font="condensed 100px sans-serif"}catch(b){}D=""!==a.style.font}return D}function I(a,b){return[a.style,a.weight,H()?a.stretch:"","100px",b].join(" ")}A.prototype.load=function(a,b){var c=this,k=a||"BESbswy",q=0,C=b||3E3,F=(new Date).getTime();return new Promise(function(a,b){null===E&&(E=!!document.fonts);if(E){var J=new Promise(function(a,b){function e(){(new Date).getTime()-F>=C?b():document.fonts.load(I(c,'"'+c.family+'"'),k).then(function(c){1<=c.length?a():setTimeout(e,25)},function(){b()})}e()}),K=new Promise(function(a,c){q=setTimeout(c,C)});Promise.race([K,J]).then(function(){clearTimeout(q);a(c)},function(){b(c)})}else m(function(){function t(){var b;if(b=-1!=f&&-1!=g||-1!=f&&-1!=h||-1!=g&&-1!=h)(b=f!=g&&f!=h&&g!=h)||(null===B&&(b=/AppleWebKit\/([0-9]+)(?:\.([0-9]+))/.exec(window.navigator.userAgent),B=!!b&&(536>parseInt(b[1],10)||536===parseInt(b[1],10)&&11>=parseInt(b[2],10))),b=B&&(f==u&&g==u&&h==u||f==v&&g==v&&h==v||f==w&&g==w&&h==w)),b=!b;b&&(null!==d.parentNode&&d.parentNode.removeChild(d),clearTimeout(q),a(c))}function G(){if((new Date).getTime()-F>=C)null!==d.parentNode&&d.parentNode.removeChild(d),b(c);else{var a=document.hidden;if(!0===a||void 0===a)f=e.a.offsetWidth,g=n.a.offsetWidth,h=p.a.offsetWidth,t();q=setTimeout(G,50)}}var e=new r(k),n=new r(k),p=new r(k),f=-1,g=-1,h=-1,u=-1,v=-1,w=-1,d=document.createElement("div");d.dir="ltr";x(e,I(c,"sans-serif"));x(n,I(c,"serif"));x(p,I(c,"monospace"));d.appendChild(e.a);d.appendChild(n.a);d.appendChild(p.a);document.body.appendChild(d);u=e.a.offsetWidth;v=n.a.offsetWidth;w=p.a.offsetWidth;G();z(e,function(a){f=a;t()});x(e,I(c,'"'+c.family+'",sans-serif'));z(n,function(a){g=a;t()});x(n,I(c,'"'+c.family+'",serif'));z(p,function(a){h=a;t()});x(p,I(c,'"'+c.family+'",monospace'))})})};"undefined"!==typeof module?module.exports=A:(window.FontFaceObserver=A,window.FontFaceObserver.prototype.load=A.prototype.load);}());
+      
+       (function( w ){
+      	// if the class is already set, we're good.
+      	if( w.document.documentElement.className.indexOf( "fonts-loaded" ) > -1 ){
+      		return;
+      	}
+      	var fontA = new w.FontFaceObserver( "Whitney-Medium", {
+      	});
+      	var fontB = new w.FontFaceObserver( "Whitney-SemiBold", {
+      	});
+      	var fontC = new w.FontFaceObserver( "Whitney-Bold", {
+      	});
+      	w.Promise.all([fontA.load(),fontB.load(),fontC.load()])
+      		.then(function(){
+      			w.document.documentElement.className += " fonts-loaded";      			
+      			sessionStorage.fontsloaded = true;
+      		});
+      }( this ));
+      
+    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>in2Marketplace :: Sales Person Master Page</title>
+    <meta name="description" content="A powerful retail marketing platform and brand management tool">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="msapplication-TileColor" content="#302A2A">
+    <meta name="msapplication-TileImage" content="../images/icons/favicon-144.png">
+    <!--[if IEMobile]>
+    <meta http-equiv="cleartype" content="on" />
+    <![endif]-->
+    <link rel="apple-touch-icon" href="../images/icons/favicon-180.png">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Modernizr -->
+    <script>!function(n,e,s){function o(n,e){return typeof n===e}function a(){var n,e,s,a,i,l,r;for(var c in f)if(f.hasOwnProperty(c)){if(n=[],e=f[c],e.name&&(n.push(e.name.toLowerCase()),e.options&&e.options.aliases&&e.options.aliases.length))for(s=0;s<e.options.aliases.length;s++)n.push(e.options.aliases[s].toLowerCase());for(a=o(e.fn,"function")?e.fn():e.fn,i=0;i<n.length;i++)l=n[i],r=l.split("."),1===r.length?Modernizr[r[0]]=a:(!Modernizr[r[0]]||Modernizr[r[0]]instanceof Boolean||(Modernizr[r[0]]=new Boolean(Modernizr[r[0]])),Modernizr[r[0]][r[1]]=a),t.push((a?"":"no-")+r.join("-"))}}function i(n){var e=r.className,s=Modernizr._config.classPrefix||"";if(c&&(e=e.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+s+"no-js(\\s|$)");e=e.replace(o,"$1"+s+"js$2")}Modernizr._config.enableClasses&&(e+=" "+s+n.join(" "+s),c?r.className.baseVal=e:r.className=e)}var t=[],f=[],l={_version:"3.3.1",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(n,e){var s=this;setTimeout(function(){e(s[n])},0)},addTest:function(n,e,s){f.push({name:n,fn:e,options:s})},addAsyncTest:function(n){f.push({name:null,fn:n})}},Modernizr=function(){};Modernizr.prototype=l,Modernizr=new Modernizr;var r=e.documentElement,c="svg"===r.nodeName.toLowerCase();a(),i(t),delete l.addTest,delete l.addAsyncTest;for(var u=0;u<Modernizr._q.length;u++)Modernizr._q[u]();n.Modernizr=Modernizr}(window,document);</script>
+    <!-- Non-Critical CSS - loadCSS: load a CSS file asynchronously. [c]2016 @scottjehl, Filament Group, Inc. Licensed MIT -->
+    <script>(function(a){var b=function(c,k,d){var l=a.document;var m=l.createElement("link");var e;if(k){e=k}else{var i=(l.body||l.getElementsByTagName("head")[0]).childNodes;e=i[i.length-1]}var f=l.styleSheets;m.rel="stylesheet";m.href=c;m.media="only x";function j(n){if(l.body){return n()}setTimeout(function(){j(n)})}j(function(){e.parentNode.insertBefore(m,(k?e:e.nextSibling))});var h=function(o){var n=m.href;var p=f.length;while(p--){if(f[p].href===n){return o()}}setTimeout(function(){h(o)})};function g(){if(m.addEventListener){m.removeEventListener("load",g)}m.media=d||"all"}if(m.addEventListener){m.addEventListener("load",g)}m.onloadcssdefined=h;h(g);return m};if(typeof exports!=="undefined"){exports.loadCSS=b}else{a.loadCSS=b}}(typeof global!=="undefined"?global:this));loadCSS("../css/async.css");</script>      
+  </head>
+    <body class="logged-in sales-person">
+      <!--[if lt IE 10]>
+      <p class="update-browser">This browser version is not recommended. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+      
+      <!-- Free Trial Form -->
+      <section class="trial-form clear-form bg-blue-g-4 c-white w-100 slide-panel slide-down is-hidden">
+        <button class="btn-reset text-lg" onclick="$('.trial-form').toggleClass('is-hidden');"> <svg class="icon mr-ml-0"><use xlink:href="#icon-cancel" /></svg> </button>
+        <div class="container pt-2 pb-3">
+          <h2 class="text-center mb-tiny">Free 14 Day Trial</h2>
+          <p class="h5 text-center mb-1"><span class="c-blue-70">100</span> SMS + <span class="c-blue-70">100</span> Emails</p>
+            <!-- Form -->
+            <form name="TrialForm" class="mr-ml-a mw-25em whitney-med">
+              <div class="form-wrap">
+                <!-- Name -->
+                <div class="form-row mb-1">
+                  <label for="" id="-ariaLabel">Name</label>
+                  <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="bg-none bor-2 bor-solid bor-c-white required" title="This is a required field"
+                    required>
+                </div>
+                <div class="sm-flex sm-jc-between">
+                  <!-- Email -->
+                  <div class="form-row mb-1 sm-mr-tiny sm-w-50">
+                    <label for="" id="-ariaLabel">Email</label>
+                    <input id="" name="" type="email" autocorrect="off" autocapitalize="none" spellcheck="false" aria-labelledby="-ariaLabel"
+                      class="bg-none bor-2 bor-solid bor-c-white required" title="This is a required field" required>
+                  </div>
+                  <!-- Phone -->
+                  <div class="form-row mb-1 sm-ml-tiny sm-w-50">
+                    <label for="" id="-ariaLabel">Phone</label>
+                    <input id="" name="" type="tel" pattern="[0-9]*" maxlength="10" aria-labelledby="-ariaLabel" class="bg-none bor-2 bor-solid bor-c-white required"
+                      title="This is a required field" required>
+                  </div>
+                </div>
+                <!-- Message -->
+                <div class="form-row hidden">
+                  <label for="-ariaLabel" class="antialiased c-white">Message?</label>
+                  <textarea maxlength="200" aria-labelledby="-ariaLabel"></textarea>
+                </div>
+                <!-- Helpers -->
+                <div class="form-row form-helpers flex flex-wrap jc-between mb-1">
+                  <!-- Critical Marker -->
+                  <label>
+                    <input type="checkbox" name="opt1" id="opt1">
+                    <span class="text-sm pl-tiny">Call me ASAP</span>
+                  </label>
+                  <!-- Help Link -->
+                  <label>
+                    <span class="text-sm"><a class="c-white" href="#">Need Help?</a></span>
+                  </label>
+                </div>
+                <!-- Buttons -->
+                <div class="form-row button-wrap flex flex-d-col-rev sm-flex-d-row sm-jc-center">
+                  <input class="btn all-caps bg-blue-40 c-white flex-g-1 pt-pb-1" type="submit" value="sign up">
+                </div>
+                <!-- end / form-wrap -->
+              </div>
+            </form>
+          
+        </div>
+      </section>
+      
+       <!-- New Lead Form -->
+      <section class="new-lead clear-form bg-blue-g-4 c-white w-100 slide-panel slide-down is-hidden">
+        <button class="btn-reset text-lg" onclick="$('.new-lead').toggleClass('is-hidden');"> <svg class="icon mr-ml-0"><use xlink:href="#icon-cancel" /></svg> </button>
+        <div class="container pt-2 pb-3">
+          <h2 class="text-center mb-tiny">Capture New Lead</h2>
+          <p class="h5 text-center mb-1 hidden"><span class="c-blue-70">100</span> SMS + <span class="c-blue-70">100</span> Emails</p>
+          <!-- Form -->
+          <form name="NewLeadForm" class="mr-ml-a mw-25em whitney-med">
+            <div class="form-wrap">
+              <!-- Name -->
+              <div class="form-row mb-1">
+                <label for="" id="-ariaLabel">Name</label>
+                <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="bg-none bor-2 bor-solid bor-c-white required" title="This is a required field"
+                  required>
+              </div>
+              <div class="sm-flex sm-jc-between">
+                <!-- Email -->
+                <div class="form-row mb-1 sm-mr-tiny sm-w-50">
+                  <label for="" id="-ariaLabel">Email</label>
+                  <input id="" name="" type="email" autocorrect="off" autocapitalize="none" spellcheck="false" aria-labelledby="-ariaLabel"
+                    class="bg-none bor-2 bor-solid bor-c-white required" title="This is a required field" required>
+                </div>
+                <!-- Phone -->
+                <div class="form-row mb-1 sm-ml-tiny sm-w-50">
+                  <label for="" id="-ariaLabel">Phone</label>
+                  <input id="" name="" type="tel" pattern="[0-9]*" maxlength="10" aria-labelledby="-ariaLabel" class="bg-none bor-2 bor-solid bor-c-white required"
+                    title="This is a required field" required>
+                </div>
+              </div>
+              <!-- Message -->
+              <div class="form-row hidden">
+                <label for="-ariaLabel" class="antialiased c-white">Message?</label>
+                <textarea maxlength="200" aria-labelledby="-ariaLabel"></textarea>
+              </div>
+              <!-- Helpers -->
+              <div class="form-row form-helpers flex flex-wrap jc-between mb-1">
+                <!-- Critical Marker -->
+                <label>
+                        <input type="checkbox" name="opt1" id="opt1">
+                        <span class="text-sm pl-tiny">Call me ASAP</span>
+                      </label>
+                <!-- Help Link -->
+                <label>
+                        <span class="text-sm"><a class="c-white" href="#">Need Help?</a></span>
+                      </label>
+              </div>
+              <!-- Buttons -->
+              <div class="form-row button-wrap flex flex-d-col-rev sm-flex-d-row sm-jc-center">
+                <input class="btn all-caps bg-blue-40 c-white flex-g-1 pt-pb-1" type="submit" value="sign up">
+              </div>
+              <!-- end / form-wrap -->
+            </div>
+          </form>
+        </div>
+      </section>
+      
+      <!-- Site Wrap  -->
+      <div class="site-wrap">
+        
+        <!-- Header -->  
+        <div data-replace="sp-partials/sp-header-logged-in.html"></div>
+          
+        <!-- Main Content -->
+        <main class="main-content">
+          
+          <!-- Main Promo (no media) -->
+          <section class="hero-banner bg-green-g-5 c-white pt-pb-4 text-s-black-50">
+            <div class="container md-pt-pb-1">
+              
+              <!-- Post -->
+              <article class="text-center">
+                <!-- Post Content -->
+                <div class="post-content">
+                  <!-- Text -->
+                  <div class="text-wrap">
+                    <h2 class="mb-sm">Sales Person Master Page</h2>
+                    <p class="h3 antialiased mr-ml-a mw-35em text-lg">This is the master page template for a <strong>Sales Person</strong> or when an authorized user is logged in. Try and use this ".text-block" space for important information. Please leave out of the document if not used.</p>
+                  </div>
+                  <!-- Hero Buttons-->
+                  <div class="button-wrap flex flex-wrap jc-center pt-1">
+                    <a class="btn-round all-caps bg-green-70 c-green-30" href="#" data-remodal-target="demo-video">View Demo</a>
+                    <a class="btn-round all-caps bg-green-30 c-white" href="#">Get Started</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+                    
+          
+          <!-- Main Promo (media right) -->
+          <section class="hero-banner c-white pt-2 text-s-black-50 md-pb-4">
+            <div class="container md-pt-pb-1">
+              <!-- Post -->
+              <article class="flex flex-d-col text-center md-text-left md-flex-d-row md-flex-wrap md-ai-center md-jc-between">
+                <!-- Post Content -->
+                <div class="post-content mb-2 md-mb-0 md-pr-1 md-w-60 lg-w-50">
+                  <!-- Text -->
+                  <div class="text-wrap">
+                    <h2 class="mb-sm">Powerful Retail Messaging & Marketing Solutions</h2>
+                    <p class="h3 antialiased mr-ml-a mw-35em text-lg ">in2M's automated communications platform is the most complete texting solution. Now, send the right messages to the right people at the right time - all automatically.</p>
+                  </div>
+                  <!-- Hero Buttons-->
+                  <div class="button-wrap flex flex-wrap jc-center pt-1 md-jc-start">
+                    <a class="btn-round all-caps bg-blue-70 c-blue-30" href="#" data-remodal-target="demo-video">View Demo</a>
+                    <a class="btn-round all-caps bg-blue-30 c-white" href="#">Get Started</a>
+                  </div>
+                </div>
+                <!-- Post Media -->
+                <div class="post-media pr-pl-1 md-pr-0 md-pl-2 md-w-40 lg-w-50">
+                  <!-- Image -->
+                  <figure class="media-item mb-0 lazyload">
+                    <picture>
+                      <source srcset="../images/content-img/img-mobile-devices-2.svg" media="(min-width: 48em)" />
+                      <source srcset="../images/content-img/img-mobile-devices-2-SM.svg" />
+                      <img srcset="../images/content-img/img-mobile-devices-2-SM.svg" alt="in2Marketplace" />
+                      <noscript>
+                        <img src="../images/content-img/img-mobile-devices-2.svg" alt="in2Marketplace" />
+                      </noscript>
+                    </picture>
+                  </figure>
+                </div>
+              </article>
+            </div>
+          </section>
+          
+          <!-- Main Promo (media bottom) -->
+          <section class="hero-banner c-white pt-1">
+            <!-- Hero Content -->
+            <div class="container">
+              <!-- Post -->
+              <article class="flex flex-d-col text-center">         
+                <!-- Post Content -->
+                <div class="mb-1 w-100 md-mb-3 md-pr-1">
+                  <!-- Text -->
+                  <div class="text-wrap">
+                    <h2 class="mb-sm">Powerful Messaging & Marketing Solutions</h2>
+                    <p class="h3 antialiased mr-ml-a mw-35em text-lg">in2M's automated communications platform is the most complete texting solution. Now, send the right messages to the right people at the right time - all automatically.</p>
+                  </div>
+                  <!-- Hero Buttons (row-rev)-->
+                  <div class="button-wrap flex flex-wrap jc-center pt-1">
+                    <a class="btn-round all-caps bg-blue-70 c-blue-30" href="#" data-remodal-target="demo-video">View Demo</a>
+                    <a class="btn-round all-caps bg-blue-30 c-white" href="#">Get Started</a>
+                  </div>                
+                </div>
+                <!-- Post Media -->
+                <div class="pr-pl-1 w-100 md-pr-0">
+                  <!-- Image -->
+                  <figure class="media-item hero-svg-mask mb-0 lazyload">
+            		    <picture>
+            		      <source data-srcset="../images/content-img/img-mobile-devices-2.svg" media="(min-width: 48em)" />
+            		      <source data-srcset="../images/content-img/img-mobile-devices-2-SM.svg" />
+            		      <img src="../images/content-img/img-mobile-devices-2-SM.svg" data-src="../images/content-img/img-mobile-devices-2-SM.svg" alt="in2Marketplace" class="lazyload" />       		  
+          			    <noscript>
+                        <img src="../images/content-img/img-mobile-devices-2.svg" alt="in2Marketplace" />
+                    </noscript>
+            		    </picture>
+            		  </figure>
+                </div>
+              </article>	   
+            </div>
+          </section>
+          
+          
+
+
+          <!-- end / main-content -->
+        </main>
+        
+        <!-- Footer -->
+        <div data-replace="../global-partials/footer/footer-logged-in-blue.html"></div>
+        
+        <!-- end / site-wrap-->
+      </div>
+      <!-- Dependencies -->
+      <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+      <script>window.jQuery || document.write('<script src="../js/libs/jquery.1.11.2.min.js"><\/script>')</script>
+      <script src="../js/min/script.min.js"></script>
+    </body>
+  </html>

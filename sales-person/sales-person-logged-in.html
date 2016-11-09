@@ -59,61 +59,61 @@
   <!--[if lt IE 10]>
       <p class="update-browser">This browser version is not recommended. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
       <![endif]-->
-  <!-- New Lead Form -->
-  <section class="new-lead clear-form bg-blue-g-4 c-white w-100 slide-panel slide-down is-hidden">
-    <button class="btn-reset text-lg" onclick="$('.new-lead').toggleClass('is-hidden');"> <svg class="icon mr-ml-0"><use xlink:href="#icon-cancel" /></svg> </button>
-    <div class="container pt-2 pb-3">
-      <h2 class="text-center mb-tiny">Capture New Lead</h2>
-      <p class="h5 text-center mb-1 hidden"><span class="c-blue-70">100</span> SMS + <span class="c-blue-70">100</span> Emails</p>
-      <!-- Form -->
-      <form name="NewLeadForm" class="mr-ml-a mw-25em whitney-med">
-        <div class="form-wrap">
-          <!-- Name -->
-          <div class="form-row mb-1">
-            <label for="" id="-ariaLabel">Name</label>
-            <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="bg-none bor-2 bor-solid bor-c-white required" title="This is a required field"
-              required>
-          </div>
-          <div class="sm-flex sm-jc-between">
-            <!-- Email -->
-            <div class="form-row mb-1 sm-mr-tiny sm-w-50">
-              <label for="" id="-ariaLabel">Email</label>
-              <input id="" name="" type="email" autocorrect="off" autocapitalize="none" spellcheck="false" aria-labelledby="-ariaLabel"
-                class="bg-none bor-2 bor-solid bor-c-white required" title="This is a required field" required>
+      <!-- New Lead Form -->
+      <section class="new-lead clear-form bg-blue-g-4 c-white w-100 slide-panel slide-down is-hidden">
+        <button class="btn-reset text-lg" onclick="$('.new-lead').toggleClass('is-hidden');"> <svg class="icon mr-ml-0"><use xlink:href="#icon-cancel" /></svg> </button>
+        <div class="container pt-2 pb-3">
+          <h2 class="text-center mb-tiny">Capture New Lead</h2>
+          <p class="h5 text-center mb-1 hidden"><span class="c-blue-70">100</span> SMS + <span class="c-blue-70">100</span> Emails</p>
+          <!-- Form -->
+          <form name="NewLeadForm" class="mr-ml-a mw-25em whitney-med">
+            <div class="form-wrap">
+              <!-- Name -->
+              <div class="form-row mb-1">
+                <label for="" id="-ariaLabel">Name</label>
+                <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="bg-none bor-2 bor-solid bor-c-white required" title="This is a required field"
+                  required>
+              </div>
+              <div class="sm-flex sm-jc-between">
+                <!-- Email -->
+                <div class="form-row mb-1 sm-mr-tiny sm-w-50">
+                  <label for="" id="-ariaLabel">Email</label>
+                  <input id="" name="" type="email" autocorrect="off" autocapitalize="none" spellcheck="false" aria-labelledby="-ariaLabel"
+                    class="bg-none bor-2 bor-solid bor-c-white required" title="This is a required field" required>
+                </div>
+                <!-- Phone -->
+                <div class="form-row mb-1 sm-ml-tiny sm-w-50">
+                  <label for="" id="-ariaLabel">Phone</label>
+                  <input id="" name="" type="tel" pattern="[0-9]*" maxlength="10" aria-labelledby="-ariaLabel" class="bg-none bor-2 bor-solid bor-c-white required"
+                    title="This is a required field" required>
+                </div>
+              </div>
+              <!-- Message -->
+              <div class="form-row hidden">
+                <label for="-ariaLabel" class="antialiased c-white">Message?</label>
+                <textarea maxlength="200" aria-labelledby="-ariaLabel"></textarea>
+              </div>
+              <!-- Helpers -->
+              <div class="form-row form-helpers flex flex-wrap jc-between mb-1">
+                <!-- Critical Marker -->
+                <label>
+                        <input type="checkbox" name="opt1" id="opt1">
+                        <span class="text-sm pl-tiny">Call me ASAP</span>
+                      </label>
+                <!-- Help Link -->
+                <label>
+                        <span class="text-sm"><a class="c-white" href="#">Need Help?</a></span>
+                      </label>
+              </div>
+              <!-- Buttons -->
+              <div class="form-row button-wrap flex flex-d-col-rev sm-flex-d-row sm-jc-center">
+                <input class="btn all-caps bg-blue-40 c-white flex-g-1 pt-pb-1" type="submit" value="sign up">
+              </div>
+              <!-- end / form-wrap -->
             </div>
-            <!-- Phone -->
-            <div class="form-row mb-1 sm-ml-tiny sm-w-50">
-              <label for="" id="-ariaLabel">Phone</label>
-              <input id="" name="" type="tel" pattern="[0-9]*" maxlength="10" aria-labelledby="-ariaLabel" class="bg-none bor-2 bor-solid bor-c-white required"
-                title="This is a required field" required>
-            </div>
-          </div>
-          <!-- Message -->
-          <div class="form-row hidden">
-            <label for="-ariaLabel" class="antialiased c-white">Message?</label>
-            <textarea maxlength="200" aria-labelledby="-ariaLabel"></textarea>
-          </div>
-          <!-- Helpers -->
-          <div class="form-row form-helpers flex flex-wrap jc-between mb-1">
-            <!-- Critical Marker -->
-            <label>
-                    <input type="checkbox" name="opt1" id="opt1">
-                    <span class="text-sm pl-tiny">Call me ASAP</span>
-                  </label>
-            <!-- Help Link -->
-            <label>
-                    <span class="text-sm"><a class="c-white" href="#">Need Help?</a></span>
-                  </label>
-          </div>
-          <!-- Buttons -->
-          <div class="form-row button-wrap flex flex-d-col-rev sm-flex-d-row sm-jc-center">
-            <input class="btn all-caps bg-blue-40 c-white flex-g-1 pt-pb-1" type="submit" value="sign up">
-          </div>
-          <!-- end / form-wrap -->
+          </form>
         </div>
-      </form>
-    </div>
-  </section>
+      </section>
   <!-- Site Wrap  -->
   <div class="site-wrap bg-blue-g-2">
     <!-- Admin Bar -->
@@ -262,11 +262,11 @@
               <!-- Image -->
               <figure class="media-item lazyload">
                 <picture>
-                  <source srcset="../images/content-img/img-mobile-devices-2.svg" media="(min-width: 48em)" />
+                  <source srcset="../images/content-img/img-mobile-devices-2-SM.svg" media="(min-width: 48em)" />
                   <source srcset="../images/content-img/img-mobile-devices-2-SM.svg" />
                   <img srcset="../images/content-img/img-mobile-devices-2-SM.svg" alt="in2Marketplace" />
                   <noscript>
-                    <img src="../images/content-img/img-mobile-devices-2.svg" alt="in2Marketplace" />
+                    <img src="../images/content-img/img-mobile-devices-2-SM.svg" alt="in2Marketplace" />
                   </noscript>
                 </picture>
               </figure>
@@ -308,7 +308,7 @@
           </article>
         </div>
       </section>
-      <!-- Content Banner (Info & Help Buttons) -->
+      <!-- CTA Banner (Info & Help Buttons) -->
       <section class="mod-block bg-no-repeat bg-cover bg-blue-20 tc-white text-center pt-pb-2 md-pt-pb-4" style="background-image: url('../images/hero-banner/bg-mobile-user-banner-dark-teal.jpg');">
         <div class="container md-pt-pb-4">
           <!-- Buttons -->

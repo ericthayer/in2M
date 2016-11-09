@@ -149,11 +149,11 @@ button,
   @include button;
 }
 
-button:not([class*="bg-"]):not([class*="c-"]),
-.btn:not([class*=" bg-"]):not([class*=" c-"]),
-[class^="btn-"]:not([class*=" bg-"]):not([class*=" c-"]) {
-  background-color: $DDD;
-  color: #777;
+button:not([class*="bg-"]):not([class*="c-"]):not(.btn-reset),
+.btn:not([class*=" bg-"]):not([class*=" c-"]):not(.btn-reset),
+[class^="btn-"]:not([class*=" bg-"]):not([class*=" c-"]):not(.btn-reset) {
+  //background-color: $DDD;
+  //color: #777;
 }
 
 
@@ -193,10 +193,15 @@ button:not([class*="bg-"]):not([class*="c-"]),
     display: flex;
     align-items: center;
     justify-content: center;
-    flex: 0 1 45%;
-    margin: 0 .313em 1em;
+    flex: 0 1 45%;  
+    margin: 0 0 1em;
     padding: 1em 2em;
     width: 100%;
+  }
+  > *:nth-last-child(n+2), 
+  > *:nth-last-child(n+2) ~ * {
+    max-width: 18em;
+    margin: 0 .313em 1em;
   }
   // when parent container is less than 400px wide
   &:container("width <= 25em") {
@@ -208,7 +213,9 @@ button:not([class*="bg-"]):not([class*="c-"]),
   }
   // when parent container is wider than 640px
   &:container("width >= 40em") {
-    > * {
+    
+    > *:nth-last-child(n+3), 
+    > *:nth-last-child(n+3) ~ * {
       flex: 0 1 30%;
       margin: 0 .313em .625em;
     }

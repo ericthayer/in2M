@@ -50,6 +50,7 @@
             transform: translateY(-40px);
   }
 }
+
 @keyframes passing-through {
   0% {
     opacity: 0;
@@ -67,6 +68,7 @@
             transform: translateY(-40px);
   }
 }
+
 @-webkit-keyframes slide-in {
   0% {
     opacity: 0;
@@ -79,6 +81,7 @@
             transform: translateY(0px);
   }
 }
+
 @keyframes slide-in {
   0% {
     opacity: 0;
@@ -91,6 +94,7 @@
             transform: translateY(0px);
   }
 }
+
 @-webkit-keyframes pulse {
   0% {
     -webkit-transform: scale(1);
@@ -105,6 +109,7 @@
             transform: scale(1);
   }
 }
+
 @keyframes pulse {
   0% {
     -webkit-transform: scale(1);
@@ -119,6 +124,7 @@
             transform: scale(1);
   }
 }
+
 .dz-preview {
   position: relative;
   display: inline-block;
@@ -579,7 +585,7 @@
 .ui-controlgroup-vertical .ui-spinner-input {
   /* Support: IE8 only, Android < 4.4 only */
   width: 75%;
-  width: calc( 100% - 2.4em );
+  width: calc( 100% - 2.4em);
 }
 
 .ui-controlgroup-vertical .ui-spinner .ui-spinner-up {
@@ -604,12 +610,18 @@
   width: 1.8em;
   height: 1.8em;
 }
+
 .ui-datepicker .ui-datepicker-prev .ui-icon,
 .ui-datepicker .ui-datepicker-next .ui-icon {
   background-image: url("../images/UI/ui-icons/icon-caret-down.svg");
   background-position: center center !important;
 }
-.ui-datepicker .ui-datepicker-prev.ui-state-hover .ui-icon, .ui-datepicker .ui-datepicker-prev.ui-state-focus .ui-icon, .ui-datepicker .ui-datepicker-prev.ui-button:hover .ui-icon, .ui-datepicker .ui-datepicker-prev.ui-button:focus .ui-icon, .ui-datepicker .ui-datepicker-prev.ui-state-default .ui-icon,
+
+.ui-datepicker .ui-datepicker-prev.ui-state-hover .ui-icon,
+.ui-datepicker .ui-datepicker-prev.ui-state-focus .ui-icon,
+.ui-datepicker .ui-datepicker-prev.ui-button:hover .ui-icon,
+.ui-datepicker .ui-datepicker-prev.ui-button:focus .ui-icon,
+.ui-datepicker .ui-datepicker-prev.ui-state-default .ui-icon,
 .ui-datepicker .ui-datepicker-next.ui-state-hover .ui-icon,
 .ui-datepicker .ui-datepicker-next.ui-state-focus .ui-icon,
 .ui-datepicker .ui-datepicker-next.ui-button:hover .ui-icon,
