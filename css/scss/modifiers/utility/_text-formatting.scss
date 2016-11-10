@@ -38,24 +38,22 @@
   }
 }
 
-/*
 .post-content:container("width <= 250px") {
-  font-size: 13px;
+  //font-size: 13px;
 }
 
 .post-content:container("width >= 300px") { 
   .label {
-    display: inline; 
+    //display: inline; 
   }
   &.list-table {
     .label {
-      display: inline-block;
-      min-width: 75px;    
-      width: auto; 
+      //display: inline-block;
+      //min-width: 75px;    
+      //width: auto; 
     }
   }
 }
-*/
 
 .text-s-black-50 {
   text-shadow: 0 0 10px rgba(black, .5);
@@ -97,6 +95,19 @@
 
 
 //** ALIGNMENT (align-left by default) **//
+
+
+.v-align-top {
+  vertical-align: text-top;
+}
+
+.v-align-mid {
+  vertical-align: middle;
+}
+
+.v-align-base {
+  vertical-align: baseline;
+} 
 
 // Text Align Right
 

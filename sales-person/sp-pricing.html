@@ -181,70 +181,54 @@
             <div class="container">
               <!-- Plans -->
               <div class="pricing-plans">
+                
                 <!-- Starter Plan -->
                 <div class="card starter-plan bg-EEE p-1">
                   <!-- Plan Title & Featured Price -->
                   <div class="card-header flex flex-wrap ai-center jc-between mb-sm">
-                    <p class="plan-title h3 mb-0">Starter Plan<sup>*</sup></p>
-                    <!-- monthly cost -->
-                    <p class="plan-cost monthly-cost h3 mb-0 is-visible">$79<span class="plan-term pl-tiny text-sm">/ month</span></p>
+                    <!-- Plan Title -->
+                    <p class="plan-title h3 mb-0">Starter Plan<sup class="text-md">*</sup></p>
+                    
+                    
+                    <!-- Annual Discount -->
+                    <div class="collapsible collapsible-collapsed sm-ml-a" id="starter-annual-cost" data-collapsible-set="starter-plan-tabs">
+                      <p class="sr-only">annual discount details</p>
+                      <div class="collapsible-content">
+                        <p class="plan-cost h3 mb-0">$63.20<span class="plan-term pl-tiny text-sm">/ month</span><a class="close-btn bor-bot-none inline-block mr-ml-tiny pb-sm text-md v-align-mid" href="#starter-monthly-cost" data-collapsible-target data-force-expand><svg class="icon icon-sm icon-delete"><use xlink:href="#icon-cancel" /></svg></a></p>
+                      </div>
+                    </div>
+                    
+                    <!-- Biannual Discount -->
+                    <div class="collapsible collapsible-collapsed" id="starter-biannual-cost" data-collapsible-set="starter-plan-tabs">
+                      <p class="sr-only">biannual discount details</p>
+                      <div class="collapsible-content">
+                        <p class="plan-cost h3 mb-0">$55.30<span class="plan-term pl-tiny text-sm">/ month</span><a class="close-btn bor-bot-none inline-block mr-ml-tiny pb-sm text-md v-align-mid" href="#starter-monthly-cost" data-collapsible-target data-force-expand><svg class="icon icon-sm icon-delete"><use xlink:href="#icon-cancel" /></svg></a></p>
+                      </div>
+                    </div>
+                    
+                    <!-- Monthly Cost -->
+                    <div class="collapsible collapsible-expanded" id="starter-monthly-cost" data-collapsible-set="starter-plan-tabs">
+                      <p class="sr-only">monthly details</p>
+                      <div class="collapsible-content text-center">
+                      <p class="plan-cost h3 mb-0">$79<span class="plan-term pl-tiny text-sm">/ month</span></p>
+                      </div>
+                    </div>
+                    
                   </div>
+                  
                   <!-- Plan CTA(s) -->
                   <div class="plan-cta flex flex-wrap ai-center jc-between pb-sm">
-                    <!-- Discount Details -->
-                    <div class="discount-details pb-sm w-100">
-                      <div class="collapsible collapsible-collapsed" id="starter-annual-cost" data-collapsible-set="starter-plan-tabs">
-                        <h2 class="text-md sr-only">Inbox</h2>
-                        <div class="collapsible-content">
-                          <p class="plan-cost annual-cost h3 mb-0">
-                            $63.20<span class="plan-term pl-tiny text-sm">/ month billed annually</span>
-                            <a class="close-btn bor-bot-none pl-tiny text-md sm-ml-a" href="#starter-annual-cost" data-collapsible-target data-force-collapse>
-                              <svg class="icon icon-sm">
-                                <use xlink:href="#icon-cancel" />
-                              </svg>
-                            </a>
-                          </p>
-                        </div>
-                      </div>
-                      <div class="collapsible collapsible-collapsed" id="starter-biannual-cost" data-collapsible-set="starter-plan-tabs">
-                        <h2 class="text-md sr-only">Inbox</h2>
-                        <div class="collapsible-content">
-                          <p class="plan-cost biannual-cost h3 mb-0">$55.30<span class="plan-term pl-tiny text-sm">/ month billed biannually</span></p>
-                        </div>
-                      </div>
-                      <p class="plan-cost one-year h4 flex ai-center mb-0 pt-sm w-100 hidden">
-                        $63.20 <span class="plan-term c-777 pl-tiny text-md">per month billed <strong>annually</strong></span>
-                        <a class="close-btn bor-bot-none pl-tiny text-md sm-ml-a hidden" href="#">
-                          <svg class="icon icon-sm">
-                            <use xlink:href="#icon-cancel" />
-                          </svg>
-                          <span class="sr-only">icon</span> 
-                        </a>
-                      </p>
-                      <p class="plan-cost two-years h4 flex ai-center mb-0 pt-sm w-100 hidden">
-                        $55.30 <span class="plan-term c-777 pl-tiny text-md">per month billed <strong>biannually</strong></span>
-                        <a class="close-btn bor-bot-none pl-tiny text-md sm-ml-a hidden" href="#">
-                          <svg class="icon icon-sm">
-                            <use xlink:href="#icon-cancel" />
-                          </svg>
-                          <span class="sr-only">icon</span> 
-                        </a>
-                      </p>
-                    </div>
+                    
                     <!-- Plan Discounts -->
-                    <div class="plan-discounts flex-1 flex flex-wrap">
-                      <a class="btn discount-button bg-BBB c-white mb-sm pt-pb-tiny pr-pl-1 sm-mb-0" href="#starter-annual-cost" data-collapsible-target>Save 20%</a>
-                      <a class="btn discount-button bg-BBB c-white mb-sm pt-pb-tiny pr-pl-1 x-sm-mr-ml-tiny sm-mb-0" href="#starter-biannual-cost" data-collapsible-target>Save 30%</a>                    
-                      <a class="btn bg-green c-white mb-sm pt-pb-tiny pr-tiny pl-1 sm-ml-a sm-mb-0" href="#">
-                        Select
-                        <svg class="icon icon-sm mr-0 rotate-180 text-md">
-                          <use xlink:href="#icon-caret" />
-                        </svg>
-                        <span class="sr-only">icon</span>
-                      </a>
+                    <div class="plan-discounts flex-1 flex flex-wrap">                    
+                      <a class="btn bg-green c-white mb-sm pt-pb-tiny pr-tiny pl-sm sm-mb-0" href="#">Select<svg class="icon icon-sm mr-0 rotate-180 text-md"><use xlink:href="#icon-caret" /></svg></a>
+                      <a class="btn bg-BBB c-white mb-sm pt-pb-tiny pr-pl-1 x-sm-mr-ml-sm sm-mb-0 sm-ml-a" href="#starter-annual-cost" data-collapsible-target data-force-expand>- 20%</a>
+                      <a class="btn bg-BBB c-white mb-sm pt-pb-tiny pr-pl-1 sm-mb-0" href="#starter-biannual-cost" data-collapsible-target data-force-expand>- 30%</a>
                     </div>
+                    
                     <!-- end / Plan CTA -->
                   </div>
+                  
                   <!-- Plan Features -->
                   <div class="plan-features pt-1">
                     <!-- Feature List -->
@@ -258,18 +242,25 @@
                       </li>
                       <li class="flex ai-center jc-between">
                         <!-- Feature Title -->
-                        <span class="feature-title">SMS <span class="spacer">|</span> Emails</span>
+                        <span class="feature-title">SMS <span class="spacer pr-pl-tiny"> | </span> Emails</span>
                         <!-- Feature Detail -->
                         <span class="feature-details pl-tiny text-lg">750</span>
                       </li>
                     </ul>
                   </div>
+                  
                   <!-- Plan Disclaimer -->
-                  <p class="mb-0 pt-1 text-sm">* One Time Fee = $149.00</p>
+                  <p class="mb-0 pt-1 text-sm">* One Time Fee: $149.00</p>
+                  
                   <!-- end / Starter Plan -->
                 </div>
+                
+                
+                
                 <!-- end / Pricing Plans -->
               </div>
+              
+              
             </div>
           </section>
           

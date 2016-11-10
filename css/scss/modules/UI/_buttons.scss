@@ -187,6 +187,21 @@ button:not([class*="bg-"]):not([class*="c-"]):not(.btn-reset),
   @include button-reset;
 }
 
+.close-btn {
+  .plan-cost & {
+    // > 540
+    @media (min-width: $break-md-phone) {
+      position: absolute;
+      margin-right: 0;  
+      right: 0;
+      top: -5px;
+      .icon {
+        margin: 0;  
+      }
+    }
+  }
+}
+
 // Button Wrap
 
 .button-wrap {
