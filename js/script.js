@@ -13,7 +13,7 @@
         h=p.a.offsetWidth,q();G=setTimeout(F,50)}}var e=new w(m),n=new w(m),p=new w(m),f=-1,g=-1,h=-1,r=-1,t=-1,u=-1,d=document.createElement("div"),G=0;d.dir="ltr";y(e,J(c,"sans-serif"));y(n,J(c,"serif"));y(p,J(c,"monospace"));d.appendChild(e.a);d.appendChild(n.a);d.appendChild(p.a);document.body.appendChild(d);r=e.a.offsetWidth;t=n.a.offsetWidth;u=p.a.offsetWidth;F();A(e,function(a){f=a;q()});y(e,J(c,'"'+c.family+'",sans-serif'));A(n,function(a){g=a;q()});y(n,J(c,'"'+c.family+'",serif'));A(p,function(a){h=
         a;q()});y(p,J(c,'"'+c.family+'",monospace'))})})};window.FontFaceObserver=B;window.FontFaceObserver.prototype.check=window.FontFaceObserver.prototype.load=B.prototype.load;"undefined"!==typeof module&&(module.exports=window.FontFaceObserver);}());
         
-// init        
+// init FontFaceObserver       
         
 (function( w ){
 // if the class is already set, we're good.
@@ -40,9 +40,10 @@ w.Promise
 
 // Ajax Sprite
 // https://s3-us-west-2.amazonaws.com/s.cdpn.io/97621/in2m-svg-icons.svg
+// ../images/UI/ui-icons/in2m-svg-icons.svg
 
 var ajax = new XMLHttpRequest();
-ajax.open("GET", "../images/UI/ui-icons/in2m-svg-icons.svg", true);
+ajax.open("GET", "https://raw.githubusercontent.com/ericthayer/in2Marketplace.com/master/images/UI/ui-icons/in2m-svg-icons.svg", true);
 ajax.send();
 ajax.onload = function(e) {
   var div = document.createElement("div");
