@@ -193,10 +193,10 @@ button:not([class*="bg-"]):not([class*="c-"]):not(.btn-reset),
   .plan-cost & {
     // > 480
    @media (min-width: $break-sm-phone) {
-      position: absolute;
-      margin-right: 0;  
-      right: 0;
-      top: -5px;
+      //position: absolute;
+      //margin-right: 0;  
+      //right: 0;
+      //top: -5px;
       .icon {
         margin: 0;  
       }
