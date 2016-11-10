@@ -1,45 +1,10 @@
 <!doctype html>
 <!--#if expr="$HTTP_COOKIE=/fonts\-loaded\=true/" -->
-<html lang="en" class="no-js fonts-loaded">
+<html lang="en" class="fonts-loaded">
   <!--#else -->
-  <html lang="en" class="no-js">
+  <html lang="en">
     <!--#endif -->
     <head>
-      <!-- FontFaceObserver -->
-      <script>
-        (function(){'use strict';var f,g=[];function l(a){g.push(a);1==g.length&&f()}function m(){for(;g.length;)g[0](),g.shift()}f=function(){setTimeout(m)};function n(a){this.a=p;this.b=void 0;this.f=[];var b=this;try{a(function(a){q(b,a)},function(a){r(b,a)})}catch(c){r(b,c)}}var p=2;function t(a){return new n(function(b,c){c(a)})}function u(a){return new n(function(b){b(a)})}function q(a,b){if(a.a==p){if(b==a)throw new TypeError;var c=!1;try{var d=b&&b.then;if(null!=b&&"object"==typeof b&&"function"==typeof d){d.call(b,function(b){c||q(a,b);c=!0},function(b){c||r(a,b);c=!0});return}}catch(e){c||r(a,e);return}a.a=0;a.b=b;v(a)}}
-        function r(a,b){if(a.a==p){if(b==a)throw new TypeError;a.a=1;a.b=b;v(a)}}function v(a){l(function(){if(a.a!=p)for(;a.f.length;){var b=a.f.shift(),c=b[0],d=b[1],e=b[2],b=b[3];try{0==a.a?"function"==typeof c?e(c.call(void 0,a.b)):e(a.b):1==a.a&&("function"==typeof d?e(d.call(void 0,a.b)):b(a.b))}catch(h){b(h)}}})}n.prototype.g=function(a){return this.c(void 0,a)};n.prototype.c=function(a,b){var c=this;return new n(function(d,e){c.f.push([a,b,d,e]);v(c)})};
-        function w(a){return new n(function(b,c){function d(c){return function(d){h[c]=d;e+=1;e==a.length&&b(h)}}var e=0,h=[];0==a.length&&b(h);for(var k=0;k<a.length;k+=1)u(a[k]).c(d(k),c)})}function x(a){return new n(function(b,c){for(var d=0;d<a.length;d+=1)u(a[d]).c(b,c)})};window.Promise||(window.Promise=n,window.Promise.resolve=u,window.Promise.reject=t,window.Promise.race=x,window.Promise.all=w,window.Promise.prototype.then=n.prototype.c,window.Promise.prototype["catch"]=n.prototype.g);}());
-        
-        (function(){var k=!!document.addEventListener;function l(a,b){k?a.addEventListener("scroll",b,!1):a.attachEvent("scroll",b)}function v(a){document.body?a():k?document.addEventListener("DOMContentLoaded",a):document.attachEvent("onreadystatechange",function(){"interactive"!=document.readyState&&"complete"!=document.readyState||a()})};function w(a){this.a=document.createElement("div");this.a.setAttribute("aria-hidden","true");this.a.appendChild(document.createTextNode(a));this.b=document.createElement("span");this.c=document.createElement("span");this.h=document.createElement("span");this.f=document.createElement("span");this.g=-1;this.b.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;";this.c.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;";
-        this.f.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;";this.h.style.cssText="display:inline-block;width:200%;height:200%;font-size:16px;max-width:none;";this.b.appendChild(this.h);this.c.appendChild(this.f);this.a.appendChild(this.b);this.a.appendChild(this.c)}
-        function y(a,b){a.a.style.cssText="max-width:none;min-width:20px;min-height:20px;display:inline-block;overflow:hidden;position:absolute;width:auto;margin:0;padding:0;top:-999px;left:-999px;white-space:nowrap;font:"+b+";"}function z(a){var b=a.a.offsetWidth,c=b+100;a.f.style.width=c+"px";a.c.scrollLeft=c;a.b.scrollLeft=a.b.scrollWidth+100;return a.g!==b?(a.g=b,!0):!1}function A(a,b){function c(){var a=m;z(a)&&null!==a.a.parentNode&&b(a.g)}var m=a;l(a.b,c);l(a.c,c);z(a)};function B(a,b){var c=b||{};this.family=a;this.style=c.style||"normal";this.weight=c.weight||"normal";this.stretch=c.stretch||"normal"}var C=null,D=null,H=!!window.FontFace;function I(){if(null===D){var a=document.createElement("div");try{a.style.font="condensed 100px sans-serif"}catch(b){}D=""!==a.style.font}return D}function J(a,b){return[a.style,a.weight,I()?a.stretch:"","100px",b].join(" ")}
-        B.prototype.load=function(a,b){var c=this,m=a||"BESbswy",x=b||3E3,E=(new Date).getTime();return new Promise(function(a,b){if(H){var K=new Promise(function(a,b){function e(){(new Date).getTime()-E>=x?b():document.fonts.load(J(c,c.family),m).then(function(c){1<=c.length?a():setTimeout(e,25)},function(){b()})}e()}),L=new Promise(function(a,c){setTimeout(c,x)});Promise.race([L,K]).then(function(){a(c)},function(){b(c)})}else v(function(){function q(){var b;if(b=-1!=f&&-1!=g||-1!=f&&-1!=h||-1!=g&&-1!=
-        h)(b=f!=g&&f!=h&&g!=h)||(null===C&&(b=/AppleWebKit\/([0-9]+)(?:\.([0-9]+))/.exec(window.navigator.userAgent),C=!!b&&(536>parseInt(b[1],10)||536===parseInt(b[1],10)&&11>=parseInt(b[2],10))),b=C&&(f==r&&g==r&&h==r||f==t&&g==t&&h==t||f==u&&g==u&&h==u)),b=!b;b&&(null!==d.parentNode&&d.parentNode.removeChild(d),clearTimeout(G),a(c))}function F(){if((new Date).getTime()-E>=x)null!==d.parentNode&&d.parentNode.removeChild(d),b(c);else{var a=document.hidden;if(!0===a||void 0===a)f=e.a.offsetWidth,g=n.a.offsetWidth,
-        h=p.a.offsetWidth,q();G=setTimeout(F,50)}}var e=new w(m),n=new w(m),p=new w(m),f=-1,g=-1,h=-1,r=-1,t=-1,u=-1,d=document.createElement("div"),G=0;d.dir="ltr";y(e,J(c,"sans-serif"));y(n,J(c,"serif"));y(p,J(c,"monospace"));d.appendChild(e.a);d.appendChild(n.a);d.appendChild(p.a);document.body.appendChild(d);r=e.a.offsetWidth;t=n.a.offsetWidth;u=p.a.offsetWidth;F();A(e,function(a){f=a;q()});y(e,J(c,'"'+c.family+'",sans-serif'));A(n,function(a){g=a;q()});y(n,J(c,'"'+c.family+'",serif'));A(p,function(a){h=
-        a;q()});y(p,J(c,'"'+c.family+'",monospace'))})})};window.FontFaceObserver=B;window.FontFaceObserver.prototype.check=window.FontFaceObserver.prototype.load=B.prototype.load;"undefined"!==typeof module&&(module.exports=window.FontFaceObserver);}());
-        
-         (function( w ){
-        	// if the class is already set, we're good.
-        	if( w.document.documentElement.className.indexOf( "fonts-loaded" ) > -1 ){
-        		return;
-        	}
-        	var fontA = new w.FontFaceObserver( "Whitney-Medium", {
-        	});
-        	var fontB = new w.FontFaceObserver( "Whitney-SemiBold", {
-        	});
-        	var fontC = new w.FontFaceObserver( "Whitney-Bold", {
-        	});
-        	w.Promise
-        		.all([fontA.check(),fontB.check(),fontC.check()])
-        		.then(function(){
-        			w.document.documentElement.className += " fonts-loaded";
-        			
-        			sessionStorage.fontsloaded = true;
-        		});
-        }( this ));
-        
-      </script>
       <meta charset="utf-8">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       <title>in2Marketplace :: Pricing</title>
@@ -53,8 +18,6 @@
       <link rel="apple-touch-icon" href="../images/icons/favicon-180.png">
       <link rel="shortcut icon" href="../favicon.ico">
       <link rel="stylesheet" href="../css/styles.css">
-      <!-- Modernizr -->
-      <script>!function(n,e,s){function o(n,e){return typeof n===e}function a(){var n,e,s,a,i,l,r;for(var c in f)if(f.hasOwnProperty(c)){if(n=[],e=f[c],e.name&&(n.push(e.name.toLowerCase()),e.options&&e.options.aliases&&e.options.aliases.length))for(s=0;s<e.options.aliases.length;s++)n.push(e.options.aliases[s].toLowerCase());for(a=o(e.fn,"function")?e.fn():e.fn,i=0;i<n.length;i++)l=n[i],r=l.split("."),1===r.length?Modernizr[r[0]]=a:(!Modernizr[r[0]]||Modernizr[r[0]]instanceof Boolean||(Modernizr[r[0]]=new Boolean(Modernizr[r[0]])),Modernizr[r[0]][r[1]]=a),t.push((a?"":"no-")+r.join("-"))}}function i(n){var e=r.className,s=Modernizr._config.classPrefix||"";if(c&&(e=e.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+s+"no-js(\\s|$)");e=e.replace(o,"$1"+s+"js$2")}Modernizr._config.enableClasses&&(e+=" "+s+n.join(" "+s),c?r.className.baseVal=e:r.className=e)}var t=[],f=[],l={_version:"3.3.1",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(n,e){var s=this;setTimeout(function(){e(s[n])},0)},addTest:function(n,e,s){f.push({name:n,fn:e,options:s})},addAsyncTest:function(n){f.push({name:null,fn:n})}},Modernizr=function(){};Modernizr.prototype=l,Modernizr=new Modernizr;var r=e.documentElement,c="svg"===r.nodeName.toLowerCase();a(),i(t),delete l.addTest,delete l.addAsyncTest;for(var u=0;u<Modernizr._q.length;u++)Modernizr._q[u]();n.Modernizr=Modernizr}(window,document);</script>
       <!-- Non-Critical CSS - loadCSS: load a CSS file asynchronously. [c]2016 @scottjehl, Filament Group, Inc. Licensed MIT -->
       <script>(function(a){var b=function(c,k,d){var l=a.document;var m=l.createElement("link");var e;if(k){e=k}else{var i=(l.body||l.getElementsByTagName("head")[0]).childNodes;e=i[i.length-1]}var f=l.styleSheets;m.rel="stylesheet";m.href=c;m.media="only x";function j(n){if(l.body){return n()}setTimeout(function(){j(n)})}j(function(){e.parentNode.insertBefore(m,(k?e:e.nextSibling))});var h=function(o){var n=m.href;var p=f.length;while(p--){if(f[p].href===n){return o()}}setTimeout(function(){h(o)})};function g(){if(m.addEventListener){m.removeEventListener("load",g)}m.media=d||"all"}if(m.addEventListener){m.addEventListener("load",g)}m.onloadcssdefined=h;h(g);return m};if(typeof exports!=="undefined"){exports.loadCSS=b}else{a.loadCSS=b}}(typeof global!=="undefined"?global:this));loadCSS("../css/async.css");</script>
     </head>
@@ -65,63 +28,60 @@
       
       <!-- Free Trial Form -->
       <section class="trial-form clear-form bg-blue-g-4 c-white h-50 w-100 slide-panel slide-down is-hidden">
-        <button class="btn-reset text-md" onclick="$('.trial-form').toggleClass('is-hidden');"> <svg class="icon"><use xlink:href="#icon-cancel" /></svg> </button>
+        <button class="btn-reset text-md" onclick="$('.trial-form').toggleClass('is-hidden');">
+          <svg class="icon">
+            <use xlink:href="#icon-cancel" />
+          </svg>
+        </button>
         <div class="container">
           <h2 class="text-center mb-tiny">Free 14 Day Trial</h2>
           <p class="h5 text-center mb-1"><span class="c-blue-70">100</span> SMS + <span class="c-blue-70">100</span> Emails</p>
-            <!-- Form -->
-            <form name="TrialForm" class="mr-ml-a mw-25em whitney-med">
-              <div class="form-wrap">
-      
-                <!-- Name -->
-                <div class="form-row mb-1">
-                  <label for="" id="-ariaLabel">Name</label>
-                  <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="bg-none bor-2 bor-solid bor-c-white required" title="This is a required field" required>
-                </div>
-      
-                <div class="sm-flex sm-jc-between">
-                  <!-- Email -->
-                  <div class="form-row mb-1 sm-mr-tiny sm-w-50">
-                    <label for="" id="-ariaLabel">Email</label>
-                    <input id="" name="" type="email" autocorrect="off" autocapitalize="none" spellcheck="false" aria-labelledby="-ariaLabel" class="bg-none bor-2 bor-solid bor-c-white required" title="This is a required field" required>
-                  </div>
-                  <!-- Phone -->
-                  <div class="form-row mb-1 sm-ml-tiny sm-w-50">
-                    <label for="" id="-ariaLabel">Phone</label>
-                    <input id="" name="" type="tel" pattern="[0-9]*" maxlength="10" aria-labelledby="-ariaLabel" class="bg-none bor-2 bor-solid bor-c-white required" title="This is a required field" required>
-                  </div>
-                </div>
-                
-                <!-- Message -->
-                <div class="form-row hidden">
-                  <label for="-ariaLabel" class="antialiased c-white">Message?</label>
-                  <textarea maxlength="200" aria-labelledby="-ariaLabel"></textarea>
-                </div>                
-      
-                <!-- Helpers -->
-                <div class="form-row form-helpers flex flex-wrap jc-between mb-1">
-                  <!-- Critical Marker -->
-                  <label>
-                    <input type="checkbox" name="opt1" id="opt1">
-                    <span class="text-sm pl-tiny">Call me ASAP</span>
-                  </label>
-                  <!-- Help Link -->
-                  <label>
-                    <span class="text-sm"><a class="c-white" href="#">Need Help?</a></span>
-                  </label>
-                </div>
-                
-                <!-- Buttons -->
-                <div class="form-row button-wrap flex flex-d-col-rev sm-flex-d-row sm-jc-center">                  
-                  <input class="btn all-caps bg-blue-40 c-white flex-g-1 pt-pb-1" type="submit" value="sign up">
-                </div>
-                <!-- end / form-wrap -->
+          <!-- Form -->
+          <form name="TrialForm" class="mr-ml-a mw-25em whitney-med">
+            <div class="form-wrap">
+              <!-- Name -->
+              <div class="form-row mb-1">
+                <label for="" id="-ariaLabel">Name</label>
+                <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="bg-none bor-2 bor-solid bor-c-white required" title="This is a required field" required>
               </div>
-            </form>
-          
+              <div class="sm-flex sm-jc-between">
+                <!-- Email -->
+                <div class="form-row mb-1 sm-mr-tiny sm-w-50">
+                  <label for="" id="-ariaLabel">Email</label>
+                  <input id="" name="" type="email" autocorrect="off" autocapitalize="none" spellcheck="false" aria-labelledby="-ariaLabel" class="bg-none bor-2 bor-solid bor-c-white required" title="This is a required field" required>
+                </div>
+                <!-- Phone -->
+                <div class="form-row mb-1 sm-ml-tiny sm-w-50">
+                  <label for="" id="-ariaLabel">Phone</label>
+                  <input id="" name="" type="tel" pattern="[0-9]*" maxlength="10" aria-labelledby="-ariaLabel" class="bg-none bor-2 bor-solid bor-c-white required" title="This is a required field" required>
+                </div>
+              </div>
+              <!-- Message -->
+              <div class="form-row hidden">
+                <label for="-ariaLabel" class="antialiased c-white">Message?</label>
+                <textarea maxlength="200" aria-labelledby="-ariaLabel"></textarea>
+              </div>
+              <!-- Helpers -->
+              <div class="form-row form-helpers flex flex-wrap jc-between mb-1">
+                <!-- Critical Marker -->
+                <label>
+                <input type="checkbox" name="opt1" id="opt1">
+                <span class="text-sm pl-tiny">Call me ASAP</span>
+                </label>
+                <!-- Help Link -->
+                <label>
+                <span class="text-sm"><a class="c-white" href="#">Need Help?</a></span>
+                </label>
+              </div>
+              <!-- Buttons -->
+              <div class="form-row button-wrap flex flex-d-col-rev sm-flex-d-row sm-jc-center">                  
+                <input class="btn all-caps bg-blue-40 c-white flex-g-1 pt-pb-1" type="submit" value="sign up">
+              </div>
+              <!-- end / form-wrap -->
+            </div>
+          </form>
         </div>
       </section>
-      
       <!-- Site Wrap  -->
       <div class="site-wrap">
         
@@ -131,8 +91,7 @@
           <div class="container flex flex-wrap ai-center jc-between pt-pb-1">
             <!-- Site Logo -->
             <h1 class="site-title"><a href="sales-person.html"><img class="header-logo mw-8em" src="../images/UI/in2m-logo-white.svg" alt="in2Marketplace.com"><span class="sr-only">in2Marketplace.com</span></a></h1>
-             
-             <button id="nav-toggle" class="nav-toggle-html bg-none" aria-hidden="false" aria-expanded="false">
+            <button id="nav-toggle" class="nav-toggle-html bg-none" aria-hidden="false" aria-expanded="false">
               <div class="nav-icon c-white"></div>
             </button>
             <!-- Main Nav -->
@@ -141,9 +100,8 @@
               <script src="../js/libs/responsive-nav.js"></script>
               <nav class="nav-collapse" role="navigation">
                 <!-- Admin Bar -->
-            		<div class="admin-bar pt-1 pr-pl-0 flex flex-wrap ai-center jc-between w-100 sm-w-a md-jc-end md-pt-0 hidden">
-              		
-              		<!-- User Status -->
+                <div class="admin-bar pt-1 pr-pl-0 flex flex-wrap ai-center jc-between w-100 sm-w-a md-jc-end md-pt-0 hidden">
+                  <!-- User Status -->
                   <div class="user-status text-center flex flex-g-1 ai-center jc-center mb-1 x-sm-text-left x-sm-jc-start x-sm-mb-0 x-sm-w-50">
                     <button onclick="$('#user-status-text').toggleClass('is-visible');" class="toggle-button avatar user-avatar mr-1 hidden x-sm-w-40 sm-block"><img src="../images/UI/slug-avatar.svg" alt="user avatar"></button>
                     <div id="user-status-text" class="user-status-text flex flex-wrap flex-g-1 flex-d-col x-sm-w-60 sm-ai-start">
@@ -155,19 +113,20 @@
                       </div>
                     </div>
                   </div>
-              		
-              		<!-- Search -->
-              		<div class="search-form header-search flex-g-1 x-sm-w-50 sm-w-40">
-                		<label class="sr-only" for="search-form">Search</label>
-                		<!-- Search Bar -->
-                		<div class="search-bar flex flex-wrap jc-between">
+                  <!-- Search -->
+                  <div class="search-form header-search flex-g-1 x-sm-w-50 sm-w-40">
+                    <label class="sr-only" for="search-form">Search</label>
+                    <!-- Search Bar -->
+                    <div class="search-bar flex flex-wrap jc-between">
                       <input id="search-form" type="search" placeholder="search" role="search">
-                      <button class="bg-DDD" type="submit"> <svg class="icon"><use xlink:href="#icon-search" /></svg>
+                      <button class="bg-DDD" type="submit">
+                        <svg class="icon">
+                          <use xlink:href="#icon-search" />
+                        </svg>
                       </button>
-                		</div>
-              		</div>
-              		
-            		</div>
+                    </div>
+                  </div>
+                </div>
                 <ul class="list-reset">
                   <li class="nav-cta pt-sm pb-1">
                     <a class="btn btn-round btn-cta bg-blue-50 all-caps c-white mr-0 pr-pl-1" href="#" onclick="$('.trial-form.slide-panel').toggleClass('is-hidden');">Free Trial</a>
@@ -184,7 +143,6 @@
                   <li>
                     <a href="../login.html">Login</a>
                   </li>
-                  
                   <!-- end / -->
                 </ul>
               </nav>
@@ -194,7 +152,6 @@
           <!-- Hero Banner -->
           <section class="hero-banner c-white pt-1 pb-2 text-s-black-50">
             <div class="container">
-              
               <!-- Post -->
               <article class="text-center">
                 <!-- Post Content -->
@@ -214,122 +171,116 @@
             </div>
           </section>
         </header>
-
-    
+        
         <!-- Main Content -->
         <main class="main-content">
-          
-          <div class="text-center mw-35em p-2">
-            <img src="../images/content-img/img-mockup-package-plan.jpg" alt="img-mockup-package-plan" />
-          </div>
           
           <!-- Pricing Guide -->
           <section class="pricing-guide clean pt-pb-2">
             <h2 id="pricing" class="all-caps bg-blue-80 c-blue-40 text-center text-md mb-0 w-100 sr-only">Pricing</h2>
-          	<div class="container">
-
-            	<!-- Plans -->
-            	<div class="pricing-plans">
-               
+            <div class="container">
+              <!-- Plans -->
+              <div class="pricing-plans">
                 <!-- Starter Plan -->
                 <div class="card starter-plan bg-EEE p-1">
-                
                   <!-- Plan Title & Featured Price -->
                   <div class="card-header flex flex-wrap ai-center jc-between mb-sm">
                     <p class="plan-title h3 mb-0">Starter Plan<sup>*</sup></p>
                     <!-- monthly cost -->
-                    <p class="plan-cost monthly-cost h3 mb-0 is-visible">$79<span class="plan-term pl-tiny text-sm">/ month</span></p> 
-                                         
+                    <p class="plan-cost monthly-cost h3 mb-0 is-visible">$79<span class="plan-term pl-tiny text-sm">/ month</span></p>
                   </div>
-                  
                   <!-- Plan CTA(s) -->
                   <div class="plan-cta flex flex-wrap ai-center jc-between pb-sm">
-                    
-                     <!-- Discount Details -->
-                      <div class="discount-details pb-sm w-100">
-                      
-                       
+                    <!-- Discount Details -->
+                    <div class="discount-details pb-sm w-100">
                       <div class="collapsible collapsible-collapsed" id="starter-annual-cost" data-collapsible-set="starter-plan-tabs">
-                         <h2 class="text-md sr-only">Inbox</h2>
-                         <div class="collapsible-content">  
-                        <p class="plan-cost annual-cost h3 mb-0">$63.20<span class="plan-term pl-tiny text-sm">/ month billed annually</span><a class="close-btn bor-bot-none pl-tiny text-md sm-ml-a" href="#starter-annual-cost" data-collapsible-target data-force-collapse><svg class="icon icon-sm"><use xlink:href="#icon-cancel" /></svg></a></p>
+                        <h2 class="text-md sr-only">Inbox</h2>
+                        <div class="collapsible-content">
+                          <p class="plan-cost annual-cost h3 mb-0">
+                            $63.20<span class="plan-term pl-tiny text-sm">/ month billed annually</span>
+                            <a class="close-btn bor-bot-none pl-tiny text-md sm-ml-a" href="#starter-annual-cost" data-collapsible-target data-force-collapse>
+                              <svg class="icon icon-sm">
+                                <use xlink:href="#icon-cancel" />
+                              </svg>
+                            </a>
+                          </p>
                         </div>
                       </div>
-                      
                       <div class="collapsible collapsible-collapsed" id="starter-biannual-cost" data-collapsible-set="starter-plan-tabs">
-                         <h2 class="text-md sr-only">Inbox</h2>
-                         <div class="collapsible-content">  
-                         <p class="plan-cost biannual-cost h3 mb-0">$55.30<span class="plan-term pl-tiny text-sm">/ month billed biannually</span></p>
+                        <h2 class="text-md sr-only">Inbox</h2>
+                        <div class="collapsible-content">
+                          <p class="plan-cost biannual-cost h3 mb-0">$55.30<span class="plan-term pl-tiny text-sm">/ month billed biannually</span></p>
                         </div>
+                      </div>
+                      <p class="plan-cost one-year h4 flex ai-center mb-0 pt-sm w-100 hidden">
+                        $63.20 <span class="plan-term c-777 pl-tiny text-md">per month billed <strong>annually</strong></span>
+                        <a class="close-btn bor-bot-none pl-tiny text-md sm-ml-a hidden" href="#">
+                          <svg class="icon icon-sm">
+                            <use xlink:href="#icon-cancel" />
+                          </svg>
+                          <span class="sr-only">icon</span> 
+                        </a>
+                      </p>
+                      <p class="plan-cost two-years h4 flex ai-center mb-0 pt-sm w-100 hidden">
+                        $55.30 <span class="plan-term c-777 pl-tiny text-md">per month billed <strong>biannually</strong></span>
+                        <a class="close-btn bor-bot-none pl-tiny text-md sm-ml-a hidden" href="#">
+                          <svg class="icon icon-sm">
+                            <use xlink:href="#icon-cancel" />
+                          </svg>
+                          <span class="sr-only">icon</span> 
+                        </a>
+                      </p>
                     </div>
-                    
-                    
-                   
-
-                      <p class="plan-cost one-year h4 flex ai-center mb-0 pt-sm w-100 hidden">$63.20 <span class="plan-term c-777 pl-tiny text-md">per month billed <strong>annually</strong></span><a class="close-btn bor-bot-none pl-tiny text-md sm-ml-a hidden" href="#"><svg class="icon icon-sm"><use xlink:href="#icon-cancel" /></svg><span class="sr-only">icon</span> </a></p> 
-                      <p class="plan-cost two-years h4 flex ai-center mb-0 pt-sm w-100 hidden">$55.30 <span class="plan-term c-777 pl-tiny text-md">per month billed <strong>biannually</strong></span><a class="close-btn bor-bot-none pl-tiny text-md sm-ml-a hidden" href="#"><svg class="icon icon-sm"><use xlink:href="#icon-cancel" /></svg><span class="sr-only">icon</span> </a></p>
-                    </div>
-                  
                     <!-- Plan Discounts -->
                     <div class="plan-discounts flex-1 flex flex-wrap">
                       <a class="btn discount-button bg-BBB c-white mb-sm pt-pb-tiny pr-pl-1 sm-mb-0" href="#starter-annual-cost" data-collapsible-target>Save 20%</a>
                       <a class="btn discount-button bg-BBB c-white mb-sm pt-pb-tiny pr-pl-1 x-sm-mr-ml-tiny sm-mb-0" href="#starter-biannual-cost" data-collapsible-target>Save 30%</a>                    
-                      <a class="btn bg-green c-white mb-sm pt-pb-tiny pr-tiny pl-1 sm-ml-a sm-mb-0" href="#">Select<svg class="icon icon-sm mr-0 rotate-180 text-md"><use xlink:href="#icon-caret" /></svg><span class="sr-only">icon</span></a>
-                      
-                    
+                      <a class="btn bg-green c-white mb-sm pt-pb-tiny pr-tiny pl-1 sm-ml-a sm-mb-0" href="#">
+                        Select
+                        <svg class="icon icon-sm mr-0 rotate-180 text-md">
+                          <use xlink:href="#icon-caret" />
+                        </svg>
+                        <span class="sr-only">icon</span>
+                      </a>
+                    </div>
+                    <!-- end / Plan CTA -->
                   </div>
-                  
-                  
-                  
-                  
-                  <!-- end / Plan CTA -->
-                  </div>
-                  
                   <!-- Plan Features -->
                   <div class="plan-features pt-1">
-                    
                     <!-- Feature List -->
                     <ul class="feature-list list-reset text-md whitney-bold">
                       <li class="text-sm">package includes</li>
                       <li class="flex ai-center jc-between">
-                      <!-- Feature Title -->
-                      <span class="feature-title">Keywords</span>
-                      <!-- Feature Detail -->
-                      <span class="feature-details pl-tiny text-lg">5</span>
+                        <!-- Feature Title -->
+                        <span class="feature-title">Keywords</span>
+                        <!-- Feature Detail -->
+                        <span class="feature-details pl-tiny text-lg">5</span>
                       </li>
                       <li class="flex ai-center jc-between">
-                      <!-- Feature Title -->
-                      <span class="feature-title">SMS <span class="spacer">|</span> Emails</span>
-                      <!-- Feature Detail -->
-                      <span class="feature-details pl-tiny text-lg">750</span>
+                        <!-- Feature Title -->
+                        <span class="feature-title">SMS <span class="spacer">|</span> Emails</span>
+                        <!-- Feature Detail -->
+                        <span class="feature-details pl-tiny text-lg">750</span>
                       </li>
                     </ul>
-                    
                   </div>
-                  
                   <!-- Plan Disclaimer -->
                   <p class="mb-0 pt-1 text-sm">* One Time Fee = $149.00</p>
-                  
-                  
                   <!-- end / Starter Plan -->
-                  </div>
-               
-               <!-- end / Pricing Plans -->
+                </div>
+                <!-- end / Pricing Plans -->
               </div>
-            	
-          	</div>
+            </div>
           </section>
           
           <!-- Features -->
           <div class="features hidden">
-            
             <h2 id="features" class="all-caps bg-blue-30 c-white mb-0 pt-4 text-center text-xl w-100">Features</h2>
-              
             <!-- Feature -->
             <section class="mod-block bg-blue-30 c-white pt-pb-2 md-pt-pb-4">
               <div class="container">
-               	<!-- Post -->
-                <article class="text-center flex flex-d-col mb-2 md-text-left md-flex-d-row md-flex-wrap md-ai-center md-jc-between">         
+                <!-- Post -->
+                <article class="text-center flex flex-d-col mb-2 md-text-left md-flex-d-row md-flex-wrap md-ai-center md-jc-between">
                   <!-- Post Content -->
                   <div class="mb-2 md-mb-0 md-pr-1 md-w-70 lg-w-60">
                     <!-- Text -->
@@ -341,31 +292,29 @@
                     <!-- Buttons-->
                     <div class="button-wrap pt-1">
                       <a class="btn btn-round bg-blue-70 c-blue-30 all-caps text-md" href="#">More Info</a>
-                    </div>                
+                    </div>
                   </div>
                   <!-- Post Media -->
                   <div class="pr-pl-1 md-pr-0 md-pl-2 md-w-30 lg-w-40">
                     <!-- Image -->
                     <figure class="media-item text-center mb-0 mw-25em lazyload">
-              		    <picture>
-              		      <source srcset="../images/content-img/img-targeting.svg" />
-              		      <img src="../images/content-img/img-targeting.svg" data-srcset="../images/content-img/img-targeting.svg" alt="in2Marketplace" class="lazyload" />        		  
-            			    <noscript>
+                      <picture>
+                        <source srcset="../images/content-img/img-targeting.svg" />
+                        <img src="../images/content-img/img-targeting.svg" data-srcset="../images/content-img/img-targeting.svg" alt="in2Marketplace" class="lazyload" />        		  
+                        <noscript>
                           <img src="../images/content-img/img-targeting.svg" alt="in2Marketplace" />
-                      </noscript>
-              		    </picture>
+                        </noscript>
+                      </picture>
                     </figure>
                   </div>
                 </article>
               </div>
-              
             </section>
-            
             <!-- Feature -->
             <section class="mod-block bg-blue-70 c-blue-30 pt-pb-2 md-pt-pb-4">
               <div class="container">
                 <!-- Post -->
-                <article class="text-center flex flex-d-col md-text-left md-flex-d-row-rev md-flex-wrap md-ai-center md-jc-between">         
+                <article class="text-center flex flex-d-col md-text-left md-flex-d-row-rev md-flex-wrap md-ai-center md-jc-between">
                   <!-- Post Content -->
                   <div class="mb-2 md-mb-0 md-pl-1 md-w-70 lg-w-60">
                     <!-- Text -->
@@ -377,31 +326,30 @@
                     <!-- Buttons-->
                     <div class="button-wrap pt-1">
                       <a class="btn btn-primary btn-round all-caps text-md" href="#">View Sample</a>
-                    </div>                
+                    </div>
                   </div>
                   <!-- Post Media -->
                   <div class="pr-pl-1 md-pr-3 md-pl-0 md-w-30 lg-w-40">
                     <!-- Image -->
                     <figure class="media-item lazyload">
-              		    <picture>
-              		      <source srcset="../images/content-img/img-reporting-teal.svg" media="(min-width: 48em)" />
-              		      <source srcset="../images/content-img/img-reporting-teal.svg" />
-              		      <img src="../images/content-img/img-reporting-teal.svg" data-srcset="../images/content-img/img-reporting-teal.svg" alt="in2Marketplace" class="lazyload" />       		  
-            			    <noscript>
+                      <picture>
+                        <source srcset="../images/content-img/img-reporting-teal.svg" media="(min-width: 48em)" />
+                        <source srcset="../images/content-img/img-reporting-teal.svg" />
+                        <img src="../images/content-img/img-reporting-teal.svg" data-srcset="../images/content-img/img-reporting-teal.svg" alt="in2Marketplace" class="lazyload" />       		  
+                        <noscript>
                           <img src="../images/content-img/img-reporting-teal.svg" alt="in2Marketplace" />
-                      </noscript>
-              		    </picture>
+                        </noscript>
+                      </picture>
                     </figure>
                   </div>
                 </article>
               </div>
             </section>
-            
             <!-- Feature -->
             <section class="mod-block bg-EEE c-blue-20 pt-pb-2 md-pt-pb-4">
               <div class="container">
-               	<!-- Post -->
-                <article class="text-center flex flex-d-col mb-2 md-text-left md-flex-d-row md-flex-wrap md-ai-center md-jc-between">         
+                <!-- Post -->
+                <article class="text-center flex flex-d-col mb-2 md-text-left md-flex-d-row md-flex-wrap md-ai-center md-jc-between">
                   <!-- Post Content -->
                   <div class="mb-2 md-mb-0 md-pr-1 md-w-70 lg-w-60">
                     <!-- Text -->
@@ -413,30 +361,29 @@
                     <!-- Buttons-->
                     <div class="button-wrap pt-1">
                       <a class="btn btn-round bg-blue-40 c-white all-caps text-md" href="#">Learn More</a>
-                    </div>                
+                    </div>
                   </div>
                   <!-- Post Media -->
                   <div class="pr-pl-1 md-pr-0 md-pl-2 md-w-30 lg-w-40">
                     <!-- Image -->
                     <figure class="media-item text-center mb-0 mw-25em lazyload">
-              		    <picture>
-              		      <source srcset="../images/content-img/img-payment-options.svg" />
-              		      <img src="../images/content-img/img-payment-options.svg" data-srcset="../images/content-img/img-payment-options.svg" alt="in2Marketplace" class="lazyload" />       		  
-            			    <noscript>
+                      <picture>
+                        <source srcset="../images/content-img/img-payment-options.svg" />
+                        <img src="../images/content-img/img-payment-options.svg" data-srcset="../images/content-img/img-payment-options.svg" alt="in2Marketplace" class="lazyload" />       		  
+                        <noscript>
                           <img src="../images/content-img/img-payment-options.svg" alt="in2Marketplace" />
-                      </noscript>
-              		    </picture>
+                        </noscript>
+                      </picture>
                     </figure>
                   </div>
                 </article>
               </div>
             </section>
-                    
             <!-- Feature -->
             <section class="mod-block bg-grey-80 c-blue-30 pt-pb-2 md-pt-pb-4">
               <div class="container">
                 <!-- Post -->
-                <article class="text-center flex flex-d-col md-text-left md-flex-d-row-rev md-flex-wrap md-ai-center md-jc-between">         
+                <article class="text-center flex flex-d-col md-text-left md-flex-d-row-rev md-flex-wrap md-ai-center md-jc-between">
                   <!-- Post Content -->
                   <div class="mb-2 md-mb-0 md-pl-1 md-w-70 lg-w-60">
                     <!-- Text -->
@@ -448,20 +395,20 @@
                     <!-- Buttons-->
                     <div class="button-wrap pt-1">
                       <a class="btn btn-primary btn-round all-caps text-md" href="#">View API</a>
-                    </div>                
+                    </div>
                   </div>
                   <!-- Post Media -->
                   <div class="pr-pl-1 md-pr-3 md-pl-0 md-w-30 lg-w-40">
                     <!-- Image -->
                     <figure class="media-item text-center mb-0 mw-25em lazyload">
-              		    <picture>
-              		      <source srcset="../images/content-img/img-data-analysis-teal.svg" media="(min-width: 48em)" />
-              		      <source srcset="../images/content-img/img-data-analysis-teal.svg" />
-              		      <img src="../images/content-img/img-data-analysis-teal.svg" data-srcset="../images/content-img/img-data-analysis-teal.svg" alt="in2Marketplace" class="lazyload" />       		  
-            			    <noscript>
+                      <picture>
+                        <source srcset="../images/content-img/img-data-analysis-teal.svg" media="(min-width: 48em)" />
+                        <source srcset="../images/content-img/img-data-analysis-teal.svg" />
+                        <img src="../images/content-img/img-data-analysis-teal.svg" data-srcset="../images/content-img/img-data-analysis-teal.svg" alt="in2Marketplace" class="lazyload" />       		  
+                        <noscript>
                           <img src="../images/content-img/img-shaking-hands.svg" alt="in2Marketplace" />
-                      </noscript>
-              		    </picture>
+                        </noscript>
+                      </picture>
                     </figure>
                   </div>
                 </article>
@@ -472,22 +419,23 @@
           <!-- CTA Banner (Info & Help Buttons) -->
           <section class="cta-banner bg-no-repeat bg-cover bg-blue-20 tc-white text-center pt-pb-2 md-pt-pb-4 hidden" style="background-image: url('../images/hero-banner/bg-mobile-user-banner-dark-teal.jpg');">
             <div class="container md-pt-pb-4">
-              
               <!-- Buttons -->
               <div class="button-wrap flex flex-d-col jc-center pt-1 x-sm-flex-d-row x-sm-flex-wrap">  
                 <a class="btn btn-outline btn-round c-white flex-g-1 mr-ml-a mb-1 pt-pb-1 pr-pl-3 text-lg x-sm-mr-ml-sm x-sm-mb-sm md-flex-g-0" href="#" data-remodal-target="demo-video">Discover in2M</a>
                 <a class="btn btn-outline btn-round c-white flex-g-1 mr-ml-a mb-1 pt-pb-1 pr-pl-3 text-lg x-sm-mr-ml-sm x-sm-mb-sm md-flex-g-0" href="#">Success Stories</a>
               </div>
-              <a href="#" class="block text-center h6 mr-ml-a pt-1"> <svg class="icon"><use xlink:href="#icon-help" /></svg> Help & Support</a>
+              <a href="#" class="block text-center h6 mr-ml-a pt-1">
+                <svg class="icon">
+                  <use xlink:href="#icon-help" />
+                </svg>
+                Help & Support
+              </a>
             </div>
           </section>
-
           <!-- end / main-content -->
         </main>
-        
         <!-- Footer -->
         <div data-replace="../global-partials/footer/footer-logged-in-blue.html"></div>
-        
         <!-- end / site-wrap-->
       </div>
       
@@ -504,8 +452,8 @@
             <!-- Video -->
             <div class="video mr-ml-a">
               <div class="media-wrap">
-      				  <iframe class="lazyload" width="100%" data-src="https://www.youtube.com/embed/ElAJbhkH2lU?rel=0" frameborder="0" allowfullscreen></iframe>
-      				  <noscript><iframe width="100%" src="https://www.youtube.com/embed/ElAJbhkH2lU?rel=0" frameborder="0" allowfullscreen></iframe></noscript>
+                <iframe class="lazyload" width="100%" data-src="https://www.youtube.com/embed/ElAJbhkH2lU?rel=0" frameborder="0" allowfullscreen></iframe>
+                <noscript><iframe width="100%" src="https://www.youtube.com/embed/ElAJbhkH2lU?rel=0" frameborder="0" allowfullscreen></iframe></noscript>
               </div>
             </div>
           </div>
@@ -530,88 +478,55 @@
             <!-- Form -->
             <form name="HelpContactForm">
               <div class="form-wrap text-lg">
-      
                 <!-- Username -->
                 <div class="form-row mb-1">
                   <label for="" id="-ariaLabel">Name <span class="req-mark">*</span></label>
                   <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="required" title="This is a required field" required>
                 </div>
-      
                 <!-- Email -->
                 <div class="form-row mb-1">
                   <label for="" id="-ariaLabel">Email <span class="req-mark">*</span></label>
-                        <input id="" name="" type="email" autocorrect="off" autocapitalize="none" spellcheck="false" aria-labelledby="-ariaLabel" class="required" title="This is a required field" required>
+                  <input id="" name="" type="email" autocorrect="off" autocapitalize="none" spellcheck="false" aria-labelledby="-ariaLabel" class="required" title="This is a required field" required>
                 </div>
-                
                 <!-- Issue -->
                 <div class="form-row">
                   <label for="" id="-ariaLabel">User Issue</label>
                   <textarea maxlength="200" aria-labelledby="-ariaLabel"></textarea>
                 </div>
-                
-      
                 <!-- Remember Me / Forgot Password -->
                 <div class="form-row form-helpers flex flex-wrap jc-between mb-1 pt-1">
                   <!-- Critical Marker -->
                   <label>
-                    <input type="checkbox" name="opt1" id="opt1">
-                    <span class="text-sm pl-tiny">Mark as Urgent</span>
+                  <input type="checkbox" name="opt1" id="opt1">
+                  <span class="text-sm pl-tiny">Mark as Urgent</span>
                   </label>
                   <!-- Help Link -->
                   <label>
-                    <span class="text-md"><a class="c-blue-60" href="#">Need To Talk?</a></span>
+                  <span class="text-md"><a class="c-blue-60" href="#">Need To Talk?</a></span>
                   </label>
                 </div>
-                
                 <!-- Buttons -->
                 <div class="form-row button-wrap flex flex-d-col-rev sm-flex-d-row sm-jc-center">
                   <button onclick="$('form[name=" DisputeForm "] input').val('');" class="btn-outline all-caps cancel-button mb-1 sm-mb-0 sm-mr-sm" type="reset" data-remodal-action="close" aria-label="Close">cancel</button>
-                  
                   <input class="btn all-caps bg-blue-40 c-white save-button mb-1 sm-mb-0 sm-ml-sm" type="submit" value="send">
                 </div>
                 <!-- end / form-wrap -->
               </div>
             </form>
-            
           </div>
         </div>
-        
       </div>
-      
       <!-- Dependencies -->
       <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
       <script>window.jQuery || document.write('<script src="../js/libs/jquery.1.11.2.min.js"><\/script>')</script>
       <script src="../js/min/script.min.js"></script>
+      
       <script>
-        
         $('.discount-button').on('click' , function(){
           $(this).parent().find('.discount-button').removeClass('active');
           $(this).toggleClass('active');
           //$('.close-btn').removeClass('hidden');          
         });
-        
-       /*
- $('.close-btn').on('click' , function(){
-          $('.discount-details .plan-cost').addClass('hidden');
-          $('.discount-button').removeClass('active');
-           $(this).addClass('hidden');
-           return false;
-        });
-         
-         $('.one-year-button').on('click' , function(){
-          //$(this).parent().parent().find('.two-years').addClass('hidden');
-           
-           $('.two-years').addClass('hidden');
-           $('.one-year').toggleClass('hidden');
-           return false;
-         });
-
-        $('.two-years-button').on('click' , function(){
-         $('.one-year').addClass('hidden');
-         $('.two-years').toggleClass('hidden');
-         return false;      
-        });
-*/
       </script>
     </body>
   </html>
