@@ -280,6 +280,29 @@
   border-width: 3px;
 }
 
+.bor-4 {
+  border-width: 4px;
+}
+
+.bor-5 {
+  border-width: .313em;
+}
+
+.bor-md {
+  border-width: .5em;
+}
+
+.bor-scale-50 {
+  border-width: .5em;
+  border-width: calc( .35em + (8 - 1) * ( (100vw - 400px) / ( 1800 - 400) ));
+}
+
+
+.bor-scale-75 {
+  border-width: .75em;
+  border-width: calc( .5em + (8 - 1) * ( (100vw - 400px) / ( 1800 - 400) ));
+}
+
 .bor-top-1 {
   border-top-width: 1px;
 }

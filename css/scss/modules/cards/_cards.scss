@@ -20,7 +20,47 @@
     max-width: 3.25em;
     width: 100%;
     //padding: .5rem .75rem .25rem;   
+  }
+  // pricing plans
+  .pricing-plans & {
+    padding: 1.5em;  
   }  
+}
+
+
+// Card Header
+
+.card-header {
+  .collapsible-collapsed {
+    display: none;  
+  }
+  .collapsible-expanded {
+    display: block; 
+  }
+}
+
+.card-header {
+  .pricing-plans & {
+    font-size: 1.5rem;
+    &:container("width > 20em") {
+      font-size: 2rem;
+    }
+    &:container("width > 25em") {
+      flex-direction: row;
+      &:nth-child(2) {
+        margin-left: auto;  
+      }
+    }
+    // > 375
+    @media (min-width: $break-375) {
+      &:container("width > 20em") {
+        flex-direction: row;
+        &:nth-child(2) {
+          margin-left: auto;  
+        }
+      }
+    }
+  }
 }
 
 

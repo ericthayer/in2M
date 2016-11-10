@@ -2,23 +2,16 @@
 
 // Brand Colors
 $blue: hsl(203, 100%, 30%); // #005e99
+$blue-light: hsl(203, 100%, 97%);
 $green: hsl(86, 54%, 50%); // #89c43b
+$green-light: hsl(86, 54%, 97%);
 $orange: hsl(33, 79%, 50%); // #e48a1b
+$orange-light: hsl(33, 79%, 97%);
 $grey: hsl(0, 0%, 80%); // #cccccc
 $purple: hsl(258, 36%, 50%); // #6d52ad;
+$purple-light: hsl(258, 36%, 97%);
 
 // Accent Brand Colors
-
-// Purple
-$purple-90: hsl(258, 36%, 90%);
-$purple-80: hsl(258, 36%, 80%);
-$purple-70: hsl(258, 36%, 70%);
-$purple-60: hsl(258, 36%, 60%);
-$purple-50: $purple;
-$purple-40: hsl(258, 36%, 40%);
-$purple-30: hsl(258, 36%, 30%);
-$purple-20: hsl(258, 36%, 20%);
-$purple-10: hsl(258, 36%, 10%);
 
 
 // Blue 
@@ -28,35 +21,30 @@ $blue-70: hsl(203, 100%, 70%);
 $blue-60: hsl(203, 100%, 60%);
 $blue-50: hsl(203, 100%, 50%);
 $blue-40: hsl(203, 100%, 40%);
-$blue-30: hsl(203, 100%, 30%);
+$blue-30: $blue;
 $blue-20: hsl(203, 100%, 20%);
 $blue-10: hsl(203, 100%, 10%);
 
 // this seems like overkill but...
-$blue-light: $blue-70;
+
 $blue-medium: shade($blue-light, 80%);
 $blue-dark: shade($blue-light, 20%);
 
 // Green
-
-
 $green-90: hsl(86, 54%, 90%);
 $green-80: hsl(86, 54%, 80%);
 $green-70: hsl(86, 54%, 70%);
 $green-60: hsl(86, 54%, 60%);
-$green-50: hsl(86, 54%, 50%);
+$green-50: $green;
 $green-40: hsl(86, 54%, 40%);
 $green-30: hsl(86, 54%, 30%); 
 $green-20: hsl(86, 54%, 20%);
 $green-10: hsl(86, 54%, 10%);
 
-$green-light: #9EBFCC;
 $green-medium: shade($green-light, 80%);
 $green-dark: #3F6672;
 
 // Orange
-
-
 $orange-90: hsl(33, 79%, 90%);
 $orange-80: hsl(33, 79%, 80%);
 $orange-70: hsl(33, 79%, 70%);
@@ -68,8 +56,6 @@ $orange-20: hsl(33, 79%, 20%);
 $orange-10: hsl(33, 79%, 10%);
 
 // Grey
-
-
 $grey-90: hsl(0, 0%, 90%);
 $grey-80: hsl(0, 0%, 80%);
 $grey-70: hsl(0, 0%, 70%);
@@ -84,14 +70,28 @@ $grey-light: #CFD3D3;
 $grey-medium: #B6C4C6;
 $grey-dark: shade($grey-medium, 5%);
 
-// Bronze
+// Purple
+$purple-90: hsl(258, 36%, 90%);
+$purple-80: hsl(258, 36%, 80%);
+$purple-70: hsl(258, 36%, 70%);
+$purple-60: hsl(258, 36%, 60%);
+$purple-50: $purple;
+$purple-40: hsl(258, 36%, 40%);
+$purple-30: hsl(258, 36%, 30%);
+$purple-20: hsl(258, 36%, 20%);
+$purple-10: hsl(258, 36%, 10%);
 
+// Bronze
 $bronze: hsl(49, 15%, 61%);
 
 // ********** "in2Marketplace" Theme Color Modifiers ********** //
 
 // BLUE
 
+
+// backgrounds
+.bg-blue { background-color: $blue; }
+.bg-blue-light { background-color: $blue-light; }
 .bg-blue-90 { background-color: $blue-90; }
 .bg-blue-80 { background-color: $blue-80; }
 .bg-blue-70 { background-color: $blue-70; }
@@ -101,18 +101,6 @@ $bronze: hsl(49, 15%, 61%);
 .bg-blue-30 { background-color: $blue-30; }
 .bg-blue-20 { background-color: $blue-20; }
 .bg-blue-10 { background-color: $blue-10; }
-
-.c-blue-90 { color: $blue-90; }
-.c-blue-80 { color: $blue-80; }
-.c-blue-70 { color: $blue-70; }
-.c-blue-60 { color: $blue-60; }
-.c-blue-50 { color: $blue-50; }
-.c-blue-40 { color: $blue-40; }
-.c-blue-30 { color: $blue-30; }
-.c-blue-20 { color: $blue-20; }
-.c-blue-10 { color: $blue-10; }
-
-.bg-blue { background-color: $blue; }
 
 .bg-blue-a-50 { 
   background-color: hsl(191, 53%, 35%);
@@ -149,9 +137,34 @@ $bronze: hsl(49, 15%, 61%);
   background-image: linear-gradient(to top, $blue-30 0%, $blue-50 100%);
 }
 
+
+// borders
+.bor-c-blue-90 { border-color: $blue-90; }
+.bor-c-blue-80 { border-color: $blue-80; }
+.bor-c-blue-70 { border-color: $blue-70; }
+.bor-c-blue-60 { border-color: $blue-60; }
+.bor-c-blue-50 { border-color: $blue-50; }
+.bor-c-blue-40 { border-color: $blue-40; }
+.bor-c-blue-30 { border-color: $blue-30; }
+.bor-c-blue-20 { border-color: $blue-20; }
+.bor-c-blue-10 { border-color: $blue-10; }
+
+
+// color
+.c-blue-90 { color: $blue-90; }
+.c-blue-80 { color: $blue-80; }
+.c-blue-70 { color: $blue-70; }
+.c-blue-60 { color: $blue-60; }
+.c-blue-50 { color: $blue-50; }
+.c-blue-40 { color: $blue-40; }
+.c-blue-30 { color: $blue-30; }
+.c-blue-20 { color: $blue-20; }
+.c-blue-10 { color: $blue-10; }
+
 // Purple
 
-.bg-purple { background-color: $purple;  }
+.bg-purple { background-color: $purple; }
+.bg-purple-light { background-color: $purple-light; }
 .bg-purple-90 { background-color: $purple-90; }
 .bg-purple-80 { background-color: $purple-80; }
 .bg-purple-70 { background-color: $purple-70; }
@@ -162,15 +175,6 @@ $bronze: hsl(49, 15%, 61%);
 .bg-purple-20 { background-color: $purple-20; }
 .bg-purple-10 { background-color: $purple-10; }
 
-.c-purple-90 { color: $purple-90; }
-.c-purple-80 { color: $purple-80; }
-.c-purple-70 { color: $purple-70; }
-.c-purple-60 { color: $purple-60; }
-.c-purple-50 { color: $purple-50; }
-.c-purple-40 { color: $purple-40; }
-.c-purple-30 { color: $purple-30; }
-.c-purple-20 { color: $purple-20; }
-.c-purple-10 { color: $purple-10; }
 
 .bg-purple-g-1 {
   background: $purple;
@@ -212,9 +216,33 @@ $bronze: hsl(49, 15%, 61%);
   background-image: linear-gradient(to top, $purple-30 0%, $purple-50 100%);
 }
 
+// borders
+.bor-c-purple { border-color: $purple; }
+.bor-c-purple-90 { border-color: $purple-90; }
+.bor-c-purple-80 { border-color: $purple-80; }
+.bor-c-purple-70 { border-color: $purple-70; }
+.bor-c-purple-60 { border-color: $purple-60; }
+.bor-c-purple-50 { border-color: $purple-50; }
+.bor-c-purple-40 { border-color: $purple-40; }
+.bor-c-purple-30 { border-color: $purple-30; }
+.bor-c-purple-20 { border-color: $purple-20; }
+.bor-c-purple-10 { border-color: $purple-10; }
+
+// color
+.c-purple-90 { color: $purple-90; }
+.c-purple-80 { color: $purple-80; }
+.c-purple-70 { color: $purple-70; }
+.c-purple-60 { color: $purple-60; }
+.c-purple-50 { color: $purple-50; }
+.c-purple-40 { color: $purple-40; }
+.c-purple-30 { color: $purple-30; }
+.c-purple-20 { color: $purple-20; }
+.c-purple-10 { color: $purple-10; }
+
 // GREEN
 
 .bg-green { background-color: $green; }
+.bg-green-light { background-color: $green-light; }
 .bg-green-90 { background-color: $green-90; }
 .bg-green-80 { background-color: $green-80; }
 .bg-green-70 { background-color: $green-70; }
@@ -252,6 +280,19 @@ $bronze: hsl(49, 15%, 61%);
   background-image: linear-gradient(to top, $green-30 0%, $green-50 100%);
 }
 
+// borders
+.bor-c-green { border-color: $green; }
+.bor-c-green-90 { border-color: $green-90; }
+.bor-c-green-80 { border-color: $green-80; }
+.bor-c-green-70 { border-color: $green-70; }
+.bor-c-green-60 { border-color: $green-60; }
+.bor-c-green-50 { border-color: $green-50; }
+.bor-c-green-40 { border-color: $green-40; }
+.bor-c-green-30 { border-color: $green-30; }
+.bor-c-green-20 { border-color: $green-20; }
+.bor-c-green-10 { border-color: $green-10; }
+
+// color
 .c-green { color: $green; }
 .c-green-90 { color: $green-90; }
 .c-green-80 { color: $green-80; }
@@ -266,6 +307,7 @@ $bronze: hsl(49, 15%, 61%);
 // Orange
 
 .bg-orange { background-color: $orange; }
+.bg-orange-light { background-color: $orange-light; }
 .bg-orange-90 { background-color: $orange-90; }
 .bg-orange-80 { background-color: $orange-80; }
 .bg-orange-70 { background-color: $orange-70; }
@@ -303,6 +345,19 @@ $bronze: hsl(49, 15%, 61%);
   background-image: linear-gradient(to top, $orange-30 0%, $orange-50 100%);
 }
 
+// borders
+.bor-c-orange { border-color: $orange; }
+.bor-c-orange-90 { border-color: $orange-90; }
+.bor-c-orange-80 { border-color: $orange-80; }
+.bor-c-orange-70 { border-color: $orange-70; }
+.bor-c-orange-60 { border-color: $orange-60; }
+.bor-c-orange-50 { border-color: $orange-50; }
+.bor-c-orange-40 { border-color: $orange-40; }
+.bor-c-orange-30 { border-color: $orange-30; }
+.bor-c-orange-20 { border-color: $orange-20; }
+.bor-c-orange-10 { border-color: $orange-10; }
+
+// color
 .c-orange { color: $orange; }
 .c-orange-90 { color: $orange-90; }
 .c-orange-80 { color: $orange-80; }
@@ -331,6 +386,18 @@ $bronze: hsl(49, 15%, 61%);
 .bg-grey-30 { background-color: $grey-30; }
 .bg-grey-20 { background-color: $grey-20; }
 .bg-grey-10 { background-color: $grey-10; }
+
+
+// borders
+.bor-c-grey-90 { border-color: $grey-90; }
+.bor-c-grey-80 { border-color: $grey-80; }
+.bor-c-grey-70 { border-color: $grey-70; }
+.bor-c-grey-60 { border-color: $grey-60; }
+.bor-c-grey-50 { border-color: $grey-50; }
+.bor-c-grey-40 { border-color: $grey-40; }
+.bor-c-grey-30 { border-color: $grey-30; }
+.bor-c-grey-20 { border-color: $grey-20; }
+.bor-c-grey-10 { border-color: $grey-10; }
 
 // Graphic Backgrounds
 

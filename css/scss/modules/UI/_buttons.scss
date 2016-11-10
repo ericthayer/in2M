@@ -187,10 +187,12 @@ button:not([class*="bg-"]):not([class*="c-"]):not(.btn-reset),
   @include button-reset;
 }
 
-.close-btn {
+// closing button
+
+.close-button {
   .plan-cost & {
-    // > 540
-    @media (min-width: $break-md-phone) {
+    // > 480
+   @media (min-width: $break-sm-phone) {
       position: absolute;
       margin-right: 0;  
       right: 0;
@@ -198,6 +200,113 @@ button:not([class*="bg-"]):not([class*="c-"]):not(.btn-reset),
       .icon {
         margin: 0;  
       }
+    }
+  }
+}
+
+// Plan CTA
+
+.plan-CTA {
+  
+}
+
+// Plan Discounts
+
+.plan-discounts {
+  &:container("width < 15em") {
+    flex-direction: column;
+    &:first-child a {
+      margin-bottom: .5em; 
+    }
+    > * {
+      width: 100%;  
+    }
+  }
+  &:container("width > 15em") {
+    &:first-child a {
+      margin-bottom: 0; 
+    }
+  }
+
+  &:container("width > 30em") {
+    flex-direction: row;
+    margin-left: auto; 
+    width: auto;      
+  }
+
+}
+
+.discount-buttons {
+  &:container("width < 15em") {
+   > * {
+     margin-bottom: .5em;
+      width: 100%;
+      &:nth-child(1) {
+        margin-right: 0; 
+      }
+      &:nth-child(2) {
+        margin-left: 0; 
+      }
+    }
+  }  
+  // > 480
+   &:container("width > 30em") {
+    flex-direction: row; 
+  }
+  
+  // > 992
+  @media (min-width: $break-lg-screen) {
+    &:container("width < 15em") {
+      > * {
+        margin-bottom: 0;
+        flex: 1 0 45%;
+        width: auto;  
+        &:nth-child(1) {
+          margin-right: .5em; 
+        }
+        &:nth-child(2) {
+          margin-left: .5em; 
+        }
+      }
+    }
+  }  
+}
+
+.discount-button {
+   
+  // > 320
+  @media (min-width: $break-tiny-phone) {
+    &:container("width > 15em") {
+      margin-bottom: 0;
+      flex: 1 0 45%;
+      width: auto;  
+      &:nth-child(1) {
+        margin-right: .5em; 
+      }
+      &:nth-child(2) {
+        margin-left: .5em; 
+      }
+    }  
+  }
+  // > 480
+  @media (min-width: $break-sm-phone) { 
+    width: auto;
+    &:nth-child(2) {
+      margin-left: .5em;
+    } 
+  }
+  span {
+    //@include sr-only;  
+  }
+  &.active {
+    .sr-only {
+      height: auto;
+      width: auto;
+      position: relative;
+      margin: 0;     
+    }
+    .discount-label {
+      display: none;  
     }
   }
 }
