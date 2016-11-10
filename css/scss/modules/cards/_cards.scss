@@ -4,7 +4,7 @@
   //background: #DDD;
   //margin: .5rem;  
   h3 {
-    background: rgba(black, .3);
+    //background: rgba(black, .3);
     letter-spacing: .03rem;
     margin-bottom: 0; 
     padding: .75rem .5rem;  
@@ -15,7 +15,7 @@
     //color: #777;
     //font-size: 4.5rem;
   }
-  .icon:not(.icon-delete):not(.icon-edit) {
+  .icon:not(.icon-sm) {
     height: 3.25em;
     max-width: 3.25em;
     width: 100%;
@@ -45,7 +45,7 @@
   // > 480
   @media (min-width: $break-sm-phone) {
     > div:first-child {
-      min-height: 375px;  
+      //min-height: 375px;  
     }
   }
   // > 1200

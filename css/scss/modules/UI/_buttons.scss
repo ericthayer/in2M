@@ -63,7 +63,8 @@
 	&:focus {
 		background-color: darken($btn-primary, 15%);
 	}
-  &:active {
+  &:active,
+  &.active {
     background-color: darken($btn-primary, 20%);
   }
 	&:hover:after,
@@ -202,6 +203,12 @@ button:not([class*="bg-"]):not([class*="c-"]):not(.btn-reset),
   > *:nth-last-child(n+2) ~ * {
     max-width: 18em;
     margin: 0 .313em 1em;
+  }
+  &.button-auto {
+    > * {
+      flex: 0 0 auto;
+      width: auto;  
+    }
   }
   // when parent container is less than 400px wide
   &:container("width <= 25em") {

@@ -17,17 +17,17 @@
       background-color: $blue-30;
     }   
   }
-  // > 540
+  // > 640
   @media (min-width: $break-ml-phone) {
     
     > .container {
       padding-top: 2em;
-      padding-bottom: 2em;   
+      //padding-bottom: 2em;   
     }
   }  
 }
 
-// Site Title
+// Site Title 
 
 .site-title {
   //display: block;  
