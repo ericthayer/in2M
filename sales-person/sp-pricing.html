@@ -817,15 +817,15 @@
       <script src="../js/min/script.min.js"></script>
       
       <script>
-        $('.plan-button').on('click' , function(){
+        $('.plan-button').on('click', function() {
           $(this).parent().find('.plan-button').removeClass('active');
           $(this).toggleClass('active');
-          $('.close-button').removeClass('hidden');          
+          $('.close-button').removeClass('hidden');
         });
         
-        $('.close-button').on('click' , function(){
-          $('.plan-button').removeClass('active');
-          $('.plan-button span:not(.plan-label)').addClass('sr-only');      
+        $('.close-button').on('click', function() {
+          $(this).parent().parent().parent().parent().parent().find('.plan-cta .plan-button').removeClass('active');
+           $(this).parent().parent().parent().parent().parent().find('.plan-button span:not(.plan-label)').addClass('sr-only');
         });
       </script>
     </body>

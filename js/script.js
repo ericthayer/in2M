@@ -810,8 +810,7 @@ document.documentElement.className += " enhanced";
 //   });
 // }); 
 
-$(document).ready(function() {
-  
+ 
 	// initialize modules
 	$( document ).trigger( "enhance" );
   
@@ -874,5 +873,3 @@ $(document).ready(function() {
       $('#' + $(this).val()).show();
     });
   });
-    
-});
