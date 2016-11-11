@@ -9,34 +9,45 @@
   position: relative; 
 }
 
-// Plan CTA
+// Card CTA
 
-.plan-cta {
-  // container is greater than 160px and less than 320px wide
-  &:container("width > 10em < 20em") {
-    > .btn {
-      margin-right: 0;
-      margin-bottom: .625em;
-      margin-left: 0;
-      width: 100%;
+.card-cta {
+  .pricing-plans & {
+    // container is greater than 160px and less than 320px wide
+    &:container("width > 10em < 24em") {
+      > .btn {
+        margin-right: 0;
+        margin-bottom: .625em;
+        margin-left: 0;
+        width: 100%;
+      }
+      .btn {
+        // < 1200
+        @media (max-width: $break-lg-screen - .01em) {
+          padding-top: .625em;
+          padding-bottom: .625em;
+        }
+      }
+      .plan-buttons {  
+        width: 100%;
+      }    
     }
-    .plan-buttons {
-      width: 100%;
-    }    
-  }
-  // container is less than 320px wide when screen is at least 480px wide
-  @media (min-width: $break-sm-phone) {
-    &:container("width < 20em") {
-      .plan-buttons {
-        .btn {
-          width: 45%;
+    // container is less than 320px wide when screen is at least 480px wide
+    @media (min-width: $break-sm-phone) {
+      &:container("width < 24em") {
+        .plan-buttons {
+          .btn {
+            width: 45%;
+          }
         }
       }
     }
   }
 }
 
-.plan-title {
+// Card Title
+
+.card-title {
   sup {
     color: $c-999-grey;
     height: 2em;  
@@ -52,7 +63,10 @@
   }
 }
 
-.feature-title {
+
+// Feature List Title
+
+.feature-list-title {
   display: flex;
   overflow: hidden; 
   position: relative;
