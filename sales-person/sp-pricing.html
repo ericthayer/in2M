@@ -824,8 +824,8 @@
         });
         
         $('.close-button').on('click', function() {
-          $(this).parent().parent().parent().parent().parent().find('.plan-cta .plan-button').removeClass('active');
-           $(this).parent().parent().parent().parent().parent().find('.plan-button span:not(.plan-label)').addClass('sr-only');
+          $(this).closest('.card').find('.plan-cta .plan-button').removeClass('active');
+          $(this).closest('.card').find('.plan-button span:not(.plan-label)').addClass('sr-only');
         });
       </script>
     </body>
