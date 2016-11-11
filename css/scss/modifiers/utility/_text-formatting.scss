@@ -83,6 +83,13 @@
 
 .feature-list {
   list-style-type: none;
+  // < 240
+  @media (max-width: $break-240) {
+    span {
+      display: flex;
+      justify-content: center;
+    } 
+  }
 }
 
 .inline-highlight {

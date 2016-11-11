@@ -527,9 +527,20 @@ ol {
 }
 
 li {
+  // > 240
+  @media (max-width: $break-240) {
+   display: block !important;   
+  }
   //word-break: break-word;
 }
 
 p {
   margin-top: 0;  
+}
+
+a {
+  // > 240
+  @media (max-width: $break-240) {
+    word-break: break-word;   
+  }
 }
