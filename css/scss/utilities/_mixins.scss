@@ -18,6 +18,38 @@
 
 }
 
+// fade animation
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }  
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }  
+}
+
+@mixin fade-in {
+  animation: fade-in .4s linear;
+  animation-fill-mode: forwards;
+  transition: opacity .4s ease;  
+}
+
+@mixin fade-out {
+  animation: fade-out .4s linear;
+  animation-fill-mode: forwards;
+  transition: opacity .4s ease;  
+}
+
 /// Slightly lighten a color
 /// @access public
 /// @param {Color} $color - color to tint
@@ -653,6 +685,27 @@
   	font-family: $FilsonPro;
   	font-weight: 800;
 	}
+}
+
+// Tool Tip
+
+@mixin tool-tip {
+  background: hsla(203,100%,90%,1);
+  box-shadow: 0 0 0 .25em hsl(203, 100%, 80%), 7px 7px 0 rgba(0,0,0,.5);
+  color: #333;        
+  padding: .5em .5em;
+  position: absolute;
+  top: 0;
+  left: 1.5rem;
+  line-height: 1;
+  font-size: .875rem;
+  text-align: center;        
+  @include fade-in;
+  z-index: 10000;
+  // > 480
+  @media (min-width: $break-sm-phone) {
+    min-width: 8em;
+  }
 }
 
 // Arrow Pseudo Elements
