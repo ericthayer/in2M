@@ -3,24 +3,6 @@
 
 }
 
-// Pricing Tables
-
-.pricing-tables {
-  padding-top: 1em; 
-}
-
-// Pricing Plan
-
-.pricing-plan {
-}
-
-// Plan Title
-
-.plan-title {
-		
-}
-
-
 // Plan Cost
 
 .plan-cost {
@@ -29,13 +11,31 @@
 
 // Plan CTA
 
-.plan-CTA {
-		
+.plan-cta {
+  // container is greater than 160px and less than 320px wide
+  &:container("width > 10em < 20em") {
+    > .btn {
+      margin-right: 0;
+      margin-bottom: .625em;
+      margin-left: 0;
+      width: 100%;
+    }
+    .plan-buttons {
+      width: 100%;
+    }    
+  }
+  // container is less than 320px wide when screen is at least 480px wide
+  @media (min-width: $break-sm-phone) {
+    &:container("width < 20em") {
+      .plan-buttons {
+        .btn {
+          width: 45%;
+        }
+      }
+    }
+  }
 }
 
-.plan-type {
-  
-}
 
 .feature-title {
   display: flex;
@@ -52,47 +52,5 @@
     width: 100%;
     position: absolute;
     padding-left: .5em;
-  }
-}
-
-// Plan Features
-
-.plan-features {
-	
-}
-
-// Plan Button
-
-.btn-plan {
-  max-width: 10em;
-}
-
-// Featured Plan
-
-.featured-plan {
-	background-color: hsl(191, 53%, 95%);
-	border-top: 5px solid hsl(191, 53%, 50%);
-	border-right: 0 solid transparent;
-	border-bottom: 5px solid hsl(191, 53%, 50%);
-	border-left: 0 solid transparent;
-	box-shadow: 0 0 10px rgba(black, 0.15);
-	overflow: hidden;	
-	position: relative;
-	transition: transform .4s ease;	
-	.plan-title {
-
-	}
-}
-
-.featured-ribbon {
-	@include corner-ribbon;
-}
-
-// ******* BREAKPOINTS ******* //
-
-// 320
-@media (min-width: $break-tiny-phone) {
-  .pricing-plans {
-
   }
 }

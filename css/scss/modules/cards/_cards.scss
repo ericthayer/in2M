@@ -39,30 +39,42 @@
   }
 }
 
-.card-header {
-  .pricing-plans & {
-    font-size: 1.5rem;
-    &:container("width > 20em") {
-      font-size: 2rem;
-    }
-    &:container("width > 25em") {
-      flex-direction: row;
-      &:nth-child(2) {
-        margin-left: auto;  
-      }
-    }
-    // > 375
-    @media (min-width: $break-375) {
-      &:container("width > 20em") {
-        flex-direction: row;
-        &:nth-child(2) {
-          margin-left: auto;  
-        }
-      }
+.card {
+  //container is less than 320px
+  &:container("width < 20em") {
+  .feature-list {
+     font-size: .9rem;
     }
   }
 }
 
+.card-header {
+  .pricing-plans & {
+    font-size: 1.5rem;
+  }
+  // container is less than 288
+  &:container("width < 18em") {
+    .pricing-plans & {
+      text-align: center;
+      justify-content: center;
+      > * {
+        width: 100%;
+      }
+    }
+  }    
+  // container is greater than 320px
+  &:container("width > 20em") {
+   .pricing-plans & { 
+     font-size: 2rem;
+    }
+  }
+  // container is greater than 400px
+  &:container("width > 25em") {
+    .pricing-plans & {
+      flex-direction: row;
+    }
+  }
+}
 
 // Info Block
 
