@@ -861,7 +861,7 @@ document.documentElement.className += " enhanced";
   // toggle selects
   
   $(function() {
-    $('#package-select').change(function(){
+    $('.option-select').change(function(){
       $('.select-target').hide();
       $('#' + $(this).val()).show();
     });

@@ -4118,6 +4118,24 @@
 		"oAP": "\/login.html",
 		"oF": 0
 		},
+	"\/public-site\/checkout.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public-site\/checkout.html",
+		"oF": 0
+		},
+	"\/public-site\/pricing.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public-site\/pricing.html",
+		"oF": 0
+		},
+	"\/public-site\/public-landing.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public-site\/public-landing.html",
+		"oF": 0
+		},
 	"\/retail-admin\/ra-create-campaign.html": {
 		"ft": 8192,
 		"oA": 0,
@@ -4238,12 +4256,6 @@
 		"oAP": "\/sales-company-admin\/sca-view-sales-org.html",
 		"oF": 0
 		},
-	"\/sales-person\/public.html": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/sales-person\/public.html",
-		"oF": 0
-		},
 	"\/sales-person\/sales-person-logged-in.html": {
 		"ft": 8192,
 		"oA": 0,
@@ -4256,10 +4268,10 @@
 		"oAP": "\/sales-person\/sales-person.html",
 		"oF": 0
 		},
-	"\/sales-person\/sp-checkout.html": {
+	"\/sales-person\/sp-checkout-logged-in.html": {
 		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/sales-person\/sp-checkout.html",
+		"oA": 2,
+		"oAP": "\/sales-person\/sp-checkout-logged-in.html",
 		"oF": 0
 		},
 	"\/sales-person\/sp-login.html": {
@@ -4286,10 +4298,22 @@
 		"oAP": "\/sales-person\/sp-partials\/sp-header-logged-in.html",
 		"oF": 0
 		},
+	"\/sales-person\/sp-partials\/sp-header-logged-out.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sales-person\/sp-partials\/sp-header-logged-out.html",
+		"oF": 0
+		},
 	"\/sales-person\/sp-plans.html": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/sales-person\/sp-plans.html",
+		"oF": 0
+		},
+	"\/sales-person\/sp-pricing-logged-in.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sales-person\/sp-pricing-logged-in.html",
 		"oF": 0
 		},
 	"\/sales-person\/sp-pricing.html": {
@@ -4308,6 +4332,12 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/sales-person\/sp-support.html",
+		"oF": 0
+		},
+	"\/sales-person\/sp-terms-conditions.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sales-person\/sp-terms-conditions.html",
 		"oF": 0
 		},
 	"\/super-admin\/sa-color-test.html": {

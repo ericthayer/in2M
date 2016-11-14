@@ -23,8 +23,29 @@
   }
   // pricing plans
   .pricing-plans & {
-    padding: 1.5em;  
-  }  
+    padding: 1.5em; 
+    transition: all .3s ease,
+                transform .3s ease;
+    z-index: 0;
+    //container is less than 320px
+    &:container("width < 20em") {
+    .feature-list {
+       font-size: .9rem;
+      }
+    }
+    // hover effect
+    &:hover,
+    &:focus {
+      border: none;
+      box-shadow: 0 0 0 .5em hsl(258, 36%, 60%) inset, 0 0 1em 0 rgba(black, .5);
+      outline: none;
+      transform: scale(1.070);
+      z-index: 1;
+    }
+  }
+  
+  
+    
 }
 
 
@@ -36,15 +57,6 @@
   }
   .collapsible-expanded {
     display: block; 
-  }
-}
-
-.card {
-  //container is less than 320px
-  &:container("width < 20em") {
-  .feature-list {
-     font-size: .9rem;
-    }
   }
 }
 
@@ -63,7 +75,7 @@
     }
   }    
   // container is greater than 320px
-  &:container("width > 20em") {
+  &:container("width > 18em") {
    .pricing-plans & { 
      font-size: 2rem;
     }

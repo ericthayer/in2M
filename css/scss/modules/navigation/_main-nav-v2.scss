@@ -94,7 +94,7 @@
     .logged-out.sales-person & {
       // < 640
       @media (max-width: $break-ml-phone) {
-        flex-direction: column-reverse;
+        //flex-direction: column-reverse;
       }
     }
    }
@@ -141,10 +141,16 @@
   //   //display: none; 
   // }
   .nav-cta {
-    order: 10;
-    padding-top: 1em;
-    a {
-      white-space: nowrap;
+    .logged-in.sales-person & {
+      order: 10;
+      padding-top: 1em;
+      a {
+        white-space: nowrap;
+      }
+      // > 640
+      @media (min-width: $break-ml-phone) {
+        padding-top: 0; 
+      }
     }
   }
   li[aria-haspopup="true"]:hover,

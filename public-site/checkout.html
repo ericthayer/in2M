@@ -21,175 +21,124 @@
       <!-- Non-Critical CSS - loadCSS: load a CSS file asynchronously. [c]2016 @scottjehl, Filament Group, Inc. Licensed MIT -->
       <script>(function(a){var b=function(c,k,d){var l=a.document;var m=l.createElement("link");var e;if(k){e=k}else{var i=(l.body||l.getElementsByTagName("head")[0]).childNodes;e=i[i.length-1]}var f=l.styleSheets;m.rel="stylesheet";m.href=c;m.media="only x";function j(n){if(l.body){return n()}setTimeout(function(){j(n)})}j(function(){e.parentNode.insertBefore(m,(k?e:e.nextSibling))});var h=function(o){var n=m.href;var p=f.length;while(p--){if(f[p].href===n){return o()}}setTimeout(function(){h(o)})};function g(){if(m.addEventListener){m.removeEventListener("load",g)}m.media=d||"all"}if(m.addEventListener){m.addEventListener("load",g)}m.onloadcssdefined=h;h(g);return m};if(typeof exports!=="undefined"){exports.loadCSS=b}else{a.loadCSS=b}}(typeof global!=="undefined"?global:this));loadCSS("../css/async.css");</script>
     </head>
-    <body>
+    <body class="public">
       <!--[if lt IE 10]>
       <p class="update-browser">This browser version is not recommended. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
       <![endif]-->
       
       <!-- Free Trial Form -->
       <section class="trial-form clear-form bg-blue-g-4 c-white h-50 w-100 slide-panel slide-down is-hidden">
-        <button class="btn-reset text-md" onclick="$('.trial-form').toggleClass('is-hidden');"> <svg class="icon"><use xlink:href="#icon-cancel" /></svg> </button>
+        <button class="btn-reset text-md" onclick="$('.trial-form').toggleClass('is-hidden');">
+          <svg class="icon">
+            <use xlink:href="#icon-cancel" />
+          </svg>
+        </button>
         <div class="container">
           <h2 class="text-center mb-tiny">Free 14 Day Trial</h2>
           <p class="h5 text-center mb-1"><span class="c-blue-70">100</span> SMS + <span class="c-blue-70">100</span> Emails</p>
-            <!-- Form -->
-            <form name="TrialForm" class="mr-ml-a mw-25em whitney-med">
-              <div class="form-wrap">
-      
-                <!-- Name -->
-                <div class="form-row mb-1">
-                  <label for="" id="-ariaLabel">Name</label>
-                  <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="bg-none bor-2 bor-solid bor-c-white required" title="This is a required field" required>
-                </div>
-      
-                <div class="sm-flex sm-jc-between">
-                  <!-- Email -->
-                  <div class="form-row mb-1 sm-mr-tiny sm-w-50">
-                    <label for="" id="-ariaLabel">Email</label>
-                    <input id="" name="" type="email" autocorrect="off" autocapitalize="none" spellcheck="false" aria-labelledby="-ariaLabel" class="bg-none bor-2 bor-solid bor-c-white required" title="This is a required field" required>
-                  </div>
-                  <!-- Phone -->
-                  <div class="form-row mb-1 sm-ml-tiny sm-w-50">
-                    <label for="" id="-ariaLabel">Phone</label>
-                    <input id="" name="" type="tel" pattern="[0-9]*" maxlength="10" aria-labelledby="-ariaLabel" class="bg-none bor-2 bor-solid bor-c-white required" title="This is a required field" required>
-                  </div>
-                </div>
-                
-                <!-- Message -->
-                <div class="form-row hidden">
-                  <label for="" id="-ariaLabel" class="antialiased c-white">Message?</label>
-                  <textarea maxlength="200" aria-labelledby="-ariaLabel"></textarea>
-                </div>                
-      
-                <!-- Helpers -->
-                <div class="form-row form-helpers flex flex-wrap jc-between mb-1">
-                  <!-- Critical Marker -->
-                  <label>
-                    <input type="checkbox" name="opt1" id="opt1">
-                    <span class="text-sm pl-tiny">Call me ASAP</span>
-                  </label>
-                  <!-- Help Link -->
-                  <label>
-                    <span class="text-sm"><a class="c-white" href="#">Need Help?</a></span>
-                  </label>
-                </div>
-                
-                <!-- Buttons -->
-                <div class="form-row button-wrap flex flex-d-col-rev sm-flex-d-row sm-jc-center">                  
-                  <input class="btn all-caps bg-blue-40 c-white flex-g-1 pt-pb-1" type="submit" value="sign up">
-                </div>
-                <!-- end / form-wrap -->
+          <!-- Form -->
+          <form name="TrialForm" class="mr-ml-a mw-25em whitney-med">
+            <div class="form-wrap">
+              <!-- Name -->
+              <div class="form-row mb-1">
+                <label for="" id="-ariaLabel">Name</label>
+                <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="bg-none bor-2 bor-solid bor-c-white required" title="This is a required field" required>
               </div>
-            </form>
-          
+              <div class="sm-flex sm-jc-between">
+                <!-- Email -->
+                <div class="form-row mb-1 sm-mr-tiny sm-w-50">
+                  <label for="" id="-ariaLabel">Email</label>
+                  <input id="" name="" type="email" autocorrect="off" autocapitalize="none" spellcheck="false" aria-labelledby="-ariaLabel" class="bg-none bor-2 bor-solid bor-c-white required" title="This is a required field" required>
+                </div>
+                <!-- Phone -->
+                <div class="form-row mb-1 sm-ml-tiny sm-w-50">
+                  <label for="" id="-ariaLabel">Phone</label>
+                  <input id="" name="" type="tel" pattern="[0-9]*" maxlength="10" aria-labelledby="-ariaLabel" class="bg-none bor-2 bor-solid bor-c-white required" title="This is a required field" required>
+                </div>
+              </div>
+              <!-- Message -->
+              <div class="form-row hidden">
+                <label for="-ariaLabel" class="antialiased c-white">Message?</label>
+                <textarea maxlength="200" aria-labelledby="-ariaLabel"></textarea>
+              </div>
+              <!-- Helpers -->
+              <div class="form-row form-helpers flex flex-wrap jc-between mb-1">
+                <!-- Critical Marker -->
+                <label>
+                <input type="checkbox" name="opt1" id="opt1">
+                <span class="text-sm pl-tiny">Call me ASAP</span>
+                </label>
+                <!-- Help Link -->
+                <label>
+                <span class="text-sm"><a class="c-white" href="#">Need Help?</a></span>
+                </label>
+              </div>
+              <!-- Buttons -->
+              <div class="form-row button-wrap flex flex-d-col-rev sm-flex-d-row sm-jc-center">                  
+                <input class="btn all-caps bg-blue-40 c-white flex-g-1 pt-pb-1" type="submit" value="sign up">
+              </div>
+              <!-- end / form-wrap -->
+            </div>
+          </form>
         </div>
       </section>
-      
       <!-- Site Wrap  -->
       <div class="site-wrap">
         
-        <!-- Header v2 -->  
-        <header class="site-header bg-white bg-no-repeat bg-center bg-cover c-blue-20" role="banner">
+        <!-- Header (SP pricing logged out) -->  
+        <header class="site-header bg-blue-40 bg-pricing bg-no-repeat bg-center bg-cover pb-1" role="banner">
           <!-- Nav -->
           <div class="container flex flex-wrap ai-center jc-between pt-pb-1">
             <!-- Site Logo -->
-            <h1 class="site-title"><a href="sales-person.html"><img class="header-logo mw-8em" src="../images/UI/in2m-logo-color.svg" alt="in2Marketplace.com"><span class="sr-only">in2Marketplace.com</span></a></h1>
-             
-             <button id="nav-toggle" class="bg-blue-40 nav-toggle-html" aria-hidden="false" aria-expanded="false">
+            <h1 class="site-title"><a href="sales-person.html"><img class="header-logo mw-8em" src="../images/UI/in2m-logo-white.svg" alt="in2Marketplace.com"><span class="sr-only">in2Marketplace.com</span></a></h1>
+            <button id="nav-toggle" class="nav-toggle-html bg-none" aria-hidden="false" aria-expanded="false">
               <div class="nav-icon c-white"></div>
             </button>
             <!-- Main Nav -->
-            <section class="main-nav flex flex-wrap ai-center jc-center sm-flex-g-1">
+            <section class="main-nav scroll-nav flex flex-wrap ai-center jc-center sm-flex-g-1 tc-white" role="navigation">
               <!-- Nav -->
               <script src="../js/libs/responsive-nav.js"></script>
               <nav class="nav-collapse" role="navigation">
-                <!-- Admin Bar -->
-            		<div class="admin-bar pt-1 pr-pl-0 flex flex-wrap ai-center jc-between w-100 sm-w-a md-jc-end md-pt-0 hidden">
-              		
-              		<!-- User Status -->
-                  <div class="user-status text-center flex flex-g-1 ai-center jc-center mb-1 x-sm-text-left x-sm-jc-start x-sm-mb-0 x-sm-w-50">
-                    <button onclick="$('#user-status-text').toggleClass('is-visible');" class="toggle-button avatar user-avatar mr-1 hidden x-sm-w-40 sm-block"><img src="../images/UI/slug-avatar.svg" alt="user avatar"></button>
-                    <div id="user-status-text" class="user-status-text flex flex-wrap flex-g-1 flex-d-col x-sm-w-60 sm-ai-start">
-                      <button onclick="$(this).parent().toggleClass('is-visible');" class="btn-reset cancel-button" type="reset">Cancel</button>
-                      <div class="status-msg mb-tiny"><span class="user-name">Super Admin</span></div>
-                      <div class="profile-links flex flex-wrap ai-center jc-center x-sm-jc-start">
-                        <a class="" href="#">Dashboard</a>
-                        <a class="" href="#">Logout</a>
-                      </div>
-                    </div>
-                  </div>
-              		
-              		<!-- Search -->
-              		<div class="search-form header-search flex-g-1 x-sm-w-50 sm-w-40">
-                		<label class="sr-only" for="search-form">Search</label>
-                		<!-- Search Bar -->
-                		<div class="search-bar flex flex-wrap jc-between">
-                      <input id="search-form" type="search" placeholder="search" role="search">
-                      <button class="bg-DDD" type="submit"> <svg class="icon"><use xlink:href="#icon-search" /></svg>
-                      </button>
-                		</div>
-              		</div>
-              		
-            		</div>
                 <ul class="list-reset">
-                  <li class="nav-cta pt-sm pb-1">
-                    <a class="btn btn-round btn-cta bg-blue-50 all-caps c-white mr-0 pr-pl-1" href="#" onclick="$('.trial-form.slide-panel').toggleClass('is-hidden');">Free Trial</a>
+                  <li class="nav-cta pt-1">
+                    <a href="#">Contact</a>
                   </li>
                   <li>
                     <a href="#">Features</a>
                   </li>
-                  <li class="active">
+                  <li>
                     <a href="sp-pricing.html">Pricing</a>
                   </li>
                   <li>
                     <a href="sp-support.html">Support</a>
                   </li>
                   <li>
-                    <a href="../login.html">Login</a>
+                    <a data-remodal-target="demo-video">Demo</a>
                   </li>
-                  
+                  <li class="inline-login-link"><a href="login.html">Login</a></li>                  
                   <!-- end / -->
                 </ul>
               </nav>
               <script src="../js/libs/mobile-nav.js"></script>
             </section>
           </div>
-          <!-- Fixed Nav -->
-          <div class="container fixed-nav checkout-nav md-flex flex-wrap ai-center jc-between">
-            <!-- Site Logo -->
-            <h1 class="site-title"><a href="sales-person.html"><img class="header-logo mw-8em" src="../images/UI/in2m-logo-white.svg" alt="in2Marketplace.com"><span class="sr-only">in2Marketplace.com</span></a></h1>
-            <!-- Main Nav -->
-            <section class="main-nav scroll-nav flex flex-wrap ai-center jc-center sm-flex-g-1 tc-white" role="navigation">
-              <nav class="nav-collapse" role="navigation">
-                <ul class="list-reset">
-                  <li class="nav-cta">
-                    <a class="btn btn-round btn-cta bg-blue-50 all-caps c-white mr-0 pr-pl-1" href="#" onclick="$('.trial-form.slide-panel').toggleClass('is-hidden');">Free Trial</a>
-                  </li>
-                  <li>
-                    <a href="#">Features</a>
-                  </li>
-                  <li class="active">
-                    <a href="sp-pricing.html">Pricing</a>
-                  </li>
-                  <li>
-                    <a href="sp-support.html">Support</a>
-                  </li>
-                  <li>
-                    <a href="../login.html">Login</a>
-                  </li>
-                  
-                  <!-- end / -->
-                </ul>
-              </nav>
-            </section>
-          </div>
-          <!-- Text Block -->
-          <section class="bg-blue-g-1 bg-checkout c-white pt-pb-4 text-s-black-50">
-          	<div class="container mw-56em md-pt-pb-4">
-            	<h2 id="checkout" class="mb-sm text-center w-100"> Checkout</h2>
-              <h3 class="antialiased mr-ml-a mb-0 text-center text-lg mw-48em">We offer the plans to meet your needs. If you do not see a package that you like please contact us so we can provide a plan for you or your organization. </h3>
-          	</div>
-          </section>
+          <!-- Main Promo (no media) -->
+          <section class="hero-banner c-white pt-pb-2 text-s-black-50">
+            <div class="container">
+              
+              <!-- Post -->
+              <article class="text-center">
+                <!-- Post Content -->
+                <div class="post-content">
+                  <!-- Text -->
+                  <div class="text-wrap">
+                    <h2 class="mb-sm">Checkout</h2>
+                    <p class="h3 antialiased mr-ml-a mw-35em text-lg">We offer the plans to meet your needs. If you do not see a package that you like please contact us so we can provide a plan for you or your organization.</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>          
         </header>
     
         <!-- Main Content -->
@@ -200,188 +149,36 @@
           	<div class="container">
             	
             	<!-- Form Build -->
-              <div class="form-section mr-ml-a mb-2 mw-40em">
+              <div class="form-section mr-ml-a mb-2 mw-48em">
                 <form name="Checkout">
                   <div class="form-wrap">
 
                     <!-- Plan Select -->
                     <h4 class="number-label flex-1 mb-0 pt-sm text-lg w-100 sm-mb-sm sm-text-left">
                       <span class="number-marker-wrap c-blue-40"><span class="c-white number-marker">1</span></span>
-                      <span class="label-text">- Select a plan</span>
+                      <span class="label-text">&nbsp;- Select a plan</span>
                     </h4>
                     <!-- Select & Text Block -->
                     <div class="mb-2-pt5 pt-sm md-flex md-flex-d-row-rev md-flex-wrap md-ai-center md-jc-between">
                       <p class="flex-g-0 mb-1 pl-1 md-mb-0 md-pl-2 md-w-50">Choose the package plan than works best for you. <a href="sp-pricing.html">Compare Features.</a></p>
                       <div class="form-group bor-rad-5 bs-5-a-15 mb-2 md-flex md-jc-between md-mb-0 md-w-50">
                         <!-- Type -->
-                        <div class="form-row md-flex-g-1">
+                        <div class="form-row w-100">
                           <!-- Select Type -->
                       
                           <label for="" id="-ariaLabel" class="sr-only">Package Type <span class="req-mark">*</span></label>
                           <div class="custom-select">
-                            <select id="package-select" required>
-                              <option selected disabled>select</option>
+                            <select class="option-select" required>
+                              <option disabled>select</option>
+                              <option value="starter" selected>Starter</option>
                               <option value="bronze">Bronze</option>
                               <option value="silver">Silver</option>
-                              <option value="gold">Gold</option>
-                              <option value="custom">Custom</option>
-                              <option value="free-trial">Free Trial</option>
+                              <option value="gold">Gold</option>                              
+                              <option value="trial">Free Trial</option>
                             </select>
                           </div>
                         </div>                     
                       
-                        <!-- end / -->
-                      </div>
-                    </div>
-                    
-                    <!-- Subscription -->
-                    <div id="subscription" class="select-target">                      
-                      <!-- Validity -->
-                      <h3 class="title-sm text-md text-center mb-sm pt-sm w-100 sm-text-left">Validity</h3>
-                      <div class="form-group sm-flex sm-jc-between mb-1">
-                        <!-- Days -->
-                        <div class="form-row sm-flex-g-1 mb-1 sm-mb-0 sm-mr-tiny md-w-30">
-                          <label for="" id="-ariaLabel">Days</label>
-                          <input id="" name="" type="text" aria-labelledby="-ariaLabel">
-                        </div>
-                        <!-- Months -->
-                        <div class="form-row sm-flex-g-1 mb-1 sm-mb-0 sm-ml-tiny sm-mr-tiny md-w-30">
-                          <label for="" id="-ariaLabel">Months</label>
-                          <input id="" name="" type="text" aria-labelledby="-ariaLabel">
-                        </div>
-                        <!-- Years -->
-                        <div class="form-row sm-flex-g-1 sm-ml-tiny md-w-30">
-                          <label>Years</label>
-                          <input id="" class="toggle-hidden" type="text" aria-labelledby="-ariaLabel">
-                        </div>
-
-                        <!-- end / -->
-                      </div>
-                      <!-- Restrictions & Quota & Discount -->
-                      <div class="form-row mb-1 hide" aria-hidden="true">
-                        <span class="form-label pb-sm">Restrict Usage</span>
-                        <!-- Options -->
-                        <div class="form-group mb-sm sm-flex sm-ai-center sm-jc-between">
-                          <div class="mb-sm sm-mr-tiny sm-mb-0 sm-w-30">
-                            <label class="radiobutton">
-                              <input type="radio" name="restrictions" aria-labelledby="-ariaLabel">
-                              <span class="item-desc">No restrictions</span>
-                            </label>
-                          </div>
-                          <div class="mb-sm sm-ml-tniy sm-mb-0 sm-w-40">
-                            <label class="radiobutton">
-                              <input type="radio" name="restrictions" aria-labelledby="-ariaLabel">
-                              <span class="item-desc text-sm">Limit to monthly quota</span>
-                            </label>
-                          </div>
-                          <div class="sm-w-30">
-                            <label for="" id="-ariaLabel" class="sr-only">Discount</label>
-                            <input id="" name="" type="text" aria-labelledby="-ariaLabel" placeholder="discount in % or $">
-                          </div>
-                        </div>
-                        <button class="toggle-hide-button btn-sm text-sm" type="button">Close <svg class="icon icon-cancel"><use xlink:href="#icon-cancel" /></svg> </button>
-                      </div>
-                      <!-- Price -->
-                      <h3 class="title-sm text-md text-center mb-sm pt-sm w-100 sm-text-left">Price</h3>                      
-                      <div class="form-group sm-flex sm-jc-between mb-1">
-                        <!-- Price Input -->
-                        <div class="form-row mb-1 sm-flex-g-1 sm-mr-tiny sm-mb-0 md-w-30">
-                          <label for="" id="-ariaLabel">Price<span class="req-mark">*</span></label>
-                          <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="required" title="This is a required input" required>
-                        </div>
-                        <!-- Commission -->
-                        <div class="form-row mb-1 sm-flex-g-1 sm-mr-ml-tiny sm-mb-0 md-w-30">
-                          <label for="" id="-ariaLabel">Commission</label>
-                          <input id="" name="" type="text" aria-labelledby="-ariaLabel" placeholder="% or $">
-                        </div>
-                        <!-- Setup Fee -->
-                        <div class="form-row sm-flex-g-1 sm-ml-tiny sm-mb-0 md-w-30">
-                          <label for="" id="-ariaLabel">Setup Fee</label>
-                          <input id="" name="" type="text" aria-labelledby="-ariaLabel" placeholder="% or $">
-                        </div>
-
-                      </div>
-                      <!-- Recursive or One Time commission -->
-                      <h3 class="title-sm text-md text-center mb-sm pt-sm w-100 sm-text-left">Commission Type</h3>
-                      <!-- Options -->
-                      <div class="form-group mb-1 sm-flex sm-ai-center sm-jc-start">
-                        <div class="mb-sm sm-mr-sm sm-mb-0 sm-w-a">
-                          <label class="radiobutton">
-                            <input type="radio" name="commision-type" aria-labelledby="-ariaLabel">
-                            <span class="item-desc">Recurring</span>
-                          </label>
-                        </div>
-                        <div class="sm-ml-sm sm-w-a">
-                          <label class="radiobutton">
-                            <input type="radio" name="commision-type" aria-labelledby="-ariaLabel">
-                            <span class="item-desc text-sm">One Time</span>
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- Validity Hidden when "Addon" is selected -->
-                    <div id="addon" class="select-target">
-                      <h3 class="title-sm text-md text-center mb-sm pt-sm w-100 sm-text-left">Price</h3>                    
-                        <div class="form-group sm-flex sm-jc-between mb-1">
-                          <!-- Price Input -->
-                          <div class="form-row mb-1 sm-flex-g-1 sm-mr-tiny sm-mb-0 md-w-30">
-                            <label for="" id="-ariaLabel">Price<span class="req-mark">*</span></label>
-                            <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="required" title="This is a required input" required>
-                          </div>
-                          <!-- Commission -->
-                          <div class="form-row mb-1 sm-flex-g-1 sm-mr-ml-tiny sm-mb-0 md-w-30">
-                            <label for="" id="-ariaLabel">Commission</label>
-                            <input id="" name="" type="text" aria-labelledby="-ariaLabel" placeholder="% or $">
-                          </div>
-                          <!-- Setup Fee -->
-                          <div class="form-row sm-flex-g-1 sm-ml-tiny sm-mb-0 md-w-30">
-                            <label for="" id="-ariaLabel">Setup Fee</label>
-                            <input id="" name="" type="text" aria-labelledby="-ariaLabel" placeholder="% or $">
-                          </div>
-                        </div>
-                        <!-- Recursive or One Time commission -->
-                        <h3 class="title-sm text-md text-center mb-sm pt-sm w-100 sm-text-left">Commission Type</h3>
-                        <!-- Options -->
-                        <div class="form-group mb-1 sm-flex sm-ai-center sm-jc-start">
-                          <div class="mb-sm sm-mr-sm sm-mb-0 sm-w-a">
-                            <label class="radiobutton">
-                              <input type="radio" name="commision-type" aria-labelledby="-ariaLabel">
-                              <span class="item-desc">Recurring</span>
-                            </label>
-                          </div>
-                          <div class="sm-ml-sm sm-w-a">
-                            <label class="radiobutton">
-                              <input type="radio" name="commision-type" aria-labelledby="-ariaLabel">
-                              <span class="item-desc text-sm">One Time</span>
-                            </label>
-                          </div>
-                        </div>                 
-                        
-                      <!-- end / -->
-                    </div>
-
-                    <!-- Price hidden when "Free Trial" is selected -->
-                    <div id="free-trial" class="select-target">
-                      <p class="alert text-center text-sm mb-0 p-sm"><em>After 14 Day trial end, the customer will automatically be placed on the monthly <strong>Bronze Packages</strong> until the customer cancels or changes package.</em></p>
-                      <h3 class="title-sm text-md text-center mb-sm pt-sm w-100 sm-text-left">Validity</h3>
-                      <div class="form-group sm-flex sm-jc-between mb-1">
-                        <!-- Days -->
-                        <div class="form-row sm-flex-g-1 mb-1 sm-mb-0 sm-mr-tiny md-w-30">
-                          <label for="" id="-ariaLabel">Days</label>
-                          <input id="" name="" type="text" aria-labelledby="-ariaLabel" value="14" max="14" maxlength="2">
-                        </div>
-                        <!-- Months -->
-                        <div class="form-row sm-flex-g-1 mb-1 sm-mb-0 sm-mr-ml-tiny md-w-30 disabled">
-                          <label for="" id="-ariaLabel">Months</label>
-                          <input id="" name="" type="text" aria-labelledby="-ariaLabel" disabled>
-                        </div>
-                        <!-- Years -->
-                        <div class="form-row sm-flex-g-1 sm-ml-tiny md-w-30 disabled">
-                          <label>Years</label>
-                          <input id="" type="text" aria-labelledby="-ariaLabel" disabled="">
-                        </div>
-
                         <!-- end / -->
                       </div>
                     </div>
@@ -392,33 +189,122 @@
                       <span class="c-white number-marker">2</span></span>
                       <span class="label-text">- Payment Frequency</span>
                     </h4>
-                    <!-- Bronze -->
+                    <!-- Payment Options -->
                     <div class="mb-2-pt5 sm-flex sm-flex-wrap sm-flex-d-row-rev md-ai-center sm-jc-between md-pt-sm">
                       <p class="mb-2 pl-2 md-mb-0 md-pl-2 md-w-50">Decide on the type of payment plan you would like to apply to your account. Take advantage of more savings with our annual subscription plans.</p>
-                      <!-- Options -->
-                      <div class="w-100 md-w-50">
+                      
+                      <!-- Starter Package -->
+                      <div id="starter" class="select-target w-100 md-w-50" style="display: block;">
                         <!-- Monthly -->
                         <div class="form-group bor-top-rad-5 bs-5-a-15 mb-0 sm-flex sm-ai-center sm-jc-start">
                           <label class="radiobutton text-base">
                             <input type="radio" name="campaign-status" aria-labelledby="-ariaLabel">
-                            <span class="item-desc">Monthly - $129</span>
+                            <span class="item-desc">Monthly - $79</span>
                           </label>
                         </div>
                         <!-- One Year -->
                         <div class="form-group bs-5-a-15 mb-0 sm-flex sm-ai-center sm-jc-start">
                           <label class="radiobutton text-base">
                             <input type="radio" name="campaign-status" aria-labelledby="-ariaLabel">
-                            <span class="item-desc">1 year signup - $103/mo - <span class="savings-label whitney-bold">Save 20%</span></span>
+                            <span class="item-desc">1 year signup - $63.20/mo - <span class="savings-label whitney-bold">Save 20%</span></span>
                           </label>
                         </div>
                         <!-- Two Years -->
                         <div class="form-group bor-bot-rad-5 bs-5-a-15 sm-flex sm-ai-center sm-jc-start">
                           <label class="radiobutton text-base">
                             <input type="radio" name="campaign-status" aria-labelledby="-ariaLabel">
-                            <span class="item-desc">2 year signup - $90/mo - <span class="savings-label whitney-bold">Save 30%</span></span>
+                            <span class="item-desc">2 year signup - $55.30/mo - <span class="savings-label whitney-bold">Save 30%</span></span>
                           </label>
                         </div>
                       </div>
+                      
+                      <!-- Bronze Package -->
+                      <div id="bronze" class="select-target w-100 md-w-50">
+                        <!-- Monthly -->
+                        <div class="form-group bor-top-rad-5 bs-5-a-15 mb-0 sm-flex sm-ai-center sm-jc-start">
+                          <label class="radiobutton text-base">
+                            <input type="radio" name="campaign-status" aria-labelledby="-ariaLabel">
+                            <span class="item-desc">Monthly - $99</span>
+                          </label>
+                        </div>
+                        <!-- One Year -->
+                        <div class="form-group bs-5-a-15 mb-0 sm-flex sm-ai-center sm-jc-start">
+                          <label class="radiobutton text-base">
+                            <input type="radio" name="campaign-status" aria-labelledby="-ariaLabel">
+                            <span class="item-desc">1 year signup - $79.20/mo - <span class="savings-label whitney-bold">Save 20%</span></span>
+                          </label>
+                        </div>
+                        <!-- Two Years -->
+                        <div class="form-group bor-bot-rad-5 bs-5-a-15 sm-flex sm-ai-center sm-jc-start">
+                          <label class="radiobutton text-base">
+                            <input type="radio" name="campaign-status" aria-labelledby="-ariaLabel">
+                            <span class="item-desc">2 year signup - $69.30/mo - <span class="savings-label whitney-bold">Save 30%</span></span>
+                          </label>
+                        </div>
+                      </div>
+                      
+                      <!-- Silver Package -->
+                      <div id="silver" class="select-target w-100 md-w-50">
+                        <!-- Monthly -->
+                        <div class="form-group bor-top-rad-5 bs-5-a-15 mb-0 sm-flex sm-ai-center sm-jc-start">
+                          <label class="radiobutton text-base">
+                            <input type="radio" name="campaign-status" aria-labelledby="-ariaLabel">
+                            <span class="item-desc">Monthly - $149</span>
+                          </label>
+                        </div>
+                        <!-- One Year -->
+                        <div class="form-group bs-5-a-15 mb-0 sm-flex sm-ai-center sm-jc-start">
+                          <label class="radiobutton text-base">
+                            <input type="radio" name="campaign-status" aria-labelledby="-ariaLabel">
+                            <span class="item-desc">1 year signup - $103.20/mo - <span class="savings-label whitney-bold">Save 20%</span></span>
+                          </label>
+                        </div>
+                        <!-- Two Years -->
+                        <div class="form-group bor-bot-rad-5 bs-5-a-15 sm-flex sm-ai-center sm-jc-start">
+                          <label class="radiobutton text-base">
+                            <input type="radio" name="campaign-status" aria-labelledby="-ariaLabel">
+                            <span class="item-desc">2 year signup - $90.30/mo - <span class="savings-label whitney-bold">Save 30%</span></span>
+                          </label>
+                        </div>
+                      </div>
+                      
+                      <!-- Gold Package -->
+                      <div id="gold" class="select-target w-100 md-w-50">
+                        <!-- Monthly -->
+                        <div class="form-group bor-top-rad-5 bs-5-a-15 mb-0 sm-flex sm-ai-center sm-jc-start">
+                          <label class="radiobutton text-base">
+                            <input type="radio" name="campaign-status" aria-labelledby="-ariaLabel">
+                            <span class="item-desc">Monthly - $199</span>
+                          </label>
+                        </div>
+                        <!-- One Year -->
+                        <div class="form-group bs-5-a-15 mb-0 sm-flex sm-ai-center sm-jc-start">
+                          <label class="radiobutton text-base">
+                            <input type="radio" name="campaign-status" aria-labelledby="-ariaLabel">
+                            <span class="item-desc">1 year signup - $159.20/mo - <span class="savings-label whitney-bold">Save 20%</span></span>
+                          </label>
+                        </div>
+                        <!-- Two Years -->
+                        <div class="form-group bor-bot-rad-5 bs-5-a-15 sm-flex sm-ai-center sm-jc-start">
+                          <label class="radiobutton text-base">
+                            <input type="radio" name="campaign-status" aria-labelledby="-ariaLabel">
+                            <span class="item-desc">2 year signup - $139.30/mo - <span class="savings-label whitney-bold">Save 30%</span></span>
+                          </label>
+                        </div>
+                      </div>
+                      
+                      <!-- Trial Package -->
+                      <div id="trial" class="select-target w-100 md-w-50">
+                        <!-- Monthly -->
+                        <div class="form-group bor-top-rad-5 bs-5-a-15 mb-0 sm-flex sm-ai-center sm-jc-start">
+                          <label class="radiobutton text-base">
+                            <input type="radio" name="campaign-status" aria-labelledby="-ariaLabel">
+                            <span class="item-desc">14 Day Free Trial <a class="ml-sm" href="#" data-tooltip="250 SMS/Email for 14 days"><svg class="icon icon-sm mr-ml-0"><use xlink:href="#icon-info-circled" /></svg></a></span>
+                          </label>
+                        </div>
+                      </div>
+                      
+                      <!-- end / payment-options -->
                     </div>
                     
                     <!-- User Information -->                    
@@ -681,7 +567,7 @@
                                         
                     <!-- Buttons -->
                     <div class="form-row button-wrap flex flex-d-col-rev sm-flex-d-row sm-jc-center">
-                      <input class="btn all-caps bg-blue-40 c-white mb-1 sm-mb-0 sm-ml-sm w-50" type="submit" value="Checkout" data-remodal-target="setup-campaign">
+                      <input class="btn-round all-caps bg-blue-40 c-white mb-1 sm-mb-0 sm-ml-sm w-50" type="submit" value="Checkout" data-remodal-target="setup-campaign">
                     </div>
                     
                     <!-- end / form-wrap -->
@@ -693,88 +579,27 @@
           	</div>
           </section>
           
-          
-          
-          <!-- CTA Banner (Info & Help Buttons) -->
-          <section class="cta-banner bg-no-repeat bg-cover bg-blue-20 tc-white text-center pt-pb-2 md-pt-pb-4" style="background-image: url('../images/hero-banner/bg-mobile-user-banner-dark-teal.jpg');">
+            <!-- CTA Banner (Info & Help Buttons) -->
+          <section class="cta-banner bg-info-banner bg-no-repeat bg-cover bg-blue-20 tc-white text-center pt-pb-2">
             <div class="container md-pt-pb-4">
-              
               <!-- Buttons -->
               <div class="button-wrap flex flex-d-col jc-center pt-1 x-sm-flex-d-row x-sm-flex-wrap">  
                 <a class="btn btn-outline btn-round c-white flex-g-1 mr-ml-a mb-1 pt-pb-1 pr-pl-3 text-lg x-sm-mr-ml-sm x-sm-mb-sm md-flex-g-0" href="#" data-remodal-target="demo-video">Discover in2M</a>
                 <a class="btn btn-outline btn-round c-white flex-g-1 mr-ml-a mb-1 pt-pb-1 pr-pl-3 text-lg x-sm-mr-ml-sm x-sm-mb-sm md-flex-g-0" href="#">Success Stories</a>
               </div>
-              <a href="#" class="block text-center h6 mr-ml-a pt-1"> <svg class="icon"><use xlink:href="#icon-help" /></svg> Help & Support</a>
+              <a href="#" class="block text-center text-lg mr-ml-a pt-1">
+                <svg class="icon">
+                  <use xlink:href="#icon-help" />
+                </svg>
+                Help & Support
+              </a>
             </div>
           </section>
-
+          
           <!-- end / main-content -->
         </main>
-        
         <!-- Footer -->
-        <footer class="site-footer bg-blue-20 c-white text-center md-text-left pt-pb-4" role="contentinfo">
-          <div class="container flex flex-d-col jc-center md-flex-d-row md-ai-center md-jc-between">
-            
-            <!-- top row -->
-            <div class="mb-0 md-flex md-jc-between lg-jc-end">
-              
-              <!-- Footer Contact -->
-              <div class="footer-contact mr-ml-a mb-3 md-ml-0 md-mb-0 md-pr-3 md-w-50">
-                <!-- Logo -->
-                <a class="block mb-sm" href="sales-person.html"><img class="footer-logo" src="../images/UI/in2m-logo-phonetag-icon-white.svg" alt="in2Marketplace.com" title="in2Marketplace.com"></a>
-                <!-- Copyrights -->
-                <div class="flex jc-center mb-1 md-jc-start">
-                    <p class="antialiased mb-0 mr-sm">&copy; 2016 <a class="bor-bot-none c-white" href="http://concordusapps.com/">Concordus</a> / <a class="bor-bot-none c-white" href="http://6dtech.co.in/">6d</a></p><a class="mr-sm" href="#"><svg class="icon c-blue-60 mr-ml-0"><use xlink:href="#icon-facebook" /></svg><span class="sr-only">Find us on Facebook</span></a>
-                    <a class="mr-sm" href="#"><svg class="icon c-blue-60 mr-ml-0"><use xlink:href="#icon-twitter" /></svg><span class="sr-only">Follow us on Twitter</span></a>
-                </div>
-                <!-- Message -->
-                <p class="antialiased mr-ml-a pr-pl-4 text-base md-pr-pl-0">Something about the company should go here. We can talk about whatever we think is best to relate to the potential customer.</p>
-                <p class="c-blue-90 mb-sm">Talk With Us <a class="c-blue-60 text-d-none ml-sm" href="tel:8005551234">(800) 555-1234</a></p>
-                <p class="c-blue-90">Send Email <a class="c-blue-60 text-d-none ml-sm" href="tel:8005551234">contact@in2marketplace.com</a></p>
-              </div>
-              
-              <!-- Footer Links -->
-              <div class="md-flex md-jc-between md-w-50 lg-w-40">
-                <!-- Resources -->
-                <div class="mb-3 md-mb-0 md-pr-2 md-w-60">
-                  <h4 class="c-blue-90 mb-sm text-lg">Get Help</h4>                  
-                  <!-- Footer Menus -->
-                  <div class="md-flex md-jc-between">
-                    <ul class="footer-menu c-blue-60 list-reset mb-0 pl-0 text-md md-text-left">
-                      <li><a href="#">Product Support</a></li>
-                      <li><a href="#">Tutorials</a></li>
-                      <li><a href="#">Documentation</a></li>
-                      <li><a href="#">Terms / Privacy</a></li>
-                      <li class="pt-1">
-                        <div class="search-bar c-blue-60 flex flex-wrap mr-ml-a mw-15em">
-                          <input class="bg-trans bor-2 bor-solid bor-top-2 bor-bot-2 bor-left-2 c-blue-60" id="search-form" type="search" role="search">
-                          <button class="bg-none bor-2 bor-solid bor-top-2 bor-bot-2 bor-left-none c-blue-60" type="submit"><svg class="icon"><use xlink:href="#icon-search" /></svg>
-                          </button>
-                    		</div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <!-- Contact -->
-                <div class="md-jc-end md-mb-0">
-                 <h4 class="c-blue-90 mb-sm text-lg">Connect</h4>
-                  <ul class="footer-menu c-blue-60 list-reset mb-0 pl-0 text-md">
-                    <li><a href="#">Rep Finder</a></li>
-                    <li><a href="#">Request Demo</a></li>
-                    <li><a href="#">View Blog</a></li>
-                    <li><a href="#">Join Team</a></li>
-                    <li class="mr-ml-a pt-1 mw-15em"><a class="btn-md all-caps bg-trans c-blue-50 bor-2 bor-solid text-sm w-100" href="sp-login.html">Login</a></li>
-                  </ul>
-                </div>
-                
-                <!-- end / -->
-              </div>
-              
-              <!-- end / bottom row -->
-            </div>
-
-          </div>
-        </footer>
+        <div data-replace="../global-partials/footer/footer-blue.html"></div>
         
         <!-- end / site-wrap-->
       </div>

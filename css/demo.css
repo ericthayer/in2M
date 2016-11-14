@@ -36,6 +36,38 @@
   clear: both;
 }
 
+[data-tooltip] {
+  position: relative;
+}
+[data-tooltip]:hover, [data-tooltip]:focus {
+  cursor: help;
+}
+[data-tooltip]:hover:after, [data-tooltip]:focus:after {
+  background: #ccebff;
+  box-shadow: 0 0 0 0.25em #99d8ff, 7px 7px 0 rgba(0, 0, 0, 0.5);
+  color: #333;
+  padding: .5em .5em;
+  position: absolute;
+  top: 0;
+  left: 1.5rem;
+  line-height: 1;
+  font-size: .875rem;
+  text-align: center;
+  -webkit-animation: fade-in .4s linear;
+          animation: fade-in .4s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-transition: opacity .4s ease;
+  transition: opacity .4s ease;
+  z-index: 10000;
+  content: attr(data-tooltip);
+}
+@media (min-width: 30em) {
+  [data-tooltip]:hover:after, [data-tooltip]:focus:after {
+    min-width: 8em;
+  }
+}
+
 @font-face {
   font-family: 'Knockout-94';
   src: url("fonts/Knockout-HTF94-UltmtSumo.woff2") format("woff2"), url("fonts/Knockout-HTF94-UltmtSumo.woff") format("woff"), url("fonts/Knockout-HTF94-UltmtSumo.ttf") format("truetype");
