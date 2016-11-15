@@ -26,4 +26,8 @@
       z-index: 1000;
     }
   }
+  // smaller height
+  &-sm {
+    max-height: 10em;  
+  }
 }
