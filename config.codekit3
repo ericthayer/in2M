@@ -4118,6 +4118,12 @@
 		"oAP": "\/login.html",
 		"oF": 0
 		},
+	"\/public-site\/checkout-confirmation.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public-site\/checkout-confirmation.html",
+		"oF": 0
+		},
 	"\/public-site\/checkout.html": {
 		"ft": 8192,
 		"oA": 2,

@@ -27,8 +27,8 @@
       <![endif]-->
       
       <!-- New Lead Form -->
-      <section class="new-lead clear-form bg-blue-g-4 c-white w-100 slide-panel slide-down is-hidden">
-        <button class="btn-reset text-lg" onclick="$('.new-lead').toggleClass('is-hidden');"> <svg class="icon mr-ml-0"><use xlink:href="#icon-cancel" /></svg> </button>
+      <section class="new-lead-form clear-form bg-blue-g-4 c-white w-100 slide-panel slide-down is-hidden">
+        <button class="btn-reset text-lg" onclick="$('.new-lead-form').toggleClass('is-hidden');"> <svg class="icon mr-ml-0"><use xlink:href="#icon-cancel" /></svg> </button>
         <div class="container pt-2 pb-3">
           <h2 class="text-center mb-tiny">Capture New Lead</h2>
           <p class="h5 text-center mb-1 hidden"><span class="c-blue-70">100</span> SMS + <span class="c-blue-70">100</span> Emails</p>
@@ -65,7 +65,7 @@
                 <!-- Critical Marker -->
                 <label>
                         <input type="checkbox" name="opt1" id="opt1">
-                        <span class="text-sm pl-tiny">Call me ASAP</span>
+                        <span class="text-sm pl-tiny">Call Back ASAP</span>
                       </label>
                 <!-- Help Link -->
                 <label>
@@ -150,7 +150,7 @@
                   </div>
                 </div>
                 <ul class="list-reset">
-                  <li class="nav-cta pt-sm pb-1"><a class="btn btn-round btn-cta bg-blue-50 all-caps c-white mr-0 pr-pl-1" href="#" onclick="$('.new-lead.slide-panel').toggleClass('is-hidden');">New Lead</a></li>
+                  <li class="nav-cta pt-sm pb-1"><a class="btn btn-round btn-cta bg-blue-50 all-caps c-white mr-0 pr-pl-1" href="#" onclick="$('.new-lead-form.slide-panel').toggleClass('is-hidden');">New Lead</a></li>
                   <li>
                     <a href="#">Features</a>
                   </li>
@@ -168,6 +168,7 @@
               </nav>
               <script src="../js/libs/mobile-nav.js"></script>
             </section>
+            
           </div>          
         </header>
     
@@ -175,9 +176,9 @@
         <main class="main-content">
           
           <!-- Checkout Form -->
-          <section class="bg-grey-light pt-pb-2">
+          <section class="checkout-form bg-grey-light pt-pb-4">
           	<div class="container">
-            	
+            	<h2 id="pricing" class="text-center mb-4 w-100 sr-only">Checkout</h2>
             	<!-- Form Build -->
               <div class="form-section mr-ml-a mb-2 mw-48em">
                 <form name="Checkout">
@@ -597,7 +598,7 @@
                                         
                     <!-- Buttons -->
                     <div class="form-row button-wrap flex flex-d-col-rev sm-flex-d-row sm-jc-center">
-                      <input class="btn-round all-caps bg-blue-40 c-white mb-1 sm-mb-0 sm-ml-sm w-50" type="submit" value="Checkout" data-remodal-target="setup-campaign">
+                      <input class="btn all-caps bg-blue-40 c-white mb-1 sm-mb-0 sm-w-50" type="submit" value="Checkout">
                     </div>
                     
                     <!-- end / form-wrap -->

@@ -26,62 +26,66 @@
       <p class="update-browser">This browser version is not recommended. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
       <![endif]-->
       
-      <!-- Free Trial Form -->
-      <section class="trial-form clear-form bg-blue-g-4 c-white h-50 w-100 slide-panel slide-down is-hidden">
-        <button class="btn-reset text-md" onclick="$('.trial-form').toggleClass('is-hidden');">
-          <svg class="icon">
+      <!-- Quick Contact Form -->
+  		<section class="quick-contact-form clear-form bg-blue-g-4 c-white w-100 slide-panel slide-down is-hidden">
+        <button class="btn-reset text-lg" onclick="$('.quick-contact-form').toggleClass('is-hidden');">
+          <svg class="icon mr-ml-0">
             <use xlink:href="#icon-cancel" />
           </svg>
         </button>
-        <div class="container">
-          <h2 class="text-center mb-tiny">Free 14 Day Trial</h2>
-          <p class="h5 text-center mb-1"><span class="c-blue-70">100</span> SMS + <span class="c-blue-70">100</span> Emails</p>
+        <div class="container pt-2 pb-3">
+          <h2 class="text-center mb-tiny">Talk With Us</h2>
+          <p class="h5 text-center mb-1">Let us know how we can help your business.</p>
           <!-- Form -->
-          <form name="TrialForm" class="mr-ml-a mw-25em whitney-med">
+          <form name="QuickContactForm" class="mr-ml-a mw-25em whitney-med">
             <div class="form-wrap">
               <!-- Name -->
               <div class="form-row mb-1">
                 <label for="" id="-ariaLabel">Name</label>
-                <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="bg-none bor-2 bor-solid bor-c-white required" title="This is a required field" required>
+                <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="bg-none bor-2 bor-solid bor-c-white required" title="This is a required field"
+                  required>
               </div>
               <div class="sm-flex sm-jc-between">
                 <!-- Email -->
                 <div class="form-row mb-1 sm-mr-tiny sm-w-50">
                   <label for="" id="-ariaLabel">Email</label>
-                  <input id="" name="" type="email" autocorrect="off" autocapitalize="none" spellcheck="false" aria-labelledby="-ariaLabel" class="bg-none bor-2 bor-solid bor-c-white required" title="This is a required field" required>
+                  <input id="" name="" type="email" autocorrect="off" autocapitalize="none" spellcheck="false" aria-labelledby="-ariaLabel"
+                    class="bg-none bor-2 bor-solid bor-c-white required" title="This is a required field" required>
                 </div>
                 <!-- Phone -->
                 <div class="form-row mb-1 sm-ml-tiny sm-w-50">
                   <label for="" id="-ariaLabel">Phone</label>
-                  <input id="" name="" type="tel" pattern="[0-9]*" maxlength="10" aria-labelledby="-ariaLabel" class="bg-none bor-2 bor-solid bor-c-white required" title="This is a required field" required>
+                  <input id="" name="" type="tel" pattern="[0-9]*" maxlength="10" aria-labelledby="-ariaLabel" class="bg-none bor-2 bor-solid bor-c-white required"
+                    title="This is a required field" required>
                 </div>
               </div>
               <!-- Message -->
-              <div class="form-row hidden">
-                <label for="-ariaLabel" class="antialiased c-white">Message?</label>
-                <textarea maxlength="200" aria-labelledby="-ariaLabel"></textarea>
+              <div class="form-row mb-1">
+                <label for="-ariaLabel">Message</label>
+                <textarea maxlength="200" aria-labelledby="-ariaLabel" class="bg-none bor-2 bor-solid bor-c-white"></textarea>
               </div>
               <!-- Helpers -->
               <div class="form-row form-helpers flex flex-wrap jc-between mb-1">
                 <!-- Critical Marker -->
                 <label>
-                <input type="checkbox" name="opt1" id="opt1">
-                <span class="text-sm pl-tiny">Call me ASAP</span>
+                  <input type="checkbox" name="opt1" id="opt1">
+                  <span class="text-sm pl-tiny">Call Back ASAP</span>
                 </label>
                 <!-- Help Link -->
                 <label>
-                <span class="text-sm"><a class="c-white" href="#">Need Help?</a></span>
+                  <span class="text-sm"><a class="c-white" href="#">Need Help?</a></span>
                 </label>
               </div>
               <!-- Buttons -->
-              <div class="form-row button-wrap flex flex-d-col-rev sm-flex-d-row sm-jc-center">                  
-                <input class="btn all-caps bg-blue-40 c-white flex-g-1 pt-pb-1" type="submit" value="sign up">
+              <div class="form-row button-wrap flex flex-d-col-rev sm-flex-d-row sm-jc-center">
+                <input class="btn all-caps bg-blue-40 c-white flex-g-1 pt-pb-1" type="submit" value="send">
               </div>
               <!-- end / form-wrap -->
             </div>
           </form>
         </div>
       </section>
+      
       <!-- Site Wrap  -->
       <div class="site-wrap">
         
@@ -100,8 +104,8 @@
               <script src="../js/libs/responsive-nav.js"></script>
               <nav class="nav-collapse" role="navigation">
                 <ul class="list-reset">
-                  <li class="nav-cta pt-1">
-                    <a href="#">Contact</a>
+                  <li class="nav-cta pt-pb-1">
+                    <a class="btn btn-round btn-cta bg-blue-50 all-caps c-white mr-0 pr-pl-1" href="#" onclick="$('.quick-contact-form.slide-panel').toggleClass('is-hidden');">Contact</a>
                   </li>
                   <li>
                     <a href="#">Features</a>
@@ -133,7 +137,7 @@
                   <!-- Text -->
                   <div class="text-wrap">
                     <h2 class="mb-sm">Checkout</h2>
-                    <p class="h3 antialiased mr-ml-a mw-35em text-lg">We offer the plans to meet your needs. If you do not see a package that you like please contact us so we can provide a plan for you or your organization.</p>
+                    <p class="h3 antialiased mr-ml-a mw-35em text-lg">We offer right the plans to meet your needs. If you do not see a package that you like please contact us so we can provide a plan for you or your organization.</p>
                   </div>
                 </div>
               </article>
@@ -567,7 +571,7 @@
                                         
                     <!-- Buttons -->
                     <div class="form-row button-wrap flex flex-d-col-rev sm-flex-d-row sm-jc-center">
-                      <input class="btn-round all-caps bg-blue-40 c-white mb-1 sm-mb-0 sm-ml-sm w-50" type="submit" value="Checkout" data-remodal-target="setup-campaign">
+                      <input class="btn all-caps bg-blue-40 c-white mb-1 sm-mb-0 sm-w-50" type="submit" value="Checkout">
                     </div>
                     
                     <!-- end / form-wrap -->

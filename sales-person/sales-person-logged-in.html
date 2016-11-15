@@ -60,11 +60,15 @@
       <p class="update-browser">This browser version is not recommended. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
       <![endif]-->
       <!-- New Lead Form -->
-      <section class="new-lead clear-form bg-blue-g-4 c-white w-100 slide-panel slide-down is-hidden">
-        <button class="btn-reset text-lg" onclick="$('.new-lead').toggleClass('is-hidden');"> <svg class="icon mr-ml-0"><use xlink:href="#icon-cancel" /></svg> </button>
+      <section class="new-lead-form clear-form bg-blue-g-4 c-white w-100 slide-panel slide-down is-hidden">
+        <button class="btn-reset text-lg" onclick="$('.new-lead-form').toggleClass('is-hidden');">
+          <svg class="icon mr-ml-0">
+            <use xlink:href="#icon-cancel" />
+          </svg>
+        </button>
         <div class="container pt-2 pb-3">
           <h2 class="text-center mb-tiny">Capture New Lead</h2>
-          <p class="h5 text-center mb-1 hidden"><span class="c-blue-70">100</span> SMS + <span class="c-blue-70">100</span> Emails</p>
+          <p class="h5 text-center mb-1">Save contact information to your list.</p>
           <!-- Form -->
           <form name="NewLeadForm" class="mr-ml-a mw-25em whitney-med">
             <div class="form-wrap">
@@ -89,25 +93,25 @@
                 </div>
               </div>
               <!-- Message -->
-              <div class="form-row hidden">
-                <label for="-ariaLabel" class="antialiased c-white">Message?</label>
-                <textarea maxlength="200" aria-labelledby="-ariaLabel"></textarea>
+              <div class="form-row mb-1">
+                <label for="-ariaLabel">Message</label>
+                <textarea maxlength="200" aria-labelledby="-ariaLabel" class="bg-none bor-2 bor-solid bor-c-white"></textarea>
               </div>
               <!-- Helpers -->
               <div class="form-row form-helpers flex flex-wrap jc-between mb-1">
                 <!-- Critical Marker -->
                 <label>
-                        <input type="checkbox" name="opt1" id="opt1">
-                        <span class="text-sm pl-tiny">Call me ASAP</span>
-                      </label>
+                  <input type="checkbox" name="opt1" id="opt1">
+                  <span class="text-sm pl-tiny">Call Back ASAP</span>
+                </label>
                 <!-- Help Link -->
                 <label>
-                        <span class="text-sm"><a class="c-white" href="#">Need Help?</a></span>
-                      </label>
+                  <span class="text-sm"><a class="c-white" href="#">Need Help?</a></span>
+                </label>
               </div>
               <!-- Buttons -->
               <div class="form-row button-wrap flex flex-d-col-rev sm-flex-d-row sm-jc-center">
-                <input class="btn all-caps bg-blue-40 c-white flex-g-1 pt-pb-1" type="submit" value="sign up">
+                <input class="btn all-caps bg-blue-40 c-white flex-g-1 pt-pb-1" type="submit" value="save">
               </div>
               <!-- end / form-wrap -->
             </div>
@@ -184,7 +188,7 @@
               </div>
             </div>
             <ul class="list-reset">
-              <li class="nav-cta pt-sm pb-1"><a class="btn btn-round btn-cta bg-blue-50 all-caps c-white mr-0 pr-pl-1" href="#" onclick="$('.new-lead.slide-panel').toggleClass('is-hidden');">New Lead</a></li>
+              <li class="nav-cta pt-sm pb-1"><a class="btn btn-round btn-cta bg-blue-50 all-caps c-white mr-0 pr-pl-1" href="#" onclick="$('.new-lead-form.slide-panel').toggleClass('is-hidden');">New Lead</a></li>
               <li>
                 <a href="#">Features</a>
               </li>
@@ -214,7 +218,7 @@
           <nav class="nav-collapse" role="navigation">
             <ul class="list-reset">
               <li class="nav-cta">
-                <a class="btn btn-round btn-cta bg-blue-50 all-caps c-white mr-0 pr-pl-1" href="#" onclick="$('.new-lead.slide-panel').toggleClass('is-hidden');">New Lead</a>
+                <a class="btn btn-round btn-cta bg-blue-50 all-caps c-white mr-0 pr-pl-1" href="#" onclick="$('.new-lead-form.slide-panel').toggleClass('is-hidden');">New Lead</a>
               </li>
               <li>
                 <a href="#">Features</a>
