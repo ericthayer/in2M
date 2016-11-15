@@ -28,14 +28,14 @@
           padding-bottom: .625em;
         }
       }
-      .plan-buttons {  
+      .plan-discount-buttons {  
         width: 100%;
       }    
     }
     // container is less than 320px wide when screen is at least 480px wide
     @media (min-width: $break-sm-phone) {
       &:container("width < 24em") {
-        .plan-buttons {
+        .plan-discount-buttons {
           .btn {
             width: 45%;
           }
