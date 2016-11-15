@@ -149,44 +149,36 @@
         <main class="main-content">
           
           <!-- Purchase Details -->
-          <section class="purchase-details bg-grey-light pt-pb-4">
+          <section class="purchase-details bg-grey-light pt-pb-2">
           	<div class="container mw-48em">
-            	<h2 id="checkout-confirmation" class="text-center mb-2 w-100">Checkout Confirmation</h2>            	
+            	<h2 id="checkout-confirmation" class="h3 text-center mb-3 w-100">Checkout Confirmation</h2>            	
             	<!-- Purchase Details -->
             	<div class="alert-list purchase-details mb-2">
               	
               	<!-- Selected Package -->
               	<div class="alert-item flex flex-wrap ai-center mb-1">
-                	<div class="flex mb-0 text-lg"><svg class="icon c-green"><use xlink:href="#icon-ok" /></svg><p class="mb-0 pl-tiny">You have selected the <strong>Starter Package</strong> <a class="bor-bot-none" href="#"><svg class="icon ml-0 text-md"><use xlink:href="#icon-pencil" /></svg><span class="text-sm sr-only">change</span></a></p></div>
+                	<div class="alert-title flex mb-0 text-lg"><svg class="icon c-green"><use xlink:href="#icon-ok" /></svg><p class="mb-0 pl-tiny">You have selected the <strong>Starter Package</strong> <a class="bor-bot-none" href="#"><svg class="icon ml-0 text-md"><use xlink:href="#icon-pencil" /></svg><span class="text-sm sr-only">change</span></a></p></div>
               	</div>
               	
               	<!-- Package Details -->
               	<div class="alert-item flex flex-wrap ai-center mb-1">
-                	<div class="flex mb-0 text-lg"><svg class="icon c-green"><use xlink:href="#icon-ok" /></svg><p class="mb-0 pl-tiny">This package includes: <strong>5 Keywords</strong> & <strong>750 SMS/Emails</strong></p></div>
+                	<div class="alert-title flex mb-0 text-lg"><svg class="icon c-green"><use xlink:href="#icon-ok" /></svg><p class="mb-0 pl-tiny">This package includes: <strong>5 Keywords</strong> & <strong>750 SMS/Emails</strong></p></div>
               	</div>
               	
               	<!-- Selected Payment Plan -->
               	<div class="alert-item flex flex-wrap ai-center mb-1">
-                	<div class="flex mb-0 text-lg"><svg class="icon c-green"><use xlink:href="#icon-ok" /></svg>
-                  	<p class="alert-title alert-title-monthly mb-0 pl-tiny">You are paying <strong>$79 Monthly</strong> <a class="bor-bot-none" href="#"><svg class="icon ml-0 text-md"><use xlink:href="#icon-pencil" /></svg><span class="text-sm sr-only">change</span></a></p></div>
-                	<!-- Discount Buttons -->
-                	<div class="plan-discount-buttons pt-1 text-sm w-100 sm-flex sm-flex-wrap sm-ai-center sm-jc-end sm-mw-10em sm-ml-1 sm-pt-0"> 
-                  	<!-- Save 20% -->
-                  	<a class="btn plan-discount-button bg-green c-white mb-sm mr-tiny p-sm w-45 sm-flex-1 sm-mb-0 sm-pt-pb-tiny" href="#starter-annual-cost" data-collapsible-target data-force-expand><span class="plan-label" data-text-swap="with 1 yr sign up" data-text-original="- 20%">- 20%</span> <span class="sr-only"></span></a>
-              	    <!-- Save 30% -->
-                    <a class="btn plan-discount-button bg-green c-white mb-sm ml-tiny p-sm w-45 sm-flex-1 sm-mb-0 sm-pt-pb-tiny" href="#starter-biannual-cost" data-collapsible-target data-force-expand><span class="plan-label">- 30%</span> <span class="sr-only">2 yr sign up</span></a>
-                    
-                    
-                    </div>
+                	<!-- Alert Title -->
+                	<div class="alert-title flex mb-0 text-lg"><svg class="icon c-green"><use xlink:href="#icon-ok" /></svg>
+                  	<p class="mb-0 pl-tiny">You are paying <strong class="price-label monthly">$79 Monthly</strong> <strong class="price-label annual hidden">$63.20 / Mo. Annually</strong> <strong class="price-label biannual hidden">$55.20 / Mo. Biannually</strong> <a class="bor-bot-none" href="#"><svg class="icon ml-0 text-md"><use xlink:href="#icon-pencil" /></svg><span class="text-sm sr-only">change</span></a></p></div>
               	</div>
               	
               	<!-- details -->
-              	<p class="pl-sm text-md">A confirmation screen outlining the full payment details, pack validity, SMS entitlement, email entitlement, pack  amount, tax (if any) will be clearly displayed</p>
+              	<p class="pl-sm text-md">A confirmation email outlining the full payment details, pack validity, SMS entitlement, email entitlement, pack  amount, tax (if any) will be sent out when transaction is complete.</p>
               	
             	</div>
             	
             	<!-- Terms & Conditions -->
-              <div class="terms terms-sm bg-EEE mb-1 pt-pb-1 text-left">
+              <div class="terms terms-sm bg-EEE mb-2 pt-pb-1 text-left">
                 <h3 class="text-lg">in2Marketplace User Agreement</h3>
                 <p><strong class="block">Terms Header</strong> Sit amet, consectetur adipisicing elit. Officia amet fugiat, accusantium delectus beatae autem ipsam ipsum sequi ut animi tenetur nam <strong>inline strong text, </strong> eum illum. Culpa asperiores doloremque aut dolorum, in nam soluta.</p>
                 <ol class="pl-2">
@@ -205,12 +197,15 @@
                 <p><strong class="block">Terms Header</strong> Sit amet, consectetur adipisicing elit. Officia amet fugiat, accusantium delectus beatae autem ipsam ipsum sequi ut animi tenetur nam <strong>inline strong text, </strong> eum illum. Culpa asperiores doloremque aut dolorum, in nam soluta.</p>
               </div>
             	<!-- Accept Checkbox -->
-            	<div class="form-row pt-tiny pb-1 text-center text-lg">
-                <label class="checkbox flex flex-wrap ai-center jc-center mb-1 w-100">
+            	<div class="form-row pb-1 text-center">
+                <label class="checkbox flex flex-wrap ai-center jc-center mb-2 text-md w-100">
                   <input type="checkbox" name="opt1">
                   <span class="item-desc">Accept Terms and Conditions</span>
                 </label>
-                <button class="btn-round all-caps bg-green c-white text-sm">Accept & Close</button>                      
+                <!-- Continue Button -->
+                <div class="form-row button-wrap flex flex-d-col-rev sm-flex-d-row sm-jc-center">
+                  <input class="btn all-caps bg-blue-40 c-white mb-1 sm-mb-0 sm-w-50" type="submit" value="Continue">
+                </div>                      
               </div>
           	</div>
           </section>
@@ -331,5 +326,11 @@
       <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
       <script>window.jQuery || document.write('<script src="../js/libs/jquery.1.11.2.min.js"><\/script>')</script>
       <script src="../js/min/script.min.js"></script>
+      <script>
+                    	$('.discount-20').on('click' , function(){
+                      	$('.price-label:not([class*="hidden"])').addClass('hidden');
+                      	$('.price-label.annual').removeClass('hidden');
+                    	});
+                    </script>
     </body>
   </html>
