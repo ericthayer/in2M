@@ -27,7 +27,7 @@
       <![endif]-->
       
       <!-- Quick Contact Form -->
-  		<section class="quick-contact-form clear-form bg-blue-g-4 c-white w-100 slide-panel slide-down is-hidden">
+  		<section class="quick-contact-form bg-blue-g-4 c-white w-100 slide-panel slide-down is-hidden">
         <button class="btn-reset text-lg" onclick="$('.quick-contact-form').toggleClass('is-hidden');">
           <svg class="icon mr-ml-0">
             <use xlink:href="#icon-cancel" />
@@ -42,7 +42,7 @@
               <!-- Name -->
               <div class="form-row mb-1">
                 <label for="" id="-ariaLabel">Name</label>
-                <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="bg-none bor-2 bor-solid bor-c-white required" title="This is a required field"
+                <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="bor-none  required" title="This is a required field"
                   required>
               </div>
               <div class="sm-flex sm-jc-between">
@@ -50,19 +50,19 @@
                 <div class="form-row mb-1 sm-mr-tiny sm-w-50">
                   <label for="" id="-ariaLabel">Email</label>
                   <input id="" name="" type="email" autocorrect="off" autocapitalize="none" spellcheck="false" aria-labelledby="-ariaLabel"
-                    class="bg-none bor-2 bor-solid bor-c-white required" title="This is a required field" required>
+                    class="bor-none  required" title="This is a required field" required>
                 </div>
                 <!-- Phone -->
                 <div class="form-row mb-1 sm-ml-tiny sm-w-50">
                   <label for="" id="-ariaLabel">Phone</label>
-                  <input id="" name="" type="tel" pattern="[0-9]*" maxlength="10" aria-labelledby="-ariaLabel" class="bg-none bor-2 bor-solid bor-c-white required"
+                  <input id="" name="" type="tel" pattern="[0-9]*" maxlength="10" aria-labelledby="-ariaLabel" class="bor-none  required"
                     title="This is a required field" required>
                 </div>
               </div>
               <!-- Message -->
               <div class="form-row mb-1">
                 <label for="-ariaLabel">Message</label>
-                <textarea maxlength="200" aria-labelledby="-ariaLabel" class="bg-none bor-2 bor-solid bor-c-white"></textarea>
+                <textarea maxlength="200" aria-labelledby="-ariaLabel" class="bor-none "></textarea>
               </div>
               <!-- Helpers -->
               <div class="form-row form-helpers flex flex-wrap jc-between mb-1">
@@ -89,7 +89,7 @@
       <!-- Site Wrap  -->
       <div class="site-wrap">
         
-        <!-- Header (SP pricing logged out) -->  
+        <!-- Header -->  
         <header class="site-header bg-blue-40 bg-pricing bg-no-repeat bg-center bg-cover pb-1" role="banner">
           <!-- Nav -->
           <div class="container flex flex-wrap ai-center jc-between pt-pb-1">
@@ -149,9 +149,14 @@
         <main class="main-content">
           
           <!-- Purchase Details -->
-          <section class="purchase-details bg-grey-light pt-pb-2">
-          	<div class="container mw-48em">
-            	<h2 id="checkout-confirmation" class="h3 text-center mb-3 w-100">Checkout Confirmation</h2>            	
+          <section class="purchase-details bg-grey-light pt-pb-4">
+          	<div class="container">
+            	
+            	<h2 id="checkout-confirmation" class="text-center mb-4 w-100">Checkout Confirmation</h2>
+            
+            	<!-- Details -->
+            	<div class="bg-white bor-2 bor-solid bor-c-EEE mr-ml-a mb-2 p-2 mw-56em">
+            	
             	<!-- Purchase Details -->
             	<div class="alert-list purchase-details mb-2">
               	
@@ -196,6 +201,7 @@
                 </ul>
                 <p><strong class="block">Terms Header</strong> Sit amet, consectetur adipisicing elit. Officia amet fugiat, accusantium delectus beatae autem ipsam ipsum sequi ut animi tenetur nam <strong>inline strong text, </strong> eum illum. Culpa asperiores doloremque aut dolorum, in nam soluta.</p>
               </div>
+            	
             	<!-- Accept Checkbox -->
             	<div class="form-row pb-1 text-center">
                 <label class="checkbox flex flex-wrap ai-center jc-center mb-2 text-md w-100">
@@ -207,6 +213,8 @@
                   <input class="btn all-caps bg-blue-40 c-white mb-1 sm-mb-0 sm-w-50" type="submit" value="Continue">
                 </div>                      
               </div>
+            	 </div>
+            	 
           	</div>
           </section>
           

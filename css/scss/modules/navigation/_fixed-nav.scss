@@ -11,7 +11,7 @@
 .headroom--not-top.headroom--unpinned.headroom--bottom {
   .site-header {
     //transform: translateY(-100%);
-    opacity: 0;
+    //opacity: 0;
   }
 }
 
@@ -19,7 +19,7 @@
 @media (min-width: $break-md-phone) {
   
   .fixed-nav {
-    //opacity: 0;
+    opacity: 0;
     display: flex;
     //display: none;
     position: fixed;
@@ -46,15 +46,27 @@
   .headroom--not-top.headroom--pinned,
   .headroom--not-top.headroom--unpinned {
     .fixed-nav {
-      background-color: hsl(191, 53%, 40%);
+      opacity: 1; 
       padding-top: .75rem;
       padding-bottom: .75rem;
+    }
+  }
+  
+  .headroom--not-top.headroom--pinned {
+    .fixed-nav {
       transform: none;
     }
   }
+  
+  .headroom--not-top.headroom--unpinned {
+    .fixed-nav {
+      transform: none;
+    }
+  }
+  
   .headroom--not-top.headroom--unpinned.headroom--bottom {
     .fixed-nav {
-      //transform: translateY(-100%);
+      transform: translateY(-100%);
       opacity: 0;
     }
   }
