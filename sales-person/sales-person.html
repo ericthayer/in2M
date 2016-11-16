@@ -125,7 +125,7 @@
               <div class="nav-icon c-white"></div>
             </button>
             <!-- Main Nav -->
-            <section class="main-nav scroll-nav flex flex-wrap ai-center jc-center sm-flex-g-1 tc-white" role="navigation">
+            <section class="main-nav flex flex-wrap ai-center jc-center sm-flex-g-1 tc-white" role="navigation">
               <!-- Nav -->
               <script src="../js/libs/responsive-nav.js" defer></script>
               <nav class="nav-collapse" role="navigation">
@@ -1048,7 +1048,11 @@
       <!-- Demo Video -->
       <div class="remodal clear-modal video-modal" data-remodal-id="demo-video" role="dialog" aria-labelledby="demo-video-title" aria-describedby="demo-video-desc">
         <!-- Close Button -->
-        <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+        <button data-remodal-action="close" class="remodal-close" aria-label="Close">
+          <svg class="icon">
+            <use xlink:href="#icon-cancel" />
+          </svg>
+        </button>
         <!-- Modal Content -->
         <div class="modal-content">
           <!-- Title -->
@@ -1073,7 +1077,11 @@
       <!-- Contact Us form -->
       <div class="remodal bg-blue-30 c-white" data-remodal-id="help-contact-form" role="dialog" aria-labelledby="help-contact-title" aria-describedby="help-contact-desc">
         <!-- Close Button -->
-        <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+        <button data-remodal-action="close" class="remodal-close" aria-label="Close">
+          <svg class="icon">
+            <use xlink:href="#icon-cancel" />
+          </svg>
+        </button>
         <!-- Modal Content -->
         <div class="modal-content bg-blue-30 c-white">
           <!-- Title -->
@@ -1108,7 +1116,7 @@
                 <div class="form-row form-helpers flex flex-wrap jc-between mb-1 pt-1">
                   <!-- Critical Marker -->
                   <label>
-                    <input type="loadbox" name="opt1" id="opt1">
+                    <input type="checkbox" name="opt1" id="opt1">
                     <span class="text-sm pl-tiny">Mark as Urgent</span>
                   </label>
                   <!-- Help Link -->

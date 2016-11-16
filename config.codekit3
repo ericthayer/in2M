@@ -1069,6 +1069,12 @@
 		"oAP": "\/css\/scss\/.sass-cache\/ebb4009c7db8957300801d2e830b82091b17ac9f\/_base-nav.scssc",
 		"oF": 0
 		},
+	"\/css\/scss\/.sass-cache\/ebb4009c7db8957300801d2e830b82091b17ac9f\/_fixed-nav.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/css\/scss\/.sass-cache\/ebb4009c7db8957300801d2e830b82091b17ac9f\/_fixed-nav.scssc",
+		"oF": 0
+		},
 	"\/css\/scss\/.sass-cache\/ebb4009c7db8957300801d2e830b82091b17ac9f\/_main-nav-v2.scssc": {
 		"ft": 8192,
 		"oA": 1,
@@ -3495,26 +3501,26 @@
 		},
 	"\/js\/libs\/bower_components\/eq.js\/.bower.json": {
 		"ft": 524288,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/js\/libs\/bower_components\/eq.js\/.bower.json",
-		"oF": 0,
+		"oF": 1,
 		"oO": 0,
 		"oS": 1
 		},
 	"\/js\/libs\/bower_components\/eq.js\/bower.json": {
 		"ft": 524288,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/js\/libs\/bower_components\/eq.js\/bower.json",
-		"oF": 0,
+		"oF": 1,
 		"oO": 0,
 		"oS": 1
 		},
 	"\/js\/libs\/bower_components\/eq.js\/build\/eq.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/js\/libs\/bower_components\/eq.js\/build\/eq.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 1,
 		"tS": 0
 		},
@@ -3526,9 +3532,9 @@
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/js\/libs\/bower_components\/eq.js\/CHANGELOG.md",
-		"oF": 0,
+		"oF": 1,
 		"oFM": 0,
 		"oS": 0,
 		"pHT": 0,
@@ -3538,9 +3544,9 @@
 		},
 	"\/js\/libs\/bower_components\/eq.js\/config.rb": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/js\/libs\/bower_components\/eq.js\/config.rb",
-		"oF": 0
+		"oF": 1
 		},
 	"\/js\/libs\/bower_components\/eq.js\/CONTRIBUTING.md": {
 		"cS": 0,
@@ -3550,9 +3556,9 @@
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/js\/libs\/bower_components\/eq.js\/CONTRIBUTING.md",
-		"oF": 0,
+		"oF": 1,
 		"oFM": 0,
 		"oS": 0,
 		"pHT": 0,
@@ -3563,89 +3569,89 @@
 	"\/js\/libs\/bower_components\/eq.js\/dist\/eq.min.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/js\/libs\/bower_components\/eq.js\/dist\/eq.min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 1,
 		"tS": 0
 		},
 	"\/js\/libs\/bower_components\/eq.js\/dist\/eq.min.js.gz": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/js\/libs\/bower_components\/eq.js\/dist\/eq.min.js.gz",
-		"oF": 0
+		"oF": 1
 		},
 	"\/js\/libs\/bower_components\/eq.js\/dist\/eq.min.js.map": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/js\/libs\/bower_components\/eq.js\/dist\/eq.min.js.map",
-		"oF": 0
+		"oF": 1
 		},
 	"\/js\/libs\/bower_components\/eq.js\/dist\/eq.polyfilled.min.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/js\/libs\/bower_components\/eq.js\/dist\/eq.polyfilled.min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 1,
 		"tS": 0
 		},
 	"\/js\/libs\/bower_components\/eq.js\/dist\/eq.polyfilled.min.js.gz": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/js\/libs\/bower_components\/eq.js\/dist\/eq.polyfilled.min.js.gz",
-		"oF": 0
+		"oF": 1
 		},
 	"\/js\/libs\/bower_components\/eq.js\/dist\/eq.polyfilled.min.js.map": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/js\/libs\/bower_components\/eq.js\/dist\/eq.polyfilled.min.js.map",
-		"oF": 0
+		"oF": 1
 		},
 	"\/js\/libs\/bower_components\/eq.js\/dist\/polyfills.min.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/js\/libs\/bower_components\/eq.js\/dist\/polyfills.min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 1,
 		"tS": 0
 		},
 	"\/js\/libs\/bower_components\/eq.js\/dist\/polyfills.min.js.gz": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/js\/libs\/bower_components\/eq.js\/dist\/polyfills.min.js.gz",
-		"oF": 0
+		"oF": 1
 		},
 	"\/js\/libs\/bower_components\/eq.js\/dist\/polyfills.min.js.map": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/js\/libs\/bower_components\/eq.js\/dist\/polyfills.min.js.map",
-		"oF": 0
+		"oF": 1
 		},
 	"\/js\/libs\/bower_components\/eq.js\/Gulpfile.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/js\/libs\/bower_components\/eq.js\/Gulpfile.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 1,
 		"tS": 0
 		},
 	"\/js\/libs\/bower_components\/eq.js\/karma.conf.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/js\/libs\/bower_components\/eq.js\/karma.conf.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 1,
 		"tS": 0
 		},
 	"\/js\/libs\/bower_components\/eq.js\/LICENSE": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/js\/libs\/bower_components\/eq.js\/LICENSE",
-		"oF": 0
+		"oF": 1
 		},
 	"\/js\/libs\/bower_components\/eq.js\/README.md": {
 		"cS": 0,
@@ -3655,9 +3661,9 @@
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/js\/libs\/bower_components\/eq.js\/README.md",
-		"oF": 0,
+		"oF": 1,
 		"oFM": 0,
 		"oS": 0,
 		"pHT": 0,
@@ -3672,89 +3678,89 @@
 		"dS": 0,
 		"ft": 4,
 		"ma": 0,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/js\/libs\/bower_components\/eq.js\/sass\/_eq.scss",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0,
 		"uL": 0
 		},
 	"\/js\/libs\/bower_components\/eq.js\/tasks\/dist.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/js\/libs\/bower_components\/eq.js\/tasks\/dist.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 1,
 		"tS": 0
 		},
 	"\/js\/libs\/bower_components\/eq.js\/tasks\/jasmine.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/js\/libs\/bower_components\/eq.js\/tasks\/jasmine.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 1,
 		"tS": 0
 		},
 	"\/js\/libs\/bower_components\/eq.js\/tasks\/jshint.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/js\/libs\/bower_components\/eq.js\/tasks\/jshint.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 1,
 		"tS": 0
 		},
 	"\/js\/libs\/bower_components\/eq.js\/tasks\/karma.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/js\/libs\/bower_components\/eq.js\/tasks\/karma.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 1,
 		"tS": 0
 		},
 	"\/js\/libs\/dropzone-4.3.0.zip": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/js\/libs\/dropzone-4.3.0.zip",
-		"oF": 0
+		"oF": 1
 		},
 	"\/js\/libs\/dropzone-4.3.0\/.gitignore": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/js\/libs\/dropzone-4.3.0\/.gitignore",
-		"oF": 0
+		"oF": 1
 		},
 	"\/js\/libs\/dropzone-4.3.0\/.tagconfig": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/js\/libs\/dropzone-4.3.0\/.tagconfig",
-		"oF": 0
+		"oF": 1
 		},
 	"\/js\/libs\/dropzone-4.3.0\/.travis.yml": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/js\/libs\/dropzone-4.3.0\/.travis.yml",
-		"oF": 0
+		"oF": 1
 		},
 	"\/js\/libs\/dropzone-4.3.0\/AMD_footer": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/js\/libs\/dropzone-4.3.0\/AMD_footer",
-		"oF": 0
+		"oF": 1
 		},
 	"\/js\/libs\/dropzone-4.3.0\/AMD_header": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/js\/libs\/dropzone-4.3.0\/AMD_header",
-		"oF": 0
+		"oF": 1
 		},
 	"\/js\/libs\/dropzone-4.3.0\/bower.json": {
 		"ft": 524288,
 		"oA": 1,
 		"oAP": "\/js\/libs\/dropzone-4.3.0\/bower-min.json",
-		"oF": 0,
+		"oF": 1,
 		"oO": 0,
 		"oS": 1
 		},
@@ -3762,7 +3768,7 @@
 		"ft": 524288,
 		"oA": 1,
 		"oAP": "\/js\/libs\/dropzone-4.3.0\/component-min.json",
-		"oF": 0,
+		"oF": 1,
 		"oO": 0,
 		"oS": 1
 		},
@@ -3770,7 +3776,7 @@
 		"ft": 524288,
 		"oA": 1,
 		"oAP": "\/js\/libs\/dropzone-4.3.0\/composer-min.json",
-		"oF": 0,
+		"oF": 1,
 		"oO": 0,
 		"oS": 1
 		},
@@ -3782,9 +3788,9 @@
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/js\/libs\/dropzone-4.3.0\/CONTRIBUTING.html",
-		"oF": 0,
+		"oF": 1,
 		"oFM": 0,
 		"oS": 0,
 		"pHT": 0,
@@ -3797,17 +3803,17 @@
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/js\/libs\/dropzone-4.3.0\/dist\/basic-min.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"\/js\/libs\/dropzone-4.3.0\/dist\/dropzone-amd-module.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/js\/libs\/dropzone-4.3.0\/dist\/min\/dropzone-amd-module-min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 1,
 		"tS": 0
 		},
@@ -3816,17 +3822,17 @@
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/js\/libs\/dropzone-4.3.0\/dist\/dropzone-min.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"\/js\/libs\/dropzone-4.3.0\/dist\/dropzone.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/js\/libs\/dropzone-4.3.0\/dist\/min\/dropzone-min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 1,
 		"tS": 0
 		},
@@ -3835,17 +3841,17 @@
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/js\/libs\/dropzone-4.3.0\/dist\/min\/basic.min-min.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"\/js\/libs\/dropzone-4.3.0\/dist\/min\/dropzone-amd-module.min.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/js\/libs\/dropzone-4.3.0\/dist\/min\/min\/dropzone-amd-module.min-min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 1,
 		"tS": 0
 		},
@@ -3854,17 +3860,17 @@
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/js\/libs\/dropzone-4.3.0\/dist\/min\/dropzone.min-min.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"\/js\/libs\/dropzone-4.3.0\/dist\/min\/dropzone.min.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/js\/libs\/dropzone-4.3.0\/dist\/min\/min\/dropzone.min-min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 1,
 		"tS": 0
 		},
@@ -3876,9 +3882,9 @@
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/js\/libs\/dropzone-4.3.0\/dist\/readme.html",
-		"oF": 0,
+		"oF": 1,
 		"oFM": 0,
 		"oS": 0,
 		"pHT": 0,
@@ -3890,32 +3896,32 @@
 		"ft": 32,
 		"ma": 0,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/js\/libs\/dropzone-4.3.0\/Gruntfile.js",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0,
 		"sC": 1
 		},
 	"\/js\/libs\/dropzone-4.3.0\/index.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/js\/libs\/dropzone-4.3.0\/min\/index-min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 1,
 		"tS": 0
 		},
 	"\/js\/libs\/dropzone-4.3.0\/LICENSE": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/js\/libs\/dropzone-4.3.0\/LICENSE",
-		"oF": 0
+		"oF": 1
 		},
 	"\/js\/libs\/dropzone-4.3.0\/package.json": {
 		"ft": 524288,
 		"oA": 1,
 		"oAP": "\/js\/libs\/dropzone-4.3.0\/package-min.json",
-		"oF": 0,
+		"oF": 1,
 		"oO": 0,
 		"oS": 1
 		},
@@ -3927,9 +3933,9 @@
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/js\/libs\/dropzone-4.3.0\/README.html",
-		"oF": 0,
+		"oF": 1,
 		"oFM": 0,
 		"oS": 0,
 		"pHT": 0,
@@ -3944,9 +3950,9 @@
 		"dS": 0,
 		"ft": 4,
 		"ma": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/js\/libs\/dropzone-4.3.0\/css\/basic.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0,
 		"uL": 0
 		},
@@ -3954,9 +3960,9 @@
 		"ft": 32,
 		"ma": 0,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/js\/libs\/dropzone-4.3.0\/src\/dropzone.js",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0,
 		"sC": 1
 		},
@@ -3967,33 +3973,33 @@
 		"dS": 0,
 		"ft": 4,
 		"ma": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/js\/libs\/dropzone-4.3.0\/css\/dropzone.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0,
 		"uL": 0
 		},
 	"\/js\/libs\/dropzone-4.3.0\/test.sh": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/js\/libs\/dropzone-4.3.0\/test.sh",
-		"oF": 0
+		"oF": 1
 		},
 	"\/js\/libs\/dropzone-4.3.0\/test\/test.coffee": {
 		"ft": 32,
 		"ma": 0,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/js\/libs\/dropzone-4.3.0\/test\/test.js",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0,
 		"sC": 1
 		},
 	"\/js\/libs\/dropzone-4.3.0\/test\/test.html": {
 		"ft": 8192,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/js\/libs\/dropzone-4.3.0\/test\/test.html",
-		"oF": 0
+		"oF": 1
 		},
 	"\/js\/libs\/dropzone-4.3.0\/test\/test.js": {
 		"ft": 64,
@@ -4007,27 +4013,27 @@
 	"\/js\/libs\/dropzone.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/js\/libs\/min\/dropzone-min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 1,
 		"tS": 0
 		},
 	"\/js\/libs\/fontfaceobserver.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/js\/libs\/min\/fontfaceobserver-min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 1,
 		"tS": 0
 		},
 	"\/js\/libs\/headroom.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/js\/libs\/min\/headroom-min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 1,
 		"tS": 0
 		},
@@ -4052,9 +4058,9 @@
 	"\/js\/libs\/jquery.validate.min.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/js\/libs\/min\/jquery.validate.min-min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 1,
 		"tS": 0
 		},
@@ -4112,12 +4118,6 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"\/login.html": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/login.html",
-		"oF": 0
-		},
 	"\/public-site\/checkout-confirmation.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -4130,16 +4130,40 @@
 		"oAP": "\/public-site\/checkout.html",
 		"oF": 0
 		},
+	"\/public-site\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public-site\/index.html",
+		"oF": 0
+		},
+	"\/public-site\/login.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public-site\/login.html",
+		"oF": 0
+		},
 	"\/public-site\/pricing.html": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/public-site\/pricing.html",
 		"oF": 0
 		},
-	"\/public-site\/public-landing.html": {
+	"\/public-site\/support-search-results.html": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/public-site\/public-landing.html",
+		"oAP": "\/public-site\/support-search-results.html",
+		"oF": 0
+		},
+	"\/public-site\/support.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public-site\/support.html",
+		"oF": 0
+		},
+	"\/public-site\/user-logged-in.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public-site\/user-logged-in.html",
 		"oF": 0
 		},
 	"\/retail-admin\/ra-create-campaign.html": {

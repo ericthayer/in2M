@@ -111,10 +111,11 @@ a;q()});y(p,J(c,'"'+c.family+'",monospace'))})})};window.FontFaceObserver=B;wind
   		  <h3 class="collapsible-header text-md demo-label flex jc-between md-jc-start"><span>Free Trial Form</span><svg class="icon"><use xlink:href="#icon-caret" /></svg></h3>
   		  <div class="collapsible-content p-1">
     		  
-    		  
+          <!-- *** PANEL FORMS (clear) *** -->
+                     
   		    <!-- Free Trial Form -->
           <section class="trial-form clear-form bg-blue-g-4 c-white w-100 slide-panel slide-down is-hidden">
-            <button class="btn-reset text-lg" onclick="$('.trial-form').toggleClass('is-hidden');">
+            <button class="btn-reset text-lg" onclick="$('.trial-form.clear-form').toggleClass('is-hidden');">
               <svg class="icon mr-ml-0">
                 <use xlink:href="#icon-cancel" />
               </svg>
@@ -169,7 +170,7 @@ a;q()});y(p,J(c,'"'+c.family+'",monospace'))})})};window.FontFaceObserver=B;wind
           
           <!-- New Lead Form -->
           <section class="new-lead-form clear-form bg-blue-g-4 c-white w-100 slide-panel slide-down is-hidden">
-            <button class="btn-reset text-lg" onclick="$('.new-lead-form').toggleClass('is-hidden');">
+            <button class="btn-reset text-lg" onclick="$('.new-lead-form.clear-form').toggleClass('is-hidden');">
               <svg class="icon mr-ml-0">
                 <use xlink:href="#icon-cancel" />
               </svg>
@@ -229,13 +230,13 @@ a;q()});y(p,J(c,'"'+c.family+'",monospace'))})})};window.FontFaceObserver=B;wind
           
           <!-- Quick Contact Form -->
           <section class="quick-contact-form clear-form bg-blue-g-4 c-white w-100 slide-panel slide-down is-hidden">
-            <button class="btn-reset text-lg" onclick="$('.quick-contact-form').toggleClass('is-hidden');">
+            <button class="btn-reset text-lg" onclick="$('.quick-contact-form.clear-form').toggleClass('is-hidden');">
               <svg class="icon mr-ml-0">
                 <use xlink:href="#icon-cancel" />
               </svg>
             </button>
             <div class="container pt-2 pb-3">
-              <h2 class="text-center mb-tiny">Talk With Us</h2>
+              <h2 class="text-center mb-tiny">Quick Contact Form</h2>
               <p class="h5 text-center mb-1">Let us know how we can help your business.</p>
               <!-- Form -->
               <form name="QuickContactForm" class="mr-ml-a mw-25em whitney-med">
@@ -286,8 +287,191 @@ a;q()});y(p,J(c,'"'+c.family+'",monospace'))})})};window.FontFaceObserver=B;wind
               </form>
             </div>
           </section>
+          
+          <!-- *** PANEL FORMS *** -->
+  
+          <!-- Free Trial Form -->
+          <section class="trial-form bg-blue-g-4 c-white w-100 slide-panel slide-down is-hidden">
+            <button class="btn-reset text-lg" onclick="$('.trial-form').toggleClass('is-hidden');">
+              <svg class="icon mr-ml-0">
+                <use xlink:href="#icon-cancel" />
+              </svg>
+            </button>
+            <div class="container pt-2 pb-3">
+              <h2 class="text-center mb-tiny">Free 14 Day Trial</h2>
+              <p class="h5 text-center mb-1"><span class="c-blue-70">250</span> SMS + <span class="c-blue-70">250</span> Emails</p>
+              <!-- Form -->
+              <form name="TrialForm" class="mr-ml-a mw-25em whitney-med">
+                <div class="form-wrap">
+                  <!-- Name -->
+                  <div class="form-row mb-1">
+                    <label for="" id="-ariaLabel">Name</label>
+                    <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="bor-none  required" title="This is a required field"
+                      required>
+                  </div>
+                  <div class="sm-flex sm-jc-between">
+                    <!-- Email -->
+                    <div class="form-row mb-1 sm-mr-tiny sm-w-50">
+                      <label for="" id="-ariaLabel">Email</label>
+                      <input id="" name="" type="email" autocorrect="off" autocapitalize="none" spellcheck="false" aria-labelledby="-ariaLabel"
+                        class="bor-none  required" title="This is a required field" required>
+                    </div>
+                    <!-- Phone -->
+                    <div class="form-row mb-1 sm-ml-tiny sm-w-50">
+                      <label for="" id="-ariaLabel">Phone</label>
+                      <input id="" name="" type="tel" pattern="[0-9]*" maxlength="10" aria-labelledby="-ariaLabel" class="bor-none  required"
+                        title="This is a required field" required>
+                    </div>
+                  </div>                  
+                  <!-- Helpers -->
+                  <div class="form-row form-helpers flex flex-wrap jc-between mb-1">
+                    <!-- Critical Marker -->
+                    <label>
+                      <input type="checkbox" name="opt1" id="opt1">
+                      <span class="text-sm pl-tiny">Call Back ASAP</span>
+                    </label>
+                    <!-- Help Link -->
+                    <label>
+                      <span class="text-sm"><a class="c-white" href="#">Need Help?</a></span>
+                    </label>
+                  </div>
+                  <!-- Buttons -->
+                  <div class="form-row button-wrap flex flex-d-col-rev sm-flex-d-row sm-jc-center">
+                    <input class="btn all-caps bg-blue-40 c-white flex-g-1 pt-pb-1" type="submit" value="sign up">
+                  </div>
+                  <!-- end / form-wrap -->
+                </div>
+              </form>
+            </div>
+          </section>
+          
+          <!-- New Lead Form -->
+          <section class="new-lead-form bg-blue-g-4 c-white w-100 slide-panel slide-down is-hidden">
+            <button class="btn-reset text-lg" onclick="$('.new-lead-form').toggleClass('is-hidden');">
+              <svg class="icon mr-ml-0">
+                <use xlink:href="#icon-cancel" />
+              </svg>
+            </button>
+            <div class="container pt-2 pb-3">
+              <h2 class="text-center mb-tiny">Capture New Lead</h2>
+              <p class="h5 text-center mb-1">Save contact information to your list.</p>
+              <!-- Form -->
+              <form name="NewLeadForm" class="mr-ml-a mw-25em whitney-med">
+                <div class="form-wrap">
+                  <!-- Name -->
+                  <div class="form-row mb-1">
+                    <label for="" id="-ariaLabel">Name</label>
+                    <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="bor-none  required" title="This is a required field"
+                      required>
+                  </div>
+                  <div class="sm-flex sm-jc-between">
+                    <!-- Email -->
+                    <div class="form-row mb-1 sm-mr-tiny sm-w-50">
+                      <label for="" id="-ariaLabel">Email</label>
+                      <input id="" name="" type="email" autocorrect="off" autocapitalize="none" spellcheck="false" aria-labelledby="-ariaLabel"
+                        class="bor-none  required" title="This is a required field" required>
+                    </div>
+                    <!-- Phone -->
+                    <div class="form-row mb-1 sm-ml-tiny sm-w-50">
+                      <label for="" id="-ariaLabel">Phone</label>
+                      <input id="" name="" type="tel" pattern="[0-9]*" maxlength="10" aria-labelledby="-ariaLabel" class="bor-none  required"
+                        title="This is a required field" required>
+                    </div>
+                  </div>
+                  <!-- Message -->
+                  <div class="form-row mb-1">
+                    <label for="-ariaLabel">Message</label>
+                    <textarea maxlength="200" aria-labelledby="-ariaLabel" class="bor-none "></textarea>
+                  </div>
+                  <!-- Helpers -->
+                  <div class="form-row form-helpers flex flex-wrap jc-between mb-1">
+                    <!-- Critical Marker -->
+                    <label>
+                      <input type="checkbox" name="opt1" id="opt1">
+                      <span class="text-sm pl-tiny">Call Back ASAP</span>
+                    </label>
+                    <!-- Help Link -->
+                    <label>
+                      <span class="text-sm"><a class="c-white" href="#">Need Help?</a></span>
+                    </label>
+                  </div>
+                  <!-- Buttons -->
+                  <div class="form-row button-wrap flex flex-d-col-rev sm-flex-d-row sm-jc-center">
+                    <input class="btn all-caps bg-blue-40 c-white flex-g-1 pt-pb-1" type="submit" value="save">
+                  </div>
+                  <!-- end / form-wrap -->
+                </div>
+              </form>
+            </div>
+          </section>
+          
+          <!-- Quick Contact Form -->
+          <section class="quick-contact-form bg-blue-g-4 c-white w-100 slide-panel slide-down is-hidden">
+            <button class="btn-reset panel-close text-lg" onclick="$('.quick-contact-form').toggleClass('is-hidden');">
+              <svg class="icon mr-ml-0">
+                <use xlink:href="#icon-cancel" />
+              </svg>
+            </button>
+            <div class="container pt-2 pb-3">
+              <h2 class="text-center mb-tiny">Quick Contact Form</h2>
+              <p class="h5 text-center mb-1">Let us know how we can help your business.</p>
+              <!-- Form -->
+              <form name="QuickContactForm" class="mr-ml-a mw-25em whitney-med">
+                <div class="form-wrap">
+                  <!-- Name -->
+                  <div class="form-row mb-1">
+                    <label for="" id="-ariaLabel">Name</label>
+                    <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="bor-none required" title="This is a required field"
+                      required>
+                  </div>
+                  <div class="sm-flex sm-jc-between">
+                    <!-- Email -->
+                    <div class="form-row mb-1 sm-mr-tiny sm-w-50">
+                      <label for="" id="-ariaLabel">Email</label>
+                      <input id="" name="" type="email" autocorrect="off" autocapitalize="none" spellcheck="false" aria-labelledby="-ariaLabel"
+                        class="bor-none required" title="This is a required field" required>
+                    </div>
+                    <!-- Phone -->
+                    <div class="form-row mb-1 sm-ml-tiny sm-w-50">
+                      <label for="" id="-ariaLabel">Phone</label>
+                      <input id="" name="" type="tel" pattern="[0-9]*" maxlength="10" aria-labelledby="-ariaLabel" class="bor-none required"
+                        title="This is a required field" required>
+                    </div>
+                  </div>
+                  <!-- Message -->
+                  <div class="form-row mb-1">
+                    <label for="-ariaLabel">Message</label>
+                    <textarea maxlength="200" aria-labelledby="-ariaLabel" class="bor-none"></textarea>
+                  </div>
+                  <!-- Helpers -->
+                  <div class="form-row form-helpers flex flex-wrap jc-between mb-1">
+                    <!-- Critical Marker -->
+                    <label>
+                      <input type="checkbox" name="opt1" id="opt1">
+                      <span class="text-sm pl-tiny">Call Back ASAP</span>
+                    </label>
+                    <!-- Help Link -->
+                    <label>
+                      <span class="text-sm"><a class="c-white" href="#">Need Help?</a></span>
+                    </label>
+                  </div>
+                  <!-- Buttons -->
+                  <div class="form-row button-wrap flex flex-d-col-rev sm-flex-d-row sm-jc-center">
+                    <input class="btn all-caps bg-blue-40 c-white flex-g-1 pt-pb-1" type="submit" value="send">
+                  </div>
+                  <!-- end / form-wrap -->
+                </div>
+              </form>
+            </div>
+          </section>
       		
           <!-- demo buttons -->
+          
+          <a class="btn-round bg-blue-50 all-caps c-white mr-0 pr-pl-1 text-base" href="#" onclick="$('.trial-form.clear-form.slide-panel').toggleClass('is-hidden');">Free Trial</a>
+          
+          <a class="btn-round bg-blue-50 all-caps c-white mr-0 pr-pl-1 text-base" href="#" onclick="$('.new-lead-form.clear-form.slide-panel').toggleClass('is-hidden');">New Lead</a>
+          
+          <a class="btn-round bg-blue-50 all-caps c-white mr-0 pr-pl-1 text-base" href="#" onclick="$('.quick-contact-form.clear-form.slide-panel').toggleClass('is-hidden');">Contact</a>
           
           <a class="btn-round bg-blue-50 all-caps c-white mr-0 pr-pl-1 text-base" href="#" onclick="$('.trial-form.slide-panel').toggleClass('is-hidden');">Free Trial</a>
           
@@ -527,7 +711,7 @@ a;q()});y(p,J(c,'"'+c.family+'",monospace'))})})};window.FontFaceObserver=B;wind
               <div class="nav-icon c-white"></div>
             </button>
             <!-- Main Nav -->
-            <section class="main-nav scroll-nav flex flex-wrap ai-center jc-center sm-flex-g-1 tc-white" role="navigation">
+            <section class="main-nav flex flex-wrap ai-center jc-center sm-flex-g-1 tc-white" role="navigation">
               <!-- Nav -->
               <script src="../js/libs/responsive-nav.js"></script>
               <nav class="nav-collapse" role="navigation">
@@ -561,6 +745,13 @@ a;q()});y(p,J(c,'"'+c.family+'",monospace'))})})};window.FontFaceObserver=B;wind
             		</div>
                 <ul class="list-reset">
                   <li class="nav-cta pt-sm pb-1">
+                  
+                                      <a class="btn-round bg-blue-50 all-caps c-white mr-0 pr-pl-1 text-base hidden" href="contact.html" onclick="$('.quick-contact-form.slide-panel').toggleClass('is-hidden');">Contact</a>
+                  
+  
+                  
+                  <a class="btn-round bg-blue-50 all-caps c-white mr-0 pr-pl-1 text-base" data-remodal-target="help-contact-form">Contact</a>
+                  
                     <a class="btn-round bg-blue-50 all-caps c-white mr-0 pr-pl-1 text-base" href="#" onclick="$('.trial-form.slide-panel').toggleClass('is-hidden');">Free Trial</a>
                   </li>
                   <li>

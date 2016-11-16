@@ -105,7 +105,7 @@ a {
 // ********** Buttons ********** //
 
     
-button:not(.search-button),
+button:not(.search-button):not([class*="-close"]),
 .btn,
 [class^="btn-"] { 
   &:hover,

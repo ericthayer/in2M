@@ -73,7 +73,7 @@
                 </label>
                 <!-- Help Link -->
                 <label>
-                  <span class="text-sm"><a class="c-white" href="#">Need Help?</a></span>
+                  <span class="text-sm"><a class="c-white" href="support.html">Need Help?</a></span>
                 </label>
               </div>
               <!-- Buttons -->
@@ -89,32 +89,33 @@
       <!-- Site Wrap  -->
       <div class="site-wrap">
         
-        <!-- Header (SP pricing logged out) -->  
+        <!-- Header -->  
         <header class="site-header bg-blue-40 bg-pricing bg-no-repeat bg-center bg-cover pb-1" role="banner">
           <!-- Nav -->
           <div class="container flex flex-wrap ai-center jc-between pt-pb-1">
             <!-- Site Logo -->
-            <h1 class="site-title"><a href="sales-person.html"><img class="header-logo mw-8em" src="../images/UI/in2m-logo-white.svg" alt="in2Marketplace.com"><span class="sr-only">in2Marketplace.com</span></a></h1>
+            <h1 class="site-title"><a href="index.html"><img class="header-logo mw-8em" src="../images/UI/in2m-logo-white.svg" alt="in2Marketplace.com"><span class="sr-only">in2Marketplace.com</span></a></h1>
             <button id="nav-toggle" class="nav-toggle-html bg-none" aria-hidden="false" aria-expanded="false">
               <div class="nav-icon c-white"></div>
             </button>
             <!-- Main Nav -->
-            <section class="main-nav scroll-nav flex flex-wrap ai-center jc-center sm-flex-g-1 tc-white" role="navigation">
+            <section class="main-nav flex flex-wrap ai-center jc-center sm-flex-g-1 tc-white" role="navigation">
               <!-- Nav -->
               <script src="../js/libs/responsive-nav.js"></script>
               <nav class="nav-collapse" role="navigation">
                 <ul class="list-reset">
                   <li class="nav-cta pt-pb-1">
-                    <a class="btn-round bg-blue-50 all-caps c-white mr-0 pr-pl-1 text-base" href="#" onclick="$('.quick-contact-form.slide-panel').toggleClass('is-hidden');">Contact</a>
+                    <a class="btn-round bg-blue-50 all-caps c-white mr-0 pr-pl-1 text-base" href="contact.html" onclick="$('.quick-contact-form.slide-panel').toggleClass('is-hidden');">Contact</a>
+                    <a class="btn-round bg-blue-50 all-caps c-white mr-0 pr-pl-1 text-base hidden" href="#" onclick="$('.trial-form.slide-panel').toggleClass('is-hidden');">Free Trial</a>
                   </li>
                   <li>
-                    <a href="#">Features</a>
+                    <a href="features.html">Features</a>
                   </li>
                   <li>
-                    <a href="sp-pricing.html">Pricing</a>
+                    <a href="pricing.html">Pricing</a>
                   </li>
                   <li>
-                    <a href="sp-support.html">Support</a>
+                    <a href="support.html">Support</a>
                   </li>
                   <li>
                     <a data-remodal-target="demo-video">Demo</a>
@@ -126,8 +127,38 @@
               <script src="../js/libs/mobile-nav.js"></script>
             </section>
           </div>
+          <!-- Fixed Nav -->
+          <div class="container fixed-nav md-flex flex-wrap ai-center jc-between">
+            <!-- Site Logo -->
+            <h1 class="site-title"><a href="index.html"><img class="header-logo mw-8em" src="../images/UI/in2m-logo-white.svg" alt="in2Marketplace.com"><span class="sr-only">in2Marketplace.com</span></a></h1>
+            <!-- Main Nav -->
+            <section class="main-nav flex flex-wrap ai-center jc-center sm-flex-g-1 tc-white" role="navigation">
+              <nav class="nav-collapse" role="navigation">
+                <ul class="list-reset">
+                  <li class="nav-cta pt-pb-1">
+                    <a class="btn-round bg-blue-50 all-caps c-white mr-0 pr-pl-1 text-base" href="contact.html" onclick="$('.quick-contact-form.slide-panel').toggleClass('is-hidden');">Contact</a>
+                    <a class="btn-round bg-blue-50 all-caps c-white mr-0 pr-pl-1 text-base hidden" href="#" onclick="$('.trial-form.slide-panel').toggleClass('is-hidden');">Free Trial</a>
+                  </li>
+                  <li>
+                    <a href="features.html">Features</a>
+                  </li>
+                  <li>
+                    <a href="pricing.html">Pricing</a>
+                  </li>
+                  <li>
+                    <a href="support.html">Support</a>
+                  </li>
+                  <li>
+                    <a data-remodal-target="demo-video">Demo</a>
+                  </li>
+                  <li class="inline-login-link"><a href="login.html">Login</a></li>                  
+                  <!-- end / -->
+                </ul> 
+              </nav>
+            </section>
+          </div>
           <!-- Main Promo (no media) -->
-          <section class="hero-banner c-white pt-pb-2 text-s-black-50">
+          <section class="hero-banner c-white pt-pb-2 text-s-black-50 hidden">
             <div class="container">
               
               <!-- Post -->
@@ -149,11 +180,12 @@
         <main class="main-content">
           
           <!-- Checkout Form -->
-          <section class="bg-grey-light pt-pb-2">
+          <section class="bg-grey-light pt-pb-4">
+            
           	<div class="container">
-            	
+            	<h2 id="pricing" class="text-center mb-4 w-100">Checkout</h2>
             	<!-- Form Build -->
-              <div class="form-section mr-ml-a mb-2 mw-48em">
+              <div class="form-section bg-white bor-2 bor-solid bor-c-EEE mr-ml-a mb-2 p-2 mw-56em">
                 <form name="Checkout">
                   <div class="form-wrap">
 
@@ -611,7 +643,11 @@
       <!-- Demo Video -->
       <div class="remodal clear-modal video-modal" data-remodal-id="demo-video" role="dialog" aria-labelledby="demo-video-title" aria-describedby="demo-video-desc">
         <!-- Close Button -->
-        <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+        <button data-remodal-action="close" class="remodal-close" aria-label="Close">
+          <svg class="icon">
+            <use xlink:href="#icon-cancel" />
+          </svg>
+        </button>
         <!-- Modal Content -->
         <div class="modal-content">
           <!-- Title -->
@@ -636,7 +672,11 @@
       <!-- Contact Us form -->
       <div class="remodal bg-blue-30 c-white" data-remodal-id="help-contact-form" role="dialog" aria-labelledby="help-contact-title" aria-describedby="help-contact-desc">
         <!-- Close Button -->
-        <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+        <button data-remodal-action="close" class="remodal-close" aria-label="Close">
+          <svg class="icon">
+            <use xlink:href="#icon-cancel" />
+          </svg>
+        </button>
         <!-- Modal Content -->
         <div class="modal-content bg-blue-30 c-white">
           <!-- Title -->
@@ -699,5 +739,6 @@
       <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
       <script>window.jQuery || document.write('<script src="../js/libs/jquery.1.11.2.min.js"><\/script>')</script>
       <script src="../js/min/script.min.js"></script>
+      <script src="../js/libs/headroom.js"></script>
     </body>
   </html>
