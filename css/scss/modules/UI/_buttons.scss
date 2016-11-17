@@ -224,17 +224,18 @@ button:not([class*="bg-"]):not([class*="c-"]):not(.btn-reset),
 // Button Wrap
 
 .button-wrap {
+  display: flex;
+  align-items: center;
+  //justify-content: center;
   > * {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex: 0 1 45%;  
+    flex: 0 1 auto;  
     margin: 0 0 1em;
     padding: 1em 2em;
-    width: 100%;
+    //width: 100%;
   }
   > *:nth-last-child(n+2), 
   > *:nth-last-child(n+2) ~ * {
+    flex: 0 1 45%;
     max-width: 18em;
     margin: 0 .313em 1em;
   }

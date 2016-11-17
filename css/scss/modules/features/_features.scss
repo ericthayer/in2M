@@ -19,7 +19,7 @@
 // Feature Item using Container Queries to adjust content based on the container size.
 // Currently used on sp-support.html
 
-.cq-feature:container("width >= 20em") {
+.cq-feature:container("width > 20em") {
   flex-direction: row-reverse;
   align-items: flex-start;
   
