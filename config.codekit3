@@ -2044,6 +2044,19 @@
 		"oS": 0,
 		"uL": 0
 		},
+	"\/css\/scss\/vendor\/_data-tables.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/scss\/css\/_data-tables.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 0
+		},
 	"\/css\/scss\/vendor\/_dropzone.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -3719,6 +3732,12 @@
 		"oF": 1,
 		"sC": 1,
 		"tS": 0
+		},
+	"\/js\/libs\/DataTables.zip": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/js\/libs\/DataTables.zip",
+		"oF": 0
 		},
 	"\/js\/libs\/dropzone-4.3.0.zip": {
 		"ft": 8192,

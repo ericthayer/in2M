@@ -812,46 +812,46 @@ document.documentElement.className += " enhanced";
 
  
 	// initialize modules
-	$( document ).trigger( "enhance" );
+	$( document ).trigger( 'enhance' );
   
-  $("[data-append],[data-replace],[data-after],[data-before]").ajaxInclude();
+  $('[data-append],[data-replace],[data-after],[data-before]').ajaxInclude();
 
-  $( ".date-input" ).datepicker({
+  $( '.date-input' ).datepicker({
   	inline: true,
   	changeMonth: true,
   	changeYear: true,
   	minDate: new Date(2016, 1 - 1, 1)
   });
   
-  //$( ".date-input" ).datepicker("dialog");
+  //$( '.date-input' ).datepicker('dialog');
   
-  $( ".dob-input" ).datepicker({
+  $( '.dob-input' ).datepicker({
     inline: true,
   	changeMonth: true,
   	changeYear: true,
-  	defaultDate: "01/01/1998",
-  	maxDate: "12/31/1998",
-  	yearRange: "c-20:c+20"
+  	defaultDate: '01/01/1998',
+  	maxDate: '12/31/1998',
+  	yearRange: 'c-20:c+20'
   });
   
   // quick toggle show/hide
   
-  $(".toggle-hidden").focus(function() {
+  $('.toggle-hidden').focus(function() {
     $(this).parent().parent().next('.hide').removeClass('hide').addClass('show').attr('aria-hidden' , 'false');
   });
   
   
-  $(".toggle-hide-button").on('click' , function() {
+  $('.toggle-hide-button').on('click' , function() {
     $(this).parent('.show').removeClass('show').addClass('hide').attr('aria-hidden' , 'true');
   });
   
-  $(".toggle-button").on('click' , function() {
+  $('.toggle-button').on('click' , function() {
     $(this).next('.toggle-hide').toggleClass('hide, x-sm-hide');
   });
   
   // toggle checkbox
   
-  $(".checkbox-toggle").on('click' , function() {
+  $('.checkbox-toggle').on('click' , function() {
     $(this).parent().parent('.form-row').next('.toggle-disabled').toggleClass('disabled').find('.toggle-input').removeAttr('disabled').val('');
     $(this).parent().parent('.form-row').next('.toggle-disabled').find('.checkbox-toggle').removeAttr('checked');
     
