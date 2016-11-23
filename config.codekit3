@@ -2237,6 +2237,12 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/data\/data-sample.txt": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/data\/data-sample.txt",
+		"oF": 0
+		},
 	"\/email\/cerberus-hybrid.html": {
 		"ft": 8192,
 		"oA": 0,
@@ -4089,6 +4095,15 @@
 		"oA": 1,
 		"oAP": "\/js\/libs\/min\/mobile-nav-min.js",
 		"oF": 1,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/js\/libs\/pdfmake.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/libs\/min\/pdfmake.min-min.js",
+		"oF": 0,
 		"sC": 1,
 		"tS": 0
 		},
