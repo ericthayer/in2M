@@ -38,16 +38,28 @@
   }  
 }
 
+@keyframes fade-out-in {
+  0% {
+    opacity: 1;
+  } 
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 0;
+  }  
+}
+
 @mixin fade-in {
-  animation: fade-in .4s linear;
-  animation-fill-mode: forwards;
-  transition: opacity .4s ease;  
+  animation: fade-in .4s forwards ease;  
 }
 
 @mixin fade-out {
-  animation: fade-out .4s linear;
-  animation-fill-mode: forwards;
-  transition: opacity .4s ease;  
+  animation: fade-out .4s forwards ease;  
+}
+
+@mixin fade-out-in {
+  animation: fade-out-in .4s both ease;  
 }
 
 /// Slightly lighten a color

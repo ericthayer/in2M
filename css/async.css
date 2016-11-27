@@ -30,6 +30,28 @@
     opacity: 0;
   }
 }
+@-webkit-keyframes fade-out-in {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade-out-in {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .clearfix:before, .clearfix:after {
   content: "";
   display: block;
@@ -53,12 +75,8 @@
   line-height: 1;
   font-size: .875rem;
   text-align: center;
-  -webkit-animation: fade-in .4s linear;
-          animation: fade-in .4s linear;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-transition: opacity .4s ease;
-  transition: opacity .4s ease;
+  -webkit-animation: fade-in .4s forwards ease;
+          animation: fade-in .4s forwards ease;
   z-index: 10000;
   content: attr(data-tooltip);
 }
