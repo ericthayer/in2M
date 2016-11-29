@@ -16,8 +16,10 @@ var navigation = responsiveNav(".nav-collapse", {
 });
 
 
-var navicon = document.getElementById('#nav-toggle');
+var navicon = document.getElementById('nav-toggle');
 
-    navicon.onmousedown = function() {
-    navicon.setAttribute("class", "active");
-};
+if(navicon){
+    navicon.addEventListener("click", function() {
+    this.setAttribute("class", "active");
+  });
+}
