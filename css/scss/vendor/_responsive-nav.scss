@@ -1,49 +1,52 @@
 // ! responsive-nav.js 1.0.39 by @viljamis
 
-.js-nav .nav-collapse {
-  clip: rect(0 0 0 0);
-  right: 0; 	
-  position: relative;
-  display: block;
-  overflow: hidden;
-  zoom: 1;
+.nav-collapse {
+  overflow: visible;
+    
+  > ul {
+    width: 100%;
+  }
+  
+  li {
+    width: 100%;
+  }
+  
+  &.opened {
+  	margin-bottom: 0;
+    max-height: 9999px;
+  }
+
+}
+
+// if JS is working
+
+.js-nav {
+  
+  .nav-collapse {
+    max-height: 0;
+    clip: rect(0 0 0 0);
+    right: 0; 	
+    position: relative;
+    display: block;
+    overflow: hidden;
+    zoom: 1; 
+  } 
+  
 }
 
 // < 640
-@media (max-width: $break-ml-phone) {
-  .js-nav .nav-collapse {
-    max-height: 0;
-  }
+@media (min-width: $break-ml-phone) {
+  
   .nav-collapse {
-    max-height: 0;
-  } 
+    max-height: 100%;
+    .js-nav & {
+      max-height: 100%; 
+    }
+  }
+  
 }
 
-.no-js .nav-collapse {
-  overflow: visible;
-  //max-height: 100%; 
-}
-
-.nav-collapse > ul {
-  width: 100%;
-}
-
-.nav-collapse li {
-  width: 100%;
-  //display: block;
-}
-
-.nav-collapse.opened {
-	margin-bottom: 0;
-  max-height: 9999px;
-  //overflow-y: auto;
-}
-
-
-.js-nav .main-nav .nav-collapse-0.opened {
-  //max-height: 100% !important;  
-}
-
+// toggle button
 
 .nav-toggle {
   -webkit-tap-highlight-color: rgba(0,0,0,0);

@@ -1665,15 +1665,15 @@
 		"oS": 0,
 		"uL": 0
 		},
-	"\/css\/scss\/modules\/navigation\/_main-nav-v2.scss": {
-		"aP": 1,
+	"\/css\/scss\/modules\/navigation\/_main-nav.scss": {
+		"aP": 0,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/css\/scss\/modules\/css\/_main-nav-v2.css",
+		"oAP": "\/css\/scss\/modules\/css\/_main-nav.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 0
