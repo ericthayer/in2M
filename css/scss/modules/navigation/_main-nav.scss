@@ -3,6 +3,7 @@
 // < 640
 @media (max-width: $break-ml-phone) {
   .js-nav .nav-collapse {
+    
     &.opened.dropdown-active {
       max-height: 9999px !important;
     }
@@ -336,27 +337,16 @@ $box-size: 40px;
 	}
 }
 
-// Need to make this work w/o parent modifier class
-
-.logo {
-  //display: none;  
-}
-
-.alt-logo {
-  //display: block; 
-}
-
-.main-nav {   
-  width: 100%;   
-}
-  
-.site-title {
-  //margin-bottom: .875rem; 
-}
+// Logo & Main Nav
 
 .header-logo {
   margin: 0 auto;  
 }
+
+.main-nav {   
+  width: 100%;   
+}  
+
 
 // < 640
 @media (max-width: $break-ml-phone) {
@@ -390,10 +380,6 @@ $box-size: 40px;
     z-index: 1; 
 	}
 	
-	.main-nav {
-    //margin-top: .75rem;        
-  }
-
   .header-logo {
     margin: 0;  
     //max-width: 8em; 
@@ -416,8 +402,7 @@ $box-size: 40px;
 @media (min-width: $break-ml-phone) {
 
   .site-title { 
-    margin-bottom: 0;   
-    //text-align: center; 
+    margin-bottom: 0;    
     width: 15%;           
   }
   
@@ -433,7 +418,6 @@ $box-size: 40px;
      
   .js-nav .nav-collapse,
   .nav-collapse {  
-    //max-height: 100%;
     height: auto;
     overflow: visible;
   }
@@ -637,6 +621,9 @@ $box-size: 40px;
       }  
     }
 		
+		
+		// dropdown icon
+		
 		& > ul > li[aria-haspopup="true"] {
   		 
   		//position: relative;
@@ -655,6 +642,8 @@ $box-size: 40px;
         //width: 0.938em;	
 			}
 		}
+		
+		// sub-menun dropdown icon
 		
 		.sub-menu > li[aria-haspopup="true"] {
   		& > a {
