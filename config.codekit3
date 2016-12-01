@@ -2267,6 +2267,12 @@
 		"oAP": "\/email\/email-error.html",
 		"oF": 0
 		},
+	"\/email\/email-forgot-password.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/email\/email-forgot-password.html",
+		"oF": 0
+		},
 	"\/email\/email-invite-success.html": {
 		"ft": 8192,
 		"oA": 0,
@@ -2289,6 +2295,18 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/email\/email-master.html",
+		"oF": 0
+		},
+	"\/email\/email-registration-success.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/email\/email-registration-success.html",
+		"oF": 0
+		},
+	"\/email\/email-signup.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/email\/email-signup.html",
 		"oF": 0
 		},
 	"\/email\/email-success.html": {
@@ -2474,6 +2492,14 @@
 		"iS": 49455,
 		"oA": 0,
 		"oAP": "\/images\/content-img\/banner\/banner-alt\/img-banner-alt-XL.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/content-img\/banner\/bg-email-mobile-user-1.jpg": {
+		"ft": 16384,
+		"iS": 25531,
+		"oA": 0,
+		"oAP": "\/images\/content-img\/banner\/bg-email-mobile-user-1.jpg",
 		"oF": 0,
 		"opt": 0
 		},
