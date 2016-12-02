@@ -2297,6 +2297,12 @@
 		"oAP": "\/email\/email-master.html",
 		"oF": 0
 		},
+	"\/email\/email-purchase-package-success.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/email\/email-purchase-package-success.html",
+		"oF": 0
+		},
 	"\/email\/email-registration-success.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -2517,7 +2523,7 @@
 		"oA": 0,
 		"oAP": "\/images\/content-img\/banner\/bg-email-mobile-user-light.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/images\/content-img\/banner\/img-banner-Charts-Green.png": {
 		"ft": 32768,
@@ -2525,7 +2531,7 @@
 		"oA": 0,
 		"oAP": "\/images\/content-img\/banner\/img-banner-Charts-Green.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/images\/content-img\/banner\/img-banner-Charts-Green.svg": {
 		"ft": 2097152,
@@ -2761,7 +2767,7 @@
 		"oA": 0,
 		"oAP": "\/images\/content-img\/banner\/img-email-banner-welcome.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/images\/content-img\/banner\/img-email-banner-welcome.svg": {
 		"ft": 2097152,
@@ -3415,6 +3421,26 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/images\/UI\/ui-icons\/icon-id-card-orange.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/images\/UI\/ui-icons\/icon-id-card-orange.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/images\/UI\/ui-icons\/icon-id-card.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/images\/UI\/ui-icons\/icon-id-card.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/images\/UI\/ui-icons\/icon-list.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -3482,6 +3508,14 @@
 		"iS": 2894,
 		"oA": 0,
 		"oAP": "\/images\/UI\/ui-png\/icon-check-orange-cir.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/UI\/ui-png\/icon-id-card-orange.png": {
+		"ft": 32768,
+		"iS": 2024,
+		"oA": 0,
+		"oAP": "\/images\/UI\/ui-png\/icon-id-card-orange.png",
 		"oF": 0,
 		"opt": 0
 		},
