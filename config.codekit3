@@ -2297,6 +2297,12 @@
 		"oAP": "\/email\/email-master.html",
 		"oF": 0
 		},
+	"\/email\/email-purchase-addon-success.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/email\/email-purchase-addon-success.html",
+		"oF": 0
+		},
 	"\/email\/email-purchase-package-success.html": {
 		"ft": 8192,
 		"oA": 2,
