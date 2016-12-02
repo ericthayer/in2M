@@ -1,0 +1,650 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta charset="utf-8">
+	<!-- utf-8 works for most cases -->
+	<meta name="viewport" content="width=device-width">
+	<!-- Forcing initial-scale shouldn't be necessary -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Use the latest (edge) version of IE rendering engine -->
+	<meta name="x-apple-disable-message-reformatting">
+	<!-- Disable auto-scale in iOS 10 Mail entirely -->
+	<title>in2Marketplace Purchase Add-on Success</title>
+	<!-- The title tag shows in email notifications, like Android 4.4. -->
+
+	<!-- Web Font / @font-face : BEGIN -->
+	<!-- NOTE: If web fonts are not required, lines 9 - 26 can be safely removed. -->
+
+	<!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. -->
+	<!--[if mso]>
+        <style>
+            * {
+                font-family: sans-serif !important;
+            }
+        </style>
+    <![endif]-->
+
+	<!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
+	<!--[if !mso]>
+  <style>
+    @font-face {
+      font-family: 'Whitney-Bold';
+      src: url('../css/fonts/WhitneyHTF-Bold.woff2') format('woff2'),
+          url('../css/fonts/WhitneyHTF-Bold.woff') format('woff'),
+          url('../css/fonts/WhitneyHTF-Bold.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Whitney-SemiBold';
+      src: url('../css/fonts/WhitneyHTF-SemiBold.woff2') format('woff2'),
+          url('../css/fonts/WhitneyHTF-SemiBold.woff') format('woff'),
+          url('../css/fonts/WhitneyHTF-SemiBold.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Whitney-Medium';
+      src: url('../css/fonts/WhitneyHTF-Medium.woff2') format('woff2'),
+          url('../css/fonts/WhitneyHTF-Medium.woff') format('woff'),
+          url('../css/fonts/WhitneyHTF-Medium.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+    
+  </style>
+  <![endif]-->
+
+	<!-- Web Font / @font-face : END -->
+
+	<!-- CSS Reset -->
+	<style>
+		/* What it does: Allows for our custom font-family "Whitney" */
+		
+		@font-face {
+			font-family: 'Whitney-Bold';
+			src: url('../css/fonts/WhitneyHTF-Bold.woff2') format('woff2'), url('../css/fonts/WhitneyHTF-Bold.woff') format('woff'), url('../css/fonts/WhitneyHTF-Bold.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+		
+		@font-face {
+			font-family: 'Whitney-SemiBold';
+			src: url('../css/fonts/WhitneyHTF-SemiBold.woff2') format('woff2'), url('../css/fonts/WhitneyHTF-SemiBold.woff') format('woff'), url('../css/fonts/WhitneyHTF-SemiBold.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+		
+		@font-face {
+			font-family: 'Whitney-Medium';
+			src: url('../css/fonts/WhitneyHTF-Medium.woff2') format('woff2'), url('../css/fonts/WhitneyHTF-Medium.woff') format('woff'), url('../css/fonts/WhitneyHTF-Medium.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+
+		/* What it does: Remove spaces around the email design added by some email clients. */
+		/* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+		
+		html,
+		body {
+			margin: 0 auto !important;
+			padding: 0 !important;
+			height: 100% !important;
+			width: 100% !important;
+		}
+		/* What it does: Stops email clients resizing small text. */
+		
+		* {
+			-ms-text-size-adjust: 100%;
+			-webkit-text-size-adjust: 100%;
+		}
+		/* What it does: Centers email on Android 4.4 */
+		
+		div[style*="margin: 16px 0"] {
+			margin: 0 !important;
+		}
+		/* What it does: Stops Outlook from adding extra spacing to tables. */
+		
+		table,
+		td {
+			mso-table-lspace: 0pt !important;
+			mso-table-rspace: 0pt !important;
+		}
+		/* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+		
+		table {
+			border-spacing: 0 !important;
+			border-collapse: collapse !important;
+			table-layout: fixed !important;
+			margin: 0 auto !important;
+		}
+		
+		table table table {
+			table-layout: auto;
+		}
+		/* What it does: Uses a better rendering method when resizing images in IE. */
+		
+		img {
+			-ms-interpolation-mode: bicubic;
+		}
+		/* What it does: A work-around for iOS meddling in triggered links. */
+		
+		.mobile-link--footer a,
+		a[x-apple-data-detectors] {
+			color: inherit !important;
+			text-decoration: underline !important;
+		}
+
+    .button-sm {
+      margin: 0 auto; 
+      max-width: 7em;
+    }
+
+	</style>
+
+	<!-- Progressive Enhancements -->
+	<style>
+		/* What it does: Hover styles for buttons */
+		
+		.button-td,
+		.button-a {
+			transition: all 100ms ease-in;
+		}
+		
+		.button-a:hover {
+			background: #659c1e !important;
+			border-color: #659c1e !important;
+		}
+
+		/* Media Queries */
+
+    @media screen and (max-width: 240px) {
+      .logo-td {
+        width: 100% !important;
+      }
+    }
+		
+		@media screen and (max-width: 480px) {
+			/* What it does: Forces elements to resize to the full width of their container. Useful for resizing images beyond their max-width. */
+			.fluid {
+				width: 100% !important;
+				max-width: 100% !important;
+				height: auto !important;
+				margin-left: auto !important;
+				margin-right: auto !important;
+			}
+			/* What it does: Forces table cells into full-width rows. */
+			.stack-column,
+			.stack-column-center {
+				display: block !important;
+				width: 100% !important;
+				max-width: 100% !important;
+				direction: ltr !important;
+			}
+			/* And center justify these ones. */
+			.stack-column-center {
+				text-align: center !important;
+			}
+			/* What it does: Generic utility class for centering. Useful for images, buttons, and nested tables. */
+			.center-on-narrow {
+				text-align: center !important;
+				display: block !important;
+				margin-left: auto !important;
+				margin-right: auto !important;
+				float: none !important;
+			}
+			table.center-on-narrow {
+				display: inline-block !important;
+			}
+		}
+
+    /* What it does: Allows for smaller buttons on larger screens */
+		@media screen and (min-width: 481px) {
+			.button-td-sm {
+				display: inline-block !important;
+				/* margin-left: 5px !important; */
+			}
+			.button-sm {
+				min-width: 7em !important;
+				width: auto !important;
+			}
+
+		}
+
+	</style>
+
+</head>
+
+<body width="100%" bgcolor="#dddddd" style="margin: 0;">
+	<center align="left" style="width: 100%; background: #dddddd;">
+
+		<!-- Visually Hidden Preheader Text : BEGIN -->
+		<div style="display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;font-family: sans-serif;">
+			(Optional) This text will appear in the inbox preview, but not the email body.
+		</div>
+		<!-- Visually Hidden Preheader Text : END -->
+
+		<!--    
+      Set the email width. Defined in two places:
+      1. max-width for all clients except Desktop Windows Outlook, allowing the email to squish on narrow but never go wider than 680px.
+      2. MSO tags for Desktop Windows Outlook enforce a 680px width.
+      Note: The Fluid and Responsive templates have a different width (600px). The hybrid grid is more "fragile", and I've found that 680px is a good width. Change with caution.  
+    -->
+		<div style="max-width: 680px; margin: auto;">
+			<!--[if mso]>
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="680" align="left">
+        <tr>
+        <td>
+      <![endif]-->
+
+			<!-- Email Header : BEGIN -->
+			<table role="presentation" bgcolor="#ffffff" cellspacing="0" cellpadding="0" border="0" align="left" width="100%" style="max-width: 680px;">
+				<tr>
+					<td style="padding: 30px;" class="logo-td">
+						<img src="../images/UI/ui-png/in2m-logo-color.png" width="125" height="" alt="in2Marketplace.com" border="0" style="background: none; font-family: sans-serif; font-size: 16px; mso-height-rule: exactly; line-height: 22px; color: #333333; max-width: 100%; min-width: 100px;">
+					</td>
+          <td style="padding: 30px; text-align: right;">
+						<img src="../images/UI/ui-png/icon-check-cir.png" width="65" height="" alt="success icon" border="0" style="background: none; font-family: sans-serif; font-size: 16px; mso-height-rule: exactly; line-height: 0; color: #333333;">
+					</td>
+				</tr>
+			</table>
+			<!-- Email Header : END -->
+
+			<!-- Email Body : BEGIN -->
+			<table role="presentation" cellspacing="0" cellpadding="0" border="0" align="left" width="100%" style="max-width: 680px;">
+
+        <!-- Header : BEGIN -->
+				<tr>
+					<td bgcolor="#52bba0" style="padding: 0 30px 20px; text-align: left;">
+						<h2 style="color: #ffffff; font-family: 'Whitney-SemiBold', Helvetica, sans-serif; font-size: 28px; margin-bottom: 0;">Purchase Successful</h2>
+					</td>
+				</tr>
+				<!-- Header : END -->
+
+        <!-- Sub Header : BEGIN -->
+				<tr>
+					<td bgcolor="#ffffff" style="color: #888888; font-family: 'Whitney-SemiBold', Helvetica, sans-serif; font-size: 16px; letter-spacing: 1px; padding: 30px 30px 15px; text-transform: uppercase;">Order Summary</td>
+				</tr>
+				<!-- Sub Header : END -->
+
+				<!-- Border Spacer : BEGIN -->
+				<tr>
+					<td bgcolor="#ffffff" style="background-color: #ffffff; font-size: 0; line-height: 0; padding: 0 30px;">
+						<span style="border-bottom: 1px solid #dddddd; display:block; margin: 0 auto;">&nbsp;</span>
+					</td>
+				</tr>
+				<!-- Border Spacer : END -->
+
+        <!-- Text Row : BEGIN -->
+				<tr>
+					<!-- dir=ltr is where the magic happens. This can be changed to dir=rtl to swap the alignment on wide while maintaining stack order on narrow. -->
+					<td dir="ltr" bgcolor="#ffffff" align="left" height="100%" valign="top" width="100%" style="padding: 30px;">
+						<!--[if mso]>
+                        <table role="presentation" border="0" cellspacing="0" cellpadding="0" align="left" width="660">
+                        <tr>
+                        <td align="left" valign="top" width="660">
+                        <![endif]-->
+						<table role="presentation" border="0" cellpadding="0" cellspacing="0" align="left" width="100%" style="max-width:660px;">
+							<tr>
+								<td align="left" valign="top" style="font-size:0;">
+
+										<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+  										<!-- Order Recipt : BEGIN -->
+											<tr>
+												<td dir="ltr" bgcolor="#f8f8f8" style="font-family: 'Whitney-Medium', Helvetica, sans-serif; font-size: 17px; mso-height-rule: exactly; line-height: 24px; color: #333333; padding: 20px; text-align: left !important;"
+													class="center-on-narrow">
+                          <!-- Thank You Header -->
+													<strong style="color:#111111; display: inline-block; font-family: 'Whitney-SemiBold', Helvetica, sans-serif; font-size: 24px; line-height: 28px; margin-bottom: 10px;">Thank you, Jenny Retailer!</strong>
+													<br>
+													<strong style="color: #111111; display: inline-block; font-family: 'Whitney-SemiBold', Helvetica, sans-serif; font-size: 18px; line-height: 24px; padding-bottom: 10px; width: 100%;">You added <span style="color: #89C43B; font-size: 20px;">1,500</span> SMS/Email messages to your account balance</strong>
+													<!-- Border Spacer : BEGIN ** DO NOT DELETE ** -->
+													<br>
+													<strong style="border-bottom: 1px solid #dddddd; color: #111111; display: inline-block; font-family: 'Whitney-SemiBold', Helvetica, sans-serif; font-size: 18px; line-height: 1; width: 100%;">&nbsp;</strong>
+													<br>
+													<br>
+													<!-- Border Spacer : END -->
+													
+													<!-- Order Number : BEGIN -->
+													<strong style="color: #111111; display: inline-block; font-family: 'Whitney-SemiBold', Helvetica, sans-serif; font-size: 20px; line-height: 24px; margin-bottom: 10px; text-transform: uppercase;">order&nbsp;&nbsp;- 5623984712</strong>
+													<br>
+													<!-- Order Number : END -->
+													
+													<!-- Billing Date : BEGIN -->
+													<strong style="color: #111111; display: inline-block; font-family: 'Whitney-SemiBold', Helvetica, sans-serif; font-size: 18px; line-height: 24px; margin-bottom: 5px;">billing date:&nbsp;&nbsp; <span style="color: #888888;">December 14, 2016</span></strong>
+                          <br>
+                          <!-- Billing Date : END -->
+                          
+                          <!-- Add-on Selected : BEGIN -->
+                          <strong style="color: #111111; display: inline-block; font-family: 'Whitney-SemiBold', Helvetica, sans-serif; font-size: 18px; line-height: 24px; margin-bottom: 5px;">add-on selected:&nbsp;&nbsp; <span style="color: #888888;">+ 1500 - SMS/Emails</span></strong>
+                          <br>
+                          <!-- Package Selected : END -->
+                          
+                          <!-- New Balance : BEGIN -->
+                          <strong style="color: #111111; display: inline-block; font-family: 'Whitney-SemiBold', Helvetica, sans-serif; font-size: 18px; line-height: 24px; margin-bottom: 5px;">new balance:&nbsp;&nbsp; <span style="color: #888888;">1,847 SMS / 2,268 Emails</span></strong>
+                          <br>
+                          <!-- New Balance : END -->
+                          
+                          <!-- Payment Type : BEGIN -->
+                          <strong style="color: #111111; display: inline-block; font-family: 'Whitney-SemiBold', Helvetica, sans-serif; font-size: 18px; line-height: 24px; margin-bottom: 5px; width: 100%;">payment type:&nbsp;&nbsp; <span style="color: #888888;">one time</span></strong>
+                          <br>
+                          <!-- Payment Type : END -->
+                          
+                          <!-- Card Charged : BEGIN -->
+                          <strong style="color: #111111; display: inline-block; font-family: 'Whitney-SemiBold', Helvetica, sans-serif; font-size: 18px; line-height: 24px; margin-bottom: 5px;">card charged:&nbsp;&nbsp; <span style="color: #888888;">**** **** **** 5678</span></strong>
+                          <br>
+                          <!-- Card Charged : END -->
+                          
+                          <!-- Total Charged : BEGIN -->
+                          <strong style="color: #111111; display: inline-block; font-family: 'Whitney-SemiBold', Helvetica, sans-serif; font-size: 18px; line-height: 24px; margin-bottom: 15px;">total charge:&nbsp;&nbsp; <span style="color: #888888;">
+                            <!-- MONTHLY -->
+                            $250.00
+                            </span>
+                          </strong>
+                          <br>
+                          <!-- Total Charged : END -->
+                          
+                          <!-- Terms & Account links -->
+                          <a href="#" style="color: #1e99e6; font-size: 16px; margin-right: 10px; text-decoration: none;">Terms & Conditions</a>&nbsp;<a href="#" style="color: #1e99e6; font-size: 16px; margin-right: 10px; text-decoration: none;">View <!-- Upgrade --> Account</a>                                                    
+												</td>
+											</tr>
+											<!-- Order Recipt : END -->
+											
+											<!-- Thank You Text : BEGIN -->
+											<tr>
+												<td dir="ltr" style="font-family: 'Whitney-Medium', Helvetica, sans-serif; font-size: 17px; mso-height-rule: exactly; line-height: 24px; color: #333333; text-align: left !important;"
+													class="center-on-narrow">
+  													<br>   
+													You are all now apart of the best marketing and messaging platform on the market. Together we are partners working towards your success. Below you will find some tips to help you get started using in2Marketplace and make your business get the visibility needed to grow. Let us know how we can help you get started.
+													<br>
+												</td>
+											</tr>
+											<!-- Thank You Text : END -->											
+										</table>
+								
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<!-- Text Row : END -->
+
+				<!-- Thumbnail Left, Text Right : BEGIN -->
+				<tr>
+					<!-- dir=ltr is where the magic happens. This can be changed to dir=rtl to swap the alignment on wide while maintaining stack order on narrow. -->
+					<td dir="ltr" bgcolor="#ffffff" align="left" height="100%" valign="top" width="100%" style="padding: 15px 20px 30px;">
+						<!--[if mso]>
+                        <table role="presentation" border="0" cellspacing="0" cellpadding="0" align="left" width="660">
+                        <tr>
+                        <td align="left" valign="top" width="660">
+                        <![endif]-->
+						<table role="presentation" border="0" cellpadding="0" cellspacing="0" align="left" width="100%" style="max-width:660px;">
+							<tr>
+								<td align="left" valign="top" style="font-size:0;">
+									<!--[if mso]>
+                                    <table role="presentation" border="0" cellspacing="0" cellpadding="0" align="left" width="660">
+                                    <tr>
+                                    <td align="left" valign="top" width="220">
+                                    <![endif]-->
+									<div style="display:inline-block; max-width: 33.33%; min-width:120px; vertical-align:top; width:100%;" class="stack-column">
+										<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+											<tr>
+												<td dir="ltr" style="padding: 0 20px 20px 10px;" class="thumb-td">
+													<img src="http://placehold.it/200" width="200" height="" border="0" alt="alt_text" class="center-on-narrow" style="width: 100%; margin: 0 !important; max-width: 200px; background: #dddddd; font-family: sans-serif; font-size: 16px; mso-height-rule: exactly; line-height: 22px; color: #333333;">
+												</td>
+											</tr>
+										</table>
+									</div>
+									<!--[if mso]>
+                                    </td>
+                                    <td align="left" valign="top" width="440">
+                                    <![endif]-->
+									<div style="display:inline-block; max-width:66.66%; vertical-align:top;" class="stack-column">
+										<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+											<tr>
+												<td dir="ltr" style="font-family: 'Whitney-Medium', Helvetica, sans-serif; font-size: 16px; mso-height-rule: exactly; line-height: 22px; color: #333333; padding: 0 10px 0; text-align: left !important;"
+													class="center-on-narrow">
+													<strong style="color:#111111; display: inline-block; font-family: 'Whitney-SemiBold', Helvetica, sans-serif; font-size: 24px; line-height: 28px; margin-bottom: 10px;">Create User Accounts</strong>
+													<br>Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+													<br><br>
+													<!-- Button : Begin -->
+													<table role="presentation" cellspacing="0" cellpadding="0" border="0" class="center-on-narrow" style="float:left;">
+														<tr>
+															<td style="text-align: center;" class="button-td">
+																<a href="http://www.in2marketplace.com" style="background: #8bc63f; border-radius: 35px; border: 15px solid #8bc63f; font-family: 'Whitney-SemiBold', Helvetica, sans-serif; font-size: 17px; line-height: 1.1; text-align: center; text-decoration: none; display: block; font-weight: bold;" class="button-a">
+																														&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#ffffff">View Profile</span>&nbsp;&nbsp;&nbsp;&nbsp;</a>
+															</td>
+														</tr>
+													</table>
+													<!-- Button : END -->
+												</td>
+											</tr>
+										</table>
+									</div>
+									<!--[if mso]>
+                                    </td>
+                                    </tr>
+                                    </table>
+                                    <![endif]-->
+								</td>
+							</tr>
+						</table>
+						<!--[if mso]>
+                        </td>
+                        </tr>
+                        </table>
+                        <![endif]-->
+					</td>
+				</tr>
+				<!-- Thumbnail Left, Text Right : END -->
+				
+				<!-- Thumbnail Left, Text Right : BEGIN -->
+				<tr>
+					<!-- dir=ltr is where the magic happens. This can be changed to dir=rtl to swap the alignment on wide while maintaining stack order on narrow. -->
+					<td dir="ltr" bgcolor="#ffffff" align="left" height="100%" valign="top" width="100%" style="padding: 15px 20px 30px;">
+						<!--[if mso]>
+                        <table role="presentation" border="0" cellspacing="0" cellpadding="0" align="left" width="660">
+                        <tr>
+                        <td align="left" valign="top" width="660">
+                        <![endif]-->
+						<table role="presentation" border="0" cellpadding="0" cellspacing="0" align="left" width="100%" style="max-width:660px;">
+							<tr>
+								<td align="left" valign="top" style="font-size:0;">
+									<!--[if mso]>
+                                    <table role="presentation" border="0" cellspacing="0" cellpadding="0" align="left" width="660">
+                                    <tr>
+                                    <td align="left" valign="top" width="220">
+                                    <![endif]-->
+									<div style="display:inline-block; max-width: 33.33%; min-width:120px; vertical-align:top; width:100%;" class="stack-column">
+										<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+											<tr>
+												<td dir="ltr" style="padding: 0 20px 20px 10px;" class="thumb-td">
+													<img src="http://placehold.it/200" width="200" height="" border="0" alt="alt_text" class="center-on-narrow" style="width: 100%; margin: 0 !important; max-width: 200px; background: #dddddd; font-family: sans-serif; font-size: 16px; mso-height-rule: exactly; line-height: 22px; color: #333333;">
+												</td>
+											</tr>
+										</table>
+									</div>
+									<!--[if mso]>
+                                    </td>
+                                    <td align="left" valign="top" width="440">
+                                    <![endif]-->
+									<div style="display:inline-block; max-width:66.66%; vertical-align:top;" class="stack-column">
+										<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+											<tr>
+												<td dir="ltr" style="font-family: 'Whitney-Medium', Helvetica, sans-serif; font-size: 16px; mso-height-rule: exactly; line-height: 22px; color: #333333; padding: 0 10px 0; text-align: left !important;"
+													class="center-on-narrow">
+													<strong style="color:#111111; display: inline-block; font-family: 'Whitney-SemiBold', Helvetica, sans-serif; font-size: 24px; line-height: 28px; margin-bottom: 10px;">Import Contact List</strong>
+													<br>Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+													<br><br>
+													<!-- Button : Begin -->
+													<table role="presentation" cellspacing="0" cellpadding="0" border="0" class="center-on-narrow" style="float:left;">
+														<tr>
+															<td style="text-align: center;" class="button-td">
+																<a href="http://www.in2marketplace.com" style="background: #8bc63f; border-radius: 35px; border: 15px solid #8bc63f; font-family: 'Whitney-SemiBold', Helvetica, sans-serif; font-size: 17px; line-height: 1.1; text-align: center; text-decoration: none; display: block; font-weight: bold;" class="button-a">
+																														&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#ffffff">Add Contacts</span>&nbsp;&nbsp;&nbsp;&nbsp;</a>
+															</td>
+														</tr>
+													</table>
+													<!-- Button : END -->
+												</td>
+											</tr>
+										</table>
+									</div>
+									<!--[if mso]>
+                                    </td>
+                                    </tr>
+                                    </table>
+                                    <![endif]-->
+								</td>
+							</tr>
+						</table>
+						<!--[if mso]>
+                        </td>
+                        </tr>
+                        </table>
+                        <![endif]-->
+					</td>
+				</tr>
+				<!-- Thumbnail Left, Text Right : END -->
+				
+				<!-- Thumbnail Left, Text Right : BEGIN -->
+				<tr>
+					<!-- dir=ltr is where the magic happens. This can be changed to dir=rtl to swap the alignment on wide while maintaining stack order on narrow. -->
+					<td dir="ltr" bgcolor="#ffffff" align="left" height="100%" valign="top" width="100%" style="padding: 15px 20px 30px;">
+						<!--[if mso]>
+                        <table role="presentation" border="0" cellspacing="0" cellpadding="0" align="left" width="660">
+                        <tr>
+                        <td align="left" valign="top" width="660">
+                        <![endif]-->
+						<table role="presentation" border="0" cellpadding="0" cellspacing="0" align="left" width="100%" style="max-width:660px;">
+							<tr>
+								<td align="left" valign="top" style="font-size:0;">
+									<!--[if mso]>
+                                    <table role="presentation" border="0" cellspacing="0" cellpadding="0" align="left" width="660">
+                                    <tr>
+                                    <td align="left" valign="top" width="220">
+                                    <![endif]-->
+									<div style="display:inline-block; margin: 0 -2px; max-width: 33.33%; min-width:120px; vertical-align:top; width:100%;" class="stack-column">
+										<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+											<tr>
+												<td dir="ltr" style="padding: 0 20px 20px 10px;" class="thumb-td">
+													<img src="http://placehold.it/200" width="200" height="" border="0" alt="alt_text" class="center-on-narrow" style="width: 100%; margin: 0 !important; max-width: 200px; background: #dddddd; font-family: sans-serif; font-size: 16px; mso-height-rule: exactly; line-height: 22px; color: #333333;">
+												</td>
+											</tr>
+										</table>
+									</div>
+									<!--[if mso]>
+                                    </td>
+                                    <td align="left" valign="top" width="440">
+                                    <![endif]-->
+									<div style="display:inline-block; margin: 0 -2px; max-width:66.66%; vertical-align:top;" class="stack-column">
+										<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+											<tr>
+												<td dir="ltr" style="font-family: 'Whitney-Medium', Helvetica, sans-serif; font-size: 16px; mso-height-rule: exactly; line-height: 22px; color: #333333; padding: 0 10px 0; text-align: left !important;"
+													class="center-on-narrow">
+													<strong style="color:#111111; display: inline-block; font-family: 'Whitney-SemiBold', Helvetica, sans-serif; font-size: 24px; line-height: 28px; margin-bottom: 10px;">Launch Email Campaign</strong>
+													<br>Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+													<br><br>
+													<!-- Button : Begin -->
+													<table role="presentation" cellspacing="0" cellpadding="0" border="0" class="center-on-narrow" style="float:left;">
+														<tr>
+															<td style="text-align: center;" class="button-td">
+																<a href="http://www.in2marketplace.com" style="background: #8bc63f; border-radius: 35px; border: 15px solid #8bc63f; font-family: 'Whitney-SemiBold', Helvetica, sans-serif; font-size: 17px; line-height: 1.1; text-align: center; text-decoration: none; display: block; font-weight: bold;" class="button-a">
+																														&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#ffffff">Get Started</span>&nbsp;&nbsp;&nbsp;&nbsp;
+																												</a>
+															</td>
+														</tr>
+													</table>
+													<!-- Button : END -->
+												</td>
+											</tr>
+										</table>
+									</div>
+									<!--[if mso]>
+                                    </td>
+                                    </tr>
+                                    </table>
+                                    <![endif]-->
+								</td>
+							</tr>
+						</table>
+						<!--[if mso]>
+                        </td>
+                        </tr>
+                        </table>
+                        <![endif]-->
+					</td>
+				</tr>
+				<!-- Thumbnail Left, Text Right : END -->
+				
+				<!-- Background Image with Text : BEGIN -->
+				<tr>
+					<!-- Bulletproof Background Images c/o https://backgrounds.cm -->
+					<td background="../images/content-img/banner/bg-email-mobile-user-light.png" bgcolor="#222222" valign="middle" style="text-align: center; background-position: center center !important; background-size: cover !important;">
+						<!--[if gte mso 9]>
+                        <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:680px;height:175px; background-position: center center !important;">
+                        <v:fill type="tile" src="../images/content-img/banner/bg-email-mobile-user-dark.jpg" color="#222222" />
+                        <v:textbox inset="0,0,0,0">
+                        <![endif]-->
+						<div>
+							<!--[if mso]>
+                            <table role="presentation" border="0" cellspacing="0" cellpadding="0" align="center" width="500">
+                            <tr>
+                            <td align="center" valign="top" width="500">
+                            <![endif]-->
+							<table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center" width="100%" style="max-width: 550px; margin: auto;">
+							<tr>
+									<td valign="middle" style="text-align: center; padding: 40px 20px 15px; font-family: 'Whitney-SemiBold', Helvetica, sans-serif; font-size: 20px; mso-height-rule: exactly; line-height: 30px; color: #ffffff;">We are with you every step of the way. Our support team has the tools and resources to get you started quickly.</td>
+								</tr>
+								<tr>
+									<td style="padding-bottom: 40px; text-align: center;" class="button-td">
+										<a href="http://www.in2marketplace.com" style="background: transparent; border-radius: 35px; border: 5px solid #ffffff; font-family: 'Whitney-SemiBold', Helvetica, sans-serif; font-size: 17px; line-height: 1.1; text-align: center; text-decoration: none; display: block; font-weight: bold; margin-right: auto; margin-left: auto; max-width: 7em; padding: 15px 25px;"
+											class="button-a">
+																								&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#ffffff">Help Center</span>&nbsp;&nbsp;&nbsp;&nbsp;
+																						</a>
+									</td>
+								</tr>
+							</table>
+							<!--[if mso]>
+                            </td>
+                            </tr>
+                            </table>
+                            <![endif]-->
+						</div>
+						<!--[if gte mso 9]>
+                        </v:textbox>
+                        </v:rect>
+                        <![endif]-->
+					</td>
+				</tr>
+				<!-- Background Image with Text : END -->        
+
+			</table>
+			<!-- Email Body : END -->
+
+			<!-- Email Footer : BEGIN -->
+			<table role="presentation" cellspacing="0" cellpadding="0" border="0" align="left" width="100%" style="max-width: 680px;">
+				<tr>
+					<td style="padding: 40px 30px; width: 100%;font-size: 12px; font-family: sans-serif; mso-height-rule: exactly; line-height:18px; text-align: center; color: #888888;">
+						<a href="" style="color:#777777; text-decoration:underline; font-weight: bold;">View as a Web Page</a>
+						<br><br> in2Marketplace<br><span class="mobile-link--footer">123 Fake Street, SpringField, OR, 97477 US</span><br>
+						<span class="mobile-link--footer">(888) 456-7890</span>
+						<br><br>
+						<a href="#" style="color:#888888; text-decoration:underline;">help center</a> &nbsp;&bull;&nbsp; <a href="#" style="color:#888888; text-decoration:underline;">contact us</a> &nbsp;&bull;&nbsp; <a href="#" style="color:#888888; text-decoration:underline;">unsubscribe</a>
+					</td>
+				</tr>
+			</table>
+			<!-- Email Footer : END -->
+
+			<!--[if mso]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+		</div>
+	</center>
+</body>
+
+</html>
