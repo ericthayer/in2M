@@ -2273,10 +2273,10 @@
 		"oAP": "\/email\/email-forgot-password.html",
 		"oF": 0
 		},
-	"\/email\/email-invite-success.html": {
+	"\/email\/email-invite-reminder.html": {
 		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/email\/email-invite-success.html",
+		"oA": 2,
+		"oAP": "\/email\/email-invite-reminder.html",
 		"oF": 0
 		},
 	"\/email\/email-invite.html": {
@@ -2287,7 +2287,7 @@
 		},
 	"\/email\/email-master-OG.html": {
 		"ft": 8192,
-		"oA": 0,
+		"oA": 2,
 		"oAP": "\/email\/email-master-OG.html",
 		"oF": 0
 		},
