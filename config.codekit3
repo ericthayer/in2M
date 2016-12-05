@@ -2315,6 +2315,12 @@
 		"oAP": "\/email\/email-registration-success.html",
 		"oF": 0
 		},
+	"\/email\/email-renewal-addon-success.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/email\/email-renewal-addon-success.html",
+		"oF": 0
+		},
 	"\/email\/email-signup.html": {
 		"ft": 8192,
 		"oA": 2,
