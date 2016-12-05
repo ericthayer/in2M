@@ -2255,6 +2255,12 @@
 		"oAP": "\/email\/cerberus-hybrid.html",
 		"oF": 0
 		},
+	"\/email\/email-account-change-success.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/email\/email-account-change-success.html",
+		"oF": 0
+		},
 	"\/email\/email-alert.html": {
 		"ft": 8192,
 		"oA": 0,
@@ -2315,10 +2321,10 @@
 		"oAP": "\/email\/email-registration-success.html",
 		"oF": 0
 		},
-	"\/email\/email-renewal-addon-success.html": {
+	"\/email\/email-renewal-success.html": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/email\/email-renewal-addon-success.html",
+		"oAP": "\/email\/email-renewal-success.html",
 		"oF": 0
 		},
 	"\/email\/email-signup.html": {
