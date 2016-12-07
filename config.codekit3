@@ -2267,10 +2267,28 @@
 		"oAP": "\/email\/email-account-update-success.html",
 		"oF": 0
 		},
+	"\/email\/email-addon-expiring.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/email\/email-addon-expiring.html",
+		"oF": 0
+		},
 	"\/email\/email-alert.html": {
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/email\/email-alert.html",
+		"oF": 0
+		},
+	"\/email\/email-campaign-low-capacity.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/email\/email-campaign-low-capacity.html",
+		"oF": 0
+		},
+	"\/email\/email-capacity-expiring.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/email\/email-capacity-expiring.html",
 		"oF": 0
 		},
 	"\/email\/email-error.html": {
@@ -2307,6 +2325,18 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/email\/email-master.html",
+		"oF": 0
+		},
+	"\/email\/email-package-expiring.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/email\/email-package-expiring.html",
+		"oF": 0
+		},
+	"\/email\/email-package-retired.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/email\/email-package-retired.html",
 		"oF": 0
 		},
 	"\/email\/email-purchase-addon-error.html": {
@@ -2351,6 +2381,12 @@
 		"oAP": "\/email\/email-renewal-success.html",
 		"oF": 0
 		},
+	"\/email\/email-short-code-expiring.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/email\/email-short-code-expiring.html",
+		"oF": 0
+		},
 	"\/email\/email-signup.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -2361,6 +2397,12 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/email\/email-success.html",
+		"oF": 0
+		},
+	"\/email\/email-user-retired.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/email\/email-user-retired.html",
 		"oF": 0
 		},
 	"\/global-partials\/footer\/footer-blue.html": {
@@ -2708,6 +2750,24 @@
 		"oAP": "\/images\/content-img\/banner\/img-banner-MD.jpg",
 		"oF": 0,
 		"opt": 0
+		},
+	"\/images\/content-img\/banner\/img-banner-Pick-Package-light-blue.png": {
+		"ft": 32768,
+		"iS": 94429,
+		"oA": 0,
+		"oAP": "\/images\/content-img\/banner\/img-banner-Pick-Package-light-blue.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/content-img\/banner\/img-banner-Pick-Package-light-blue.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/images\/content-img\/banner\/img-banner-Pick-Package-light-blue.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/images\/content-img\/banner\/img-banner-PRICING-BLUE-trans.svg": {
 		"ft": 2097152,
