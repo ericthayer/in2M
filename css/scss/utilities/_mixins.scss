@@ -397,33 +397,37 @@
 
 @mixin circle-mask {
 	border-radius: 50%;
-	//height: 100%;
-	width: 100%;
+	display: inline-block;
 	overflow: hidden;
-  max-height: 300px;
-	max-width: 300px;
-	margin-bottom: 0;
-	img {
-  	//border-radius: 50%;
-  	overflow: hidden;
-	}
+}
+
+@mixin circle-mask-lg {
+	@include circle-mask;
+	// max height & width 300px
+	max-height: 18.75em;
+	max-width: 18.75em;
+	width: 100%;  
 }
 
 @mixin circle-mask-md {
 	@include circle-mask;
-	max-height: 300px;
-	max-width: 300px;
+	// max height & width 150px
+	max-height: 9.375em;
+	max-width: 9.375em;
+	width: 100%;  
 }
 
 @mixin circle-mask-sm {
 	@include circle-mask;
-	max-height: 150px;
-	max-width: 150px;
+	// max height & width 75px
+	max-height: 4.688em;
+	max-width: 4.688em;
+	width: 100%;  
 }
 
 @mixin rounded-mask {
 	border-radius: 15px;
-	width: 100%;
+	display: inline-block;  
 	overflow: hidden;	
 }
 

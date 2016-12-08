@@ -1,6 +1,6 @@
 // Circle Mask
 
-%circle-mask {
+.circle-mask {
 	@include circle-mask;
 	figcaption {
 		@include circle-mask;
@@ -33,6 +33,22 @@
 		float: none;		
 		text-align: center;	
 	}
+	
+	// LG mask (350px)
+	&-lg {
+  	@include circle-mask-lg;
+	}
+	
+	// MD mask (200px)
+	&-md {
+  	@include circle-mask-md;
+	}
+	
+	// SM mask (75px)
+	&-sm {
+  	@include circle-mask-sm;
+	}
+	
 }
 
 // Rounded Thumbnail

@@ -2279,6 +2279,18 @@
 		"oAP": "\/email\/email-alert.html",
 		"oF": 0
 		},
+	"\/email\/email-campaign-completion-success.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/email\/email-campaign-completion-success.html",
+		"oF": 0
+		},
+	"\/email\/email-campaign-error.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/email\/email-campaign-error.html",
+		"oF": 0
+		},
 	"\/email\/email-campaign-low-capacity.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -4729,6 +4741,12 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/super-admin\/sa-view-sales-org.html",
+		"oF": 0
+		},
+	"\/super-admin\/super-admin-dashboard.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/super-admin\/super-admin-dashboard.html",
 		"oF": 0
 		},
 	"\/super-admin\/super-admin.html": {

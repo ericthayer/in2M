@@ -59,7 +59,7 @@
           </div>
         </div>
         <!-- Site Header (Super Admin) -->
-        <header class="site-header c-white" role="banner">
+        <header class="site-header c-white hidden" role="banner">
           <!-- Nav -->
           <div class="container flex flex-wrap ai-center jc-between pt-pb-1">
             <!-- Site Logo -->
@@ -159,7 +159,7 @@
         <!-- Main Content -->
         <main class="main-content">
           <!-- Main Promo -->
-          <section class="hero-banner c-white pt-2 text-s-black-50 md-pb-4">
+          <section class="hero-banner c-white pt-2 text-s-black-50 md-pb-4 hidden">
             <!-- Hero Content -->
             <div class="container">
               <!-- Post -->
@@ -196,27 +196,8 @@
             </div>
           </section>
           
-          <!-- CTA Banner (Info & Help Buttons) -->
-          <section class="cta-banner bg-info-banner bg-no-repeat bg-cover bg-blue-20 tc-white text-center pt-pb-2 md-pt-pb-4">
-            <div class="container md-pt-pb-4">
-              <!-- Buttons -->
-              <div class="button-wrap flex flex-d-col jc-center pt-1 x-sm-flex-d-row x-sm-flex-wrap">
-                <a class="btn btn-outline btn-round c-white flex-g-1 mr-ml-a mb-1 pt-pb-1 pr-pl-3 text-lg x-sm-mr-ml-sm x-sm-mb-sm md-flex-g-0"
-                  href="#" data-remodal-target="demo-video">Discover in2M</a>
-                <a class="btn btn-outline btn-round c-white flex-g-1 mr-ml-a mb-1 pt-pb-1 pr-pl-3 text-lg x-sm-mr-ml-sm x-sm-mb-sm md-flex-g-0"
-                  href="#">Success Stories</a>
-              </div>
-              <a href="#" class="block text-center h6 mr-ml-a pt-1">
-                <svg class="icon">
-                  <use xlink:href="#icon-help" />
-                </svg>
-                Help & Support
-              </a>
-            </div>
-          </section>
-          
           <!-- Quick Dashboard Links -->
-          <section class="mod-block bg-EEE pt-pb-2">
+          <section class="mod-block bg-EEE pt-pb-4">
             <div class="container">
               <!-- Welcome Admin -->
               <div class="text-block welcome-admin text-center pt-pb-1">
@@ -225,6 +206,7 @@
               </div>
               <!-- Cards -->
               <div class="flex-grid item-mar-lg pt-1">
+                
                 <!-- Profile -->
                 <div class="card card-mini text-center w-100 sm-w-40 md-w-20">
                   <h3 class="text-sm">Profile</h3>
@@ -235,6 +217,7 @@
                     </svg>
                   </a>
                 </div>
+                
                 <!-- Sales Team -->
                 <div class="card card-mini text-center w-100 sm-w-40 md-w-20">
                   <h3 class="text-sm">Sales Team</h3>
@@ -245,6 +228,7 @@
                     </svg>
                   </a>
                 </div>
+                
                 <!-- Retail Team -->
                 <div class="card card-mini text-center w-100 sm-w-40 md-w-20">
                   <h3 class="text-sm">Retail Team</h3>
@@ -255,6 +239,7 @@
                     </svg>
                   </a>
                 </div>
+                
                 <!-- Packages -->
                 <div class="card card-mini text-center w-100 sm-w-40 md-w-20">
                   <h3 class="text-sm">Packages</h3>
@@ -265,6 +250,7 @@
                     </svg>
                   </a>
                 </div>
+                
                 <!-- Offers -->
                 <div class="card card-mini text-center w-100 sm-w-40 md-w-20">
                   <h3 class="text-sm">Offers</h3>
@@ -275,9 +261,10 @@
                     </svg>
                   </a>
                 </div>
+                
                 <!-- Notifications -->
                 <div class="card card-mini text-center w-100 sm-w-40 md-w-20">
-                  <h3 class="text-sm">Notifications</h3>
+                  <h3 class="text-sm">Social Networks</h3>
                   <a class="icon-wrap flex jc-center p-sm" href="#">
                     <svg class="icon">
                       <use xlink:href="#icon-chat-dots" />
@@ -285,6 +272,7 @@
                     </svg>
                   </a>
                 </div>
+                
                 <!-- Reports -->
                 <div class="card card-mini text-center w-100 sm-w-40 md-w-20">
                   <h3 class="text-sm">Reports</h3>
@@ -295,6 +283,7 @@
                     </svg>
                   </a>
                 </div>
+                
                 <!-- Commissions -->
                 <div class="card card-mini text-center w-100 sm-w-40 md-w-20">
                   <h3 class="text-sm">Commissions</h3>
@@ -305,848 +294,9 @@
                     </svg>
                   </a>
                 </div>
-              </div>
-            </div>
-          </section>
-          
-          <!-- Teams & Packages (two col) -->
-          <section class="two-col pt-1 pb-2">
-            <div class="container flex flex-d-col md-flex-d-row md-flex-wrap">
-              <!-- Left Col (Sales & Retail Team lists)-->
-              <div class="flex-g-1 w-100 mb-2 sm-flex sm-ai-start md-flex-d-col md-mr-1 md-mb-0 md-w-50">
-                <!-- Sales Team Row -->
-                <div class="mb-2 w-100 sm-flex sm-flex-wrap sm-ai-start sm-mb-0 sm-w-50 md-flex-d-col md-mb-2 md-w-100">
-                  <h3 class="flex-lead text-center text-md">Sales Team</h3>
-                  <!-- Sales Team - Accordion -->
-                  <div class="flex-grid sm-flex-g-1 md-w-100">
-                    <!-- Sales Team -->
-                    <div class="collapsible collapsible-expanded bg-white-80" data-collapsible-set="sales-team-01">
-                      <h4 class="collapsible-header text-md flex jc-between mb-0 p-1">
-                        <span class="all-caps">Sales Admin</span>
-                        <svg class="icon">
-                          <use xlink:href="#icon-tools" />
-                        </svg>
-                      </h4>
-                      <!-- Sales Groups -->
-                      <div class="collapsible-content">
-                        <!-- Sales Group 01 -->
-                        <div class="collapsible collapsible-collapsed bg-white-70" data-collapsible-set="sales-group-01">
-                          <h4 class="collapsible-header text-base flex jc-between mb-0 p-1">
-                            <span>Sales Group 01</span>
-                            <svg class="icon">
-                              <use xlink:href="#icon-sitemap" />
-                            </svg>
-                          </h4>
-                          <!-- SG 01 - SP 01 -->
-                          <div class="collapsible-content bg-999">
-                            <div class="collapsible collapsible-collapsed bg-999" data-collapsible-set="sales-group-01-sp-01">
-                              <h4 class="collapsible-header text-sm flex jc-between mb-0 p-1">
-                                <svg class="icon">
-                                  <use xlink:href="#icon-user" />
-                                </svg>
-                              </h4>
-                              <div class="collapsible-content">
-                                <table class="rtable rtable-flip bg-white flex flex-s-0 mb-2 w-100">
-                                  <thead class="flex flex-s-0"> 
-                                    <tr class="flex flex-d-col flex-s-0">
-                                      <th>Name</th>
-                                      <th>ID</th>
-                                      <th>Email</th>
-                                      <th>Phone</th>
-                                      <th>Manage</th>
-                                    </tr>
-                                  </thead>
-                                  <tbody class="flex flex-g-1 w-100">
-                                    <tr class="w-100">
-                                      <td>Jeffery Lebowski</td>
-                                      <td>#000001</td>
-                                      <td><a href="mailto:contact@company.com">the.dude@lebowski.com</a></td>
-                                      <td><a href="tel:6195437898">619-543-7898</a></td>
-                                      <td class="icon-group">
-                                        <a href="#delete-confirm">
-                                          <svg class="icon icon-delete mr-ml-0">
-                                            <use xlink:href="#icon-minus" />
-                                          </svg>
-                                          <span class="sr-only">Delete</span>
-                                        </a>
-                                        <a href="#">
-                                          <svg class="icon">
-                                            <use xlink:href="#icon-pencil" />
-                                          </svg>
-                                          <span class="sr-only">Edit</span>
-                                        </a>
-                                      </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </div>
-                              <!-- end / section -->
-                            </div>
-                          </div>
-                          <!-- SG 01 - SP 02 -->
-                          <div class="collapsible-content bg-999">
-                            <div class="collapsible collapsible-collapsed bg-999" data-collapsible-set="sales-group-01-sp-02">
-                              <h4 class="collapsible-header text-sm flex jc-between mb-0 p-1">
-                                <span>Sales Person 02</span>
-                                <svg class="icon">
-                                  <use xlink:href="#icon-user" />
-                                </svg>
-                              </h4>
-                              <!-- Sales Person Info -->
-                              <div class="collapsible-content">
-                                <table class="rtable rtable-flip bg-white flex flex-s-0 mb-2 w-100">
-                                  <thead class="flex flex-s-0">
-                                    <tr class="flex flex-d-col flex-s-0">
-                                      <th>Name</th>
-                                      <th>ID</th>
-                                      <th>Email</th>
-                                      <th>Phone</th>
-                                      <th>Manage</th>
-                                    </tr>
-                                  </thead>
-                                  <tbody class="flex flex-g-1 w-100">
-                                    <tr class="w-100">
-                                      <td>Jeffery Lebowski</td>
-                                      <td>#000001</td>
-                                      <td><a href="mailto:contact@company.com">the.dude@lebowski.com</a></td>
-                                      <td><a href="tel:6195437898">619-543-7898</a></td>
-                                      <td class="icon-group">
-                                        <a href="#delete-confirm">
-                                          <svg class="icon icon-delete mr-ml-0">
-                                            <use xlink:href="#icon-minus" />
-                                          </svg>
-                                          <span class="sr-only">Delete</span>
-                                        </a>
-                                        <a href="#">
-                                          <svg class="icon">
-                                            <use xlink:href="#icon-pencil" />
-                                          </svg>
-                                          <span class="sr-only">Edit</span>
-                                        </a>
-                                      </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </div>
-                              <!-- end / section -->
-                            </div>
-                            <!-- end / section -->
-                          </div>
-                        </div>
-                        <!-- Sales Group 02 -->
-                        <div class="collapsible collapsible-collapsed bg-white-70" data-collapsible-set="sales-group-02">
-                          <h4 class="collapsible-header text-base flex jc-between mb-0 p-1">
-                            <span>Sales Group 02</span>
-                            <svg class="icon">
-                              <use xlink:href="#icon-sitemap" />
-                            </svg>
-                          </h4>
-                          <!-- SG 02 - SP 01 -->
-                          <div class="collapsible-content bg-999">
-                            <div class="collapsible collapsible-collapsed bg-999" data-collapsible-set="sales-group-02-sp-01">
-                              <h4 class="collapsible-header text-sm flex jc-between mb-0 p-1">
-                                <span>Sales Person 01</span>
-                                <svg class="icon">
-                                  <use xlink:href="#icon-user" />
-                                </svg>
-                              </h4>
-                              <!-- Sales Person Info -->
-                              <div class="collapsible-content">
-                                <table class="rtable rtable-flip bg-white flex flex-s-0 mb-2 w-100">
-                                  <thead class="flex flex-s-0">
-                                    <tr class="flex flex-d-col flex-s-0">
-                                      <th>Name</th>
-                                      <th>ID</th>
-                                      <th>Email</th>
-                                      <th>Phone</th>
-                                      <th>Manage</th>
-                                    </tr>
-                                  </thead>
-                                  <tbody class="flex flex-g-1 w-100">
-                                    <tr class="w-100">
-                                      <td>Jeffery Lebowski</td>
-                                      <td>#000001</td>
-                                      <td><a href="mailto:contact@company.com">the.dude@lebowski.com</a></td>
-                                      <td><a href="tel:6195437898">619-543-7898</a></td>
-                                      <td class="icon-group">
-                                        <a href="#delete-confirm">
-                                          <svg class="icon icon-delete mr-ml-0">
-                                            <use xlink:href="#icon-minus" />
-                                          </svg>
-                                          <span class="sr-only">Delete</span>
-                                        </a>
-                                        <a href="#">
-                                          <svg class="icon">
-                                            <use xlink:href="#icon-pencil" />
-                                          </svg>
-                                          <span class="sr-only">Edit</span>
-                                        </a>
-                                      </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </div>
-                              <!-- end / section -->
-                            </div>
-                          </div>
-                          <!-- SG 02 - SP 02 -->
-                          <div class="collapsible-content bg-999">
-                            <div class="collapsible collapsible-collapsed bg-999" data-collapsible-set="sales-group-02-sp-02">
-                              <h4 class="collapsible-header text-sm flex jc-between mb-0 p-1">
-                                <span>Sales Person 02</span>
-                                <svg class="icon">
-                                  <use xlink:href="#icon-user" />
-                                </svg>
-                              </h4>
-                              <!-- Sales Person Info -->
-                              <div class="collapsible-content">
-                                <table class="rtable rtable-flip bg-white flex flex-s-0 mb-2 w-100">
-                                  <thead class="flex flex-s-0">
-                                    <tr class="flex flex-d-col flex-s-0">
-                                      <th>Name</th>
-                                      <th>ID</th>
-                                      <th>Email</th>
-                                      <th>Phone</th>
-                                      <th>Manage</th>
-                                    </tr>
-                                  </thead>
-                                  <tbody class="flex flex-g-1 w-100">
-                                    <tr class="w-100">
-                                      <td>Jeffery Lebowski</td>
-                                      <td>#000001</td>
-                                      <td><a href="mailto:contact@company.com">the.dude@lebowski.com</a></td>
-                                      <td><a href="tel:6195437898">619-543-7898</a></td>
-                                      <td class="icon-group">
-                                        <a href="#delete-confirm">
-                                          <svg class="icon icon-delete mr-ml-0">
-                                            <use xlink:href="#icon-minus" />
-                                          </svg>
-                                          <span class="sr-only">Delete</span>
-                                        </a>
-                                        <a href="#">
-                                          <svg class="icon">
-                                            <use xlink:href="#icon-pencil" />
-                                          </svg>
-                                          <span class="sr-only">Edit</span>
-                                        </a>
-                                      </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </div>
-                              <!-- end / section -->
-                            </div>
-                          </div>
-                          <!-- end / section -->
-                        </div>
-                      </div>
-                      <!-- end / section -->
-                    </div>
-                    <!-- end / accordion -->
-                  </div>
-                </div>
-                <!-- Retail Team Row -->
-                <div class="sm-flex sm-flex-wrap sm-ai-start sm-w-50 md-flex-d-col md-w-100">
-                  <h3 class="flex-lead text-center text-md">Retail Team</h3>
-                  <!-- Retail Team - Accordion -->
-                  <div class="flex-grid sm-flex-g-1 md-w-100">
-                    <!-- Retail Team -->
-                    <div class="collapsible collapsible-expanded bg-white-80" data-collapsible-set="retail-team-01">
-                      <h4 class="collapsible-header text-md flex jc-between mb-0 p-1">
-                        <span class="all-caps">Retailers</span>
-                        <svg class="icon">
-                          <use xlink:href="#icon-shop" />
-                        </svg>
-                      </h4>
-                      <!-- Retail Groups -->
-                      <div class="collapsible-content">
-                        <!-- Retail Group 01 -->
-                        <div class="collapsible collapsible-collapsed bg-white-70" data-collapsible-set="retail-group-01">
-                          <!-- Retail Persons -->
-                          <h4 class="collapsible-header text-base flex jc-between mb-0 p-1">
-                            <span> Retail Group 01</span>
-                            <svg class="icon">
-                              <use xlink:href="#icon-sitemap" />
-                            </svg>
-                          </h4>
-                          <!-- SP 01 - 01 -->
-                          <div class="collapsible-content bg-white-70">
-                            <div class="collapsible collapsible-collapsed bg-999" data-collapsible-set="retail-user-01-01">
-                              <h4 class="collapsible-header text-sm flex jc-between mb-0 p-1">
-                                <span>Retail User 01</span>
-                                <svg class="icon">
-                                  <use xlink:href="#icon-user" />
-                                </svg>
-                              </h4>
-                              <!-- Retail Person Info -->
-                              <div class="collapsible-content">
-                                <table class="rtable rtable-flip bg-white flex flex-s-0 mb-2 w-100">
-                                  <thead class="flex flex-s-0">
-                                    <tr class="flex flex-d-col flex-s-0">
-                                      <th>Name</th>
-                                      <th>ID</th>
-                                      <th>Email</th>
-                                      <th>Phone</th>
-                                      <th>Manage</th>
-                                    </tr>
-                                  </thead>
-                                  <tbody class="flex flex-g-1 w-100">
-                                    <tr class="w-100">
-                                      <td>Jeffery Lebowski</td>
-                                      <td>#000001</td>
-                                      <td><a href="mailto:contact@company.com">the.dude@lebowski.com</a></td>
-                                      <td><a href="tel:6195437898">619-543-7898</a></td>
-                                      <td class="icon-group">
-                                        <a href="#delete-confirm">
-                                          <svg class="icon icon-delete mr-ml-0">
-                                            <use xlink:href="#icon-minus" />
-                                          </svg>
-                                          <span class="sr-only">Delete</span>
-                                        </a>
-                                        <a href="#">
-                                          <svg class="icon">
-                                            <use xlink:href="#icon-pencil" />
-                                          </svg>
-                                          <span class="sr-only">Edit</span>
-                                        </a>
-                                      </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </div>
-                              <!-- end / section -->
-                            </div>
-                          </div>
-                          <!-- SP 01 - 02 -->
-                          <div class="collapsible-content bg-999">
-                            <div class="collapsible collapsible-collapsed bg-999" data-collapsible-set="retail-user-01-02">
-                              <h4 class="collapsible-header text-sm flex jc-between mb-0 p-1">
-                                <span>Retail User 02</span>
-                                <svg class="icon">
-                                  <use xlink:href="#icon-user" />
-                                </svg>
-                              </h4>
-                              <!-- Retail Person Info -->
-                              <div class="collapsible-content">
-                                <!-- Retail Person Info -->
-                                <div class="collapsible-content">
-                                  <table class="rtable rtable-flip bg-white flex flex-s-0 mb-2 w-100">
-                                    <thead class="flex flex-s-0">
-                                      <tr class="flex flex-d-col flex-s-0">
-                                        <th>Name</th>
-                                        <th>ID</th>
-                                        <th>Email</th>
-                                        <th>Phone</th>
-                                        <th>Manage</th>
-                                      </tr>
-                                    </thead>
-                                    <tbody class="flex flex-g-1 w-100">
-                                      <tr class="w-100">
-                                        <td>Jeffery Lebowski</td>
-                                        <td>#000001</td>
-                                        <td><a href="mailto:contact@company.com">the.dude@lebowski.com</a></td>
-                                        <td><a href="tel:6195437898">619-543-7898</a></td>
-                                        <td class="icon-group">
-                                          <a href="#delete-confirm">
-                                            <svg class="icon icon-delete mr-ml-0">
-                                              <use xlink:href="#icon-minus" />
-                                            </svg>
-                                            <span class="sr-only">Delete</span>
-                                          </a>
-                                          <a href="#">
-                                            <svg class="icon">
-                                              <use xlink:href="#icon-pencil" />
-                                            </svg>
-                                            <span class="sr-only">Edit</span>
-                                          </a>
-                                        </td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </div>
-                                <!-- end / section -->
-                              </div>
-                            </div>
-                            <!-- end / section -->
-                          </div>
-                        </div>
-                        <!-- Retail Group 02 -->
-                        <div class="collapsible collapsible-collapsed bg-white-70" data-collapsible-set="retail-group-02">
-                          <!-- Retail Groups -->
-                          <h4 class="collapsible-header text-base flex jc-between mb-0 p-1">
-                            <span>Retail Group 02</span>
-                            <svg class="icon">
-                              <use xlink:href="#icon-sitemap" />
-                            </svg>
-                          </h4>
-                          <!-- RG 01 - RU 01 -->
-                          <div class="collapsible-content bg-999">
-                            <div class="collapsible collapsible-collapsed bg-999" data-collapsible-set="retail-group-02-ru-01">
-                              <h4 class="collapsible-header text-sm flex jc-between mb-0 p-1">
-                                <span>Retail User 01</span>
-                                <svg class="icon">
-                                  <use xlink:href="#icon-user" />
-                                </svg>
-                              </h4>
-                              <!-- Retail Person Info -->
-                              <div class="collapsible-content">
-                                <table class="rtable rtable-flip bg-white flex flex-s-0 mb-2 w-100">
-                                  <thead class="flex flex-s-0">
-                                    <tr class="flex flex-d-col flex-s-0">
-                                      <th>Name</th>
-                                      <th>ID</th>
-                                      <th>Email</th>
-                                      <th>Phone</th>
-                                      <th>Manage</th>
-                                    </tr>
-                                  </thead>
-                                  <tbody class="flex flex-g-1 w-100">
-                                    <tr class="w-100">
-                                      <td>Jeffery Lebowski</td>
-                                      <td>#000001</td>
-                                      <td><a href="mailto:contact@company.com">the.dude@lebowski.com</a></td>
-                                      <td><a href="tel:6195437898">619-543-7898</a></td>
-                                      <td class="icon-group">
-                                        <a href="#delete-confirm">
-                                          <svg class="icon icon-delete mr-ml-0">
-                                            <use xlink:href="#icon-minus" />
-                                          </svg>
-                                          <span class="sr-only">Delete</span>
-                                        </a>
-                                        <a href="#">
-                                          <svg class="icon">
-                                            <use xlink:href="#icon-pencil" />
-                                          </svg>
-                                          <span class="sr-only">Edit</span>
-                                        </a>
-                                      </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </div>
-                              <!-- end / section -->
-                            </div>
-                          </div>
-                          <!-- RG 01 - RU 02 -->
-                          <div class="collapsible-content bg-999">
-                            <div class="collapsible collapsible-collapsed bg-999" data-collapsible-set="retail-group-02-ru-02">
-                              <h4 class="collapsible-header text-sm flex jc-between mb-0 p-1">
-                                <span>Retail User 02</span>
-                                <svg class="icon">
-                                  <use xlink:href="#icon-user" />
-                                </svg>
-                              </h4>
-                              <!-- Retail Person Info -->
-                              <div class="collapsible-content">
-                                <!-- Retail Person Info -->
-                                <div class="collapsible-content">
-                                  <table class="rtable rtable-flip bg-white flex flex-s-0 mb-2 w-100">
-                                    <thead class="flex flex-s-0">
-                                      <tr class="flex flex-d-col flex-s-0">
-                                        <th>Name</th>
-                                        <th>ID</th>
-                                        <th>Email</th>
-                                        <th>Phone</th>
-                                        <th>Manage</th>
-                                      </tr>
-                                    </thead>
-                                    <tbody class="flex flex-g-1 w-100">
-                                      <tr class="w-100">
-                                        <td>Jeffery Lebowski</td>
-                                        <td>#000001</td>
-                                        <td><a href="mailto:contact@company.com">the.dude@lebowski.com</a></td>
-                                        <td><a href="tel:6195437898">619-543-7898</a></td>
-                                        <td class="icon-group">
-                                          <a href="#delete-confirm">
-                                            <svg class="icon icon-delete mr-ml-0">
-                                              <use xlink:href="#icon-minus" />
-                                            </svg>
-                                            <span class="sr-only">Delete</span>
-                                          </a>
-                                          <a href="#">
-                                            <svg class="icon">
-                                              <use xlink:href="#icon-pencil" />
-                                            </svg>
-                                            <span class="sr-only">Edit</span>
-                                          </a>
-                                        </td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </div>
-                                <!-- end / section -->
-                              </div>
-                            </div>
-                            <!-- end / section -->
-                          </div>
-                        </div>
-                        <!-- end / section -->
-                      </div>
-                      <!-- end / accordion -->
-                    </div>
-                  </div>
-                </div>
-                <!-- end / left col -->
-              </div>
-              <!-- Right Col (Current Packages & Offers) -->
-              <div class="flex-g-1 w-100 md-ml-1 md-w-40">
-                <!-- Package Row -->
-                <div class="mb-2 sm-flex sm-flex-wrap sm-ai-start md-flex-d-col md-mb-2">
-                  <h3 class="flex-lead text-center text-md">Packages</h3>
-                  <!-- Basic Package -->
-                  <div class="flex-grid sm-flex-g-1 sm-w-50 md-w-100">
-                    <div class="collapsible collapsible-collapsed bg-white-80" data-collapsible-set="package-01">
-                      <h4 class="collapsible-header text-base flex jc-between mb-0 p-1">
-                        <span class="all-caps">Basic </span>
-                        <svg class="icon icon-caret">
-                          <use xlink:href="#icon-caret" />
-                        </svg>
-                      </h4>
-                      <div class="collapsible-content">
-                        <div class="flex flex-wrap">
-                          <!-- Package -->
-                          <div class="package-item w-100">
-                            <table class="rtable rtable-flip bg-white flex flex-s-0 w-100">
-                              <thead class="flex flex-s-0">
-                                <tr class="flex flex-d-col flex-s-0">
-                                  <th><abbr title="Number">#</abbr> of Accounts</th>
-                                  <th><abbr title="Number">#</abbr> of Users</th>
-                                  <th><abbr title="Short Message Service">SMS</abbr></th>
-                                  <th>Keywords</th>
-                                  <th>Email</th>
-                                  <th>Monthly Price</th>
-                                  <th>Renews</th>
-                                  <th>Manage</th>
-                                </tr>
-                              </thead>
-                              <tbody class="flex flex-g-1 w-100">
-                                <tr class="w-100">
-                                  <td>1</td>
-                                  <td>1</td>
-                                  <td>5000</td>
-                                  <td>10</td>
-                                  <td>5000</td>
-                                  <td>$129.00</td>
-                                  <td>Aug. 1, 2017</td>
-                                  <td class="icon-group">
-                                    <a href="#delete-confirm">
-                                      <svg class="icon icon-delete mr-ml-0 hidden">
-                                        <use xlink:href="#icon-minus" />
-                                      </svg>
-                                      <span class="sr-only">Delete</span>
-                                    </a>
-                                    <a href="#">
-                                      <svg class="icon icon-edit">
-                                        <use xlink:href="#icon-pencil" />
-                                      </svg>
-                                      <span class="sr-only">Edit</span>
-                                    </a>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                          <!-- end / wrap -->
-                        </div>
-                      </div>
-                      <!-- end / package -->
-                    </div>
-                  </div>
-                  <!-- Super Package -->
-                  <div class="flex-grid sm-flex-g-1 sm-w-50 md-w-100">
-                    <div class="collapsible collapsible-collapsed bg-white-80" data-collapsible-set="package-02">
-                      <h4 class="collapsible-header text-base flex jc-between mb-0 p-1">
-                        <span class="all-caps">Super </span>
-                        <svg class="icon icon-caret">
-                          <use xlink:href="#icon-caret" />
-                        </svg>
-                      </h4>
-                      <div class="collapsible-content">
-                        <div class="flex flex-wrap">
-                          <!-- Package -->
-                          <div class="package-item w-100">
-                            <table class="rtable rtable-flip bg-white flex flex-s-0 w-100">
-                              <thead class="flex flex-s-0">
-                                <tr class="flex flex-d-col flex-s-0">
-                                  <th><abbr title="Number">#</abbr> of Accounts</th>
-                                  <th><abbr title="Number">#</abbr> of Users</th>
-                                  <th><abbr title="Short Message Service">SMS</abbr></th>
-                                  <th>Keywords</th>
-                                  <th>Email</th>
-                                  <th>Monthly Price</th>
-                                  <th>Renews</th>
-                                  <th>Manage</th>
-                                </tr>
-                              </thead>
-                              <tbody class="flex flex-g-1 w-100">
-                                <tr class="w-100">
-                                  <td>1</td>
-                                  <td>1</td>
-                                  <td>5000</td>
-                                  <td>10</td>
-                                  <td>5000</td>
-                                  <td>$129.00</td>
-                                  <td>Aug. 1, 2017</td>
-                                  <td class="icon-group">
-                                    <a href="#delete-confirm">
-                                      <svg class="icon icon-delete mr-ml-0 hidden">
-                                        <use xlink:href="#icon-minus" />
-                                      </svg>
-                                      <span class="sr-only">Delete</span>
-                                    </a>
-                                    <a href="#">
-                                      <svg class="icon icon-edit">
-                                        <use xlink:href="#icon-pencil" />
-                                      </svg>
-                                      <span class="sr-only">Edit</span>
-                                    </a>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                          <!-- end / wrap -->
-                        </div>
-                      </div>
-                      <!-- end / package -->
-                    </div>
-                  </div>
-                  <!-- Premium Package -->
-                  <div class="flex-grid flex-g-1 sm-w-50 md-w-100">
-                    <div class="collapsible collapsible-collapsed bg-white-80" data-collapsible-set="package-03">
-                      <h4 class="collapsible-header text-base flex jc-between mb-0 p-1">
-                        <span class="all-caps">Premium </span>
-                        <svg class="icon icon-caret">
-                          <use xlink:href="#icon-caret" />
-                        </svg>
-                      </h4>
-                      <div class="collapsible-content">
-                        <div class="flex flex-wrap">
-                          <!-- Package -->
-                          <div class="package-item w-100">
-                            <table class="rtable rtable-flip bg-white flex flex-s-0 w-100">
-                              <thead class="flex flex-s-0">
-                                <tr class="flex flex-d-col flex-s-0">
-                                  <th><abbr title="Number">#</abbr> of Accounts</th>
-                                  <th><abbr title="Number">#</abbr> of Users</th>
-                                  <th><abbr title="Short Message Service">SMS</abbr></th>
-                                  <th>Keywords</th>
-                                  <th>Email</th>
-                                  <th>Monthly Price</th>
-                                  <th>Renews</th>
-                                  <th>Manage</th>
-                                </tr>
-                              </thead>
-                              <tbody class="flex flex-g-1 w-100">
-                                <tr class="w-100">
-                                  <td>1</td>
-                                  <td>1</td>
-                                  <td>5000</td>
-                                  <td>10</td>
-                                  <td>5000</td>
-                                  <td>$129.00</td>
-                                  <td>Aug. 1, 2017</td>
-                                  <td class="icon-group">
-                                    <a href="#delete-confirm">
-                                      <svg class="icon icon-delete mr-ml-0 hidden">
-                                        <use xlink:href="#icon-minus" />
-                                      </svg>
-                                      <span class="sr-only">Delete</span>
-                                    </a>
-                                    <a href="#">
-                                      <svg class="icon icon-edit">
-                                        <use xlink:href="#icon-pencil" />
-                                      </svg>
-                                      <span class="sr-only">Edit</span>
-                                    </a>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                          <!-- end / wrap -->
-                        </div>
-                      </div>
-                      <!-- end / package -->
-                    </div>
-                  </div>
-                  <!-- Enterprise Package -->
-                  <div class="flex-grid flex-g-1 sm-w-50 md-w-100">
-                    <div class="collapsible collapsible-collapsed bg-white-80" data-collapsible-set="package-04">
-                      <h4 class="collapsible-header text-base flex jc-between mb-0 p-1">
-                        <span class="all-caps">Enterprise </span>
-                        <svg class="icon icon-caret">
-                          <use xlink:href="#icon-caret" />
-                        </svg>
-                      </h4>
-                      <div class="collapsible-content">
-                        <div class="flex flex-wrap">
-                          <!-- Package -->
-                          <div class="package-item w-100">
-                            <table class="rtable rtable-flip bg-white flex flex-s-0 w-100">
-                              <thead class="flex flex-s-0">
-                                <tr class="flex flex-d-col flex-s-0">
-                                  <th><abbr title="Number">#</abbr> of Accounts</th>
-                                  <th><abbr title="Number">#</abbr> of Users</th>
-                                  <th><abbr title="Short Message Service">SMS</abbr></th>
-                                  <th>Keywords</th>
-                                  <th>Email</th>
-                                  <th>Monthly Price</th>
-                                  <th>Renews</th>
-                                  <th>Manage</th>
-                                </tr>
-                              </thead>
-                              <tbody class="flex flex-g-1 w-100">
-                                <tr class="w-100">
-                                  <td>1</td>
-                                  <td>1</td>
-                                  <td>5000</td>
-                                  <td>10</td>
-                                  <td>5000</td>
-                                  <td>$129.00</td>
-                                  <td>Aug. 1, 2017</td>
-                                  <td class="icon-group">
-                                    <a href="#delete-confirm">
-                                      <svg class="icon icon-delete mr-ml-0 hidden">
-                                        <use xlink:href="#icon-minus" />
-                                      </svg>
-                                      <span class="sr-only">Delete</span>
-                                    </a>
-                                    <a href="#">
-                                      <svg class="icon icon-edit">
-                                        <use xlink:href="#icon-pencil" />
-                                      </svg>
-                                      <span class="sr-only">Edit</span>
-                                    </a>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                          <!-- end / wrap -->
-                        </div>
-                      </div>
-                      <!-- end / package -->
-                    </div>
-                  </div>
-                </div>
-                <!-- Offer Row -->
-                <div class="sm-flex sm-flex-wrap sm-ai-start md-flex-d-col">
-                  <h3 class="flex-lead text-center text-md md-mb-tiny md-pt-sm">Offers</h3>
-                  <!-- Offer 1 -->
-                  <div class="flex-grid sm-flex-g-1 sm-w-50 md-w-100">
-                    <div class="collapsible collapsible-collapsed bg-white-80" data-collapsible-set="offer-01">
-                      <h4 class="collapsible-header text-base flex jc-between mb-0 p-1">
-                        <span class="all-caps">Offer One</span>
-                        <svg class="icon icon-caret">
-                          <use xlink:href="#icon-caret" />
-                        </svg>
-                      </h4>
-                      <div class="collapsible-content">
-                        <div class="flex flex-wrap bg-BBB p-sm">
-                          <!-- Offer -->
-                          <div class="offer-item bg-EEE p-1 w-100">
-                            <p class="mb-tiny"><strong>Offer Details Headline</strong></p>
-                            <p class="text-tiny">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, libero, aspernatur commodi laborum
-                              officiis repellendus.
-                            </p>
-                            <a class="btn-primary btn-sm" href="#">More Info</a>
-                          </div>
-                          <!-- end / wrap -->
-                        </div>
-                      </div>
-                      <!-- end / package -->
-                    </div>
-                  </div>
-                  <!-- Offer 2 -->
-                  <div class="flex-grid sm-flex-g-1 sm-w-50 md-w-100">
-                    <div class="collapsible collapsible-collapsed bg-white-80" data-collapsible-set="offer-02">
-                      <h4 class="collapsible-header text-base flex jc-between mb-0 p-1">
-                        <span class="all-caps">Offer Two</span>
-                        <svg class="icon icon-caret">
-                          <use xlink:href="#icon-caret" />
-                        </svg>
-                      </h4>
-                      <div class="collapsible-content">
-                        <div class="flex flex-wrap bg-BBB p-sm">
-                          <!-- Offer -->
-                          <div class="offer-item bg-EEE p-1 w-100">
-                            <p class="mb-tiny"><strong>Offer Details Headline</strong></p>
-                            <p class="text-tiny">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, libero, aspernatur commodi laborum
-                              officiis repellendus.
-                            </p>
-                            <a class="btn-primary btn-sm" href="#">More Info</a>
-                          </div>
-                          <!-- end / wrap -->
-                        </div>
-                      </div>
-                      <!-- end / package -->
-                    </div>
-                  </div>
-                  <!-- Offer 3 -->
-                  <div class="flex-grid sm-flex-g-1 sm-w-50 md-w-100">
-                    <div class="collapsible collapsible-collapsed bg-white-80" data-collapsible-set="offer-03">
-                      <h4 class="collapsible-header text-base flex jc-between mb-0 p-1">
-                        <span class="all-caps">Offer Three</span>
-                        <svg class="icon icon-caret">
-                          <use xlink:href="#icon-caret" />
-                        </svg>
-                      </h4>
-                      <div class="collapsible-content">
-                        <div class="flex flex-wrap bg-BBB p-sm">
-                          <!-- Offer -->
-                          <div class="offer-item bg-EEE p-1 w-100">
-                            <p class="mb-tiny"><strong>Offer Details Headline</strong></p>
-                            <p class="text-tiny">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, libero, aspernatur commodi laborum
-                              officiis repellendus.
-                            </p>
-                            <a class="btn-primary btn-sm" href="#">More Info</a>
-                          </div>
-                          <!-- end / wrap -->
-                        </div>
-                      </div>
-                      <!-- end / package -->
-                    </div>
-                  </div>
-                  <!-- Offer 4 -->
-                  <div class="flex-grid sm-flex-g-1 sm-w-50 md-w-100">
-                    <div class="collapsible collapsible-collapsed bg-white-80" data-collapsible-set="offer-04">
-                      <h4 class="collapsible-header text-base flex jc-between mb-0 p-1">
-                        <span class="all-caps">Offer Four</span>
-                        <svg class="icon icon-caret">
-                          <use xlink:href="#icon-caret" />
-                        </svg>
-                      </h4>
-                      <div class="collapsible-content">
-                        <div class="flex flex-wrap bg-BBB p-sm">
-                          <!-- Offer -->
-                          <div class="offer-item bg-EEE p-1 w-100">
-                            <p class="mb-tiny"><strong>Offer Details Headline</strong></p>
-                            <p class="text-tiny">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, libero, aspernatur commodi laborum
-                              officiis repellendus.
-                            </p>
-                            <a class="btn-primary btn-sm" href="#">More Info</a>
-                          </div>
-                          <!-- end / wrap -->
-                        </div>
-                      </div>
-                      <!-- end / package -->
-                    </div>
-                  </div>
-                </div>
-                <!-- end / right col -->
-              </div>
-              <!-- end / COLUMNS -->
-            </div>
-          </section>
-          
-          <!-- Quick Help Links -->
-          <section class="mod-block pt-0 pb-2">
-            <div class="container">
-              <!-- Cards -->
-              <div class="flex-grid item-mar-lg pt-1">
+                
                 <!-- Analytics -->
-                <div class="card card-mini text-center w-100 sm-w-30">
+                <div class="card card-mini text-center w-100 sm-w-40 md-w-20">
                   <h3 class="text-sm">Analytics</h3>
                   <a class="icon-wrap flex jc-center p-sm" href="#">
                     <svg class="icon">
@@ -1155,26 +305,40 @@
                     </svg>
                   </a>
                 </div>
+               
                 <!-- Tutorials -->
-                <div class="card card-mini text-center w-100 sm-w-30">
+                <div class="card card-mini text-center w-100 sm-w-40 md-w-20">
                   <h3 class="text-sm">Tutorials</h3>
                   <a class="icon-wrap flex jc-center p-sm" href="#">
                     <svg class="icon">
                       <use xlink:href="#icon-videocam" />
-                      <span class="sr-only">Help Tutorials</span>
                     </svg>
                   </a>
                 </div>
+               
+                <!-- Help -->
+                <div class="card card-mini text-center w-100 sm-w-40 md-w-20">
+                  <h3 class="text-sm">Help Center</h3>
+                  <a class="icon-wrap flex jc-center p-sm" href="#">
+                    <svg class="icon">
+                      <use xlink:href="#icon-tools" />
+                    </svg>
+                  </a>
+                </div>
+                
                 <!-- FAQ -->
-                <div class="card card-mini text-center w-100 sm-w-30">
+                <div class="card card-mini text-center w-100 sm-w-40 md-w-20">
                   <h3 class="text-sm"><abbr title="Frequently Asked Questions">FAQ</abbr></h3>
                   <a class="icon-wrap flex jc-center p-sm" href="#">
                     <svg class="icon">
-                      <use xlink:href="#icon-info-circled" />
+                      <use xlink:href="#icon-help" />
                       <span class="sr-only">Frequently Asked Questions</span>
                     </svg>
                   </a>
                 </div>
+                
+                
+                
               </div>
             </div>
           </section>
