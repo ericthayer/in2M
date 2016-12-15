@@ -7,7 +7,7 @@
 		"uuidString": "5A354D1D-5E13-49CD-ADF2-EA51195CD3FA"
 		}
 	],
-"creatorBuild": "25444",
+"creatorBuild": "25479",
 "files": {
 	"\/.gitignore": {
 		"ft": 8192,
@@ -2562,6 +2562,204 @@
 		"iS": 8710,
 		"oA": 0,
 		"oAP": "\/images\/content-img\/3x2\/img-video-thumb-SM.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/content-img\/avatar\/img-avatar-slug-1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/images\/content-img\/avatar\/img-avatar-slug-1.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/images\/content-img\/avatar\/img-avatar-slug-10.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/images\/content-img\/avatar\/img-avatar-slug-10.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/images\/content-img\/avatar\/img-avatar-slug-10@2x.png": {
+		"ft": 32768,
+		"iS": 6767,
+		"oA": 0,
+		"oAP": "\/images\/content-img\/avatar\/img-avatar-slug-10@2x.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/content-img\/avatar\/img-avatar-slug-11.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/images\/content-img\/avatar\/img-avatar-slug-11.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/images\/content-img\/avatar\/img-avatar-slug-11@2x.png": {
+		"ft": 32768,
+		"iS": 6767,
+		"oA": 0,
+		"oAP": "\/images\/content-img\/avatar\/img-avatar-slug-11@2x.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/content-img\/avatar\/img-avatar-slug-1@2x.png": {
+		"ft": 32768,
+		"iS": 6805,
+		"oA": 0,
+		"oAP": "\/images\/content-img\/avatar\/img-avatar-slug-1@2x.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/content-img\/avatar\/img-avatar-slug-2.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/images\/content-img\/avatar\/img-avatar-slug-2.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/images\/content-img\/avatar\/img-avatar-slug-2@2x.png": {
+		"ft": 32768,
+		"iS": 9603,
+		"oA": 0,
+		"oAP": "\/images\/content-img\/avatar\/img-avatar-slug-2@2x.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/content-img\/avatar\/img-avatar-slug-3.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/images\/content-img\/avatar\/img-avatar-slug-3.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/images\/content-img\/avatar\/img-avatar-slug-3@2x.png": {
+		"ft": 32768,
+		"iS": 7246,
+		"oA": 0,
+		"oAP": "\/images\/content-img\/avatar\/img-avatar-slug-3@2x.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/content-img\/avatar\/img-avatar-slug-4.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/images\/content-img\/avatar\/img-avatar-slug-4.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/images\/content-img\/avatar\/img-avatar-slug-4@2x.png": {
+		"ft": 32768,
+		"iS": 9193,
+		"oA": 0,
+		"oAP": "\/images\/content-img\/avatar\/img-avatar-slug-4@2x.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/content-img\/avatar\/img-avatar-slug-5.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/images\/content-img\/avatar\/img-avatar-slug-5.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/images\/content-img\/avatar\/img-avatar-slug-5@2x.png": {
+		"ft": 32768,
+		"iS": 7343,
+		"oA": 0,
+		"oAP": "\/images\/content-img\/avatar\/img-avatar-slug-5@2x.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/content-img\/avatar\/img-avatar-slug-6.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/images\/content-img\/avatar\/img-avatar-slug-6.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/images\/content-img\/avatar\/img-avatar-slug-6@2x.png": {
+		"ft": 32768,
+		"iS": 7973,
+		"oA": 0,
+		"oAP": "\/images\/content-img\/avatar\/img-avatar-slug-6@2x.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/content-img\/avatar\/img-avatar-slug-7.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/images\/content-img\/avatar\/img-avatar-slug-7.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/images\/content-img\/avatar\/img-avatar-slug-7@2x.png": {
+		"ft": 32768,
+		"iS": 6442,
+		"oA": 0,
+		"oAP": "\/images\/content-img\/avatar\/img-avatar-slug-7@2x.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/content-img\/avatar\/img-avatar-slug-8.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/images\/content-img\/avatar\/img-avatar-slug-8.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/images\/content-img\/avatar\/img-avatar-slug-8@2x.png": {
+		"ft": 32768,
+		"iS": 6066,
+		"oA": 0,
+		"oAP": "\/images\/content-img\/avatar\/img-avatar-slug-8@2x.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/content-img\/avatar\/img-avatar-slug-9.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/images\/content-img\/avatar\/img-avatar-slug-9.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/images\/content-img\/avatar\/img-avatar-slug-9@2x.png": {
+		"ft": 32768,
+		"iS": 7846,
+		"oA": 0,
+		"oAP": "\/images\/content-img\/avatar\/img-avatar-slug-9@2x.png",
 		"oF": 0,
 		"opt": 0
 		},
@@ -5228,6 +5426,10 @@
 			"active": 0,
 			"optionString": "{'properties': 'always'}"
 			},
+		"capitalized-comments": {
+			"active": 0,
+			"optionString": "'always', {'ignoreInlineComments': false, 'ignoreConsecutiveComments': false}"
+			},
 		"class-methods-use-this": {
 			"active": 0,
 			"optionString": "{'exceptMethods': []}"
@@ -5391,6 +5593,10 @@
 		"max-statements": {
 			"active": 0,
 			"optionString": "{'max': 10}, {'ignoreTopLevelFunctions': true}"
+			},
+		"max-statements-per-line": {
+			"active": 0,
+			"optionString": "{'max': 1}"
 			},
 		"multiline-ternary": {
 			"active": 0,
@@ -5756,6 +5962,10 @@
 			"active": 0,
 			"optionString": "'except-parens'"
 			},
+		"no-return-await": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-script-url": {
 			"active": 0,
 			"optionString": ""
@@ -5987,6 +6197,10 @@
 		"radix": {
 			"active": 0,
 			"optionString": "'always'"
+			},
+		"require-await": {
+			"active": 0,
+			"optionString": ""
 			},
 		"require-jsdoc": {
 			"active": 0,
@@ -6820,6 +7034,10 @@
 			},
 		"space-colon": {
 			"active": 1,
+			"flagValue": -1
+			},
+		"support-ie8": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"toplevel": {
