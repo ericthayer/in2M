@@ -806,24 +806,6 @@ document.documentElement.className += " enhanced";
 	$( document ).trigger( 'enhance' );
   
   $('[data-append],[data-replace],[data-after],[data-before]').ajaxInclude();
-
-  $( '.date-input' ).datepicker({
-  	inline: true,
-  	changeMonth: true,
-  	changeYear: true,
-  	minDate: new Date(2016, 1 - 1, 1)
-  });
-  
-  //$( '.date-input' ).datepicker('dialog');
-  
-  $( '.dob-input' ).datepicker({
-    inline: true,
-  	changeMonth: true,
-  	changeYear: true,
-  	defaultDate: '01/01/1998',
-  	maxDate: '12/31/1998',
-  	yearRange: 'c-20:c+20'
-  });
   
   // quick toggle show/hide
   
@@ -844,8 +826,7 @@ document.documentElement.className += " enhanced";
   
   $('.checkbox-toggle').on('click' , function() {
     $(this).parent().parent('.form-row').next('.toggle-disabled').toggleClass('disabled').find('.toggle-input').removeAttr('disabled').val('');
-    $(this).parent().parent('.form-row').next('.toggle-disabled').find('.checkbox-toggle').removeAttr('checked');
-    
+    $(this).parent().parent('.form-row').next('.toggle-disabled').find('.checkbox-toggle').removeAttr('checked');    
   });
   
   
