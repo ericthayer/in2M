@@ -655,51 +655,26 @@
 }
 
 @mixin Whitney-Bold {
+  font-family: $sans-serif;
 	.fonts-loaded & {
   	font-family: $Whitney-Bold;
-  	font-weight: normal;  
+  	font-weight: 700;  
 	}
 }
 
 @mixin Whitney-SemiBold {
+  font-family: $sans-serif;
 	.fonts-loaded & {
   	font-family: $Whitney-SemiBold;
-  	font-weight: normal;  
+  	font-weight: 500;  
 	}
 }
 
 @mixin Whitney-Medium {
+  font-family: $sans-serif;
 	.fonts-loaded & {
   	font-family: $Whitney-Med;
   	font-weight: normal;  
-	}
-}
-
-@mixin FilsonProBook {
-	.fonts-loaded & {
-		font-family: $FilsonPro;
-		font-weight: 300;
-	}
-}
-
-@mixin FilsonProReg {
-  .wf-active & {
-		font-family: $FilsonPro;
-  	font-weight: 400;
-	}
-}
-
-@mixin FilsonProBold {
-	.fonts-loaded & {
-  	font-family: $FilsonPro;
-  	font-weight: 700;
-	}
-}
-
-@mixin FilsonProHeavy {
-	.wf-loaded & {
-  	font-family: $FilsonPro;
-  	font-weight: 800;
 	}
 }
 

@@ -30,10 +30,10 @@
     //container is less than 320px
     &:container("width < 20em") {
     .feature-list {
-       font-size: .9rem;
+      font-size: .9rem;
       }
     }
-    // hover effect
+    //hover effect
     &:hover,
     &:focus {
       border: none;
@@ -88,34 +88,8 @@
   }
 }
 
-// Info Block
-
-.info-block {
-  // > 992
-  @media (min-width: $break-md-screen) {
-    
-  }
-}
-
 .dollar-sign {
   display: inline-block;  
   vertical-align: super;
   margin-right: .25rem;   
-}
-
-// Pricing Cards
-
-.plan-card {
-  // > 480
-  @media (min-width: $break-sm-phone) {
-    > div:first-child {
-      //min-height: 375px;  
-    }
-  }
-  // > 1200
-  @media (min-width: $break-xl-screen) {
-    > div:first-child {
-      //min-height: 380px;  
-    }
-  }
 }
