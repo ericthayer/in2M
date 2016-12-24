@@ -24,7 +24,7 @@ $scale-0: 0;
 
 // Greyscale
 
-$white-100: hsl(0, 0%, 100%);
+$white: hsl(0, 0%, 100%);
 $EEE: hsl(0, 0%, 93%);
 $white-90: hsl(0, 0%, 90%);
 $DDD: hsl(0, 0%, 87%);
@@ -94,5 +94,10 @@ $black-a-5: hsla(0, 0%, 0%, $scale-5);
 $black-a-0: hsla(0, 0%, 0%, $scale-0);
 
 
+// Alerts
+
+$alert-green: #52bba0;
+$alert-orange: #ffab1e;
+$alert-red: #f56666;
 
 

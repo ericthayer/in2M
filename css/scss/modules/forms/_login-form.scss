@@ -1,0 +1,83 @@
+// Login Form
+
+.compact-form {
+  
+  max-width: 25em;  
+  width: 100%;
+  
+  // intro image
+  .form-header-img {
+    display: block; 
+    margin-bottom: 1em;
+    &-small {
+      max-width: 13em;
+    }  
+    &-center {
+      margin-right: auto;
+      margin-left: auto;   
+    }
+  }
+  
+  .form-row:not(.input-submit) {
+    margin-bottom: 1.5em;
+  }
+  
+  .input-username,
+  .input-password {
+     
+    input {
+      padding-top: 1em;
+      padding-right: .75em;  
+      padding-bottom: 1em;
+      padding-left: .75em;     
+    }
+  }
+
+  // > 320
+  @media (min-width: $break-tiny-phone) {
+    .checkbox-save,
+    .password-link {
+      width: auto;  
+    }
+    .password-link {
+      text-align: right;  
+    }
+  } 
+  
+  
+  // theme color
+  
+  &.tc-light {
+    background: $white;
+    border-radius: 4px;
+    color: $c-555-grey;
+    padding: 2em 1em;
+    
+    input {
+      border: 1px solid #CCC;
+      &[class*="btn"] {
+        background: $green;
+        color: $white;
+        font-size: 1.25rem; 
+        width: 100%;
+        text-transform: uppercase;   
+      }
+    }
+    
+    .req-mark {
+      color: $c-999-grey;
+    }
+    
+    p {
+      padding-left: .25em; 
+    }
+    
+    .password-link a {
+      color: $link;
+    } 
+    
+    
+    
+  }
+    
+}

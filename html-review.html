@@ -885,13 +885,18 @@
             
             <br/>
             
-            <!-- Form Buttons -->
-            <div class="button-wrap flex flex-d-col-rev sm-jc-center sm-flex-d-row">
-              <button onclick="$('form[name="SetupCommissions"] input').val('');" class="btn-outline cancel-button mb-1 sm-mb-0 sm-mr-sm" type="reset">cancel</button>
-              <input class="btn-primary save-button mb-1 sm-mb-0 sm-ml-sm" type="submit" value="save" data-remodal-target="setup-">
-            </div>
-            
+                  
             <br/>
+            
+            <!-- Form Buttons -->
+            <div class="form-row button-wrap">
+              <!-- cancel button -->
+              <button class="btn-cancel" type="reset">Cancel</button>
+              <!-- save button (primary) -->
+              <input class="btn-primary" type="submit" value="Save" data-remodal-target="save-confirm">
+            </div>
+                  
+                  <br/>
             
             <!-- Hero Buttons (row-rev)-->
             <div class="button-wrap flex flex-d-col jc-center pt-1 x-sm-flex-d-row x-sm-flex-wrap">  
@@ -2046,6 +2051,95 @@
                 </tr>
               </tbody>
             </table>
+            
+                        
+            <!-- Capacity Table -->
+            <div class="form-section mb-3 mr-ml-a text-center hidden">
+              <!-- Data Table -->
+              <table class="rtable mr-ml-a mb-1">
+                <thead>
+                  <tr>
+                    <th>Provider</th>
+                    <th><abbr title="number">#</abbr> of <abbr title="short message service">SMS</abbr></th>
+                    <th>Active Date</th>
+                    <th>Expiry Date</th>
+                    <th>Cost</th>
+                    <th>Comment</th>
+                    <th>Contact Person</th>
+                    <th>Manage</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Twillio</td>
+                    <td>100,000</td>
+                    <td>08/24/16</td>
+                    <td>08/31/17</td>
+                    <td>$0.01/SMS</td>
+                    <td class="cell-overflow">Comments go here. Should they be this long?</td>
+                    <td><a href="mailto:contact@company.com">contact@company.com</a></td>
+                    <td><a href="#" class="all-caps text-b"><svg class="icon"><use xlink:href="#icon-pencil" /></svg> Edit </a></td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <!-- SMS Total & Expiring Date -->
+              <div class="form-row text-sm mr-ml-a sm-flex sm-jc-between pt-pb-1 md-text-base md-mw-35em">
+                <!-- SMS Total -->
+                <div class="flex flex-d-col x-sm-flex-d-row x-sm-jc-between">
+              	  <span class="pt-pb-tiny pr-pl-sm"><strong>Total <abbr title="number">#</abbr> <abbr title="short message service">SMS</abbr></strong></span>
+              	  <span class="amount pt-pb-tiny pr-pl-sm">1,700,000</span>
+                </div>
+                <!-- Next Expiring -->
+                <div class="flex flex-d-col x-sm-flex-d-row x-sm-jc-between">
+              	  <span class="pt-pb-tiny pr-pl-sm"><strong>Next Expiring</strong></span>
+              	  <span class="amount pt-pb-tiny pr-pl-sm">100,000 on 8/31/2016</span>
+                </div>
+              </div>
+
+            </div>
+            
+            <!-- Short Codes Table -->
+            <div class="form-section text-center mr-ml-a">
+              <!-- Data Table -->
+              <table class="rtable mr-ml-a mb-1">
+                <thead>
+                  <tr>
+                    <th>Provider</th>
+                    <th>Short Code</th>
+                    <th>Active Date</th>
+                    <th>Expiry Date</th>
+                    <th>Comment</th>
+                    <th>Contact Person</th>
+                    <th>Manage</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Twillio</td>
+                    <td>7432</td>
+                    <td>08/24/16</td>
+                    <td>08/31/17</td>
+                    <td class="cell-overflow">Comments go here. Should they be this long?</td>
+                    <td><a href="mailto:contact@company.com">contact@company.com</a></td>
+                    <td class="icon-group text-center"><a href="#delete-confirm"><svg class="icon icon-delete mr-ml-0"><use xlink:href="#icon-minus" /></svg><span class="sr-only">Delete</span></a>
+                   <a href="#"><svg class="icon"><use xlink:href="#icon-pencil" /></svg><span class="sr-only">Edit</span></a></td>
+                  </tr>
+                  <tr>
+                    <td>Twillio</td>
+                    <td>7433</td>
+                    <td>08/14/16</td>
+                    <td>08/15/17</td>
+                    <td class="cell-overflow">Comments go here.</td>
+                    <td><a href="mailto:contact@company.com">contact@company.com</a></td>
+                    <td class="icon-group text-center"><a href="#delete-confirm"><svg class="icon icon-delete mr-ml-0"><use xlink:href="#icon-minus" /></svg><span class="sr-only">Delete</span></a>
+                   <a href="#"><svg class="icon"><use xlink:href="#icon-pencil" /></svg><span class="sr-only">Edit</span></a></td>
+                  </tr>
+                </tbody>
+              </table>
+              	 
+            </div>
+
             
             <!-- Data List Heading on Top -->
             <table class="rtable mr-ml-a mb-2">
@@ -3997,7 +4091,7 @@
                           </div>
                           
                           <!-- Submit -->
-                          <div class="form-row submit-input-row">
+                          <div class="form-row input-submit">
                             <input class="btn-primary submit-button" type="submit" value="sign in">
                           </div>
                 
@@ -4174,7 +4268,11 @@
                           <!-- Campagin Created -->
                           <div class="remodal" data-remodal-id="setup-campaign" role="dialog" aria-labelledby="setup-campaign-title" aria-describedby="setup-campaign-desc">
                             <!-- Close Button -->
-                            <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                            <button data-remodal-action="close" class="remodal-close" aria-label="Close">
+        <svg class="icon">
+          <use xlink:href="#icon-cancel" />
+        </svg>
+      </button>
                             <!-- Modal Content -->
                             <div class="modal-content">
                               <!-- Title -->
@@ -4192,7 +4290,11 @@
                           <!-- Campagin Retired -->
                           <div class="remodal" data-remodal-id="retired-campaign" role="dialog" aria-labelledby="retired-campaign-title" aria-describedby="retired-campaign-desc">
                             <!-- Close Button -->
-                            <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                            <button data-remodal-action="close" class="remodal-close" aria-label="Close">
+        <svg class="icon">
+          <use xlink:href="#icon-cancel" />
+        </svg>
+      </button>
                             <!-- Modal Content -->
                             <div class="modal-content">
                               <!-- Title -->
@@ -4542,7 +4644,11 @@
                           <!-- Campagin Created -->
                           <div class="remodal" data-remodal-id="setup-campaign" role="dialog" aria-labelledby="setup-campaign-title" aria-describedby="setup-campaign-desc">
                             <!-- Close Button -->
-                            <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                            <button data-remodal-action="close" class="remodal-close" aria-label="Close">
+        <svg class="icon">
+          <use xlink:href="#icon-cancel" />
+        </svg>
+      </button>
                             <!-- Modal Content -->
                             <div class="modal-content">
                               <!-- Title -->
@@ -4663,7 +4769,11 @@
         	       <!-- Modal One -->
         	       <div class="remodal" data-remodal-id="modal-one" role="dialog" aria-labelledby="modal-one-title" aria-describedby="modal-one-desc">
           	       <!-- Close Button -->
-                  <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                  <button data-remodal-action="close" class="remodal-close" aria-label="Close">
+        <svg class="icon">
+          <use xlink:href="#icon-cancel" />
+        </svg>
+      </button>
                   <!-- Modal Content -->
                   <div class="modal-content">                  
                     <!-- Title -->
@@ -4698,7 +4808,11 @@
         	       <!-- Modal Two -->
         	       <div class="remodal" data-remodal-id="modal-two" role="dialog" aria-labelledby="modal-two-title" aria-describedby="modal-two-desc">
           	       <!-- Close Button -->
-                  <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                  <button data-remodal-action="close" class="remodal-close" aria-label="Close">
+        <svg class="icon">
+          <use xlink:href="#icon-cancel" />
+        </svg>
+      </button>
                   <!-- Modal Content -->
                   <div class="modal-content">
                     <!-- Content Post -->
@@ -4765,7 +4879,11 @@
         	       <!-- Modal Three -->
         	       <div class="remodal" data-remodal-id="modal-three" role="dialog" aria-labelledby="modal-three-title" aria-describedby="modal-three-desc">
           	       <!-- Close Button -->
-                  <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                  <button data-remodal-action="close" class="remodal-close" aria-label="Close">
+        <svg class="icon">
+          <use xlink:href="#icon-cancel" />
+        </svg>
+      </button>
                   <!-- Modal Content -->
                   <div class="modal-content">
                     <!-- Contact Form -->
@@ -4831,7 +4949,7 @@
                 </div>
         	       
         	       <!-- Contact Us form -->
-      <div class="remodal bg-blue-30 c-white" data-remodal-id="help-contact-form" role="dialog" aria-labelledby="help-contact-title" aria-describedby="help-contact-desc">
+      <div class="remodal quick-contact-form" data-remodal-id="help-contact-form" role="dialog" aria-labelledby="help-contact-title" aria-describedby="help-contact-desc">
         <!-- Close Button -->
         <button data-remodal-action="close" class="remodal-close" aria-label="Close">
           <svg class="icon">
@@ -4888,7 +5006,7 @@
                 <div class="form-row button-wrap flex flex-d-col-rev sm-flex-d-row sm-jc-center">
                   <button onclick="$('form[name=" DisputeForm "] input').val('');" class="btn-outline all-caps cancel-button mb-1 sm-mb-0 sm-mr-sm" type="reset" data-remodal-action="close" aria-label="Close">cancel</button>
                   
-                  <input class="btn all-caps bg-blue-40 c-white save-button mb-1 sm-mb-0 sm-ml-sm" type="submit" value="send">
+                  <input class="btn-primary" type="submit" value="Send">
                 </div>
                 <!-- end / form-wrap -->
               </div>
@@ -4911,7 +5029,11 @@
         	       <!-- Modal Four -->
         	       <div class="remodal" data-remodal-id="modal-four" role="dialog" aria-labelledby="modal-four-title" aria-describedby="modal-four-desc">
           	       <!-- Close Button -->
-                  <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                  <button data-remodal-action="close" class="remodal-close" aria-label="Close">
+        <svg class="icon">
+          <use xlink:href="#icon-cancel" />
+        </svg>
+      </button>
                   <!-- Modal Content -->
                   <div class="modal-content">
                     <!-- *** This is where vital info goes *** -->
@@ -4944,7 +5066,11 @@
         	       <!-- Modal Five -->
         	       <div class="remodal" data-remodal-id="modal-five" role="dialog" aria-labelledby="modal-five-title" aria-describedby="modal-five-desc">
           	       <!-- Close Button -->
-                  <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                  <button data-remodal-action="close" class="remodal-close" aria-label="Close">
+        <svg class="icon">
+          <use xlink:href="#icon-cancel" />
+        </svg>
+      </button>
                   <!-- Modal Content -->
                   <div class="modal-content">
                     <!-- Sign Up Form -->
@@ -4997,7 +5123,11 @@
         	       <!-- Modal Six -->
         	       <div class="remodal" data-remodal-id="modal-six" role="dialog" aria-labelledby="modal-six-title" aria-describedby="modal-six-desc">
           	       <!-- Close Button -->
-                  <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                  <button data-remodal-action="close" class="remodal-close" aria-label="Close">
+        <svg class="icon">
+          <use xlink:href="#icon-cancel" />
+        </svg>
+      </button>
                   <!-- Modal Content -->
                   <div class="modal-content">                  
                     <!-- Image -->
@@ -5017,7 +5147,7 @@
                   </div>
                   <!-- Modal Buttons -->
                   <div class="modal-buttons">
-                    <button data-remodal-action="cancel" class="btn-cancel">Close</button>
+                    <button data-remodal-action="close" class="btn-cancel">Close</button>
                     <button data-remodal-action="confirm" class="btn-primary">Share</button>
                   </div>
                 </div>
@@ -5034,7 +5164,11 @@
         	       <!-- Modal Seven -->
         	       <div class="remodal" data-remodal-id="modal-seven" role="dialog" aria-labelledby="modal-seven-title" aria-describedby="modal-seven-desc">
           	       <!-- Close Button -->
-                  <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                  <button data-remodal-action="close" class="remodal-close" aria-label="Close">
+        <svg class="icon">
+          <use xlink:href="#icon-cancel" />
+        </svg>
+      </button>
                   <!-- Modal Content -->
                   <div class="modal-content">                  
                     

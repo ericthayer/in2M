@@ -1103,7 +1103,11 @@
   <div class="remodal clear-modal video-modal" data-remodal-id="demo-video" role="dialog" aria-labelledby="demo-video-title"
     aria-describedby="demo-video-desc">
     <!-- Close Button -->
-    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+    <button data-remodal-action="close" class="remodal-close" aria-label="Close">
+        <svg class="icon">
+          <use xlink:href="#icon-cancel" />
+        </svg>
+      </button>
     <!-- Modal Content -->
     <div class="modal-content">
       <!-- Title -->
@@ -1127,10 +1131,14 @@
     </div>
   </div>
   <!-- Contact Us form -->
-  <div class="remodal bg-blue-30 c-white" data-remodal-id="help-contact-form" role="dialog" aria-labelledby="help-contact-title"
+  <div class="remodal quick-contact-form" data-remodal-id="help-contact-form" role="dialog" aria-labelledby="help-contact-title"
     aria-describedby="help-contact-desc">
     <!-- Close Button -->
-    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+    <button data-remodal-action="close" class="remodal-close" aria-label="Close">
+        <svg class="icon">
+          <use xlink:href="#icon-cancel" />
+        </svg>
+      </button>
     <!-- Modal Content -->
     <div class="modal-content bg-blue-30 c-white">
       <!-- Title -->
@@ -1173,7 +1181,7 @@
             <div class="form-row button-wrap flex flex-d-col-rev sm-flex-d-row sm-jc-center">
               <button onclick="$('form[name=" DisputeForm "] input').val('');" class="btn-outline all-caps cancel-button mb-1 sm-mb-0 sm-mr-sm"
                 type="reset" data-remodal-action="close" aria-label="Close">cancel</button>
-              <input class="btn all-caps bg-blue-40 c-white save-button mb-1 sm-mb-0 sm-ml-sm" type="submit" value="send">
+              <input class="btn-primary" type="submit" value="Send">
             </div>
             <!-- end / form-wrap -->
           </div>

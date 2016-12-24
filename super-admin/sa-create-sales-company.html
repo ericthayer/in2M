@@ -47,7 +47,7 @@
                 <!-- Text -->
                 <div class="text-wrap">
                   <h2 class="mb-sm">Create Sales Company</h2>
-                  <p class="h3 antialiased mb-0 mr-ml-a mw-35em text-lg">This is where a "Super Admin" or authorized user to create a Sales Company profile. This form is quite lengthy and should be examined after testing to minimize any confusion <em>or</em> frustration for the user.</p>
+                  <p class="h3 antialiased mb-0 mr-ml-a mw-35em text-lg">This is where a "Super Admin" or authorized user creates a Sales Company profile. This form is quite lengthy and should be examined after testing to minimize any confusion <em>or</em> frustration for the user.</p>
                 </div>
               </div>
             </article>
@@ -60,16 +60,16 @@
             
             <!-- Form Build -->
             <div class="form-section mr-ml-a mw-48em">                  
-              <form name="CreateSuperAdmin" action="upload" method="post">
+              <form name="CreateSalesCompany" action="upload" method="post">
                 
                 <!-- Form Header -->
                 <div class="bor-bot-1 bor-bot-s bor-c-DDD mb-1 pb-sm sm-flex sm-ai-center sm-jc-between">
                   
-                  <h2 class="text-center text-lg mb-1 sm-text-left sm-mr-1 sm-mb-0 sm-w-60">Create Sales Company Admin</h2>
+                  <h2 class="text-center text-lg mb-1 sm-text-left sm-mr-1 sm-mb-0 sm-w-60">New Sales Company</h2>
                  
                   <!-- Admin ID -->
                   <div class="form-row text-center mb-1 sm-text-sm sm-flex sm-flex-g-0 sm-ai-end sm-jc-between sm-mb-0 sm-w-40">
-                   <label for="-ariaLabel" class="sm-text-right sm-pr-sm sm-w-80">Admin ID</label>
+                   <label for="-ariaLabel" class="sm-text-right sm-pr-sm sm-w-80">ID</label>
                    <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="disabled input-sm text-center mw-5em" value="358" disabled>
                   </div>
 
@@ -888,9 +888,11 @@
                   </div>
                   
                   <!-- Buttons -->
-                  <div class="form-row button-wrap flex flex-d-col-rev pt-1 sm-flex-d-row sm-jc-center">
-                    <button onclick="$('form[name="CreatePackage"] input').val('');" class="cancel-button btn-outline btn-round all-caps c-777 mb-1 sm-mb-0 sm-mr-sm" type="reset">Cancel</button>
-                    <input class="btn-round all-caps bg-green c-white text-sm mb-1 sm-mb-0 sm-ml-sm" type="submit" value="Save">
+                  <div class="form-row button-wrap">
+                    <!-- cancel button -->
+                    <button class="btn-cancel" type="reset">Cancel</button>
+                    <!-- save button (primary) -->
+                    <input class="btn-primary" type="submit" value="Save" data-remodal-target="account-created">
                   </div>
                   
                   <!-- end / form-wrap -->
@@ -909,6 +911,24 @@
       
       <!-- end / site-wrap-->
     </div>
+    
+    <!-- Account Created Confirmation -->
+    <div class="remodal alert-success" data-remodal-id="account-created" role="dialog" aria-labelledby="account-created-title" aria-describedby="account-created-desc">
+      
+      <div data-replace="../global-partials/modals/modal-account-created-content.html"></div>
+      
+      <!-- end / -->
+    </div>
+    
+    <!-- Contact Us form (modal) -->
+    <div class="remodal quick-contact-form" data-remodal-id="quick-contact-form" role="dialog" aria-labelledby="quick-contact-title"
+      aria-describedby="quick-contact-desc">
+              
+      <div data-replace="../global-partials/modals/modal-contact-content.html"></div>
+      
+      <!-- end / -->
+    </div>
+    
     <!-- Dependencies -->
     <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
     <script>window.jQuery || document.write('<script src="../js/libs/jquery.1.11.2.min.js"><\/script>')</script>

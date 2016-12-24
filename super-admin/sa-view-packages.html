@@ -7,7 +7,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>in2Marketplace :: Super Admin - View Packages and Offers</title>
+    <title>in2Marketplace :: Super Admin - View Packages</title>
     <meta name="description" content="A powerful retail marketing platform and brand management tool">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="msapplication-TileColor" content="#302A2A">
@@ -21,8 +21,7 @@
     <!-- DataTables.net styles -->
     <link rel="stylesheet" href="//cdn.datatables.net/v/dt/dt-1.10.12/af-2.1.2/b-1.2.2/b-colvis-1.2.2/b-html5-1.2.2/r-2.1.0/rr-1.1.2/sc-1.4.2/se-1.2.0/datatables.min.css">
     <!-- Base Styles -->
-    <link rel="stylesheet" href="../css/styles.css">
-    
+    <link rel="stylesheet" href="../css/styles.css">    
     
     <!-- Non-Critical CSS - loadCSS: load a CSS file asynchronously. [c]2016 @scottjehl, Filament Group, Inc. Licensed MIT -->
     <script>(function(a){var b=function(c,k,d){var l=a.document;var m=l.createElement("link");var e;if(k){e=k}else{var i=(l.body||l.getElementsByTagName("head")[0]).childNodes;e=i[i.length-1]}var f=l.styleSheets;m.rel="stylesheet";m.href=c;m.media="only x";function j(n){if(l.body){return n()}setTimeout(function(){j(n)})}j(function(){e.parentNode.insertBefore(m,(k?e:e.nextSibling))});var h=function(o){var n=m.href;var p=f.length;while(p--){if(f[p].href===n){return o()}}setTimeout(function(){h(o)})};function g(){if(m.addEventListener){m.removeEventListener("load",g)}m.media=d||"all"}if(m.addEventListener){m.addEventListener("load",g)}m.onloadcssdefined=h;h(g);return m};if(typeof exports!=="undefined"){exports.loadCSS=b}else{a.loadCSS=b}}(typeof global!=="undefined"?global:this));loadCSS("../css/async.css");loadCSS("../css/scss/vendor/jquery-ui/jquery-ui.css");</script>
@@ -36,21 +35,35 @@
     <div class="site-wrap">
       
       <!-- Header -->  
-<!--       <div data-replace="sa-partials/sa-header-logged-in.html"></div> -->
+      <div data-replace="sa-partials/sa-header-logged-in.html"></div>
       
       <!-- Main Content -->
-      <main class="main-content pt-pb-2">
+      <main class="main-content pt-1 pb-3">
         
+        <!-- Main Promo (no media) -->
+        <section class="hero-banner bg-orange c-white pt-pb-4 text-s-black-50">
+          <div class="container md-pt-pb-1">
+            
+            <!-- Post -->
+            <article class="text-center">
+              <!-- Post Content -->
+              <div class="post-content">
+                <!-- Text -->
+                <div class="text-wrap">
+                  <h2 class="mb-sm">View Packages</h2>
+                  <p class="h3 antialiased mb-0 mr-ml-a mw-35em text-lg">This is where a "Super Admin" or authorized user can view all packages.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
 
-        <!-- Manage Packages & Offers -->
-        <section class="mod-block pt-pb-1">
+        <!-- Package Table -->
+        <section class="data-table pt-3">
           <div class="container">
     		    
-    		    <!-- Data Tables -->   		    
-    		    <h2 class="section-title-sm h4 text-center sr-only">Manage Packages & Offers</h2>
-    		    
-    		    <!-- Manage Packages -->
-    		    <h3 class="bor-bot-1 bor-bot-s bor-c-DDD pb-sm flex flex-d-col ai-center mb-1 text-lg sm-flex-d-row sm-jc-between"><span class="mb-sm sm-mb-0">Manage Packages</span><span class="icon-group"><a class="ml-1" href="packages.html"><svg class="icon mr-tiny ml-0"><use xlink:href="#icon-plus" /></svg><span class="text-base">Add</span></a></span></h3>
+    		    <!-- Current Packages -->
+    		    <h3 class="bor-bot-1 bor-bot-s bor-c-DDD pb-sm flex flex-d-col ai-center mb-1 text-lg sm-flex-d-row sm-jc-between"><span class="mb-sm sm-mb-0">Current Packages</span><span class="icon-group"><a class="ml-1" href="sa-setup-packages.html"><svg class="icon mr-tiny ml-0"><use xlink:href="#icon-plus" /></svg><span class="text-base">Add</span></a></span></h3>
     		    
     		    <!-- Package Data -->
             <table id="manage-packages" class="display responsive nowrap" cellspacing="0" width="100%">
@@ -71,26 +84,6 @@
                 </tr>
               </thead>
             </table>
-            
-            <!-- Manage Offers -->
-            <h3 class="bor-bot-1 bor-bot-s bor-c-DDD pb-sm flex flex-d-col ai-center mb-1 text-lg sm-flex-d-row sm-jc-between"><span class="mb-sm sm-mb-0">Manage Offers</span><span class="icon-group"><a class="ml-1" href="offers.html"><svg class="icon mr-tiny ml-0"><use xlink:href="#icon-plus" /></svg><span class="text-base">Add</span></a></span></h3>
-            
-            <!-- Offer Data -->
-            <table id="manage-offers" class="display responsive nowrap" cellspacing="0" width="100%">              
-              <thead>
-                <tr>
-                  <th>ID</th>
-                  <th>Name</th>
-                  <th>Description</th>
-                  <th>Created</th>
-                  <th>Changed</th>
-                  <th>Price</th>
-                  <th>Commission</th>
-                  <th>Status</th>
-                  <th>Manage</th>
-                </tr>
-              </thead>
-            </table>
           
             <!-- end / -->
           </div>
@@ -100,12 +93,30 @@
       </main>
       
       <!-- Footer -->
-      <!-- <div data-replace="../global-partials/footer/footer-logged-in-blue.html"></div> -->
+      <div data-replace="../global-partials/footer/footer-logged-in-blue.html"></div>
       
       <!-- end / site-wrap-->
     </div>
+    
+    <!-- Delete Confirmation -->
+    <div class="remodal" data-remodal-id="delete-confirm" role="dialog" aria-labelledby="delete-confirm-title" aria-describedby="delete-confirm-desc">
+      
+      <div data-replace="../global-partials/modals/modal-delete-confirm-content.html"></div>
+      
+      <!-- end / -->
+    </div>
+    
+    <!-- Contact Us form (modal) -->
+    <div class="remodal quick-contact-form" data-remodal-id="quick-contact-form" role="dialog" aria-labelledby="quick-contact-title"
+      aria-describedby="quick-contact-desc">
+              
+      <div data-replace="../global-partials/modals/modal-contact-content.html"></div>
+      
+      <!-- end / -->
+    </div>
+    
     <!-- Dependencies -->
-    <script src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
     <script>window.jQuery || document.write('<script src="../js/libs/jquery.1.11.2.min.js"><\/script>')</script>
     <script src="../js/min/script.min.js"></script>
     <script src="//cdn.datatables.net/v/dt/dt-1.10.12/af-2.1.2/b-1.2.2/b-colvis-1.2.2/b-html5-1.2.2/r-2.1.0/rr-1.1.2/sc-1.4.2/se-1.2.0/datatables.min.js"></script>
@@ -117,29 +128,20 @@
         keys:           true,
         ajax:           'data/package-data.txt',
         deferRender:    true,
-        scrollY:        300,
-        scrollCollapse: true,
-        scroller:       true,
-        stateSave:      true,
-        "dom": '<if<t>>'        
-      });
-      // Manage Offers
-      $('#manage-offers').DataTable({
-        responsive:     true,
-        keys:           true,
-        ajax:           "data/offer-data.txt",
-        deferRender:    true,
         columns: [
           { "data": "id" },
-          { "data": "name" },
-          { "data": "description" },
+          { "data": "version" },
+          { "data": "name" },          
           { "data": "date_created" },
           { "data": "last_changed" },
+          { "data": "description" },
+          { "data": "fees" },
+          { "data": "term" },
           { "data": "price" },
           { "data": "commission" },
           { "data": "status" },
           { "data": "manage" }
-        ]
+        ]        
       });
     </script>
   </body>

@@ -1,29 +1,5 @@
 // Detail Card
 
-/*
-.detail-card:container("width <= 450px") {
-  flex-direction: column-reverse; 
-  .post-content {
-    padding-right: 0;
-    width: 100%;  
-  } 
-  .post-media {
-    margin-bottom: 1rem; 
-    padding-left: 0;
-    width: 100%;    
-  } 
-}
-*/
-
-
-// smaller than
-
-.detail-card {
-  .post-media {
-    
-  }  
-}
-
 .detail-card:container("width <= 564px") {
 
   .post-content:container("width <= 300px") {
@@ -147,18 +123,3 @@
 // end
 } 
 
-/*
-.post-content:container("width >= 550px") {
-  padding-right: 1rem;
-  width: 60%;  
-} 
-.post-media:container("width >= 550px") {
-  margin-bottom: 0;
-  padding-right: 0; 
-  padding-left: 1rem;
-  width: 40%;
-  figure {
-    max-width: 12em;
-  }    
-}
-*/

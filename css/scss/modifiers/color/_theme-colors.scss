@@ -49,33 +49,11 @@ $gold-50: hsl(45, 34%, 50%);
   color: $gold-50;
 }
 
-
-
-
-//.c-grey-90 { color: $grey-90; }
-//.c-grey-80 { color: $grey-80; }
-//.c-grey-70 { color: $grey-70; }
-//.c-grey-60 { color: $grey-60; }
-//.c-grey-50 { color: $grey-50; }
-//.c-grey-40 { color: $grey-40; }
-//.c-grey-30 { color: $grey-30; }
-//.c-grey-20 { color: $grey-20; }
-//.c-grey-10 { color: $grey-10; }
-
-
-// Theme Colors
-$dark: #05415F; // hsl 200, 94%, 37%  
-$medium: #1C6B93; // hsl 200, 80%, 57%
-$primary: #2590C8; // hsl 200, 81%, 78%
-$secondary: #CCCCCC; // hsl 0, 0%, 80%
-$light: #F5F5F5; // hsl 0, 0%, 96%
-$accent: #72B4DB; // hsl 202, 47%, 85%
-
 // General Elements
 $text: #333;
 
 // Links
-$link: $blue-80;
+$link: $blue-60;
 
    
 // ********** Globals ********** //
@@ -105,23 +83,23 @@ a {
 // ********** Buttons ********** //
 
     
-button:not(.search-button):not([class*="-close"]),
+button:not(.search-button):not([class*="-close"]):not(.btn-cancel),
 .btn,
-[class^="btn-"] { 
+[class^="btn-"]:not(.btn-cancel) { 
   &:hover,
   &:focus,
   &.active {
-    background-color: lighten($blue-20, 15%);
-    color: white;
+    //background-color: lighten($blue-20, 15%);
+    //color: white;
     //text-shadow: 0 0 5px rgba(black, .3);
     .icon {
-      fill: white;
+      //fill: white;
     }
     > a {
-      color: white;
+      //color: white;
       //text-shadow: 0 0 5px rgba(black, .3);
       .icon {
-        fill: white;
+        //fill: white;
       }
     }
   }     
@@ -204,39 +182,62 @@ button:not(.search-button):not([class*="-close"]),
   }      
 }
 
-// ** Light ** //
+// ** Color Themes ** //
 
 .tc-white {
-  color: $white-100;
+  color: $white;
   a:not(.btn):not([class*=" btn-"]):not(button) {
-    color: $white-100;
+    color: $white;
   }
 }
 
-.tc-blue-l {
-  //background-color: $blue-70;
-  color: $white-100;
-  a:not([class^="btn-"]):not([class^="btn "]) {
-    color: $white-100;
+// theme color
+  
+@mixin tc-light {  
+  background: $white;
+  color: $c-555-grey;         
+  input {
+    border: 1px solid #CCC;   
+  }  
+  .req-mark {
+    color: $c-999-grey;
+  }      
+  a:not([class*="btn"]):not(button) {
+    color: $link;
   }
-  [class^="btn"]:not(.btn-outline) {
-    //background-color: $blue-medium;
+
+}
+
+@mixin tc-blue-l {
+  background-color: $blue-60;
+  color: $white;
+  a:not([class*="btn"]) {
+    color: $white;
+  }
+  [class*="btn"]:not(.btn-outline) {
+    background-color: $blue-40;
   }
 }
 
-.tc-blue-m {
-  //background-color: $blue-medium;
-  color: $white-100;
-  a:not([class^="btn-"]) {
-    color: $white-100;
+@mixin tc-blue-m {
+  background-color: $blue-30;
+  color: $white;
+  [class*="btn"] {
+    color: $white;
+  }
+  [class*="btn"]:not(.btn-outline) {
+    background-color: $blue-50;
   }
 }
 
-.tc-blue-d {
-  //background-color: $blue-dark;
-  color: $white-100;
-  a:not([class^="btn-"]) {
-    color: $white-100;
+@mixin tc-blue-d {
+  background-color: $blue-20;
+  color: $white;
+  [class*="btn"] {
+    color: $white;
+  }
+  [class*="btn"]:not(.btn-outline) {
+    background-color: $blue-50;
   }
 }
 

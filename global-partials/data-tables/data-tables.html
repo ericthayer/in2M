@@ -1,0 +1,118 @@
+  		    
+    		    <!-- Manage Packages -->
+    		    <h3 class="bor-bot-1 bor-bot-s bor-c-DDD pb-sm flex flex-d-col ai-center mb-1 text-lg sm-flex-d-row sm-jc-between"><span class="mb-sm sm-mb-0">Manage Packages</span><span class="icon-group"><a class="ml-1" href="packages.html"><svg class="icon mr-tiny ml-0"><use xlink:href="#icon-plus" /></svg><span class="text-base">Add</span></a></span></h3>
+    		    
+    		    <!-- Package Data -->
+            <table id="manage-packages" class="display responsive nowrap" cellspacing="0" width="100%">
+              <thead>
+                <tr>               
+                  <th>ID</th>
+                  <th>Version</th>
+                  <th>Name</th>
+                  <th>Created</th>
+                  <th>Changed</th>
+                  <th>Description</th>
+                  <th>Fees</th>
+                  <th>Term</th>
+                  <th>Price</th>
+                  <th>Commission</th>
+                  <th>Status</th>
+                  <th>Manage</th>
+                </tr>
+              </thead>
+            </table>
+            
+            <!-- Manage Offers -->
+            <h3 class="bor-bot-1 bor-bot-s bor-c-DDD pb-sm flex flex-d-col ai-center mb-1 text-lg sm-flex-d-row sm-jc-between"><span class="mb-sm sm-mb-0">Manage Offers</span><span class="icon-group"><a class="ml-1" href="offers.html"><svg class="icon mr-tiny ml-0"><use xlink:href="#icon-plus" /></svg><span class="text-base">Add</span></a></span></h3>
+            
+            <!-- Offer Data -->
+            <table id="manage-offers" class="display responsive nowrap" cellspacing="0" width="100%">              
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Description</th>
+                  <th>Created</th>
+                  <th>Changed</th>
+                  <th>Price</th>
+                  <th>Commission</th>
+                  <th>Status</th>
+                  <th>Manage</th>
+                </tr>
+              </thead>
+            </table>
+            
+                        
+            <!-- Manage Addons -->
+            <h3 class="bor-bot-1 bor-bot-s bor-c-DDD pb-sm flex flex-d-col ai-center mb-1 text-lg sm-flex-d-row sm-jc-between"><span class="mb-sm sm-mb-0">Manage Addons</span><span class="icon-group"><a class="ml-1" href="../public-site/pricing.html"><svg class="icon mr-tiny ml-0"><use xlink:href="#icon-plus" /></svg><span class="text-base">Add</span></a></span></h3>
+            
+            <!-- Addon Data -->
+            <table id="manage-addons" class="display responsive nowrap" cellspacing="0" width="100%">              
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Description</th>
+                  <th>Created</th>
+                  <th>Changed</th>
+                  <th>Price</th>
+                  <th>Commission</th>
+                  <th>Status</th>
+                  <th>Manage</th>
+                </tr>
+              </thead>
+            </table>
+
+    <!-- DataTables -->
+    <!--
+<script>
+      // Manage Packages
+      $('#manage-packages').DataTable({
+        responsive:     true,
+        keys:           true,
+        ajax:           'data/package-data.txt',
+        deferRender:    true,
+        scrollY:        300,
+        scrollCollapse: true,
+        scroller:       true,
+        stateSave:      true,
+        "dom": '<if<t>>'        
+      });
+      // Manage Offers
+      $('#manage-offers').DataTable({
+        responsive:     true,
+        keys:           true,
+        ajax:           "data/offer-data.txt",
+        deferRender:    true,
+        columns: [
+          { "data": "id" },
+          { "data": "name" },
+          { "data": "description" },
+          { "data": "date_created" },
+          { "data": "last_changed" },
+          { "data": "price" },
+          { "data": "commission" },
+          { "data": "status" },
+          { "data": "manage" }
+        ]
+      });
+      // Manage Addons
+      $('#manage-addons').DataTable({
+        responsive:     true,
+        keys:           true,
+        ajax:           "data/offer-data.txt",
+        deferRender:    true,
+        columns: [
+          { "data": "id" },
+          { "data": "name" },
+          { "data": "description" },
+          { "data": "date_created" },
+          { "data": "last_changed" },
+          { "data": "price" },
+          { "data": "commission" },
+          { "data": "status" },
+          { "data": "manage" }
+        ]
+      });
+    </script>
+-->

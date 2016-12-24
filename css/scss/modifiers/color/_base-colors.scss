@@ -2,7 +2,7 @@
 
 // BACKGROUND
 
-.bg-white { background-color: $white-100; }
+.bg-white { background-color: $white; }
 .bg-black { background-color: $black; }
 
 .bg-black-a-50 {
@@ -42,7 +42,7 @@
 
 // BORDERS
 
-.bor-c-white { border-color: $white-100; }
+.bor-c-white { border-color: $white; }
 .bor-c-black { border-color: $black; }
 
 .bor-c-EEE { border-color: $EEE; }
@@ -54,7 +54,7 @@
 
 // BOX-SHADOW - Do We Need This ?
 
-//.shadow-c-white { border-color: $white-100; }
+//.shadow-c-white { border-color: $white; }
 //.shadow-c-black { border-color: $black; }
 //
 //.shadow-c-EEE { border-color: $EEE; }
@@ -66,7 +66,7 @@
 
 // COLOR - greyscale
 
-.c-white { color: $white-100; }
+.c-white { color: $white; }
 .c-black { color: $black; }
 
 .c-EEE { color: $EEE; }
@@ -78,3 +78,12 @@
 .c-555 { color: $c-555-grey; }
 .c-333 { color: $c-333-grey; }
 
+// ALERT COLORS
+
+.bg-success-green { background-color: $alert-green; }
+.bg-alert-orange { background-color: $alert-orange; }
+.bg-error-red { background-color: $alert-red; }
+
+.c-success-green { color: $alert-green; }
+.c-alert-orange { color: $alert-orange; }
+.c-error-red { color: $alert-red; }

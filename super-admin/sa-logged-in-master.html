@@ -261,11 +261,15 @@
     <!-- Raise a Dispute form -->
     <div class="remodal mr-ml-a mw-35em" data-remodal-id="raise-dispute-form" role="dialog" aria-labelledby="raise-dispute-title" aria-describedby="raise-dispute-desc">
       <!-- Close Button -->
-      <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+      <button data-remodal-action="close" class="remodal-close" aria-label="Close">
+        <svg class="icon">
+          <use xlink:href="#icon-cancel" />
+        </svg>
+      </button>
       <!-- Modal Content -->
       <div class="modal-content">
         <!-- Title -->
-        <h2 id="raise-dispute-title" class="text-center">Raise a Dispute</h2>
+        <h2 id="raise-dispute-title" class="text-center" class="modal-title">Raise a Dispute</h2>
         <!-- Description -->
         <div id="raise-dispute-desc" class="post-text">
           <p class="text-center mr-ml-a mw-25em">Please fill out the form so we can get a better understanding of the problem.</p>
@@ -327,7 +331,7 @@
       <!-- Modal Content -->
       <div class="modal-content">
         <!-- Title -->
-        <h2 id="file-download-title">File Downloaded</h2>
+        <h2 id="file-download-title" class="modal-title">File Downloaded</h2>
         <!-- Description -->
         <div id="file-download-desc" class="post-text">
         </div>

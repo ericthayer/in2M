@@ -1,0 +1,872 @@
+<!doctype html>
+<!--#if expr="$HTTP_COOKIE=/fonts\-loaded\=true/" -->
+<html lang="en" class="fonts-loaded">
+<!--#else -->
+<html lang="en">
+<!--#endif -->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>in2Marketplace :: Super Admin - View Commissions</title>
+    <meta name="description" content="A powerful retail marketing platform and brand management tool">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="msapplication-TileColor" content="#302A2A">
+    <meta name="msapplication-TileImage" content="../images/icons/favicon-144.png">
+    <!--[if IEMobile]>
+    <meta http-equiv="cleartype" content="on" />
+    <![endif]-->
+    <link rel="apple-touch-icon" href="../images/icons/favicon-180.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <!-- DataTables.net styles -->
+    <link rel="stylesheet" href="//cdn.datatables.net/v/dt/dt-1.10.12/af-2.1.2/b-1.2.2/b-colvis-1.2.2/b-html5-1.2.2/r-2.1.0/rr-1.1.2/sc-1.4.2/se-1.2.0/datatables.min.css">
+    <!-- Base Styles -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Non-Critical CSS - loadCSS: load a CSS file asynchronously. [c]2016 @scottjehl, Filament Group, Inc. Licensed MIT -->
+    <script>(function(a){var b=function(c,k,d){var l=a.document;var m=l.createElement("link");var e;if(k){e=k}else{var i=(l.body||l.getElementsByTagName("head")[0]).childNodes;e=i[i.length-1]}var f=l.styleSheets;m.rel="stylesheet";m.href=c;m.media="only x";function j(n){if(l.body){return n()}setTimeout(function(){j(n)})}j(function(){e.parentNode.insertBefore(m,(k?e:e.nextSibling))});var h=function(o){var n=m.href;var p=f.length;while(p--){if(f[p].href===n){return o()}}setTimeout(function(){h(o)})};function g(){if(m.addEventListener){m.removeEventListener("load",g)}m.media=d||"all"}if(m.addEventListener){m.addEventListener("load",g)}m.onloadcssdefined=h;h(g);return m};if(typeof exports!=="undefined"){exports.loadCSS=b}else{a.loadCSS=b}}(typeof global!=="undefined"?global:this));loadCSS("../css/async.css");loadCSS("../css/scss/vendor/jquery-ui/jquery-ui.css");</script>
+    </head>
+  <body class="logged-in super-admin">
+    <!--[if lt IE 10]>
+    <p class="update-browser">This browser version is not recommended. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->      
+    
+    <!-- Site Wrap  -->
+    <div class="site-wrap">
+      
+      <!-- Header -->  
+      <div data-replace="sa-partials/sa-header-logged-in.html"></div>
+      
+      <!-- Main Content -->
+      <main class="main-content">
+        
+        <!-- Commissions Earned -->
+        <section class="mod-block pt-2 pb-1">
+        	<div class="container mw-56em">
+          	<h2 class="text-center text-lg bor-bot-1 bor-bot-s bor-c-DDD mb-1 pb-sm">Commissions Earned</h2>
+          	
+          	<!-- Commission Totals -->
+          	<div class="flex flex-d-col jc-center pt-sm sm-flex-d-row">
+            	
+            	<!-- Sales Company Admin Select -->
+            	<div class="flex-g-1 mb-2 mw-25em sm-mb-0">
+              	<h3 class="text-center text-base">Sales Admin</h3>
+              	<!-- Filter Select -->
+                <div class="mb-1 sm-flex sm-jc-center">
+                  <!-- Sales Admin -->
+                  <div class="text-center mr-ml-a mb-1 sm-mb-0 sm-flex-g-1 md-w-100">
+                    <div class="custom-select bor-1 bor-solid bor-c-BBB">
+                      <select id="admin-select" name="sa-commish-earned-select" class="option-select">
+                        <option value="-1" selected disabled>sales admin</option>
+                        <option value="AdminOne">Sales Admin One</option>
+                        <option value="AdminTwo">Sales Admin Two</option>
+                        <option value="AdminThree">Sales Admin Three</option>
+                        <option value="AdminFour">Sales Admin Four</option>
+                      </select>
+                    </div>
+                  </div>
+                  <!-- end / -->
+                </div> 
+              	<!-- Monthly Totals -->
+              	<div class="text-sm flex jc-between">
+                	<span class="pt-pb-tiny pr-pl-sm">Total Commission earned this month</span>
+                	<span class="amount pt-pb-tiny pr-pl-sm">$X</span>
+              	</div>
+              	<!-- Yearly Totals -->
+              	<div class="text-sm flex jc-between">
+                	<span class="pt-pb-tiny pr-pl-sm">Total Commission earned this year</span>
+                	<span class="amount pt-pb-tiny pr-pl-sm">$Y</span>
+              	</div>
+            	</div>
+            	
+            	<!-- HIDDEN SELECTS *** Sales Groups & Salespersons -->
+            	
+            	<!-- Admin One -->
+            	<div id="AdminOne" class="flex-g-1 sm-ml-1 select-target">
+              	<h3 class="text-center text-base">Admin One Breakdown</h3>
+              	<!-- Filter Select -->
+                <div class="flex flex-d-col mb-1 x-sm-flex-d-row x-sm-jc-between">
+                  <!-- Sales Admin -->
+                  <div class="mb-1 x-sm-mb-0 x-sm-mr-tiny x-sm-flex-g-1 x-sm-w-50">
+                    <div class="custom-select bor-1 bor-solid bor-c-BBB">
+                      <select name="sg-commish-earned-select">
+                        <option value="-1" selected disabled>sales group</option>
+                        <option>Sales Group One</option>
+                        <option>Sales Group Two</option>
+                        <option>Sales Group Three</option>
+                        <option>Sales Group Four</option>
+                      </select>
+                    </div>
+                  </div>
+                  <!-- Salesperson -->
+                  <div class="x-sm-ml-tiny x-sm-flex-g-1 x-sm-w-50">
+                    <div class="custom-select bor-1 bor-solid bor-c-BBB">
+                      <select name="sp-commish-earned-select">
+                        <option value="-1" selected disabled>sales person</option>
+                        <option>Salesperson One</option>
+                        <option>Salesperson Two</option>
+                        <option>Salesperson Three</option>
+                        <option>Salesperson Four</option>
+                      </select>
+                    </div>
+                  </div>
+                  <!-- end / -->
+                </div>
+              	<!-- Monthly Totals -->
+              	<div class="text-sm flex jc-between">
+                	<span class="pt-pb-tiny pr-pl-sm">Total Commission earned this month</span>
+                	<span class="amount pt-pb-tiny pr-pl-sm">$X</span>
+              	</div>
+              	<!-- Yearly Totals -->
+              	<div class="text-sm flex jc-between">
+                	<span class="pt-pb-tiny pr-pl-sm">Total Commission earned this year</span>
+                	<span class="amount pt-pb-tiny pr-pl-sm">$Y</span>
+              	</div>
+              	<!-- Commission Tier -->
+              	<div class="text-sm flex jc-between">
+                	<span class="pt-pb-tiny pr-pl-sm">Commission Tier</span>
+                	<span class="amount pt-pb-tiny pr-pl-sm">$X</span>
+              	</div>
+              	<!-- Next Commission -->
+              	<div class="text-sm flex jc-between">
+                	<span class="pt-pb-tiny pr-pl-sm">Next Commission</span>
+                	<span class="amount pt-pb-tiny pr-pl-sm">$Y</span>
+              	</div>
+              	
+            	</div>
+            	<!-- Admin Two -->
+            	<div id="AdminTwo" class="flex-g-1 sm-ml-1 select-target">
+              	<h3 class="text-center text-base">Admin Two Breakdown</h3>
+              	<!-- Filter Select -->
+                <div class="flex flex-d-col mb-1 x-sm-flex-d-row x-sm-jc-between">
+                  <!-- Sales Admin -->
+                  <div class="mb-1 x-sm-mb-0 x-sm-mr-tiny x-sm-flex-g-1 x-sm-w-50">
+                    <div class="custom-select bor-1 bor-solid bor-c-BBB">
+                      <select name="sg-commish-earned-select">
+                        <option value="-1" selected disabled>sales group</option>
+                        <option>Sales Group One</option>
+                        <option>Sales Group Two</option>
+                        <option>Sales Group Three</option>
+                        <option>Sales Group Four</option>
+                      </select>
+                    </div>
+                  </div>
+                  <!-- Salesperson -->
+                  <div class="x-sm-ml-tiny x-sm-flex-g-1 x-sm-w-50">
+                    <div class="custom-select bor-1 bor-solid bor-c-BBB">
+                      <select name="sp-commish-earned-select">
+                        <option value="-1" selected disabled>sales person</option>
+                        <option>Salesperson One</option>
+                        <option>Salesperson Two</option>
+                        <option>Salesperson Three</option>
+                        <option>Salesperson Four</option>
+                      </select>
+                    </div>
+                  </div>
+                  <!-- end / -->
+                </div>
+              	<!-- Monthly Totals -->
+              	<div class="text-sm flex jc-between">
+                	<span class="pt-pb-tiny pr-pl-sm">Total Commission earned this month</span>
+                	<span class="amount pt-pb-tiny pr-pl-sm">$X</span>
+              	</div>
+              	<!-- Yearly Totals -->
+              	<div class="text-sm flex jc-between">
+                	<span class="pt-pb-tiny pr-pl-sm">Total Commission earned this year</span>
+                	<span class="amount pt-pb-tiny pr-pl-sm">$Y</span>
+              	</div>
+              	<!-- Commission Tier -->
+              	<div class="text-sm flex jc-between">
+                	<span class="pt-pb-tiny pr-pl-sm">Commission Tier</span>
+                	<span class="amount pt-pb-tiny pr-pl-sm">$X</span>
+              	</div>
+              	<!-- Next Commission -->
+              	<div class="text-sm flex jc-between">
+                	<span class="pt-pb-tiny pr-pl-sm">Next Commission</span>
+                	<span class="amount pt-pb-tiny pr-pl-sm">$Y</span>
+              	</div>
+              	
+            	</div>
+            	<!-- Admin Three -->
+            	<div id="AdminThree" class="flex-g-1 sm-ml-1 select-target">
+              	<h3 class="text-center text-base">Admin Three Breakdown</h3>
+              	<!-- Filter Select -->
+                <div class="flex flex-d-col mb-1 x-sm-flex-d-row x-sm-jc-between">
+                  <!-- Sales Admin -->
+                  <div class="mb-1 x-sm-mb-0 x-sm-mr-tiny x-sm-flex-g-1 x-sm-w-50">
+                    <div class="custom-select bor-1 bor-solid bor-c-BBB">
+                      <select name="sg-commish-earned-select">
+                        <option value="-1" selected disabled>sales group</option>
+                        <option>Sales Group One</option>
+                        <option>Sales Group Two</option>
+                        <option>Sales Group Three</option>
+                        <option>Sales Group Four</option>
+                      </select>
+                    </div>
+                  </div>
+                  <!-- Salesperson -->
+                  <div class="x-sm-ml-tiny x-sm-flex-g-1 x-sm-w-50">
+                    <div class="custom-select bor-1 bor-solid bor-c-BBB">
+                      <select name="sp-commish-earned-select">
+                        <option value="-1" selected disabled>sales person</option>
+                        <option>Salesperson One</option>
+                        <option>Salesperson Two</option>
+                        <option>Salesperson Three</option>
+                        <option>Salesperson Four</option>
+                      </select>
+                    </div>
+                  </div>
+                  <!-- end / -->
+                </div>
+              	<!-- Monthly Totals -->
+              	<div class="text-sm flex jc-between">
+                	<span class="pt-pb-tiny pr-pl-sm">Total Commission earned this month</span>
+                	<span class="amount pt-pb-tiny pr-pl-sm">$X</span>
+              	</div>
+              	<!-- Yearly Totals -->
+              	<div class="text-sm flex jc-between">
+                	<span class="pt-pb-tiny pr-pl-sm">Total Commission earned this year</span>
+                	<span class="amount pt-pb-tiny pr-pl-sm">$Y</span>
+              	</div>
+              	<!-- Commission Tier -->
+              	<div class="text-sm flex jc-between">
+                	<span class="pt-pb-tiny pr-pl-sm">Commission Tier</span>
+                	<span class="amount pt-pb-tiny pr-pl-sm">$X</span>
+              	</div>
+              	<!-- Next Commission -->
+              	<div class="text-sm flex jc-between">
+                	<span class="pt-pb-tiny pr-pl-sm">Next Commission</span>
+                	<span class="amount pt-pb-tiny pr-pl-sm">$Y</span>
+              	</div>
+              	
+            	</div>
+            	
+            	<!-- Admin Four -->
+            	<div id="AdminFour" class="flex-g-1 sm-ml-1 select-target">
+              	<h3 class="text-center text-base">Admin Four Breakdown</h3>
+              	<!-- Filter Select -->
+                <div class="flex flex-d-col mb-1 x-sm-flex-d-row x-sm-jc-between">
+                  <!-- Sales Admin -->
+                  <div class="mb-1 x-sm-mb-0 x-sm-mr-tiny x-sm-flex-g-1 x-sm-w-50">
+                    <div class="custom-select bor-1 bor-solid bor-c-BBB">
+                      <select name="sg-commish-earned-select">
+                        <option value="-1" selected disabled>sales group</option>
+                        <option>Sales Group One</option>
+                        <option>Sales Group Two</option>
+                        <option>Sales Group Three</option>
+                        <option>Sales Group Four</option>
+                      </select>
+                    </div>
+                  </div>
+                  <!-- Salesperson -->
+                  <div class="x-sm-ml-tiny x-sm-flex-g-1 x-sm-w-50">
+                    <div class="custom-select bor-1 bor-solid bor-c-BBB">
+                      <select name="sp-commish-earned-select">
+                        <option value="-1" selected disabled>sales person</option>
+                        <option>Salesperson One</option>
+                        <option>Salesperson Two</option>
+                        <option>Salesperson Three</option>
+                        <option>Salesperson Four</option>
+                      </select>
+                    </div>
+                  </div>
+                  <!-- end / -->
+                </div>
+              	<!-- Monthly Totals -->
+              	<div class="text-sm flex jc-between">
+                	<span class="pt-pb-tiny pr-pl-sm">Total Commission earned this month</span>
+                	<span class="amount pt-pb-tiny pr-pl-sm">$X</span>
+              	</div>
+              	<!-- Yearly Totals -->
+              	<div class="text-sm flex jc-between">
+                	<span class="pt-pb-tiny pr-pl-sm">Total Commission earned this year</span>
+                	<span class="amount pt-pb-tiny pr-pl-sm">$Y</span>
+              	</div>
+              	<!-- Commission Tier -->
+              	<div class="text-sm flex jc-between">
+                	<span class="pt-pb-tiny pr-pl-sm">Commission Tier</span>
+                	<span class="amount pt-pb-tiny pr-pl-sm">$X</span>
+              	</div>
+              	<!-- Next Commission -->
+              	<div class="text-sm flex jc-between">
+                	<span class="pt-pb-tiny pr-pl-sm">Next Commission</span>
+                	<span class="amount pt-pb-tiny pr-pl-sm">$Y</span>
+              	</div>
+              	
+            	</div>
+            	
+            	
+            	
+            	<!-- end / commissions totals -->
+          	</div>            	
+          	
+        	</div>
+        </section>
+        
+        <!-- Commission Details -->
+        <section class="mod-block pt-pb-2">
+          <div class="container mw-56em">
+            <h2 class="text-center text-lg bor-bot-1 bor-bot-s bor-c-DDD mb-1 pb-sm">Commission Details</h2>
+              
+              <!-- Filter Select -->
+              <div class="flex flex-d-col mb-2 sm-flex-d-row sm-jc-between sm-mb-1 md-jc-center">
+                
+                <!-- Left Side -->
+                <div class="left-col mb-1 x-sm-flex sm-mr-tiny sm-mb-0">
+                  <!-- Sales Admin -->
+                  <div class="mb-1 x-sm-mb-0 x-sm-mr-tiny x-sm-flex-g-1 x-sm-w-50">
+                    <label for="-ariaLabel" class="text-center">Sales Group</label>
+                    <div class="custom-select bor-1 bor-solid bor-c-BBB">
+                      <select name="sg-commish-details-select">
+                        <option value="-1" selected disabled>select</option>
+                        <option>Sales Group One</option>
+                        <option>Sales Group Two</option>
+                        <option>Sales Group Three</option>
+                        <option>Sales Group Four</option>
+                      </select>
+                    </div>
+                  </div>
+                  <!-- Salesperson -->
+                  <div class="x-sm-ml-tiny x-sm-flex-g-1 x-sm-w-50 sm-mb-0">
+                    <label for="-ariaLabel" class="text-center">Salesperson</label>
+                    <div class="custom-select bor-1 bor-solid bor-c-BBB">
+                      <select name="sp-commish-details-select">
+                        <option value="-1" selected disabled>select</option>
+                        <option>Sales Person One</option>
+                        <option>Sales Person Two</option>
+                        <option>Sales Person Three</option>
+                        <option>Sales Person Four</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Right Side -->
+                <div class="right-col x-sm-flex sm-ml-tiny">
+                  
+                  <!-- Sort by Date -->
+                  <div class="mb-1 x-sm-flex-g-1 x-sm-mb-0 x-sm-mr-tiny x-sm-w-50">
+                    <label for="-ariaLabel" class="text-center">Sort by Date</label>
+                    <div class="custom-select bor-1 bor-solid bor-c-BBB">
+                      <select name="filter-commish-date-select">
+                        <option value="-1" selected disabled>select</option>
+                        <option>06/30/2016</option>
+                        <option>07/01/2016</option>
+                        <option>08/30/2016</option>
+                        <option>09/01/2016</option>
+                      </select>
+                    </div>
+                  </div>
+                  
+                  <!-- Date Range -->
+                  <div class="x-sm-ml-tiny x-sm-flex-g-1 x-sm-w-50">
+                    <label for="sort-from-date" id="sortFromDate-ariaLabel" class="text-center">Date Range</label>
+                      <div class="flex">
+                        <div class="mr-tiny w-50 x-sm-mb-0">
+                          <input class="date-input bor-1 bor-solid bor-c-BBB" id="sort-from-date" name="sortFromDate-ariaLabel" type="text" placeholder="from" aria-labelledby="sortFromDate-ariaLabel">
+                        </div>
+                        <div class="ml-tiny w-50">
+                          <input class="date-input bor-1 bor-solid bor-c-BBB" id="sort-to-date" name="sortToDate-ariaLabel" type="text" placeholder="to" aria-labelledby="sortToDate-ariaLabel">
+                        </div>
+                      </div>
+                  </div>
+                  
+                </div>
+                
+                <!-- end / -->
+              </div>                
+              <!-- Data Table -->
+              <table class="rtable mr-ml-a mb-sm">
+                <thead>
+                  <tr>
+                    <th>Date</th>
+                    <th>Retailer</th>
+                    <th>Type</th>
+                    <th>Comment</th>
+                    <th>Tickets</th>
+                    <th class="text-right">Rate</th>
+                    <th class="text-right">Amount</th>
+                    <th class="text-right">Deductions</th>
+                    <th class="text-right">Payable</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>08/24/16</td>
+                    <td><a href="#">Retailer Ltd.</a></td>                      
+                    <td>Sign Up</td>
+                    <td>New Customer</td>
+                    <td>289</td>
+                    <td class="text-right">$100</td>
+                    <td class="text-right">$100</td>
+                    <td class="text-right">$0</td>
+                    <td class="text-right">$100</td>
+                  </tr>
+                  <tr>
+                    <td>06/15/16</td>
+                    <td><a href="#">Longname Retailer Ltd.</a></td>                      
+                    <td>Recurring</td>
+                    <td>Monthly</td>
+                    <td>281, 282</td>
+                    <td class="text-right">7%</td>
+                    <td class="text-right">$10.43</td>
+                    <td class="text-right">$0</td>
+                    <td class="text-right">$10.43</td>
+                  </tr>
+                  <tr>
+                    <td>08/24/16</td>
+                    <td><a href="#">Retailer Ltd.</a></td>                      
+                    <td>Sign Up</td>
+                    <td>New Customer</td>
+                    <td>289</td>
+                    <td class="text-right">$100</td>
+                    <td class="text-right">$100</td>
+                    <td class="text-right">$0</td>
+                    <td class="text-right">$100</td>
+                  </tr>
+                  <tr>
+                    <td>06/15/16</td>
+                    <td><a href="#">Longname Retailer Ltd.</a></td>                      
+                    <td>Recurring</td>
+                    <td>Monthly</td>
+                    <td>281, 282</td>
+                    <td class="text-right">7%</td>
+                    <td class="text-right">$10.43</td>
+                    <td class="text-right">$0</td>
+                    <td class="text-right">$10.43</td>
+                  </tr>
+                  <tr>
+                    <td>08/24/16</td>
+                    <td><a href="#">Retailer Ltd.</a></td>                      
+                    <td>Sign Up</td>
+                    <td>New Customer</td>
+                    <td>289</td>
+                    <td class="text-right">$100</td>
+                    <td class="text-right">$100</td>
+                    <td class="text-right">$0</td>
+                    <td class="text-right">$100</td>
+                  </tr>
+                  <tr>
+                    <td>06/15/16</td>
+                    <td><a href="#">Longname Retailer Ltd.</a></td>                      
+                    <td>Recurring</td>
+                    <td>Monthly</td>
+                    <td>281, 282</td>
+                    <td class="text-right">7%</td>
+                    <td class="text-right">$10.43</td>
+                    <td class="text-right">$0</td>
+                    <td class="text-right">$10.43</td>
+                  </tr>
+                  <tr>
+                    <td>08/24/16</td>
+                    <td><a href="#">Retailer Ltd.</a></td>                      
+                    <td>Sign Up</td>
+                    <td>New Customer</td>
+                    <td>289</td>
+                    <td class="text-right">$100</td>
+                    <td class="text-right">$100</td>
+                    <td class="text-right">$0</td>
+                    <td class="text-right">$100</td>
+                  </tr>
+                  <tr>
+                    <td>06/15/16</td>
+                    <td><a href="#">Longname Retailer Ltd.</a></td>                      
+                    <td>Recurring</td>
+                    <td>Monthly</td>
+                    <td>281, 282</td>
+                    <td class="text-right">7%</td>
+                    <td class="text-right">$10.43</td>
+                    <td class="text-right">$0</td>
+                    <td class="text-right">$10.43</td>
+                  </tr>
+                  <tr>
+                    <td>08/24/16</td>
+                    <td><a href="#">Retailer Ltd.</a></td>                      
+                    <td>Sign Up</td>
+                    <td>New Customer</td>
+                    <td>289</td>
+                    <td class="text-right">$100</td>
+                    <td class="text-right">$100</td>
+                    <td class="text-right">$0</td>
+                    <td class="text-right">$100</td>
+                  </tr>
+                  <tr>
+                    <td>06/15/16</td>
+                    <td><a href="#">Longname Retailer Ltd.</a></td>                      
+                    <td>Recurring</td>
+                    <td>Monthly</td>
+                    <td>281, 282</td>
+                    <td class="text-right">7%</td>
+                    <td class="text-right">$10.43</td>
+                    <td class="text-right">$0</td>
+                    <td class="text-right">$10.43</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <!-- Pager -->
+              <div class="pager flex ai-center jc-center mb-2 w-100">
+                <!-- Page Links -->
+                <div class="pager-links flex jc-between">
+                  <!-- First/Prev -->
+                  <div class="left-control flex w-a">
+                    <!-- First -->
+                    <a href="#">|<svg class="icon mr-ml-0"><use xlink:href="#icon-caret" /><span class="sr-only">first page</span></svg></a>
+                    <!-- Prev -->
+                    <a href="#"><svg class="icon mr-0"><use xlink:href="#icon-caret" /><span class="sr-only">previous page</span></svg></a>
+                  </div>
+                  <!-- Page Controls -->
+                  <div class="page-controls flex-g-1 pr-pl-sm">
+                    <ul class="pager-list flex jc-center w-100">
+                      <li><a href="#">1</a></li>
+                      <li><a href="#">2</a></li>
+                      <li><a href="#">3</a></li>
+                      <li><a href="#">4</a></li>
+                      <li><a href="#">5</a></li>
+                    </ul>
+                  </div>                      
+                  <!-- Next/Last -->
+                  <div class="right-control flex w-a">
+                    <!-- Next -->
+                    <a href="#"><svg class="icon ml-0 rotate-180"><use xlink:href="#icon-caret" /><span class="sr-only">next page</span></svg></a>
+                    <!-- Last -->
+                    <a href="#"><svg class="icon mr-ml-0 rotate-180"><use xlink:href="#icon-caret" /><span class="sr-only">last page</span>|</svg></a>
+                  </div>
+                </div>
+                <!-- Pager Icons -->
+                <div class="pager-icons pl-1 w-a">
+                  <a href="#"> <svg class="icon text-md"><use xlink:href="#icon-full-screen" /><span class="sr-only">icon</span></svg> </a>
+                </div>
+              </div>
+              
+              <!-- Buttons -->
+              <div class="button-wrap flex flex-d-col-rev sm-jc-center sm-flex-d-row">
+                <button class="cancel-button btn-round btn-outline all-caps c-blue-40 mb-1 sm-mb-0 sm-mr-sm" data-remodal-target="file-download-confirmation">Download CSV</button>
+                <button class="save-button btn-round all-caps bg-green c-white mb-1 sm-mb-0 sm-ml-sm" data-remodal-target="raise-dispute-form">Raise a Dispute</button>
+              </div>    
+                    
+              <!-- end / -->
+            
+            
+            <!-- end / -->
+          </div>
+        </section>
+        
+        <!-- Commission Forecast -->
+        <section class="mod-block pt-pb-2">
+          <div class="container mw-56em">             
+
+            <h2 class="text-center text-lg mb-1">Commissions Forecast</h2>
+            
+            <!-- Filter Select -->
+            <div class="mb-1 sm-flex sm-jc-between">
+              
+              <!-- Filters -->
+              <div class="left-col mb-1 x-sm-flex sm-mb-0 sm-mr-tiny sm-w-50">
+                <!-- Sales Admin -->
+                <div class="mb-1 x-sm-mb-0 x-sm-mr-tiny x-sm-w-50 sm-w-a">
+                  <label for="-ariaLabel" class="text-center sm-ml-a">Sales Admin</label>
+                  <div class="custom-select bor-1 bor-solid bor-c-BBB">
+                    <select name="sa-commish-forecast-select">
+                      <option value="-1" selected disabled>select</option>
+                      <option>Sales Admin One</option>
+                      <option>Sales Admin Two</option>
+                      <option>Sales Admin Three</option>
+                      <option>Sales Admin Four</option>
+                    </select>
+                  </div>
+                </div>
+                
+                <!-- Salesperson -->
+                <div class="x-sm-mr-ml-tiny x-sm-w-50 sm-w-a">
+                  <label for="-ariaLabel" class="text-center sm-mr-a">Salesperson</label>
+                  <div class="custom-select bor-1 bor-solid bor-c-BBB">
+                    <select name="sp-commish-forecast-select">
+                      <option value="-1" selected disabled>select</option>
+                      <option>Salesperson One</option>
+                      <option>Salesperson Two</option>
+                      <option>Salesperson Three</option>
+                      <option>Salesperson Four</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- View Controls -->
+              <div class="right-col x-sm-flex x-sm-ml-tiny x-sm-ai-end sm-w-50">
+                <!-- Pager -->
+                <div class="pager flex jc-between sm-jc-end w-100">
+                  <!-- Page Links -->
+                  <div class="pager-links flex flex-wrap jc-between">
+                    <!-- First/Prev -->
+                    <div class="left-control flex w-a">
+                      <!-- First -->
+                      <a href="#">|<svg class="icon mr-ml-0"><use xlink:href="#icon-caret" /><span class="sr-only">first page</span></svg></a>
+                      <!-- Prev -->
+                      <a href="#"><svg class="icon mr-0"><use xlink:href="#icon-caret" /><span class="sr-only">previous page</span></svg></a>
+                    </div>
+                    <!-- Page Controls -->
+                    <div class="page-controls flex-g-0 pr-pl-sm w-60">
+                      <ul class="pager-list flex jc-center w-100">
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                      </ul>
+                    </div>                      
+                    <!-- Next/Last -->
+                    <div class="right-control flex w-a">
+                      <!-- Next -->
+                      <a href="#"><svg class="icon ml-0 rotate-180"><use xlink:href="#icon-caret" /><span class="sr-only">next page</span></svg></a>
+                      <!-- Last -->
+                      <a href="#"><svg class="icon mr-ml-0 rotate-180"><use xlink:href="#icon-caret" /><span class="sr-only">last page</span>|</svg></a>
+                    </div>
+                  </div>
+                  <!-- Pager Icons -->
+                  <div class="pager-icons pl-1 w-a">
+                    <a href="#"> <svg class="icon text-md"><use xlink:href="#icon-full-screen" /><span class="sr-only">icon</span></svg> </a>
+                  </div>
+                </div>                  
+              </div>
+              <!-- end / -->
+            </div>
+                   
+            <!-- Data Table -->
+            <table class="rtable mr-ml-a mb-2">
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Retailer</th>
+                  <th>Type</th>
+                  <th>Comment</th>
+                  <th>Tickets</th>
+                  <th class="text-right">Rate</th>
+                  <th class="text-right">Amount</th>
+                  <th class="text-right">Deductions</th>
+                  <th class="text-right">Payable</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>08/24/16</td>
+                  <td><a href="#">Retailer Ltd.</a></td>                      
+                  <td>Sign Up</td>
+                  <td>New Customer</td>
+                  <td>289</td>
+                  <td class="text-right">$100</td>
+                  <td class="text-right">$100</td>
+                  <td class="text-right">$0</td>
+                  <td class="text-right">$100</td>
+                </tr>
+                <tr>
+                  <td>06/15/16</td>
+                  <td><a href="#">Longname Retailer Ltd.</a></td>                      
+                  <td>Recurring</td>
+                  <td>Monthly</td>
+                  <td>281, 282</td>
+                  <td class="text-right">7%</td>
+                  <td class="text-right">$10.43</td>
+                  <td class="text-right">$0</td>
+                  <td class="text-right">$10.43</td>
+                </tr>
+                <tr>
+                  <td>08/24/16</td>
+                  <td><a href="#">Retailer Ltd.</a></td>                      
+                  <td>Sign Up</td>
+                  <td>New Customer</td>
+                  <td>289</td>
+                  <td class="text-right">$100</td>
+                  <td class="text-right">$100</td>
+                  <td class="text-right">$0</td>
+                  <td class="text-right">$100</td>
+                </tr>
+                <tr>
+                  <td>06/15/16</td>
+                  <td><a href="#">Longname Retailer Ltd.</a></td>                      
+                  <td>Recurring</td>
+                  <td>Monthly</td>
+                  <td>281, 282</td>
+                  <td class="text-right">7%</td>
+                  <td class="text-right">$10.43</td>
+                  <td class="text-right">$0</td>
+                  <td class="text-right">$10.43</td>
+                </tr>
+                <tr>
+                  <td>08/24/16</td>
+                  <td><a href="#">Retailer Ltd.</a></td>                      
+                  <td>Sign Up</td>
+                  <td>New Customer</td>
+                  <td>289</td>
+                  <td class="text-right">$100</td>
+                  <td class="text-right">$100</td>
+                  <td class="text-right">$0</td>
+                  <td class="text-right">$100</td>
+                </tr>
+                <tr>
+                  <td>06/15/16</td>
+                  <td><a href="#">Longname Retailer Ltd.</a></td>                      
+                  <td>Recurring</td>
+                  <td>Monthly</td>
+                  <td>281, 282</td>
+                  <td class="text-right">7%</td>
+                  <td class="text-right">$10.43</td>
+                  <td class="text-right">$0</td>
+                  <td class="text-right">$10.43</td>
+                </tr>
+                <tr>
+                  <td>08/24/16</td>
+                  <td><a href="#">Retailer Ltd.</a></td>                      
+                  <td>Sign Up</td>
+                  <td>New Customer</td>
+                  <td>289</td>
+                  <td class="text-right">$100</td>
+                  <td class="text-right">$100</td>
+                  <td class="text-right">$0</td>
+                  <td class="text-right">$100</td>
+                </tr>
+                <tr>
+                  <td>06/15/16</td>
+                  <td><a href="#">Longname Retailer Ltd.</a></td>                      
+                  <td>Recurring</td>
+                  <td>Monthly</td>
+                  <td>281, 282</td>
+                  <td class="text-right">7%</td>
+                  <td class="text-right">$10.43</td>
+                  <td class="text-right">$0</td>
+                  <td class="text-right">$10.43</td>
+                </tr>
+                <tr>
+                  <td>08/24/16</td>
+                  <td><a href="#">Retailer Ltd.</a></td>                      
+                  <td>Sign Up</td>
+                  <td>New Customer</td>
+                  <td>289</td>
+                  <td class="text-right">$100</td>
+                  <td class="text-right">$100</td>
+                  <td class="text-right">$0</td>
+                  <td class="text-right">$100</td>
+                </tr>
+                <tr>
+                  <td>06/15/16</td>
+                  <td><a href="#">Longname Retailer Ltd.</a></td>                      
+                  <td>Recurring</td>
+                  <td>Monthly</td>
+                  <td>281, 282</td>
+                  <td class="text-right">7%</td>
+                  <td class="text-right">$10.43</td>
+                  <td class="text-right">$0</td>
+                  <td class="text-right">$10.43</td>
+                </tr>
+              </tbody>
+            </table>            
+            <!-- end / -->
+          </div>
+        </section>
+        
+        <!-- end / main-content -->
+      </main>
+
+      <!-- Footer -->
+      <div data-replace="../global-partials/footer/footer-logged-in-blue.html"></div>
+      
+      <!-- end / site-wrap-->
+    </div>
+    
+    <!-- Raise a Dispute form -->
+    <div class="remodal mr-ml-a mw-35em" data-remodal-id="raise-dispute-form" role="dialog" aria-labelledby="raise-dispute-title" aria-describedby="raise-dispute-desc">
+      <!-- Close Button -->
+      <button data-remodal-action="close" class="remodal-close" aria-label="Close">
+        <svg class="icon">
+          <use xlink:href="#icon-cancel" />
+        </svg>
+      </button>
+      <!-- Modal Content -->
+      <div class="modal-content">
+        <!-- Title -->
+        <h2 id="raise-dispute-title" class="text-center" class="modal-title">Raise a Dispute</h2>
+        <!-- Description -->
+        <div id="raise-dispute-desc" class="post-text">
+          <p class="text-center mr-ml-a mw-25em">Please fill out the form so we can get a better understanding of the problem.</p>
+          <!-- Form -->
+          <form name="DisputeForm">
+            <div class="form-wrap">
+    
+              <!-- Username -->
+              <div class="form-row mb-1">
+                <label for="" id="-ariaLabel">Name <span class="req-mark">*</span></label>
+                <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="bor-1 bor-solid bor-c-BBB required" title="This is a required field" required>
+              </div>
+    
+              <!-- Email -->
+              <div class="form-row mb-1">
+                <label for="" id="-ariaLabel">Email <span class="req-mark">*</span></label>
+                      <input id="" name="" type="email" autocorrect="off" autocapitalize="none" spellcheck="false" aria-labelledby="-ariaLabel" class="bor-1 bor-solid bor-c-BBB required" title="This is a required field" required>
+              </div>
+              
+              <!-- Issue -->
+              <div class="form-row mb-1">
+                <label for="" id="-ariaLabel">What's the problem?</label>
+                <textarea class="bor-1 bor-solid bor-c-BBB" maxlength="200" aria-labelledby="-ariaLabel"></textarea>
+              </div>
+              
+    
+              <!-- Form Helpers -->
+              <div class="form-row form-helpers flex flex-wrap jc-between mb-1">
+                <!-- Critical Marker -->
+                <label>
+                  <input type="checkbox" name="opt1" id="opt1">
+                  <span class="text-sm pl-tiny">Mark as Urgent</span>
+                </label>
+                <!-- Help Link -->
+                <label>
+                  <span class="text-sm"><a href="#">Need Help?</a></span>
+                </label>
+              </div>
+              
+              <!-- Buttons -->
+              <div class="form-row button-wrap flex flex-d-col-rev sm-flex-d-row sm-jc-center">
+                <button onclick="$('form[name="DisputeForm"] input').val('');" class="cancel-button btn-outline btn-round all-caps c-777 mb-1 sm-mb-0 sm-mr-sm" type="reset" data-remodal-action="close" aria-label="Close">cancel</button>
+                
+                <input class="save-button btn-round bg-blue-40 c-white text-sm all-caps mb-1 sm-mb-0 sm-ml-sm" type="submit" value="send">
+              </div>
+              <!-- end / form-wrap -->
+            </div>
+          </form>
+          
+        </div>
+      </div>
+      
+    </div>
+    
+    <!-- File Download Confirmation -->
+    <div class="remodal" data-remodal-id="file-download-confirmation" role="dialog" aria-labelledby="file-download-title" aria-describedby="file-download-desc">
+      <!-- Close Button -->
+      <button data-remodal-action="close" class="remodal-close btn-round" aria-label="Close"></button>
+      <!-- Modal Content -->
+      <div class="modal-content">
+        <!-- Title -->
+        <h2 id="file-download-title" class="modal-title">File Downloaded</h2>
+        <!-- Description -->
+        <div id="file-download-desc" class="post-text">
+        </div>
+      </div>
+      <!-- Modal Buttons -->
+      <div class="modal-buttons">
+        <button data-remodal-action="confirm" class="btn-round bg-blue-40 c-white text-sm all-caps">close</button>
+      </div>
+    </div>
+    
+    <!-- Contact Us form (modal) -->
+    <div class="remodal quick-contact-form" data-remodal-id="quick-contact-form" role="dialog" aria-labelledby="quick-contact-title"
+      aria-describedby="quick-contact-desc">
+              
+      <div data-replace="../global-partials/modals/modal-contact-content.html"></div>
+      
+      <!-- end / -->
+    </div>
+     
+    <!-- Dependencies -->
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../js/libs/jquery.1.11.2.min.js"><\/script>')</script>
+    <script src="../js/min/script.min.js"></script>
+  </body>
+</html>

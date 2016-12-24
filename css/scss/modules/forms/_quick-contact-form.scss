@@ -1,0 +1,42 @@
+// Quick Contact form (modal)
+
+.quick-contact-form {
+  .form-helpers {
+    margin-bottom: 0; 
+  }
+  [class*="input-"] {
+    label {
+      @include sr-only;
+    }
+  }
+  .button-wrap {
+    padding-top: 0; 
+  }
+  .btn-primary {
+    margin-bottom: 0; 
+    width: 80%; 
+  }
+  
+  // modal styles
+  
+  &.remodal {
+    @include tc-blue-m;
+    input:not([class*="btn"]),
+    textarea {
+      border: none;
+    }
+    .remodal-close {
+      background-color: $black-a-25;  
+    }
+    .modal-title,
+    .post-text p {
+      text-align: center; 
+    }
+    .post-text p {
+      margin-bottom: 1.5em;  
+      max-width: 25em;
+    }
+  }
+  
+ // end   
+}

@@ -312,6 +312,14 @@
 	}  	
 }
 
+// Border Title
+
+@mixin border-title {
+  border-bottom: 1px solid #DDD;
+  margin-bottom: 1em; 
+  padding-bottom: .625em;  
+}
+
 // Header Label
 
 @mixin header-label {

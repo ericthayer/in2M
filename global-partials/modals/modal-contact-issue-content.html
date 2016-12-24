@@ -1,0 +1,54 @@
+<!-- Close Button -->
+<button data-remodal-action="close" class="remodal-close" aria-label="Close">
+  <svg class="icon">
+    <use xlink:href="#icon-cancel" />
+  </svg>
+</button>
+
+<!-- Modal Content -->
+<div class="modal-content">
+  <!-- Title -->
+  <h2 id="file-download-confirm-title" class="modal-tile">Let us know how we can better help you.</h2>
+  <!-- Description -->
+  <div id="file-download-confirm-desc" class="post-text">
+    <p>Please fill out the form so we can get a better understanding of the problem.</p>
+    <!-- Form -->
+    <form name="HelpContactForm">
+      <div class="form-wrap text-md">
+       <!-- Name -->
+        <div class="form-row input-name">
+          <label for="nameInput">Name <span class="req-mark">*</span></label>
+          <input id="nameInput" name="name" type="text" class="required" placeholder="Name" title="This is a required field" required>
+        </div>
+        <!-- Email -->
+        <div class="form-row input-email">
+          <label for="emailInput">Email <span class="req-mark">*</span></label>
+          <input id="emailInput" name="email" type="email" autocorrect="off" autocapitalize="none" spellcheck="false" class="required" placeholder="Email" title="This is a required field" required>
+        </div>
+        <!-- Comments -->
+        <div class="form-row input-textarea">
+          <label for="comments">Comments</label>
+          <textarea id="comments" name="comments" rows="5" maxlength="200" placeholder="Please tell us what's wrong."></textarea>
+        </div>
+        <!-- Call ASAP / Help Link -->
+        <div class="form-row form-helpers">
+          <!-- Critical Marker -->
+          <label for="callASAP">
+            <input type="checkbox" name="callASAP" id="callASAP">
+            <span class="pl-tiny">Call ASAP</span>
+          </label>
+          <!-- Help Link -->
+          <label for="helpLink">
+            <a name="helpLink" id="helpLink" href="../public-site/support.html">Help Center</a>
+          </label>
+        </div>
+        <!-- Buttons -->
+        <div class="form-row button-wrap">          
+          <!-- submit button (primary) -->
+          <input class="btn-primary" type="submit" value="Send">
+        </div>
+        <!-- end / form-wrap -->
+      </div>
+    </form>
+  </div>
+</div>

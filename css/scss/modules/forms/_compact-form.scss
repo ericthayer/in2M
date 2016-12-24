@@ -1,0 +1,63 @@
+// Compact Form
+
+.compact-form {
+  @include tc-light;
+  border-radius: .313em;      
+  max-width: 25em;
+  padding: 2em 0;
+  width: 100%;
+  
+  // intro image
+  .form-header-img {
+    display: block; 
+    margin-bottom: 1em;
+    &-small {
+      max-width: 13em;
+    }  
+    &-center {
+      margin-right: auto;
+      margin-left: auto;   
+    }
+  }
+  
+  .form-row:not(.button-wrap) {
+    margin-bottom: 1.5em;
+  }
+  
+  .form-row[class*="input-"] {
+     
+    input {
+      padding-top: 1em;
+      padding-right: .75em;  
+      padding-bottom: 1em;
+      padding-left: .75em;     
+    }
+    
+  }
+  
+  .button-wrap {
+    padding-top: 0; 
+  }
+  
+  [class*="btn"] {      
+    //text-transform: uppercase;
+    width: 100%;
+  }
+  
+  p {
+    padding-left: .25em;
+    text-align: center;  
+  }
+
+  // > 320
+  @media (min-width: $break-tiny-phone) {
+    .checkbox-save,
+    .password-link {
+      width: auto;  
+    }
+    .password-link {
+      text-align: right;  
+    }
+  } 
+    
+}

@@ -787,6 +787,18 @@
 		"oAP": "\/css\/scss\/.sass-cache\/094ea8209b87f8d31b68ac1340f5aa9b3e1a8d78\/_layout-options.scssc",
 		"oF": 0
 		},
+	"\/css\/scss\/.sass-cache\/0b4126d95e8ecf6f98753b056c31f523c204da5e\/_in2-data-tables.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/css\/scss\/.sass-cache\/0b4126d95e8ecf6f98753b056c31f523c204da5e\/_in2-data-tables.scssc",
+		"oF": 0
+		},
+	"\/css\/scss\/.sass-cache\/0b4126d95e8ecf6f98753b056c31f523c204da5e\/_tables.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/css\/scss\/.sass-cache\/0b4126d95e8ecf6f98753b056c31f523c204da5e\/_tables.scssc",
+		"oF": 0
+		},
 	"\/css\/scss\/.sass-cache\/0e50b07eaf63e6cea5c01b11cb595ee33c552b49\/_flex-grid.scssc": {
 		"ft": 8192,
 		"oA": 1,
@@ -907,6 +919,12 @@
 		"oAP": "\/css\/scss\/.sass-cache\/4b2bf66cfe2463af5d5500159b5b8bda355a1872\/_credit-card-icons.scssc",
 		"oF": 0
 		},
+	"\/css\/scss\/.sass-cache\/4b2bf66cfe2463af5d5500159b5b8bda355a1872\/_data-tables.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/css\/scss\/.sass-cache\/4b2bf66cfe2463af5d5500159b5b8bda355a1872\/_data-tables.scssc",
+		"oF": 0
+		},
 	"\/css\/scss\/.sass-cache\/4b2bf66cfe2463af5d5500159b5b8bda355a1872\/_icons.scssc": {
 		"ft": 8192,
 		"oA": 1,
@@ -961,6 +979,12 @@
 		"oAP": "\/css\/scss\/.sass-cache\/6fa013b9751bb1d01a403d322516f0b038a95250\/_jquery-ui.theme.scssc",
 		"oF": 0
 		},
+	"\/css\/scss\/.sass-cache\/75ad12fabe860e5d03542390760dff6a4312465a\/_compact-form.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/css\/scss\/.sass-cache\/75ad12fabe860e5d03542390760dff6a4312465a\/_compact-form.scssc",
+		"oF": 0
+		},
 	"\/css\/scss\/.sass-cache\/75ad12fabe860e5d03542390760dff6a4312465a\/_contact-form.scssc": {
 		"ft": 8192,
 		"oA": 1,
@@ -971,6 +995,18 @@
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/css\/scss\/.sass-cache\/75ad12fabe860e5d03542390760dff6a4312465a\/_forms.scssc",
+		"oF": 0
+		},
+	"\/css\/scss\/.sass-cache\/75ad12fabe860e5d03542390760dff6a4312465a\/_login-form.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/css\/scss\/.sass-cache\/75ad12fabe860e5d03542390760dff6a4312465a\/_login-form.scssc",
+		"oF": 0
+		},
+	"\/css\/scss\/.sass-cache\/75ad12fabe860e5d03542390760dff6a4312465a\/_quick-contact-form.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/css\/scss\/.sass-cache\/75ad12fabe860e5d03542390760dff6a4312465a\/_quick-contact-form.scssc",
 		"oF": 0
 		},
 	"\/css\/scss\/.sass-cache\/75ad12fabe860e5d03542390760dff6a4312465a\/_search-form.scssc": {
@@ -1580,6 +1616,19 @@
 		"oS": 0,
 		"uL": 0
 		},
+	"\/css\/scss\/modules\/forms\/_compact-form.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/scss\/modules\/css\/_compact-form.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 0
+		},
 	"\/css\/scss\/modules\/forms\/_contact-form.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -1602,6 +1651,32 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/css\/scss\/modules\/css\/_forms.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 0
+		},
+	"\/css\/scss\/modules\/forms\/_login-form.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/scss\/modules\/css\/_login-form.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 0
+		},
+	"\/css\/scss\/modules\/forms\/_quick-contact-form.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/scss\/modules\/css\/_quick-contact-form.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 0
@@ -1693,6 +1768,45 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/css\/scss\/modules\/css\/_panels.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 0
+		},
+	"\/css\/scss\/modules\/tables\/_css-rwd-tables.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/scss\/modules\/css\/_css-rwd-tables.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 0
+		},
+	"\/css\/scss\/modules\/tables\/_in2-data-tables.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/scss\/modules\/css\/_in2-data-tables.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 0
+		},
+	"\/css\/scss\/modules\/tables\/_tables.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/scss\/modules\/css\/_tables.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 0
@@ -1862,19 +1976,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/css\/scss\/modules\/css\/_search-results.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 0
-		},
-	"\/css\/scss\/modules\/UI\/_tables.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/css\/scss\/modules\/css\/_tables.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 0
@@ -2186,6 +2287,16 @@
 		"oAP": "\/css\/scss\/vendor\/jquery-ui\/index.html",
 		"oF": 0
 		},
+	"\/css\/scss\/vendor\/jquery-ui\/jquery-ui-min.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/css\/scss\/vendor\/jquery-ui\/jquery-ui-min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/css\/scss\/vendor\/jquery-ui\/jquery-ui.css": {
 		"aP": 0,
 		"bl": 0,
@@ -2427,6 +2538,12 @@
 		"oAP": "\/email\/email-user-retired.html",
 		"oF": 0
 		},
+	"\/global-partials\/data-tables\/data-tables.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/global-partials\/data-tables\/data-tables.html",
+		"oF": 0
+		},
 	"\/global-partials\/footer\/footer-blue.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -2437,6 +2554,66 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/global-partials\/footer\/footer-logged-in-blue.html",
+		"oF": 0
+		},
+	"\/global-partials\/footer\/footer-login-blue.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/global-partials\/footer\/footer-login-blue.html",
+		"oF": 0
+		},
+	"\/global-partials\/modals\/modal-account-created-content.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/global-partials\/modals\/modal-account-created-content.html",
+		"oF": 0
+		},
+	"\/global-partials\/modals\/modal-capacity-setup-content.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/global-partials\/modals\/modal-capacity-setup-content.html",
+		"oF": 0
+		},
+	"\/global-partials\/modals\/modal-contact-content.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/global-partials\/modals\/modal-contact-content.html",
+		"oF": 0
+		},
+	"\/global-partials\/modals\/modal-contact-issue-content.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/global-partials\/modals\/modal-contact-issue-content.html",
+		"oF": 0
+		},
+	"\/global-partials\/modals\/modal-delete-confirm-content.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/global-partials\/modals\/modal-delete-confirm-content.html",
+		"oF": 0
+		},
+	"\/global-partials\/modals\/modal-file-save-confirm-content.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/global-partials\/modals\/modal-file-save-confirm-content.html",
+		"oF": 0
+		},
+	"\/global-partials\/modals\/modal-save-confirm-content.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/global-partials\/modals\/modal-save-confirm-content.html",
+		"oF": 0
+		},
+	"\/global-partials\/modals\/modal-sc-setup-confirm-content.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/global-partials\/modals\/modal-sc-setup-confirm-content.html",
+		"oF": 0
+		},
+	"\/global-partials\/modals\/modal-setup-confirm-content.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/global-partials\/modals\/modal-setup-confirm-content.html",
 		"oF": 0
 		},
 	"\/global-partials\/modules\/pricing-clean.html": {
@@ -3733,6 +3910,36 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/images\/UI\/ui-icons\/icon-delete-red.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/images\/UI\/ui-icons\/icon-delete-red.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/images\/UI\/ui-icons\/icon-edit-blue.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/images\/UI\/ui-icons\/icon-edit-blue.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/images\/UI\/ui-icons\/icon-envelope-blue.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/images\/UI\/ui-icons\/icon-envelope-blue.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/images\/UI\/ui-icons\/icon-grid.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -3768,6 +3975,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/images\/UI\/ui-icons\/icon-list.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/images\/UI\/ui-icons\/icon-phone-blue.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/images\/UI\/ui-icons\/icon-phone-blue.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -4703,6 +4920,12 @@
 		"oAP": "\/public-site\/index.html",
 		"oF": 0
 		},
+	"\/public-site\/login-v2.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public-site\/login-v2.html",
+		"oF": 0
+		},
 	"\/public-site\/login.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -4713,6 +4936,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/public-site\/pricing.html",
+		"oF": 0
+		},
+	"\/public-site\/reset-password.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public-site\/reset-password.html",
 		"oF": 0
 		},
 	"\/public-site\/support-search-results.html": {
@@ -4937,16 +5166,52 @@
 		"oAP": "\/sales-person\/sp-terms-conditions.html",
 		"oF": 0
 		},
+	"\/super-admin\/data\/capacity-data.txt": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/super-admin\/data\/capacity-data.txt",
+		"oF": 0
+		},
+	"\/super-admin\/data\/commission-data.txt": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/super-admin\/data\/commission-data.txt",
+		"oF": 0
+		},
+	"\/super-admin\/data\/commission-forecast-data.txt": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/super-admin\/data\/commission-forecast-data.txt",
+		"oF": 0
+		},
 	"\/super-admin\/data\/offer-data.txt": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/super-admin\/data\/offer-data.txt",
 		"oF": 0
 		},
+	"\/super-admin\/data\/package-data-copy.txt": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/super-admin\/data\/package-data-copy.txt",
+		"oF": 0
+		},
 	"\/super-admin\/data\/package-data.txt": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/super-admin\/data\/package-data.txt",
+		"oF": 0
+		},
+	"\/super-admin\/data\/sales-org-data.txt": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/super-admin\/data\/sales-org-data.txt",
+		"oF": 0
+		},
+	"\/super-admin\/data\/short-code-data.txt": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/super-admin\/data\/short-code-data.txt",
 		"oF": 0
 		},
 	"\/super-admin\/sa-color-test.html": {
@@ -4989,6 +5254,18 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/super-admin\/sa-login.html",
+		"oF": 0
+		},
+	"\/super-admin\/sa-manage-packages-copy.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/super-admin\/sa-manage-packages-copy.html",
+		"oF": 0
+		},
+	"\/super-admin\/sa-manage-packages-table.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/super-admin\/sa-manage-packages-table.html",
 		"oF": 0
 		},
 	"\/super-admin\/sa-manage-packages.html": {
@@ -5063,6 +5340,18 @@
 		"oAP": "\/super-admin\/sa-setup-short-codes.html",
 		"oF": 0
 		},
+	"\/super-admin\/sa-view-capacity.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/super-admin\/sa-view-capacity.html",
+		"oF": 0
+		},
+	"\/super-admin\/sa-view-commissions-OG.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/super-admin\/sa-view-commissions-OG.html",
+		"oF": 0
+		},
 	"\/super-admin\/sa-view-commissions.html": {
 		"ft": 8192,
 		"oA": 0,
@@ -5075,16 +5364,28 @@
 		"oAP": "\/super-admin\/sa-view-notifications.html",
 		"oF": 0
 		},
-	"\/super-admin\/sa-view-packages-offers.html": {
+	"\/super-admin\/sa-view-packages.html": {
 		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/super-admin\/sa-view-packages-offers.html",
+		"oA": 2,
+		"oAP": "\/super-admin\/sa-view-packages.html",
+		"oF": 0
+		},
+	"\/super-admin\/sa-view-sales-org copy.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/super-admin\/sa-view-sales-org copy.html",
 		"oF": 0
 		},
 	"\/super-admin\/sa-view-sales-org.html": {
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/super-admin\/sa-view-sales-org.html",
+		"oF": 0
+		},
+	"\/super-admin\/sa-view-short-codes.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/super-admin\/sa-view-short-codes.html",
 		"oF": 0
 		},
 	"\/super-admin\/super-admin-dashboard.html": {

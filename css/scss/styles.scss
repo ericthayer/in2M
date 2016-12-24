@@ -83,8 +83,10 @@
 @import "modules/UI/accordion";
 //@import "modules/UI/notifications";
 
+@import "modules/tables/tables";
+@import "modules/tables/_in2-data-tables";
+
 @import "modules/UI/modal";
-@import "modules/UI/tables";
 @import "modules/UI/pager";
 //@import "modules/UI/pricing-plans";
 @import "modules/UI/pricing-plans-clean";
@@ -98,6 +100,9 @@
 @import "modules/media/media-wrap";
 
 @import "modules/forms/forms";
+@import "modules/forms/compact-form";
+//@import "modules/forms/login-form";
+@import "modules/forms/quick-contact-form";
 @import "modules/forms/contact-form";
 @import "modules/forms/search-form";
 

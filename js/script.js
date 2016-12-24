@@ -833,10 +833,3 @@ document.documentElement.className += " enhanced";
       $('#' + $(this).val()).show();
     });
   });
-  
-  $(function() {
-    $('#admin-select').change(function(){
-      $('.select-target').hide();
-      $('#' + $(this).val()).show();
-    });
-  });
