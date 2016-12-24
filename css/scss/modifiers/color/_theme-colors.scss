@@ -205,7 +205,6 @@ button:not(.search-button):not([class*="-close"]):not(.btn-cancel),
   a:not([class*="btn"]):not(button) {
     color: $link;
   }
-
 }
 
 @mixin tc-blue-l {
@@ -240,6 +239,12 @@ button:not(.search-button):not([class*="-close"]):not(.btn-cancel),
     background-color: $blue-50;
   }
 }
+
+.tc-light { @include tc-light; }
+.tc-blue-l { @include tc-blue-l; }
+.tc-blue-m { @include tc-blue-m; }
+.tc-blue-d { @include tc-blue-d; }
+
 
 // ** Override ** //
 

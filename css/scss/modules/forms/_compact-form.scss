@@ -1,56 +1,137 @@
 // Compact Form
 
 .compact-form {
-  @include tc-light;
-  border-radius: .313em;      
+  border-radius: .313em;
+  margin-right: auto;
+  margin-left: auto;        
   max-width: 25em;
   padding: 2em 0;
   width: 100%;
   
-  // intro image
+  // Form Intro
+  
+  .form-intro {    
+    text-align: center; 
+  }
+  
+  .form-title,
+  .modal-title {
+    @extend .h3;
+    margin-bottom: .313em;
+  }
+  
   .form-header-img {
     display: block; 
-    margin-bottom: 1em;
-    &-small {
-      max-width: 13em;
-    }  
-    &-center {
-      margin-right: auto;
-      margin-left: auto;   
+    margin-right: auto;
+    margin-bottom: 1.25em;
+    margin-left: auto;
+    max-width: 10em;  
+  }
+  
+  // layout and form styles
+    
+  .form-row:not(:last-child) {
+    margin-bottom: 1.5em; 
+  }
+  
+  
+  // all rows w/input class
+  [class*="input-"] {
+    
+    // hide input labels    
+    label {
+      @include sr-only;
     }
-  }
-  
-  .form-row:not(.button-wrap) {
-    margin-bottom: 1.5em;
-  }
-  
-  .form-row[class*="input-"] {
-     
-    input {
+      
+    // inputs     
+    input,
+    textarea {
       padding-top: 1em;
       padding-right: .75em;  
       padding-bottom: 1em;
       padding-left: .75em;     
     }
-    
+   
+  // end           
   }
   
   .button-wrap {
-    padding-top: 0; 
+    padding-top: .5em; 
   }
   
-  [class*="btn"] {      
-    //text-transform: uppercase;
-    width: 100%;
+  .btn-primary {
+    width: 100%;   
   }
   
   p {
+    margin-bottom: 1.5em;  
     padding-left: .25em;
     text-align: center;  
+  }
+  
+  .remodal & {
+    padding: 0; 
+  } 
+  
+// *** Custom Forms *** // 
+  
+  // Login Form
+  
+  &.login-form {
+    
+    // theme color
+    //@include tc-light;
+    
+    
+    // hide input labels
+    
+    [class*="input-"]{
+      label {
+        @include sr-only;
+      }
+    }
+    
+    
+    .form-intro {
+      p {
+        display: none;  
+      }
+    }
+    
+    .form-title {
+      margin-bottom: .75em;  
+    }
+    
+    .btn-primary {
+      font-size: 1.25rem; 
+      //text-transform: uppercase;
+      //max-width: 100%;  
+    }
+    
+    .password-link {
+      a:not([class*="btn"]):not(button) {
+        color: currentColor;
+      }
+    }
+    
+  // end   
+  }
+  
+  // Reset Password
+  
+  &.reset-pass-form {
+    
+    // theme color
+    @include tc-light;
+    
+    .form-header-img {
+      display: none;  
+    }
   }
 
   // > 320
   @media (min-width: $break-tiny-phone) {
+    
     .checkbox-save,
     .password-link {
       width: auto;  
@@ -58,6 +139,12 @@
     .password-link {
       text-align: right;  
     }
-  } 
     
+  // end ** MQ **
+  } 
+  
+  
+  
+  
+// end    
 }

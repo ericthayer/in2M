@@ -34,11 +34,12 @@
         <main class="main-content bg-blue-g-4 c-white flex ai-center jc-center pt-pb-2">
           
           <!-- Login Form -->
-          <section class="compact-form">
+          <section class="compact-form login-form">
             <div class="container">                
               <!-- Form Intro -->
-              <div class="form-section text-center">
-                <h2 class="h3 mb-sm">Welcome back Jenny!</h2>
+              <div class="form-section form-intro">
+                <a class="form-header-img" href="/"><img src="../images/UI/in2m-logo-white.svg" alt="in2Marketplace.com"><span class="sr-only">in2Marketplace.com</span></a>
+<!--                 <h2 class="form-title">Welcome back!</h2> -->
                 <p>Please sign in with with your credentials.</p>
               </div>
               <!-- Form Build -->
@@ -49,14 +50,14 @@
           
                     <!-- Username -->
                     <div class="form-row input-username">
-                      <label for="" id="-ariaLabel">Username <span class="req-mark"><span class="c-white">*</span></span></label>
-                      <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="required" title="This is a required field" required>
+                      <label for="">Username <span class="req-mark"><span class="c-white">*</span></span></label>
+                      <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="required" title="This is a required field" placeholder="Email Address" required>
                     </div>
           
                     <!-- Password -->
                     <div class="form-row input-password">
-                      <label for="" id="-ariaLabel">Password <span class="req-mark"><span class="c-white">*</span></span></label>
-                      <input id="" name="" type="password" minlength="6" required>
+                      <label for="">Password <span class="req-mark"><span class="c-white">*</span></span></label>
+                      <input id="" name="" type="password" minlength="6" placeholder="Password" required>
                     </div>
           
                     <!-- Remember Me / Forgot Password -->
@@ -68,12 +69,12 @@
                       </label>
                       <!-- Reset Password -->
                       <label class="password-link">
-                        <span class="text-base"><a href="reset-password.html">Forget Password?</a></span>
+                        <span class="text-base"><a data-remodal-target="reset-password">Forgot Password?</a></span>
                       </label>
                     </div>
                     
-                    <!-- Submit -->
-                    <div class="form-row input-submit">
+                    <!-- Submit Button -->
+                    <div class="form-row button-wrap">
                       <input class="btn-primary" type="submit" value="Sign In">
                     </div>
           
@@ -92,6 +93,31 @@
                 
         <!-- end / site-wrap-->
       </div>
+      
+      <!-- Reset Password Confirmation -->
+      <div class="remodal" data-remodal-id="reset-password" role="dialog" aria-labelledby="reset-password-title" aria-describedby="reset-password-desc">
+        <div data-replace="../global-partials/modals/modal-reset-password-content.html"></div>
+      
+        <!-- end / -->  
+      </div>
+      
+      <!-- Recovery Email Sent Confirmation -->
+      <div class="remodal alert-success" data-remodal-id="reset-password-confirm" role="dialog" aria-labelledby="reset-password-confrim-title" aria-describedby="reset-password-confrim-desc">
+        
+        <div data-replace="../global-partials/modals/modal-reset-password-confirm-content.html"></div>
+      
+        <!-- end / -->  
+      </div>
+      
+      <!-- Contact Us form (modal) -->
+      <div class="remodal quick-contact-form" data-remodal-id="quick-contact-form" role="dialog" aria-labelledby="quick-contact-title"
+        aria-describedby="quick-contact-desc">
+                
+        <div data-replace="../global-partials/modals/modal-contact-content.html"></div>
+        
+        <!-- end / -->
+      </div>
+  
       <!-- Dependencies -->
       <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
       <script>window.jQuery || document.write('<script src="../js/libs/jquery.1.11.2.min.js"><\/script>')</script>

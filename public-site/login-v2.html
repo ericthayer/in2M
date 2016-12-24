@@ -34,11 +34,11 @@
         <main class="main-content bg-blue-g-4 c-white flex flex-d-col ai-center jc-center pt-pb-2">
           
           <!-- Login Form -->
-          <section class="login-form tc-light">
+          <section class="compact-form login-form tc-light">
             <div class="container">                
               <!-- Form Intro -->
               <div class="form-section">
-                <a class="form-header-img form-header-img-center form-header-img-small" href="/"><img src="../images/UI/in2m-logo-color.svg" alt="in2Marketplace.com"><span class="sr-only">in2Marketplace.com</span></a>
+                <a class="form-header-img" href="/"><img src="../images/UI/in2m-logo-color.svg" alt="in2Marketplace.com"><span class="sr-only">in2Marketplace.com</span></a>
                 <!-- <p>Please sign in with with your credentials.</p> -->
               </div>
               <!-- Form Build -->
@@ -68,7 +68,7 @@
                       </label>
                       <!-- Reset Password -->
                       <label class="password-link">
-                        <span class="text-base"><a href="reset-password.html">Forget Password?</a></span>
+                        <span class="text-base"><a data-remodal-target="reset-password">Forgot Password?</a></span>
                       </label>
                     </div>
                     
@@ -83,18 +83,40 @@
               </div>                
             </div>
           </section>
-          
-          <!-- Help Link -->
-          <a class="pt-2" href="support.html">Help Center</a>
                 
           <!-- end / main-content -->
         </main>
         
         <!-- Footer -->
-        <!-- <div data-replace="../global-partials/footer/footer-login-blue.html"></div> -->
-        
+        <div data-replace="../global-partials/footer/footer-login-blue.html"></div>
+                
         <!-- end / site-wrap-->
       </div>
+      
+      <!-- Reset Password Confirmation -->
+      <div class="remodal" data-remodal-id="reset-password" role="dialog" aria-labelledby="reset-password-title" aria-describedby="reset-password-desc">
+        <div data-replace="../global-partials/modals/modal-reset-password-content.html"></div>
+      
+        <!-- end / -->  
+      </div>
+      
+      <!-- Recovery Email Sent Confirmation -->
+      <div class="remodal alert-success" data-remodal-id="reset-password-confirm" role="dialog" aria-labelledby="reset-password-confrim-title" aria-describedby="reset-password-confrim-desc">
+        
+        <div data-replace="../global-partials/modals/modal-reset-password-confirm-content.html"></div>
+      
+        <!-- end / -->  
+      </div>
+      
+      <!-- Contact Us form (modal) -->
+      <div class="remodal quick-contact-form" data-remodal-id="quick-contact-form" role="dialog" aria-labelledby="quick-contact-title"
+        aria-describedby="quick-contact-desc">
+                
+        <div data-replace="../global-partials/modals/modal-contact-content.html"></div>
+        
+        <!-- end / -->
+      </div>
+  
       <!-- Dependencies -->
       <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
       <script>window.jQuery || document.write('<script src="../js/libs/jquery.1.11.2.min.js"><\/script>')</script>

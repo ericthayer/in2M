@@ -2544,6 +2544,12 @@
 		"oAP": "\/global-partials\/data-tables\/data-tables.html",
 		"oF": 0
 		},
+	"\/global-partials\/footer\/footer-admin-login-blue.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/global-partials\/footer\/footer-admin-login-blue.html",
+		"oF": 0
+		},
 	"\/global-partials\/footer\/footer-blue.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -2596,6 +2602,18 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/global-partials\/modals\/modal-file-save-confirm-content.html",
+		"oF": 0
+		},
+	"\/global-partials\/modals\/modal-reset-password-confirm-content.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/global-partials\/modals\/modal-reset-password-confirm-content.html",
+		"oF": 0
+		},
+	"\/global-partials\/modals\/modal-reset-password-content.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/global-partials\/modals\/modal-reset-password-content.html",
 		"oF": 0
 		},
 	"\/global-partials\/modals\/modal-save-confirm-content.html": {
@@ -5100,10 +5118,10 @@
 		"oAP": "\/sales-person\/sp-checkout-logged-in.html",
 		"oF": 0
 		},
-	"\/sales-person\/sp-login.html": {
+	"\/sales-person\/sp-login copy.html": {
 		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/sales-person\/sp-login.html",
+		"oA": 2,
+		"oAP": "\/sales-person\/sp-login copy.html",
 		"oF": 0
 		},
 	"\/sales-person\/sp-manage-leads.html": {
@@ -5250,10 +5268,10 @@
 		"oAP": "\/super-admin\/sa-logged-in-master.html",
 		"oF": 0
 		},
-	"\/super-admin\/sa-login.html": {
+	"\/super-admin\/sa-login copy.html": {
 		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/super-admin\/sa-login.html",
+		"oA": 2,
+		"oAP": "\/super-admin\/sa-login copy.html",
 		"oF": 0
 		},
 	"\/super-admin\/sa-manage-packages-copy.html": {
