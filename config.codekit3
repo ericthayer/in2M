@@ -5226,12 +5226,6 @@
 		"oAP": "\/super-admin\/data\/retail-customer-data.txt",
 		"oF": 0
 		},
-	"\/super-admin\/data\/retail-cutomer-data.txt": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/super-admin\/data\/retail-cutomer-data.txt",
-		"oF": 0
-		},
 	"\/super-admin\/data\/sales-group-data.txt": {
 		"ft": 8192,
 		"oA": 2,
