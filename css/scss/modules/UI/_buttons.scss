@@ -135,6 +135,13 @@
   //text-transform: uppercase;
 }
 
+@mixin button-delete {
+  @include button-cancel;
+  .icon {
+    font-size: 2.5rem;  
+  }
+}
+
 @mixin button-primary { 
   @include button-round;
   background-color: $green;
@@ -191,6 +198,14 @@ button:not([class*="bg-"]):not([class*="c-"]):not(.btn-reset),
     //border: 1px solid $BBB;
     box-shadow: 0 0 .45em 0 $black-a-25;
     //color: $white;
+  } 
+}
+
+.btn-delete {
+  @include button-delete;
+  .icon-delete {
+    font-size: 1.5rem; 
+    margin-left: 0;  
   } 
 }
 
@@ -273,11 +288,11 @@ button:not([class*="bg-"]):not([class*="c-"]):not(.btn-reset),
     max-width: 15em;
     &:last-child {
       margin-bottom: 0; 
-    }  
+    }
   }
   &.button-auto {
     > * {
-      flex: 0 0 auto;
+      flex: 0 0 auto !important;
       width: auto;  
     }
   }
@@ -328,4 +343,10 @@ button:not([class*="bg-"]):not([class*="c-"]):not(.btn-reset),
     color: $orange;
     @include pseudo-arrow-bottom;
   }
+}
+
+// Manage Buttons
+
+.manage-buttons {
+
 }

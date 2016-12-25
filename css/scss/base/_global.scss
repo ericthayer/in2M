@@ -20,12 +20,9 @@ body {
 .container,
 .container-flex {
   max-width: 65.00em;
-  // > 1200
-  @media (min-width: $break-lg-screen) {
+  // > 2000
+  @media (min-width: $break-xxl-screen) {
     max-width: 100.00em;
-    .super-admin & {
-      max-width: 75.00em; 
-    }
   }    
 }
 

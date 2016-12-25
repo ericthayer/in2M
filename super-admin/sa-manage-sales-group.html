@@ -17,9 +17,12 @@
 <![endif]-->
     <link rel="apple-touch-icon" href="../images/icons/favicon-180.png">
     <link rel="shortcut icon" href="../favicon.ico">
+    <!-- DataTables.net styles -->
+    <link rel="stylesheet" href="//cdn.datatables.net/v/dt/dt-1.10.12/af-2.1.2/b-1.2.2/b-colvis-1.2.2/b-html5-1.2.2/r-2.1.0/rr-1.1.2/sc-1.4.2/se-1.2.0/datatables.min.css">
+    <!-- Base Styles -->
     <link rel="stylesheet" href="../css/styles.css">
     <!-- Non-Critical CSS - loadCSS: load a CSS file asynchronously. [c]2016 @scottjehl, Filament Group, Inc. Licensed MIT -->
-    <script>(function(a){var b=function(c,k,d){var l=a.document;var m=l.createElement("link");var e;if(k){e=k}else{var i=(l.body||l.getElementsByTagName("head")[0]).childNodes;e=i[i.length-1]}var f=l.styleSheets;m.rel="stylesheet";m.href=c;m.media="only x";function j(n){if(l.body){return n()}setTimeout(function(){j(n)})}j(function(){e.parentNode.insertBefore(m,(k?e:e.nextSibling))});var h=function(o){var n=m.href;var p=f.length;while(p--){if(f[p].href===n){return o()}}setTimeout(function(){h(o)})};function g(){if(m.addEventListener){m.removeEventListener("load",g)}m.media=d||"all"}if(m.addEventListener){m.addEventListener("load",g)}m.onloadcssdefined=h;h(g);return m};if(typeof exports!=="undefined"){exports.loadCSS=b}else{a.loadCSS=b}}(typeof global!=="undefined"?global:this));loadCSS("../css/async.css");</script>
+    <script>(function(a){var b=function(c,k,d){var l=a.document;var m=l.createElement("link");var e;if(k){e=k}else{var i=(l.body||l.getElementsByTagName("head")[0]).childNodes;e=i[i.length-1]}var f=l.styleSheets;m.rel="stylesheet";m.href=c;m.media="only x";function j(n){if(l.body){return n()}setTimeout(function(){j(n)})}j(function(){e.parentNode.insertBefore(m,(k?e:e.nextSibling))});var h=function(o){var n=m.href;var p=f.length;while(p--){if(f[p].href===n){return o()}}setTimeout(function(){h(o)})};function g(){if(m.addEventListener){m.removeEventListener("load",g)}m.media=d||"all"}if(m.addEventListener){m.addEventListener("load",g)}m.onloadcssdefined=h;h(g);return m};if(typeof exports!=="undefined"){exports.loadCSS=b}else{a.loadCSS=b}}(typeof global!=="undefined"?global:this));loadCSS("../css/async.css");loadCSS("../css/scss/vendor/jquery-ui/jquery-ui.css");</script>
   </head>
   <body class="logged-in super-admin">
     <!--[if lt IE 10]>
@@ -33,22 +36,36 @@
       <div data-replace="sa-partials/sa-header-logged-in.html"></div>
 
       <!-- Main Content -->
-      <main class="main-content pt-3">
+      <main class="main-content pt-1 pb-3">
         
-        <!-- Page Title -->
-      	<div class="container sr-only">
-        	<h1 class="page-title text-center mb-0">Super Admin Manage Sales Group</h1>
-      	</div>
-
+        <!-- Main Promo (no media) -->
+        <section class="hero-banner bg-orange c-white pt-pb-4 text-s-black-50 hidden">
+          <div class="container md-pt-pb-1">
+            
+            <!-- Post -->
+            <article class="text-center">
+              <!-- Post Content -->
+              <div class="post-content">
+                <!-- Text -->
+                <div class="text-wrap">
+                  <h2 class="mb-sm">Manage Sales Group</h2>
+                  <p class="h3 antialiased mb-0 mr-ml-a mw-35em text-lg">This is where a "Super Admin" or authorized user can manage sales groups.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+        
         <!-- Form - Manage Sales Group -->
-        <section class="mod-block pb-4">
+        <section class="manage-form pt-pb-3">
           <div class="container mw-48em">
 
             <!-- Form Build -->
-            <div class="form-section mr-ml-a mb-3">
+            <div class="form-section mr-ml-a">
               <form name="ManageSalesGroups">
+                
                 <!-- Form Header -->
-                <div class="bor-bot-1 bor-bot-s bor-c-DDD mb-1 pb-sm sm-flex sm-ai-center sm-jc-between">
+                <div class="function-header">
                   
                   <h2 class="text-center text-lg mb-1 sm-text-left sm-mr-1 sm-mb-0 sm-w-40">Manage Sales Group</h2>
                  
@@ -64,10 +81,12 @@
                     </select>
                    </div>
                   </div>
-
+                  
+                  <!-- end / -->
                 </div>                  
                 
-                <div class="form-wrap">
+                <!-- inputs start here -->
+                <div class="form-wrap"> 
                   
                   <!-- Group ID & Team -->
                   <div class="form-group pb-0 sm-flex sm-jc-between">
@@ -80,7 +99,7 @@
                     </div>
                     
                     <!-- Team -->
-                    <div class="form-row sm-flex-g-1 sm-mr-ml-tiny sm-w-40">
+                    <div class="form-row sm-flex-g-1 mb-1 sm-mr-ml-tiny sm-mb-0 sm-w-40">
                       <label for="" id="-ariaLabel">Team <span class="req-mark">*</span></label>
                       <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="required" title="This is a required field" required>
                     </div>
@@ -92,6 +111,29 @@
                     </div>                      
 
                     <!-- end / -->
+                  </div>
+                  
+                  <!-- Status -->
+                  <div class="form-group pb-0 sm-flex sm-jc-between">
+                    
+                    <!-- dropdown -->                        
+                    <div class="form-row mb-1 sm-flex-g-1 sm-mb-0 sm-mr-tiny sm-w-50">
+                    <label for="-ariaLabel" class="sm-pr-sm sm-w-60">Status</label>
+                     <div class="custom-select">
+                      <select>
+                        <option selected disabled>select</option>
+                        <option value="Active">Active</option>
+                        <option value="Inactive">Inactive</option>
+                      </select>
+                     </div>
+                      
+                    </div>
+                    
+                    <!-- Manage Buttons -->                        
+                    <div class="form-row sm-flex-g-1 sm-ml-tiny sm-w-50">
+                      <label for="" id="-ariaLabel">Reason for change</label>
+                      <input id="" name="" type="text" aria-labelledby="-ariaLabel">
+                    </div>
                   </div>
 
                   <!-- Dates -->
@@ -126,26 +168,34 @@
                     </div>
                   </div>
                   
-
                   <!-- Buttons -->
                   <div class="form-row button-wrap">
-                    <!-- cancel button -->
-                    <button class="btn-cancel" type="reset">Cancel</button>
+                    <!-- delete button -->
+                    <button class="btn-delete" type="reset" data-remodal-target="delete-confirm"><svg class="icon icon-delete"><use xlink:href="#icon-minus" /></svg> Delete</button>
                     <!-- save button (primary) -->
-                    <input class="btn-primary" type="submit" value="Save" data-remodal-target="account-created">
+                    <input class="btn-primary" type="submit" value="Save" data-remodal-target="save-confirm">
                   </div>
                   
                   <!-- end / form-wrap -->
                 </div>
               </form>
             </div>
+
+            <!-- end / -->
+          </div>
+        </section>
+        
+        <!-- Sales Person Table -->          
+        <section class="data-table pt-pb-3">
+          <div class="container mw-48em">
             
-            <!-- Sales Persons -->
-            <div class="form-section text-center">
-              <table class="rtable table-stretch-md mr-ml-a mw-48em">
-              <h3 class="bor-bot-1 bor-bot-s bor-c-DDD pb-sm flex flex-d-col ai-center mb-1 text-lg sm-flex-d-row sm-jc-between"><span class="text-left mb-sm sm-mb-0">Sales Persons in Group</span><span class="icon-group"><a class="toggle-button text-sm" href="#"><svg class="icon icon-toggle mr-tiny ml-0"><use xlink:href="#icon-plus" /></svg> Create New</a></h3>
+            <!-- Group Sales Persons -->
+    		    <h3 class="function-header"><span class="mb-sm sm-mb-0">Group Sales Persons</span><span class="icon-group"><a class="ml-1" href="sa-create-sales-person.html"><svg class="icon mr-tiny ml-0"><use xlink:href="#icon-plus" /></svg><span class="text-base">Add</span></a></span></h3>
+    		    
+    		    <!-- Package Data -->
+            <table id="manage-sales-group" class="display responsive nowrap" cellspacing="0" width="100%">
               <thead>
-                <tr>
+                <tr>               
                   <th>User ID</th>
                   <th>Sales Person</th>
                   <th>Group</th>
@@ -154,30 +204,9 @@
                   <th>Manage</th>
                 </tr>
               </thead>
-              <tbody>
-                <tr>
-                  <td>eric.thayer</td>
-                  <td>Eric Thayer</td>
-                  <td>LA Group</td>
-                  <td>08/31/17</td>
-                  <td>Active</td>
-                  <td class="icon-group text-center"><a href="#delete-confirm"><svg class="icon icon-delete mr-ml-0"><use xlink:href="#icon-minus" /></svg><span class="sr-only">Delete</span></a>
-                 <a href="#"><svg class="icon"><use xlink:href="#icon-pencil" /></svg><span class="sr-only">Edit</span></a></td>
-                </tr>
-                <tr>
-                  <td>joe.schmoe</td>
-                  <td>Joseph Schmoe</td>
-                  <td>Dallas Group</td>
-                  <td>01/05/16</td>
-                  <td>Terminated</td>
-                  <td class="icon-group text-center"><a href="#delete-confirm"><svg class="icon icon-delete mr-ml-0"><use xlink:href="#icon-minus" /></svg><span class="sr-only">Delete</span></a>
-                 <a href="#"><svg class="icon"><use xlink:href="#icon-pencil" /></svg><span class="sr-only">Edit</span></a></td>
-                </tr>
-              </tbody>
             </table>
-            </div>
-
-            <!-- end / -->
+          
+           <!-- end / -->
           </div>
         </section>
 
@@ -191,49 +220,19 @@
     </div>
 
     <!-- Sales Group Saved Confirmation -->
-    <div class="remodal" data-remodal-id="saved-sales-group-confirmation" role="dialog" aria-labelledby="saved-sales-group-title" aria-describedby="saved-sales-group-desc">
-      <!-- Close Button -->
-      <button data-remodal-action="close" class="remodal-close" aria-label="Close">
-        <svg class="icon">
-          <use xlink:href="#icon-cancel" />
-        </svg>
-      </button>
-      <!-- Modal Content -->
-      <div class="modal-content">
-        <!-- Title -->
-        <h2 id="saved-sales-group-title" class="modal-title">Sales Group Saved</h2>
-        <!-- Description -->
-        <div id="saved-sales-group-desc" class="post-text">
-        </div>
-      </div>
-      <!-- Modal Buttons -->
-      <div class="modal-buttons">
-        <button data-remodal-action="close" class="btn-cancel">Close</button>
-      </div>
+    <div class="remodal alert-success" data-remodal-id="save-confirm" role="dialog" aria-labelledby="save-confirm-title" aria-describedby="save-confirm-desc">
+      
+      <div data-replace="../global-partials/modals/modal-save-confirm-content.html"></div>
+      
+      <!-- end / -->
     </div>
 
     <!-- Delete Confirmation -->
     <div class="remodal" data-remodal-id="delete-confirm" role="dialog" aria-labelledby="delete-confirm-title" aria-describedby="delete-confirm-desc">
-      <!-- Close Button -->
-      <button data-remodal-action="close" class="remodal-close" aria-label="Close">
-        <svg class="icon">
-          <use xlink:href="#icon-cancel" />
-        </svg>
-      </button>
-      <!-- Modal Content -->
-      <div class="modal-content">
-        <!-- Title -->
-        <h2 id="delete-confirm-title" class="modal-title">Are You Sure?</h2>
-        <!-- Description -->
-        <div id="delete-confirm-desc" class="post-text">
-          <p>Please confirm you want to <strong>delete</strong> this by clicking "yes"</p>
-        </div>
-      </div>
-      <!-- Modal Buttons -->
-      <div class="modal-buttons">
-        <button data-remodal-action="cancel" class="btn-cancel">Cancel</button>
-        <button data-remodal-action="confirm" class="btn-primary">Yes</button>
-      </div>
+      
+      <div data-replace="../global-partials/modals/modal-delete-confirm-content.html"></div>
+      
+      <!-- end / -->
     </div>
     
     <!-- Contact Us form (modal) -->
@@ -249,5 +248,25 @@
     <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
     <script>window.jQuery || document.write('<script src="../js/libs/jquery.1.11.2.min.js"><\/script>')</script>
     <script src="../js/min/script.min.js"></script>
+     <script src="../js/libs/jquery-ui.datepicker.js"></script>
+     <script src="//cdn.datatables.net/v/dt/dt-1.10.12/af-2.1.2/b-1.2.2/b-colvis-1.2.2/b-html5-1.2.2/r-2.1.0/rr-1.1.2/sc-1.4.2/se-1.2.0/datatables.min.js"></script>
+    <!-- DataTables -->
+    <script>
+      // Manage Packages
+      $('#manage-sales-group').DataTable({
+        responsive:     true,
+        keys:           true,
+        ajax:           'data/sales-group-data.txt',
+        deferRender:    true,
+        columns: [
+          { "data": "id" },
+          { "data": "sales_person" },
+          { "data": "group" },          
+          { "data": "date_created" },
+          { "data": "status" },
+          { "data": "manage" }
+        ]        
+      });
+    </script>
   </body>
 </html>
