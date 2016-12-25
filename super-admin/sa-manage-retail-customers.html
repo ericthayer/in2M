@@ -5,39 +5,6 @@
   <html lang="en">
     <!--#endif -->
     <head>
-      <!-- FontFaceObserver -->
-      <script>
-      (function(){'use strict';var f,g=[];function l(a){g.push(a);1==g.length&&f()}function m(){for(;g.length;)g[0](),g.shift()}f=function(){setTimeout(m)};function n(a){this.a=p;this.b=void 0;this.f=[];var b=this;try{a(function(a){q(b,a)},function(a){r(b,a)})}catch(c){r(b,c)}}var p=2;function t(a){return new n(function(b,c){c(a)})}function u(a){return new n(function(b){b(a)})}function q(a,b){if(a.a==p){if(b==a)throw new TypeError;var c=!1;try{var d=b&&b.then;if(null!=b&&"object"==typeof b&&"function"==typeof d){d.call(b,function(b){c||q(a,b);c=!0},function(b){c||r(a,b);c=!0});return}}catch(e){c||r(a,e);return}a.a=0;a.b=b;v(a)}}
-function r(a,b){if(a.a==p){if(b==a)throw new TypeError;a.a=1;a.b=b;v(a)}}function v(a){l(function(){if(a.a!=p)for(;a.f.length;){var b=a.f.shift(),c=b[0],d=b[1],e=b[2],b=b[3];try{0==a.a?"function"==typeof c?e(c.call(void 0,a.b)):e(a.b):1==a.a&&("function"==typeof d?e(d.call(void 0,a.b)):b(a.b))}catch(h){b(h)}}})}n.prototype.g=function(a){return this.c(void 0,a)};n.prototype.c=function(a,b){var c=this;return new n(function(d,e){c.f.push([a,b,d,e]);v(c)})};
-function w(a){return new n(function(b,c){function d(c){return function(d){h[c]=d;e+=1;e==a.length&&b(h)}}var e=0,h=[];0==a.length&&b(h);for(var k=0;k<a.length;k+=1)u(a[k]).c(d(k),c)})}function x(a){return new n(function(b,c){for(var d=0;d<a.length;d+=1)u(a[d]).c(b,c)})};window.Promise||(window.Promise=n,window.Promise.resolve=u,window.Promise.reject=t,window.Promise.race=x,window.Promise.all=w,window.Promise.prototype.then=n.prototype.c,window.Promise.prototype["catch"]=n.prototype.g);}());
-
-(function(){function l(a,b){document.addEventListener?a.addEventListener("scroll",b,!1):a.attachEvent("scroll",b)}function m(a){document.body?a():document.addEventListener?document.addEventListener("DOMContentLoaded",function c(){document.removeEventListener("DOMContentLoaded",c);a()}):document.attachEvent("onreadystatechange",function k(){if("interactive"==document.readyState||"complete"==document.readyState)document.detachEvent("onreadystatechange",k),a()})};function r(a){this.a=document.createElement("div");this.a.setAttribute("aria-hidden","true");this.a.appendChild(document.createTextNode(a));this.b=document.createElement("span");this.c=document.createElement("span");this.h=document.createElement("span");this.f=document.createElement("span");this.g=-1;this.b.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;";this.c.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;";
-this.f.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;";this.h.style.cssText="display:inline-block;width:200%;height:200%;font-size:16px;max-width:none;";this.b.appendChild(this.h);this.c.appendChild(this.f);this.a.appendChild(this.b);this.a.appendChild(this.c)}
-function x(a,b){a.a.style.cssText="max-width:none;min-width:20px;min-height:20px;display:inline-block;overflow:hidden;position:absolute;width:auto;margin:0;padding:0;top:-999px;left:-999px;white-space:nowrap;font:"+b+";"}function y(a){var b=a.a.offsetWidth,c=b+100;a.f.style.width=c+"px";a.c.scrollLeft=c;a.b.scrollLeft=a.b.scrollWidth+100;return a.g!==b?(a.g=b,!0):!1}function z(a,b){function c(){var a=k;y(a)&&null!==a.a.parentNode&&b(a.g)}var k=a;l(a.b,c);l(a.c,c);y(a)};function A(a,b){var c=b||{};this.family=a;this.style=c.style||"normal";this.weight=c.weight||"normal";this.stretch=c.stretch||"normal"}var B=null,D=null,E=null;function H(){if(null===D){var a=document.createElement("div");try{a.style.font="condensed 100px sans-serif"}catch(b){}D=""!==a.style.font}return D}function I(a,b){return[a.style,a.weight,H()?a.stretch:"","100px",b].join(" ")}
-A.prototype.load=function(a,b){var c=this,k=a||"BESbswy",q=0,C=b||3E3,F=(new Date).getTime();return new Promise(function(a,b){null===E&&(E=!!document.fonts);if(E){var J=new Promise(function(a,b){function e(){(new Date).getTime()-F>=C?b():document.fonts.load(I(c,'"'+c.family+'"'),k).then(function(c){1<=c.length?a():setTimeout(e,25)},function(){b()})}e()}),K=new Promise(function(a,c){q=setTimeout(c,C)});Promise.race([K,J]).then(function(){clearTimeout(q);a(c)},function(){b(c)})}else m(function(){function t(){var b;
-if(b=-1!=f&&-1!=g||-1!=f&&-1!=h||-1!=g&&-1!=h)(b=f!=g&&f!=h&&g!=h)||(null===B&&(b=/AppleWebKit\/([0-9]+)(?:\.([0-9]+))/.exec(window.navigator.userAgent),B=!!b&&(536>parseInt(b[1],10)||536===parseInt(b[1],10)&&11>=parseInt(b[2],10))),b=B&&(f==u&&g==u&&h==u||f==v&&g==v&&h==v||f==w&&g==w&&h==w)),b=!b;b&&(null!==d.parentNode&&d.parentNode.removeChild(d),clearTimeout(q),a(c))}function G(){if((new Date).getTime()-F>=C)null!==d.parentNode&&d.parentNode.removeChild(d),b(c);else{var a=document.hidden;if(!0===
-a||void 0===a)f=e.a.offsetWidth,g=n.a.offsetWidth,h=p.a.offsetWidth,t();q=setTimeout(G,50)}}var e=new r(k),n=new r(k),p=new r(k),f=-1,g=-1,h=-1,u=-1,v=-1,w=-1,d=document.createElement("div");d.dir="ltr";x(e,I(c,"sans-serif"));x(n,I(c,"serif"));x(p,I(c,"monospace"));d.appendChild(e.a);d.appendChild(n.a);d.appendChild(p.a);document.body.appendChild(d);u=e.a.offsetWidth;v=n.a.offsetWidth;w=p.a.offsetWidth;G();z(e,function(a){f=a;t()});x(e,I(c,'"'+c.family+'",sans-serif'));z(n,function(a){g=a;t()});x(n,
-I(c,'"'+c.family+'",serif'));z(p,function(a){h=a;t()});x(p,I(c,'"'+c.family+'",monospace'))})})};"undefined"!==typeof module?module.exports=A:(window.FontFaceObserver=A,window.FontFaceObserver.prototype.load=A.prototype.load);}());
-      
-       (function( w ){
-      	// if the class is already set, we're good.
-      	if( w.document.documentElement.className.indexOf( "fonts-loaded" ) > -1 ){
-      		return;
-      	}
-      	var fontA = new w.FontFaceObserver( "Whitney-Medium", {
-      	});
-      	var fontB = new w.FontFaceObserver( "Whitney-SemiBold", {
-      	});
-      	var fontC = new w.FontFaceObserver( "Whitney-Bold", {
-      	});
-      	w.Promise.all([fontA.load(),fontB.load(),fontC.load()])
-      		.then(function(){
-      			w.document.documentElement.className += " fonts-loaded";      			
-      			sessionStorage.fontsloaded = true;
-      		});
-      }( this ));
-      
-    </script>
       <meta charset="utf-8">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       <title>in2Marketplace :: Super Admin Manage Retail Customers</title>
@@ -50,9 +17,12 @@ I(c,'"'+c.family+'",serif'));z(p,function(a){h=a;t()});x(p,I(c,'"'+c.family+'",m
 <![endif]-->
       <link rel="apple-touch-icon" href="../images/icons/favicon-180.png">
       <link rel="shortcut icon" href="../favicon.ico">
+      <!-- DataTables.net styles -->
+      <link rel="stylesheet" href="//cdn.datatables.net/v/dt/dt-1.10.12/af-2.1.2/b-1.2.2/b-colvis-1.2.2/b-html5-1.2.2/r-2.1.0/rr-1.1.2/sc-1.4.2/se-1.2.0/datatables.min.css">
+      <!-- Base Styles -->
       <link rel="stylesheet" href="../css/styles.css">
       <!-- Non-Critical CSS - loadCSS: load a CSS file asynchronously. [c]2016 @scottjehl, Filament Group, Inc. Licensed MIT -->
-      <script>(function(a){var b=function(c,k,d){var l=a.document;var m=l.createElement("link");var e;if(k){e=k}else{var i=(l.body||l.getElementsByTagName("head")[0]).childNodes;e=i[i.length-1]}var f=l.styleSheets;m.rel="stylesheet";m.href=c;m.media="only x";function j(n){if(l.body){return n()}setTimeout(function(){j(n)})}j(function(){e.parentNode.insertBefore(m,(k?e:e.nextSibling))});var h=function(o){var n=m.href;var p=f.length;while(p--){if(f[p].href===n){return o()}}setTimeout(function(){h(o)})};function g(){if(m.addEventListener){m.removeEventListener("load",g)}m.media=d||"all"}if(m.addEventListener){m.addEventListener("load",g)}m.onloadcssdefined=h;h(g);return m};if(typeof exports!=="undefined"){exports.loadCSS=b}else{a.loadCSS=b}}(typeof global!=="undefined"?global:this));loadCSS("../css/async.css");</script>
+      <script>(function(a){var b=function(c,k,d){var l=a.document;var m=l.createElement("link");var e;if(k){e=k}else{var i=(l.body||l.getElementsByTagName("head")[0]).childNodes;e=i[i.length-1]}var f=l.styleSheets;m.rel="stylesheet";m.href=c;m.media="only x";function j(n){if(l.body){return n()}setTimeout(function(){j(n)})}j(function(){e.parentNode.insertBefore(m,(k?e:e.nextSibling))});var h=function(o){var n=m.href;var p=f.length;while(p--){if(f[p].href===n){return o()}}setTimeout(function(){h(o)})};function g(){if(m.addEventListener){m.removeEventListener("load",g)}m.media=d||"all"}if(m.addEventListener){m.addEventListener("load",g)}m.onloadcssdefined=h;h(g);return m};if(typeof exports!=="undefined"){exports.loadCSS=b}else{a.loadCSS=b}}(typeof global!=="undefined"?global:this));loadCSS("../css/async.css");loadCSS("../css/scss/vendor/jquery-ui/jquery-ui.css");</script>
     </head>
 
     <body class="logged-in super-admin">
@@ -67,56 +37,37 @@ I(c,'"'+c.family+'",serif'));z(p,function(a){h=a;t()});x(p,I(c,'"'+c.family+'",m
         <div data-replace="sa-partials/sa-header-logged-in.html"></div>
 
         <!-- Main Content -->
-        <main class="main-content pt-3">
+        <main class="main-content pt-1 pb-3">
+          
+          <!-- Main Promo (no media) -->
+          <section class="hero-banner bg-orange c-white pt-pb-4 text-s-black-50">
+            <div class="container md-pt-pb-1">
+              
+              <!-- Post -->
+              <article class="text-center">
+                <!-- Post Content -->
+                <div class="post-content">
+                  <!-- Text -->
+                  <div class="text-wrap">
+                    <h2 class="mb-sm">Manage Retail Customers</h2>
+                    <p class="h3 antialiased mb-0 mr-ml-a mw-35em text-lg">This is where a "Super Admin" or authorized user can manage retail customers.</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
 
-          <!-- Form - Manage Retail Customers -->
-          <section class="mod-block pt-2 pb-4">
+          <!-- Retail Customers Table -->          
+          <section class="data-table pt-pb-3">
             <div class="container">
               
               <!-- Retail Customers -->
-              <div class="form-section text-center">
-                <table class="rtable mr-ml-a">
-                  <div class="bor-bot-1 bor-bot-s bor-c-DDD mb-1 pb-sm sm-flex sm-ai-center sm-jc-between">
-                    
-                  <h3 class="text-center text-md mb-sm sm-text-left sm-mr-1 sm-mb-0 sm-w-60">View Retail Customers</h3>
-                
-                  <!-- Pager -->
-                  <div class="pager flex jc-between sm-jc-end w-100">
-                    <!-- Page Links -->
-                    <div class="pager-links flex flex-wrap jc-between">
-                      <!-- First/Prev -->
-                      <div class="left-control flex w-a">
-                        <!-- First -->
-                        <a href="#">|<svg class="icon mr-ml-0"><use xlink:href="#icon-caret" /><span class="sr-only">first page</span></svg></a>
-                        <!-- Prev -->
-                        <a href="#"><svg class="icon mr-0"><use xlink:href="#icon-caret" /><span class="sr-only">previous page</span></svg></a>
-                      </div>
-                      <!-- Page Controls -->
-                      <div class="page-controls flex-g-0 pr-pl-sm w-60">
-                        <ul class="pager-list flex jc-center w-100">
-                          <li><a href="#">1</a></li>
-                          <li><a href="#">2</a></li>
-                          <li><a href="#">3</a></li>
-                          <li><a href="#">4</a></li>
-                          <li><a href="#">5</a></li>
-                        </ul>
-                      </div>                      
-                      <!-- Next/Last -->
-                      <div class="right-control flex w-a">
-                        <!-- Next -->
-                        <a href="#"><svg class="icon ml-0 rotate-180"><use xlink:href="#icon-caret" /><span class="sr-only">next page</span></svg></a>
-                        <!-- Last -->
-                        <a href="#"><svg class="icon mr-ml-0 rotate-180"><use xlink:href="#icon-caret" /><span class="sr-only">last page</span>|</svg></a>
-                      </div>
-                    </div>
-                    <!-- Pager Icons -->
-                    <div class="pager-icons pl-1 w-a">
-                      <a href="#"> <svg class="icon text-md"><use xlink:href="#icon-full-screen" /><span class="sr-only">icon</span></svg> </a>
-                    </div>
-                  </div>
-                </div>
+      		    <h3 class="function-header"><span class="mb-sm sm-mb-0">Manage Retail Customers</span><span class="icon-group"><a class="ml-1" href="sa-create-retail-customer.html"><svg class="icon mr-tiny ml-0"><use xlink:href="#icon-plus" /></svg><span class="text-base">Add</span></a></span></h3>
+      		    
+      		    <!-- Customer Data -->
+              <table id="manage-retail-customers" class="display responsive nowrap" cellspacing="0" width="100%">
                 <thead>
-                  <tr>
+                  <tr>               
                     <th>ID</th>
                     <th>S.P.</th>
                     <th>Biz Name</th>
@@ -137,75 +88,9 @@ I(c,'"'+c.family+'",serif'));z(p,function(a){h=a;t()});x(p,I(c,'"'+c.family+'",m
                     <th>Manage</th>
                   </tr>
                 </thead>
-                <tbody>
-                  <tr>
-                    <td>231</td>
-                    <td>Eric Thayer</td>
-                    <td>Business Name</td>
-                    <td>Business Type</td>
-                    <td>Admin Name</td>
-                    <td><a href="mailto:contact@company.com">contact@company.com</a></td>
-                    <td>968.122.4322</td>
-                    <td>M</td>
-                    <td class="cell-overflow">1234 Street Name CO 80125</td>
-                    <td>08/31/17</td>
-                    <td>Bronze</td>
-                    <td></td>
-                    <td>$150</td>
-                    <td>$50</td>
-                    <td>$20</td>
-                    <td> doc_1, doc_2</td>
-                    <td>Call about upgrade</td>
-                    <td class="icon-group text-center"><a href="#delete-confirm"><svg class="icon icon-delete mr-ml-0"><use xlink:href="#icon-minus" /></svg><span class="sr-only">Delete</span></a>
-                   <a href="#"><svg class="icon"><use xlink:href="#icon-pencil" /></svg><span class="sr-only">Edit</span></a></td>
-                  </tr>
-                  <tr>
-                    <td>231</td>
-                    <td>Eric Thayer</td>
-                    <td>Business Name</td>
-                    <td>Business Type</td>
-                    <td>Admin Name</td>
-                    <td><a href="mailto:contact@company.com">contact@company.com</a></td>
-                    <td>968.122.4322</td>
-                    <td>M</td>
-                    <td class="cell-overflow">1234 Street Name CO 80125</td>
-                    <td>08/31/17</td>
-                    <td>Bronze</td>
-                    <td></td>
-                    <td>$150</td>
-                    <td>$50</td>
-                    <td>$20</td>
-                    <td> doc_1, doc_2</td>
-                    <td>Call about upgrade</td>
-                    <td class="icon-group text-center"><a href="#delete-confirm"><svg class="icon icon-delete mr-ml-0"><use xlink:href="#icon-minus" /></svg><span class="sr-only">Delete</span></a>
-                   <a href="#"><svg class="icon"><use xlink:href="#icon-pencil" /></svg><span class="sr-only">Edit</span></a></td>
-                  </tr>
-                  <tr>
-                    <td>231</td>
-                    <td>Eric Thayer</td>
-                    <td>Business Name</td>
-                    <td>Business Type</td>
-                    <td>Admin Name</td>
-                    <td><a href="mailto:contact@company.com">contact@company.com</a></td>
-                    <td>968.122.4322</td>
-                    <td>M</td>
-                    <td class="cell-overflow">1234 Street Name CO 80125</td>
-                    <td>08/31/17</td>
-                    <td>Bronze</td>
-                    <td></td>
-                    <td>$150</td>
-                    <td>$50</td>
-                    <td>$20</td>
-                    <td> doc_1, doc_2</td>
-                    <td>Call about upgrade</td>
-                    <td class="icon-group text-center"><a href="#delete-confirm"><svg class="icon icon-delete mr-ml-0"><use xlink:href="#icon-minus" /></svg><span class="sr-only">Delete</span></a>
-                   <a href="#"><svg class="icon"><use xlink:href="#icon-pencil" /></svg><span class="sr-only">Edit</span></a></td>
-                  </tr>
-                </tbody>
               </table>
-              </div>
-
-              <!-- end / -->
+            
+             <!-- end / -->
             </div>
           </section>
           
@@ -446,13 +331,13 @@ I(c,'"'+c.family+'",serif'));z(p,function(a){h=a;t()});x(p,I(c,'"'+c.family+'",m
                       </div>
                     </div>
                     
-                  <!-- Buttons -->
-                  <div class="form-row button-wrap">
-                    <!-- cancel button -->
-                    <button class="btn-cancel" type="reset">Cancel</button>
-                    <!-- save button (primary) -->
-                    <input class="btn-primary" type="submit" value="Save" data-remodal-target="account-created">
-                  </div>
+                    <!-- Buttons -->
+                    <div class="form-row button-wrap">
+                      <!-- cancel button -->
+                      <button class="btn-cancel" type="reset">Cancel</button>
+                      <!-- save button (primary) -->
+                      <input class="btn-primary" type="submit" value="Save" data-remodal-target="account-created">
+                    </div>
 
                     <!-- end / form-wrap -->
                   </div>
@@ -473,52 +358,30 @@ I(c,'"'+c.family+'",serif'));z(p,function(a){h=a;t()});x(p,I(c,'"'+c.family+'",m
       </div>
 
       <!-- File Download Confirmation -->
-      <div class="remodal" data-remodal-id="file-download-confirmation" role="dialog" aria-labelledby="file-download-title" aria-describedby="file-download-desc">
-        <!-- Close Button -->
-        <button data-remodal-action="close" class="remodal-close" aria-label="Close">
-          <svg class="icon">
-            <use xlink:href="#icon-cancel" />
-          </svg>
-        </button>
-        <!-- Modal Content -->
-        <div class="modal-content">
-          <!-- Title -->
-          <h2 id="file-download-title">File Downloaded</h2>
-          <!-- Description -->
-          <div id="file-download-desc" class="post-text">
-          </div>
-        </div>
-        <!-- Modal Buttons -->
-        <div class="modal-buttons">
-          <button data-remodal-action="close" class="btn-cancel">Close</button>
-        </div>
+      <div class="remodal alert-success" data-remodal-id="download-confirm" role="dialog" aria-labelledby="download-confirm-title" aria-describedby="download-confirm-desc">
+        
+        <div data-replace="../global-partials/modals/modal-file-save-confirm-content.html"></div>
+        
       </div>
 
-      <!-- Delete Confirmation -->
-      <div class="remodal" data-remodal-id="delete-confirm" role="dialog" aria-labelledby="delete-confirm-title" aria-describedby="delete-confirm-desc">
-        <!-- Close Button -->
-        <button data-remodal-action="close" class="remodal-close" aria-label="Close">
-          <svg class="icon">
-            <use xlink:href="#icon-cancel" />
-          </svg>
-        </button>
-        <!-- Modal Content -->
-        <div class="modal-content">
-          <!-- Title -->
-          <h2 id="delete-confirm-title">Are You Sure?</h2>
-          <!-- Description -->
-          <div id="delete-confirm-desc" class="post-text">
-            <p>Please confirm you want to <strong>delete</strong> this by clicking "yes"</p>
-          </div>
-        </div>
-        <!-- Modal Buttons -->
-        <div class="modal-buttons">
-          <button data-remodal-action="cancel" class="btn-cancel">Cancel</button>
-        <button data-remodal-action="confirm" class="btn-primary">Yes</button>
-        </div>
-      </div>
       
-      <!-- Contact Us form (modal) -->
+      <!-- Sales Group Saved Confirmation -->
+    <div class="remodal alert-success" data-remodal-id="save-confirm" role="dialog" aria-labelledby="save-confirm-title" aria-describedby="save-confirm-desc">
+      
+      <div data-replace="../global-partials/modals/modal-save-confirm-content.html"></div>
+      
+      <!-- end / -->
+    </div>
+
+    <!-- Delete Confirmation -->
+    <div class="remodal" data-remodal-id="delete-confirm" role="dialog" aria-labelledby="delete-confirm-title" aria-describedby="delete-confirm-desc">
+      
+      <div data-replace="../global-partials/modals/modal-delete-confirm-content.html"></div>
+      
+      <!-- end / -->
+    </div>
+    
+    <!-- Contact Us form (modal) -->
     <div class="remodal quick-contact-form" data-remodal-id="quick-contact-form" role="dialog" aria-labelledby="quick-contact-title"
       aria-describedby="quick-contact-desc">
               
@@ -527,9 +390,41 @@ I(c,'"'+c.family+'",serif'));z(p,function(a){h=a;t()});x(p,I(c,'"'+c.family+'",m
       <!-- end / -->
     </div>
 
-      <!-- Dependencies -->
-      <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-      <script>window.jQuery || document.write('<script src="../js/libs/jquery.1.11.2.min.js"><\/script>')</script>
-      <script src="../js/min/script.min.js"></script>
+    <!-- Dependencies -->
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../js/libs/jquery.1.11.2.min.js"><\/script>')</script>
+    <script src="../js/min/script.min.js"></script>
+     <script src="../js/libs/jquery-ui.datepicker.js"></script>
+     <script src="//cdn.datatables.net/v/dt/dt-1.10.12/af-2.1.2/b-1.2.2/b-colvis-1.2.2/b-html5-1.2.2/r-2.1.0/rr-1.1.2/sc-1.4.2/se-1.2.0/datatables.min.js"></script>
+    <!-- DataTables -->
+    <script>
+      // Manage Retail Customers
+      $('#manage-retail-customers').DataTable({
+        responsive:     true,
+        keys:           true,
+        ajax:           'data/retail-customer-data.txt',
+        deferRender:    true,
+        columns: [
+          { "data": "id" },
+          { "data": "sales_person" },
+          { "data": "biz_name" },
+          { "data": "biz_type" },
+          { "data": "retail_admin" },
+          { "data": "email" },
+          { "data": "phone" },          
+          { "data": "gender" },
+          { "data": "address" },
+          { "data": "signup_date" },
+          { "data": "package" },
+          { "data": "addon" },
+          { "data": "setup_fee" },
+          { "data": "monthly_fee" },
+          { "data": "commission" },
+          { "data": "docs" },
+          { "data": "action" },
+          { "data": "manage" }
+        ]        
+      });
+    </script>
     </body>
   </html>
