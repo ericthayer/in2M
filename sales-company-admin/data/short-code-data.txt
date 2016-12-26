@@ -1,0 +1,152 @@
+{
+  "data": [
+    {
+      "provider": "Provider Name",
+      "short_code": "0001",
+      "active_date": "01/01/16",
+      "expiry_date": "01/01/17",
+      "comment": "small description here",      
+      "contact_person": "<a href='mailto:email@domain.com'>Jacob Adminson</a>",
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sca-setup-short-codes.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },    
+    {
+      "provider": "Twillio",
+      "short_code": "0001",
+      "active_date": "01/01/16",
+      "expiry_date": "01/01/17",
+      "comment": "small description here",      
+      "contact_person": "<a href='mailto:email@domain.com'>Nathan Salesadmin</a>",
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sca-setup-short-codes.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },
+    {
+      "provider": "Noximo",
+      "short_code": "0001",
+      "active_date": "01/01/16",
+      "expiry_date": "01/01/17",
+      "comment": "small description here",      
+      "contact_person": "<a href='mailto:email@domain.com'>Olivia Pennysaver</a>",
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sca-setup-short-codes.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },
+    
+    {
+      "provider": "AT&T",
+      "short_code": "0001",
+      "active_date": "01/01/16",
+      "expiry_date": "01/01/17",
+      "comment": "small description here",      
+      "contact_person": "<a href='mailto:email@domain.com'>Benjamin Moneymaker</a>",
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sca-setup-short-codes.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },
+    {
+      "provider": "Provider Name",
+      "short_code": "0001",
+      "active_date": "01/01/16",
+      "expiry_date": "01/01/17",
+      "comment": "small description here",      
+      "contact_person": "<a href='mailto:email@domain.com'>Jacob Adminson</a>",
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sca-setup-short-codes.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },    
+    {
+      "provider": "Twillio",
+      "short_code": "0001",
+      "active_date": "01/01/16",
+      "expiry_date": "01/01/17",
+      "comment": "small description here",      
+      "contact_person": "<a href='mailto:email@domain.com'>Nathan Salesadmin</a>",
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sca-setup-short-codes.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },
+    {
+      "provider": "Noximo",
+      "short_code": "0001",
+      "active_date": "01/01/16",
+      "expiry_date": "01/01/17",
+      "comment": "small description here",      
+      "contact_person": "<a href='mailto:email@domain.com'>Olivia Pennysaver</a>",
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sca-setup-short-codes.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },
+    
+    {
+      "provider": "AT&T",
+      "short_code": "0001",
+      "active_date": "01/01/16",
+      "expiry_date": "01/01/17",
+      "comment": "small description here",      
+      "contact_person": "<a href='mailto:email@domain.com'>Benjamin Moneymaker</a>",
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sca-setup-short-codes.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },
+    {
+      "provider": "Provider Name",
+      "short_code": "0001",
+      "active_date": "01/01/16",
+      "expiry_date": "01/01/17",
+      "comment": "small description here",      
+      "contact_person": "<a href='mailto:email@domain.com'>Jacob Adminson</a>",
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sca-setup-short-codes.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },    
+    {
+      "provider": "Twillio",
+      "short_code": "0001",
+      "active_date": "01/01/16",
+      "expiry_date": "01/01/17",
+      "comment": "small description here",      
+      "contact_person": "<a href='mailto:email@domain.com'>Nathan Salesadmin</a>",
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sca-setup-short-codes.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },
+    {
+      "provider": "Noximo",
+      "short_code": "0001",
+      "active_date": "01/01/16",
+      "expiry_date": "01/01/17",
+      "comment": "small description here",      
+      "contact_person": "<a href='mailto:email@domain.com'>Olivia Pennysaver</a>",
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sca-setup-short-codes.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },
+    
+    {
+      "provider": "AT&T",
+      "short_code": "0001",
+      "active_date": "01/01/16",
+      "expiry_date": "01/01/17",
+      "comment": "small description here",      
+      "contact_person": "<a href='mailto:email@domain.com'>Benjamin Moneymaker</a>",
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sca-setup-short-codes.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },
+    {
+      "provider": "Provider Name",
+      "short_code": "0001",
+      "active_date": "01/01/16",
+      "expiry_date": "01/01/17",
+      "comment": "small description here",      
+      "contact_person": "<a href='mailto:email@domain.com'>Jacob Adminson</a>",
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sca-setup-short-codes.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },    
+    {
+      "provider": "Twillio",
+      "short_code": "0001",
+      "active_date": "01/01/16",
+      "expiry_date": "01/01/17",
+      "comment": "small description here",      
+      "contact_person": "<a href='mailto:email@domain.com'>Nathan Salesadmin</a>",
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sca-setup-short-codes.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },
+    {
+      "provider": "Noximo",
+      "short_code": "0001",
+      "active_date": "01/01/16",
+      "expiry_date": "01/01/17",
+      "comment": "small description here",      
+      "contact_person": "<a href='mailto:email@domain.com'>Olivia Pennysaver</a>",
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sca-setup-short-codes.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },
+    
+    {
+      "provider": "AT&T",
+      "short_code": "0001",
+      "active_date": "01/01/16",
+      "expiry_date": "01/01/17",
+      "comment": "small description here",      
+      "contact_person": "<a href='mailto:email@domain.com'>Benjamin Moneymaker</a>",
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sca-setup-short-codes.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    }
+  ]
+}

@@ -925,6 +925,12 @@
 		"oAP": "\/css\/scss\/.sass-cache\/4b2bf66cfe2463af5d5500159b5b8bda355a1872\/_data-tables.scssc",
 		"oF": 0
 		},
+	"\/css\/scss\/.sass-cache\/4b2bf66cfe2463af5d5500159b5b8bda355a1872\/_hero-banner.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/css\/scss\/.sass-cache\/4b2bf66cfe2463af5d5500159b5b8bda355a1872\/_hero-banner.scssc",
+		"oF": 0
+		},
 	"\/css\/scss\/.sass-cache\/4b2bf66cfe2463af5d5500159b5b8bda355a1872\/_icons.scssc": {
 		"ft": 8192,
 		"oA": 1,
@@ -1872,6 +1878,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/css\/scss\/modules\/css\/_credit-card-icons.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 0
+		},
+	"\/css\/scss\/modules\/UI\/_hero-banner.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/scss\/modules\/css\/_hero-banner.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 0
@@ -5040,6 +5059,66 @@
 		"oAP": "\/retail-user\/ru-create-consumer.html",
 		"oF": 0
 		},
+	"\/sales-company-admin\/data\/capacity-data.txt": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sales-company-admin\/data\/capacity-data.txt",
+		"oF": 0
+		},
+	"\/sales-company-admin\/data\/commission-data.txt": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sales-company-admin\/data\/commission-data.txt",
+		"oF": 0
+		},
+	"\/sales-company-admin\/data\/commission-forecast-data.txt": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sales-company-admin\/data\/commission-forecast-data.txt",
+		"oF": 0
+		},
+	"\/sales-company-admin\/data\/offer-data.txt": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sales-company-admin\/data\/offer-data.txt",
+		"oF": 0
+		},
+	"\/sales-company-admin\/data\/package-data-test.txt": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sales-company-admin\/data\/package-data-test.txt",
+		"oF": 0
+		},
+	"\/sales-company-admin\/data\/package-data.txt": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sales-company-admin\/data\/package-data.txt",
+		"oF": 0
+		},
+	"\/sales-company-admin\/data\/retail-customer-data.txt": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sales-company-admin\/data\/retail-customer-data.txt",
+		"oF": 0
+		},
+	"\/sales-company-admin\/data\/sales-group-data.txt": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sales-company-admin\/data\/sales-group-data.txt",
+		"oF": 0
+		},
+	"\/sales-company-admin\/data\/sales-org-data.txt": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sales-company-admin\/data\/sales-org-data.txt",
+		"oF": 0
+		},
+	"\/sales-company-admin\/data\/short-code-data.txt": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sales-company-admin\/data\/short-code-data.txt",
+		"oF": 0
+		},
 	"\/sales-company-admin\/sales-company-admin.html": {
 		"ft": 8192,
 		"oA": 0,
@@ -5064,6 +5143,12 @@
 		"oAP": "\/sales-company-admin\/sca-create-sales-person.html",
 		"oF": 0
 		},
+	"\/sales-company-admin\/sca-manage-retail-customers copy.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sales-company-admin\/sca-manage-retail-customers copy.html",
+		"oF": 0
+		},
 	"\/sales-company-admin\/sca-manage-retail-customers.html": {
 		"ft": 8192,
 		"oA": 0,
@@ -5086,6 +5171,12 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/sales-company-admin\/sca-manage-sales-person.html",
+		"oF": 0
+		},
+	"\/sales-company-admin\/sca-partials\/sca-header-logged-in.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sales-company-admin\/sca-partials\/sca-header-logged-in.html",
 		"oF": 0
 		},
 	"\/sales-company-admin\/sca-view-commissions.html": {
@@ -5435,16 +5526,6 @@
 		"oA": 0,
 		"oAP": "\/super-admin\/super-admin.html",
 		"oF": 0
-		},
-	"\/test.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/test-min.css",
-		"oF": 0,
-		"oS": 0
 		}
 	},
 "hooks": [

@@ -1,0 +1,168 @@
+{
+  "data": [
+    {
+      "provider": "Provider Name",
+      "SMS_amount": "100,000",
+      "active_date": "01/01/16",
+      "expiry_date": "01/01/17",
+      "cost": "$0.01/SMS",
+      "comment": "small description here",      
+      "contact_person": "<a href='mailto:email@domain.com'>Jacob Adminson</a>",
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sca-setup-capacity.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },    
+    {
+      "provider": "Twillio",
+      "SMS_amount": "200,000",
+      "active_date": "01/01/16",
+      "expiry_date": "01/01/17",
+      "cost": "$0.01/SMS",
+      "comment": "small description here",      
+      "contact_person": "<a href='mailto:email@domain.com'>Nathan Salesadmin</a>",
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sca-setup-capacity.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },
+    {
+      "provider": "Noximo",
+      "SMS_amount": "750,000",
+      "active_date": "01/01/16",
+      "expiry_date": "01/01/17",
+      "cost": "$0.01/SMS",
+      "comment": "small description here",      
+      "contact_person": "<a href='mailto:email@domain.com'>Olivia Pennysaver</a>",
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sca-setup-capacity.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },
+    
+    {
+      "provider": "AT&T",
+      "SMS_amount": "500,000",
+      "active_date": "01/01/16",
+      "expiry_date": "01/01/17",
+      "cost": "$0.01/SMS",
+      "comment": "small description here",      
+      "contact_person": "<a href='mailto:email@domain.com'>Benjamin Moneymaker</a>",
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sca-setup-capacity.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },
+    {
+      "provider": "Provider Name",
+      "SMS_amount": "100,000",
+      "active_date": "01/01/16",
+      "expiry_date": "01/01/17",
+      "cost": "$0.01/SMS",
+      "comment": "small description here",      
+      "contact_person": "<a href='mailto:email@domain.com'>Jacob Adminson</a>",
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sca-setup-capacity.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },    
+    {
+      "provider": "Twillio",
+      "SMS_amount": "200,000",
+      "active_date": "01/01/16",
+      "expiry_date": "01/01/17",
+      "cost": "$0.01/SMS",
+      "comment": "small description here",      
+      "contact_person": "<a href='mailto:email@domain.com'>Nathan Salesadmin</a>",
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sca-setup-capacity.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },
+    {
+      "provider": "Noximo",
+      "SMS_amount": "750,000",
+      "active_date": "01/01/16",
+      "expiry_date": "01/01/17",
+      "cost": "$0.01/SMS",
+      "comment": "small description here",      
+      "contact_person": "<a href='mailto:email@domain.com'>Olivia Pennysaver</a>",
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sca-setup-capacity.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },
+    
+    {
+      "provider": "AT&T",
+      "SMS_amount": "500,000",
+      "active_date": "01/01/16",
+      "expiry_date": "01/01/17",
+      "cost": "$0.01/SMS",
+      "comment": "small description here",      
+      "contact_person": "<a href='mailto:email@domain.com'>Benjamin Moneymaker</a>",
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sca-setup-capacity.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },
+    {
+      "provider": "Provider Name",
+      "SMS_amount": "100,000",
+      "active_date": "01/01/16",
+      "expiry_date": "01/01/17",
+      "cost": "$0.01/SMS",
+      "comment": "small description here",      
+      "contact_person": "<a href='mailto:email@domain.com'>Jacob Adminson</a>",
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sca-setup-capacity.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },    
+    {
+      "provider": "Twillio",
+      "SMS_amount": "200,000",
+      "active_date": "01/01/16",
+      "expiry_date": "01/01/17",
+      "cost": "$0.01/SMS",
+      "comment": "small description here",      
+      "contact_person": "<a href='mailto:email@domain.com'>Nathan Salesadmin</a>",
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sca-setup-capacity.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },
+    {
+      "provider": "Noximo",
+      "SMS_amount": "750,000",
+      "active_date": "01/01/16",
+      "expiry_date": "01/01/17",
+      "cost": "$0.01/SMS",
+      "comment": "small description here",      
+      "contact_person": "<a href='mailto:email@domain.com'>Olivia Pennysaver</a>",
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sca-setup-capacity.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },
+    
+    {
+      "provider": "AT&T",
+      "SMS_amount": "500,000",
+      "active_date": "01/01/16",
+      "expiry_date": "01/01/17",
+      "cost": "$0.01/SMS",
+      "comment": "small description here",      
+      "contact_person": "<a href='mailto:email@domain.com'>Benjamin Moneymaker</a>",
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sca-setup-capacity.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },
+    {
+      "provider": "Provider Name",
+      "SMS_amount": "100,000",
+      "active_date": "01/01/16",
+      "expiry_date": "01/01/17",
+      "cost": "$0.01/SMS",
+      "comment": "small description here",      
+      "contact_person": "<a href='mailto:email@domain.com'>Jacob Adminson</a>",
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sca-setup-capacity.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },    
+    {
+      "provider": "Twillio",
+      "SMS_amount": "200,000",
+      "active_date": "01/01/16",
+      "expiry_date": "01/01/17",
+      "cost": "$0.01/SMS",
+      "comment": "small description here",      
+      "contact_person": "<a href='mailto:email@domain.com'>Nathan Salesadmin</a>",
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sca-setup-capacity.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },
+    {
+      "provider": "Noximo",
+      "SMS_amount": "750,000",
+      "active_date": "01/01/16",
+      "expiry_date": "01/01/17",
+      "cost": "$0.01/SMS",
+      "comment": "small description here",      
+      "contact_person": "<a href='mailto:email@domain.com'>Olivia Pennysaver</a>",
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sca-setup-capacity.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },
+    
+    {
+      "provider": "AT&T",
+      "SMS_amount": "500,000",
+      "active_date": "01/01/16",
+      "expiry_date": "01/01/17",
+      "cost": "$0.01/SMS",
+      "comment": "small description here",      
+      "contact_person": "<a href='mailto:email@domain.com'>Benjamin Moneymaker</a>",
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sca-setup-capacity.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    }
+  ]
+}

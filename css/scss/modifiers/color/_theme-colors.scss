@@ -245,6 +245,40 @@ button:not(.search-button):not([class*="-close"]):not(.btn-cancel),
 .tc-blue-m { @include tc-blue-m; }
 .tc-blue-d { @include tc-blue-d; }
 
+// ** ORANGE THEME MIXINS ** //
+
+@mixin tc-orange-m {
+  background-color: $orange;
+  color: $white;
+  [class*="btn"] {
+    color: $white;
+  }
+  [class*="btn"]:not(.btn-outline) {
+    background-color: $orange-50;
+  }
+}
+
+//.tc-orange-l { @include tc-orange-l; }
+.tc-orange-m { @include tc-orange-m; }
+//.tc-orange-d { @include tc-orange-d; }
+
+// ** PURPLE THEME MIXINS ** //
+
+@mixin tc-purple-m {
+  background-color: $purple;
+  color: $white;
+  [class*="btn"] {
+    color: $white;
+  }
+  [class*="btn"]:not(.btn-outline) {
+    background-color: $purple-50;
+  }
+}
+
+//.tc-purple-l { @include tc-purple-l; }
+.tc-purple-m { @include tc-purple-m; }
+//.tc-purple-d { @include tc-purple-d; }
+
 
 // ** Override ** //
 

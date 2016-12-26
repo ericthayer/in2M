@@ -19,9 +19,9 @@
       <link rel="shortcut icon" href="../favicon.ico">
       <link rel="stylesheet" href="../css/styles.css">
       <!-- Non-Critical CSS - loadCSS: load a CSS file asynchronously. [c]2016 @scottjehl, Filament Group, Inc. Licensed MIT -->
-      <script>(function(a){var b=function(c,k,d){var l=a.document;var m=l.createElement("link");var e;if(k){e=k}else{var i=(l.body||l.getElementsByTagName("head")[0]).childNodes;e=i[i.length-1]}var f=l.styleSheets;m.rel="stylesheet";m.href=c;m.media="only x";function j(n){if(l.body){return n()}setTimeout(function(){j(n)})}j(function(){e.parentNode.insertBefore(m,(k?e:e.nextSibling))});var h=function(o){var n=m.href;var p=f.length;while(p--){if(f[p].href===n){return o()}}setTimeout(function(){h(o)})};function g(){if(m.addEventListener){m.removeEventListener("load",g)}m.media=d||"all"}if(m.addEventListener){m.addEventListener("load",g)}m.onloadcssdefined=h;h(g);return m};if(typeof exports!=="undefined"){exports.loadCSS=b}else{a.loadCSS=b}}(typeof global!=="undefined"?global:this));loadCSS("../css/async.css");</script>
+      <script>(function(a){var b=function(c,k,d){var l=a.document;var m=l.createElement("link");var e;if(k){e=k}else{var i=(l.body||l.getElementsByTagName("head")[0]).childNodes;e=i[i.length-1]}var f=l.styleSheets;m.rel="stylesheet";m.href=c;m.media="only x";function j(n){if(l.body){return n()}setTimeout(function(){j(n)})}j(function(){e.parentNode.insertBefore(m,(k?e:e.nextSibling))});var h=function(o){var n=m.href;var p=f.length;while(p--){if(f[p].href===n){return o()}}setTimeout(function(){h(o)})};function g(){if(m.addEventListener){m.removeEventListener("load",g)}m.media=d||"all"}if(m.addEventListener){m.addEventListener("load",g)}m.onloadcssdefined=h;h(g);return m};if(typeof exports!=="undefined"){exports.loadCSS=b}else{a.loadCSS=b}}(typeof global!=="undefined"?global:this));loadCSS("../css/async.css");loadCSS("../css/scss/vendor/jquery-ui/jquery-ui.css");</script>
     </head>
-    <body>
+    <body class="logged-in sales-co-admin">
       <!--[if lt IE 10]>
       <p class="update-browser">This browser version is not recommended. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
       <![endif]-->
@@ -29,146 +29,47 @@
       <!-- Site Wrap  -->
       <div class="site-wrap">
         
-        <!-- Header v2 -->  
-        <header class="site-header pt-pb-1" role="banner">
-          <div class="container flex flex-wrap ai-center jc-between">
-            <!-- Site Logo -->
-            <h1 class="site-title"><a href="sales-company-admin.html"><img class="header-logo mw-8em" src="../images/UI/in2m-logo-color.svg" alt="in2Marketplace.com"><span class="sr-only">in2Marketplace.com</span></a></h1>
-             
-             <button href="#" id="nav-toggle" class="nav-toggle-html" aria-hidden="false" aria-expanded="false">
-              <div class="nav-icon"></div>
-            </button>
-            <!-- Main Nav -->
-            <section class="main-nav flex flex-wrap ai-center jc-end sm-flex-g-1" role="navigation">
-              <!-- Nav -->
-              <script src="../js/libs/responsive-nav.js"></script>
-              <nav class="nav-collapse" role="navigation">
-                <!-- Admin Bar -->
-            		<div class="admin-bar pt-1 hidden">
-              		<div class="container flex flex-wrap ai-center jc-between md-jc-end"> 
-                		<!-- User Status -->
-                    <div class="user-status flex ai-center jc-center sm-jc-start sm-flex-g-1">
-                      <div class="avatar user-avatar"><img src="../images/UI/slug-avatar.svg" alt="user avatar"></div>
-                      <div class="user-status-text flex flex-wrap flex-d-col ai-start">
-                        <div class="status-msg mb-tiny"><span class="user-name">Sales Company Admin</span></div>
-                        <div class="profile-links flex ai-center">
-                          <a class="#" href="#">Dashboard</a>
-                          <a class="#" href="#">Logout</a>
-                        </div>
-                      </div>
-                    </div>
-                		<!-- Search -->
-                		<div class="search-form header-search">
-                  		<label class="sr-only" for="search-form">Search</label>
-                  		<!-- Search Bar -->
-                  		<div class="search-bar flex flex-wrap jc-between">
-                        <input id="search-form" type="search" placeholder="search">
-                        <button type="submit"> <svg class="icon"><use xlink:href="#icon-search" /></svg>
-                        </button>
-                  		</div>
-                		</div>
-                		
-              		</div>
-            		</div>
-                <ul>
-                  <li class="dropdown">
-                    <a href="#">
-                      <svg class="icon">
-                        <use xlink:href="#icon-tools" />
-                      </svg>
-                      View
-                    </a>
-                    <ul class="sub-menu">
-                      <li><a href="sca-view-sales-org.html">Sales Organizations</a></li>
-                      <li><a href="sca-view-packages-offers.html">Packages & Offers</a></li>
-                      <li><a href="sca-view-commissions.html">Commissions</a></li>
-                      <li><a href="sca-view-notifications.html">Notifications</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown">
-                    <a href="#">
-                      <svg class="icon">
-                        <use xlink:href="#icon-tools" />
-                      </svg>
-                      Setup
-                    </a>
-                    <ul class="sub-menu">
-                      <li><a href="sca-setup-capacity.html">Capacity</a></li>
-                      <li><a href="sca-setup-short-codes.html">Short Codes</a></li>
-                      <li><a href="sca-setup-campaigns.html">Campaigns</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown">
-                    <a href="#">
-                      <svg class="icon">
-                        <use xlink:href="#icon-pencil" />
-                      </svg>
-                      Create
-                    </a>
-                    <ul class="sub-menu">
-                      <li><a href="sca-create-super-admin.html">Sales Company Admin Profile</a></li>
-                      <li><a href="sca-create-sales-company.html">Sales Company</a></li>
-                      <li><a href="sca-create-sales-group.html">Sales Group</a></li>
-                      <li><a href="sca-create-sales-person.html">Sales Person</a></li>
-                      <li><a href="sca-create-email-templates.html">Email Templates</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown active">
-                    <a href="#">
-                      <svg class="icon">
-                        <use xlink:href="#icon-user" />
-                      </svg>
-                      Manage
-                    </a>
-                    <ul class="sub-menu">
-                      <li><a href="sca-manage-super-admin.html">Sales Company Admin Profile</a></li>
-                      <li><a href="sca-manage-sales-company.html">Sales Company</a></li>
-                      <li><a href="sca-manage-sales-group.html">Sales Group</a></li>
-                      <li><a href="sca-manage-sales-person.html">Sales Person</a></li>
-                      <li><a href="sca-manage-retail-customers.html">Retail Customers</a></li>
-                      <li><a href="sca-manage-campaigns.html">Campaigns</a></li>
-                      <li class="dropdown">
-                        <a href="#">Email Templates</a>
-                        <ul class="sub-menu">
-                          <li><a href="#">Sub Sublink</a></li>
-                          <li><a href="#">Sub Sublink</a></li>
-                          <li><a href="#">Sub Sublink</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </nav>
-              <script src="../js/libs/mobile-nav.js"></script>
-            </section>
-          </div>
-        </header>
+        <!-- Header -->  
+        <div data-replace="sca-partials/sca-header-logged-in.html"></div>
         
         <!-- Main Content -->
-        <main class="main-content pt-3">
+        <main class="main-content pt-1 pb-3">
           
-          <!-- Page Title -->
-          <div class="container sr-only">
-            <h1 class="page-title text-center mb-0">Manage Sales Person Profile</h1>
-          </div>
+          <!-- Main Promo (no media) -->
+          <section class="hero-banner tc-purple-m">
+            <div class="container md-pt-pb-1">
+              
+              <!-- Post -->
+              <article class="text-center">
+                <!-- Post Content -->
+                <div class="post-content">
+                  <!-- Text -->
+                  <div class="text-wrap">
+                    <h2 class="mb-sm">Manage Sales Person</h2>
+                    <p class="h3 antialiased mb-0 mr-ml-a mw-35em text-lg">This is where a "Sales Company Admin" or authorized user manages a Sales Person profile.</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
 
-          <!-- Create Profile Form  -->
-          <section class="mod-block pb-2">
+          <!-- Form - Manage Sales Person -->
+          <section class="admin-form pt-pb-3">
           	<div class="container">
               
               <!-- Form Build -->
-              <div class="form-section mr-ml-a mw-48em">                  
-                <form name="CreateSuperAdmin">
+              <div class="form-section">                  
+                <form name="CreateSalesPerson">
                   
                   <!-- Form Header -->
-                  <div class="bor-bot-1 bor-c-DDD mb-1 pb-sm sm-flex sm-ai-center sm-jc-between">
+                  <div class="function-header">
                     
                     <h2 class="text-center text-lg mb-1 sm-text-left sm-mr-1 sm-mb-0 sm-w-60">Manage Sales Person</h2>
                     
                     <!-- Group Name -->
                     <div class="form-row text-center mb-1 sm-text-sm sm-flex sm-flex-g-0 sm-ai-end sm-jc-between sm-mb-0 sm-w-60">
                      <label for="-ariaLabel" class="sm-text-right sm-pr-sm sm-w-60">Group Name <span class="req-mark">*</span></label>
-                     <div class="custom-select sm-w-60">
+                     <div class="custom-select bor-1 bor-solid bor-c-DDD sm-w-60">
                       <select required>
                         <option disabled>select</option>
                         <option value="Group One" selected>Group One</option>
@@ -181,31 +82,9 @@
                   </div>
                   
                   <div class="form-wrap">
-                    
-                    <!-- Status -->
-                    <div class="form-group mb-1 sm-flex sm-jc-between">
-                      <!-- Left Input -->                        
-                      <div class="form-row mb-1 sm-flex-g-1 sm-mb-0 sm-mr-tiny sm-w-50">
-                      <label for="-ariaLabel" class="sm-pr-sm sm-w-60">Status <span class="req-mark">*</span></label>
-                       <div class="custom-select">
-                        <select required>
-                          <option selected disabled>select</option>
-                          <option value="Active">Active</option>
-                          <option value="Inactive">Inactive</option>
-                        </select>
-                       </div>
-                        
-                      </div>
-                      <!-- Reason for status change -->                        
-                      <div class="form-row sm-flex-g-1 sm-ml-tiny sm-w-50">
-                        <label for="" id="-ariaLabel">Reason for change</label>
-                        <input id="" name="" type="text" aria-labelledby="-ariaLabel">
-                      </div>
-                    </div>
-                    
-                    
+
                     <!-- Personal Information -->
-                    <h3 class="title-sm text-md text-center mb-sm pt-sm w-100 sm-text-left">Personal Information</h3>                      
+                    <h3 class="title-sm text-md text-center mb-sm pt-sm w-100 sm-text-left">Name</h3>                      
                     
                     <!-- Name / Title / D.O.B. -->
                     <div class="form-group mb-1-pt5 sm-flex sm-jc-between">
@@ -213,28 +92,54 @@
                       <!-- First Name -->
                       <div class="form-row mb-1 sm-flex-g-1 sm-mb-0 sm-mr-tiny sm-w-30">
                         <label for="" id="-ariaLabel">First Name <span class="req-mark">*</span></label>
-                        <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="required" title="This is a required input" value="Sales" required>
+                        <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="required" title="This is a required input" required>
                       </div>
                       
                       <!-- Last Name -->
                       <div class="form-row mb-1 sm-flex-g-1 sm-mr-ml-tiny sm-mb-0 sm-w-30">
-                        <label for="" id="-ariaLabel">Last Name<span class="req-mark">*</span></label>
-                        <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="required" title="This is a required input" value="Person" required>
+                        <label for="" id="-ariaLabel">Last Name <span class="req-mark">*</span></label>
+                        <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="required" title="This is a required input" required>
                       </div>
 
                       <!-- Title -->
                       <div class="form-row mb-1 sm-mb-0 sm-flex-g-1 sm-mr-ml-tiny sm-w-15">
                         <label for="" id="-ariaLabel">Title</label>
-                        <input id="" name="" type="text" aria-labelledby="-ariaLabel" value="Mr.">
+                        <input id="" name="" type="text" aria-labelledby="-ariaLabel">
                       </div>
                       
                       <!-- Date of Birth -->
                       <div class="form-row sm-flex-g-1 sm-ml-tiny sm-w-25">
                         <label for="" id="-ariaLabel">Date of Birth <span class="req-mark">*</span></label>
-                        <input id="" name="activeDate-ariaLabel" type="text" placeholder="&nbsp;" class="dob-input required" aria-labelledby="-ariaLabel" value="01/01/1998" required>
+                        <input id="" name="activeDate-ariaLabel" type="text" placeholder="&nbsp;" class="dob-input required" aria-labelledby="-ariaLabel" required>
                       </div>
                       
                     </div>
+                    
+                     <!-- Username / Password -->
+                      <h3 class="title-sm text-center text-md flex-1 mb-sm pt-sm w-100 sm-text-left">Account Information</h3>
+                      
+                      <!-- Username / Password -->
+                      <div class="form-group mb-1-pt5 sm-flex sm-jc-between">
+                        
+                        <!-- Username -->
+                        <div class="form-row mb-1 sm-flex-g-1 sm-mb-0 sm-mr-tiny sm-w-30">
+                          <label for="" id="-ariaLabel">Username <span class="req-mark">*</span></label>
+                          <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="required" title="This is a required input" required>
+                        </div>
+                        
+                        <!-- Password -->
+                        <div class="form-row mb-1 sm-flex-g-1 sm-mr-ml-tiny sm-mb-0 sm-w-35">
+                          <label for="" id="-ariaLabel">Password <span class="req-mark">*</span></label>
+                          <input id="" name="" type="password" class="required" minlength="6" aria-labelledby="-ariaLabel" title="This is a required field" autocorrect="off" autocapitalize="none" spellcheck="false" placeholder="••••••" required>
+                        </div>
+                        
+                        <!-- Confirm Password -->
+                        <div class="form-row sm-flex-g-1 sm-ml-tiny sm-w-35">
+                          <label for="" id="-ariaLabel">Confirm Password <span class="req-mark">*</span></label>
+                          <input id="" name="" type="password" class="required" minlength="6" aria-labelledby="-ariaLabel" title="This is a required field" autocorrect="off" autocapitalize="none" spellcheck="false" placeholder="••••••" required>
+                        </div>
+                        
+                      </div> 
                     
                     <!-- Address -->
                     <h3 class="title-sm text-center text-md flex-1 mb-sm pt-sm w-100 sm-text-left">Location</h3>
@@ -934,39 +839,8 @@
                       </div>
                     </div>
                     
-                    <!-- Commissions -->
-                    <h3 class="title-sm text-center text-md flex-1 mb-sm pt-sm w-100 sm-text-left">Commission</h3>
-                    
-                    <!-- Commission Type & Setup Fee -->
-                    <div class="form-group pb-0 sm-flex sm-jc-between">
-                      <!-- Commission Type -->
-                      <div class="form-row mb-1 sm-flex-g-1 sm-mr-tiny sm-mb-0 sm-w-30 md-w-40">
-                         <label for="" id="-ariaLabel">Commission Type</label>
-                        <input id="" name="" type="text" aria-labelledby="-ariaLabel" placeholder="% or $">
-                      </div>                      
-                      <!-- Setup Fee -->
-                      <div class="form-row mb-1 sm-flex-g-1 sm-mr-ml-tiny sm-mb-0 sm-w-30 md-w-40">
-                        <label for="" id="-ariaLabel">Setup Fee</label>
-                        <input id="" name="" type="text" aria-labelledby="-ariaLabel" placeholder="% or $">
-                      </div>
-                       <!-- Recursive or One Time commission -->
-                       <div class="form-row flex flex-d-col sm-ml-tiny sm-mb-0 sm-pr-pl-sm sm-w-a sm-ai-center sm-jc-center md-w-20">
-                        <div class="mb-sm">
-                          <label class="radiobutton">
-                            <input type="radio" name="commision-type" aria-labelledby="-ariaLabel">
-                            <span class="item-desc">Recurring</span>
-                          </label>
-                        </div>
-                        <div>
-                          <label class="radiobutton">
-                            <input type="radio" name="commision-type" aria-labelledby="-ariaLabel">
-                            <span class="item-desc text-sm">One Time</span>
-                          </label>
-                        </div>
-                      </div>
-                    
-
-                    </div>
+                     <!-- Commissions -->
+                    <h3 class="title-sm text-center text-md flex-1 mb-sm pt-sm w-100 sm-text-left">Payment</h3>
                     
                     <!-- Payment Matrix & Bank ACH # -->
                     <div class="form-group mb-1 sm-flex sm-jc-between">
@@ -984,9 +858,11 @@
                     </div>
                     
                     <!-- Buttons -->
-                    <div class="form-row button-wrap flex flex-d-col-rev pt-1 sm-flex-d-row sm-jc-between">
-                      <button onclick="$('form[name=" CreatePackage "] input').val('');" class="btn-outline cancel-button mb-1 sm-mb-0 sm-mr-sm" type="reset">Cancel</button>
-                      <input class="btn-primary save-button mb-1 sm-mb-0 sm-ml-sm" type="submit" value="Save" data-remodal-target="setup-campaign">
+                    <div class="form-row button-wrap">
+                      <button class="btn-delete" type="reset" data-remodal-target="delete-confirm"><svg class="icon icon-delete"><use xlink:href="#icon-minus" /></svg> Delete</button>
+                      
+                      <!-- save button (primary) -->
+                      <input class="btn-primary" type="submit" value="Save" data-remodal-target="save-confirm">
                     </div>
                     
                     <!-- end / form-wrap -->
@@ -1001,21 +877,40 @@
         </main>
         
         <!-- Footer -->
-        <footer class="site-footer text-center md-text-left pt-pb-2" role="contentinfo">
-          <div class="container flex flex-wrap flex-d-col jc-center md-flex-d-row md-ai-center md-jc-between">
-            <!-- Footer Logo-->
-            <div class="footer-logo mr-ml-a mb-sm md-ml-0 md-mb-0"><a href="#"><img src="../images/UI/in2m-logo-phonetag-teal.svg" alt="in2Marketplace.com" title="in2Marketplace.com"></a></div>
-            <h6 class="h5 all-caps mb-0 sm-pt-sm hidden">HTML Review</h6>
-            <!-- Footer Menu -->
-            <nav class="nav-menu site-footer-menu"><a href="#">Footer Nav</a><a href="#">Nav Item</a><a href="#">Footer Nav</a><a href="#">Nav Item</a><a href="#">Footer Nav</a><a href="#">Nav Item</a></nav>
-          </div>
-        </footer>
+        <div data-replace="../global-partials/footer/footer-logged-in-blue.html"></div>
         
         <!-- end / site-wrap-->
       </div>
+      
+      <!-- Account Created Confirmation -->
+      <div class="remodal alert-success" data-remodal-id="save-confirm" role="dialog" aria-labelledby="save-confirm-title" aria-describedby="save-confirm-desc">
+        
+        <div data-replace="../global-partials/modals/modal-account-created-content.html"></div>
+        
+        <!-- end / -->
+      </div>
+      
+      <!-- Delete Confirmation -->
+      <div class="remodal" data-remodal-id="delete-confirm" role="dialog" aria-labelledby="delete-confirm-title" aria-describedby="delete-confirm-desc">
+        
+        <div data-replace="../global-partials/modals/modal-delete-confirm-content.html"></div>
+        
+        <!-- end / -->
+      </div>
+      
+      <!-- Contact Us form (modal) -->
+      <div class="remodal quick-contact-form" data-remodal-id="quick-contact-form" role="dialog" aria-labelledby="quick-contact-title"
+        aria-describedby="quick-contact-desc">
+                
+        <div data-replace="../global-partials/modals/modal-contact-content.html"></div>
+        
+        <!-- end / -->
+      </div>
+      
       <!-- Dependencies -->
       <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
       <script>window.jQuery || document.write('<script src="../js/libs/jquery.1.11.2.min.js"><\/script>')</script>
       <script src="../js/min/script.min.js"></script>
+      <script src="../js/libs/jquery-ui.datepicker.js"></script>
     </body>
   </html>

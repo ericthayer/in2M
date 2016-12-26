@@ -1,0 +1,12 @@
+// Hero Banners
+
+.hero-banner {
+  //@extend .bg-blue-g-3;
+  padding-top: 4em;
+  padding-bottom: 4em; 
+  //text-shadow: 0 0 10px rgba(black, .5); 
+  // theme color
+  &[class*="tc-"] {
+   text-shadow: 0 0 10px rgba(black, .5); 
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "sales_person": "Sales Person",
+      "biz_name": "Sales Company Inc.",
+      "biz_type": "business type",
+      "retail_admin": "Retail Admin",
+      "email": "<a href='mailto:email@domain.com'>email@domain.com</a>",
+      "phone": "888.555.8768",
+      "gender": "male",
+      "address": "12345 Streetname Rd. City Name, ST",
+      "signup_date": "08/16/16",
+      "package": "bronze",
+      "addon": "$20",
+      "setup_fee": "$150",
+      "monthly_fee": "$0",
+      "commission": "7%",
+      "docs": "<a href='docname.ext'>doc_1</a> <a href='docname.ext'>doc_2</a>",
+      "action": "call back 1/24/17 @ 2pm",     
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sca-manage-retail-customer.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },
+    
+    {
+      "id": "2",
+      "sales_person": "Sales Person",
+      "biz_name": "Sales Company Inc.",
+      "biz_type": "business type",
+      "retail_admin": "Retail Admin",
+      "email": "<a href='mailto:email@domain.com'>email@domain.com</a>",
+      "phone": "888.555.8768",
+      "gender": "male",
+      "address": "12345 Streetname Rd. City Name, ST",
+      "signup_date": "08/16/16",
+      "package": "bronze",
+      "addon": "$20",
+      "setup_fee": "$150",
+      "monthly_fee": "$0",
+      "commission": "7%",
+      "docs": "<a href='docname.ext'>doc_1</a> <a href='docname.ext'>doc_2</a>",
+      "action": "call back 1/24/17 @ 2pm",     
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sca-manage-retail-customer.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },
+    
+    {
+      "id": "3",
+      "sales_person": "Sales Person",
+      "biz_name": "Sales Company Inc.",
+      "biz_type": "business type",
+      "retail_admin": "Retail Admin",
+      "email": "<a href='mailto:email@domain.com'>email@domain.com</a>",
+      "phone": "888.555.8768",
+      "gender": "male",
+      "address": "12345 Streetname Rd. City Name, ST",
+      "signup_date": "08/16/16",
+      "package": "bronze",
+      "addon": "$20",
+      "setup_fee": "$150",
+      "monthly_fee": "$0",
+      "commission": "7%",
+      "docs": "<a href='docname.ext'>doc_1</a> <a href='docname.ext'>doc_2</a>",
+      "action": "call back 1/24/17 @ 2pm",     
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sca-manage-retail-customer.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },
+    
+    {
+      "id": "4",
+      "sales_person": "Sales Person",
+      "biz_name": "Sales Company Inc.",
+      "biz_type": "business type",
+      "retail_admin": "Retail Admin",
+      "email": "<a href='mailto:email@domain.com'>email@domain.com</a>",
+      "phone": "888.555.8768",
+      "gender": "male",
+      "address": "12345 Streetname Rd. City Name, ST",
+      "signup_date": "08/16/16",
+      "package": "bronze",
+      "addon": "$20",
+      "setup_fee": "$150",
+      "monthly_fee": "$0",
+      "commission": "7%",
+      "docs": "<a href='docname.ext'>doc_1</a> <a href='docname.ext'>doc_2</a>",
+      "action": "call back 1/24/17 @ 2pm",     
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sca-manage-retail-customer.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    }
+  ]
+}
