@@ -9,4 +9,19 @@
   &[class*="tc-"] {
    text-shadow: 0 0 10px rgba(black, .5); 
   }
+  
+  h2 {
+    font-size: 3rem;
+    margin-bottom: .3em;   
+  }
+}
+
+
+// Hero Buttons
+
+.hero-buttons {
+  padding-top: 1em;
+  > * { 
+    text-transform: uppercase;
+  } 
 }

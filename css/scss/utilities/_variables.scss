@@ -42,8 +42,6 @@ $Whitney-SemiBold: 'Whitney-SemiBold', $sans-serif;
 
 $Whitney-Med: 'Whitney-Medium', $sans-serif;
 
-$FilsonPro: 'filson-pro', $sans-serif; 
-
 // Colors
 
 $light-tan: #DDDACC;
@@ -62,3 +60,19 @@ $wht-text-shadow: 0 1px 0 rgba(white, 0.35);
 $blk-text-shadow: 1px 1px 0 rgba(black, 0.15);
 
 $blk-text-shadow-neg: 0 -1px 1px rgba(black, 0.25);
+
+// Text Helpers
+
+$text-tiny: .75rem;
+
+$text-sm: .875rem;
+
+$text-base: 1rem;
+
+$text-md: 1.125rem;
+
+$text-lg: 1.45rem;
+
+$text-xl: 1.75rem;
+
+$text-xxl: 2.5rem;

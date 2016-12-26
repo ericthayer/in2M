@@ -325,14 +325,14 @@ html.remodal-is-locked {
     }
     p {
       margin-bottom: 0; 
-      padding-top: 1em; 
+      padding-top: .5em; 
     }
     .icon-alert {
       fill: $green;
       width: 100%;  
     }
-    .btn-cancel {
-      display: none;  
+    .modal-buttons {
+      padding-top: 1.125em; 
     }
   }
   

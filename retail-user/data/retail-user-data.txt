@@ -1,0 +1,61 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "retail_user": "Retail User",     
+      "phone": "<a href='tel:8885551234'>888.555.1234</a>",
+      "email": "<a href='mailto:email@domain.com'>email@domain.com</a>",
+      "address": "12345 Streetname Rd. City Name, ST",
+      "biz_hours": "9am - 5pm",
+      "fb_id": "<a href='#'>FBid</a>",
+      "dob": "08/16/16",
+      "alt_phone": "<a href='tel:8885551234'>888.555.1234</a>",
+      "group": "1, 5",    
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='#'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },
+    
+    {
+      "id": "2",
+      "retail_user": "Retail User",      
+      "phone": "<a href='tel:8885551234'>888.555.1234</a>",
+      "email": "<a href='mailto:email@domain.com'>email@domain.com</a>",
+      "address": "12345 Streetname Rd. City Name, ST",
+      "biz_hours": "9am - 5pm",
+      "fb_id": "<a href='#'>FBid</a>",
+      "dob": "08/16/16",
+      "alt_phone": "<a href='tel:8885551234'>888.555.1234</a>",
+      "group": "1, 5",    
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='#'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },
+    
+    {
+      "id": "3",
+      "retail_user": "Retail User",      
+      "phone": "<a href='tel:8885551234'>888.555.1234</a>",
+      "email": "<a href='mailto:email@domain.com'>email@domain.com</a>",
+      "address": "12345 Streetname Rd. City Name, ST",
+      "biz_hours": "9am - 5pm",
+      "fb_id": "<a href='#'>FBid</a>",
+      "dob": "08/16/16",
+      "alt_phone": "<a href='tel:8885551234'>888.555.1234</a>",
+      "group": "1, 5",    
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='#'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },
+    
+    {
+      "id": "4",
+      "retail_user": "Retail User",      
+      "phone": "<a href='tel:8885551234'>888.555.1234</a>",
+      "email": "<a href='mailto:email@domain.com'>email@domain.com</a>",
+      "address": "12345 Streetname Rd. City Name, ST",
+      "biz_hours": "9am - 5pm",
+      "fb_id": "<a href='#'>FBid</a>",
+      "dob": "08/16/16",
+      "alt_phone": "<a href='tel:8885551234'>888.555.1234</a>",
+      "group": "1, 5",    
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='#'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    }
+    
+    
+  ]
+}

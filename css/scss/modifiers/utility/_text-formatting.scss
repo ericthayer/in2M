@@ -23,6 +23,10 @@
 .text-wrap {
   white-space: normal;
   word-break: break-word;
+  > *:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;   
+  }
 }
 
 .text-no-wrap {
@@ -148,34 +152,34 @@ p > b {
   @include Whitney-Medium; 
 }
 
-//** FONT SIZE (1em by default) **//
+//** FONT SIZE (1rem by default) **//
 
 .text-tiny {
-  font-size: .75rem; 
+  font-size: $text-tiny; 
 }
 
 .text-sm {
-  font-size: .875rem; 
+  font-size: $text-sm; 
 }
 
 .text-base {
-  font-size: 1rem; 
+  font-size: $text-base; 
 }
 
 .text-md {
-  font-size: 1.125rem; 
+  font-size: $text-md; 
 }
 
 .text-lg {
-  font-size: 1.45rem; 
+  font-size: $text-lg; 
 }
 
 .text-xl {
-  font-size: 1.75rem; 
+  font-size: $text-xl; 
 }
 
 .text-xxl {
-  font-size: 2.5rem;  
+  font-size: $text-xxl;  
 }
 
 // > 375

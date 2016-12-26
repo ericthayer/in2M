@@ -57,6 +57,9 @@ table.dataTable {
   &.collapsed>tbody>tr.child:hover {
     background: #f6f6f6 !important;
   }
+  a {
+    color: $link;
+  }
 }
 
 // When using "scroll" feature

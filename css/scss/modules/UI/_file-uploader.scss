@@ -1,0 +1,124 @@
+// file uploader
+
+.file-uploader { 
+   
+  padding-top: 1em;
+  padding-bottom: 1em;
+    
+  // container size
+  .container {
+      
+  }
+  
+  // post text
+  .post-text {
+    margin-bottom: 2em; 
+  }
+  
+  .title {
+    
+  }
+  
+  p {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1em; 
+  }
+  
+  
+  
+  // > 768
+  @media (min-width: $break-lg-phone) {
+    
+    .container {
+      display: flex;
+      justify-content: space-between;  
+    }
+    
+    .post-text {
+      margin-bottom: 0;
+      padding-right: .625em;
+      text-align: center; 
+      width: 40%; 
+    }
+    
+  }
+  
+  
+  
+}
+
+
+// File Dropzone (via dropzone.js)
+
+.file-dropzone {
+  
+  .title {
+    
+  }
+  
+  .dropzone {
+    
+  }
+  
+  
+  
+}
+
+.input-file-drop {
+  
+}
+
+
+// component level
+
+.file-uploader {
+  
+  padding-top: 4em; 
+  padding-bottom: 4em;
+  
+  .container {
+    max-width: 48em;  
+  }
+  
+  
+  .file-dropzone {
+    
+  }
+  
+  .title {
+    font-size: $text-xl; 
+    text-align: center; 
+  }
+  
+  .dropzone {
+    background-color: $blue-90;
+    color: $blue-30;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1em;
+    max-width: 40em;
+    min-width: 25em;  
+    width: 100%;  
+  }
+  
+  .input-file-drop {
+    
+  }
+  
+  // > 768
+  @media (min-width: $break-lg-phone) {
+    
+    .file-uploader {
+      
+      padding-left: .625em; 
+      width: 60%;   
+    }
+    
+    // end    
+  }
+  
+  
+}
+
+

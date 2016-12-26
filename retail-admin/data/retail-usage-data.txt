@@ -1,0 +1,94 @@
+{
+  "data": [
+    {
+      "date": "12/20/16",
+      "retail_user": "Retail User",     
+      "campaign": "<a href='tel:8885551234'>888.555.1234</a>",
+      "sms_used": "500",
+      "sms_balance": "25000",
+      "emails_used": "1000",
+      "email_balance": "1550"
+    },
+    {
+      "date": "12/20/16",
+      "retail_user": "Retail User",     
+      "campaign": "<a href='tel:8885551234'>888.555.1234</a>",
+      "sms_used": "500",
+      "sms_balance": "25000",
+      "emails_used": "1000",
+      "email_balance": "1550"
+    },
+    {
+      "date": "12/20/16",
+      "retail_user": "Retail User",     
+      "campaign": "<a href='tel:8885551234'>888.555.1234</a>",
+      "sms_used": "500",
+      "sms_balance": "25000",
+      "emails_used": "1000",
+      "email_balance": "1550"
+    },
+    {
+      "date": "12/20/16",
+      "retail_user": "Retail User",     
+      "campaign": "<a href='tel:8885551234'>888.555.1234</a>",
+      "sms_used": "500",
+      "sms_balance": "25000",
+      "emails_used": "1000",
+      "email_balance": "1550"
+    },
+    {
+      "date": "12/20/16",
+      "retail_user": "Retail User",     
+      "campaign": "<a href='tel:8885551234'>888.555.1234</a>",
+      "sms_used": "500",
+      "sms_balance": "25000",
+      "emails_used": "1000",
+      "email_balance": "1550"
+    },
+    {
+      "date": "12/20/16",
+      "retail_user": "Retail User",     
+      "campaign": "<a href='tel:8885551234'>888.555.1234</a>",
+      "sms_used": "500",
+      "sms_balance": "25000",
+      "emails_used": "1000",
+      "email_balance": "1550"
+    },
+    {
+      "date": "12/20/16",
+      "retail_user": "Retail User",     
+      "campaign": "<a href='tel:8885551234'>888.555.1234</a>",
+      "sms_used": "500",
+      "sms_balance": "25000",
+      "emails_used": "1000",
+      "email_balance": "1550"
+    },
+    {
+      "date": "12/20/16",
+      "retail_user": "Retail User",     
+      "campaign": "<a href='tel:8885551234'>888.555.1234</a>",
+      "sms_used": "500",
+      "sms_balance": "25000",
+      "emails_used": "1000",
+      "email_balance": "1550"
+    },
+    {
+      "date": "12/20/16",
+      "retail_user": "Retail User",     
+      "campaign": "<a href='tel:8885551234'>888.555.1234</a>",
+      "sms_used": "500",
+      "sms_balance": "25000",
+      "emails_used": "1000",
+      "email_balance": "1550"
+    },
+    {
+      "date": "12/20/16",
+      "retail_user": "Retail User",     
+      "campaign": "<a href='tel:8885551234'>888.555.1234</a>",
+      "sms_used": "500",
+      "sms_balance": "25000",
+      "emails_used": "1000",
+      "email_balance": "1550"
+    }    
+  ]
+}

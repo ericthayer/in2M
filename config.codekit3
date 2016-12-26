@@ -1882,6 +1882,19 @@
 		"oS": 0,
 		"uL": 0
 		},
+	"\/css\/scss\/modules\/UI\/_file-uploader.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/scss\/modules\/css\/_file-uploader.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 0
+		},
 	"\/css\/scss\/modules\/UI\/_hero-banner.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -2591,6 +2604,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/global-partials\/modals\/modal-account-created-content.html",
+		"oF": 0
+		},
+	"\/global-partials\/modals\/modal-campaign-setup-content.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/global-partials\/modals\/modal-campaign-setup-content.html",
 		"oF": 0
 		},
 	"\/global-partials\/modals\/modal-capacity-setup-content.html": {
@@ -4999,6 +5018,30 @@
 		"oAP": "\/public-site\/user-logged-in.html",
 		"oF": 0
 		},
+	"\/retail-admin\/data\/retail-consumer-data.txt": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/retail-admin\/data\/retail-consumer-data.txt",
+		"oF": 0
+		},
+	"\/retail-admin\/data\/retail-customer-data.txt": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/retail-admin\/data\/retail-customer-data.txt",
+		"oF": 0
+		},
+	"\/retail-admin\/data\/retail-usage-data.txt": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/retail-admin\/data\/retail-usage-data.txt",
+		"oF": 0
+		},
+	"\/retail-admin\/data\/retail-user-data.txt": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/retail-admin\/data\/retail-user-data.txt",
+		"oF": 0
+		},
 	"\/retail-admin\/ra-create-campaign.html": {
 		"ft": 8192,
 		"oA": 0,
@@ -5041,6 +5084,12 @@
 		"oAP": "\/retail-admin\/ra-register.html",
 		"oF": 0
 		},
+	"\/retail-admin\/ra-view-usage copy.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/retail-admin\/ra-view-usage copy.html",
+		"oF": 0
+		},
 	"\/retail-admin\/ra-view-usage.html": {
 		"ft": 8192,
 		"oA": 0,
@@ -5053,10 +5102,46 @@
 		"oAP": "\/retail-admin\/retail-admin.html",
 		"oF": 0
 		},
+	"\/retail-user\/data\/retail-consumer-data.txt": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/retail-user\/data\/retail-consumer-data.txt",
+		"oF": 0
+		},
+	"\/retail-user\/data\/retail-customer-data.txt": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/retail-user\/data\/retail-customer-data.txt",
+		"oF": 0
+		},
+	"\/retail-user\/data\/retail-usage-data.txt": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/retail-user\/data\/retail-usage-data.txt",
+		"oF": 0
+		},
+	"\/retail-user\/data\/retail-user-data.txt": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/retail-user\/data\/retail-user-data.txt",
+		"oF": 0
+		},
+	"\/retail-user\/ru-create-consumer copy.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/retail-user\/ru-create-consumer copy.html",
+		"oF": 0
+		},
 	"\/retail-user\/ru-create-consumer.html": {
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/retail-user\/ru-create-consumer.html",
+		"oF": 0
+		},
+	"\/retail-user\/ru-partials\/ru-header-logged-in.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/retail-user\/ru-partials\/ru-header-logged-in.html",
 		"oF": 0
 		},
 	"\/sales-company-admin\/data\/capacity-data.txt": {

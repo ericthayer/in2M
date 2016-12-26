@@ -253,8 +253,10 @@ button:not(.search-button):not([class*="-close"]):not(.btn-cancel),
   [class*="btn"] {
     color: $white;
   }
-  [class*="btn"]:not(.btn-outline) {
-    background-color: $orange-50;
+  //[class*="btn"]:not(.btn-outline):not(.btn-primary) {
+    // hero-buttons
+  .btn-primary {
+    background-color: $orange-40;
   }
 }
 
@@ -278,6 +280,46 @@ button:not(.search-button):not([class*="-close"]):not(.btn-cancel),
 //.tc-purple-l { @include tc-purple-l; }
 .tc-purple-m { @include tc-purple-m; }
 //.tc-purple-d { @include tc-purple-d; }
+
+// ** GREEN THEME MIXINS ** //
+
+@mixin tc-green-l {
+  background-color: $green-80;
+  color: $green-30;
+  text-shadow: none !important;
+  [class*="btn"] {
+    color: $green-40;
+  }
+  [class*="btn"]:not(.btn-outline) {
+    background-color: $green-30;
+  }
+}
+
+@mixin tc-green-m {
+  background-color: $green;
+  color: $white;
+  [class*="btn"] {
+    color: $white;
+  }
+  [class*="btn"]:not(.btn-outline) {
+    background-color: $green-50;
+  }
+}
+
+@mixin tc-green-d {
+  background-color: $green-30;
+  color: $white;
+  [class*="btn"] {
+    color: $white;
+  }
+  [class*="btn"]:not(.btn-outline) {
+    background-color: $green-50;
+  }
+}
+
+.tc-green-l { @include tc-green-l; }
+.tc-green-m { @include tc-green-m; }
+.tc-green-d { @include tc-green-d; }
 
 
 // ** Override ** //

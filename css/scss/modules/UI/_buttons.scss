@@ -1,6 +1,6 @@
 
 @mixin button {
-	border-radius: .3rem;
+	border-radius: .3em;
 	display: inline-block;
 	@include Whitney-Bold;	
 	line-height: 1.35; 
@@ -173,6 +173,10 @@ button,
 .btn,
 [class^="btn-"] {
   @include button;
+  @include button-round;
+  background-color: $EEE;
+  border: 1px solid $DDD;
+  color: $c-555-grey;
 }
 
 button:not([class*="bg-"]):not([class*="c-"]):not(.btn-reset),
@@ -221,13 +225,14 @@ button:not([class*="bg-"]):not([class*="c-"]):not(.btn-reset),
 }
 
 .btn-sm {
-  font-size: .75rem;
+  font-size: .983rem;
   padding: .5em 1em;    
 }
 
 .btn-md {
-  font-size: .983rem;
-  padding: .875em 1.125em;  
+  font-size: 1rem;
+  min-width: 5em; 
+  padding: .85em 1.125em;  
 }
 
 .btn-lg {
@@ -281,7 +286,9 @@ button:not([class*="bg-"]):not([class*="c-"]):not(.btn-reset),
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  //justify-content: center;
+  .text-center & {
+    justify-content: center;
+  }
   > * {  
     margin: 0 0 1em;
     padding: 1em 2em;
@@ -345,8 +352,21 @@ button:not([class*="bg-"]):not([class*="c-"]):not(.btn-reset),
   }
 }
 
-// Manage Buttons
+// function-buttons
 
-.manage-buttons {
-
+.function-buttons {
+  
+  // when in DataTable
+  .data-table & {
+    display: none;  
+    > * {
+      font-size: .875rem;
+      flex: 0 1 auto;
+      width: auto;  
+    }
+    // > 480
+    @media (min-width: $break-sm-phone) {
+      justify-content: flex-end;
+    }
+  }
 }
