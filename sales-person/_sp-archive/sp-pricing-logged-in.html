@@ -7,7 +7,7 @@
     <head>
       <meta charset="utf-8">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
-      <title>in2Marketplace :: Pricing</title>
+      <title>in2Marketplace :: Sales Person Pricing</title>
       <meta name="description" content="A powerful retail marketing platform and brand management tool">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="msapplication-TileColor" content="#302A2A">
@@ -20,26 +20,20 @@
       <link rel="stylesheet" href="../css/styles.css">
       <!-- Non-Critical CSS - loadCSS: load a CSS file asynchronously. [c]2016 @scottjehl, Filament Group, Inc. Licensed MIT -->
       <script>(function(a){var b=function(c,k,d){var l=a.document;var m=l.createElement("link");var e;if(k){e=k}else{var i=(l.body||l.getElementsByTagName("head")[0]).childNodes;e=i[i.length-1]}var f=l.styleSheets;m.rel="stylesheet";m.href=c;m.media="only x";function j(n){if(l.body){return n()}setTimeout(function(){j(n)})}j(function(){e.parentNode.insertBefore(m,(k?e:e.nextSibling))});var h=function(o){var n=m.href;var p=f.length;while(p--){if(f[p].href===n){return o()}}setTimeout(function(){h(o)})};function g(){if(m.addEventListener){m.removeEventListener("load",g)}m.media=d||"all"}if(m.addEventListener){m.addEventListener("load",g)}m.onloadcssdefined=h;h(g);return m};if(typeof exports!=="undefined"){exports.loadCSS=b}else{a.loadCSS=b}}(typeof global!=="undefined"?global:this));loadCSS("../css/async.css");</script>
-      <script src="../js/libs/cq-prolyfill.js" defer>
-      </script>
     </head>
-    <body class="public">
+    <body class="logged-in sales-person">
       <!--[if lt IE 10]>
       <p class="update-browser">This browser version is not recommended. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
       <![endif]-->
       
-      <!-- Quick Contact Form -->
-      <section class="quick-contact-form clear-form bg-blue-g-4 c-white w-100 slide-panel slide-down is-hidden">
-        <button class="btn-reset text-lg" onclick="$('.quick-contact-form').toggleClass('is-hidden');">
-          <svg class="icon mr-ml-0">
-            <use xlink:href="#icon-cancel" />
-          </svg>
-        </button>
+      <!-- New Lead Form -->
+      <section class="new-lead-form clear-form bg-blue-g-4 c-white w-100 slide-panel slide-down is-hidden">
+        <button class="btn-reset text-lg" onclick="$('.new-lead-form').toggleClass('is-hidden');"> <svg class="icon mr-ml-0"><use xlink:href="#icon-cancel" /></svg> </button>
         <div class="container pt-2 pb-3">
-          <h2 class="text-center mb-tiny">Talk With Us</h2>
-          <p class="h5 text-center mb-1">Let us know how we can help your business.</p>
+          <h2 class="text-center mb-tiny">Capture New Lead</h2>
+          <p class="h5 text-center mb-1 hidden"><span class="c-blue-70">100</span> SMS + <span class="c-blue-70">100</span> Emails</p>
           <!-- Form -->
-          <form name="QuickContactForm" class="mr-ml-a mw-25em whitney-med">
+          <form name="NewLeadForm" class="mr-ml-a mw-25em whitney-med">
             <div class="form-wrap">
               <!-- Name -->
               <div class="form-row mb-1">
@@ -62,41 +56,66 @@
                 </div>
               </div>
               <!-- Message -->
-              <div class="form-row mb-1">
-                <label for="-ariaLabel">Message</label>
-                <textarea maxlength="200" aria-labelledby="-ariaLabel" class="bg-none bor-2 bor-solid bor-c-white"></textarea>
+              <div class="form-row hidden">
+                <label for="-ariaLabel" class="antialiased c-white">Message?</label>
+                <textarea maxlength="200" aria-labelledby="-ariaLabel"></textarea>
               </div>
               <!-- Helpers -->
               <div class="form-row form-helpers flex flex-wrap jc-between mb-1">
                 <!-- Critical Marker -->
                 <label>
-                  <input type="checkbox" name="opt1" id="opt1">
-                  <span class="text-sm pl-tiny">Call Back ASAP</span>
-                </label>
+                        <input type="checkbox" name="opt1" id="opt1">
+                        <span class="text-sm pl-tiny">Call Back ASAP</span>
+                      </label>
                 <!-- Help Link -->
                 <label>
-                  <span class="text-sm"><a class="c-white" href="#">Need Help?</a></span>
-                </label>
+                        <span class="text-sm"><a class="c-white" href="#">Need Help?</a></span>
+                      </label>
               </div>
               <!-- Buttons -->
               <div class="form-row button-wrap flex flex-d-col-rev sm-flex-d-row sm-jc-center">
-                <input class="btn all-caps bg-blue-40 c-white flex-g-1 pt-pb-1" type="submit" value="send">
+                <input class="btn all-caps bg-blue-40 c-white flex-g-1 pt-pb-1" type="submit" value="sign up">
               </div>
               <!-- end / form-wrap -->
             </div>
           </form>
         </div>
       </section>
-        
       <!-- Site Wrap  -->
       <div class="site-wrap">
         
-        <!-- Header -->  
+        <div class="admin-bar bg-grey-light w-100">
+          <div class="container flex flex-wrap ai-center jc-between pt-pb-sm sm-jc-center sm-jc-between">
+            <!-- User Status -->
+            <div class="user-status flex ai-center jc-center mb-1 w-100 sm-jc-start sm-mb-0 sm-w-30">
+              <div class="avatar user-avatar mr-sm sm-mr-1"><img class="" src="../images/UI/slug-avatar-square.svg" alt="user avatar"></div>
+              <div class="user-status-text flex flex-wrap flex-d-col ai-start">
+                <div class="status-msg mb-tiny"><span class="user-name">Sales Person</span></div>
+                <div class="profile-links flex ai-center">
+                  <a class="pr-sm" href="#">Dashboard</a>
+                  <a href="#">Logout</a>
+                </div>
+              </div>
+            </div>
+            <!-- Search -->
+            <div class="search-form header-search mr-ml-a w-100 mw-15em sm-w-70 sm-mr-0">
+              <label class="sr-only" for="search-form">Search</label>
+              <!-- Search Bar -->
+              <div class="search-bar flex flex-wrap jc-between">
+                <input class="bor-1 bor-solid bor-c-DDD" id="search-form" type="search" placeholder="search">
+                <button class="bor-1 bor-solid bor-c-DDD bor-left-none bg-white c-777" type="submit"> <svg class="icon"><use xlink:href="#icon-search" /></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Header (SP pricing logged out) -->  
         <header class="site-header bg-blue-40 bg-pricing bg-no-repeat bg-center bg-cover pb-1" role="banner">
           <!-- Nav -->
           <div class="container flex flex-wrap ai-center jc-between pt-pb-1">
             <!-- Site Logo -->
-            <h1 class="site-title"><a href="index.html"><img class="header-logo mw-8em" src="../images/UI/in2m-logo-white.svg" alt="in2Marketplace.com"><span class="sr-only">in2Marketplace.com</span></a></h1>
+            <h1 class="site-title"><a href="sales-person.html"><img class="header-logo mw-8em" src="../images/UI/in2m-logo-white.svg" alt="in2Marketplace.com"><span class="sr-only">in2Marketplace.com</span></a></h1>
             <button id="nav-toggle" class="nav-toggle-html bg-none" aria-hidden="false" aria-expanded="false">
               <div class="nav-icon c-white"></div>
             </button>
@@ -105,56 +124,49 @@
               <!-- Nav -->
               <script src="../js/libs/responsive-nav.js"></script>
               <nav class="nav-collapse" role="navigation">
-                <ul class="list-reset">                  
+                <!-- Admin Bar -->
+                <div class="admin-bar w-100">
+                  <div class="container flex flex-wrap ai-center jc-between pt-pb-1 sm-jc-center md-jc-between">
+                    <!-- User Status -->
+                    <div class="user-status flex ai-center jc-center mb-1 w-100 sm-jc-center md-jc-start md-mb-0 md-w-30">
+                      <div class="avatar user-avatar img-1-1-tiny mr-sm x-sm-mr-1"><img class="" src="../images/UI/slug-avatar.svg" alt="user avatar"></div>
+                      <div class="user-status-text flex flex-wrap flex-d-col ai-start">
+                        <div class="status-msg mb-tiny"><span class="user-name">Jenny Salesperson</span></div>
+                        <div class="profile-links flex ai-center">
+                          <a class="pr-sm" href="#">Dashboard</a>
+                          <a href="#">Logout</a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Search -->
+                    <div class="search-form header-search mr-ml-a w-100 mw-15em md-w-70 md-mr-0">
+                      <label class="sr-only" for="search-form">Search</label>
+                      <!-- Search Bar -->
+                      <div class="search-bar flex flex-wrap jc-between">
+                        <input id="search-form" type="search" placeholder="search">
+                        <button class="bg-white c-333" type="submit"> <svg class="icon"><use xlink:href="#icon-search" /></svg></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <ul class="list-reset">
+                  <li class="nav-cta pt-sm pb-1"><a class="btn-round bg-blue-50 all-caps c-white mr-0 pr-pl-1 text-base" href="#" onclick="$('.new-lead-form.slide-panel').toggleClass('is-hidden');">New Lead</a></li>
                   <li>
                     <a href="#">Features</a>
                   </li>
-                  <li class="active">
-                    <a href="pricing.html">Pricing</a>
+                  <li>
+                    <a href="sp-pricing.html">Pricing</a>
                   </li>
                   <li>
-                    <a href="support.html">Support</a>
+                    <a href="sp-support.html">Support</a>
                   </li>
                   <li>
                     <a data-remodal-target="demo-video">Demo</a>
                   </li>
-                  <li class="inline-login-link"><a href="login.html">Login</a></li>
-                  <li class="nav-cta">
-                    <a class="btn-round btn-cta bg-blue-50 all-caps c-white mr-0 mw-20em pr-pl-1" href="#" onclick="$('.quick-contact-form.slide-panel').toggleClass('is-hidden');">Contact</a>
-                  </li>                  
                   <!-- end / -->
                 </ul>
               </nav>
               <script src="../js/libs/mobile-nav.js"></script>
-            </section>
-          </div>
-          <!-- Fixed Nav -->
-          <div class="container fixed-nav bg-blue-30 flex-wrap ai-center jc-between hidden">
-            <!-- Site Logo -->
-            <h1 class="site-title"><a href="index.html"><img class="header-logo mw-8em" src="../images/UI/in2m-logo-white.svg" alt="in2Marketplace.com"><span class="sr-only">in2Marketplace.com</span></a></h1>
-            <!-- Main Nav -->
-            <section class="main-nav flex flex-wrap ai-center jc-center sm-flex-g-1 tc-white" role="navigation">
-              <nav class="nav-collapse" role="navigation">
-                <ul class="list-reset">
-                  <li class="nav-cta">
-                    <a class="btn-round btn-cta bg-blue-50 all-caps c-white mr-0 mw-20em pr-pl-1" href="#" onclick="$('.quick-contact-form.slide-panel').toggleClass('is-hidden');">Contact</a>
-                  </li>
-                  <li>
-                    <a href="features.html">Features</a>
-                  </li>
-                  <li>
-                    <a href="pricing.html">Pricing</a>
-                  </li>
-                  <li>
-                    <a href="support.html">Support</a>
-                  </li>
-                  <li>
-                    <a data-remodal-target="demo-video">Demo</a>
-                  </li>
-                  <li class="inline-login-link"><a href="login.html">Login</a></li>                  
-                  <!-- end / -->
-                </ul> 
-              </nav>
             </section>
           </div>          
         </header>
@@ -163,11 +175,9 @@
         <main class="main-content">
           
           <!-- Pricing Guide -->
-          <section class="pricing-guide bg-grey-light pt-pb-4">            
+          <section class="pricing-guide bg-grey-light pt-pb-4">
+            <h2 id="pricing" class="text-center mb-4 w-100">Pricing Guide</h2>
             <div class="container">
-              
-              <h2 id="pricing" class="text-center mb-1 w-100">Pricing Guide</h2>
-              <p class="antialiased mr-ml-a mb-4 mw-35em text-center text-md whitney-semi">We offer right the plans to meet your needs. If you do not see a package that you like please contact us so we can provide a plan for you or your organization.</p>
               
               <!-- Plans -->
               <div class="pricing-plans bor-1 bor-solid bor-c-EEE mr-ml-a md-flex md-flex-wrap md-jc-between">
@@ -572,9 +582,8 @@
           </section>
           <!-- end / main-content -->
         </main>
-        
         <!-- Footer -->
-        <div data-replace="../global-partials/footer/footer-blue.html"></div>
+        <div data-replace="../global-partials/footer/footer-logged-in-blue.html"></div>
         <!-- end / site-wrap-->
       </div>
       
@@ -603,7 +612,7 @@
         </div>
         <!-- Modal Buttons -->
         <div class="modal-buttons pt-2">
-          <a class="btn-round all-caps bg-blue-40 c-white text-md" href="pricing.html">Get Your 14 Day Free Trial</a>
+          <a class="btn-round all-caps bg-blue-40 c-white text-md" href="sp-pricing.html">Get Your 14 Day Free Trial</a>
         </div>
       </div>
       
@@ -667,7 +676,7 @@
       <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
       <script>window.jQuery || document.write('<script src="../js/libs/jquery.1.11.2.min.js"><\/script>')</script>
       <script src="../js/min/script.min.js"></script>
-<!--       <script src="../js/libs/headroom.js"></script> -->
+      
       <script>
         $('.plan-discount-button').on('click', function() {
           $(this).parent().find('.plan-discount-button').removeClass('active');

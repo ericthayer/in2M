@@ -829,6 +829,12 @@
 		"oAP": "\/css\/scss\/.sass-cache\/113f5057b26e95aadef54970b7bd8e5e4db77f92\/_fallbacks.scssc",
 		"oF": 0
 		},
+	"\/css\/scss\/.sass-cache\/19beb175030f9dfc9cc03323536b749b3883b8f1\/_logged-in.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/css\/scss\/.sass-cache\/19beb175030f9dfc9cc03323536b749b3883b8f1\/_logged-in.scssc",
+		"oF": 0
+		},
 	"\/css\/scss\/.sass-cache\/20789dfd065afb232981f54305d439488566f20e\/_image-styles.scssc": {
 		"ft": 8192,
 		"oA": 1,
@@ -857,6 +863,18 @@
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/css\/scss\/.sass-cache\/2268da7be12ecae321d997a09376fb5212caa062\/_typography.scssc",
+		"oF": 0
+		},
+	"\/css\/scss\/.sass-cache\/2d07254cb0814305faa3b278316e4714d6032fac\/_logged-in.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/css\/scss\/.sass-cache\/2d07254cb0814305faa3b278316e4714d6032fac\/_logged-in.scssc",
+		"oF": 0
+		},
+	"\/css\/scss\/.sass-cache\/2d07254cb0814305faa3b278316e4714d6032fac\/_logged-out.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/css\/scss\/.sass-cache\/2d07254cb0814305faa3b278316e4714d6032fac\/_logged-out.scssc",
 		"oF": 0
 		},
 	"\/css\/scss\/.sass-cache\/35152443024f320185ec69acfdd2ec8e92c1f12a\/_base-colors.scssc": {
@@ -923,6 +941,12 @@
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/css\/scss\/.sass-cache\/4b2bf66cfe2463af5d5500159b5b8bda355a1872\/_data-tables.scssc",
+		"oF": 0
+		},
+	"\/css\/scss\/.sass-cache\/4b2bf66cfe2463af5d5500159b5b8bda355a1872\/_file-uploader.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/css\/scss\/.sass-cache\/4b2bf66cfe2463af5d5500159b5b8bda355a1872\/_file-uploader.scssc",
 		"oF": 0
 		},
 	"\/css\/scss\/.sass-cache\/4b2bf66cfe2463af5d5500159b5b8bda355a1872\/_hero-banner.scssc": {
@@ -1057,6 +1081,12 @@
 		"oAP": "\/css\/scss\/.sass-cache\/8f34acde9b174c517f06a9aed654d18466101bc9\/_responsive-nav.scssc",
 		"oF": 0
 		},
+	"\/css\/scss\/.sass-cache\/9dc72358686efea125a304ed1c9a099b529eeef0\/_logged-out.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/css\/scss\/.sass-cache\/9dc72358686efea125a304ed1c9a099b529eeef0\/_logged-out.scssc",
+		"oF": 0
+		},
 	"\/css\/scss\/.sass-cache\/c5535912b53c58e714f42c05505056b05cc3a4a6\/_cards.scssc": {
 		"ft": 8192,
 		"oA": 1,
@@ -1177,6 +1207,32 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/css\/scss\/css\/_typography.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 0
+		},
+	"\/css\/scss\/layout\/admin\/_logged-in.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/scss\/layout\/css\/_logged-in.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 0
+		},
+	"\/css\/scss\/layout\/admin\/_logged-out.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/scss\/layout\/css\/_logged-out.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 0
@@ -2600,6 +2656,18 @@
 		"oAP": "\/global-partials\/footer\/footer-login-blue.html",
 		"oF": 0
 		},
+	"\/global-partials\/header\/header-logged-in.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/global-partials\/header\/header-logged-in.html",
+		"oF": 0
+		},
+	"\/global-partials\/header\/header-logged-out.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/global-partials\/header\/header-logged-out.html",
+		"oF": 0
+		},
 	"\/global-partials\/modals\/modal-account-created-content.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -2636,6 +2704,12 @@
 		"oAP": "\/global-partials\/modals\/modal-delete-confirm-content.html",
 		"oF": 0
 		},
+	"\/global-partials\/modals\/modal-demo-video-content.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/global-partials\/modals\/modal-demo-video-content.html",
+		"oF": 0
+		},
 	"\/global-partials\/modals\/modal-file-save-confirm-content.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -2664,6 +2738,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/global-partials\/modals\/modal-sc-setup-confirm-content.html",
+		"oF": 0
+		},
+	"\/global-partials\/modals\/modal-setup-confirm-content copy.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/global-partials\/modals\/modal-setup-confirm-content copy.html",
 		"oF": 0
 		},
 	"\/global-partials\/modals\/modal-setup-confirm-content.html": {
@@ -5276,6 +5356,84 @@
 		"oAP": "\/sales-company-admin\/sca-view-sales-org.html",
 		"oF": 0
 		},
+	"\/sales-person\/_sp-archive\/sales-person-logged-in.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sales-person\/_sp-archive\/sales-person-logged-in.html",
+		"oF": 0
+		},
+	"\/sales-person\/_sp-archive\/sales-person.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sales-person\/_sp-archive\/sales-person.html",
+		"oF": 0
+		},
+	"\/sales-person\/_sp-archive\/sp-checkout-logged-in.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sales-person\/_sp-archive\/sp-checkout-logged-in.html",
+		"oF": 0
+		},
+	"\/sales-person\/_sp-archive\/sp-manage-leads.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sales-person\/_sp-archive\/sp-manage-leads.html",
+		"oF": 0
+		},
+	"\/sales-person\/_sp-archive\/sp-master-page.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sales-person\/_sp-archive\/sp-master-page.html",
+		"oF": 0
+		},
+	"\/sales-person\/_sp-archive\/sp-partials\/sp-header-logged-in.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sales-person\/_sp-archive\/sp-partials\/sp-header-logged-in.html",
+		"oF": 0
+		},
+	"\/sales-person\/_sp-archive\/sp-partials\/sp-header-logged-out.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sales-person\/_sp-archive\/sp-partials\/sp-header-logged-out.html",
+		"oF": 0
+		},
+	"\/sales-person\/_sp-archive\/sp-plans.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sales-person\/_sp-archive\/sp-plans.html",
+		"oF": 0
+		},
+	"\/sales-person\/_sp-archive\/sp-pricing-logged-in.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sales-person\/_sp-archive\/sp-pricing-logged-in.html",
+		"oF": 0
+		},
+	"\/sales-person\/_sp-archive\/sp-pricing.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sales-person\/_sp-archive\/sp-pricing.html",
+		"oF": 0
+		},
+	"\/sales-person\/_sp-archive\/sp-support-search-results.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sales-person\/_sp-archive\/sp-support-search-results.html",
+		"oF": 0
+		},
+	"\/sales-person\/_sp-archive\/sp-support.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sales-person\/_sp-archive\/sp-support.html",
+		"oF": 0
+		},
+	"\/sales-person\/_sp-archive\/sp-terms-conditions.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sales-person\/_sp-archive\/sp-terms-conditions.html",
+		"oF": 0
+		},
 	"\/sales-person\/sales-person-logged-in.html": {
 		"ft": 8192,
 		"oA": 0,
@@ -5294,12 +5452,6 @@
 		"oAP": "\/sales-person\/sp-checkout-logged-in.html",
 		"oF": 0
 		},
-	"\/sales-person\/sp-login copy.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/sales-person\/sp-login copy.html",
-		"oF": 0
-		},
 	"\/sales-person\/sp-manage-leads.html": {
 		"ft": 8192,
 		"oA": 0,
@@ -5310,6 +5462,18 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/sales-person\/sp-master-page.html",
+		"oF": 0
+		},
+	"\/sales-person\/sp-partials\/header-logged-in copy.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sales-person\/sp-partials\/header-logged-in copy.html",
+		"oF": 0
+		},
+	"\/sales-person\/sp-partials\/header-logged-out copy.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sales-person\/sp-partials\/header-logged-out copy.html",
 		"oF": 0
 		},
 	"\/sales-person\/sp-partials\/sp-header-logged-in.html": {

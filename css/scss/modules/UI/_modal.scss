@@ -72,14 +72,42 @@ html.remodal-is-locked {
     margin-left: auto;  
     max-width: 25em;  
   }
+  
+  
+  // video modal
+  &.video-modal {
+    background-color: transparent;
+    padding: 0;       
+  }
+  
+  
   // > 480
   @media (min-width: $break-sm-phone) {
     max-width: 35em;
-    padding: 2.5em; 
+    padding: 2.5em;
+    
+    // video modal 
     &.video-modal {
-      max-width: 56.25em;  
+      
+      .modal-buttons {
+        padding-top: 2em;   
+      }
+      .btn-primary {
+        font-size: 1.125rem; 
+      }
     }
+    // end    
   }
+  // > 768
+  @media (min-width: $break-lg-phone) {
+    
+    &.video-modal {
+      max-width: 48em;
+    }
+    
+  }
+  
+  // end
 }
 
 .remodal.remodal-is-opening,
@@ -105,8 +133,8 @@ html.remodal-is-locked {
 
 // Modal Buttons
 
-.modal-buttons {
-  padding-top: .75em; 
+.modal-buttons {  
+/*
   > * {
     &:nth-child(1) {
       margin-bottom: 1em;
@@ -117,7 +145,7 @@ html.remodal-is-locked {
     display: flex;
     justify-content: center;
     > * {       
-      width: 30%;
+      flex: 0 1 30%;
       &:nth-child(1) {
         margin-right: .313rem;
         margin-bottom: 0;
@@ -126,7 +154,8 @@ html.remodal-is-locked {
         margin-left: .313rem;
       }
     }
-  } 
+  }
+*/ 
 }
 
 // Close button

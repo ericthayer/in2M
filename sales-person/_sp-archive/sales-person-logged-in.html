@@ -1,0 +1,1201 @@
+<!doctype html>
+<!--#if expr="$HTTP_COOKIE=/fonts\-loaded\=true/" -->
+<html lang="en" class="fonts-loaded">
+<!--#else -->
+<html lang="en">
+<!--#endif -->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>in2Marketplace :: Tagline Here</title>
+  <meta name="description" content="A powerful retail marketing platform and brand management tool">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="msapplication-TileColor" content="#302A2A">
+  <meta name="msapplication-TileImage" content="../images/icons/favicon-144.png">
+  <!--[if IEMobile]>
+      <meta http-equiv="cleartype" content="on" />
+      <![endif]-->
+  <link rel="apple-touch-icon" href="../images/icons/favicon-180.png">
+  <link rel="shortcut icon" href="../favicon.ico">
+  <link rel="stylesheet" href="../css/styles.css">
+    <!-- Non-Critical CSS - loadCSS: load a CSS file asynchronously. [c]2016 @scottjehl, Filament Group, Inc. Licensed MIT -->
+    <script>(function(a){var b=function(c,k,d){var l=a.document;var m=l.createElement("link");var e;if(k){e=k}else{var i=(l.body||l.getElementsByTagName("head")[0]).childNodes;e=i[i.length-1]}var f=l.styleSheets;m.rel="stylesheet";m.href=c;m.media="only x";function j(n){if(l.body){return n()}setTimeout(function(){j(n)})}j(function(){e.parentNode.insertBefore(m,(k?e:e.nextSibling))});var h=function(o){var n=m.href;var p=f.length;while(p--){if(f[p].href===n){return o()}}setTimeout(function(){h(o)})};function g(){if(m.addEventListener){m.removeEventListener("load",g)}m.media=d||"all"}if(m.addEventListener){m.addEventListener("load",g)}m.onloadcssdefined=h;h(g);return m};if(typeof exports!=="undefined"){exports.loadCSS=b}else{a.loadCSS=b}}(typeof global!=="undefined"?global:this));loadCSS("../css/async.css");</script>
+</head>
+
+<body class="logged-in sales-person">
+  <!--[if lt IE 10]>
+      <p class="update-browser">This browser version is not recommended. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+      <!-- New Lead Form -->
+      <section class="new-lead-form clear-form bg-blue-g-4 c-white w-100 slide-panel slide-down is-hidden">
+        <button class="btn-reset text-lg" onclick="$('.new-lead-form').toggleClass('is-hidden');">
+          <svg class="icon mr-ml-0">
+            <use xlink:href="#icon-cancel" />
+          </svg>
+        </button>
+        <div class="container pt-2 pb-3">
+          <h2 class="text-center mb-tiny">Capture New Lead</h2>
+          <p class="h5 text-center mb-1">Save contact information to your list.</p>
+          <!-- Form -->
+          <form name="NewLeadForm" class="mr-ml-a mw-25em whitney-med">
+            <div class="form-wrap">
+              <!-- Name -->
+              <div class="form-row mb-1">
+                <label for="" id="-ariaLabel">Name</label>
+                <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="bg-none bor-2 bor-solid bor-c-white required" title="This is a required field"
+                  required>
+              </div>
+              <div class="sm-flex sm-jc-between">
+                <!-- Email -->
+                <div class="form-row mb-1 sm-mr-tiny sm-w-50">
+                  <label for="" id="-ariaLabel">Email</label>
+                  <input id="" name="" type="email" autocorrect="off" autocapitalize="none" spellcheck="false" aria-labelledby="-ariaLabel"
+                    class="bg-none bor-2 bor-solid bor-c-white required" title="This is a required field" required>
+                </div>
+                <!-- Phone -->
+                <div class="form-row mb-1 sm-ml-tiny sm-w-50">
+                  <label for="" id="-ariaLabel">Phone</label>
+                  <input id="" name="" type="tel" pattern="[0-9]*" maxlength="10" aria-labelledby="-ariaLabel" class="bg-none bor-2 bor-solid bor-c-white required"
+                    title="This is a required field" required>
+                </div>
+              </div>
+              <!-- Message -->
+              <div class="form-row mb-1">
+                <label for="-ariaLabel">Message</label>
+                <textarea maxlength="200" aria-labelledby="-ariaLabel" class="bg-none bor-2 bor-solid bor-c-white"></textarea>
+              </div>
+              <!-- Helpers -->
+              <div class="form-row form-helpers flex flex-wrap jc-between mb-1">
+                <!-- Critical Marker -->
+                <label>
+                  <input type="checkbox" name="opt1" id="opt1">
+                  <span class="text-sm pl-tiny">Call Back ASAP</span>
+                </label>
+                <!-- Help Link -->
+                <label>
+                  <span class="text-sm"><a class="c-white" href="#">Need Help?</a></span>
+                </label>
+              </div>
+              <!-- Buttons -->
+              <div class="form-row button-wrap flex flex-d-col-rev sm-flex-d-row sm-jc-center">
+                <input class="btn all-caps bg-blue-40 c-white flex-g-1 pt-pb-1" type="submit" value="save">
+              </div>
+              <!-- end / form-wrap -->
+            </div>
+          </form>
+        </div>
+      </section>
+  <!-- Site Wrap  -->
+  <div class="site-wrap bg-blue-g-2">
+    <!-- Admin Bar -->
+    <div class="admin-bar bg-EEE w-100">
+      <div class="container flex flex-wrap ai-center jc-between pt-pb-1 sm-jc-center sm-jc-between">
+        <!-- User Status -->
+        <div class="user-status flex ai-center jc-center mb-1 w-100 sm-jc-start sm-mb-0 sm-w-30">
+          <div class="avatar user-avatar img-1-1-tiny mr-sm sm-mr-1"><img class="" src="../images/UI/slug-avatar.svg" alt="user avatar"></div>
+          <div class="user-status-text flex flex-wrap flex-d-col ai-start">
+            <div class="status-msg mb-tiny"><span class="user-name">Jenny Salesperson</span></div>
+            <div class="profile-links flex ai-center">
+              <a class="pr-sm" href="#">Dashboard</a>
+              <a href="#">Logout</a>
+            </div>
+          </div>
+        </div>
+        <!-- Search -->
+        <div class="search-form header-search mr-ml-a w-100 mw-15em sm-w-70 sm-mr-0">
+          <label class="sr-only" for="search-form">Search</label>
+          <!-- Search Bar -->
+          <div class="search-bar flex flex-wrap jc-between">
+            <input class="bor-1 bor-solid bor-c-DDD" id="search-form" type="search" placeholder="search">
+            <button class="c-777" type="submit"> <svg class="icon"><use xlink:href="#icon-search" /></svg>
+                </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Header v2 -->
+    <header class="site-header" role="banner">
+      <!-- Nav -->
+      <div class="container flex flex-wrap ai-center jc-between pt-pb-1">
+        <!-- Site Logo -->
+        <h1 class="site-title">
+          <a href="sales-person.html"><img class="header-logo mw-8em" src="../images/UI/in2m-logo-white.svg" alt="in2Marketplace.com"><span class="sr-only">in2Marketplace.com</span></a>
+        </h1>
+        <button id="nav-toggle" class="bg-trans nav-toggle-html" aria-hidden="false" aria-expanded="false">
+              <div class="nav-icon c-white"></div>
+            </button>
+        <!-- Main Nav -->
+        <section class="main-nav flex flex-wrap ai-center jc-center sm-flex-g-1 tc-white" role="navigation">
+          <!-- Nav -->
+          <script src="../js/libs/responsive-nav.js"></script>
+          <nav class="nav-collapse" role="navigation">
+            <!-- Admin Bar -->
+            <div class="admin-bar w-100">
+              <div class="container flex flex-wrap ai-center jc-between pt-pb-1 sm-jc-center md-jc-between">
+                <!-- User Status -->
+                <div class="user-status flex ai-center jc-center mb-1 w-100 sm-jc-center md-jc-start md-mb-0 md-w-30">
+                  <div class="avatar user-avatar img-1-1-tiny mr-sm x-sm-mr-1"><img class="" src="../images/UI/slug-avatar.svg" alt="user avatar"></div>
+                  <div class="user-status-text flex flex-wrap flex-d-col ai-start">
+                    <div class="status-msg mb-tiny"><span class="user-name">Jenny Salesperson</span></div>
+                    <div class="profile-links flex ai-center">
+                      <a class="pr-sm" href="#">Dashboard</a>
+                      <a href="#">Logout</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Search -->
+                <div class="search-form header-search mr-ml-a w-100 mw-15em md-w-70 md-mr-0">
+                  <label class="sr-only" for="search-form">Search</label>
+                  <!-- Search Bar -->
+                  <div class="search-bar flex flex-wrap jc-between">
+                    <input id="search-form" type="search" placeholder="search">
+                    <button class="bg-blue-30 c-white" type="submit"> <svg class="icon"><use xlink:href="#icon-search" /></svg></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <ul class="list-reset">
+              <li class="nav-cta pt-sm pb-1"><a class="btn-round bg-blue-50 all-caps c-white mr-0 pr-pl-1 text-base" href="#" onclick="$('.new-lead-form.slide-panel').toggleClass('is-hidden');">New Lead</a></li>
+              <li>
+                <a href="#">Features</a>
+              </li>
+              <li>
+                <a href="sp-pricing.html">Pricing</a>
+              </li>
+              <li>
+                <a href="sp-support.html">Support</a>
+              </li>
+              <li>
+                <a data-remodal-target="demo-video">Demo</a>
+              </li>
+              <!-- end / -->
+            </ul>
+          </nav>
+          <script src="../js/libs/mobile-nav.js"></script>
+        </section>
+      </div>
+      <!-- Fixed Nav -->
+      <div class="container fixed-nav md-flex flex-wrap ai-center jc-between">
+        <!-- Site Logo -->
+        <h1 class="site-title">
+          <a href="sales-person.html"><img class="header-logo mw-8em" src="../images/UI/in2m-logo-white.svg" alt="in2Marketplace.com"><span class="sr-only">in2Marketplace.com</span></a>
+        </h1>
+        <!-- Main Nav -->
+        <section class="main-nav flex flex-wrap ai-center jc-center sm-flex-g-1 tc-white" role="navigation">
+          <nav class="nav-collapse" role="navigation">
+            <ul class="list-reset">
+              <li class="nav-cta">
+                <a class="btn-round bg-blue-50 all-caps c-white mr-0 pr-pl-1 text-base" href="#" onclick="$('.new-lead-form.slide-panel').toggleClass('is-hidden');">New Lead</a>
+              </li>
+              <li>
+                <a href="#">Features</a>
+              </li>
+              <li>
+                <a href="sp-pricing.html">Pricing</a>
+              </li>
+              <li>
+                <a href="sp-support.html">Support</a>
+              </li>
+              <li>
+                <a data-remodal-target="demo-video">Demo</a>
+              </li>
+              <!-- end / -->
+            </ul>
+          </nav>
+        </section>
+      </div>
+    </header>
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Main Promo -->
+      <section class="hero-banner c-white pt-1">
+        <!-- Hero Content -->
+        <div class="container">
+          <!-- Post -->
+          <article class="flex flex-d-col text-center md-text-left md-flex-d-row md-flex-wrap md-ai-center md-jc-between hidden">
+            <!-- Post Content -->
+            <div class="mb-2 md-mb-0 md-pr-1 md-w-60 lg-w-50">
+              <!-- Text -->
+              <div class="text-wrap">
+                <h2 class="title mb-sm">Powerful Retail Messaging & Marketing Solutions</h2>
+                <h3 class="subtitle h4 hidden"><em>Solutions for Modern Media Communications.</em></h3>
+                <p>in2M's automated communications platform is the most complete texting solution. Now, send the right messages
+                  to the right people at the right time - all automatically.</p>
+              </div>
+              <!-- Buttons-->
+              <div class="button-wrap pt-1">
+                <a class="btn-round bg-blue-70 c-blue-30 all-caps text-md" href="#" data-remodal-target="demo-video">View Demo</a>
+                <a class="btn btn-primary btn-round all-caps text-md" href="#">Get Started</a>
+              </div>
+            </div>
+            <!-- Post Media -->
+            <div class="pr-pl-1 md-pr-0 md-pl-2 md-w-40 lg-w-50">
+              <!-- Image -->
+              <figure class="media-item lazyload">
+                <picture>
+                  <source srcset="../images/content-img/img-mobile-devices-2-SM.svg" media="(min-width: 48em)" />
+                  <source srcset="../images/content-img/img-mobile-devices-2-SM.svg" />
+                  <img srcset="../images/content-img/img-mobile-devices-2-SM.svg" alt="in2Marketplace" />
+                  <noscript>
+                    <img src="../images/content-img/img-mobile-devices-2-SM.svg" alt="in2Marketplace" />
+                  </noscript>
+                </picture>
+              </figure>
+            </div>
+          </article>
+          <!-- Post -->
+          <article class="flex flex-d-col text-center">
+            <!-- Post Content -->
+            <div class="mb-1 w-100 md-mb-3 md-pr-1">
+              <!-- Text -->
+              <div class="text-wrap">
+                <h2 class="hero-title mb-sm">Powerful Messaging & Marketing Solutions</h2>
+                <h3 class="subtitle h4 hidden"><em>Solutions for Modern Media Communications.</em></h3>
+                <p class="mr-ml-a md-text-md md-w-80">in2M's automated communications platform is the most complete texting solution. Now, send the right messages
+                  to the right people at the right time - all automatically.</p>
+              </div>
+              <!-- Hero Buttons (row-rev)-->
+              <div class="button-wrap flex flex-d-col-rev jc-center pt-1 sm-flex-d-row">
+                <a class="btn-round bg-blue-70 c-blue-30 all-caps flex-g-1 mr-ml-a mb-1 pt-pb-1 pr-pl-3 text-md x-sm-mr-ml-sm x-sm-mb-sm sm-flex-g-0"
+                  href="#" data-remodal-target="demo-video">View Demo</a>
+                <a class="btn btn-primary btn-round all-caps flex-g-1 mr-ml-a mb-1 pt-pb-1 pr-pl-3 text-md x-sm-mr-ml-sm x-sm-mb-sm sm-flex-g-0"
+                  href="#">Get Started</a>
+              </div>
+            </div>
+            <!-- Post Media -->
+            <div class="pr-pl-1 w-100 md-pr-0">
+              <!-- Image -->
+              <figure class="media-item hero-svg-mask mb-0 lazyload">
+                <picture>
+                  <source srcset="../images/content-img/img-mobile-devices-2-SM.svg" media="(min-width: 48em)" />
+                  <source srcset="../images/content-img/img-mobile-devices-2-SM.svg" />
+                  <img srcset="../images/content-img/img-mobile-devices-2-SM.svg" alt="in2Marketplace" />
+                  <noscript>
+                    <img src="../images/content-img/img-mobile-devices-2-SM.svg" alt="in2Marketplace" />
+                  </noscript>
+                </picture>
+              </figure>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!-- CTA Banner (Info & Help Buttons) -->
+      <section class="mod-block bg-no-repeat bg-cover bg-blue-20 tc-white text-center pt-pb-2 md-pt-pb-4" style="background-image: url('../images/hero-banner/bg-mobile-user-banner-dark-teal.jpg');">
+        <div class="container md-pt-pb-4">
+          <!-- Buttons -->
+          <div class="button-wrap flex flex-d-col jc-center pt-1 x-sm-flex-d-row x-sm-flex-wrap">
+            <a class="btn btn-outline btn-round c-white flex-g-1 mr-ml-a mb-1 pt-pb-1 pr-pl-3 text-lg x-sm-mr-ml-sm x-sm-mb-sm md-flex-g-0"
+              href="#" data-remodal-target="demo-video">Discover in2M</a>
+            <a class="btn btn-outline btn-round c-white flex-g-1 mr-ml-a mb-1 pt-pb-1 pr-pl-3 text-lg x-sm-mr-ml-sm x-sm-mb-sm md-flex-g-0"
+              href="#">Success Stories</a>
+          </div>
+          <a href="#" class="block text-center h6 mr-ml-a pt-1">
+            <svg class="icon">
+              <use xlink:href="#icon-help" />
+            </svg> Help & Support</a>
+        </div>
+      </section>
+      <!-- Features -->
+      <div class="features">
+        <section class="mod-block bg-blue-30 c-white pt-pb-2 md-pt-pb-4">
+          <div class="container mw-65em">
+            <!-- Post -->
+            <article class="text-center flex flex-d-col mb-2 md-text-left md-flex-d-row md-flex-wrap md-ai-center md-jc-between">
+              <!-- Post Content -->
+              <div class="mb-2 md-mb-0 md-pr-1 md-w-70 lg-w-60">
+                <!-- Text -->
+                <div class="text-wrap">
+                  <h2 class="title mb-sm">Advanced Targeting</h2>
+                  <h3 class="subtitle h5"><em>This is where a subtitle would go.</em></h3>
+                  <p>in2M's automated communications platform is the most complete texting solution. Now, send the right messages to the right people at the right time - all automatically.</p>
+                </div>
+                <!-- Buttons-->
+                <div class="button-wrap pt-1">
+                  <a class="btn-round bg-blue-70 c-blue-30 all-caps text-md" href="#">More Info</a>
+                </div>
+              </div>
+              <!-- Post Media -->
+              <div class="pr-pl-1 md-pr-0 md-pl-2 md-w-30 lg-w-40">
+                <!-- Image -->
+                <figure class="media-item mb-0 mw-25em lazyload">
+                  <picture>
+                    <source srcset="../images/content-img/img-targeting.svg" />
+                    <img src="../images/content-img/img-targeting.svg" data-srcset="../images/content-img/img-targeting.svg" alt="in2Marketplace" class="lazyload" /> 
+                    <noscript>
+                      <img src="../images/content-img/img-targeting.svg" alt="in2Marketplace" />
+                    </noscript>
+                  </picture>
+                </figure>
+              </div>
+            </article>
+          </div>
+        </section>
+        <!-- Feature -->
+        <section class="mod-block bg-blue-70 c-blue-30 pt-pb-2 md-pt-pb-4">
+          <div class="container mw-65em">
+            <!-- Post -->
+            <article class="text-center flex flex-d-col md-text-left md-flex-d-row-rev md-flex-wrap md-ai-center md-jc-between">
+              <!-- Post Content -->
+              <div class="mb-2 md-mb-0 md-pl-1 md-w-70 lg-w-60">
+                <!-- Text -->
+                <div class="text-wrap">
+                  <h2 class="title mb-sm">Dynamic Reporting</h2>
+                  <h3 class="subtitle h5"><em>This is where a subtitle would go.</em></h3>
+                  <p>in2M's automated communications platform is the most complete texting solution. Now, send the right messages
+                    to the right people at the right time - all automatically.</p>
+                </div>
+                <!-- Buttons-->
+                <div class="button-wrap pt-1">
+                  <a class="btn btn-primary btn-round all-caps text-md" href="#">View Sample</a>
+                </div>
+              </div>
+              <!-- Post Media -->
+              <div class="pr-pl-1 md-pr-3 md-pl-0 md-w-30 lg-w-40">
+                <!-- Image -->
+                <figure class="media-item mb-0 mw-25em lazyload">
+                  <picture>
+                    <source srcset="../images/content-img/img-reporting-teal.svg" media="(min-width: 48em)" />
+                    <source srcset="../images/content-img/img-reporting-teal.svg" />
+                    <img src="../images/content-img/img-reporting-teal.svg" data-srcset="../images/content-img/img-reporting-teal.svg" alt="in2Marketplace" class="lazyload" />
+                    <noscript>
+                      <img src="../images/content-img/img-reporting-teal.svg" alt="in2Marketplace" />
+                    </noscript>
+                  </picture>
+                </figure>
+              </div>
+            </article>
+          </div>
+        </section>
+        <!-- Feature -->
+        <section class="mod-block bg-EEE c-blue-20 pt-pb-2 md-pt-pb-4">
+          <div class="container mw-65em">
+            <!-- Post -->
+            <article class="text-center flex flex-d-col mb-2 md-text-left md-flex-d-row md-flex-wrap md-ai-center md-jc-between">
+              <!-- Post Content -->
+              <div class="mb-2 md-mb-0 md-pr-1 md-w-70 lg-w-60">
+                <!-- Text -->
+                <div class="text-wrap">
+                  <h2 class="title mb-sm">Payment Gateway</h2>
+                  <h3 class="subtitle h5"><em>This is where a subtitle would go.</em></h3>
+                  <p>in2M's automated communications platform is the most complete texting solution. Now, send the right messages
+                    to the right people at the right time - all automatically.</p>
+                </div>
+                <!-- Buttons-->
+                <div class="button-wrap pt-1">
+                  <a class="btn-round bg-blue-40 c-white all-caps text-md" href="#">Learn More</a>
+                </div>
+              </div>
+              <!-- Post Media -->
+              <div class="pr-pl-1 md-pr-0 md-pl-2 md-w-30 lg-w-40">
+                <!-- Image -->
+                <figure class="media-item mb-0 mw-25em lazyload">
+                  <picture>
+                    <source srcset="../images/content-img/img-payment-options.svg" />
+                    <img src="../images/content-img/img-payment-options.svg" data-srcset="../images/content-img/img-payment-options.svg" alt="in2Marketplace" class="lazyload" />
+                    <noscript>
+                      <img src="../images/content-img/img-payment-options.svg" alt="in2Marketplace" />
+                    </noscript>
+                  </picture>
+                </figure>
+              </div>
+            </article>
+          </div>
+        </section>
+        <!-- Feature -->
+        <section class="mod-block bg-grey-80 c-blue-30 pt-pb-2 md-pt-pb-4">
+          <div class="container mw-65em">
+            <!-- Post -->
+            <article class="text-center flex flex-d-col md-text-left md-flex-d-row-rev md-flex-wrap md-ai-center md-jc-between">
+              <!-- Post Content -->
+              <div class="mb-2 md-mb-0 md-pl-1 md-w-70 lg-w-60">
+                <!-- Text -->
+                <div class="text-wrap">
+                  <h2 class="title mb-sm">Data Analysis</h2>
+                  <h3 class="subtitle h5"><em>This is where a subtitle would go.</em></h3>
+                  <p>in2M's automated communications platform is the most complete texting solution. Now, send the right messages
+                    to the right people at the right time - all automatically.</p>
+                </div>
+                <!-- Buttons-->
+                <div class="button-wrap pt-1">
+                  <a class="btn btn-primary btn-round all-caps text-md" href="#">View API</a>
+                </div>
+              </div>
+              <!-- Post Media -->
+              <div class="pr-pl-1 md-pr-3 md-pl-0 md-w-30 lg-w-40">
+                <!-- Image -->
+                <figure class="media-item mb-0 mw-25em lazyload">
+                  <picture>
+                    <source srcset="../images/content-img/img-data-analysis-teal.svg" media="(min-width: 48em)" />
+                    <source srcset="../images/content-img/img-data-analysis-teal.svg" />
+                    <img src="../images/content-img/img-data-analysis-teal.svg" data-srcset="../images/content-img/img-data-analysis-teal.svg" alt="in2Marketplace" class="lazyload" />
+                    <noscript>
+                      <img src="../images/content-img/img-shaking-hands.svg" alt="in2Marketplace" />
+                    </noscript>
+                  </picture>
+                </figure>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+      <!-- Feature Grid Layout -->
+      <div class="md-flex md-flex-wrap md-flex-d-row">
+        <!-- Features -->
+        <h2 id="features" class="bg-blue-90 c-blue-20 text-center text-md all-caps mb-0 pt-pb-2 w-100 sr-only">Features</h2>
+        <!-- Advanced Targeting - feature -->
+        <section class="mod-block feat-target bg-blue-80 c-blue-30 pt-pb-2 md-flex md-ai-center lg-pt-pb-4 md-w-50">
+          <div class="container">
+            <!-- Post -->
+            <article class="text-center flex flex-d-col lg-text-left lg-flex-d-row-rev lg-flex-wrap lg-ai-center lg-jc-between">
+              <!-- Post Content -->
+              <div class="mb-2 lg-mb-0 lg-pl-1 lg-w-55 xl-w-65">
+                <!-- Text -->
+                <div class="text-wrap">
+                  <h2 class="h3 title mb-sm">Advanced Targeting</h2>
+                  <h3 class="subtitle h5"><em>This is where a subtitle would go.</em></h3>
+                  <p class="mr-ml-a w-85 md-w-100">in2M's automated communications platform is the most complete texting solution. Now, send the right messages
+                    to the right people at the right time - all automatically.</p>
+                </div>
+                <!-- Buttons-->
+                <div class="button-wrap pt-1">
+                  <a class="btn-round all-caps bg-blue-40 c-white text-md" href="#">More Info</a>
+                </div>
+              </div>
+              <!-- Post Media -->
+              <div class="pr-pl-1 w-100 lg-pr-3 lg-w-45 xl-w-35">
+                <!-- Image -->
+                <figure class="media-item text-center mb-0 mw-20em lazyload">
+                  <picture>
+                    <source srcset="../images/content-img/img-targeting.svg" />
+                    <img src="../images/content-img/img-targeting.svg" data-srcset="../images/content-img/img-targeting.svg" alt="in2Marketplace" class="lazyload" /> 
+                    <noscript>
+                      <img src="../images/content-img/img-targeting.svg" alt="in2Marketplace" />
+                    </noscript>
+                  </picture>
+                </figure>
+              </div>
+            </article>
+          </div>
+        </section>
+        <!-- Dynamic Reporting - feature -->
+        <section class="mod-block feat-reporting bg-blue-90 c-blue-30 pt-pb-2 md-flex md-ai-center lg-pt-pb-4 md-w-50">
+          <div class="container">
+            <!-- Post -->
+            <article class="text-center flex flex-d-col lg-text-left lg-flex-d-row-rev lg-flex-wrap lg-ai-center lg-jc-between">
+              <!-- Post Content -->
+              <div class="mb-2 lg-mb-0 lg-pl-1 lg-w-55 xl-w-65">
+                <!-- Text -->
+                <div class="text-wrap">
+                  <h2 class="h3 title mb-sm">Dynamic Reporting</h2>
+                  <h3 class="subtitle h5"><em>This is where a subtitle would go.</em></h3>
+                  <p class="mr-ml-a w-85 md-w-100">Analytics and reports on all your campaigns with a personal dashboard for each campaign. That way, you
+                    simplify your marketing efforts and make tracking and monitoring campaign much easier.</p>
+                </div>
+                <!-- Buttons-->
+                <div class="button-wrap pt-1">
+                  <a class="btn-round all-caps bg-blue-40 c-white text-md" href="#">View Sample</a>
+                </div>
+              </div>
+              <!-- Post Media -->
+              <div class="pr-pl-1 w-100 lg-pr-3 lg-w-45 xl-w-35">
+                <!-- Image -->
+                <figure class="media-item text-center mb-0 mw-20em lazyload">
+                  <picture>
+                    <source srcset="../images/content-img/img-reporting-teal.svg" media="(min-width: 48em)" />
+                    <source srcset="../images/content-img/img-reporting-teal.svg" />
+                    <img src="../images/content-img/img-reporting-teal.svg" data-srcset="../images/content-img/img-reporting-teal.svg" alt="in2Marketplace" class="lazyload" />
+                    <noscript>
+                      <img src="../images/content-img/img-reporting-teal.svg" alt="in2Marketplace" />
+                    </noscript>
+                  </picture>
+                </figure>
+              </div>
+            </article>
+          </div>
+        </section>
+        <!-- Payment Gateway - feature -->
+        <section class="mod-block feat-gateway bg-EEE c-blue-30 pt-pb-2 md-flex md-ai-center lg-pt-pb-4 md-w-50">
+          <div class="container">
+            <!-- Post -->
+            <article class="text-center flex flex-d-col lg-text-left lg-flex-d-row lg-flex-wrap lg-ai-center lg-jc-between">
+              <!-- Post Content -->
+              <div class="mb-2 lg-mb-0 lg-pr-1 lg-w-55 xl-w-65">
+                <!-- Text -->
+                <div class="text-wrap">
+                  <h2 class="h3 title mb-sm">Payment Gateway</h2>
+                  <h3 class="subtitle h5"><em>This is where a subtitle would go.</em></h3>
+                  <p class="mr-ml-a w-85 md-w-100">in2M's automated communications platform is the most complete texting solution. Now, send the right messages
+                    to the right people at the right time - all automatically.</p>
+                </div>
+                <!-- Buttons-->
+                <div class="button-wrap pt-1">
+                  <a class="btn-round bg-blue-40 c-white all-caps text-md" href="#">Learn More</a>
+                </div>
+              </div>
+              <!-- Post Media -->
+              <div class="pr-pl-1 w-100 lg-pl-3 lg-w-45 xl-w-35">
+                <!-- Image -->
+                <figure class="media-item text-center mb-0 mw-20em lazyload">
+                  <picture>
+                    <source srcset="../images/content-img/img-payment-options.svg" />
+                    <img src="../images/content-img/img-payment-options.svg" data-srcset="../images/content-img/img-payment-options.svg" alt="in2Marketplace" class="lazyload" />
+                    <noscript>
+                      <img src="../images/content-img/img-payment-options.svg" alt="in2Marketplace" />
+                    </noscript>
+                  </picture>
+                </figure>
+              </div>
+            </article>
+          </div>
+        </section>
+        <!-- Data Analysis - feature -->
+        <section class="mod-block feat-analysis bg-grey-light c-blue-30 pt-pb-2 lg-pt-pb-4 md-w-50">
+          <div class="container">
+            <!-- Post -->
+            <article class="text-center flex flex-d-col lg-text-left lg-flex-d-row lg-flex-wrap lg-ai-center lg-jc-between">
+              <!-- Post Content -->
+              <div class="mb-2 lg-mb-0 lg-pr-1 lg-w-55 xl-w-65">
+                <!-- Text -->
+                <div class="text-wrap">
+                  <h2 class="h3 title mb-sm">Data Analysis</h2>
+                  <h3 class="subtitle h5"><em>This is where a subtitle would go.</em></h3>
+                  <p class="mr-ml-a w-85 md-w-100">As your organization expands, so will your need for access control and brand consistency. That's why in2M
+                    developed features specifically for Enterprises with multiple locations and departments.</p>
+                </div>
+                <!-- Buttons-->
+                <div class="button-wrap pt-1">
+                  <a class="btn-round all-caps bg-blue-40 c-white text-md" href="#">View API</a>
+                </div>
+              </div>
+              <!-- Post Media -->
+              <div class="pr-pl-1 w-100 lg-pl-3 lg-w-45 xl-w-35">
+                <!-- Image -->
+                <figure class="media-item text-center mb-0 mw-20em lazyload">
+                  <picture>
+                    <source srcset="../images/content-img/img-data-analysis-teal.svg" media="(min-width: 48em)" />
+                    <source srcset="../images/content-img/img-data-analysis-teal.svg" />
+                    <img src="../images/content-img/img-data-analysis-teal.svg" data-srcset="../images/content-img/img-data-analysis-teal.svg" alt="in2Marketplace" class="lazyload" />
+                    <noscript>
+                      <img src="../images/content-img/img-shaking-hands.svg" alt="in2Marketplace" />
+                    </noscript>
+                  </picture>
+                </figure>
+              </div>
+            </article>
+          </div>
+        </section>
+        <!-- end / -->
+      </div>
+      <!-- Pricing Plans -->
+      <section class="bg-blue-90 pb-2 hidden">
+        <h2 id="pricing" class="all-caps bg-blue-80 c-blue-white text-center text-md mb-0 pt-pb-2 w-100">Pricing</h2>
+        <div class="container">
+          <!-- Plans -->
+          <div class="pricing-plans">
+            <!-- Pricing Tables -->
+            <div class="pricing-tables c-blue-40">
+              <!-- "Basic" Features -->
+              <div class="pricing-plan flex flex-d-col">
+                <h2 class="card-title">Basic</h2>
+                <div class="plan-cost">
+                  <p class="plan-price">$29</p>
+                  <span>/</span>
+                  <p class="plan-type">Monthly</p>
+                </div>
+                <ul class="plan-features list-reset flex-g-1 pt-2 pr-2 pb-1 pl-2">
+                  <li>
+                    <h3>Package Feature</h3>
+                  </li>
+                  <li>
+                    <h3>Package Feature</h3>
+                  </li>
+                </ul>
+                <a class="btn all-caps bg-blue-40 c-white mr-ml-a w-50" href="">Select</a>
+              </div>
+              <!-- "Super" Plan -->
+              <div class="pricing-plan flex flex-d-col">
+                <h2 class="card-title">Super</h2>
+                <div class="plan-cost">
+                  <p class="plan-price">$39</p>
+                  <span>|</span>
+                  <p class="plan-type">Monthly</p>
+                </div>
+                <ul class="plan-features list-reset flex-g-1 pt-2 pr-2 pb-1 pl-2">
+                  <li>
+                    <h3>Package Feature</h3>
+                  </li>
+                  <li>
+                    <h3>Package Feature</h3>
+                  </li>
+                  <li>
+                    <h3>Package Feature</h3>
+                  </li>
+                </ul>
+                <a class="btn all-caps bg-blue-40 c-white mr-ml-a w-50" href="#">Select</a>
+              </div>
+              <!-- "Premium" Plan -->
+              <div class="pricing-plan flex flex-d-col featured-plan">
+                <div class="featured-ribbon">Best Value</div>
+                <h2 class="card-title">Premium</h2>
+                <div class="plan-cost">
+                  <p class="plan-price">$59</p>
+                  <span>/</span>
+                  <p class="plan-type">Monthly</p>
+                </div>
+                <ul class="plan-features list-reset flex-g-1 pt-2 pr-2 pb-1 pl-2">
+                  <li>
+                    <h3>Package Feature</h3>
+                  </li>
+                  <li>
+                    <h3>Package Feature</h3>
+                  </li>
+                  <li>
+                    <h3>Package Feature</h3>
+                  </li>
+                  <li>
+                    <h3>Package Feature</h3>
+                  </li>
+                </ul>
+                <a class="btn all-caps bg-blue-40 c-white mr-ml-a w-50" href="#">Select</a>
+              </div>
+              <!-- "Ultmate" Plan -->
+              <div class="pricing-plan flex flex-d-col">
+                <h2 class="card-title">Ultimate</h2>
+                <div class="plan-cost">
+                  <p class="plan-price">$89</p>
+                  <span>/</span>
+                  <p class="plan-type">Monthly</p>
+                </div>
+                <ul class="plan-features list-reset flex-g-1 pt-2 pr-2 pb-1 pl-2">
+                  <li>
+                    <h3>Package Feature</h3>
+                  </li>
+                  <li>
+                    <h3>Package Feature</h3>
+                  </li>
+                  <li>
+                    <h3>Package Feature</h3>
+                  </li>
+                  <li>
+                    <h3>Package Feature</h3>
+                  </li>
+                  <li>
+                    <h3>Package Feature</h3>
+                  </li>
+                </ul>
+                <a class="btn all-caps bg-blue-40 c-white mr-ml-a w-50" href="">Select</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Help Videos -->
+      <div class="flex flex-wrap md-flex-d-row">
+        <h2 id="HomeFAQ" class="bg-blue-90 c-blue-20 text-left text-md all-caps mb-0 pt-pb-2 w-100 sr-only">Help Videos</h2>
+        <!-- Video 1 -->
+        <section class="mod-block bg-blue-80 c-blue-30 pt-pb-2 w-100 lg-w-50">
+          <div class="container lg-mr-0 xl-pl-1 lg-mw-48em">
+            <!-- Post -->
+            <article class="flex flex-d-col jc-between lg-text-left lg-flex-d-row-rev lg-flex-wrap lg-ai-center lg-jc-between">
+              <!-- Post Content -->
+              <div class="flex-1">
+                <!-- Text -->
+                <div class="text-wrap mb-2">
+                  <h3 class="title mb-sm">How do I get started?</h3>
+                  <p class="lg-text-md">Watch the video below to help get up and running with in2Marketplace's powerful marketing platform.</p>
+                </div>
+                <!-- tutorial -->
+                <div class="media-wrap mb-2">
+                  <iframe class="lazyload" width="100%" data-src="https://www.youtube.com/embed/yka0UnJ2xbU?rel=0" frameborder="0" allowfullscreen></iframe>
+                  <noscript>
+                    <iframe width="100%" src="https://www.youtube.com/embed/yka0UnJ2xbU?rel=0" frameborder="0" allowfullscreen></iframe>
+                  </noscript>
+                </div>
+                <!-- Survey Buttons -->
+                <div class="flex ai-center jc-center">
+                  <p class="mb-0 pr-1 w-a"><a class="bor-bot-none text-lg" href="#">Did this help?</a></p>
+                  <!-- radio buttons -->
+                  <div class="radio-group flex">
+                    <label class="radiobutton flex mr-1">
+                          <input type="radio" name="option1" aria-labelledby="-ariaLabel">
+                          <span class="item-desc">Yes</span>
+                        </label>
+                    <label class="radiobutton flex flex-wrap">
+                          <input type="radio" name="option1" aria-labelledby="-ariaLabel">
+                          <span class="item-desc">No</span>
+                        </label>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+        <!-- Video 2 -->
+        <section class="mod-block bg-blue-90 c-blue-30 pt-pb-2 w-100 lg-w-50">
+          <div class="container lg-ml-0 xl-pr-1 lg-mw-48em">
+            <!-- Post -->
+            <article class="flex flex-d-col jc-between lg-text-left lg-flex-d-row-rev lg-flex-wrap lg-ai-center lg-jc-between">
+              <!-- Post Content -->
+              <div class="flex-1">
+                <!-- Text -->
+                <div class="text-wrap mb-2">
+                  <h3 class="title mb-sm">How does in2M work?</h3>
+                  <p class="lg-text-md">See how we are able to use the latest technologies to make your campaign success. We need more text to
+                    get two lines in this block.</p>
+                </div>
+                <!-- tutorial -->
+                <div class="media-wrap mb-2">
+                  <iframe class="lazyload" width="100%" src="https://www.youtube.com/embed/LUfnhZPXTic?rel=0" data-src="https://www.youtube.com/embed/LUfnhZPXTic?rel=0" frameborder="0" allowfullscreen></iframe>
+                  <noscript>
+                    <iframe width="100%" src="https://www.youtube.com/embed/LUfnhZPXTic?rel=0" frameborder="0" allowfullscreen></iframe>
+                  </noscript>
+                </div>
+                <!-- Survey Buttons -->
+                <div class="flex ai-center jc-center">
+                  <p class="mb-0 pr-1 w-a"><a class="bor-bot-none text-lg" href="#">Did this help?</a></p>
+                  <!-- radio buttons -->
+                  <div class="radio-group flex">
+                    <label class="radiobutton flex mr-1">
+                          <input type="radio" name="option1" aria-labelledby="-ariaLabel">
+                          <span class="item-desc">Yes</span>
+                        </label>
+                    <label class="radiobutton flex flex-wrap">
+                          <input type="radio" name="option1" aria-labelledby="-ariaLabel">
+                          <span class="item-desc">No</span>
+                        </label>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+        <!-- end / -->
+      </div>
+      <!-- FAQ List -->
+      <section class="bg-grey-light pt-pb-4 hidden">
+        <div class="container">
+          <!-- FAQ columns -->
+          <div class="flex flex-wrap">
+            <!-- Left Col -->
+            <div class="mb-3 w-100 lg-mb-0 lg-pr-2 lg-w-50">
+              <!-- Retailer FAQ Accordion -->
+              <div class="flex flex-d-col jc-between mb-3 lg-text-left lg-flex-d-row-rev lg-flex-wrap lg-ai-center lg-jc-between w-100">
+                <!-- Retailer FAQ -->
+                <h2 class="all-caps bor-bot-1 bor-bot-s c-blue-60 mb-1-pt5 pb-tiny text-md w-100"><span class="c-blue-40">Retailer FAQs</span></h2>
+                <!-- FAQ list -->
+                <div class="flex-1">
+                  <!-- FAQ -->
+                  <article class="collapsible collapsible-collapsed mb-1 w-100" data-collapsible-set="retail-faq">
+                    <h3 class="h5 collapsible-header flex ai-center jc-between mb-0 w-100"><span class="mr-sm">How do subscribers opt in after opting out?</span> <span class="icon-plus text-md"><svg class="icon"><use xlink:href="#icon-plus" /></svg></span></h3>
+                    <p class="collapsible-content m-0 pt-pb-1">Watch the video below to help get up and running with in2Marketplace's powerful marketing platform.</p>
+                  </article>
+                  <!-- FAQ -->
+                  <article class="collapsible collapsible-collapsed mb-1 w-100" data-collapsible-set="retail-faq">
+                    <h3 class="h5 collapsible-header flex ai-center jc-between mb-0 w-100"><span class="mr-sm">How do I create a distribution list?</span> <span class="icon-plus text-md"><svg class="icon"><use xlink:href="#icon-plus" /></svg></span></h3>
+                    <p class="collapsible-content m-0 pt-pb-1">See how we are able to use the latest technologies to make your campaign success.</p>
+                  </article>
+                  <!-- FAQ -->
+                  <article class="collapsible collapsible-collapsed mb-1 w-100" data-collapsible-set="retail-faq">
+                    <h3 class="h5 collapsible-header flex ai-center jc-between mb-0 w-100"><span class="mr-sm">How do I import contacts?</span> <span class="icon-plus text-md"><svg class="icon"><use xlink:href="#icon-plus" /></svg></span></h3>
+                    <p class="collapsible-content m-0 pt-pb-1">Watch the video below to help get up and running with in2Marketplace's powerful marketing platform.</p>
+                  </article>
+                  <!-- FAQ -->
+                  <article class="collapsible collapsible-collapsed w-100" data-collapsible-set="retail-faq">
+                    <h3 class="h5 collapsible-header flex ai-center jc-between mb-0 w-100"><span class="mr-sm">How do I create a custom data field?</span> <span class="icon-plus text-md"><svg class="icon"><use xlink:href="#icon-plus" /></svg></span></h3>
+                    <p class="collapsible-content m-0 pt-pb-1">See how we are able to use the latest technologies to make your campaign success.</p>
+                  </article>
+                </div>
+              </div>
+              <!-- Retail User FAQ Accordion -->
+              <div class="flex flex-d-col jc-between lg-text-left lg-flex-d-row-rev lg-flex-wrap lg-ai-center lg-jc-between">
+                <!-- Retail User FAQ -->
+                <h2 class="all-caps bor-bot-1 bor-bot-s c-blue-60 mb-1-pt5 pb-tiny text-md w-100"><span class="c-blue-40">Retailer User FAQs</span></h2>
+                <!-- FAQ list -->
+                <div class="flex-1">
+                  <!-- FAQ -->
+                  <article class="collapsible collapsible-collapsed mb-1 w-100" data-collapsible-set="retail-user-faq">
+                    <h3 class="h5 collapsible-header flex ai-center jc-between mb-0 w-100"><span class="mr-sm">How do I get started?</span> <span class="icon-plus text-md"><svg class="icon"><use xlink:href="#icon-plus" /></svg></span></h3>
+                    <p class="collapsible-content m-0 pt-pb-1">Watch the video below to help get up and running with in2Marketplace's powerful marketing platform.</p>
+                  </article>
+                  <!-- FAQ -->
+                  <article class="collapsible collapsible-collapsed mb-1 w-100" data-collapsible-set="retail-user-faq">
+                    <h3 class="h5 collapsible-header flex ai-center jc-between mb-0 w-100"><span class="mr-sm">How does in2M work?</span> <span class="icon-plus text-md"><svg class="icon"><use xlink:href="#icon-plus" /></svg></span></h3>
+                    <p class="collapsible-content m-0 pt-pb-1">See how we are able to use the latest technologies to make your campaign success.</p>
+                  </article>
+                  <!-- FAQ -->
+                  <article class="collapsible collapsible-collapsed mb-1 w-100" data-collapsible-set="retail-user-faq">
+                    <h3 class="h5 collapsible-header flex ai-center jc-between mb-0 w-100"><span class="mr-sm">How do I import contacts?</span> <span class="icon-plus text-md"><svg class="icon"><use xlink:href="#icon-plus" /></svg></span></h3>
+                    <p class="collapsible-content m-0 pt-pb-1">Watch the video below to help get up and running with in2Marketplace's powerful marketing platform.</p>
+                  </article>
+                  <!-- FAQ -->
+                  <article class="collapsible collapsible-collapsed w-100" data-collapsible-set="retail-user-faq">
+                    <h3 class="h5 collapsible-header flex ai-center jc-between mb-0 w-100"><span class="mr-sm">How does in2M work?</span> <span class="icon-plus text-md"><svg class="icon"><use xlink:href="#icon-plus" /></svg></span></h3>
+                    <p class="collapsible-content m-0 pt-pb-1">See how we are able to use the latest technologies to make your campaign success.</p>
+                  </article>
+                </div>
+              </div>
+              <!-- end / left col -->
+            </div>
+            <!-- Right Col -->
+            <div class="w-100 lg-pl-2 lg-w-50">
+              <!-- Application FAQ Accordion -->
+              <div class="flex flex-d-col jc-between mb-3 lg-text-left lg-flex-d-row-rev lg-flex-wrap lg-ai-center lg-jc-between w-100">
+                <!-- Retailer FAQ -->
+                <h2 class="all-caps bor-bot-1 bor-bot-s c-blue-60 mb-1-pt5 pb-tiny text-md w-100"><span class="c-blue-40">Application FAQs</span></h2>
+                <!-- FAQ list -->
+                <div class="flex-1">
+                  <!-- FAQ -->
+                  <article class="collapsible collapsible-collapsed mb-1 w-100" data-collapsible-set="app-faq">
+                    <h3 class="h5 collapsible-header flex ai-center jc-between mb-0 w-100"><span class="mr-sm">How do subscribers opt in after opting out?</span> <span class="icon-plus text-md"><svg class="icon"><use xlink:href="#icon-plus" /></svg></span></h3>
+                    <p class="collapsible-content m-0 pt-pb-1">Watch the video below to help get up and running with in2Marketplace's powerful marketing platform.</p>
+                  </article>
+                  <!-- FAQ -->
+                  <article class="collapsible collapsible-collapsed mb-1 w-100" data-collapsible-set="app-faq">
+                    <h3 class="h5 collapsible-header flex ai-center jc-between mb-0 w-100"><span class="mr-sm">How do I create a distribution list?</span> <span class="icon-plus text-md"><svg class="icon"><use xlink:href="#icon-plus" /></svg></span></h3>
+                    <p class="collapsible-content m-0 pt-pb-1">See how we are able to use the latest technologies to make your campaign success.</p>
+                  </article>
+                  <!-- FAQ -->
+                  <article class="collapsible collapsible-collapsed mb-1 w-100" data-collapsible-set="app-faq">
+                    <h3 class="h5 collapsible-header flex ai-center jc-between mb-0 w-100"><span class="mr-sm">How do I import contacts?</span> <span class="icon-plus text-md"><svg class="icon"><use xlink:href="#icon-plus" /></svg></span></h3>
+                    <p class="collapsible-content m-0 pt-pb-1">Watch the video below to help get up and running with in2Marketplace's powerful marketing platform.</p>
+                  </article>
+                  <!-- FAQ -->
+                  <article class="collapsible collapsible-collapsed w-100" data-collapsible-set="app-faq">
+                    <h3 class="h5 collapsible-header flex ai-center jc-between mb-0 w-100"><span class="mr-sm">How do I create a custom data field?</span> <span class="icon-plus text-md"><svg class="icon"><use xlink:href="#icon-plus" /></svg></span></h3>
+                    <p class="collapsible-content m-0 pt-pb-1">See how we are able to use the latest technologies to make your campaign success.</p>
+                  </article>
+                </div>
+              </div>
+              <!-- General FAQ Accordion -->
+              <div class="flex flex-d-col jc-between lg-text-left lg-flex-d-row-rev lg-flex-wrap lg-ai-center lg-jc-between">
+                <!-- Retail User FAQ -->
+                <h2 class="all-caps bor-bot-1 bor-bot-s c-blue-60 mb-1-pt5 pb-tiny text-md w-100"><span class="c-blue-40">General FAQs</span></h2>
+                <!-- FAQ list -->
+                <div class="flex-1">
+                  <!-- FAQ -->
+                  <article class="collapsible collapsible-collapsed mb-1 w-100" data-collapsible-set="general-faq">
+                    <h3 class="h5 collapsible-header flex ai-center jc-between mb-0 w-100"><span class="mr-sm">How do I get started?</span> <span class="icon-plus text-md"><svg class="icon"><use xlink:href="#icon-plus" /></svg></span></h3>
+                    <p class="collapsible-content m-0 pt-pb-1">Watch the video below to help get up and running with in2Marketplace's powerful marketing platform.</p>
+                  </article>
+                  <!-- FAQ -->
+                  <article class="collapsible collapsible-collapsed mb-1 w-100" data-collapsible-set="general-faq">
+                    <h3 class="h5 collapsible-header flex ai-center jc-between mb-0 w-100"><span class="mr-sm">How does in2M work?</span> <span class="icon-plus text-md"><svg class="icon"><use xlink:href="#icon-plus" /></svg></span></h3>
+                    <p class="collapsible-content m-0 pt-pb-1">See how we are able to use the latest technologies to make your campaign success.</p>
+                  </article>
+                  <!-- FAQ -->
+                  <article class="collapsible collapsible-collapsed mb-1 w-100" data-collapsible-set="general-faq">
+                    <h3 class="h5 collapsible-header flex ai-center jc-between mb-0 w-100"><span class="mr-sm">How do I import contacts?</span> <span class="icon-plus text-md"><svg class="icon"><use xlink:href="#icon-plus" /></svg></span></h3>
+                    <p class="collapsible-content m-0 pt-pb-1">Watch the video below to help get up and running with in2Marketplace's powerful marketing platform.</p>
+                  </article>
+                  <!-- FAQ -->
+                  <article class="collapsible collapsible-collapsed w-100" data-collapsible-set="general-faq">
+                    <h3 class="h5 collapsible-header flex ai-center jc-between mb-0 w-100"><span class="mr-sm">How does in2M work?</span> <span class="icon-plus text-md"><svg class="icon"><use xlink:href="#icon-plus" /></svg></span></h3>
+                    <p class="collapsible-content m-0 pt-pb-1">See how we are able to use the latest technologies to make your campaign success.</p>
+                  </article>
+                </div>
+              </div>
+              <!-- end / right col -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FAQ List -->
+      <section class="bg-blue-30 pt-pb-4">
+        <div class="container">
+          <!-- FAQ columns -->
+          <div class="flex flex-wrap">
+            <!-- Left Col -->
+            <div class="mb-3 w-100 lg-mb-0 lg-pr-2 lg-w-50">
+              <!-- Retailer FAQ Accordion -->
+              <div class="flex flex-d-col jc-between mb-3 lg-text-left lg-flex-d-row-rev lg-flex-wrap lg-ai-center lg-jc-between w-100">
+                <!-- Retailer FAQ -->
+                <h2 class="all-caps bor-bot-1 bor-bot-s c-blue-40 mb-1-pt5 pb-tiny text-md w-100"><span class="c-blue-90">Retailer FAQs</span></h2>
+                <!-- FAQ list -->
+                <div class="flex-1 c-blue-70">
+                  <!-- FAQ -->
+                  <article class="collapsible collapsible-collapsed mb-1 w-100" data-collapsible-set="retail-faq">
+                    <h3 class="h5 collapsible-header flex ai-center jc-between mb-0 w-100"><span class="mr-sm">How do subscribers opt in after opting out?</span> <span class="icon-plus text-md"><svg class="icon"><use xlink:href="#icon-plus" /></svg></span></h3>
+                    <p class="collapsible-content m-0 pt-pb-1">Watch the video below to help get up and running with in2Marketplace's powerful marketing platform.</p>
+                  </article>
+                  <!-- FAQ -->
+                  <article class="collapsible collapsible-collapsed mb-1 w-100" data-collapsible-set="retail-faq">
+                    <h3 class="h5 collapsible-header flex ai-center jc-between mb-0 w-100"><span class="mr-sm">How do I create a distribution list?</span> <span class="icon-plus text-md"><svg class="icon"><use xlink:href="#icon-plus" /></svg></span></h3>
+                    <p class="collapsible-content m-0 pt-pb-1">See how we are able to use the latest technologies to make your campaign success.</p>
+                  </article>
+                  <!-- FAQ -->
+                  <article class="collapsible collapsible-collapsed mb-1 w-100" data-collapsible-set="retail-faq">
+                    <h3 class="h5 collapsible-header flex ai-center jc-between mb-0 w-100"><span class="mr-sm">How do I import contacts?</span> <span class="icon-plus text-md"><svg class="icon"><use xlink:href="#icon-plus" /></svg></span></h3>
+                    <p class="collapsible-content m-0 pt-pb-1">Watch the video below to help get up and running with in2Marketplace's powerful marketing platform.</p>
+                  </article>
+                  <!-- FAQ -->
+                  <article class="collapsible collapsible-collapsed w-100" data-collapsible-set="retail-faq">
+                    <h3 class="h5 collapsible-header flex ai-center jc-between mb-0 w-100"><span class="mr-sm">How do I create a custom data field?</span> <span class="icon-plus text-md"><svg class="icon"><use xlink:href="#icon-plus" /></svg></span></h3>
+                    <p class="collapsible-content m-0 pt-pb-1">See how we are able to use the latest technologies to make your campaign success.</p>
+                  </article>
+                </div>
+              </div>
+              <!-- Retail User FAQ Accordion -->
+              <div class="flex flex-d-col jc-between lg-text-left lg-flex-d-row-rev lg-flex-wrap lg-ai-center lg-jc-between">
+                <!-- Retail User FAQ -->
+                <h2 class="all-caps bor-bot-1 bor-bot-s c-blue-40 mb-1-pt5 pb-tiny text-md w-100"><span class="c-blue-90">Retailer User FAQs</span></h2>
+                <!-- FAQ list -->
+                <div class="flex-1 c-blue-70">
+                  <!-- FAQ -->
+                  <article class="collapsible collapsible-collapsed mb-1 w-100" data-collapsible-set="retail-user-faq">
+                    <h3 class="h5 collapsible-header flex ai-center jc-between mb-0 w-100"><span class="mr-sm">How do I get started?</span> <span class="icon-plus text-md"><svg class="icon"><use xlink:href="#icon-plus" /></svg></span></h3>
+                    <p class="collapsible-content m-0 pt-pb-1">Watch the video below to help get up and running with in2Marketplace's powerful marketing platform.</p>
+                  </article>
+                  <!-- FAQ -->
+                  <article class="collapsible collapsible-collapsed mb-1 w-100" data-collapsible-set="retail-user-faq">
+                    <h3 class="h5 collapsible-header flex ai-center jc-between mb-0 w-100"><span class="mr-sm">How does in2M work?</span> <span class="icon-plus text-md"><svg class="icon"><use xlink:href="#icon-plus" /></svg></span></h3>
+                    <p class="collapsible-content m-0 pt-pb-1">See how we are able to use the latest technologies to make your campaign success.</p>
+                  </article>
+                  <!-- FAQ -->
+                  <article class="collapsible collapsible-collapsed mb-1 w-100" data-collapsible-set="retail-user-faq">
+                    <h3 class="h5 collapsible-header flex ai-center jc-between mb-0 w-100"><span class="mr-sm">How do I import contacts?</span> <span class="icon-plus text-md"><svg class="icon"><use xlink:href="#icon-plus" /></svg></span></h3>
+                    <p class="collapsible-content m-0 pt-pb-1">Watch the video below to help get up and running with in2Marketplace's powerful marketing platform.</p>
+                  </article>
+                  <!-- FAQ -->
+                  <article class="collapsible collapsible-collapsed w-100" data-collapsible-set="retail-user-faq">
+                    <h3 class="h5 collapsible-header flex ai-center jc-between mb-0 w-100"><span class="mr-sm">How does in2M work?</span> <span class="icon-plus text-md"><svg class="icon"><use xlink:href="#icon-plus" /></svg></span></h3>
+                    <p class="collapsible-content m-0 pt-pb-1">See how we are able to use the latest technologies to make your campaign success.</p>
+                  </article>
+                </div>
+              </div>
+              <!-- end / left col -->
+            </div>
+            <!-- Right Col -->
+            <div class="w-100 lg-pl-2 lg-w-50">
+              <!-- Application FAQ Accordion -->
+              <div class="flex flex-d-col jc-between mb-3 lg-text-left lg-flex-d-row-rev lg-flex-wrap lg-ai-center lg-jc-between w-100">
+                <!-- Retailer FAQ -->
+                <h2 class="all-caps bor-bot-1 bor-bot-s c-blue-40 mb-1-pt5 pb-tiny text-md w-100"><span class="c-blue-90">Application FAQs</span></h2>
+                <!-- FAQ list -->
+                <div class="flex-1 c-blue-70">
+                  <!-- FAQ -->
+                  <article class="collapsible collapsible-collapsed mb-1 w-100" data-collapsible-set="app-faq">
+                    <h3 class="h5 collapsible-header flex ai-center jc-between mb-0 w-100"><span class="mr-sm">How do subscribers opt in after opting out?</span> <span class="icon-plus text-md"><svg class="icon"><use xlink:href="#icon-plus" /></svg></span></h3>
+                    <p class="collapsible-content m-0 pt-pb-1">Watch the video below to help get up and running with in2Marketplace's powerful marketing platform.</p>
+                  </article>
+                  <!-- FAQ -->
+                  <article class="collapsible collapsible-collapsed mb-1 w-100" data-collapsible-set="app-faq">
+                    <h3 class="h5 collapsible-header flex ai-center jc-between mb-0 w-100"><span class="mr-sm">How do I create a distribution list?</span> <span class="icon-plus text-md"><svg class="icon"><use xlink:href="#icon-plus" /></svg></span></h3>
+                    <p class="collapsible-content m-0 pt-pb-1">See how we are able to use the latest technologies to make your campaign success.</p>
+                  </article>
+                  <!-- FAQ -->
+                  <article class="collapsible collapsible-collapsed mb-1 w-100" data-collapsible-set="app-faq">
+                    <h3 class="h5 collapsible-header flex ai-center jc-between mb-0 w-100"><span class="mr-sm">How do I import contacts?</span> <span class="icon-plus text-md"><svg class="icon"><use xlink:href="#icon-plus" /></svg></span></h3>
+                    <p class="collapsible-content m-0 pt-pb-1">Watch the video below to help get up and running with in2Marketplace's powerful marketing platform.</p>
+                  </article>
+                  <!-- FAQ -->
+                  <article class="collapsible collapsible-collapsed w-100" data-collapsible-set="app-faq">
+                    <h3 class="h5 collapsible-header flex ai-center jc-between mb-0 w-100"><span class="mr-sm">How do I create a custom data field?</span> <span class="icon-plus text-md"><svg class="icon"><use xlink:href="#icon-plus" /></svg></span></h3>
+                    <p class="collapsible-content m-0 pt-pb-1">See how we are able to use the latest technologies to make your campaign success.</p>
+                  </article>
+                </div>
+              </div>
+              <!-- General FAQ Accordion -->
+              <div class="flex flex-d-col jc-between lg-text-left lg-flex-d-row-rev lg-flex-wrap lg-ai-center lg-jc-between">
+                <!-- Retail User FAQ -->
+                <h2 class="all-caps bor-bot-1 bor-bot-s c-blue-40 mb-1-pt5 pb-tiny text-md w-100"><span class="c-blue-90">General FAQs</span></h2>
+                <!-- FAQ list -->
+                <div class="flex-1 c-blue-70">
+                  <!-- FAQ -->
+                  <article class="collapsible collapsible-collapsed mb-1 w-100" data-collapsible-set="general-faq">
+                    <h3 class="h5 collapsible-header flex ai-center jc-between mb-0 w-100"><span class="mr-sm">How do I get started?</span> <span class="icon-plus text-md"><svg class="icon"><use xlink:href="#icon-plus" /></svg></span></h3>
+                    <p class="collapsible-content m-0 pt-pb-1">Watch the video below to help get up and running with in2Marketplace's powerful marketing platform.</p>
+                  </article>
+                  <!-- FAQ -->
+                  <article class="collapsible collapsible-collapsed mb-1 w-100" data-collapsible-set="general-faq">
+                    <h3 class="h5 collapsible-header flex ai-center jc-between mb-0 w-100"><span class="mr-sm">How does in2M work?</span> <span class="icon-plus text-md"><svg class="icon"><use xlink:href="#icon-plus" /></svg></span></h3>
+                    <p class="collapsible-content m-0 pt-pb-1">See how we are able to use the latest technologies to make your campaign success.</p>
+                  </article>
+                  <!-- FAQ -->
+                  <article class="collapsible collapsible-collapsed mb-1 w-100" data-collapsible-set="general-faq">
+                    <h3 class="h5 collapsible-header flex ai-center jc-between mb-0 w-100"><span class="mr-sm">How do I import contacts?</span> <span class="icon-plus text-md"><svg class="icon"><use xlink:href="#icon-plus" /></svg></span></h3>
+                    <p class="collapsible-content m-0 pt-pb-1">Watch the video below to help get up and running with in2Marketplace's powerful marketing platform.</p>
+                  </article>
+                  <!-- FAQ -->
+                  <article class="collapsible collapsible-collapsed w-100" data-collapsible-set="general-faq">
+                    <h3 class="h5 collapsible-header flex ai-center jc-between mb-0 w-100"><span class="mr-sm">How does in2M work?</span> <span class="icon-plus text-md"><svg class="icon"><use xlink:href="#icon-plus" /></svg></span></h3>
+                    <p class="collapsible-content m-0 pt-pb-1">See how we are able to use the latest technologies to make your campaign success.</p>
+                  </article>
+                </div>
+              </div>
+              <!-- end / right col -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end / main-content -->
+    </main>
+    <!-- Footer -->
+    <footer class="site-footer bg-blue-20 c-white text-center md-text-left pt-pb-4" role="contentinfo">
+      <div class="container flex flex-d-col jc-center md-flex-d-row md-ai-center md-jc-between">
+        <!-- top row -->
+        <div class="mb-0 md-flex md-jc-between lg-jc-end">
+          <!-- Footer Contact -->
+          <div class="footer-contact mr-ml-a mb-3 md-ml-0 md-mb-0 md-pr-3 md-w-50">
+            <!-- Logo -->
+            <a class="block mb-sm" href="sales-person.html"><img class="footer-logo" src="../images/UI/in2m-logo-icon-white.svg" alt="in2Marketplace.com" title="in2Marketplace.com"></a>
+            <!-- Copyrights -->
+            <div class="flex jc-center mb-1 md-jc-start">
+              <p class="antialiased mb-0 mr-sm">&copy; 2016 <a class="bor-bot-none c-white" href="http://concordusapps.com/">Concordus</a> / <a class="bor-bot-none c-white"
+                  href="http://6dtech.co.in/">6d</a></p>
+              <a class="mr-sm" href="#">
+                <svg class="icon c-blue-60 mr-ml-0">
+                  <use xlink:href="#icon-facebook" />
+                </svg><span class="sr-only">Find us on Facebook</span></a>
+              <a class="mr-sm" href="#">
+                <svg class="icon c-blue-60 mr-ml-0">
+                  <use xlink:href="#icon-twitter" />
+                </svg><span class="sr-only">Follow us on Twitter</span></a>
+            </div>
+            <!-- Message -->
+            <p class="antialiased mr-ml-a pr-pl-4 text-base md-pr-pl-0">Something about the company should go here. We can talk about whatever we think is best to relate to the potential
+              customer.</p>
+            <p class="c-blue-90 mb-sm">Talk With Us <a class="c-blue-60 text-d-none ml-sm" href="tel:8005551234">(800) 555-1234</a></p>
+            <p class="c-blue-90">Send Email <a class="c-blue-60 text-d-none ml-sm" href="tel:8005551234">contact@in2marketplace.com</a></p>
+          </div>
+          <!-- Footer Links -->
+          <div class="md-flex md-jc-between md-w-50 lg-w-40">
+            <!-- Resources -->
+            <div class="mb-3 md-mb-0 md-pr-2 md-w-60">
+              <h4 class="c-blue-90 mb-sm text-lg">Get Help</h4>
+              <!-- Footer Menus -->
+              <div class="md-flex md-jc-between">
+                <ul class="footer-menu c-blue-60 list-reset mb-0 pl-0 text-md md-text-left">
+                  <li><a href="#">Product Support</a></li>
+                  <li><a href="#">Tutorials</a></li>
+                  <li><a href="#">Documentation</a></li>
+                  <li><a href="#">Terms / Privacy</a></li>
+                  <li class="pt-1">
+                    <div class="search-bar c-blue-60 flex flex-wrap mr-ml-a mw-15em">
+                      <input class="bg-trans bor-2 bor-solid bor-top-2 bor-bot-2 bor-left-2 c-blue-60" id="search-form" type="search" role="search">
+                      <button class="bg-none bor-2 bor-solid bor-top-2 bor-bot-2 bor-left-none c-blue-60" type="submit"><svg class="icon"><use xlink:href="#icon-search" /></svg>
+                          </button>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Contact -->
+            <div class="md-jc-end md-mb-0">
+              <h4 class="c-blue-90 mb-sm text-lg">Connect</h4>
+              <ul class="footer-menu c-blue-60 list-reset mb-0 pl-0 text-md">
+                <li><a href="#">Rep Finder</a></li>
+                <li><a href="#">Request Demo</a></li>
+                <li><a href="#">View Blog</a></li>
+                <li><a href="#">Join Team</a></li>
+                <li class="mr-ml-a pt-1 mw-15em"><a class="btn-md all-caps bg-trans c-blue-50 bor-2 bor-solid text-sm w-100" href="sp-login.html">Login</a></li>
+              </ul>
+            </div>
+            <!-- end / -->
+          </div>
+          <!-- end / bottom row -->
+        </div>
+      </div>
+    </footer>
+    <!-- end / site-wrap-->
+  </div>
+  
+  <!-- Demo Video -->
+  <div class="remodal clear-modal video-modal" data-remodal-id="demo-video" role="dialog" aria-labelledby="demo-video-title"
+    aria-describedby="demo-video-desc">
+    <!-- Close Button -->
+    <button data-remodal-action="close" class="remodal-close" aria-label="Close">
+        <svg class="icon">
+          <use xlink:href="#icon-cancel" />
+        </svg>
+      </button>
+    <!-- Modal Content -->
+    <div class="modal-content">
+      <!-- Title -->
+      <h2 id="demo-video-title" class="sr-only">in2Marketplace.com Demo Video</h2>
+      <!-- Description -->
+      <div id="demo-video-desc">
+        <!-- Video -->
+        <div class="video mr-ml-a">
+          <div class="media-wrap">
+            <iframe class="lazyload" width="100%" data-src="https://www.youtube.com/embed/ElAJbhkH2lU?rel=0" frameborder="0" allowfullscreen></iframe>
+            <noscript>
+              <iframe width="100%" src="https://www.youtube.com/embed/ElAJbhkH2lU?rel=0" frameborder="0" allowfullscreen></iframe>
+            </noscript>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Buttons -->
+    <div class="modal-buttons pt-2">
+      <a class="btn-round all-caps bg-blue-40 c-white text-md" href="sp-pricing.html">Get Your 14 Day Free Trial</a>
+    </div>
+  </div>
+ 
+  <!-- Contact Us form -->
+  <div class="remodal quick-contact-form" data-remodal-id="help-contact-form" role="dialog" aria-labelledby="help-contact-title"
+    aria-describedby="help-contact-desc">
+    <!-- Close Button -->
+    <button data-remodal-action="close" class="remodal-close" aria-label="Close">
+        <svg class="icon">
+          <use xlink:href="#icon-cancel" />
+        </svg>
+      </button>
+    <!-- Modal Content -->
+    <div class="modal-content bg-blue-30 c-white">
+      <!-- Title -->
+      <h2 id="help-contact-title" class="text-center">Let us know how we can better help you use the in2M platform or the website.</h2>
+      <!-- Description -->
+      <div id="help-contact-desc" class="post-text">
+        <p class="text-center mr-ml-a mw-25em">Please fill out the form so we can get a better understanding of the problem.</p>
+        <!-- Form -->
+        <form name="HelpContactForm">
+          <div class="form-wrap text-lg">
+            <!-- Username -->
+            <div class="form-row mb-1">
+              <label for="" id="-ariaLabel">Name <span class="req-mark">*</span></label>
+              <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="required" title="This is a required field" required>
+            </div>
+            <!-- Email -->
+            <div class="form-row mb-1">
+              <label for="" id="-ariaLabel">Email <span class="req-mark">*</span></label>
+              <input id="" name="" type="email" autocorrect="off" autocapitalize="none" spellcheck="false" aria-labelledby="-ariaLabel"
+                class="required" title="This is a required field" required>
+            </div>
+            <!-- Issue -->
+            <div class="form-row">
+              <label for="" id="-ariaLabel">User Issue</label>
+              <textarea maxlength="200" aria-labelledby="-ariaLabel"></textarea>
+            </div>
+            <!-- Remember Me / Forgot Password -->
+            <div class="form-row form-helpers flex flex-wrap jc-between mb-1 pt-1">
+              <!-- Critical Marker -->
+              <label>
+                    <input type="checkbox" name="opt1" id="opt1">
+                    <span class="text-sm pl-tiny">Mark as Urgent</span>
+                  </label>
+              <!-- Help Link -->
+              <label>
+                    <span class="text-md"><a class="c-blue-60" href="#">Need To Talk?</a></span>
+                  </label>
+            </div>
+            <!-- Buttons -->
+            <div class="form-row button-wrap flex flex-d-col-rev sm-flex-d-row sm-jc-center">
+              <button onclick="$('form[name=" DisputeForm "] input').val('');" class="btn-outline all-caps cancel-button mb-1 sm-mb-0 sm-mr-sm"
+                type="reset" data-remodal-action="close" aria-label="Close">cancel</button>
+              <input class="btn-primary" type="submit" value="Send">
+            </div>
+            <!-- end / form-wrap -->
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+    
+  <!-- Dependencies -->
+  <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../js/libs/jquery.1.11.2.min.js"><\/script>')</script>
+  <script src="../js/min/script.min.js"></script>
+</body>
+
+</html>

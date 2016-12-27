@@ -88,7 +88,7 @@
     margin-right: 0;
   }	
   & > ul {
-    //padding-top: 1.25rem;
+    padding-top: 1.25rem;
     display: flex;
     flex-wrap: wrap; 
     width: 100%;
@@ -189,6 +189,7 @@
 .nav-toggle {
 	display: block;
 	border-radius: 4px;
+	box-shadow: none;
   height: 40px;
   padding: 0;
   position: relative;
@@ -326,6 +327,11 @@ $box-size: 40px;
       }
     }
   }
+  
+  &:hover,
+  &:focus {
+    box-shadow: none;
+  }
         
 }
 
@@ -353,8 +359,10 @@ $box-size: 40px;
   
   // Nav CTA
 
-  .nav-cta {
-    margin-bottom: .5rem;    
+  .nav-cta {  
+    //margin-bottom: .5rem;
+    //padding-top: 1em; 
+    //text-align: center;     
   }
   
   .btn-cta {
@@ -429,7 +437,7 @@ $box-size: 40px;
   
   .nav-collapse {
     //background-color: transparent;
-    font-size: 1.125rem;
+    //font-size: 1.125rem;
     margin-bottom: 0; 
 		& > ul {	
 			display: flex;
@@ -476,7 +484,7 @@ $box-size: 40px;
       	}
     	}
     	&:last-child {
-      	margin-right: -.75em;  
+      	//margin-right: -.75em;  
     	}
 		  &:hover > a:not([class*="btn"]),
 		  &.active > a:not([class*="btn"])  {
@@ -498,9 +506,13 @@ $box-size: 40px;
 	  }
 	  
 	  .nav-cta {
-  	  padding-top: 0; 
-  	  padding-bottom: 0;  
-      order: 1;  
+  	  //padding-top: 0; 
+  	  a {
+    	  //@include button-primary;
+     	  //background-color: $blue-50;
+    	  //font-size: $text-base;
+    	  //@extend .btn-md;
+  	  } 
     }
     
     .btn-cta {
