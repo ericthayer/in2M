@@ -17,6 +17,9 @@
 <![endif]-->
       <link rel="apple-touch-icon" href="../images/icons/favicon-180.png">
       <link rel="shortcut icon" href="../favicon.ico">
+      <!-- DataTables.net styles -->
+      <link rel="stylesheet" href="//cdn.datatables.net/v/dt/dt-1.10.12/af-2.1.2/b-1.2.2/b-colvis-1.2.2/b-html5-1.2.2/r-2.1.0/rr-1.1.2/sc-1.4.2/se-1.2.0/datatables.min.css">
+      <!-- Base Styles -->
       <link rel="stylesheet" href="../css/styles.css">
       <!-- Non-Critical CSS -->
       <script>
@@ -63,7 +66,7 @@
             	<div class="post-text"> 
               	<h2 class="title">Sample File</h2>
               	<p>Take a look at the sample Customer Information file.</p>
-              	<button class="btn" data-remodal-target="sample-file">View Sample <svg class="icon"><use xlink:href="#icon-eye" /></svg></button>
+              	<button class="btn">View Sample <svg class="icon"><use xlink:href="#icon-eye" /></svg></button>
             	</div>
             	<!-- Upload Customer File -->
             	<div class="file-dropzone">
@@ -78,9 +81,43 @@
             	</div>
           	</div>
           </section>
+          
+          <!-- Consumer Table -->          
+          <section class="data-table pt-pb-1">
+            <div class="container">
+              
+              <!-- Consumers -->
+      		    <h3 class="function-header"><span class="mb-sm sm-mb-0">View Consumers</span></h3>
+      		    
+      		    <!-- Data -->
+              <table id="manage-consumers" class="display responsive nowrap" cellspacing="0" width="100%">
+                <thead>
+                  <tr>               
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Mobile</th>
+                    <th>Alt. Mobile</th>
+                    <th>Email</th>
+                    <th>Alt. Mobile</th>
+                    <th>D.O.B.</th>
+                    <th>Profile</th>
+                    <th>Group</th>
+                    <th>Location</th>                    
+                    <th>FB ID</th>
+                    <th>Twitter ID</th>
+                    <th>Comments</th>
+                    <th>Status</th>
+                    <th class="manage-th">Manage</th>
+                  </tr>
+                </thead>
+              </table>
+            
+             <!-- end / -->
+            </div>
+          </section>
 
           <!-- Form - Add Retail User -->
-          <section class="mod-block pt-1 pb-2">
+          <section class="admin-form pt-1 pb-2">
             <div class="container">
 
               <!-- Form Build -->
@@ -88,18 +125,17 @@
                 <form name="AddRetailUser">
                   
                   <!-- Form Header -->
-                  <div class="bor-bot-1 bor-c-DDD mb-1 pb-sm sm-flex sm-ai-center sm-jc-between">
+                  <div class="function-header">
                     
                     <h2 class="text-center text-lg mb-0 sm-text-left sm-mr-1 sm-w-60">Add Consumer</h2>
                     
                     <!-- Consumer ID -->
-                    <div class="form-row text-center mb-1 sm-text-sm sm-flex sm-flex-g-0 sm-ai-end sm-jc-between sm-mb-0 sm-w-100">
-                     <label for="-ariaLabel" class="sm-text-right sm-pr-sm sm-w-80">Consumer ID</label>
+                    <div class="form-row text-center mb-1 sm-text-sm sm-flex sm-flex-g-0 sm-ai-center sm-jc-between sm-mb-0 sm-w-100">
+                     <label for="-ariaLabel" class="inline-label sm-text-right sm-pr-sm sm-w-80">Consumer ID</label>
                      <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="input-sm mw-8em disabled" value="3215468" disabled>
                     </div>
 
-                  </div>
-                  
+                  </div>                  
                   
                   <!-- Form Build -->
                   <div class="form-wrap">
@@ -227,175 +263,14 @@
                       <!-- cancel button -->
                       <button class="btn-cancel" type="reset">Cancel</button>
                       <!-- save button (primary) -->
-                      <input class="btn-primary" type="submit" value="Save" data-remodal-target="account-created">
+                      <input class="btn-primary" type="submit" value="Save" data-remodal-target="save-confirm">
                     </div>
 
                     <!-- end / form-wrap -->
                   </div>
                 </form>
               </div>
-              
-              <!-- Retail Users Table -->
-              <div class="form-section text-center mr-ml-a">
-                
-                <div class="bor-bot-1 bor-c-DDD mb-1 pb-sm sm-flex sm-ai-center sm-jc-between">
-                    
-                  <h2 class="text-center text-md mb-sm sm-text-left sm-mr-1 sm-mb-0 sm-w-60">Current Leads</h2>
-                
-                  <!-- Pager -->
-                  <div class="pager flex jc-between sm-jc-end w-100">
-                    <!-- Page Links -->
-                    <div class="pager-links flex flex-wrap jc-between">
-                      <!-- First/Prev -->
-                      <div class="left-control flex w-a">
-                        <!-- First -->
-                        <a href="#">|<svg class="icon mr-ml-0"><use xlink:href="#icon-caret" /><span class="sr-only">first page</span></svg></a>
-                        <!-- Prev -->
-                        <a href="#"><svg class="icon mr-0"><use xlink:href="#icon-caret" /><span class="sr-only">previous page</span></svg></a>
-                      </div>
-                      <!-- Page Controls -->
-                      <div class="page-controls flex-g-0 pr-pl-sm w-60">
-                        <ul class="pager-list flex jc-center w-100">
-                          <li><a href="#">1</a></li>
-                          <li><a href="#">2</a></li>
-                          <li><a href="#">3</a></li>
-                          <li><a href="#">4</a></li>
-                          <li><a href="#">5</a></li>
-                        </ul>
-                      </div>                      
-                      <!-- Next/Last -->
-                      <div class="right-control flex w-a">
-                        <!-- Next -->
-                        <a href="#"><svg class="icon ml-0 rotate-180"><use xlink:href="#icon-caret" /><span class="sr-only">next page</span></svg></a>
-                        <!-- Last -->
-                        <a href="#"><svg class="icon mr-ml-0 rotate-180"><use xlink:href="#icon-caret" /><span class="sr-only">last page</span>|</svg></a>
-                      </div>
-                    </div>
-                    <!-- Pager Icons -->
-                    <div class="pager-icons pl-1 w-a">
-                      <a href="#"> <svg class="icon text-md"><use xlink:href="#icon-full-screen" /><span class="sr-only">icon</span></svg> </a>
-                    </div>
-                  </div>
-                </div>
-                
-                <!-- Data Table -->
-                <table class="rtable mr-ml-a mb-1">
-                  <thead>
-                    <tr>
-                      <th>ID</th>
-                      <th>Biz Name</th>
-                      <th>Biz Type</th>
-                      <th>Contact</th>
-                      <th>Email</th>
-                      <th>Contact Number</th>
-                      <th>Gender</th>
-                      <th>Address</th>
-                      <th>Branches</th>
-                      <th>Users</th>
-                      <th>Interest</th>
-                      <th>Current System</th>
-                      <th>Mode</th>
-                      <th>Action</th>
-                      <th>Comments</th>
-                      <th>Manage</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>3123456</td>
-                      <td>Business Name, LLC.</td>
-                      <td>Farm</td>
-                      <td>Dan</td>
-                      <td><a href="mailto:contact@company.com">contact@company.com</a></td>
-                      <td><a href="tel:9603451234"></a>960-345-1234</td>
-                      <td>M</td>                      
-                      <td class="cell-overflow">1234 Street Rd. Sacramento CA 95678</td>
-                      <td>1</td>                      
-                      <td>3</td>
-                      <td>Mobile</td>
-                      <td>Excel</td>
-                      <td>Email</td>
-                      <td>Call</td>
-                      <td class="cell-overflow">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
-                      <td><a href="#" class="all-caps text-b"><svg class="icon"><use xlink:href="#icon-pencil" /></svg> Edit </a></td>
-                    </tr>
-                    <tr>
-                      <td>7654321</td>
-                      <td>Name of Business, Inc.</td>
-                      <td>Car Wash</td>
-                      <td>Jennifer</td>
-                      <td><a href="mailto:contact@company.com">contact@company.com</a></td>
-                      <td><a href="tel:9603451234"></a>720-555-7890</td>
-                      <td>F</td>                      
-                      <td class="cell-overflow">56789 Longstreet Lane State ST 80123</td>
-                      <td>4</td>                      
-                      <td>20</td>
-                      <td>Marketing</td>
-                      <td>None</td>
-                      <td>Call</td>
-                      <td>Visit</td>
-                      <td class="cell-overflow">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
-                      <td><a href="#" class="all-caps text-b"><svg class="icon"><use xlink:href="#icon-pencil" /></svg> Edit </a></td>
-                    </tr>
-                    <tr>
-                      <td>3123456</td>
-                      <td>Business Name, LLC.</td>
-                      <td>Farm</td>
-                      <td>Dan</td>
-                      <td><a href="mailto:contact@company.com">contact@company.com</a></td>
-                      <td><a href="tel:9603451234"></a>960-345-1234</td>
-                      <td>M</td>                      
-                      <td class="cell-overflow">1234 Street Rd. Sacramento CA 95678</td>
-                      <td>1</td>                      
-                      <td>3</td>
-                      <td>Mobile</td>
-                      <td>Excel</td>
-                      <td>Email</td>
-                      <td>Call</td>
-                      <td class="cell-overflow">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
-                      <td><a href="#" class="all-caps text-b"><svg class="icon"><use xlink:href="#icon-pencil" /></svg> Edit </a></td>
-                    </tr>
-                    <tr>
-                      <td>7654321</td>
-                      <td>Name of Business, Inc.</td>
-                      <td>Car Wash</td>
-                      <td>Jennifer</td>
-                      <td><a href="mailto:contact@company.com">contact@company.com</a></td>
-                      <td><a href="tel:9603451234"></a>720-555-7890</td>
-                      <td>F</td>                      
-                      <td class="cell-overflow">56789 Longstreet Lane State ST 80123</td>
-                      <td>4</td>                      
-                      <td>20</td>
-                      <td>Marketing</td>
-                      <td>None</td>
-                      <td>Call</td>
-                      <td>Visit</td>
-                      <td class="cell-overflow">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
-                      <td><a href="#" class="all-caps text-b"><svg class="icon"><use xlink:href="#icon-pencil" /></svg> Edit </a></td>
-                    </tr>
-                    <tr>
-                      <td>3123456</td>
-                      <td>Business Name, LLC.</td>
-                      <td>Farm</td>
-                      <td>Dan</td>
-                      <td><a href="mailto:contact@company.com">contact@company.com</a></td>
-                      <td><a href="tel:9603451234"></a>960-345-1234</td>
-                      <td>M</td>                      
-                      <td class="cell-overflow">1234 Street Rd. Sacramento CA 95678</td>
-                      <td>1</td>                      
-                      <td>3</td>
-                      <td>Mobile</td>
-                      <td>Excel</td>
-                      <td>Email</td>
-                      <td>Call</td>
-                      <td class="cell-overflow">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
-                      <td><a href="#" class="all-caps text-b"><svg class="icon"><use xlink:href="#icon-pencil" /></svg> Edit </a></td>
-                    </tr>                 
-                  </tbody>
-                </table>
-
-              </div>
-
+ 
               <!-- end / -->
             </div>
           </section>
@@ -409,10 +284,18 @@
         <!-- end / site-wrap-->
       </div>
       
-      <!-- Account Created Confirmation -->
-      <div class="remodal alert-success" data-remodal-id="account-created" role="dialog" aria-labelledby="account-created-title" aria-describedby="account-created-desc">
+      <!-- Consumer Saved Confirmation -->
+      <div class="remodal alert-success" data-remodal-id="save-confirm" role="dialog" aria-labelledby="save-confirm-title" aria-describedby="save-confirm-desc">
         
-        <div data-replace="../global-partials/modals/modal-account-created-content.html"></div>
+        <div data-replace="../global-partials/modals/modal-save-confirm-content.html"></div>
+        
+        <!-- end / -->
+      </div>
+      
+      <!-- File Sample -->
+      <div class="remodal alert-success" data-remodal-id="sample-file" role="dialog" aria-labelledby="sample-file-title" aria-describedby="sample-file-desc">
+        
+        <div data-replace="../global-partials/modals/modal-file-sample-content.html"></div>
         
         <!-- end / -->
       </div>
@@ -440,7 +323,7 @@
       <script src="../js/min/script.min.js"></script>
       <script src="../js/libs/jquery-ui.datepicker.js"></script>
       <script src="../js/libs/dropzone.js"></script>
-       <script>
+      <script>
         Dropzone.options.fileTest = {
           paramName: "file",
           uploadMultiple: false,
@@ -448,13 +331,45 @@
           dictCancelUpload: "cancel",
           dictRemoveFile: "remove",
           maxFilesize: 2, // MB
+          //acceptedFiles: ".csv,.pdf",
           accept: function(file, done) {
-            if (file.name == "justinbieber.jpg") {
-              done("Naha, you don't.");
+            if (file.type != "text/csv" && file.type != "application/pdf" && file.type != "application/vnd.ms-excel") {
+              done('File not supported!');
+              $('.dz-image, .dz-details').hide();
             }
-            else { done(); }
+            else { 
+              done('File accepted!');                            
+            }
           }
         };
-      </script>
+      </script> 
+      <!-- DataTables -->
+      <script src="//cdn.datatables.net/v/dt/dt-1.10.12/af-2.1.2/b-1.2.2/b-colvis-1.2.2/b-html5-1.2.2/r-2.1.0/rr-1.1.2/sc-1.4.2/se-1.2.0/datatables.min.js"></script>
+    <script>
+      // Manage Consumers
+      $('#manage-consumers').DataTable({
+        responsive:     true,
+        keys:           true,
+        ajax:           'data/retail-consumer-data.txt',
+        deferRender:    true,
+        columns: [
+          { "data": "id" },
+          { "data": "consumer_name" },
+          { "data": "primary_phone" },
+          { "data": "alt_phone" },          
+          { "data": "primary_email" },
+          { "data": "alt_email" },
+          { "data": "dob" },
+          { "data": "profile" },
+          { "data": "group" },
+          { "data": "location" },
+          { "data": "fb_id" },
+          { "data": "twitter_id" },
+          { "data": "comments" },
+          { "data": "status" },
+          { "data": "manage" }
+        ]        
+      });
+    </script>
     </body>
   </html>

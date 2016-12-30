@@ -27,66 +27,6 @@
       <!--[if lt IE 10]>
       <p class="update-browser">This browser version is not recommended. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
       <![endif]-->
-      
-      <!-- Quick Contact Form -->
-      <section class="quick-contact-form clear-form bg-blue-g-4 c-white w-100 slide-panel slide-down is-hidden">
-        <button class="btn-reset text-lg" onclick="$('.quick-contact-form').toggleClass('is-hidden');">
-          <svg class="icon mr-ml-0">
-            <use xlink:href="#icon-cancel" />
-          </svg>
-        </button>
-        <div class="container pt-2 pb-3">
-          <h2 class="text-center mb-tiny">Talk With Us</h2>
-          <p class="h5 text-center mb-1">Let us know how we can help your business.</p>
-          <!-- Form -->
-          <form name="QuickContactForm" class="mr-ml-a mw-25em whitney-med">
-            <div class="form-wrap">
-              <!-- Name -->
-              <div class="form-row mb-1">
-                <label for="" id="-ariaLabel">Name</label>
-                <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="bg-none bor-2 bor-solid bor-c-white required" title="This is a required field"
-                  required>
-              </div>
-              <div class="sm-flex sm-jc-between">
-                <!-- Email -->
-                <div class="form-row mb-1 sm-mr-tiny sm-w-50">
-                  <label for="" id="-ariaLabel">Email</label>
-                  <input id="" name="" type="email" autocorrect="off" autocapitalize="none" spellcheck="false" aria-labelledby="-ariaLabel"
-                    class="bg-none bor-2 bor-solid bor-c-white required" title="This is a required field" required>
-                </div>
-                <!-- Phone -->
-                <div class="form-row mb-1 sm-ml-tiny sm-w-50">
-                  <label for="" id="-ariaLabel">Phone</label>
-                  <input id="" name="" type="tel" pattern="[0-9]*" maxlength="10" aria-labelledby="-ariaLabel" class="bg-none bor-2 bor-solid bor-c-white required"
-                    title="This is a required field" required>
-                </div>
-              </div>
-              <!-- Message -->
-              <div class="form-row mb-1">
-                <label for="-ariaLabel">Message</label>
-                <textarea maxlength="200" aria-labelledby="-ariaLabel" class="bg-none bor-2 bor-solid bor-c-white"></textarea>
-              </div>
-              <!-- Helpers -->
-              <div class="form-row form-helpers flex flex-wrap jc-between mb-1">
-                <!-- Critical Marker -->
-                <label>
-                  <input type="checkbox" name="opt1" id="opt1">
-                  <span class="text-sm pl-tiny">Call Back ASAP</span>
-                </label>
-                <!-- Help Link -->
-                <label>
-                  <span class="text-sm"><a class="c-white" href="#">Need Help?</a></span>
-                </label>
-              </div>
-              <!-- Buttons -->
-              <div class="form-row button-wrap flex flex-d-col-rev sm-flex-d-row sm-jc-center">
-                <input class="btn all-caps bg-blue-40 c-white flex-g-1 pt-pb-1" type="submit" value="send">
-              </div>
-              <!-- end / form-wrap -->
-            </div>
-          </form>
-        </div>
-      </section>
         
       <!-- Site Wrap  -->
       <div class="site-wrap">
@@ -98,7 +38,7 @@
             <!-- Site Logo -->
             <h1 class="site-title"><a href="index.html"><img class="header-logo mw-8em" src="../images/UI/in2m-logo-white.svg" alt="in2Marketplace.com"><span class="sr-only">in2Marketplace.com</span></a></h1>
             <button id="nav-toggle" class="nav-toggle-html bg-none" aria-hidden="false" aria-expanded="false">
-              <div class="nav-icon c-white"></div>
+              <div class="nav-icon c-white"><span>Menu</span></div>
             </button>
             <!-- Main Nav -->
             <section class="main-nav flex flex-wrap ai-center jc-center sm-flex-g-1 tc-white" role="navigation">
@@ -116,11 +56,11 @@
                     <a href="support.html">Support</a>
                   </li>
                   <li>
-                    <a data-remodal-target="demo-video">Demo</a>
+                    <a href="#" data-remodal-target="demo-video">Demo</a>
                   </li>
                   <li class="inline-login-link"><a href="login.html">Login</a></li>
                   <li class="nav-cta">
-                    <a class="btn-round btn-cta bg-blue-50 all-caps c-white mr-0 mw-20em pr-pl-1" href="#" onclick="$('.quick-contact-form.slide-panel').toggleClass('is-hidden');">Contact</a>
+                    <a href="#" data-remodal-target="quick-contact-form">Contact</a>
                   </li>                  
                   <!-- end / -->
                 </ul>
@@ -149,7 +89,7 @@
                     <a href="support.html">Support</a>
                   </li>
                   <li>
-                    <a data-remodal-target="demo-video">Demo</a>
+                    <a href="#" data-remodal-target="demo-video">Demo</a>
                   </li>
                   <li class="inline-login-link"><a href="login.html">Login</a></li>                  
                   <!-- end / -->
@@ -579,95 +519,26 @@
       </div>
       
       <!-- Demo Video -->
-      <div class="remodal clear-modal video-modal" data-remodal-id="demo-video" role="dialog" aria-labelledby="demo-video-title" aria-describedby="demo-video-desc">
-        <!-- Close Button -->
-        <button data-remodal-action="close" class="remodal-close" aria-label="Close">
-          <svg class="icon">
-            <use xlink:href="#icon-cancel" />
-          </svg>
-        </button>
-        <!-- Modal Content -->
-        <div class="modal-content">
-          <!-- Title -->
-          <h2 id="demo-video-title" class="sr-only">in2Marketplace.com Demo Video</h2>
-          <!-- Description -->
-          <div id="demo-video-desc">
-            <!-- Video -->
-            <div class="video mr-ml-a">
-              <div class="media-wrap">
-                <iframe class="lazyload" width="100%" data-src="https://www.youtube.com/embed/ElAJbhkH2lU?rel=0" frameborder="0" allowfullscreen></iframe>
-                <noscript><iframe width="100%" src="https://www.youtube.com/embed/ElAJbhkH2lU?rel=0" frameborder="0" allowfullscreen></iframe></noscript>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Modal Buttons -->
-        <div class="modal-buttons pt-2">
-          <a class="btn-round all-caps bg-blue-40 c-white text-md" href="pricing.html">Get Your 14 Day Free Trial</a>
-        </div>
+      <div class="remodal video-modal" data-remodal-id="demo-video" role="dialog" aria-labelledby="demo-video-title" aria-describedby="demo-video-desc">
+        
+        <div data-replace="../global-partials/modals/modal-demo-video-content.html"></div>
+        
+        <!-- end / -->
       </div>
       
-      <!-- Contact Us form -->
-      <div class="remodal quick-contact-form" data-remodal-id="help-contact-form" role="dialog" aria-labelledby="help-contact-title" aria-describedby="help-contact-desc">
-        <!-- Close Button -->
-        <button data-remodal-action="close" class="remodal-close" aria-label="Close">
-          <svg class="icon">
-            <use xlink:href="#icon-cancel" />
-          </svg>
-        </button>
-        <!-- Modal Content -->
-        <div class="modal-content bg-blue-30 c-white">
-          <!-- Title -->
-          <h2 id="help-contact-title" class="text-center">Let us know how we can better help you use the in2M platform or the website.</h2>
-          <!-- Description -->
-          <div id="help-contact-desc" class="post-text">
-            <p class="text-center mr-ml-a mw-25em">Please fill out the form so we can get a better understanding of the problem.</p>
-            <!-- Form -->
-            <form name="HelpContactForm">
-              <div class="form-wrap text-lg">
-                <!-- Username -->
-                <div class="form-row mb-1">
-                  <label for="" id="-ariaLabel">Name <span class="req-mark">*</span></label>
-                  <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="required" title="This is a required field" required>
-                </div>
-                <!-- Email -->
-                <div class="form-row mb-1">
-                  <label for="" id="-ariaLabel">Email <span class="req-mark">*</span></label>
-                  <input id="" name="" type="email" autocorrect="off" autocapitalize="none" spellcheck="false" aria-labelledby="-ariaLabel" class="required" title="This is a required field" required>
-                </div>
-                <!-- Issue -->
-                <div class="form-row">
-                  <label for="" id="-ariaLabel">User Issue</label>
-                  <textarea maxlength="200" aria-labelledby="-ariaLabel"></textarea>
-                </div>
-                <!-- Remember Me / Forgot Password -->
-                <div class="form-row form-helpers flex flex-wrap jc-between mb-1 pt-1">
-                  <!-- Critical Marker -->
-                  <label>
-                  <input type="checkbox" name="opt1" id="opt1">
-                  <span class="text-sm pl-tiny">Mark as Urgent</span>
-                  </label>
-                  <!-- Help Link -->
-                  <label>
-                  <span class="text-md"><a class="c-blue-60" href="#">Need To Talk?</a></span>
-                  </label>
-                </div>
-                <!-- Buttons -->
-                <div class="form-row button-wrap flex flex-d-col-rev sm-flex-d-row sm-jc-center">
-                  <button onclick="$('form[name=" DisputeForm "] input').val('');" class="btn-outline all-caps cancel-button mb-1 sm-mb-0 sm-mr-sm" type="reset" data-remodal-action="close" aria-label="Close">cancel</button>
-                  <input class="btn-primary" type="submit" value="Send">
-                </div>
-                <!-- end / form-wrap -->
-              </div>
-            </form>
-          </div>
-        </div>
+      <!-- Contact Us form (modal) -->
+      <div class="remodal quick-contact-form" data-remodal-id="quick-contact-form" role="dialog" aria-labelledby="quick-contact-title"
+        aria-describedby="quick-contact-desc">
+                
+        <div data-replace="../global-partials/modals/modal-contact-content.html"></div>
+        
+        <!-- end / -->
       </div>
+      
       <!-- Dependencies -->
       <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
       <script>window.jQuery || document.write('<script src="../js/libs/jquery.1.11.2.min.js"><\/script>')</script>
       <script src="../js/min/script.min.js"></script>
-<!--       <script src="../js/libs/headroom.js"></script> -->
       <script>
         $('.plan-discount-button').on('click', function() {
           $(this).parent().find('.plan-discount-button').removeClass('active');

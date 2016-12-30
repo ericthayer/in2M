@@ -8,46 +8,27 @@ body {
   
 }
 
-// Container Styles
+// *** container classes : set in utilities/mixins.scss *** //
 
+// container base styles
 .container,
 .container-flex,
 .container-fluid {
-  margin: 0 auto;
-  width: 100%;  
+  @include container;  
 }
 
+// container max-width
+.container, .container-flex {
+  @include container-width;
+}
+
+// container padding
 .container,
-.container-flex {
-  max-width: 65.00em;
-  // > 2000
-  @media (min-width: $break-xxl-screen) {
-    max-width: 100.00em;
-  }    
+.container-fluid {
+  @include container-padding;
 }
 
-.container,
-.container-fluid {	
-	padding-right: 1.5rem;
-  padding-left: 1.5rem;   	
-	// > 640
-	@media (min-width: $break-ml-phone) {
-  	padding-right: 2rem;
-  	padding-left: 2rem;   
-	}
-	// > 1600
-	@media (min-width: $break-xl-screen) {
-  	padding-right: 3rem;
-  	padding-left: 3rem;  
-	}
-}
-
+// flex container (used w/ .flex-grid & .flex-layout)
 .container-flex {
-  padding-right: 1rem;
-  padding-left: 1rem;
-  // > 480
-  @media (min-width: $break-sm-phone) {
-    padding-right: 0;
-    padding-left: 0;  
-  }
+  @include container-flex;
 }

@@ -7,17 +7,26 @@
     width: 2rem; 
   }
   input[type='search'] {
-    //padding: .35em .5em; 
+    padding: .5em; 
   }
   .nav-collapse & {
     display: block; 
   }
+  
+  
   // > 640
   @media (min-width: $break-ml-phone) {
     display: block;
     .nav-collapse & {
       display: none; 
-    }  
+    }
+  }
+  // < 640
+  @media (max-width: $break-ml-phone) {
+    .container {
+      padding-right: 0;
+      padding-left: 0;  
+    }
   }
 }
 

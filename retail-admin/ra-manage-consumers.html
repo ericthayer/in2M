@@ -22,7 +22,7 @@
       <!-- Base Styles -->
       <link rel="stylesheet" href="../css/styles.css">
       <!-- Non-Critical CSS - loadCSS: load a CSS file asynchronously. [c]2016 @scottjehl, Filament Group, Inc. Licensed MIT -->
-      <script>(function(a){var b=function(c,k,d){var l=a.document;var m=l.createElement("link");var e;if(k){e=k}else{var i=(l.body||l.getElementsByTagName("head")[0]).childNodes;e=i[i.length-1]}var f=l.styleSheets;m.rel="stylesheet";m.href=c;m.media="only x";function j(n){if(l.body){return n()}setTimeout(function(){j(n)})}j(function(){e.parentNode.insertBefore(m,(k?e:e.nextSibling))});var h=function(o){var n=m.href;var p=f.length;while(p--){if(f[p].href===n){return o()}}setTimeout(function(){h(o)})};function g(){if(m.addEventListener){m.removeEventListener("load",g)}m.media=d||"all"}if(m.addEventListener){m.addEventListener("load",g)}m.onloadcssdefined=h;h(g);return m};if(typeof exports!=="undefined"){exports.loadCSS=b}else{a.loadCSS=b}}(typeof global!=="undefined"?global:this));loadCSS("../css/async.css");</script>
+      <script>(function(a){var b=function(c,k,d){var l=a.document;var m=l.createElement("link");var e;if(k){e=k}else{var i=(l.body||l.getElementsByTagName("head")[0]).childNodes;e=i[i.length-1]}var f=l.styleSheets;m.rel="stylesheet";m.href=c;m.media="only x";function j(n){if(l.body){return n()}setTimeout(function(){j(n)})}j(function(){e.parentNode.insertBefore(m,(k?e:e.nextSibling))});var h=function(o){var n=m.href;var p=f.length;while(p--){if(f[p].href===n){return o()}}setTimeout(function(){h(o)})};function g(){if(m.addEventListener){m.removeEventListener("load",g)}m.media=d||"all"}if(m.addEventListener){m.addEventListener("load",g)}m.onloadcssdefined=h;h(g);return m};if(typeof exports!=="undefined"){exports.loadCSS=b}else{a.loadCSS=b}}(typeof global!=="undefined"?global:this));loadCSS("../css/async.css");loadCSS("../css/scss/vendor/jquery-ui/jquery-ui.css");</script>
     </head>
 
     <body class="logged-in retail-admin">
@@ -56,26 +56,55 @@
             </div>
           </section>
           
-          <!-- Sales Person Table -->          
-          <section class="data-table pt-3 pb-1">
-            <div class="container mw-56em">
+          <!-- File Uploader -->
+          <section class="file-uploader">
+          	<div class="container">
+            	<!-- View Sample File -->
+            	<div class="post-text"> 
+              	<h2 class="title">Sample File</h2>
+              	<p>Take a look at the sample Customer Information file.</p>
+              	<button class="btn">View Sample <svg class="icon"><use xlink:href="#icon-eye" /></svg></button>
+            	</div>
+            	<!-- Upload Customer File -->
+            	<div class="file-dropzone">
+              	<h2 class="title">Upload Consumer File</h2>
+              	<!-- File Upload -->
+              	<form action="/file-upload" class="dropzone upload-form" id="fileTest">
+                  <div class="fallback file-drop-area">
+                    <input name="file" type="file" multiple />
+                  </div>
+                  
+                </form>
+            	</div>
+          	</div>
+          </section>
+          
+          <!-- Consumer Table -->          
+          <section class="data-table pt-pb-1">
+            <div class="container">
               
-              <!-- Group Sales Persons -->
+              <!-- Consumers -->
       		    <h3 class="function-header"><span class="mb-sm sm-mb-0">View Consumers</span></h3>
       		    
-      		    <!-- Package Data -->
+      		    <!-- Data -->
               <table id="manage-consumers" class="display responsive nowrap" cellspacing="0" width="100%">
                 <thead>
                   <tr>               
                     <th>ID</th>
                     <th>Name</th>
                     <th>Mobile</th>
+                    <th>Alt. Mobile</th>
                     <th>Email</th>
+                    <th>Alt. Mobile</th>
+                    <th>D.O.B.</th>
                     <th>Profile</th>
+                    <th>Group</th>
+                    <th>Location</th>                    
                     <th>FB ID</th>
-                    <th>Campaign ID</th>
+                    <th>Twitter ID</th>
+                    <th>Comments</th>
                     <th>Status</th>
-                    <th>Manage</th>
+                    <th class="manage-th">Manage</th>
                   </tr>
                 </thead>
               </table>
@@ -84,73 +113,147 @@
             </div>
           </section>
           
-          <!-- Form - Add Retail Consumers -->
-          <section class="admin-form form-wide">
+          <!-- Form - Add Retail Consumer -->
+          <section class="admin-form form-wide pt-1 pb-2">
             <div class="container">
 
               <!-- Form Build -->
-              <div class="form-section mb-3">
-                <form name="ManageRetailConsumers">
+              <div class="form-section mr-ml-a mb-3 mw-48em">
+                <form name="AddRetailUser">
                   
                   <!-- Form Header -->
                   <div class="function-header">
                     
-                    <h3 class="text-center text-lg mb-0 sm-text-left sm-mr-1 sm-w-60">Add New Consumer</h3>                   
+                    <h2 class="text-center text-lg mb-0 sm-text-left sm-mr-1 sm-w-60">Add Consumer</h2>
+                    
+                    <!-- Consumer ID -->
+                    <div class="form-row text-center mb-1 sm-text-sm sm-flex sm-flex-g-0 sm-ai-center sm-jc-between sm-mb-0 sm-w-100">
+                     <label for="-ariaLabel" class="inline-label sm-text-right sm-pr-sm sm-w-80">Consumer ID</label>
+                     <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="input-sm mw-8em disabled" value="3215468" disabled>
+                    </div>
 
                   </div>
                   
+                  
+                  <!-- Form Build -->
                   <div class="form-wrap">
+                    
+                    <!-- Personal Information -->
+                    <h3 class="title-sm text-md text-center mb-sm pt-sm w-100 sm-text-left">Personal Information</h3>
 
-                    <!-- Top Row -->
-                    <div class="form-group pb-0 sm-flex sm-jc-between">
+                    <!-- Name / Title / D.O.B. -->
+                    <div class="form-group mb-1-pt5 sm-flex sm-jc-between">
                       
-                      <!-- Consumer ID -->                        
-                      <div class="form-row mb-1 sm-flex-g-1 sm-mb-0 sm-mr-tiny sm-w-50 md-w-25 disabled">
-                        <label for="" id="-ariaLabel">ID</label>
-                        <input id="" name="" type="text" aria-labelledby="-ariaLabel" value="12345" disabled>                        
+                      <!-- First Name -->
+                      <div class="form-row mb-1 sm-flex-g-1 sm-mb-0 sm-mr-tiny sm-w-30">
+                        <label for="" id="-ariaLabel">First Name <span class="req-mark">*</span></label>
+                        <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="required" title="This is a required input" required>
                       </div>
                       
-                      <!-- Consumer Name -->                        
-                      <div class="form-row mb-1 sm-flex-g-1 sm-mr-ml-tiny sm-mb-0 sm-w-50 md-w-25">
-                        <label for="" id="-ariaLabel">Name</label>
+                      <!-- Last Name -->
+                      <div class="form-row mb-1 sm-flex-g-1 sm-mr-ml-tiny sm-mb-0 sm-w-30">
+                        <label for="" id="-ariaLabel">Last Name<span class="req-mark">*</span></label>
+                        <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="required" title="This is a required input" required>
+                      </div>
+                      
+                      <!-- Date of Birth -->
+                      <div class="form-row mb-1 sm-flex-g-1 sm-mr-ml-tiny sm-mb-0 sm-w-25">
+                        <label for="" id="-ariaLabel">Date of Birth <span class="req-mark">*</span></label>
+                        <input id="" name="DateOfBirth" type="text" placeholder="&nbsp;" class="dob-input required" aria-labelledby="-ariaLabel" required>
+                      </div>
+                      
+                       <!-- Gender -->
+                      <div class="form-row sm-flex-g-1 sm-ml-tiny sm-w-15">
+                        <label for="" id="-ariaLabel">Gender</label>
                         <input id="" name="" type="text" aria-labelledby="-ariaLabel">
                       </div>
                       
-                      <!-- Mobile Phone -->
-                      <div class="form-row mb-1 sm-flex-g-1 sm-mr-ml-tiny sm-mb-0 sm-w-50 md-w-25">
-                        <label for="" id="-ariaLabel">Mobile <abbr title="number">#</abbr> <span class="req-mark">*</span></label>
-                        <input id="" name="" type="tel" pattern="[0-9]*" maxlength="10" aria-labelledby="-ariaLabel" class="required" title="This is a required field" required>
-                      </div>
-                      
-                      <!-- Email -->
-                      <div class="form-row sm-flex-g-1 sm-ml-tiny sm-w-50 md-w-25">
-                        <label for="" id="-ariaLabel">Email <span class="req-mark">*</span></label>
-                        <input id="" name="" type="email" autocorrect="off" autocapitalize="none" spellcheck="false" aria-labelledby="-ariaLabel" class="required" title="This is a required field" required>
-                      </div>
                     </div>
                     
-                    <!-- Bottom Row -->
+                    <!-- Contact Information -->
+                    <h3 class="title-sm text-md text-center mb-sm pt-sm w-100 sm-text-left">Contact Information</h3>
+                    
+                    <!-- Email -->
+                    <div class="form-group pb-0 sm-flex sm-jc-between">
+                      
+                      <!-- Primary Email -->                        
+                      <div class="form-row mb-1 sm-flex-g-1 sm-mb-0 sm-mr-tiny sm-w-50">
+                        <label for="" id="-ariaLabel">Primary Email <span class="req-mark">*</span></label>
+                        <input id="" name="" type="email" autocorrect="off" autocapitalize="none" spellcheck="false" aria-labelledby="-ariaLabel" class="required" title="This is a required field" required>
+                      </div>
+                      
+                      <!-- Alternative Email -->                        
+                      <div class="form-row sm-flex-g-1 sm-ml-tiny sm-w-50">
+                        <label for="" id="-ariaLabel">Alt. Email</label>
+                        <input id="" name="" type="email" autocorrect="off" autocapitalize="none" spellcheck="false" aria-labelledby="-ariaLabel">
+                      </div>
+                      
+                    </div>
+                       
+                    <!-- Phone -->
+                    <div class="form-group pb-0 sm-flex sm-jc-between">
+                      
+                      <!-- Mobile -->                        
+                      <div class="form-row mb-1 sm-flex-g-1 sm-mb-0 sm-mr-tiny sm-w-50">
+                        <label for="" id="-ariaLabel">Mobile <abbr title="number">#</abbr> <span class="req-mark">*</span></label>
+                        <input id="" name="" type="tel" pattern="[0-9]*" maxlength="10" aria-labelledby="-ariaLabel" class="required" title="This is a required field" required>
+                      
+                      </div>
+                      
+                      <!-- Work -->                        
+                      <div class="form-row sm-flex-g-1 sm-ml-tiny sm-w-50">
+                        <label for="" id="-ariaLabel">Alt. <abbr title="number">#</abbr></label>
+                        <input id="" name="" type="tel" pattern="[0-9]*" maxlength="10" aria-labelledby="-ariaLabel">                        
+                      </div>
+                      
+                    </div>
+                    
+                    <!-- Social Media Links -->
                     <div class="form-group mb-1-pt5 sm-flex sm-jc-between">
                       <!-- Facebook ID -->                        
-                      <div class="form-row mb-1 sm-flex-g-1 sm-mb-0 sm-mr-tiny sm-w-50 md-w-25">
+                      <div class="form-row mb-1 sm-flex-g-1 sm-mb-0 sm-mr-tiny sm-w-50">
                         <label for="" id="-ariaLabel">Facebook</label>
                         <input id="" name="" type="text" aria-labelledby="-ariaLabel">                        
                       </div>
+                      
                       <!-- Twitter ID -->                        
-                      <div class="form-row mb-1 sm-flex-g-1 sm-mr-ml-tiny sm-mb-0 sm-w-50 md-w-25">
+                      <div class="form-row mb-1 sm-flex-g-1 sm-mr-ml-tiny sm-mb-0 sm-w-50">
                         <label for="" id="-ariaLabel">Twitter</label>
                         <input id="" name="" type="text" aria-labelledby="-ariaLabel">
                       </div>
-                      <!-- Store ID -->
-                      <div class="form-row mb-1 sm-flex-g-1 sm-mr-ml-tiny sm-mb-0 sm-w-50 md-w-25">
-                        <label for="" id="-ariaLabel">Store ID</label>
-                        <input id="" name="" type="text" aria-labelledby="-ariaLabel">
-                      </div>
-                      <!-- Profile -->
-                      <div class="form-row sm-flex-g-1 sm-ml-tiny sm-w-50 md-w-25">
+                    </div>
+                    
+                    <!-- Account Information -->
+                    <h3 class="title-sm text-center text-md flex-1 mb-sm pt-sm w-100 sm-text-left">Account Information</h3>
+
+                    <!-- Profile / Group -->
+                    <div class="form-group pb-0 sm-flex sm-jc-between">
+                      <!-- Profile -->                        
+                      <div class="form-row mb-1 sm-flex-g-1 sm-mb-0 sm-mr-tiny sm-w-50">
                         <label for="" id="-ariaLabel">Profile</label>
+                        <input name="" id="" type="text" aria-labelledby="-ariaLabel" class="disabled" value="profile" disabled>                        
+                      </div>
+                      
+                      <!-- Group -->                        
+                      <div class="form-row mb-1 sm-flex-g-1 sm-mr-ml-tiny sm-mb-0 sm-w-50">
+                        <label for="" id="-ariaLabel">Group</label>
                         <input id="" name="" type="text" aria-labelledby="-ariaLabel">
                       </div>
+                    </div>
+                    <!-- Location -->
+                    <div class="form-group pb-0 sm-flex">                      
+                      <div class="form-row sm-flex-g-1 w-100">
+                        <label for="" id="-ariaLabel">Location <span class="req-mark">*</span></label>
+                        <input name="" id="" type="text" aria-labelledby="-ariaLabel" class="required" title="This is a required input" required>                        
+                      </div>
+                    </div>
+                    
+                    <!-- Comments -->
+                    <div class="form-group mb-1-pt5 sm-flex sm-jc-between">
+                     <div class="form-row w-100">
+                        <label for="" id="-ariaLabel">Comments</label>
+                        <textarea aria-labelledby="-ariaLabel"></textarea>
+                     </div>
                     </div>
 
                     <!-- Buttons -->
@@ -158,14 +261,14 @@
                       <!-- cancel button -->
                       <button class="btn-cancel" type="reset">Cancel</button>
                       <!-- save button (primary) -->
-                      <input class="btn-primary" type="submit" value="Save" data-remodal-target="setup-campaign">
+                      <input class="btn-primary" type="submit" value="Save" data-remodal-target="save-confirm">
                     </div>
 
                     <!-- end / form-wrap -->
                   </div>
                 </form>
               </div>
-
+ 
               <!-- end / -->
             </div>
           </section>
@@ -179,10 +282,10 @@
         <!-- end / site-wrap-->
       </div>
       
-      <!-- Account Created Confirmation -->
-      <div class="remodal alert-success" data-remodal-id="account-created" role="dialog" aria-labelledby="account-created-title" aria-describedby="account-created-desc">
+      <!-- Consumer Saved Confirmation -->
+      <div class="remodal alert-success" data-remodal-id="save-confirm" role="dialog" aria-labelledby="save-confirm-title" aria-describedby="save-confirm-desc">
         
-        <div data-replace="../global-partials/modals/modal-account-created-content.html"></div>
+        <div data-replace="../global-partials/modals/modal-save-confirm-content.html"></div>
         
         <!-- end / -->
       </div>
@@ -208,8 +311,30 @@
       <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
       <script>window.jQuery || document.write('<script src="../js/libs/jquery.1.11.2.min.js"><\/script>')</script>
       <script src="../js/min/script.min.js"></script>
+      <script src="../js/libs/jquery-ui.datepicker.js"></script>
+      <script src="../js/libs/dropzone.js"></script>
+      <script>
+        Dropzone.options.fileTest = {
+          paramName: "file",
+          uploadMultiple: false,
+          addRemoveLinks: true,
+          dictCancelUpload: "cancel",
+          dictRemoveFile: "remove",
+          maxFilesize: 2, // MB
+          //acceptedFiles: ".csv,.pdf",
+          accept: function(file, done) {
+            if (file.type != "text/csv" && file.type != "application/pdf" && file.type != "application/vnd.ms-excel") {
+              done('File not supported!');
+              $('.dz-image, .dz-details').hide();
+            }
+            else { 
+              done('File accepted!');                            
+            }
+          }
+        };
+      </script> 
+      <!-- DataTables -->
       <script src="//cdn.datatables.net/v/dt/dt-1.10.12/af-2.1.2/b-1.2.2/b-colvis-1.2.2/b-html5-1.2.2/r-2.1.0/rr-1.1.2/sc-1.4.2/se-1.2.0/datatables.min.js"></script>
-    <!-- DataTables -->
     <script>
       // Manage Consumers
       $('#manage-consumers').DataTable({
@@ -220,11 +345,17 @@
         columns: [
           { "data": "id" },
           { "data": "consumer_name" },
-          { "data": "phone" },          
-          { "data": "email" },
+          { "data": "primary_phone" },
+          { "data": "alt_phone" },          
+          { "data": "primary_email" },
+          { "data": "alt_email" },
+          { "data": "dob" },
           { "data": "profile" },
+          { "data": "group" },
+          { "data": "location" },
           { "data": "fb_id" },
-          { "data": "campaign_id" },
+          { "data": "twitter_id" },
+          { "data": "comments" },
           { "data": "status" },
           { "data": "manage" }
         ]        

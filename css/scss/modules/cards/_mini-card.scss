@@ -1,0 +1,38 @@
+// Mini Cards
+
+.mini-card {
+  
+  text-align: center;
+    
+  .title {
+    font-size: $text-md;
+  }
+  
+  // icon wrap  
+  .icon-wrap {
+    justify-content: center;
+  }
+  
+  .icon {
+    font-size: $text-lg;
+  }
+  
+  .icon:not(.icon-sm) {
+    height: 3.25em;
+    max-width: 3.25em;
+    width: 100%; 
+  }
+   
+   // > 480
+   @media (min-width: $break-sm-phone) {
+      //width: 40%;
+   }
+   // > 768
+   @media (min-width: $break-lg-phone) {
+      //width: 20%;
+  }  
+  
+  
+  
+  // end  
+}

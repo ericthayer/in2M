@@ -104,15 +104,15 @@ table a {
 }
 
 .rtable-flip {
-  //display: flex;
+  display: flex;
   overflow: hidden;
   background: none;
 }
 
 .rtable-flip thead {
-  //display: flex;
-  //flex-shrink: 0;
-  //min-width: min-content;
+  display: flex;
+  flex-shrink: 0;
+  min-width: min-content;
 }
 
 .rtable-flip tbody {

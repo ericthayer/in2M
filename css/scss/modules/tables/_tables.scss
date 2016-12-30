@@ -1,0 +1,72 @@
+// Table Flip
+
+.table-flip {
+  border: 1px solid $DDD;
+  display: flex;
+  font-size: $text-tiny;
+  height: 100%; 
+  overflow: hidden;
+  white-space: nowrap;
+
+  th {
+    background-color: $EEE;
+    border-right: 1px solid $DDD;
+    border-bottom: 1px solid $DDD;
+    color: $c-333-grey;
+    font-size: $text-tiny;
+    padding: .5em .75em;
+    
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  
+  td {
+    padding: .5em .75em .5em 1.1em;
+    &:nth-child(odd) {
+      background-color: #F5F5F5;
+    }
+    &.icon-group {
+      //max-height: 28px; 
+    }
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+  }
+  
+  thead {
+      display: flex;
+      flex-shrink: 0;
+      text-align: left;  
+      //width: 35%;
+      min-width: min-content; 
+    }
+    
+    tbody {
+      display: flex;
+      //flex: 1 0 auto;
+      position: relative;
+      overflow-x: auto;
+      overflow-y: hidden;
+      width: 100%;  
+    }
+    
+    tr {
+      display: flex;
+      flex-shrink: 0;
+      flex-direction: column;
+      min-width: min-content;
+      width: 100%;  
+    }
+
+  
+  // > 480
+  @media (min-width: $break-sm-phone) {
+  
+      
+  }
+  
+}

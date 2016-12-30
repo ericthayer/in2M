@@ -21,7 +21,11 @@
   @media (min-width: $break-ml-phone) {
     
     > .container {
-      padding-top: 2em;
+      padding-top: 3em;
+      padding-bottom: 3em;  
+      [class*="landing"] & {
+        padding-top: 3.5em; 
+      }
       //padding-bottom: 2em;   
     }
   }  

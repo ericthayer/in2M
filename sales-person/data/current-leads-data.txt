@@ -1,0 +1,77 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "biz_name": "Company Name, Inc.",
+      "biz_type": "farm",
+      "contact": "Jacob Adminson",
+      "contact_email": "<a href='mailto:email@domain.com'>email@domain.com</a>",
+      "contact_number": "<a href='tel:8885551234'>888-555-1234</a>",
+      "gender": "male",
+      "address": "1234 Streetname Rd. San Mateo, CA 94402",
+      "branches": "10",
+      "users": "87",
+      "interest": "1",
+      "current_system": "excel",
+      "mode": "1",
+      "action": "call",
+      "comments": "small comment goes here",
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sm'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },
+    {
+      "id": "2",
+      "biz_name": "Company Name, Inc.",
+      "biz_type": "farm",
+      "contact": "Jenny Username",
+      "contact_email": "<a href='mailto:email@domain.com'>email@domain.com</a>",
+      "contact_number": "<a href='tel:8885551234'>888-555-1234</a>",
+      "gender": "female",
+      "address": "1234 Streetname Rd. San Mateo, CA 94402",
+      "branches": "10",
+      "users": "87",
+      "interest": "1",
+      "current_system": "excel",
+      "mode": "1",
+      "action": "call",
+      "comments": "small comment goes here",
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sm'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },
+    {
+      "id": "3",
+      "biz_name": "Company Name, Inc.",
+      "biz_type": "farm",
+      "contact": "Lee Harvey",
+      "contact_email": "<a href='mailto:email@domain.com'>email@domain.com</a>",
+      "contact_number": "<a href='tel:8885551234'>888-555-1234</a>",
+      "gender": "transgender",
+      "address": "1234 Streetname Rd. San Mateo, CA 94402",
+      "branches": "10",
+      "users": "87",
+      "interest": "1",
+      "current_system": "excel",
+      "mode": "1",
+      "action": "call",
+      "comments": "small comment goes here",
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sm'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },
+    {
+      "id": "4",
+      "biz_name": "Company Name, Inc.",
+      "biz_type": "farm",
+      "contact": "Pat Username",
+      "contact_email": "<a href='mailto:email@domain.com'>email@domain.com</a>",
+      "contact_number": "<a href='tel:8885551234'>888-555-1234</a>",
+      "gender": "n/a",
+      "address": "1234 Streetname Rd. San Mateo, CA 94402",
+      "branches": "10",
+      "users": "87",
+      "interest": "1",
+      "current_system": "excel",
+      "mode": "1",
+      "action": "call",
+      "comments": "small comment goes here",
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sm'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    }
+    
+  ]
+}

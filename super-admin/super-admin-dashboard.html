@@ -29,255 +29,611 @@
       <!-- Site Wrap  -->
       <div class="site-wrap bg-blue-40">
         
-        <!-- Admin Bar -->
-        <div class="admin-bar c-white w-100">
-          <div class="container flex flex-wrap ai-center jc-between pt-1 sm-jc-center">
-            <!-- User Status -->
-            <div class="user-status flex ai-center jc-center mb-1 w-100 sm-jc-start sm-mb-0 sm-w-30">
-              <div class="avatar user-avatar mr-sm sm-mr-1"><img class="" src="../images/UI/slug-avatar-square.svg" alt="user avatar"></div>
-              <div class="user-status-text flex flex-wrap flex-d-col ai-start">
-                <div class="status-msg mb-tiny"><span class="user-name">Super Admin</span></div>
-                <div class="profile-links flex ai-center">
-                  <a class="pr-sm" href="#">Dashboard</a>
-                  <a href="#">Logout</a>
-                </div>
-              </div>
-            </div>
-            <!-- Search -->
-            <div class="search-form header-search mr-ml-a w-100 mw-15em sm-w-70 sm-mr-0">
-              <label class="sr-only" for="search-form">Search</label>
-              <!-- Search Bar -->
-              <div class="search-bar flex flex-wrap jc-between">
-                <input class="bor-none" id="search-form" type="search" placeholder="search">
-                <button class="bor-none bg-white c-777" type="submit">
-                  <svg class="icon">
-                    <use xlink:href="#icon-search" />
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Site Header (Super Admin) -->
-        <header class="site-header c-white hidden" role="banner">
-          <!-- Nav -->
-          <div class="container flex flex-wrap ai-center jc-between pt-pb-1">
-            <!-- Site Logo -->
-            <h1 class="site-title">
-              <a href="super-admin.html">
-              <img class="header-logo mw-8em" srcset="../images/UI/in2m-logo-white.svg 600w, ../images/UI/in2m-logo-icon-white.svg" src="../images/UI/in2m-logo-white.svg"
-                alt="in2Marketplace.com"><span class="sr-only">in2Marketplace.com</span></a>
-            </h1>
-            <!-- Nav Toggle -->
-            <button id="nav-toggle" class="bg-trans nav-toggle-html" aria-hidden="false" aria-expanded="false">
-              <div class="nav-icon"></div>
-            </button>
-            <!-- Main Nav -->
-            <section class="main-nav flex flex-wrap ai-center jc-center sm-flex-g-1">
-              <!-- Nav -->
-              <script src="../js/libs/responsive-nav.js"></script>
-              <nav class="nav-collapse" role="navigation">
-                <!-- Admin Bar -->
-                <div class="admin-bar w-100">
-                  <div class="container flex flex-wrap ai-center jc-between pt-pb-1 pr-pl-0 sm-flex-nowrap sm-jc-start">
-                    <!-- User Status -->
-                    <div class="user-status flex ai-center jc-center mb-1 w-100 sm-jc-start sm-mb-0 sm-w-a">
-                      <div class="avatar user-avatar img-1-1-tiny mr-sm x-sm-mr-1"><img class="" src="../images/UI/slug-avatar-square.svg" alt="user avatar"></div>
-                      <div class="user-status-text flex flex-wrap flex-d-col ai-start">
-                        <div class="status-msg mb-tiny"><span class="user-name">Super Admin</span></div>
-                        <div class="profile-links flex ai-center">
-                          <a class="pr-sm" href="#">Dashboard</a>
-                          <a href="#">Logout</a>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Search -->
-                    <div class="search-form header-search mr-ml-a mw-20em w-100 sm-mr-0 sm-pl-1 sm-w-a">
-                      <label class="sr-only" for="search-form">Search</label>
-                      <!-- Search Bar -->
-                      <div class="search-bar flex flex-wrap jc-between">
-                        <input id="search-form" type="search" placeholder="search">
-                        <button class="bg-white c-777" type="submit">
-                          <svg class="icon">
-                            <use xlink:href="#icon-search" />
-                          </svg>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <ul class="list-reset">
-                  <li class="dropdown">
-                    <a href="#">View</a>
-                    <ul class="sub-menu">
-                      <li><a href="sa-view-sales-org.html">Sales Organizations</a></li>
-                      <li><a href="sa-view-packages-offers.html">Packages & Offers</a></li>
-                      <li><a href="sa-view-commissions.html">Commissions</a></li>
-                      <li><a href="sa-view-notifications.html">Notifications</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown">
-                    <a href="#">Setup</a>
-                    <ul class="sub-menu">
-                      <li><a href="sa-setup-capacity.html">Capacity</a></li>
-                      <li><a href="sa-setup-short-codes.html">Short Codes</a></li>
-                      <li><a href="sa-setup-packages.html">Packages</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown">
-                    <a href="#">Create</a>
-                    <ul class="sub-menu">
-                      <li><a href="sa-create-super-admin.html">Super Admin Profile</a></li>
-                      <li><a href="sa-create-sales-company.html">Sales Company</a></li>
-                      <li><a href="sa-create-sales-group.html">Sales Group</a></li>
-                      <li><a href="sa-create-sales-person.html">Sales Person</a></li>
-                      <li><a href="sa-create-email-templates.html">Email Templates</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown">
-                    <a href="#">Manage</a>
-                    <ul class="sub-menu">
-                      <li><a href="sa-manage-super-admin.html">Super Admin Profile</a></li>
-                      <li><a href="sa-manage-sales-company.html">Sales Company</a></li>
-                      <li><a href="sa-manage-sales-group.html">Sales Group</a></li>
-                      <li><a href="sa-manage-sales-person.html">Sales Person</a></li>
-                      <li><a href="sa-manage-retail-customers.html">Retail Customers</a></li>
-                      <li><a href="sa-manage-packages.html">Packages</a></li>
-                      <li>
-                        <a href="#">Email Templates</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li><a data-remodal-target="help-contact-form">Contact</a></li>
-                  <!-- end / -->
-                </ul>
-              </nav>
-              <script src="../js/libs/mobile-nav.js"></script>
-            </section>
-          </div>
-        </header>
+        <!-- Header -->
+        <div data-replace="sa-partials/sa-header-logged-in.html"></div>
+
         <!-- Main Content -->
         <main class="main-content">
-          <!-- Main Promo -->
-          <section class="hero-banner c-white pt-2 text-s-black-50 md-pb-4 hidden">
-            <!-- Hero Content -->
+
+          <!-- Dashboard Cards -->
+          <section class="dashboard-cards tc-blue-m">
             <div class="container">
-              <!-- Post -->
-              <article class="flex flex-d-col text-center md-text-left md-flex-d-row md-flex-wrap md-ai-center md-jc-between">
-                <!-- Post Content -->
-                <div class="post-content mb-2 md-mb-0 md-pr-1 md-w-60 lg-w-50">
-                  <!-- Text -->
-                  <div class="text-wrap">
-                    <h2 class="title mb-sm">Powerful Retail Messaging & Marketing Solutions</h2>
-                    <h3 class="subtitle h4 hidden"><em>Solutions for Modern Media Communications.</em></h3>
-                    <p class="md-text-md">in2M's automated communications platform is the most complete texting solution. Now, send the right messages to the right people at the right time - all automatically.</p>
-                  </div>
-                  <!-- Hero Buttons-->
-                  <div class="button-wrap flex flex-wrap jc-center pt-1 md-jc-start">
-                    <a class="btn-round all-caps bg-blue-70 c-blue-30" href="#" data-remodal-target="demo-video">View Demo</a>
-                    <a class="btn-round all-caps bg-blue-30 c-white" href="#">Get Started</a>
-                  </div>
-                </div>
-                <!-- Post Media -->
-                <div class="post-media pr-pl-1 md-pr-0 md-pl-2 md-w-40 lg-w-50">
-                  <!-- Image -->
-                  <figure class="media-item mb-0 lazyload">
-                    <picture>
-                      <source srcset="../images/content-img/img-mobile-devices-2.svg" media="(min-width: 62.5em)" />
-                      <source srcset="../images/content-img/img-mobile-devices-2-SM.svg" />
-                      <img srcset="../images/content-img/img-mobile-devices-2-SM.svg" alt="in2Marketplace" />
-                      <noscript>
-                        <img src="../images/content-img/img-mobile-devices-2.svg" alt="in2Marketplace" />
-                      </noscript>
-                    </picture>
-                  </figure>
-                </div>
-              </article>
-            </div>
-          </section>
-          
-          <!-- Quick Dashboard Links -->
-          <section class="mod-block c-white pt-pb-4">
-            <div class="container">
+              
               <!-- Welcome Admin -->
-              <div class="text-block welcome-admin text-center pt-pb-1">
+              <div class="text-block welcome-block">
                 <h2 class="h4"><span class="block text-base mb-tiny">Welcome back</span>Super Admin</h2>
                 <div class="circle-mask-md">
                   <img class="user-avatar" src="../images/UI/slug-avatar-square.svg" alt="Super Admin avatar" />
                 </div>
               </div>
-              <!-- Cards -->
-              <div class="flex-grid item-mar-lg pt-1 text-xl">
-                
+              
+              <!-- Profile & Sales Admin -->
+              <div class="card-grid grid-2">
+                                
                 <!-- Profile -->
-                <div class="card card-mini text-center w-100 sm-w-40 md-w-20">
-                  <h3 class="text-sm">Profile</h3>
-                  <a class="icon-wrap flex jc-center p-sm" href="#">
-                    <svg class="icon">
-                      <use xlink:href="#icon-profile" />
-                      <span class="sr-only">Admin Profile</span>
-                    </svg>
-                  </a>
+                <div class="card collapsible collapsible-expanded">
+                  <h3 class="title title-flex"><span>Profile</span><a class="icon-wrap" href="#"><svg class="icon icon-link"><use xlink:href="#icon-profile" /></svg><svg class="icon icon-collapse"><use xlink:href="#icon-caret" /></svg></a></h3>
+                  
+                  <!-- card content -->
+                  <div class="card-content table-content">
+                    
+                    <!-- Data -->                
+                    <table class="data-table table-flip">
+                        <thead>
+                          <tr>
+                            <th>User ID</th>
+                            <th>Name</th>                    
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th class="manage-th">Manage</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>JL888</td>
+                            <td>Jeffery Lebowski</td>                      
+                            <td><a href="mailto:contact@company.com">the.dude@lebowski.com</a></td>
+                            <td><a href="tel:6195437898">619-543-7898</a></td>
+                            <td class="icon-group">
+                               <a href="#"><svg class="icon"><use xlink:href="#icon-pencil" /></svg><span class="sr-only">Edit</span></a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>                    
+                    <!-- end / card-content -->
+                  </div>                  
+                                    
+                  <!-- end / -->
                 </div>
                 
-                <!-- Sales Team -->
-                <div class="card card-mini text-center w-100 sm-w-40 md-w-20">
-                  <h3 class="text-sm">Sales Team</h3>
-                  <a class="icon-wrap flex jc-center p-sm" href="#">
-                    <svg class="icon">
-                      <use xlink:href="#icon-suitcase" />
-                      <span class="sr-only">Admin Profile</span>
-                    </svg>
-                  </a>
+                <!-- Sales Admin -->
+                <div class="card collapsible collapsible-expanded">
+                  
+                  <!-- card title -->
+                  <h3 class="title title-flex"><span>Sales Admin</span><a class="icon-wrap" href="#"><svg class="icon icon-link"><use xlink:href="#icon-shop" /></svg><svg class="icon icon-collapse"><use xlink:href="#icon-caret" /></svg></a></a></h3>
+                  
+                  <!-- card content -->
+                  <div class="card-content table-content">
+                    
+                    <!-- Data -->                
+                    <table class="data-table table-flip">
+                        <thead>
+                          <tr>
+                            <th>Sales Groups</th>
+                            <th>Sales Persons</th>
+                            <th>Commission Paid</th>
+                            <th>Recurring</th>                      
+                            <th>One Time fee</th>
+                            <th class="manage-th">Manage</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>128</td>
+                            <td>354</td>
+                            <td>$15,550</td>
+                            <td>$12,450</td> 
+                            <td>$3,100</td>                      
+                            <td class="icon-group">
+                               <a href="#"><svg class="icon m-0"><use xlink:href="#icon-pencil" /></svg><span class="sr-only">Edit</span></a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    
+                    <!-- end / card-content -->
+                  </div>
+                  
+                                    
+                  <!-- end / card -->
+                </div>           
+                
+                <!-- end / card-grid -->
+              </div>
+              
+              <!-- Packages -->
+              <div class="card-grid grid-3">
+                                
+                <!-- Free -->
+                <div class="card collapsible collapsible-expanded">
+                  <h3 class="title title-flex"><span>Free Trial Package</span><a class="icon-wrap" href="#"><svg class="icon icon-link icon-pkg"><use xlink:href="#icon-box" /></svg><svg class="icon icon-collapse"><use xlink:href="#icon-caret" /></svg></a></h3>
+                  
+                  <!-- card content -->
+                  <div class="card-content table-content">
+                    
+                    <!-- Data -->                
+                    <table class="data-table table-flip">
+                        <thead>
+                          <tr>
+                            <th>Total Sold</th>
+                            <th>Total Value</th>
+                            <th>Validity</th>
+                            <th class="manage-th">Manage</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>45</td>
+                            <td>n/a</td>
+                            <td>3/15/17</td>
+                            <td class="icon-group">
+                               <a href="#"><svg class="icon"><use xlink:href="#icon-pencil" /></svg><span class="sr-only">Edit</span></a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>                    
+                    <!-- end / card-content -->
+                  </div>                  
+                                    
+                  <!-- end / -->
+                </div>
+                <!-- Starter -->
+                <div class="card collapsible collapsible-expanded">
+                  <h3 class="title title-flex"><span>Starter Package</span><a class="icon-wrap" href="#"><svg class="icon icon-link icon-pkg"><use xlink:href="#icon-box" /></svg><svg class="icon icon-collapse"><use xlink:href="#icon-caret" /></svg></a></h3>
+                  
+                  <!-- card content -->
+                  <div class="card-content table-content">
+                    
+                    <!-- Data -->                
+                    <table class="data-table table-flip">
+                        <thead>
+                          <tr>
+                            <th>Total Sold</th>
+                            <th>Total Value</th>
+                            <th>Validity</th>
+                            <th class="manage-th">Manage</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>45</td>
+                            <td>$12.458.45</td>
+                            <td>3/15/17</td>
+                            <td class="icon-group">
+                              <a href="#"><svg class="icon"><use xlink:href="#icon-pencil" /></svg><span class="sr-only">Edit</span></a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>                    
+                    <!-- end / card-content -->
+                  </div>                  
+                                    
+                  <!-- end / -->
                 </div>
                 
-                <!-- Retail Team -->
-                <div class="card card-mini text-center w-100 sm-w-40 md-w-20">
-                  <h3 class="text-sm">Retail Team</h3>
-                  <a class="icon-wrap flex jc-center p-sm" href="#">
-                    <svg class="icon">
-                      <use xlink:href="#icon-retail-tag" />
-                      <span class="sr-only">Admin Profile</span>
-                    </svg>
-                  </a>
+                <!-- Bronze -->
+                <div class="card collapsible collapsible-expanded">
+                  <h3 class="title title-flex"><span>Bronze Package</span><a class="icon-wrap" href="#"><svg class="icon icon-link icon-pkg"><use xlink:href="#icon-box" /></svg><svg class="icon icon-collapse"><use xlink:href="#icon-caret" /></svg></a></h3>
+                  
+                  <!-- card content -->
+                  <div class="card-content table-content">
+                    
+                    <!-- Data -->                
+                    <table class="data-table table-flip">
+                        <thead>
+                          <tr>
+                            <th>Total Sold</th>
+                            <th>Total Value</th>
+                            <th>Validity</th>
+                            <th class="manage-th">Manage</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>45</td>
+                            <td>$12.458.45</td>
+                            <td>3/15/17</td>
+                            <td class="icon-group">
+                              <a href="#"><svg class="icon"><use xlink:href="#icon-pencil" /></svg><span class="sr-only">Edit</span></a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>                    
+                    <!-- end / card-content -->
+                  </div>                  
+                                    
+                  <!-- end / -->
                 </div>
                 
-                <!-- Packages -->
-                <div class="card card-mini text-center w-100 sm-w-40 md-w-20">
-                  <h3 class="text-sm">Packages</h3>
-                  <a class="icon-wrap flex jc-center p-sm" href="#">
-                    <svg class="icon">
-                      <use xlink:href="#icon-box" />
-                      <span class="sr-only">Admin Profile</span>
-                    </svg>
-                  </a>
+                <!-- Silver -->
+                <div class="card collapsible collapsible-expanded">
+                  <h3 class="title title-flex"><span>Silver Package</span><a class="icon-wrap" href="#"><svg class="icon icon-link icon-pkg"><use xlink:href="#icon-box" /></svg><svg class="icon icon-collapse"><use xlink:href="#icon-caret" /></svg></a></h3>
+                  
+                  <!-- card content -->
+                  <div class="card-content table-content">
+                    
+                    <!-- Data -->                
+                    <table class="data-table table-flip">
+                        <thead>
+                          <tr>
+                            <th>Total Sold</th>
+                            <th>Total Value</th>
+                            <th>Validity</th>
+                            <th class="manage-th">Manage</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>45</td>
+                            <td>$12.458.45</td>
+                            <td>3/15/17</td>
+                            <td class="icon-group">
+                              <a href="#"><svg class="icon"><use xlink:href="#icon-pencil" /></svg><span class="sr-only">Edit</span></a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>                    
+                    <!-- end / card-content -->
+                  </div>                  
+                                    
+                  <!-- end / -->
                 </div>
                 
-                <!-- Offers -->
-                <div class="card card-mini text-center w-100 sm-w-40 md-w-20">
-                  <h3 class="text-sm">Offers</h3>
-                  <a class="icon-wrap flex jc-center p-sm" href="#">
-                    <svg class="icon">
-                      <use xlink:href="#icon-alarmclock" />
-                      <span class="sr-only">Admin Profile</span>
-                    </svg>
-                  </a>
+                <!-- Gold -->
+                <div class="card collapsible collapsible-expanded">
+                  <h3 class="title title-flex"><span>Gold Package</span><a class="icon-wrap" href="#"><svg class="icon icon-link icon-pkg"><use xlink:href="#icon-box" /></svg><svg class="icon icon-collapse"><use xlink:href="#icon-caret" /></svg></a></h3>
+                  
+                  <!-- card content -->
+                  <div class="card-content table-content">
+                    
+                    <!-- Data -->                
+                    <table class="data-table table-flip">
+                        <thead>
+                          <tr>
+                            <th>Total Sold</th>
+                            <th>Total Value</th>
+                            <th>Validity</th>
+                            <th class="manage-th">Manage</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>45</td>
+                            <td>$12.458.45</td>
+                            <td>3/15/17</td>
+                            <td class="icon-group">
+                              <a href="#"><svg class="icon"><use xlink:href="#icon-pencil" /></svg><span class="sr-only">Edit</span></a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>                    
+                    <!-- end / card-content -->
+                  </div>                  
+                                    
+                  <!-- end / -->
+                </div>
+                <!-- VIP -->
+                <div class="card collapsible collapsible-expanded">
+                  <h3 class="title title-flex"><span>VIP Package</span><a class="icon-wrap" href="#"><svg class="icon icon-link icon-pkg"><use xlink:href="#icon-box" /></svg><svg class="icon icon-collapse"><use xlink:href="#icon-caret" /></svg></a></h3>
+                  
+                  <!-- card content -->
+                  <div class="card-content table-content">
+                    
+                    <!-- Data -->                
+                    <table class="data-table table-flip">
+                        <thead>
+                          <tr>
+                            <th>Total Sold</th>
+                            <th>Total Value</th>
+                            <th>Validity</th>
+                            <th class="manage-th">Manage</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>45</td>
+                            <td>$12.458.45</td>
+                            <td>3/15/17</td>
+                            <td class="icon-group">
+                              <a href="#"><svg class="icon"><use xlink:href="#icon-pencil" /></svg><span class="sr-only">Edit</span></a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>                    
+                    <!-- end / card-content -->
+                  </div>                  
+                                    
+                  <!-- end / -->
+                </div>
+  
+                
+                <!-- end / card-grid -->
+              </div>
+              
+              <!-- Campaigns & Message Details -->
+              <div class="card-grid grid-2">
+                                
+                <!-- Campaigns -->
+                <div class="card collapsible collapsible-expanded">
+                  <h3 class="title title-flex"><span>Campaigns</span><a class="icon-wrap" href="#"><svg class="icon icon-link"><use xlink:href="#icon-megaphone" /></svg><svg class="icon icon-collapse"><use xlink:href="#icon-caret" /></svg></a></h3>
+                  
+                  <!-- card content -->
+                  <div class="card-content table-content">
+                    
+                    <!-- Data -->                
+                    <table class="data-table table-flip">
+                        <thead>
+                          <tr>
+                            <th>No. Running</th>
+                            <th>Executed</th>                    
+                            <th>Scheduled</th>
+                            <th class="manage-th">Manage</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>105</td>
+                            <td>30</td>                      
+                            <td>24</td>
+                            <td class="icon-group">
+                               <a href="#"><svg class="icon"><use xlink:href="#icon-pencil" /></svg><span class="sr-only">Edit</span></a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>                    
+                    <!-- end / card-content -->
+                  </div>                  
+                                    
+                  <!-- end / -->
                 </div>
                 
-                <!-- Notifications -->
-                <div class="card card-mini text-center w-100 sm-w-40 md-w-20">
-                  <h3 class="text-sm">Social Networks</h3>
-                  <a class="icon-wrap flex jc-center p-sm" href="#">
-                    <svg class="icon">
-                      <use xlink:href="#icon-chat-dots" />
-                      <span class="sr-only">Admin Profile</span>
-                    </svg>
-                  </a>
+                <!-- Message Details -->
+                <div class="card collapsible collapsible-expanded">
+                  
+                  <!-- card title -->
+                  <h3 class="title title-flex"><span>Message Details</span><a class="icon-wrap" href="#"><svg class="icon icon-link"><use xlink:href="#icon-chat" /></svg><svg class="icon icon-collapse"><use xlink:href="#icon-caret" /></svg></a></a></h3>
+                  
+                  <!-- card content -->
+                  <div class="card-content table-content">                    
+                    
+                    <!-- Data -->                
+                    <table class="data-table table-flip">
+                        <thead>
+                          <tr>
+                            <th>SMS Avail.</th>
+                            <th>SMS Sold</th>
+                            <th>Emails Avail.</th>
+                            <th>Emails Sold</th>
+                            <th class="manage-th">Manage</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1350</td>
+                            <td>250</td>
+                            <td>1104</td>
+                            <td>64</td> 
+                            <td class="icon-group">
+                              <a href="#"><svg class="icon"><use xlink:href="#icon-pencil" /></svg><span class="sr-only">Edit</span></a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+     
+                    <!-- end / card-content -->
+                  </div>
+                  
+                                    
+                  <!-- end / card -->
+                </div>           
+                
+                <!-- end / card-grid -->
+              </div>
+              
+              <!-- Signup & Lead Details -->
+              <div class="card-grid grid-2">
+                                
+                <!-- Sales Company Employee -->
+                <div class="card collapsible collapsible-expanded">
+                  <h3 class="title title-flex"><span>Signups</span><a class="icon-wrap" href="#"><svg class="icon icon-link"><use xlink:href="#icon-user" /></svg><svg class="icon icon-collapse"><use xlink:href="#icon-caret" /></svg></a></h3>
+                  
+                  <!-- card content -->
+                  <div class="card-content table-content">
+                    
+                    <!-- Data -->                
+                    <table class="data-table table-flip">
+                        <thead>
+                          <tr>
+                            <th>Total RA Sign Up</th>
+                            <th>Daily Ave.</th>
+                            <th>Monthly Ave.</th>                    
+                            <th>Total PKG. Sold</th>
+                            <th>Volume</th>
+                            <th>Commission Paid</th>
+                            <th class="manage-th">Manage</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>105</td>
+                            <td>3</td>
+                            <td>30</td>                      
+                            <td>50</td>
+                            <td>24</td>
+                            <td>$7,250</td>
+                            <td class="icon-group">
+                               <a href="#"><svg class="icon"><use xlink:href="#icon-pencil" /></svg><span class="sr-only">Edit</span></a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>                    
+                    <!-- end / card-content -->
+                  </div>                  
+                                    
+                  <!-- end / -->
                 </div>
+                
+                <!-- Lead Details -->
+                <div class="card collapsible collapsible-expanded">
+                  
+                  <!-- card title -->
+                  <h3 class="title title-flex"><span>Lead List</span><a class="icon-wrap" href="#"><svg class="icon icon-link icon-list"><use xlink:href="#icon-list" /></svg><svg class="icon icon-collapse"><use xlink:href="#icon-caret" /></svg></a></a></h3>
+                  
+                  <!-- card content -->
+                  <div class="card-content table-content">                    
+                    
+                    <!-- Data -->                
+                    <table class="data-table table-flip">
+                        <thead class="bold-headers">
+                          <tr>
+                            <th>Lead Name</th>
+                            <th>Jenny Leadname</th>
+                            <th>Mike Retailer</th>
+                            <th>Guy Buyer</th>
+                            <th>Sara Leadname</th>
+                            <th class="manage-th">Manage</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><a href="tel:3035551234"><svg class="icon"><use xlink:href="#icon-phone" /></svg><span class="sr-only">3035551234</span></a>&nbsp;<a href="mailto:email@comany.com"><svg class="icon"><use xlink:href="#icon-envelope" /></svg><span class="sr-only">email</span> </a></td>
+                            <td><a href="tel:3035551234"><svg class="icon"><use xlink:href="#icon-phone" /></svg><span class="sr-only">3035551234</span></a>&nbsp;<a href="mailto:email@comany.com"><svg class="icon"><use xlink:href="#icon-envelope" /></svg><span class="sr-only">email</span> </a></td>
+                            <td><a href="tel:3035551234"><svg class="icon"><use xlink:href="#icon-phone" /></svg><span class="sr-only">3035551234</span></a>&nbsp;<a href="mailto:email@comany.com"><svg class="icon"><use xlink:href="#icon-envelope" /></svg><span class="sr-only">email</span> </a></td>
+                            <td><a href="tel:3035551234"><svg class="icon"><use xlink:href="#icon-phone" /></svg><span class="sr-only">3035551234</span></a>&nbsp;<a href="mailto:email@comany.com"><svg class="icon"><use xlink:href="#icon-envelope" /></svg><span class="sr-only">email</span> </a></td>
+                            <td><a href="tel:3035551234"><svg class="icon"><use xlink:href="#icon-phone" /></svg><span class="sr-only">3035551234</span></a>&nbsp;<a href="mailto:email@comany.com"><svg class="icon"><use xlink:href="#icon-envelope" /></svg><span class="sr-only">email</span> </a></td> 
+                            <td class="icon-group">
+                              <a href="#"><svg class="icon"><use xlink:href="#icon-pencil" /></svg><span class="sr-only">Edit</span></a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+     
+                    <!-- end / card-content -->
+                  </div>
+                  
+                                    
+                  <!-- end / card -->
+                </div>           
+                
+                <!-- end / card-grid -->
+              </div>
+              
+              <!-- Renewals & Commissions Earned -->
+              <div class="card-grid grid-3">
+                                
+                <!-- Renewals -->
+                <div class="card collapsible collapsible-expanded">
+                  <h3 class="title title-flex"><span>Renewals</span><a class="icon-wrap" href="#"><svg class="icon icon-link"><use xlink:href="#icon-clock" /></svg><svg class="icon icon-collapse"><use xlink:href="#icon-caret" /></svg></a></h3>
+                  
+                  <!-- card content -->
+                  <div class="card-content table-content">
+                    
+                    <!-- Data -->                
+                    <table class="data-table table-flip">
+                        <thead>
+                          <tr>
+                            <th>Package Name</th>
+                            <th>Package Name</th>
+                            <th>Addon Name</th>
+                            <th>Package Name</th>
+                            <th>Package Name</th>
+                            <th class="manage-th">Manage</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Ends &nbsp;<strong>- 1/24/17</strong></td>
+                            <td>Ends &nbsp;<strong>- 3/2/17</strong></td>
+                            <td>Ends &nbsp;<strong>- 4/24/17</strong></td>
+                            <td>Ends &nbsp;<strong>- 5/15/17</strong></td>
+                            <td>Ends &nbsp;<strong>- 6/24/17</strong></td>
+                            <td class="icon-group">
+                               <a href="#"><svg class="icon"><use xlink:href="#icon-pencil" /></svg><span class="sr-only">Edit</span></a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>                    
+                    <!-- end / card-content -->
+                  </div>                  
+                                    
+                  <!-- end / -->
+                </div>
+                
+                <!-- Commissions Earned -->
+                <div class="card collapsible collapsible-expanded">
+                  
+                  <!-- card title -->
+                  <h3 class="title title-flex"><span>Commissions</span><a class="icon-wrap" href="#"><svg class="icon icon-link"><use xlink:href="#icon-coins" /></svg><svg class="icon icon-collapse"><use xlink:href="#icon-caret" /></svg></a></a></h3>
+                  
+                  <!-- card content -->
+                  <div class="card-content table-content">
+                    
+                    <!-- Data -->                
+                    <table class="data-table table-flip">
+                        <thead>
+                          <tr>
+                            <th>Commission Paid</th>
+                            <th>Recurring</th>                      
+                            <th>One Time fee</th>
+                            <th>Yearly Goal</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>$15,550</td>
+                            <td>$12,450</td> 
+                            <td>$3,100</td>
+                            <td>$30,000</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    
+                    <!-- end / card-content -->
+                  </div>
+                  
+                                    
+                  <!-- end / card -->
+                </div>
+                
+                <!-- Packages Sold -->
+                <div class="card collapsible collapsible-expanded">
+                  
+                  <!-- card title -->
+                  <h3 class="title title-flex"><span>Packages Sold</span><a class="icon-wrap" href="#"><svg class="icon icon-link"><use xlink:href="#icon-coins" /></svg><svg class="icon icon-collapse"><use xlink:href="#icon-caret" /></svg></a></a></h3>
+                  
+                  <!-- card content -->
+                  <div class="card-content table-content">
+                    
+                    <!-- Data -->                
+                    <table class="data-table table-flip">
+                        <thead>
+                          <tr>
+                            <th>Trial</th>
+                            <th>Starter</th>
+                            <th>Bronze</th>                      
+                            <th>Silver</th>
+                            <th>Gold</th>
+                            <th>VIP</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>65</td>
+                            <td>40</td>
+                            <td>15</td>
+                            <td>25</td> 
+                            <td>3</td>  
+                            <td>0</td>                    
+                          </tr>
+                        </tbody>
+                      </table>
+                    
+                    <!-- end / card-content -->
+                  </div>
+                  
+                                    
+                  <!-- end / card -->
+                </div>
+                
+                <!-- end / -->
+              </div>
+
+              <!-- Mini Cards -->
+              <div class="card-grid grid-4 mini-cards">
                 
                 <!-- Reports -->
-                <div class="card card-mini text-center w-100 sm-w-40 md-w-20">
-                  <h3 class="text-sm">Reports</h3>
+                <div class="card mini-card">
+                  <h3 class="title">Reports</h3>
                   <a class="icon-wrap flex jc-center p-sm" href="#">
                     <svg class="icon">
                       <use xlink:href="#icon-doc" />
@@ -285,21 +641,10 @@
                     </svg>
                   </a>
                 </div>
-                
-                <!-- Commissions -->
-                <div class="card card-mini text-center w-100 sm-w-40 md-w-20">
-                  <h3 class="text-sm">Commissions</h3>
-                  <a class="icon-wrap flex jc-center p-sm" href="#">
-                    <svg class="icon">
-                      <use xlink:href="#icon-coins" />
-                      <span class="sr-only">Admin Profile</span>
-                    </svg>
-                  </a>
-                </div>
-                
+
                 <!-- Analytics -->
-                <div class="card card-mini text-center w-100 sm-w-40 md-w-20">
-                  <h3 class="text-sm">Analytics</h3>
+                <div class="card mini-card">
+                  <h3 class="title">Analytics</h3>
                   <a class="icon-wrap flex jc-center p-sm" href="#">
                     <svg class="icon">
                       <use xlink:href="#icon-chart-bar-ver" />
@@ -308,19 +653,9 @@
                   </a>
                 </div>
                
-                <!-- Tutorials -->
-                <div class="card card-mini text-center w-100 sm-w-40 md-w-20">
-                  <h3 class="text-sm">Tutorials</h3>
-                  <a class="icon-wrap flex jc-center p-sm" href="#">
-                    <svg class="icon">
-                      <use xlink:href="#icon-videocam" />
-                    </svg>
-                  </a>
-                </div>
-               
                 <!-- Help -->
-                <div class="card card-mini text-center w-100 sm-w-40 md-w-20">
-                  <h3 class="text-sm">Help Center</h3>
+                <div class="card mini-card">
+                  <h3 class="title">Help Center</h3>
                   <a class="icon-wrap flex jc-center p-sm" href="#">
                     <svg class="icon">
                       <use xlink:href="#icon-tools" />
@@ -328,23 +663,12 @@
                   </a>
                 </div>
                 
-                <!-- FAQ -->
-                <div class="card card-mini text-center w-100 sm-w-40 md-w-20">
-                  <h3 class="text-sm"><abbr title="Frequently Asked Questions">FAQ</abbr></h3>
-                  <a class="icon-wrap flex jc-center p-sm" href="#">
-                    <svg class="icon">
-                      <use xlink:href="#icon-help" />
-                      <span class="sr-only">Frequently Asked Questions</span>
-                    </svg>
-                  </a>
-                </div>
-                
-                
-                
+                <!-- end / mini-cards -->
               </div>
+              
             </div>
           </section>
-          
+ 
           <!-- end / main-content -->
         </main>
         

@@ -1,0 +1,11 @@
+// Card Grid
+
+.card-grid {
+  @include flex-grid;
+  width: 100%;
+  
+  > * {
+    //width: 100%;  
+  } 
+  
+}

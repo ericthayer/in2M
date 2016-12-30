@@ -27,14 +27,19 @@
   // reset button
   .btn-reset {
     position: absolute;
-    top: 7px;
-    right: 7px;
+    top: .625em;
+    right: .625em;
     height: 1em;  
-    width: 1em;  
-    &:hover,
+    width: 1em;
+    .icon {
+      transition: all .4s ease;
+    }
     &:focus {
-      background: none;
-      opacity: .7;   
+      .icon {
+        fill: #CCC;
+        font-size: 1.75rem;  
+        //opacity: .7;
+      }   
     } 
   }
 }

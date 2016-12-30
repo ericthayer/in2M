@@ -787,6 +787,12 @@
 		"oAP": "\/css\/scss\/.sass-cache\/094ea8209b87f8d31b68ac1340f5aa9b3e1a8d78\/_layout-options.scssc",
 		"oF": 0
 		},
+	"\/css\/scss\/.sass-cache\/0b4126d95e8ecf6f98753b056c31f523c204da5e\/_css-rwd-tables.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/css\/scss\/.sass-cache\/0b4126d95e8ecf6f98753b056c31f523c204da5e\/_css-rwd-tables.scssc",
+		"oF": 0
+		},
 	"\/css\/scss\/.sass-cache\/0b4126d95e8ecf6f98753b056c31f523c204da5e\/_in2-data-tables.scssc": {
 		"ft": 8192,
 		"oA": 1,
@@ -1087,16 +1093,34 @@
 		"oAP": "\/css\/scss\/.sass-cache\/9dc72358686efea125a304ed1c9a099b529eeef0\/_logged-out.scssc",
 		"oF": 0
 		},
+	"\/css\/scss\/.sass-cache\/c5535912b53c58e714f42c05505056b05cc3a4a6\/_card-grid.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/css\/scss\/.sass-cache\/c5535912b53c58e714f42c05505056b05cc3a4a6\/_card-grid.scssc",
+		"oF": 0
+		},
 	"\/css\/scss\/.sass-cache\/c5535912b53c58e714f42c05505056b05cc3a4a6\/_cards.scssc": {
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/css\/scss\/.sass-cache\/c5535912b53c58e714f42c05505056b05cc3a4a6\/_cards.scssc",
 		"oF": 0
 		},
+	"\/css\/scss\/.sass-cache\/c5535912b53c58e714f42c05505056b05cc3a4a6\/_dashboard-cards.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/css\/scss\/.sass-cache\/c5535912b53c58e714f42c05505056b05cc3a4a6\/_dashboard-cards.scssc",
+		"oF": 0
+		},
 	"\/css\/scss\/.sass-cache\/c5535912b53c58e714f42c05505056b05cc3a4a6\/_detail-card.scssc": {
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/css\/scss\/.sass-cache\/c5535912b53c58e714f42c05505056b05cc3a4a6\/_detail-card.scssc",
+		"oF": 0
+		},
+	"\/css\/scss\/.sass-cache\/c5535912b53c58e714f42c05505056b05cc3a4a6\/_mini-card.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/css\/scss\/.sass-cache\/c5535912b53c58e714f42c05505056b05cc3a4a6\/_mini-card.scssc",
 		"oF": 0
 		},
 	"\/css\/scss\/.sass-cache\/ca2e3e72abdf61d2493308394229d92eec8b2a65\/_margin.scssc": {
@@ -1276,19 +1300,6 @@
 		"oS": 0,
 		"uL": 0
 		},
-	"\/css\/scss\/layout\/logged-in\/_logged-in.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/css\/scss\/layout\/css\/_logged-in.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 0
-		},
 	"\/css\/scss\/modifiers\/_enhancements.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -1450,6 +1461,19 @@
 		"oA": 1,
 		"oAP": "\/css\/scss\/modifiers\/layout\/.sass-cache\/094ea8209b87f8d31b68ac1340f5aa9b3e1a8d78\/_flexbox.scssc",
 		"oF": 0
+		},
+	"\/css\/scss\/modifiers\/layout\/_cq-grids.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/scss\/modifiers\/css\/_cq-grids.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 0
 		},
 	"\/css\/scss\/modifiers\/layout\/_flex-layout.scss": {
 		"aP": 1,
@@ -1626,6 +1650,19 @@
 		"oS": 0,
 		"uL": 0
 		},
+	"\/css\/scss\/modules\/cards\/_card-grid.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/scss\/modules\/css\/_card-grid.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 0
+		},
 	"\/css\/scss\/modules\/cards\/_cards.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -1635,6 +1672,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/css\/scss\/modules\/css\/_cards.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 0
+		},
+	"\/css\/scss\/modules\/cards\/_dashboard-cards.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/scss\/modules\/css\/_dashboard-cards.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 0
@@ -1661,6 +1711,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/css\/scss\/modules\/css\/_detail-list.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 0
+		},
+	"\/css\/scss\/modules\/cards\/_mini-card.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/scss\/modules\/css\/_mini-card.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 0
@@ -2656,10 +2719,28 @@
 		"oAP": "\/global-partials\/footer\/footer-login-blue.html",
 		"oF": 0
 		},
+	"\/global-partials\/header\/header-fixed-logged-in.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/global-partials\/header\/header-fixed-logged-in.html",
+		"oF": 0
+		},
+	"\/global-partials\/header\/header-fixed-logged-out.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/global-partials\/header\/header-fixed-logged-out.html",
+		"oF": 0
+		},
 	"\/global-partials\/header\/header-logged-in.html": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/global-partials\/header\/header-logged-in.html",
+		"oF": 0
+		},
+	"\/global-partials\/header\/header-logged-out-white.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/global-partials\/header\/header-logged-out-white.html",
 		"oF": 0
 		},
 	"\/global-partials\/header\/header-logged-out.html": {
@@ -2710,10 +2791,22 @@
 		"oAP": "\/global-partials\/modals\/modal-demo-video-content.html",
 		"oF": 0
 		},
+	"\/global-partials\/modals\/modal-file-sample-content.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/global-partials\/modals\/modal-file-sample-content.html",
+		"oF": 0
+		},
 	"\/global-partials\/modals\/modal-file-save-confirm-content.html": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/global-partials\/modals\/modal-file-save-confirm-content.html",
+		"oF": 0
+		},
+	"\/global-partials\/modals\/modal-lead-created-content.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/global-partials\/modals\/modal-lead-created-content.html",
 		"oF": 0
 		},
 	"\/global-partials\/modals\/modal-reset-password-confirm-content.html": {
@@ -2756,6 +2849,18 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/global-partials\/modules\/pricing-clean.html",
+		"oF": 0
+		},
+	"\/global-partials\/panels\/panel-new-lead-form.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/global-partials\/panels\/panel-new-lead-form.html",
+		"oF": 0
+		},
+	"\/global-partials\/panels\/panel-trial-form.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/global-partials\/panels\/panel-trial-form.html",
 		"oF": 0
 		},
 	"\/html-review 2.html": {
@@ -5056,10 +5161,10 @@
 		"oAP": "\/public-site\/index.html",
 		"oF": 0
 		},
-	"\/public-site\/login-v2.html": {
+	"\/public-site\/login-tc-light.html": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/public-site\/login-v2.html",
+		"oAP": "\/public-site\/login-tc-light.html",
 		"oF": 0
 		},
 	"\/public-site\/login.html": {
@@ -5090,6 +5195,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/public-site\/support.html",
+		"oF": 0
+		},
+	"\/public-site\/terms-conditions.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public-site\/terms-conditions.html",
 		"oF": 0
 		},
 	"\/public-site\/user-logged-in.html": {
@@ -5216,6 +5327,12 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/retail-user\/ru-create-consumer.html",
+		"oF": 0
+		},
+	"\/retail-user\/ru-manage-consumers.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/retail-user\/ru-manage-consumers.html",
 		"oF": 0
 		},
 	"\/retail-user\/ru-partials\/ru-header-logged-in.html": {
@@ -5386,18 +5503,6 @@
 		"oAP": "\/sales-person\/_sp-archive\/sp-master-page.html",
 		"oF": 0
 		},
-	"\/sales-person\/_sp-archive\/sp-partials\/sp-header-logged-in.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/sales-person\/_sp-archive\/sp-partials\/sp-header-logged-in.html",
-		"oF": 0
-		},
-	"\/sales-person\/_sp-archive\/sp-partials\/sp-header-logged-out.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/sales-person\/_sp-archive\/sp-partials\/sp-header-logged-out.html",
-		"oF": 0
-		},
 	"\/sales-person\/_sp-archive\/sp-plans.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -5434,6 +5539,12 @@
 		"oAP": "\/sales-person\/_sp-archive\/sp-terms-conditions.html",
 		"oF": 0
 		},
+	"\/sales-person\/data\/current-leads-data.txt": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sales-person\/data\/current-leads-data.txt",
+		"oF": 0
+		},
 	"\/sales-person\/sales-person-logged-in.html": {
 		"ft": 8192,
 		"oA": 0,
@@ -5444,12 +5555,6 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/sales-person\/sales-person.html",
-		"oF": 0
-		},
-	"\/sales-person\/sp-checkout-logged-in.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/sales-person\/sp-checkout-logged-in.html",
 		"oF": 0
 		},
 	"\/sales-person\/sp-manage-leads.html": {
@@ -5464,58 +5569,28 @@
 		"oAP": "\/sales-person\/sp-master-page.html",
 		"oF": 0
 		},
-	"\/sales-person\/sp-partials\/header-logged-in copy.html": {
+	"\/sales-person\/sp-partials\/sp-header-logged-in-bg-img.html": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/sales-person\/sp-partials\/header-logged-in copy.html",
+		"oAP": "\/sales-person\/sp-partials\/sp-header-logged-in-bg-img.html",
 		"oF": 0
 		},
-	"\/sales-person\/sp-partials\/header-logged-out copy.html": {
+	"\/sales-person\/sp-partials\/sp-header-logged-in-trans.html": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/sales-person\/sp-partials\/header-logged-out copy.html",
+		"oAP": "\/sales-person\/sp-partials\/sp-header-logged-in-trans.html",
 		"oF": 0
 		},
-	"\/sales-person\/sp-partials\/sp-header-logged-in.html": {
+	"\/sales-person\/sp-partials\/sp-header-logged-in-white.html": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/sales-person\/sp-partials\/sp-header-logged-in.html",
+		"oAP": "\/sales-person\/sp-partials\/sp-header-logged-in-white.html",
 		"oF": 0
 		},
-	"\/sales-person\/sp-partials\/sp-header-logged-out.html": {
+	"\/sales-person\/sp-partials\/sp-header-logged-out-trans.html": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/sales-person\/sp-partials\/sp-header-logged-out.html",
-		"oF": 0
-		},
-	"\/sales-person\/sp-plans.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/sales-person\/sp-plans.html",
-		"oF": 0
-		},
-	"\/sales-person\/sp-pricing-logged-in.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/sales-person\/sp-pricing-logged-in.html",
-		"oF": 0
-		},
-	"\/sales-person\/sp-pricing.html": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/sales-person\/sp-pricing.html",
-		"oF": 0
-		},
-	"\/sales-person\/sp-support-search-results.html": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/sales-person\/sp-support-search-results.html",
-		"oF": 0
-		},
-	"\/sales-person\/sp-support.html": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/sales-person\/sp-support.html",
+		"oAP": "\/sales-person\/sp-partials\/sp-header-logged-out-trans.html",
 		"oF": 0
 		},
 	"\/sales-person\/sp-terms-conditions.html": {

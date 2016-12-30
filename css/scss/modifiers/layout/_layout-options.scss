@@ -83,35 +83,35 @@
 // Rotate
 
 .rotate-45 {
-  transform: rotate(45deg);
+  @include rotate-45;
 }
 
 .rotate-neg-45 {
-  transform: rotate(-45deg);
+  @include rotate-neg-45;
 }
 
 .rotate-90 {
-  transform: rotate(90deg);
+  @include rotate-90;
 }
 
 .rotate-neg-90 {
-  transform: rotate(-90deg);
+  @include rotate-neg-90;
 }
 
 .rotate-180 {
-  transform: rotate(180deg);
+  @include rotate-180;
 }
 
 .rotate-neg-180 {
-  transform: rotate(-180deg);
+  @include rotate-neg-180;
 }
 
 .rotate-270 {
-  transform: rotate(270deg);
+  @include rotate-270;
 }
 
 .rotate-neg-270 {
-  transform: rotate(-270deg);
+  @include rotate-neg-270;
 }
 
 // height

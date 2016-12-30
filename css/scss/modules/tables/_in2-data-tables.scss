@@ -36,9 +36,14 @@
     display: flex;
     align-items: center;  
   }
-  input {
+  input,
+  input[type="search"] {
     border: 1px solid #DDD;
-    max-width: 20em;  
+    max-width: 20em;
+    padding-top: .5em;
+    padding-right: .5em;
+    padding-bottom: .5em;
+    padding-left: .5em;   
   }
 }
 

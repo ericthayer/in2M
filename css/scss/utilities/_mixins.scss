@@ -600,20 +600,50 @@
 
 // Layout 
 
+// Container Styles
+
 @mixin container {
-	margin: 0 auto;
-	max-width: 75em;
-	padding-top: 2em;
-	padding-bottom: 2em;   
-	padding-right: 1em;
-  padding-left: 1em;   	
-	width: 100%;
-	// > 540
-	@media (min-width: $break-md-phone) {
-  	padding-right: 1.5em;
-  	padding-left: 1.5em;   
+  margin: 0 auto;
+  width: 100%;  
+}
+
+// set container width
+
+@mixin container-width {
+  max-width: 87.50em; // 1400
+  // > 2000
+  @media (min-width: $break-xxl-screen) {
+    max-width: 100.00em;
+  }    
+}
+
+// set container padding
+
+@mixin container-padding {	
+	padding-right: 1.5rem;
+  padding-left: 1.5rem;   	
+	// > 640
+	@media (min-width: $break-ml-phone) {
+  	padding-right: 2rem;
+  	padding-left: 2rem;   
 	}
-	@include no-flexbox-container;		
+	// > 1600
+	@media (min-width: $break-xl-screen) {
+  	padding-right: 3rem;
+  	padding-left: 3rem;  
+	}
+}
+
+// reset "flex" container padding
+
+@mixin container-flex {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  // > 480
+  @media (min-width: $break-sm-phone) {
+    padding-right: 0;
+    padding-left: 0;  
+  }
 }
 
 // SR Text
@@ -753,4 +783,36 @@
     top: 50%;
     left: 0;
   }
+}
+
+@mixin rotate-45 {
+  transform: rotate(45deg);
+}
+
+@mixin rotate-neg-45 {
+  transform: rotate(-45deg);
+}
+
+@mixin rotate-90 {
+  transform: rotate(90deg);
+}
+
+@mixin rotate-neg-90 {
+  transform: rotate(-90deg);
+}
+
+@mixin rotate-180 {
+  transform: rotate(180deg);
+}
+
+@mixin rotate-neg-180 {
+  transform: rotate(-180deg);
+}
+
+@mixin rotate-270 {
+  transform: rotate(270deg);
+}
+
+@mixin rotate-neg-270 {
+  transform: rotate(-270deg);
 }

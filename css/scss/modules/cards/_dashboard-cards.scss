@@ -1,0 +1,127 @@
+// Dashboard Cards
+
+// dashboard cards
+.dashboard-cards {
+  
+  padding-top: 4em;
+  padding-bottom: 4em;
+  
+  .table-flip {
+    font-size: $text-sm;
+  }  
+  
+  a {
+    color: $link;
+  }
+  
+  .welcome-block {
+    padding-bottom: 3em;
+    text-align: center; 
+  }
+  
+  // base card styles
+  
+  .card {
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    //border: 2px solid $BBB;
+    color: $c-555-grey;
+    padding-top: .5em;
+    padding-right: 1em;
+    padding-bottom: .5em;
+    padding-left: 1em;   
+  }
+  
+  // mini cards
+  .mini-cards {
+    .card {
+      padding-top: 1.5em;
+    } 
+  }
+
+  .icon-group .icon {
+    margin: 0;    
+  }
+  
+  .title {
+    @include Whitney-Bold;
+    color: $c-777-grey;
+    font-size: $text-base;
+    padding: 0; 
+    width: 100%;
+    text-transform: uppercase;
+    
+    // when icon or button is used w/ title
+    &-flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      // icon
+      .icon-wrap {
+        padding: 0; 
+      }
+      .icon {
+        height: 2em;
+        width: 2em;
+        margin: 0;    
+      }
+      .icon-list {
+        padding: .25em;     
+      } 
+    }
+      
+  }
+  
+  // card content (collapsible)
+  
+  .card-content {
+    flex: 1;
+    
+    .data-table {
+      
+    }
+  }
+  
+  .icon-link {
+    display: none;
+  }
+  
+  .icon-collapse {
+    @include rotate-270;
+    height: 2em;
+    width: 1.5em;  
+  }     
+  
+  .collapsible-expanded {
+    
+    padding-bottom: 1em;
+    
+    .title {
+      margin-bottom: .5rem;  
+    }
+    
+    .icon-link {
+      display: block;      
+    }
+    
+    .icon-collapse {
+      display: none;  
+    }
+    
+    // card content
+    .card-content:not(.table-content) {
+      background-color: $EEE;
+      padding-top: 1em;
+      padding-right: 1em; 
+      padding-bottom: 1em;
+      padding-left: 1em;  
+    }
+       
+  }
+  
+  // detail cards
+  .detail-cards {
+      
+  }
+}

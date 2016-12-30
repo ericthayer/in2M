@@ -77,7 +77,12 @@ html.remodal-is-locked {
   // video modal
   &.video-modal {
     background-color: transparent;
-    padding: 0;       
+    padding: 0;
+    .modal-buttons {
+      padding-top: 1.5em;
+      padding-right: 1em;
+      padding-left: 1em;     
+    }       
   }
   
   
@@ -89,20 +94,22 @@ html.remodal-is-locked {
     // video modal 
     &.video-modal {
       
-      .modal-buttons {
-        padding-top: 2em;   
-      }
       .btn-primary {
         font-size: 1.125rem; 
       }
+      
     }
     // end    
   }
   // > 768
-  @media (min-width: $break-lg-phone) {
+  @media (min-width: $break-md-screen) {
     
     &.video-modal {
       max-width: 48em;
+      .modal-buttons {
+        padding-right: 0;
+        padding-left: 0;     
+      }
     }
     
   }

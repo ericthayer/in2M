@@ -27,541 +27,55 @@
       <![endif]-->
       
       <!-- Free Trial Form -->
-      <section class="trial-form clear-form bg-blue-g-4 c-white h-50 w-100 slide-panel slide-down is-hidden">
-        <button class="btn-reset text-md" onclick="$('.trial-form').toggleClass('is-hidden');">
-          <svg class="icon">
-            <use xlink:href="#icon-cancel" />
-          </svg>
-        </button>
-        <div class="container">
-          <h2 class="text-center mb-tiny">Free 14 Day Trial</h2>
-          <p class="h5 text-center mb-1"><span class="c-blue-70">100</span> SMS + <span class="c-blue-70">100</span> Emails</p>
-          <!-- Form -->
-          <form name="TrialForm" class="mr-ml-a mw-25em whitney-med">
-            <div class="form-wrap">
-              <!-- Name -->
-              <div class="form-row mb-1">
-                <label for="" id="-ariaLabel">Name</label>
-                <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="bg-none bor-2 bor-solid bor-c-white required" title="This is a required field" required>
-              </div>
-              <div class="sm-flex sm-jc-between">
-                <!-- Email -->
-                <div class="form-row mb-1 sm-mr-tiny sm-w-50">
-                  <label for="" id="-ariaLabel">Email</label>
-                  <input id="" name="" type="email" autocorrect="off" autocapitalize="none" spellcheck="false" aria-labelledby="-ariaLabel" class="bg-none bor-2 bor-solid bor-c-white required" title="This is a required field" required>
-                </div>
-                <!-- Phone -->
-                <div class="form-row mb-1 sm-ml-tiny sm-w-50">
-                  <label for="" id="-ariaLabel">Phone</label>
-                  <input id="" name="" type="tel" pattern="[0-9]*" maxlength="10" aria-labelledby="-ariaLabel" class="bg-none bor-2 bor-solid bor-c-white required" title="This is a required field" required>
-                </div>
-              </div>
-              <!-- Message -->
-              <div class="form-row hidden">
-                <label for="-ariaLabel" class="antialiased c-white">Message?</label>
-                <textarea maxlength="200" aria-labelledby="-ariaLabel"></textarea>
-              </div>
-              <!-- Helpers -->
-              <div class="form-row form-helpers flex flex-wrap jc-between mb-1">
-                <!-- Critical Marker -->
-                <label>
-                <input type="checkbox" name="opt1" id="opt1">
-                <span class="text-sm pl-tiny">Call Back ASAP</span>
-                </label>
-                <!-- Help Link -->
-                <label>
-                <span class="text-sm"><a class="c-white" href="#">Need Help?</a></span>
-                </label>
-              </div>
-              <!-- Buttons -->
-              <div class="form-row button-wrap flex flex-d-col-rev sm-flex-d-row sm-jc-center">                  
-                <input class="btn all-caps bg-blue-40 c-white flex-g-1 pt-pb-1" type="submit" value="sign up">
-              </div>
-              <!-- end / form-wrap -->
-            </div>
-          </form>
-        </div>
-      </section>
+      <div data-replace="../../global-partials/panels/panel-free-trial-form.html"></div>
+      
       <!-- Site Wrap  -->
       <div class="site-wrap">
-        
-        <!-- Header (SP pricing logged out) -->  
-        <header class="site-header bg-blue-40 bg-pricing bg-no-repeat bg-center bg-cover pb-1" role="banner">
-          <!-- Nav -->
-          <div class="container flex flex-wrap ai-center jc-between pt-pb-1">
-            <!-- Site Logo -->
-            <h1 class="site-title"><a href="sales-person.html"><img class="header-logo mw-8em" src="../images/UI/in2m-logo-white.svg" alt="in2Marketplace.com"><span class="sr-only">in2Marketplace.com</span></a></h1>
-            <button id="nav-toggle" class="nav-toggle-html bg-none" aria-hidden="false" aria-expanded="false">
-              <div class="nav-icon c-white"></div>
-            </button>
-            <!-- Main Nav -->
-            <section class="main-nav flex flex-wrap ai-center jc-center sm-flex-g-1 tc-white" role="navigation">
-              <!-- Nav -->
-              <script src="../js/libs/responsive-nav.js"></script>
-              <nav class="nav-collapse" role="navigation">
-                <!-- Admin Bar -->
-                <div class="admin-bar pt-1 pr-pl-0 flex flex-wrap ai-center jc-between w-100 sm-w-a md-jc-end md-pt-0 hidden">
-                  <!-- User Status -->
-                  <div class="user-status text-center flex flex-g-1 ai-center jc-center mb-1 x-sm-text-left x-sm-jc-start x-sm-mb-0 x-sm-w-50">
-                    <button onclick="$('#user-status-text').toggleClass('is-visible');" class="toggle-button avatar user-avatar mr-1 hidden x-sm-w-40 sm-block"><img src="../images/UI/slug-avatar.svg" alt="user avatar"></button>
-                    <div id="user-status-text" class="user-status-text flex flex-wrap flex-g-1 flex-d-col x-sm-w-60 sm-ai-start">
-                      <button onclick="$(this).parent().toggleClass('is-visible');" class="btn-reset cancel-button" type="reset">Cancel</button>
-                      <div class="status-msg mb-tiny"><span class="user-name">Super Admin</span></div>
-                      <div class="profile-links flex flex-wrap ai-center jc-center x-sm-jc-start">
-                        <a class="" href="#">Dashboard</a>
-                        <a class="" href="#">Logout</a>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Search -->
-                  <div class="search-form header-search flex-g-1 x-sm-w-50 sm-w-40">
-                    <label class="sr-only" for="search-form">Search</label>
-                    <!-- Search Bar -->
-                    <div class="search-bar flex flex-wrap jc-between">
-                      <input id="search-form" type="search" placeholder="search" role="search">
-                      <button class="bg-DDD" type="submit">
-                        <svg class="icon">
-                          <use xlink:href="#icon-search" />
-                        </svg>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <ul class="list-reset">
-                  <li class="nav-cta pt-sm pb-1">
-                    <a class="btn-round bg-blue-50 all-caps c-white mr-0 pr-pl-1 text-base" href="#" onclick="$('.trial-form.slide-panel').toggleClass('is-hidden');">Free Trial</a>
-                  </li>
-                  <li>
-                    <a href="#">Features</a>
-                  </li>
-                  <li class="active">
-                    <a href="sp-pricing.html">Pricing</a>
-                  </li>
-                  <li>
-                    <a href="sp-support.html">Support</a>
-                  </li>
-                  <li>
-                    <a href="../login.html">Login</a>
-                  </li>
-                  <!-- end / -->
-                </ul>
-              </nav>
-              <script src="../js/libs/mobile-nav.js"></script>
-            </section>
-          </div>          
-        </header>
+
+        <!-- Header -->  
+        <div data-replace="sp-partials/sp-header-logged-in-bg-img.html"></div>
         
         <!-- Main Content -->
-        <main class="main-content">
+        <main class="main-content pt-3 pb-1">
           
-          <!-- Pricing Guide -->
-          <section class="pricing-guide bg-grey-light pt-pb-4">
-            <h2 id="pricing" class="text-center mb-4 w-100">Pricing Guide</h2>
-            <div class="container">
+          <!-- Terms & Conditions -->
+          <section class="terms-content pt-1 pb-3 text-left">
+            <div class="container mw-48em">              
+              <h3 class="text-lg">in2Marketplace User Agreement</h3>
+              <p><strong class="block">Terms Header</strong> Sit amet, consectetur adipisicing elit. Officia amet fugiat, accusantium delectus beatae autem ipsam ipsum sequi ut animi tenetur nam <strong>inline strong text, </strong> eum illum. Culpa asperiores doloremque aut dolorum, in nam soluta.</p>
+              <ol class="pl-2">
+                <li>Numbered list item</li>
+                <li>Numbered list item</li>
+                <li>Numbered list item</li>
+                <li>Numbered list item</li>
+              </ol>
+              <p><strong class="block">Terms Header</strong> Sit amet, consectetur adipisicing elit. Officia amet fugiat, accusantium delectus beatae autem ipsam ipsum sequi ut animi tenetur nam <strong>inline strong text, </strong> eum illum. Culpa asperiores doloremque aut dolorum, in nam soluta. Soluta dolores facere quis veniam quam eligendi id omnis ut ratione dolore, quia quo et placeat nulla reiciendis aspernatur consequuntur porro iure nihil. Necessitatibus neque amet in aspernatur repellendus explicabo illo.</p>
+              <ul class="pl-2">
+                <li>Unordered list item</li>
+                <li>Unordered list item</li>
+                <li>Unordered list item</li>
+                <li>Unordered list item</li>
+              </ul>
+              <p><strong class="block">Terms Header</strong> Sit amet, consectetur adipisicing elit. Officia amet fugiat, accusantium delectus beatae autem ipsam ipsum sequi ut animi tenetur nam <strong>inline strong text, </strong> eum illum. Culpa asperiores doloremque aut dolorum, in nam soluta.</p>
               
-              <!-- Plans -->
-              <div class="pricing-plans bor-1 bor-solid bor-c-EEE mr-ml-a md-flex md-flex-wrap md-jc-between">
-        
-                <!-- Starter Plan -->
-                <div class="card starter-plan bg-white bor-1 bor-solid bor-c-EEE flex-g-1 md-w-50 xl-w-25" tabindex="0">
-                  <!-- Plan Title & Featured Price -->
-                  <div class="card-header flex flex-wrap text-center x-sm-ai-center x-sm-jc-between x-sm-text-left mb-1">
-                    <!-- Plan Title -->
-                    <p class="card-title mb-0 whitney-semi w-100 x-sm-w-a">Starter <sup class="text-base" tabindex="0"><svg class="icon icon-sm mr-ml-0"><use xlink:href="#icon-info-circled" /></svg></sup></p>
-        
-                    <!-- Monthly Cost -->
-                    <div class="collapsible collapsible-expanded w-100 x-sm-w-a" id="starter-monthly-cost" data-collapsible-set="starter-plan-tabs">
-                      <p class="sr-only">monthly details</p>
-                      <div class="collapsible-content">
-                        <p class="plan-cost mb-0 whitney-semi">$79<span class="plan-term pl-tiny text-sm">/ month</span></p>
-                      </div>
-                    </div>
-        
-                    <!-- Annual Discount -->
-                    <div class="collapsible collapsible-collapsed w-100 x-sm-w-a" id="starter-annual-cost" data-collapsible-set="starter-plan-tabs">
-                      <p class="sr-only">annual discount details</p>
-                      <div class="collapsible-content">
-                        <p class="plan-cost mb-0 whitney-semi">$63.20<span class="plan-term pl-tiny text-sm">/ month</span><a class="close-button bor-bot-none ml-tiny text-md" href="#starter-monthly-cost" data-collapsible-target data-force-expand><svg class="icon icon-sm icon-delete"><use xlink:href="#icon-cancel" /></svg></a></p>
-                      </div>
-                    </div>
-        
-                    <!-- Biannual Discount -->
-                    <div class="collapsible collapsible-collapsed w-100 x-sm-w-a" id="starter-biannual-cost" data-collapsible-set="starter-plan-tabs">
-                      <p class="sr-only">biannual discount details</p>
-                      <div class="collapsible-content">
-                        <p class="plan-cost mb-0 whitney-semi">$55.30<span class="plan-term pl-tiny text-sm">/ month</span><a class="close-button bor-bot-none ml-tiny text-md" href="#starter-monthly-cost" data-collapsible-target data-force-expand><svg class="icon icon-sm icon-delete"><use xlink:href="#icon-cancel" /></svg></a></p>
-                      </div>
-                    </div>
-        
-                    <!-- end / Card Header -->
-                  </div>
-        
-                  <!-- Plan Features -->
-                  <div class="plan-features pb-1">
-                    <!-- Feature List -->
-                    <ul class="feature-list bg-EEE mb-0 p-sm text-md whitney-bold">
-                      <li class="c-555 mr-ml-a mw-15em text-base text-center whitney-semi">package includes</li>
-                      <li class="flex ai-center jc-between pt-sm">
-                        <!-- Feature List Title -->
-                        <span class="feature-list-title">Keywords</span>
-                        <!-- Feature List Detail -->
-                        <span class="feature-list-details pl-tiny">5</span>
-                      </li>
-                      <li class="flex ai-center jc-between">
-                        <!-- Feature List Title -->
-                        <span class="feature-list-title">SMS <span class="spacer pr-pl-tiny"> | </span> Emails</span>
-                        <!-- Feature List Detail -->
-                        <span class="feature-list-details pl-tiny">750</span>
-                      </li>
-                    </ul>
-                  </div>
-        
-                  <!-- Plan CTA(s) -->
-                  <div class="card-cta flex-1 flex flex-wrap flex-d-col sm-flex-d-row sm-ai-center sm-jc-between">
-                    <a class="btn bg-blue-50 c-white mb-sm pt-pb-sm pr-tiny pl-sm x-sm-mb-0 sm-pt-pb-tiny" href="#">Select<svg class="icon icon-sm mr-0 rotate-180 text-md"><use xlink:href="#icon-caret" /></svg></a>
-                    <div class="plan-discount-buttons flex-g-1 flex flex-wrap jc-between x-sm-ai-center sm-flex-g-0 sm-jc-end">
-                      <a class="btn plan-discount-button bg-green c-white mb-sm pt-pb-sm pr-pl-1 x-sm-flex-g-1 x-sm-mr-tiny x-sm-mb-0 x-sm-w-45 sm-pt-pb-tiny sm-w-a" href="#starter-annual-cost" data-collapsible-target data-force-expand><span class="plan-label">- 20%</span> <span class="sr-only">1 yr sign up</span></a>
-                      <a class="btn plan-discount-button bg-green c-white mb-sm pt-pb-sm pr-pl-1 x-sm-flex-g-1 x-sm-ml-tiny x-sm-mb-0 x-sm-w-45 sm-pt-pb-tiny sm-w-a" href="#starter-biannual-cost" data-collapsible-target data-force-expand><span class="plan-label">- 30%</span> <span class="sr-only">2 yr sign up</span></a>
-                    </div>
-        
-                    <!-- end / Plan CTA(s) -->
-                  </div>
-        
-        
-                  <!-- end / Starter Plan -->
-                </div>
-        
-                <!-- Bronze Plan -->
-                <div class="card bronze-plan bg-white bor-1 bor-solid bor-c-EEE flex-g-1 md-w-50 xl-w-25" tabindex="0">
-                  <!-- Plan Title & Featured Price -->
-                  <div class="card-header flex flex-wrap text-center x-sm-ai-center x-sm-jc-between x-sm-text-left mb-1">
-                    <!-- Plan Title -->
-                    <p class="card-title mb-0 whitney-semi w-100 x-sm-w-a">Bronze</p>
-        
-                    <!-- Monthly Cost -->
-                    <div class="collapsible collapsible-expanded w-100 x-sm-w-a" id="bronze-monthly-cost" data-collapsible-set="bronze-plan-tabs">
-                      <p class="sr-only">monthly details</p>
-                      <div class="collapsible-content">
-                        <p class="plan-cost mb-0 whitney-semi">$99<span class="plan-term pl-tiny text-sm">/ month</span></p>
-                      </div>
-                    </div>
-        
-                    <!-- Annual Discount -->
-                    <div class="collapsible collapsible-collapsed w-100 x-sm-w-a" id="bronze-annual-cost" data-collapsible-set="bronze-plan-tabs">
-                      <p class="sr-only">annual discount details</p>
-                      <div class="collapsible-content">
-                        <p class="plan-cost mb-0 whitney-semi">$79.20<span class="plan-term pl-tiny text-sm">/ month</span><a class="close-button bor-bot-none ml-tiny text-md" href="#bronze-monthly-cost" data-collapsible-target data-force-expand><svg class="icon icon-sm icon-delete"><use xlink:href="#icon-cancel" /></svg></a></p>
-                      </div>
-                    </div>
-        
-                    <!-- Biannual Discount -->
-                    <div class="collapsible collapsible-collapsed w-100 x-sm-w-a" id="bronze-biannual-cost" data-collapsible-set="bronze-plan-tabs">
-                      <p class="sr-only">biannual discount details</p>
-                      <div class="collapsible-content">
-                        <p class="plan-cost mb-0 whitney-semi">$69.30<span class="plan-term pl-tiny text-sm">/ month</span><a class="close-button bor-bot-none ml-tiny text-md" href="#bronze-monthly-cost" data-collapsible-target data-force-expand><svg class="icon icon-sm icon-delete"><use xlink:href="#icon-cancel" /></svg></a></p>
-                      </div>
-                    </div>
-        
-                    <!-- end / Card Header -->
-                  </div>
-        
-                  <!-- Plan Features -->
-                  <div class="plan-features pb-1">
-                    <!-- Feature List -->
-                    <ul class="feature-list bg-EEE mb-0 p-sm text-md whitney-bold">
-                      <li class="c-555 mr-ml-a mw-15em text-base text-center whitney-semi">package includes</li>
-                      <li class="flex ai-center jc-between pt-sm">
-                        <!-- Feature List Title -->
-                        <span class="feature-list-title">Keywords</span>
-                        <!-- Feature List Detail -->
-                        <span class="feature-list-details pl-tiny">15</span>
-                      </li>
-                      <li class="flex ai-center jc-between">
-                        <!-- Feature List Title -->
-                        <span class="feature-list-title">SMS <span class="spacer pr-pl-tiny"> | </span> Emails</span>
-                        <!-- Feature List Detail -->
-                        <span class="feature-list-details pl-tiny">1500</span>
-                      </li>
-                    </ul>
-                  </div>
-        
-                  <!-- Plan CTA(s) -->
-                  <div class="card-cta flex-1 flex flex-wrap flex-d-col sm-flex-d-row sm-ai-center sm-jc-between">
-                    <a class="btn bg-blue-50 c-white mb-sm pt-pb-sm pr-tiny pl-sm x-sm-mb-0 sm-pt-pb-tiny" href="#">Select<svg class="icon icon-sm mr-0 rotate-180 text-md"><use xlink:href="#icon-caret" /></svg></a>
-                    <div class="plan-discount-buttons flex-g-1 flex flex-wrap jc-between x-sm-ai-center sm-flex-g-0 sm-jc-end">
-                      <a class="btn plan-discount-button bg-green c-white mb-sm pt-pb-sm pr-pl-1 x-sm-flex-g-1 x-sm-mr-tiny x-sm-mb-0 x-sm-w-45 sm-pt-pb-tiny sm-w-a" href="#bronze-annual-cost" data-collapsible-target data-force-expand><span class="plan-label">- 20%</span> <span class="sr-only">1 yr sign up</span></a>
-                      <a class="btn plan-discount-button bg-green c-white mb-sm pt-pb-sm pr-pl-1 x-sm-flex-g-1 x-sm-ml-tiny x-sm-mb-0 x-sm-w-45 sm-pt-pb-tiny sm-w-a" href="#bronze-biannual-cost" data-collapsible-target data-force-expand><span class="plan-label">- 30%</span> <span class="sr-only">2 yr sign up</span></a>
-                    </div>
-        
-                    <!-- end / Plan CTA(s) -->
-                  </div>
-        
-                  <!-- end / Bronze Plan -->
-                </div>
-        
-                <!-- Silver Plan -->
-                <div class="card silver-plan bg-white bor-1 bor-solid bor-c-EEE flex-g-1 md-w-50 xl-w-25" tabindex="0">
-                  <!-- Plan Title & Featured Price -->
-                  <div class="card-header flex flex-wrap text-center x-sm-ai-center x-sm-jc-between x-sm-text-left mb-1">
-                    <!-- Plan Title -->
-                    <p class="card-title mb-0 whitney-semi w-100 x-sm-w-a">Silver</p>
-        
-                    <!-- Monthly Cost -->
-                    <div class="collapsible collapsible-expanded w-100 x-sm-w-a" id="silver-monthly-cost" data-collapsible-set="silver-plan-tabs">
-                      <p class="sr-only">monthly details</p>
-                      <div class="collapsible-content">
-                        <p class="plan-cost mb-0 whitney-semi">$149<span class="plan-term pl-tiny text-sm">/ month</span></p>
-                      </div>
-                    </div>
-        
-                    <!-- Annual Discount -->
-                    <div class="collapsible collapsible-collapsed w-100 x-sm-w-a" id="silver-annual-cost" data-collapsible-set="silver-plan-tabs">
-                      <p class="sr-only">annual discount details</p>
-                      <div class="collapsible-content">
-                        <p class="plan-cost mb-0 whitney-semi">$103.20<span class="plan-term pl-tiny text-sm">/ month</span><a class="close-button bor-bot-none ml-tiny text-md" href="#silver-monthly-cost" data-collapsible-target data-force-expand><svg class="icon icon-sm icon-delete"><use xlink:href="#icon-cancel" /></svg></a></p>
-                      </div>
-                    </div>
-        
-                    <!-- Biannual Discount -->
-                    <div class="collapsible collapsible-collapsed w-100 x-sm-w-a" id="silver-biannual-cost" data-collapsible-set="silver-plan-tabs">
-                      <p class="sr-only">biannual discount details</p>
-                      <div class="collapsible-content">
-                        <p class="plan-cost mb-0 whitney-semi">$90.30<span class="plan-term pl-tiny text-sm">/ month</span><a class="close-button bor-bot-none ml-tiny text-md" href="#silver-monthly-cost" data-collapsible-target data-force-expand><svg class="icon icon-sm icon-delete"><use xlink:href="#icon-cancel" /></svg></a></p>
-                      </div>
-                    </div>
-        
-                    <!-- end / Card Header -->
-                  </div>
-        
-                  <!-- Plan Features -->
-                  <div class="plan-features pb-1">
-                    <!-- Feature List -->
-                    <ul class="feature-list bg-EEE mb-0 p-sm text-md whitney-bold">
-                      <li class="c-555 mr-ml-a mw-15em text-base text-center whitney-semi">package includes</li>
-                      <li class="flex ai-center jc-between pt-sm">
-                        <!-- Feature List Title -->
-                        <span class="feature-list-title">Keywords</span>
-                        <!-- Feature List Detail -->
-                        <span class="feature-list-details pl-tiny">30</span>
-                      </li>
-                      <li class="flex ai-center jc-between">
-                        <!-- Feature List Title -->
-                        <span class="feature-list-title">SMS <span class="spacer pr-pl-tiny"> | </span> Emails</span>
-                        <!-- Feature List Detail -->
-                        <span class="feature-list-details pl-tiny">5000</span>
-                      </li>
-                    </ul>
-                  </div>
-        
-                  <!-- Plan CTA(s) -->
-                  <div class="card-cta flex-1 flex flex-wrap flex-d-col sm-flex-d-row sm-ai-center sm-jc-between">
-                    <a class="btn bg-blue-50 c-white mb-sm pt-pb-sm pr-tiny pl-sm x-sm-mb-0 sm-pt-pb-tiny" href="#">Select<svg class="icon icon-sm mr-0 rotate-180 text-md"><use xlink:href="#icon-caret" /></svg></a>
-                    <div class="plan-discount-buttons flex-g-1 flex flex-wrap jc-between x-sm-ai-center sm-flex-g-0 sm-jc-end">
-                      <a class="btn plan-discount-button bg-green c-white mb-sm pt-pb-sm pr-pl-1 x-sm-flex-g-1 x-sm-mr-tiny x-sm-mb-0 x-sm-w-45 sm-pt-pb-tiny sm-w-a" href="#silver-annual-cost" data-collapsible-target data-force-expand><span class="plan-label">- 20%</span> <span class="sr-only">1 yr sign up</span></a>
-                      <a class="btn plan-discount-button bg-green c-white mb-sm pt-pb-sm pr-pl-1 x-sm-flex-g-1 x-sm-ml-tiny x-sm-mb-0 x-sm-w-45 sm-pt-pb-tiny sm-w-a" href="#silver-biannual-cost" data-collapsible-target data-force-expand><span class="plan-label">- 30%</span> <span class="sr-only">2 yr sign up</span></a>
-                    </div>
-        
-                    <!-- end / Plan CTA(s) -->
-                  </div>
-        
-                  <!-- end / Silver Plan -->
-                </div>
-        
-                <!-- Gold Plan -->
-                <div class="card gold-plan bg-white bor-1 bor-solid bor-c-EEE flex-g-1 md-w-50 xl-w-25" tabindex="0">
-                  <!-- Plan Title & Featured Price -->
-                  <div class="card-header flex flex-wrap text-center x-sm-ai-center x-sm-jc-between x-sm-text-left mb-1">
-                    <!-- Plan Title -->
-                    <p class="card-title mb-0 whitney-semi w-100 x-sm-w-a">Gold</p>
-        
-                    <!-- Monthly Cost -->
-                    <div class="collapsible collapsible-expanded w-100 x-sm-w-a" id="gold-monthly-cost" data-collapsible-set="gold-plan-tabs">
-                      <p class="sr-only">monthly details</p>
-                      <div class="collapsible-content">
-                        <p class="plan-cost mb-0 whitney-semi">$199<span class="plan-term pl-tiny text-sm">/ month</span></p>
-                      </div>
-                    </div>
-        
-                    <!-- Annual Discount -->
-                    <div class="collapsible collapsible-collapsed w-100 x-sm-w-a" id="gold-annual-cost" data-collapsible-set="gold-plan-tabs">
-                      <p class="sr-only">annual discount details</p>
-                      <div class="collapsible-content">
-                        <p class="plan-cost mb-0 whitney-semi">$159.20<span class="plan-term pl-tiny text-sm">/ month</span><a class="close-button bor-bot-none ml-tiny text-md" href="#gold-monthly-cost" data-collapsible-target data-force-expand><svg class="icon icon-sm icon-delete"><use xlink:href="#icon-cancel" /></svg></a></p>
-                      </div>
-                    </div>
-        
-                    <!-- Biannual Discount -->
-                    <div class="collapsible collapsible-collapsed w-100 x-sm-w-a" id="gold-biannual-cost" data-collapsible-set="gold-plan-tabs">
-                      <p class="sr-only">biannual discount details</p>
-                      <div class="collapsible-content">
-                        <p class="plan-cost mb-0 whitney-semi">$139.30<span class="plan-term pl-tiny text-sm">/ month</span><a class="close-button bor-bot-none ml-tiny text-md" href="#gold-monthly-cost" data-collapsible-target data-force-expand><svg class="icon icon-sm icon-delete"><use xlink:href="#icon-cancel" /></svg></a></p>
-                      </div>
-                    </div>
-        
-                    <!-- end / Card Header -->
-                  </div>
-        
-                  <!-- Plan Features -->
-                  <div class="plan-features pb-1">
-                    <!-- Feature List -->
-                    <ul class="feature-list bg-EEE mb-0 p-sm text-md whitney-bold">
-                      <li class="c-555 mr-ml-a mw-15em text-base text-center whitney-semi">package includes</li>
-                      <li class="flex ai-center jc-between pt-sm">
-                        <!-- Feature List Title -->
-                        <span class="feature-list-title">Keywords</span>
-                        <!-- Feature List Detail -->
-                        <span class="feature-list-details pl-tiny">50</span>
-                      </li>
-                      <li class="flex ai-center jc-between">
-                        <!-- Feature List Title -->
-                        <span class="feature-list-title">SMS <span class="spacer pr-pl-tiny"> | </span> Emails</span>
-                        <!-- Feature List Detail -->
-                        <span class="feature-list-details pl-tiny">10000</span>
-                      </li>
-                    </ul>
-                  </div>
-        
-                  <!-- Plan CTA(s) -->
-                  <div class="card-cta flex-1 flex flex-wrap flex-d-col sm-flex-d-row sm-ai-center sm-jc-between">
-                    <a class="btn bg-blue-50 c-white mb-sm pt-pb-sm pr-tiny pl-sm x-sm-mb-0 sm-pt-pb-tiny" href="#">Select<svg class="icon icon-sm mr-0 rotate-180 text-md"><use xlink:href="#icon-caret" /></svg></a>
-                    <div class="plan-discount-buttons flex-g-1 flex flex-wrap jc-between x-sm-ai-center sm-flex-g-0 sm-jc-end">
-                      <a class="btn plan-discount-button bg-green c-white mb-sm pt-pb-sm pr-pl-1 x-sm-flex-g-1 x-sm-mr-tiny x-sm-mb-0 x-sm-w-45 sm-pt-pb-tiny sm-w-a" href="#gold-annual-cost" data-collapsible-target data-force-expand><span class="plan-label">- 20%</span> <span class="sr-only">1 yr sign up</span></a>
-                      <a class="btn plan-discount-button bg-green c-white mb-sm pt-pb-sm pr-pl-1 x-sm-flex-g-1 x-sm-ml-tiny x-sm-mb-0 x-sm-w-45 sm-pt-pb-tiny sm-w-a" href="#gold-biannual-cost" data-collapsible-target data-force-expand><span class="plan-label">- 30%</span> <span class="sr-only">2 yr sign up</span></a>
-                    </div>
-        
-                    <!-- end / Plan CTA(s) -->
-                  </div>
-        
-                  <!-- end / Gold Plan -->
-                </div>
-        
-                <!-- Trial Plan -->
-                <div class="card trial-plan bg-white bor-1 bor-solid bor-c-EEE flex-g-1 md-w-50" tabindex="0">
-                  <!-- Plan Title & Featured Price -->
-                  <div class="card-header flex flex-wrap text-center x-sm-ai-center x-sm-jc-between x-sm-text-left mb-1">
-                    <!-- Plan Title -->
-                    <p class="card-title mb-0 whitney-semi w-100 x-sm-w-a">14 Day Trial</p>
-        
-                    <!-- Monthly Cost -->
-                      <p class="plan-cost all-caps mb-0 text-lg whitney-semi w-100 x-sm-w-a">Free</p>
-        
-                    <!-- end / Card Header -->
-                  </div>
-        
-                  <!-- Plan Features -->
-                  <div class="plan-features pb-1">
-                    <!-- Feature List -->
-                    <ul class="feature-list bg-EEE mb-0 p-sm text-md whitney-bold">
-                      <li class="c-555 mr-ml-a mw-15em text-base text-center whitney-semi">package includes</li>
-                      <li class="flex ai-center jc-between pt-sm">
-                        <!-- Feature List Title -->
-                        <span class="feature-list-title">Keywords</span>
-                        <!-- Feature List Detail -->
-                        <span class="feature-list-details pl-tiny">n/a</span>
-                      </li>
-                      <li class="flex ai-center jc-between">
-                        <!-- Feature List Title -->
-                        <span class="feature-list-title">SMS <span class="spacer pr-pl-tiny"> | </span> Emails</span>
-                        <!-- Feature List Detail -->
-                        <span class="feature-list-details pl-tiny">250</span>
-                      </li>
-                    </ul>
-                  </div>
-        
-                  <!-- Plan CTA(s) -->
-                  <div class="card-cta flex-1 flex flex-wrap flex-d-col sm-flex-d-row sm-ai-center sm-jc-between">
-                    <a class="btn bg-blue-50 c-white mb-sm pt-pb-sm pr-tiny pl-sm x-sm-mb-0 sm-pt-pb-tiny" href="#">Select<svg class="icon icon-sm mr-0 rotate-180 text-md"><use xlink:href="#icon-caret" /></svg></a>
-                    <div class="plan-discount-buttons flex-g-1 flex flex-wrap jc-between x-sm-ai-center sm-flex-g-0 sm-jc-end">
-                      <a class="btn plan-discount-button bg-BBB c-white mb-sm pt-pb-sm pr-pl-1 x-sm-flex-g-1 x-sm-mr-tiny x-sm-mb-0 x-sm-w-45 sm-pt-pb-tiny sm-w-a" href="https://www.facebook.com/sharer.php" target="_blank"><svg class="icon icon-sm mr-ml-0 text-md"><use xlink:href="#icon-facebook" /></svg></a>
-                      <a class="btn plan-discount-button bg-BBB c-white mb-sm pt-pb-sm pr-pl-1 x-sm-flex-g-1 x-sm-ml-tiny x-sm-mb-0 x-sm-w-45 sm-pt-pb-tiny sm-w-a" href="http://twitter.com/share" target="_blank"><svg class="icon icon-sm mr-ml-0 text-md"><use xlink:href="#icon-twitter" /></svg></a>
-                    </div>
-        
-                    <!-- end / Plan CTA(s) -->
-                  </div>
-        
-                  <!-- end / Trial Plan -->
-                </div>
-        
-                <!-- VIP Plan -->
-                <div class="card vip-plan bg-white bor-1 bor-solid bor-c-EEE flex-g-1 md-w-50" tabindex="0">
-                  <!-- Plan Title & Featured Price -->
-                  <div class="card-header flex flex-wrap text-center x-sm-ai-center x-sm-jc-between x-sm-text-left mb-1">
-                    <!-- Plan Title -->
-                    <p class="card-title mb-0 whitney-semi w-100 x-sm-w-a">VIP</p>
-        
-                    <!-- Monthly Cost -->
-                    <div class="w-100 x-sm-w-a">
-                      <p class="plan-cost mb-0 text-lg whitney-semi">contact for price</p>
-                    </div>
-        
-                    <!-- end / Card Header -->
-                  </div>
-        
-                  <!-- Plan Features -->
-                  <div class="plan-features pb-1">
-                    <!-- Feature List -->
-                    <ul class="feature-list bg-EEE mb-0 p-sm text-md whitney-bold">
-                      <li class="c-555 mr-ml-a mw-15em text-base text-center whitney-semi">package includes</li>
-                      <li class="flex ai-center jc-between pt-sm">
-                        <!-- Feature List Title -->
-                        <span class="feature-list-title">Keywords</span>
-                        <!-- Feature List Detail -->
-                        <span class="feature-list-details pl-tiny">unlimited</span>
-                      </li>
-                      <li class="flex ai-center jc-between">
-                        <!-- Feature List Title -->
-                        <span class="feature-list-title">SMS <span class="spacer pr-pl-tiny"> | </span> Emails</span>
-                        <!-- Feature List Detail -->
-                        <span class="feature-list-details pl-tiny">unlimited</span>
-                      </li>
-                    </ul>
-                  </div>
-        
-                  <!-- Plan CTA(s) -->
-                  <div class="card-cta flex-1 flex flex-wrap flex-d-col sm-flex-d-row sm-ai-center sm-jc-between">
-                    <a class="btn bg-blue-50 c-white mb-sm pt-pb-sm pr-tiny pl-sm x-sm-mb-0 sm-pt-pb-tiny" href="#">Select<svg class="icon icon-sm mr-0 rotate-180 text-md"><use xlink:href="#icon-caret" /></svg></a>
-                    <div class="plan-discount-buttons flex-g-1 flex flex-wrap jc-between x-sm-ai-center sm-flex-g-0 sm-jc-end">
-                      <a class="btn plan-discount-button bg-BBB c-white mb-sm pt-pb-sm pr-pl-1 x-sm-flex-g-1 x-sm-mr-tiny x-sm-mb-0 x-sm-w-45 sm-pt-pb-tiny sm-w-a" href="tel:8005551234"><svg class="icon icon-sm mr-ml-0 text-md"><use xlink:href="#icon-mobile" /></svg></a>
-                      <a class="btn plan-discount-button bg-BBB c-white mb-sm pt-pb-sm pr-pl-1 x-sm-flex-g-1 x-sm-ml-tiny x-sm-mb-0 x-sm-w-45 sm-pt-pb-tiny sm-w-a" href="mailto:contact@in2marketplace.com"><svg class="icon icon-sm mr-ml-0 text-md"><use xlink:href="#icon-envelope" /></svg></a>
-                    </div>
-        
-                    <!-- end / Plan CTA(s) -->
-                  </div>
-        
-                  <!-- end / VIP Plan -->
-                </div>
-        
-                <!-- end / Pricing Plans -->
+              <!-- Accept Checkbox -->
+            	<div class="terms-opt pt-1 text-center">
+                <label class="checkbox flex flex-wrap ai-center jc-center text-md w-100">
+                  <input type="checkbox" name="opt1">
+                  <span class="item-desc">Accept Terms and Conditions</span>
+                </label>
+                <!-- Continue Button -->
+                <div class="form-row button-wrap flex flex-d-col-rev sm-flex-d-row sm-jc-center">
+                  <input class="btn-primary" type="submit" value="Accept">
+                </div>                      
               </div>
-              
-              <!-- Terms Link -->
-            	<p class="c-333 flex flex-d-col mb-0 pt-2 text-center text-lg whitney-semi md-flex-d-row md-ai-center md-jc-center"><span class="md-mr-tiny">Balance rolls over and lasts for 1 year -</span> <a class="antialiased bor-bot-none c-blue-50 whitney-bold" href="#">Terms & Conditions</a></p>
-            	<!-- Disclamer Text -->
-            	<p class="c-555 flex flex-d-col mb-0 pt-pb-sm text-center text-sm whitney-semi md-flex-d-row md-ai-center md-jc-center"><span class="md-mr-sm">*$149 one time fee for <strong>Starter Package</strong> only.</span></p>
-              
               
             </div>
           </section>
 
-          
-          <!-- CTA Banner (Info & Help Buttons) -->
-          <section class="cta-banner bg-info-banner bg-no-repeat bg-cover bg-blue-20 tc-white text-center pt-pb-2">
-            <div class="container md-pt-pb-4">
-              <!-- Buttons -->
-              <div class="button-wrap flex flex-d-col jc-center pt-1 x-sm-flex-d-row x-sm-flex-wrap">  
-                <a class="btn btn-outline btn-round c-white flex-g-1 mr-ml-a mb-1 pt-pb-1 pr-pl-3 text-lg x-sm-mr-ml-sm x-sm-mb-sm md-flex-g-0" href="#" data-remodal-target="demo-video">Discover in2M</a>
-                <a class="btn btn-outline btn-round c-white flex-g-1 mr-ml-a mb-1 pt-pb-1 pr-pl-3 text-lg x-sm-mr-ml-sm x-sm-mb-sm md-flex-g-0" href="#">Success Stories</a>
-              </div>
-              <a href="#" class="block text-center text-lg mr-ml-a pt-1">
-                <svg class="icon">
-                  <use xlink:href="#icon-help" />
-                </svg>
-                Help & Support
-              </a>
-            </div>
-          </section>
           <!-- end / main-content -->
         </main>
+        
         <!-- Footer -->
         <div data-replace="../global-partials/footer/footer-logged-in-blue.html"></div>
         <!-- end / site-wrap-->
@@ -651,23 +165,11 @@
             </form>
           </div>
         </div>
-      </div>
+      </div>      
+      
       <!-- Dependencies -->
       <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
       <script>window.jQuery || document.write('<script src="../js/libs/jquery.1.11.2.min.js"><\/script>')</script>
       <script src="../js/min/script.min.js"></script>
-      
-      <script>
-        $('.plan-discount-button').on('click', function() {
-          $(this).parent().find('.plan-discount-button').removeClass('active');
-          $(this).toggleClass('active');
-          $('.close-button').removeClass('hidden');
-        });
-        
-        $('.close-button').on('click', function() {
-          $(this).closest('.card').find('.card-cta .plan-discount-button').removeClass('active');
-          $(this).closest('.card').find('.plan-discount-button span:not(.plan-label)').addClass('sr-only');
-        });
-      </script>
     </body>
   </html>

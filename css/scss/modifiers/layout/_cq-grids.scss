@@ -1,0 +1,127 @@
+// Container Query Grids
+
+// Detail Card
+
+.detail-card:container("width <= 564px") {
+
+  .post-content:container("width <= 300px") {
+    padding-right: 0;
+    width: 100%;  
+  }
+   
+  .post-media:container("width <= 300px") {
+    margin-bottom: 1rem;
+    padding-right: 1em; 
+    padding-left: 1em;
+    width: 100%;
+  }
+
+}
+
+// Grid Layout w/ Container Queries
+
+.layout-grid {
+  
+  > * {
+    // SM
+    &:container("width <= 300px") {
+      font-size: 14px;
+    }
+    &:container("width >= 350px") {
+      flex: 1 1 45%;
+      justify-content: flex-end;
+      //padding: 1em;
+    
+      &:nth-child(odd) {
+        margin-right: .5rem;  
+      }
+      &:nth-child(even) {
+        margin-left: .5rem;
+      }
+    }
+    // MD
+    &:container("width >= 764px") {
+      flex-direction: row;
+      text-align: left;
+      
+      .post-content:container("width >= 300px") {
+        padding-right: 1em;
+        width: 60% !important;  
+      }
+      
+      .post-media:container("width >= 300px") {
+        margin-bottom: 0;
+        padding-right: 0; 
+        padding-left: 1em;
+        width: 40% !important;
+        figure {
+          max-width: 12em;
+        }    
+      }
+    
+    }
+    // LG 
+    &:container("width >= 1000px") {
+      flex: 1 1 20%;
+      //padding: 1em;
+      flex-direction: column-reverse !important;
+      &:nth-child(2n) {
+        margin-right: .5rem;
+        margin-left: .5rem;  
+      }
+      &:nth-child(3n) {
+        margin-left: .5rem;
+        margin-right: .5rem;
+      }
+    }
+  }
+
+  
+
+// end  
+}
+
+
+// Stack Layout
+
+
+.layout-list,
+.layout-stack {
+  
+  .detail-card:container("width >= 564px") {
+    flex-direction: row;
+    text-align: left;
+  }
+  
+  .post-content:container("width >= 500px") {
+    padding-right: 1em;
+    padding-left: 1em;
+    width: 60%;  
+  } 
+  
+  .post-media:container("width >= 500px") {
+    margin-bottom: 0;
+    padding-right: 0; 
+    padding-left: 1em;
+    width: 40%;
+    figure {
+      max-width: 12em;
+    }    
+  }
+  
+  .post-content:container("width >= 700px") {
+    padding-right: 0;
+    padding-left: 1em;
+    width: 70%;  
+  }
+  
+  .post-media:container("width >= 700px") {
+    width: 30%;
+    figure {
+      max-width: 15em;
+    }    
+  }
+  
+// end
+} 
+

@@ -195,8 +195,9 @@ button:not(.search-button):not([class*="-close"]):not(.btn-cancel),
   
 @mixin tc-light {  
   background: $white;
-  color: $c-555-grey;         
-  input {
+  color: $c-555-grey;
+  text-shadow: none !important;        
+  input:not([class*="btn"]) {
     border: 1px solid #CCC;   
   }  
   .req-mark {
@@ -205,27 +206,44 @@ button:not(.search-button):not([class*="-close"]):not(.btn-cancel),
   a:not([class*="btn"]):not(button) {
     color: $link;
   }
+  [class*="btn"]:not(.btn-outline):not(.btn-primary) {
+    background-color: $EEE;
+    border: 1px solid $DDD;
+    &:hover {
+      box-shadow: 0 0 .45em 0 $black-a-25;
+    }
+  } 
 }
 
 @mixin tc-blue-l {
   background-color: $blue-60;
+  color: $blue-30;
   color: $white;
   a:not([class*="btn"]) {
-    color: $white;
+    color: $blue-40;
   }
-  [class*="btn"]:not(.btn-outline) {
+  [class*="btn"]:not(.btn-outline):not(.btn-primary) {
+    background-color: $blue-80;
+  }
+  .btn-primary {
     background-color: $blue-40;
   }
+  &:not(.hero-banner) {
+    text-shadow: none;
+  }  
 }
 
 @mixin tc-blue-m {
-  background-color: $blue-30;
+  background-color: $blue-40;
   color: $white;
   [class*="btn"] {
     color: $white;
   }
-  [class*="btn"]:not(.btn-outline) {
+  [class*="btn"]:not(.btn-outline):not(.btn-primary) {
     background-color: $blue-50;
+  }
+  .btn-primary {
+    background-color: $blue-30;
   }
 }
 
@@ -233,11 +251,14 @@ button:not(.search-button):not([class*="-close"]):not(.btn-cancel),
   background-color: $blue-20;
   color: $white;
   [class*="btn"] {
-    color: $white;
+    color: $blue-30;
   }
-  [class*="btn"]:not(.btn-outline) {
-    background-color: $blue-50;
+  [class*="btn"]:not(.btn-outline):not(.btn-primary) {
+    background-color: $blue-80;
   }
+  .btn-primary {
+    background-color: $blue-60;
+  }  
 }
 
 .tc-light { @include tc-light; }
@@ -286,12 +307,15 @@ button:not(.search-button):not([class*="-close"]):not(.btn-cancel),
 @mixin tc-green-l {
   background-color: $green-80;
   color: $green-30;
-  text-shadow: none !important;
+  //text-shadow: none;
   [class*="btn"] {
     color: $green-40;
   }
   [class*="btn"]:not(.btn-outline) {
     background-color: $green-30;
+  }
+  &:not(.hero-banner) {
+    text-shadow: none;
   }
 }
 

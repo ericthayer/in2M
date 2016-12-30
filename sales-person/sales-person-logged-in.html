@@ -25,191 +25,22 @@
 
 <body class="logged-in sales-person">
   <!--[if lt IE 10]>
-      <p class="update-browser">This browser version is not recommended. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-      <![endif]-->
-      <!-- New Lead Form -->
-      <section class="new-lead-form clear-form bg-blue-g-4 c-white w-100 slide-panel slide-down is-hidden">
-        <button class="btn-reset text-lg" onclick="$('.new-lead-form').toggleClass('is-hidden');">
-          <svg class="icon mr-ml-0">
-            <use xlink:href="#icon-cancel" />
-          </svg>
-        </button>
-        <div class="container pt-2 pb-3">
-          <h2 class="text-center mb-tiny">Capture New Lead</h2>
-          <p class="h5 text-center mb-1">Save contact information to your list.</p>
-          <!-- Form -->
-          <form name="NewLeadForm" class="mr-ml-a mw-25em whitney-med">
-            <div class="form-wrap">
-              <!-- Name -->
-              <div class="form-row mb-1">
-                <label for="" id="-ariaLabel">Name</label>
-                <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="bg-none bor-2 bor-solid bor-c-white required" title="This is a required field"
-                  required>
-              </div>
-              <div class="sm-flex sm-jc-between">
-                <!-- Email -->
-                <div class="form-row mb-1 sm-mr-tiny sm-w-50">
-                  <label for="" id="-ariaLabel">Email</label>
-                  <input id="" name="" type="email" autocorrect="off" autocapitalize="none" spellcheck="false" aria-labelledby="-ariaLabel"
-                    class="bg-none bor-2 bor-solid bor-c-white required" title="This is a required field" required>
-                </div>
-                <!-- Phone -->
-                <div class="form-row mb-1 sm-ml-tiny sm-w-50">
-                  <label for="" id="-ariaLabel">Phone</label>
-                  <input id="" name="" type="tel" pattern="[0-9]*" maxlength="10" aria-labelledby="-ariaLabel" class="bg-none bor-2 bor-solid bor-c-white required"
-                    title="This is a required field" required>
-                </div>
-              </div>
-              <!-- Message -->
-              <div class="form-row mb-1">
-                <label for="-ariaLabel">Message</label>
-                <textarea maxlength="200" aria-labelledby="-ariaLabel" class="bg-none bor-2 bor-solid bor-c-white"></textarea>
-              </div>
-              <!-- Helpers -->
-              <div class="form-row form-helpers flex flex-wrap jc-between mb-1">
-                <!-- Critical Marker -->
-                <label>
-                  <input type="checkbox" name="opt1" id="opt1">
-                  <span class="text-sm pl-tiny">Call Back ASAP</span>
-                </label>
-                <!-- Help Link -->
-                <label>
-                  <span class="text-sm"><a class="c-white" href="#">Need Help?</a></span>
-                </label>
-              </div>
-              <!-- Buttons -->
-              <div class="form-row button-wrap flex flex-d-col-rev sm-flex-d-row sm-jc-center">
-                <input class="btn all-caps bg-blue-40 c-white flex-g-1 pt-pb-1" type="submit" value="save">
-              </div>
-              <!-- end / form-wrap -->
-            </div>
-          </form>
-        </div>
-      </section>
+  <p class="update-browser">This browser version is not recommended. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  
+  <!-- New Lead Form -->
+  <div data-replace="../../global-partials/panels/panel-new-lead-form.html"></div>
+
   <!-- Site Wrap  -->
   <div class="site-wrap bg-blue-g-2">
-    <!-- Admin Bar -->
-    <div class="admin-bar bg-EEE w-100">
-      <div class="container flex flex-wrap ai-center jc-between pt-pb-1 sm-jc-center sm-jc-between">
-        <!-- User Status -->
-        <div class="user-status flex ai-center jc-center mb-1 w-100 sm-jc-start sm-mb-0 sm-w-30">
-          <div class="avatar user-avatar img-1-1-tiny mr-sm sm-mr-1"><img class="" src="../images/UI/slug-avatar.svg" alt="user avatar"></div>
-          <div class="user-status-text flex flex-wrap flex-d-col ai-start">
-            <div class="status-msg mb-tiny"><span class="user-name">Jenny Salesperson</span></div>
-            <div class="profile-links flex ai-center">
-              <a class="pr-sm" href="#">Dashboard</a>
-              <a href="#">Logout</a>
-            </div>
-          </div>
-        </div>
-        <!-- Search -->
-        <div class="search-form header-search mr-ml-a w-100 mw-15em sm-w-70 sm-mr-0">
-          <label class="sr-only" for="search-form">Search</label>
-          <!-- Search Bar -->
-          <div class="search-bar flex flex-wrap jc-between">
-            <input class="bor-1 bor-solid bor-c-DDD" id="search-form" type="search" placeholder="search">
-            <button class="c-777" type="submit"> <svg class="icon"><use xlink:href="#icon-search" /></svg>
-                </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Header v2 -->
-    <header class="site-header" role="banner">
-      <!-- Nav -->
-      <div class="container flex flex-wrap ai-center jc-between pt-pb-1">
-        <!-- Site Logo -->
-        <h1 class="site-title">
-          <a href="sales-person.html"><img class="header-logo mw-8em" src="../images/UI/in2m-logo-white.svg" alt="in2Marketplace.com"><span class="sr-only">in2Marketplace.com</span></a>
-        </h1>
-        <button id="nav-toggle" class="bg-trans nav-toggle-html" aria-hidden="false" aria-expanded="false">
-              <div class="nav-icon c-white"></div>
-            </button>
-        <!-- Main Nav -->
-        <section class="main-nav flex flex-wrap ai-center jc-center sm-flex-g-1 tc-white" role="navigation">
-          <!-- Nav -->
-          <script src="../js/libs/responsive-nav.js"></script>
-          <nav class="nav-collapse" role="navigation">
-            <!-- Admin Bar -->
-            <div class="admin-bar w-100">
-              <div class="container flex flex-wrap ai-center jc-between pt-pb-1 sm-jc-center md-jc-between">
-                <!-- User Status -->
-                <div class="user-status flex ai-center jc-center mb-1 w-100 sm-jc-center md-jc-start md-mb-0 md-w-30">
-                  <div class="avatar user-avatar img-1-1-tiny mr-sm x-sm-mr-1"><img class="" src="../images/UI/slug-avatar.svg" alt="user avatar"></div>
-                  <div class="user-status-text flex flex-wrap flex-d-col ai-start">
-                    <div class="status-msg mb-tiny"><span class="user-name">Jenny Salesperson</span></div>
-                    <div class="profile-links flex ai-center">
-                      <a class="pr-sm" href="#">Dashboard</a>
-                      <a href="#">Logout</a>
-                    </div>
-                  </div>
-                </div>
-                <!-- Search -->
-                <div class="search-form header-search mr-ml-a w-100 mw-15em md-w-70 md-mr-0">
-                  <label class="sr-only" for="search-form">Search</label>
-                  <!-- Search Bar -->
-                  <div class="search-bar flex flex-wrap jc-between">
-                    <input id="search-form" type="search" placeholder="search">
-                    <button class="bg-blue-30 c-white" type="submit"> <svg class="icon"><use xlink:href="#icon-search" /></svg></button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <ul class="list-reset">
-              <li class="nav-cta pt-sm pb-1"><a class="btn-round bg-blue-50 all-caps c-white mr-0 pr-pl-1 text-base" href="#" onclick="$('.new-lead-form.slide-panel').toggleClass('is-hidden');">New Lead</a></li>
-              <li>
-                <a href="#">Features</a>
-              </li>
-              <li>
-                <a href="sp-pricing.html">Pricing</a>
-              </li>
-              <li>
-                <a href="sp-support.html">Support</a>
-              </li>
-              <li>
-                <a data-remodal-target="demo-video">Demo</a>
-              </li>
-              <!-- end / -->
-            </ul>
-          </nav>
-          <script src="../js/libs/mobile-nav.js"></script>
-        </section>
-      </div>
-      <!-- Fixed Nav -->
-      <div class="container fixed-nav md-flex flex-wrap ai-center jc-between">
-        <!-- Site Logo -->
-        <h1 class="site-title">
-          <a href="sales-person.html"><img class="header-logo mw-8em" src="../images/UI/in2m-logo-white.svg" alt="in2Marketplace.com"><span class="sr-only">in2Marketplace.com</span></a>
-        </h1>
-        <!-- Main Nav -->
-        <section class="main-nav flex flex-wrap ai-center jc-center sm-flex-g-1 tc-white" role="navigation">
-          <nav class="nav-collapse" role="navigation">
-            <ul class="list-reset">
-              <li class="nav-cta">
-                <a class="btn-round bg-blue-50 all-caps c-white mr-0 pr-pl-1 text-base" href="#" onclick="$('.new-lead-form.slide-panel').toggleClass('is-hidden');">New Lead</a>
-              </li>
-              <li>
-                <a href="#">Features</a>
-              </li>
-              <li>
-                <a href="sp-pricing.html">Pricing</a>
-              </li>
-              <li>
-                <a href="sp-support.html">Support</a>
-              </li>
-              <li>
-                <a data-remodal-target="demo-video">Demo</a>
-              </li>
-              <!-- end / -->
-            </ul>
-          </nav>
-        </section>
-      </div>
-    </header>
+    
+    <!-- Header -->  
+    <div data-replace="sp-partials/sp-header-logged-in-trans.html"></div>
+    
     <!-- Main Content -->
     <main class="main-content">
       <!-- Main Promo -->
-      <section class="hero-banner c-white pt-1">
+      <section class="hero-banner c-white pt-1 pb-0">
         <!-- Hero Content -->
         <div class="container">
           <!-- Post -->
@@ -1030,6 +861,7 @@
       </section>
       <!-- end / main-content -->
     </main>
+    
     <!-- Footer -->
     <footer class="site-footer bg-blue-20 c-white text-center md-text-left pt-pb-4" role="contentinfo">
       <div class="container flex flex-d-col jc-center md-flex-d-row md-ai-center md-jc-between">
@@ -1097,6 +929,7 @@
         </div>
       </div>
     </footer>
+    
     <!-- end / site-wrap-->
   </div>
   

@@ -259,8 +259,6 @@ ajax.onload = function(e) {
 
 		focusable: "a, input, textarea, select, button, [tabindex='0']"
 
-
-
 	};
 
 	// lightweight plugin wrapper around the constructor,
@@ -817,19 +815,33 @@ document.documentElement.className += " enhanced";
     $(this).next('.toggle-hide').toggleClass('hide, x-sm-hide');
   });
   
-  // toggle checkbox
+// toggle checkbox
+
+$('.checkbox-toggle').on('click' , function() {
+  $(this).parent().parent('.form-row').next('.toggle-disabled').toggleClass('disabled').find('.toggle-input').removeAttr('disabled').val('');
+  $(this).parent().parent('.form-row').next('.toggle-disabled').find('.checkbox-toggle').removeAttr('checked');    
+});
   
-  $('.checkbox-toggle').on('click' , function() {
-    $(this).parent().parent('.form-row').next('.toggle-disabled').toggleClass('disabled').find('.toggle-input').removeAttr('disabled').val('');
-    $(this).parent().parent('.form-row').next('.toggle-disabled').find('.checkbox-toggle').removeAttr('checked');    
+  
+// toggle selects
+  
+$(function() {
+  $('.option-select').change(function(){
+    $('.select-target').hide();
+    $('#' + $(this).val()).show();
   });
+});
   
-  
-  // toggle selects
-  
-  $(function() {
-    $('.option-select').change(function(){
-      $('.select-target').hide();
-      $('#' + $(this).val()).show();
-    });
+// jQuery toggle button
+$('a[data-panel-toggle]').on('click' , function() {
+ $('.slide-panel').toggleClass('is-hidden');
+});
+
+// vanilla js 
+var togglePanel = document.querySelector("a[data-panel-toggle]");
+
+if(togglePanel){
+    togglePanel.addEventListener("click", function() {
+    document.querySelector(".slide-panel").classList.toggle("is-hidden");  
   });
+}

@@ -1,0 +1,93 @@
+<div class="admin-bar bg-grey-light w-100">
+  <div class="container flex flex-wrap ai-center jc-between pt-pb-sm sm-jc-center md-jc-between">
+    <!-- User Status -->
+    <div class="user-status flex ai-center jc-center mb-1 w-100 sm-jc-start sm-mb-0 sm-w-30">
+      <!-- avatar -->
+      <div class="avatar user-avatar mr-sm sm-mr-1"><img class="" src="../images/UI/slug-avatar-square.svg" alt="user avatar"></div>
+      <!-- user status text -->
+      <div class="user-status-text flex flex-wrap flex-d-col ai-start">
+        <div class="status-msg mb-tiny"><span class="user-name">Jenny Salesperson</span></div>
+        <div class="profile-links flex ai-center">
+          <a class="pr-sm" href="#">Dashboard</a>
+          <a href="#">Logout</a>
+        </div>
+      </div>
+    </div>
+    <!-- Search -->
+    <div class="search-form header-search mr-ml-a w-100 mw-15em sm-w-70 sm-mr-0">
+      <label class="sr-only" for="search-form">Search</label>
+      <!-- Search Bar -->
+      <div class="search-bar flex flex-wrap jc-between">
+        <input class="bor-1 bor-solid bor-c-DDD" id="search-form" type="search" placeholder="search">
+        <button class="bor-1 bor-solid bor-c-DDD bor-left-none bg-white c-777" type="submit"> <svg class="icon"><use xlink:href="#icon-search" /></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->  
+<header class="site-header" role="banner">
+  <!-- Nav -->
+  <div class="container flex flex-wrap ai-center jc-between pt-pb-1">
+    <!-- Site Logo -->
+    <h1 class="site-title"><a href="index.html"><img class="header-logo mw-8em" srcset="../images/UI/in2m-logo-white.svg 600w, ../images/UI/in2m-logo-icon-white.svg" src="../images/UI/in2m-logo-white.svg" alt="in2Marketplace.com" /><span class="sr-only">in2Marketplace.com</span></a></h1>
+    <button id="nav-toggle" class="bg-trans nav-toggle-html" aria-hidden="false" aria-expanded="false">
+      <div class="nav-icon c-white"><span>Menu</span></div>
+    </button>
+    <!-- Main Nav -->
+    <section class="main-nav flex flex-wrap ai-center jc-center sm-flex-g-1 tc-white" role="navigation">
+      <!-- Nav -->
+      <script src="../js/libs/responsive-nav.js"></script>
+      <nav class="nav-collapse" role="navigation">
+        <!-- Admin Bar -->
+        <div class="admin-bar w-100">
+          <div class="container flex flex-wrap ai-center jc-between pt-1 sm-jc-center md-jc-between">
+            <!-- User Status -->
+            <div class="user-status flex ai-center jc-center mb-1 w-100 sm-jc-start sm-mb-0 sm-w-40">
+              <!-- avatar -->
+              <div class="avatar user-avatar mr-sm sm-mr-1"><img class="" src="../images/UI/slug-avatar-square.svg" alt="user avatar"></div>
+              <!-- user status text -->
+              <div class="user-status-text flex flex-wrap flex-d-col ai-start">
+                <div class="status-msg mb-tiny"><span class="user-name">User Name</span></div>
+                <div class="profile-links flex ai-center">
+                  <a class="pr-sm" href="#">Dashboard</a>
+                  <a href="#">Logout</a>
+                </div>
+              </div>
+            </div>
+            <!-- Search -->
+            <div class="search-form header-search mr-ml-a w-100 mw-15em sm-w-60 sm-mr-0">
+              <label class="sr-only" for="search-form">Search</label>
+              <!-- Search Bar -->
+              <div class="search-bar flex flex-wrap jc-between">
+                <input class="bor-1 bor-solid bor-c-DDD" id="search-form" type="search" placeholder="search">
+                <button class="bor-1 bor-solid bor-c-DDD bor-left-none bg-white c-777" type="submit"> <svg class="icon"><use xlink:href="#icon-search" /></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul class="list-reset">              
+          <li>
+            <a href="sp-manage-leads.html">Leads</a>
+          </li>
+          <li>
+            <a href="../../public-site/pricing.html">Packages</a>
+          </li>
+          <li>
+            <a href="../../public-site/support.html">Support</a>
+          </li>
+          <li>
+            <a href="#" data-remodal-target="demo-video">Demo</a>
+          </li>
+          <li class="nav-cta">
+            <a href="#" onclick="$('.new-lead-form.slide-panel').toggleClass('is-hidden');">New Lead</a>
+          </li>
+          <!-- end / -->
+        </ul>
+      </nav>
+      <script src="../js/libs/mobile-nav.js"></script>
+    </section>
+  </div>
+</header>

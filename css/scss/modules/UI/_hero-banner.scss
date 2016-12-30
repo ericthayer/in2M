@@ -7,7 +7,7 @@
   //text-shadow: 0 0 10px rgba(black, .5); 
   // theme color
   &[class*="tc-"] {
-   text-shadow: 0 0 10px rgba(black, .5); 
+    text-shadow: 0 0 10px rgba(black, .5); 
   }
   
   h2 {
@@ -20,8 +20,13 @@
 // Hero Buttons
 
 .hero-buttons {
-  padding-top: 1em;
+  padding-top: 1.5em;
   > * { 
-    text-transform: uppercase;
+    //text-transform: uppercase; 
+      
+  }
+  [class*="btn"]:nth-child(1) {
+    background-color: $EEE;
+    //color: $c-555-grey;
   } 
 }

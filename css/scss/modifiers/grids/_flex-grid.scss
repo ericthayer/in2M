@@ -1,6 +1,6 @@
 // Flex Grid
 
-.flex-grid {
+@mixin flex-grid {
  @include clearfix;
  display: flex;
  flex-wrap: wrap;
@@ -9,22 +9,134 @@
    float: left;   
    flex-grow: 1;
    margin: .313em;
-   //padding: .25rem;  
+   width: 100%;   
  }
  
  &.no-mar > * {
    margin: 0; 
  }
  
+ // > 480
+ @media (min-width: $break-sm-phone) {
+   
+  // two-wide   
+  > * {
+    
+    //width: 45%;
+    
+  }
+  
+    
+ }
+ 
+ // > 540
+ @media (min-width: $break-md-phone) {
+   
+   // two-wide     
+   > * {
+      &:nth-last-child(n+2),
+      &:nth-last-child(n+2) ~ * {    
+        width: 45%;      
+      }
+   }
+      
+ }
+ 
  // > 640
- @media (min-width: $break-lg-phone) {
+ @media (min-width: $break-ml-phone) {
    
    &.item-mar-lg > * {
      margin: .625em; 
    }
    
+   // three-wide     
+   > * {
+    &:nth-last-child(n+3),
+    &:nth-last-child(n+3) ~ * {    
+       width: 30%;      
+     }
+   }
+   
+   &.grid-2 {     
+     > * {
+      &:nth-last-child(n+3),
+      &:nth-last-child(n+3) ~ * {    
+         width: 45%;      
+       }
+     }
+   }
+   
  }
-	
+ 
+ // > 992
+ @media (min-width: $break-md-screen) {
+   
+   // four-wide      
+    > * {
+    &:nth-last-child(n+4),
+    &:nth-last-child(n+4) ~ * {    
+       width: 20%;      
+     }
+   }
+   
+   &.grid-3 {     
+     > * {
+      &:nth-last-child(n+4),
+      &:nth-last-child(n+4) ~ * {    
+         width: 30%;      
+       }
+     }
+   }
+      
+ }
+ 
+ // > 1200
+ @media (min-width: $break-lg-screen) {
+   
+    // five-wide
+    > * {
+      &:nth-last-child(n+5),
+      &:nth-last-child(n+5) ~ * {    
+        width: 17%;      
+      }
+    }
+    
+    > * {
+      &:nth-last-child(n+6),
+      &:nth-last-child(n+6) ~ * {    
+         width: 14%;      
+       }
+    }
+    
+   &.grid-4 {     
+     > * {
+      &:nth-last-child(n+5),
+      &:nth-last-child(n+5) ~ * {    
+         width: 20%;      
+       }
+     }
+   }       
+     
+   
+    
+    &.grid-5 {     
+     > * {
+      &:nth-last-child(n+6),
+      &:nth-last-child(n+6) ~ * {    
+         width: 17%;      
+       }
+     }
+   }
+    
+    // end
+  }	
+  
+// end
+}
+
+
+.flex-grid {
+ @include flex-grid;	
 }
 
 
@@ -44,7 +156,7 @@
 	@media (min-width: $break-md-phone) {
   	
   	> * {
-  		width: 31%; 
+  		width: 30%; 
 		}
   	
 	}
@@ -53,7 +165,7 @@
 	@media (min-width: $break-md-screen) {
   	
   	> * {
-  		width: 23%; 
+  		width: 20%; 
 		}
 	}
 	

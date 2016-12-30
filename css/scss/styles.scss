@@ -68,6 +68,14 @@
 @import "vendor/responsive-nav";
 @import "vendor/collapsible";
 
+// Grids
+@import "modifiers/layout/flexbox";
+@import "modifiers/layout/flex-layout";
+@import "modifiers/grids/flex-grid";
+@import "modifiers/grids/media-grid";
+@import "modifiers/grids/simple-grid";
+@import "modifiers/layout/layout-options";
+
 // Layout
 @import "layout/default/site-header";
 @import "layout/default/main-content";
@@ -85,7 +93,7 @@
 //@import "modules/UI/notifications";
 
 @import "modules/tables/tables";
-@import "modules/tables/_in2-data-tables";
+@import "modules/tables/in2-data-tables";
 
 @import "modules/UI/modal";
 @import "modules/UI/hero-banner";
@@ -109,9 +117,17 @@
 @import "modules/forms/contact-form";
 @import "modules/forms/search-form";
 
+// Cards
+@import "modules/cards/card-grid";
 @import "modules/cards/cards";
+@import "modules/cards/mini-card";
 @import "modules/cards/detail-card";
+@import "modules/cards/dashboard-cards";
+
+// Features
 @import "modules/features/features";
+
+// Panels
 @import "modules/panels/panels";
 
 // Modifiers
@@ -121,13 +137,6 @@
 
 @import "modifiers/media/image-styles";
 //@import "modifiers/media/caption-animations";
-
-@import "modifiers/layout/flexbox";
-@import "modifiers/layout/flex-layout";
-@import "modifiers/grids/flex-grid";
-@import "modifiers/grids/media-grid";
-@import "modifiers/grids/simple-grid";
-@import "modifiers/layout/layout-options";
 
 // Overrides
 @import "overrides/fallbacks";

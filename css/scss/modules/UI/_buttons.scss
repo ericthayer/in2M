@@ -145,14 +145,53 @@
 
 @mixin button-primary { 
   @include button-round;
+  background-color: $green;
   color: $white;
   //text-transform: uppercase;
   &:not([class*="bg-"]) {
-    background-color: $green;
+    //background-color: $green;
   }
 }
 
-// Anchors Buttons
+@mixin button-text {
+  @include button-reset;
+  @include Whitney-SemiBold;
+  font-size: inherit;
+}
+
+// Button Sizes
+
+
+@mixin button-sm {
+  font-size: .983rem;
+  padding: .875em 1.5em;    
+}
+
+@mixin button-md {
+  font-size: 1.125rem;
+  padding-right: 2em;
+  padding-left: 2em;    
+}
+
+@mixin button-lg {
+  font-size: 1.45rem;
+  padding-right: 2.5em;
+  padding-left: 2.5em;    
+}
+
+@mixin button-xl {
+  font-size: 1.75rem;
+  padding-right: 3em;
+  padding-left: 3em;    
+}
+
+.btn-sm { @include button-sm; }
+
+.btn-md { @include button-md; }
+
+.btn-lg { @include button-lg; }
+
+.btn-xl { @include button-xl; }
 
 
 // Top Anchor button
@@ -176,23 +215,30 @@ button,
 .btn,
 [class*="btn"] {
   @include button;
+  @include button-md;
 }
 
-.btn:not(.btn-outline) {
+.btn:not(.btn-outline):not([class*="bg-"]) {
   @include button-plain;
 }
 
 .btn-outline {
   @include button-outline;
+  &:hover {
+    background-color: $blue-40;
+  }
+  &:focus {
+    color: $white;
+  }
 }
 
 .btn-round {
   @include button-round;
 }
 
-
 .btn-cancel {
   @include button-plain;
+  @include button-round;
   &:hover {
     //background-color: $DDD;
     //border: 1px solid $BBB;
@@ -220,26 +266,18 @@ button,
   }
 }
 
-.btn-sm {
-  font-size: .983rem;
-  padding: .5em 1em;    
-}
-
-.btn-md {
-  font-size: 1rem;
-  min-width: 5em; 
-  padding: .85em 1.125em;  
-}
-
-.btn-lg {
-  font-size: 1.25rem;
-  padding: 1.25em 2em;  
-}
-
 .btn-text,
 .toggle-button,
 .btn-reset {
   @include button-reset;
+  &:hover,
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.btn-text {
+  @include button-text;
 }
 
 // closing button
@@ -287,7 +325,6 @@ button,
   }
   > * {  
     margin: 0 0 1em;
-    padding: 1em 2em;
     max-width: 15em;
     &:last-child {
       margin-bottom: 0; 

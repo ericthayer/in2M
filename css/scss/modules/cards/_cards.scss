@@ -3,7 +3,7 @@
 .card {
   //background: #DDD;
   //margin: .5rem;  
-  h3 {
+  .title {
     //background: rgba(black, .3);
     letter-spacing: .03rem;
     margin-bottom: 0; 
@@ -12,15 +12,10 @@
     -webkit-font-smoothing: antialiased;
   }
   .icon-wrap {
-    //color: #777;
-    //font-size: 4.5rem;
+    display: flex;
+    padding: .625em;  
   }
-  .icon:not(.icon-sm) {
-    height: 3.25em;
-    max-width: 3.25em;
-    width: 100%;
-    //padding: .5rem .75rem .25rem;   
-  }
+  
   // pricing plans
   .pricing-plans & {
     padding: 1.5em; 
@@ -39,13 +34,13 @@
       border: none;
       box-shadow: 0 0 0 .5em hsl(258, 36%, 60%) inset, 0 0 1em 0 rgba(black, .5);
       outline: none;
-      transform: scale(1.070);
+      //transform: scale(1.070);
       z-index: 1;
     }
   }
   
   
-    
+  // end  
 }
 
 
