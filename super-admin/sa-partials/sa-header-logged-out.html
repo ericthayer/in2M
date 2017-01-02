@@ -1,38 +1,17 @@
-<div class="admin-bar bg-grey-light w-100 hidden">
-    <div class="container flex flex-wrap ai-center jc-between pt-pb-sm sm-jc-center sm-jc-between">
-      <!-- User Status -->
-      <div class="user-status flex ai-center jc-center mb-1 w-100 sm-jc-start sm-mb-0 sm-w-30">
-        <div class="avatar user-avatar mr-sm sm-mr-1"><img class="" src="../images/UI/slug-avatar-square.svg" alt="user avatar"></div>
-        <div class="user-status-text flex flex-wrap flex-d-col ai-start">
-          <div class="status-msg mb-tiny"><span class="user-name">Super Admin</span></div>
-          <div class="profile-links flex ai-center">
-            <a class="pr-sm" href="#">Dashboard</a>
-            <a href="#">Logout</a>
-          </div>
-        </div>
-      </div>
-      <!-- Search -->
-      <div class="search-form header-search mr-ml-a w-100 mw-15em sm-w-70 sm-mr-0">
-        <label class="sr-only" for="search-form">Search</label>
-        <!-- Search Bar -->
-        <div class="search-bar flex flex-wrap jc-between">
-          <input class="bor-1 bor-solid bor-c-DDD" id="search-form" type="search" placeholder="search">
-          <button class="bor-1 bor-solid bor-c-DDD bor-left-none bg-white c-777" type="submit"> <svg class="icon"><use xlink:href="#icon-search" /></svg>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-<header class="site-header bg-white c-blue-40 pb-1" role="banner">
+<header class="site-header bg-blue-40 c-white pb-1" role="banner">
   <!-- Nav -->
   <div class="container flex flex-wrap ai-center jc-between pt-pb-1">
+    <!-- Global Login -->
+    <div class="global-login">
+      <!-- login link -->        
+      <a href="../public-site/login.html"><svg class="icon ml-0"><use xlink:href="#icon-user" /></svg> Login</a>
+    </div>
     <!-- Site Logo -->
     <h1 class="site-title"><a href="/">
-      <img class="header-logo mw-8em" srcset="../images/UI/in2m-logo-color.svg 600w, ../images/UI/in2m-logo-icon-color.svg" src="../images/UI/in2m-logo-color.svg" alt="in2Marketplace.com"><span class="sr-only">in2Marketplace.com</span></a>
+      <img class="header-logo mw-8em" srcset="../images/UI/in2m-logo-white.svg 600w, ../images/UI/in2m-logo-icon-white.svg" src="../images/UI/in2m-logo-white.svg" alt="in2Marketplace.com"><span class="sr-only">in2Marketplace.com</span></a>
     </h1>
     <!-- Nav Toggle -->
-    <button id="nav-toggle" class="bg-blue-40 nav-toggle-html" aria-hidden="false" aria-expanded="false">
+    <button id="nav-toggle" class="bg-trans nav-toggle-html" aria-hidden="false" aria-expanded="false">
       <div class="nav-icon c-white"><span>Menu</span></div>
     </button>
     <!-- Main Nav -->

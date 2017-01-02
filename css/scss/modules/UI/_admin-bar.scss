@@ -16,7 +16,9 @@
   
   // > 640
   @media (min-width: $break-ml-phone) {
-    display: block;
+    &:not(.hidden) {
+      display: block;
+    }
     .nav-collapse & {
       display: none; 
     }

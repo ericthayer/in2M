@@ -1,0 +1,80 @@
+<header class="site-header bg-blue-40 c-white pb-1" role="banner">
+  <!-- Nav -->
+  <div class="container flex flex-wrap ai-center jc-between pt-pb-1">
+    <!-- Global Login -->
+    <div class="global-login">
+      <!-- login link -->        
+      <a href="../public-site/login.html"><svg class="icon ml-0"><use xlink:href="#icon-user" /></svg> Login</a>
+    </div>
+    <!-- Site Logo -->
+    <h1 class="site-title"><a href="retail-admin.html">
+      <img class="header-logo mw-8em" srcset="../images/UI/in2m-logo-white.svg 600w, ../images/UI/in2m-logo-icon-white.svg" src="../images/UI/in2m-logo-white.svg" alt="in2Marketplace.com"><span class="sr-only">in2Marketplace.com</span></a>
+    </h1>
+    <!-- Nav Toggle -->
+    <button id="nav-toggle" class="bg-trans nav-toggle-html" aria-hidden="false" aria-expanded="false">
+      <div class="nav-icon c-white"><span>Menu</span></div>
+    </button>
+    <!-- Main Nav -->
+    <section class="main-nav flex flex-wrap ai-center jc-center sm-flex-g-1">
+      <!-- Nav -->
+      <script src="../js/libs/responsive-nav.js"></script>
+      <nav class="nav-collapse" role="navigation">
+        <!-- Admin Bar -->
+        <div class="admin-bar w-100">
+          <div class="container flex flex-wrap ai-center jc-between pt-pb-1 pr-pl-0 sm-flex-nowrap sm-jc-start"> 
+            <!-- User Status -->
+            <div class="user-status flex ai-center jc-center mb-1 w-100 sm-jc-start sm-mb-0 sm-w-a">
+              <div class="avatar user-avatar img-1-1-tiny mr-sm x-sm-mr-1"><img class="" src="../images/UI/slug-avatar-square.svg" alt="user avatar"></div>
+              <div class="user-status-text flex flex-wrap flex-d-col ai-start">
+                <div class="status-msg mb-tiny"><span class="user-name">Jenny Salesperson</span></div>
+                <div class="profile-links flex ai-center">
+                  <a class="pr-sm" href="#">Dashboard</a>
+                  <a href="#">Logout</a>
+                </div>
+              </div>
+            </div>
+            <!-- Search -->
+            <div class="search-form header-search mr-ml-a mw-20em w-100 sm-mr-0 sm-pl-1 sm-w-a">
+              <label class="sr-only" for="search-form">Search</label>
+              <!-- Search Bar -->
+              <div class="search-bar flex flex-wrap jc-between">
+                <input class="bor-1 bor-solid bor-c-DDD" id="search-form" type="search" placeholder="search">
+                <button class="bor-1 bor-solid bor-c-DDD bor-left-none bg-white c-777" type="submit"> <svg class="icon"><use xlink:href="#icon-search" /></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul class="list-reset">
+          <li><a href="ra-register.html">Register</a></li>
+          <li class="dropdown">
+            <a href="#">View</a>
+            <ul class="sub-menu">
+              <li><a href="ra-view-usage.html">Usage</a></li>
+              <li><a href="ra-view-reports.html">Reports</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#">Create</a>
+            <ul class="sub-menu">
+              <li><a href="ra-create-campaign.html">New Campaign</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#">Manage</a>
+            <ul class="sub-menu">
+              <li><a href="ra-retail-admin.html">Retail Admin Profile</a></li>
+              <li><a href="ra-manage-consumers.html">Consumers</a></li>
+              <li><a href="ra-manage-packages.html">Packages</a></li>
+              <li><a href="ra-manage-users.html">Users</a></li>
+              <li class="hidden"><a href="ra-manage-campaigns.html">Campaigns</a></li>
+            </ul>
+          </li>
+          <li><a data-remodal-target="quick-contact-form">Contact</a></li>                  
+          <!-- end / -->
+        </ul>
+      </nav>
+      <script src="../js/libs/mobile-nav.js"></script>
+    </section>
+  </div>
+</header>

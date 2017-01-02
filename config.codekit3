@@ -5269,6 +5269,12 @@
 		"oAP": "\/retail-admin\/ra-partials\/ra-header-logged-in.html",
 		"oF": 0
 		},
+	"\/retail-admin\/ra-partials\/ra-header-logged-out.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/retail-admin\/ra-partials\/ra-header-logged-out.html",
+		"oF": 0
+		},
 	"\/retail-admin\/ra-register.html": {
 		"ft": 8192,
 		"oA": 0,
@@ -5317,6 +5323,12 @@
 		"oAP": "\/retail-user\/data\/retail-user-data.txt",
 		"oF": 0
 		},
+	"\/retail-user\/retail-user.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/retail-user\/retail-user.html",
+		"oF": 0
+		},
 	"\/retail-user\/ru-create-consumer copy.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -5339,6 +5351,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/retail-user\/ru-partials\/ru-header-logged-in.html",
+		"oF": 0
+		},
+	"\/retail-user\/ru-partials\/ru-header-logged-out.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/retail-user\/ru-partials\/ru-header-logged-out.html",
 		"oF": 0
 		},
 	"\/sales-company-admin\/data\/capacity-data.txt": {
@@ -5461,6 +5479,12 @@
 		"oAP": "\/sales-company-admin\/sca-partials\/sca-header-logged-in.html",
 		"oF": 0
 		},
+	"\/sales-company-admin\/sca-partials\/sca-header-logged-out.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sales-company-admin\/sca-partials\/sca-header-logged-out.html",
+		"oF": 0
+		},
 	"\/sales-company-admin\/sca-view-commissions.html": {
 		"ft": 8192,
 		"oA": 0,
@@ -5545,9 +5569,15 @@
 		"oAP": "\/sales-person\/data\/current-leads-data.txt",
 		"oF": 0
 		},
+	"\/sales-person\/sales-person-dashboard.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sales-person\/sales-person-dashboard.html",
+		"oF": 0
+		},
 	"\/sales-person\/sales-person-logged-in.html": {
 		"ft": 8192,
-		"oA": 0,
+		"oA": 2,
 		"oAP": "\/sales-person\/sales-person-logged-in.html",
 		"oF": 0
 		},
@@ -5591,12 +5621,6 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/sales-person\/sp-partials\/sp-header-logged-out-trans.html",
-		"oF": 0
-		},
-	"\/sales-person\/sp-terms-conditions.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/sales-person\/sp-terms-conditions.html",
 		"oF": 0
 		},
 	"\/super-admin\/data\/capacity-data.txt": {
@@ -5759,6 +5783,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/super-admin\/sa-partials\/sa-header-logged-in.html",
+		"oF": 0
+		},
+	"\/super-admin\/sa-partials\/sa-header-logged-out.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/super-admin\/sa-partials\/sa-header-logged-out.html",
 		"oF": 0
 		},
 	"\/super-admin\/sa-reset-password.html": {

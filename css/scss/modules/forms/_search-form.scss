@@ -1,6 +1,7 @@
 // Search Bar
 
 .search-bar {
+  display: none;  
   @include clearfix;
   input[type='search'] {
     color: currentColor;
@@ -44,10 +45,4 @@
   input[type='search']:not([class*=" bg-"]):not([class*=" c-"]) {
     color: currentColor;
   }
-}
-
-
-// CQ when Search Bar is longer than
-.search-bar:container("width >= 400px") { 
-  
 }
