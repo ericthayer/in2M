@@ -148,9 +148,8 @@
   background-color: $green;
   color: $white;
   //text-transform: uppercase;
-  &:not([class*="bg-"]) {
-    //background-color: $green;
-  }
+  // &:not([class*="bg-"]) {
+  // }
 }
 
 @mixin button-text {
@@ -286,10 +285,6 @@ button,
   .plan-cost & {
     // > 480
    @media (min-width: $break-sm-phone) {
-      //position: absolute;
-      //margin-right: 0;  
-      //right: 0;
-      //top: -5px;
       .icon {
         margin: 0;  
       }
@@ -320,10 +315,7 @@ button,
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  padding-top: 1em; 
-  .text-center & {
-    // justify-content: center;
-  }
+  padding-top: 1em;
   > * {  
     margin: 0 0 1em;
     max-width: 15em;
@@ -339,13 +331,13 @@ button,
   }
   // > 375
   @media (min-width: $break-375) {
-    > *:nth-last-child(n+2), 
-    > *:nth-last-child(n+2) ~ * {
+   & > *:nth-last-child(n+2), 
+   & > *:nth-last-child(n+2) ~ * {
       flex: 0 1 45%;
       margin: 0 .313em;
     }
-    > *:nth-last-child(n+3), 
-    > *:nth-last-child(n+3) ~ * {
+    & > *:nth-last-child(n+3), 
+    & > *:nth-last-child(n+3) ~ * {
       margin: 0 .313em 1em;
       max-width: 100%;
     }

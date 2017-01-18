@@ -37,7 +37,7 @@
       <div data-replace="sa-partials/sa-header-logged-in.html"></div>
       
       <!-- Main Content -->
-      <main class="main-content pt-1 pb-3">
+      <main class="main-content pb-3">
         
         <!-- Main Promo (no media) -->
         <section class="hero-banner tc-orange-m">
@@ -73,6 +73,20 @@
                 	<span class="all-caps sm-pr-pl-sm x-sm-w-65">Package Name</span>
                 	<span class="highlight-item bg-DDD text-center pt-pb-tiny pr-pl-sm x-sm-w-35">Enterprise</span>
               	</div>
+
+                <div class="form-row text-center mb-1 sm-text-sm sm-flex sm-flex-g-0 sm-ai-center sm-jc-between sm-mb-0 sm-w-60">
+                   <label for="-ariaLabel" class="inline-label sm-text-right sm-pr-sm sm-w-60"><span class="sr-only">Select Package</span></label>
+                   <div class="custom-select bor-1 bor-solid bor-c-DDD sm-w-100">
+                    <select required>
+                      <option disabled>select</option>
+                      <option value="Starter">Starter</option>
+                      <option value="Bronze" selected>Bronze</option>
+                      <option value="Silver">Silver</option>
+                      <option value="Gold">Gold</option>
+                      <option value="VIP">VIP</option>
+                    </select>
+                   </div>
+                  </div>
               	
               	<!-- Add-On -->
               	<div class="highlight-row text-tiny text-b flex ai-center jc-between mb-sm">

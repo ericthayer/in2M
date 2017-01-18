@@ -7,7 +7,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>in2Marketplace :: Super Admin - Manage Package</title>
+    <title>in2Marketplace :: Super Admin - Manage Packages</title>
     <meta name="description" content="A powerful retail marketing platform and brand management tool">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="msapplication-TileColor" content="#302A2A">
@@ -36,7 +36,7 @@
       <div data-replace="sa-partials/sa-header-logged-in.html"></div>
       
       <!-- Main Content -->
-      <main class="main-content pt-1 pb-3">
+      <main class="main-content pb-3">
         
         <!-- Main Promo (no media) -->
         <section class="hero-banner tc-orange-m">
@@ -48,7 +48,7 @@
               <div class="post-content">
                 <!-- Text -->
                 <div class="text-wrap">
-                  <h2 class="mb-sm">Manage Package</h2>
+                  <h2 class="mb-sm">Manage Packages</h2>
                   <p class="h3 antialiased mb-0 mr-ml-a mw-35em text-lg">This is where a "Super Admin" or authorized user can manage packages and add-ons.</p>
                 </div>
               </div>
@@ -56,8 +56,39 @@
           </div>
         </section>
         
+        <!-- View Packages -->
+        <section class="data-table pt-3 pb-1">
+          <div class="container">
+    		    
+    		    <!-- Current Packages -->
+    		    <h3 class="function-header"><span>Current Packages</span><span class="icon-group"><a href="../public-site/pricing.html"><svg class="icon"><use xlink:href="#icon-plus" /></svg><span class="label">Add</span></a></span></h3>
+    		    
+    		    <!-- Data -->
+            <table id="manage-packages" class="display responsive nowrap" cellspacing="0" width="100%">
+              <thead>
+                <tr>               
+                  <th>ID</th>
+                  <th>Version</th>
+                  <th>Name</th>
+                  <th>Created</th>
+                  <th>Changed</th>
+                  <th>Description</th>
+                  <th>Fees</th>
+                  <th>Term</th>
+                  <th>Price</th>
+                  <th>Commission</th>
+                  <th>Status</th>
+                  <th class="manage-th">Manage</th>
+                </tr>
+              </thead>
+            </table>
+          
+            <!-- end / -->
+          </div>
+        </section>
+        
         <!-- Form - Manage Campaign Packs -->
-        <section class="admin-form pt-3 pb-1">
+        <section class="admin-form pt-pb-1">
           <div class="container">
 
             <!-- Form Build -->
@@ -67,22 +98,7 @@
                 <!-- Form Header -->
                 <div class="function-header">
                   
-                  <h3 class="text-center text-lg mb-1 sm-text-left sm-mr-1 sm-mb-0 sm-w-60">Manage Packages</h3>
-                 
-                  <!-- Package Name -->
-                  <div class="form-row text-center mb-1 sm-text-sm sm-flex sm-flex-g-0 sm-ai-center sm-jc-between sm-mb-0 sm-w-60">
-                   <label for="-ariaLabel" class="sm-text-right sm-pr-sm sm-w-60"><span class="sr-only">Select Package</span></label>
-                   <div class="custom-select bor-1 bor-solid bor-c-DDD sm-w-100">
-                    <select required>
-                      <option disabled>select</option>
-                      <option value="Starter">Starter</option>
-                      <option value="Bronze" selected>Bronze</option>
-                      <option value="Silver">Silver</option>
-                      <option value="Gold">Gold</option>
-                      <option value="VIP">VIP</option>
-                    </select>
-                   </div>
-                  </div>
+                  <h3 class="text-center text-lg mb-1 sm-text-left sm-mr-1 sm-mb-0 sm-w-60">Edit Package</h3>
 
                 </div>
                 
@@ -94,18 +110,16 @@
                     <!-- Type -->
                     <div class="form-row mb-1 sm-flex-g-1 sm-mr-tiny sm-mb-0 sm-w-50">
                       <!-- Select Type -->
-
                       <label for="" id="-ariaLabel">Type<span class="req-mark">*</span></label>
                       <div class="custom-select">
                         <select id="package-select" class="option-select" required>
                           <option disabled>select</option>
                           <option selected value="subscription">Subscription</option>
-                          <option value="addon">Addon</option>
                           <option value="free-trial">Free Trial</option>
                         </select>
                       </div>
                     </div>
-                    <!-- Package Name -->
+                    <!-- Package Name -->                  
                     <div class="form-row sm-flex-g-1 sm-ml-tiny sm-w-50">
                       <label for="" id="-ariaLabel">Name<span class="req-mark">*</span></label>
                       <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="required" title="This is a required input" value="Bronze" required>
@@ -198,47 +212,6 @@
                         </label>
                       </div>
                     </div>
-                  </div>
-
-                  <!-- Validity Hidden when "Addon" is selected -->
-                  <div id="addon" class="select-target">
-                    <h3 class="title-sm text-md text-center mb-sm pt-sm w-100 sm-text-left">Price</h3>                    
-                      <div class="form-group sm-flex sm-jc-between mb-1">
-                        <!-- Price Input -->
-                        <div class="form-row mb-1 sm-flex-g-1 sm-mr-tiny sm-mb-0 md-w-30">
-                          <label for="" id="-ariaLabel">Price<span class="req-mark">*</span></label>
-                          <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="required" title="This is a required input" required>
-                        </div>
-                        <!-- Commission -->
-                        <div class="form-row mb-1 sm-flex-g-1 sm-mr-ml-tiny sm-mb-0 md-w-30">
-                          <label for="" id="-ariaLabel">Commission</label>
-                          <input id="" name="" type="text" aria-labelledby="-ariaLabel" placeholder="% or $">
-                        </div>
-                        <!-- Setup Fee -->
-                        <div class="form-row sm-flex-g-1 sm-ml-tiny sm-mb-0 md-w-30">
-                          <label for="" id="-ariaLabel">Setup Fee</label>
-                          <input id="" name="" type="text" aria-labelledby="-ariaLabel" placeholder="% or $">
-                        </div>
-                      </div>
-                      <!-- Recursive or One Time commission -->
-                      <h3 class="title-sm text-md text-center mb-sm pt-sm w-100 sm-text-left">Commission Type</h3>
-                      <!-- Options -->
-                      <div class="form-group mb-1 sm-flex sm-ai-center sm-jc-start">
-                        <div class="mb-sm sm-mr-sm sm-mb-0 sm-w-a">
-                          <label class="radiobutton">
-                            <input type="radio" name="commision-type" aria-labelledby="-ariaLabel">
-                            <span class="item-desc">Recurring</span>
-                          </label>
-                        </div>
-                        <div class="sm-ml-sm sm-w-a">
-                          <label class="radiobutton">
-                            <input type="radio" name="commision-type" aria-labelledby="-ariaLabel">
-                            <span class="item-desc text-sm">One Time</span>
-                          </label>
-                        </div>
-                      </div>                 
-                      
-                    <!-- end / -->
                   </div>
 
                   <!-- Price hidden when "Free Trial" is selected -->
@@ -352,5 +325,30 @@
     <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
     <script>window.jQuery || document.write('<script src="../js/libs/jquery.1.11.2.min.js"><\/script>')</script>
     <script src="../js/min/script.min.js"></script>
+    <script src="//cdn.datatables.net/v/dt/dt-1.10.12/af-2.1.2/b-1.2.2/b-colvis-1.2.2/b-html5-1.2.2/r-2.1.0/rr-1.1.2/sc-1.4.2/se-1.2.0/datatables.min.js"></script>
+    <!-- DataTables -->
+    <script>
+      // Manage Packages
+      $('#manage-packages').DataTable({
+        responsive:     true,
+        keys:           true,
+        ajax:           'data/package-data.txt',
+        deferRender:    true,
+        columns: [
+          { "data": "id" },
+          { "data": "version" },
+          { "data": "name" },          
+          { "data": "date_created" },
+          { "data": "last_changed" },
+          { "data": "description" },
+          { "data": "fees" },
+          { "data": "term" },
+          { "data": "price" },
+          { "data": "commission" },
+          { "data": "status" },
+          { "data": "manage" }
+        ]        
+      });
+    </script>
   </body>
 </html>

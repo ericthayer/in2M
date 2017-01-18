@@ -8,7 +8,7 @@
       "location": "San Diego, CA",
       "date_created": "08/16/16",      
       "last_changed": "08/31/17",
-      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sa-manage-sales-company.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+      "manage": "<a class='icon' href='#'><img src='../images/UI/ui-icons/icon-check-cir.svg' alt='check mark icon' /><span class='sr-only'>active</span></a>&nbsp;<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>"
     },
     
     {
@@ -19,7 +19,7 @@
       "location": "Los Angeles, CA",
       "date_created": "08/16/16",      
       "last_changed": "08/31/17",
-      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sa-manage-sales-company.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+      "manage": "<a class='icon' href='#'><img src='../images/UI/ui-icons/icon-check-cir.svg' alt='check mark icon' /><span class='sr-only'>active</span></a>&nbsp;<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>"
     },
     {
       "organization_name": "Another Company Name",
@@ -29,7 +29,7 @@
       "location": "Santa Clara, CA",
       "date_created": "08/16/16",      
       "last_changed": "08/31/17",
-      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sa-manage-sales-company.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+      "manage": "<a class='icon' href='#'><img src='../images/UI/ui-icons/icon-check-grey-cir.svg' alt='grey check mark icon' /><span class='sr-only'>inactive</span></a>&nbsp;<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>"
     },
     
     {
@@ -40,7 +40,7 @@
       "location": "San Jose, CA",
       "date_created": "08/16/16",      
       "last_changed": "08/31/17",
-      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sa-manage-sales-company.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+      "manage": "<a class='icon' href='#'><img src='../images/UI/ui-icons/icon-check-cir.svg' alt='check mark icon' /><span class='sr-only'>active</span></a>&nbsp;<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>"
     }
   ]
 }

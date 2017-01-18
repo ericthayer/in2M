@@ -429,86 +429,15 @@
   }
 }
 
-.bg-after-left:after {
-  left: -100%;  
-}
+// > 1000
+@media (min-width: 62.50em) {
 
-.bg-after-rt:after {
-  right: -100%; 
-}
-
-// > 480
-@media (min-width: $break-sm-phone) {
-  
-  .sm-bg-after-left,
-  .sm-bg-after-rt {
-    &:after {
-      background-color: currentColor;
-      content: '';
-      position: absolute;
-      top: 0; 
-      height: 100%;
-      width: 100%;
-    }
-  }
-  
-  .sm-bg-after-left:after {
+  .bg-after-left:after {
     left: -100%;  
   }
-  
-  .sm-bg-after-rt:after {
-    right: -100%; 
-  }
-  
-}
 
-// > 768
-@media (min-width: $break-lg-phone) {
-  
-  .md-bg-after-left,
-  .md-bg-after-rt {
-    &:after {
-      background-color: currentColor;
-      content: '';
-      position: absolute;
-      top: 0; 
-      height: 100%;
-      width: 100%;
-    }
+  .bg-after-rt:after {
+    right: 0; 
   }
-  
-  .md-bg-after-left:after {
-    left: -100%;  
-  }
-  
-  .md-bg-after-rt:after {
-    right: -100%; 
-  }
-  
-}
 
-// > 992
-@media (min-width: $break-md-screen) {
-  
-  .lg-bg-after-left,
-  .lg-bg-after-rt {
-    &:after {
-      background-color: currentColor;
-      content: '';
-      position: absolute;
-      top: 0; 
-      height: 100%;
-      width: 100%;
-      z-index: 0; 
-    }
-  }
-  
-  .lg-bg-after-left:after {
-    left: -100%;  
-  }
-  
-  .lg-bg-after-rt:after {
-    right: -100%; 
-  }
-  
 }

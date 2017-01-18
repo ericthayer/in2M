@@ -7,7 +7,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>in2Marketplace :: Super Admin - View Packages</title>
+    <title>in2Marketplace :: Super Admin - View Packages and Addons</title>
     <meta name="description" content="A powerful retail marketing platform and brand management tool">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="msapplication-TileColor" content="#302A2A">
@@ -36,7 +36,7 @@
       <div data-replace="sa-partials/sa-header-logged-in.html"></div>
       
       <!-- Main Content -->
-      <main class="main-content pt-1 pb-3">
+      <main class="main-content pb-3">
         
         <!-- Main Promo (no media) -->
         <section class="hero-banner tc-orange-m">
@@ -48,8 +48,8 @@
               <div class="post-content">
                 <!-- Text -->
                 <div class="text-wrap">
-                  <h2 class="mb-sm">View Packages</h2>
-                  <p class="h3 antialiased mb-0 mr-ml-a mw-35em text-lg">This is where a "Super Admin" or authorized user can view all packages.</p>
+                  <h2 class="mb-sm">View Packages and Addons</h2>
+                  <p class="h3 antialiased mb-0 mr-ml-a mw-35em text-lg">This is where a "Super Admin" or authorized user can view all packages and addons.</p>
                 </div>
               </div>
             </article>
@@ -65,6 +65,37 @@
     		    
     		    <!-- Data -->
             <table id="manage-packages" class="display responsive nowrap" cellspacing="0" width="100%">
+              <thead>
+                <tr>               
+                  <th>ID</th>
+                  <th>Version</th>
+                  <th>Name</th>
+                  <th>Created</th>
+                  <th>Changed</th>
+                  <th>Description</th>
+                  <th>Fees</th>
+                  <th>Term</th>
+                  <th>Price</th>
+                  <th>Commission</th>
+                  <th>Status</th>
+                  <th class="manage-th">Manage</th>
+                </tr>
+              </thead>
+            </table>
+          
+            <!-- end / -->
+          </div>
+        </section>
+
+        <!-- Addon Table -->
+        <section class="data-table pt-3">
+          <div class="container">
+    		    
+    		    <!-- Current Addons -->
+    		    <h3 class="function-header"><span class="mb-sm sm-mb-0">Current Addons</span><span class="icon-group"><a class="ml-1" href="sa-setup-packages.html"><svg class="icon mr-tiny ml-0"><use xlink:href="#icon-plus" /></svg><span class="text-base">Add</span></a></span></h3>
+    		    
+    		    <!-- Data -->
+            <table id="manage-addons" class="display responsive nowrap" cellspacing="0" width="100%">
               <thead>
                 <tr>               
                   <th>ID</th>
@@ -125,6 +156,27 @@
         responsive:     true,
         keys:           true,
         ajax:           'data/package-data.txt',
+        deferRender:    true,
+        columns: [
+          { "data": "id" },
+          { "data": "version" },
+          { "data": "name" },          
+          { "data": "date_created" },
+          { "data": "last_changed" },
+          { "data": "description" },
+          { "data": "fees" },
+          { "data": "term" },
+          { "data": "price" },
+          { "data": "commission" },
+          { "data": "status" },
+          { "data": "manage" }
+        ]        
+      });
+      // Manage Addons
+      $('#manage-addons').DataTable({
+        responsive:     true,
+        keys:           true,
+        ajax:           'data/addon-data.txt',
         deferRender:    true,
         columns: [
           { "data": "id" },

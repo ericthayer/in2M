@@ -36,7 +36,7 @@
       <div data-replace="sa-partials/sa-header-logged-in.html"></div>
 
       <!-- Main Content -->
-      <main class="main-content pt-1 pb-3">
+      <main class="main-content pb-3">
         
         <!-- Main Promo (no media) -->
         <section class="hero-banner tc-orange-m">
@@ -56,13 +56,40 @@
           </div>
         </section>
 
+        <!-- Capacity Table -->
+        <section class="data-table pt-3">
+          <div class="container">
+    		    
+    		    <!-- Current Capacity -->
+    		    <h3 class="function-header"><span class="mb-sm sm-mb-0">Current Capacity</span><span class="icon-group"><a class="ml-1" href="sa-setup-capacity.html"><svg class="icon mr-tiny ml-0"><use xlink:href="#icon-plus" /></svg><span class="text-base">Add</span></a></span></h3>
+    		    
+    		    <!-- Capacity Data -->
+            <table id="manage-capacity" class="display responsive nowrap" cellspacing="0" width="100%">
+              <thead>
+                <tr>               
+                  <th>Provider</th>
+                    <th><abbr title="number">#</abbr> of <abbr title="short message service">SMS</abbr></th>
+                    <th>Active Date</th>
+                    <th>Expiry Date</th>
+                    <th>Cost</th>
+                    <th>Comment</th>
+                    <th>Contact Person</th>
+                    <th class="manage-th">Manage</th>
+                </tr>
+              </thead>
+            </table>
+          
+            <!-- end / -->
+          </div>
+        </section>
+
         <!-- Form - Add Capacity -->
-        <section class="admin-form pt-pb-3">
+        <section class="admin-form pt-1 pb-3">
           <div class="container">
 
             <!-- Form Build -->
             <div class="form-section">
-              <h3 class="function-header"><span class="mb-sm sm-mb-0">New Capacity</span><span class="icon-group"><a class="ml-1" href="#"><svg class="icon mr-tiny ml-0 text-md"><use xlink:href="#icon-eye" /></svg><span class="text-base">View Current</span></a></span></h3>
+              <h3 class="function-header">New Capacity</h3>
               <form name="AddCapacity">
                 <div class="form-wrap">
 
@@ -183,7 +210,7 @@
     <script src="//cdn.datatables.net/v/dt/dt-1.10.12/af-2.1.2/b-1.2.2/b-colvis-1.2.2/b-html5-1.2.2/r-2.1.0/rr-1.1.2/sc-1.4.2/se-1.2.0/datatables.min.js"></script>
     <!-- DataTables -->
     <script>
-      // Manage Packages
+      // Manage Capacity
       $('#manage-capacity').DataTable({
         responsive:     true,
         keys:           true,

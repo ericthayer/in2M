@@ -33,16 +33,21 @@
       <div class="site-wrap">
         
         <!-- Header -->  
-        <header class="site-header bg-blue-40 bg-support bg-center bg-cover" role="banner">
+        <header class="site-header bg-blue-40 bg-support bg-center bg-cover tc-white" role="banner">
           <!-- Nav -->
           <div class="container flex flex-wrap ai-center jc-between pt-pb-1">
+            <!-- Global Login -->
+            <div class="global-login">
+              <!-- login link -->        
+              <a href="login.html"><svg class="icon ml-0"><use xlink:href="#icon-user" /></svg> Login</a>
+            </div>
             <!-- Site Logo -->
             <h1 class="site-title"><a href="index.html"><img class="header-logo mw-8em" srcset="../images/UI/in2m-logo-white.svg 600w, ../images/UI/in2m-logo-icon-white.svg" src="../images/UI/in2m-logo-white.svg" alt="in2Marketplace.com" /><span class="sr-only">in2Marketplace.com</span></a></h1>
             <button id="nav-toggle" class="bg-trans nav-toggle-html" aria-hidden="false" aria-expanded="false">
               <div class="nav-icon c-white"><span>Menu</span></div>
             </button>
             <!-- Main Nav -->
-            <section class="main-nav flex flex-wrap ai-center jc-center sm-flex-g-1 tc-white" role="navigation">
+            <section class="main-nav flex flex-wrap ai-center jc-center sm-flex-g-1" role="navigation">
               <!-- Nav -->
               <script src="../js/libs/responsive-nav.js"></script>
               <nav class="nav-collapse" role="navigation">
@@ -69,9 +74,10 @@
               <script src="../js/libs/mobile-nav.js"></script>
             </section>
           </div>
+
           <!-- Help Search -->
           <section class="help-search pt-2 pb-0">
-          	<div class="container mw-56em md-pb-2">
+          	<div class="container mw-56em md-pb-sm">
             	<h2 class="c-white sm-flex sm-ai-center sm-jc-between sm-mb-2"><span class="block mb-1 text-s-black-50 sm-mb-0">Help & Support</span> <a class="btn btn-outline all-caps c-white pt-pb-1 text-md text-no-wrap" href="#" data-remodal-target="quick-contact-form">Contact Us</a></h2>
             	<!-- Search Bar -->
           		<div class="search-bar bs-a-40 flex flex-wrap jc-between">
@@ -81,16 +87,17 @@
           		</div>
           	</div>
           </section>
+         
         </header>
     
         <!-- Main Content -->
         <main class="main-content bg-blue-20">
-          
+
           <!-- Help Videos -->
-          <div class="mod-block">
+          <div class="mod-block bg-blue-90">
             <div class="container p-0 flex flex-wrap md-flex-d-row lg-pr-pl-2 xl-pr-pl-3">
               
-            <h2 class="bg-blue-90 c-blue-20 text-left text-md all-caps mb-0 pt-pb-2 w-100 sr-only" id="HelpVideos">Help Videos</h2>
+            <h2 class="bg-blue-90 c-blue-20 text-left text-md all-caps mb-0 pt-pb-2 sr-only" id="HelpVideos">Help Videos</h2>
               <!-- Video 1 -->
               <section class="bg-blue-80 bg-after-left c-blue-80 pt-pb-2 relative w-100 md-w-50">
                 <div class="container c-blue-30 lg-pl-0">

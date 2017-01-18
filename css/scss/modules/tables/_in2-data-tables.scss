@@ -4,8 +4,17 @@
 
 .dataTables_wrapper {
   margin-bottom: 3em;
+  overflow: auto;
   label {
     padding-bottom: 0 !important;
+  }
+  .icon-eye {
+    width: 1.25em;
+    padding-bottom: .3em;
+  }
+  .icon-envelope {
+    width: 1.125em;
+    padding-bottom: 2px;
   } 
   .dataTables_paginate {
     padding-top: .5em;  
@@ -27,7 +36,28 @@
      }
     } 
   }
+  .action-select-btn {
+    //color: $link;
+    font-size: .938rem;
+    line-height: .8;
+    margin-top: -3px;
+    margin-left: .5em;
+    padding: .125em .5em .35em;
+  }
+  .action-needed-link {
+    color: $alert-red-dark;
+  }
+  select {
+    //max-width: 7em;
+    width: auto;
+    &:focus,
+    &:visited {
+      max-width: 100%;
+    }
+  }
 }
+
+
 
 // search filters
 
@@ -59,11 +89,53 @@ table.dataTable {
   tfoot th {     
     padding: 10px 5px;
   }
-  &.collapsed>tbody>tr.child:hover {
-    background: #f6f6f6 !important;
+  &.collapsed>tbody {
+    & > tr.child:hover {
+      background: #f6f6f6 !important;
+    }
+  }
+  &.dtr-inline.collapsed>tbody {
+    & > tr {
+      & > th:first-child:before,
+      & > td:first-child:before {
+        top: 0;
+        //right: 0;
+        left: 0;
+        font-size: 12px;
+        font-weight: 700;
+        height: auto;
+        width: auto;
+        display: block;
+        position: absolute;
+        color: white;
+        border-radius: 0;
+        border: none;
+        box-shadow: none;
+        //box-sizing: content-box;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        line-height: 15px;
+        content: '+';
+        padding: 2px 4px 1px;
+        background-color: #31b131;
+      }
+    }
   }
   a {
     color: $link;
+  }
+}
+
+.table-cell-row {
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+  &:nth-last-child(n+2), 
+  &:nth-last-child(n+2) ~ * {
+    padding-top: 1em;
+    &:nth-child(1) {
+      padding-top: 0;
+    }
   }
 }
 
@@ -105,16 +177,16 @@ table.dataTable {
 
 // Manage Offers
 
-#manage-offers {
+// #manage-offers {
  
- tbody > tr {
-   & >:nth-child(1),
-   & >:nth-child(6),
-   & >:nth-child(7) {
-    //text-align: right;   
-   }
- } 
-}
+//  tbody > tr {
+//    & >:nth-child(1),
+//    & >:nth-child(6),
+//    & >:nth-child(7) {
+  
+//    }
+//  } 
+// }
 
 .filter-select {
   display: flex;
@@ -131,4 +203,20 @@ table.dataTable {
   @media (min-width: $break-ml-phone) {
     justify-content: center;
   }  
+}
+
+// mobile styles
+
+// this is ridiculous
+table.dataTable>tbody>tr.child {
+  span.dtr-title {
+    min-width: 100px;
+    padding-right: 2em;
+    @media (min-width: 25em) {
+      min-width: 150px;
+    }
+  }
+  span.dtr-data {
+    display: inline-block;
+  }
 } 

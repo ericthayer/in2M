@@ -1,0 +1,464 @@
+<!doctype html>
+<!--#if expr="$HTTP_COOKIE=/fonts\-loaded\=true/" -->
+<html lang="en" class="fonts-loaded">
+  <!--#else -->
+  <html lang="en">
+    <!--#endif -->
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>in2Marketplace :: Sales Person Manage Leads</title>
+      <meta name="description" content="A powerful retail marketing platform and brand management tool">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="msapplication-TileColor" content="#302A2A">
+      <meta name="msapplication-TileImage" content="../images/icons/favicon-144.png">
+      <!--[if IEMobile]>
+<meta http-equiv="cleartype" content="on" />
+<![endif]-->
+      <link rel="apple-touch-icon" href="../images/icons/favicon-180.png">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <!-- DataTables.net styles -->
+      <link rel="stylesheet" href="//cdn.datatables.net/v/dt/dt-1.10.12/af-2.1.2/b-1.2.2/b-colvis-1.2.2/b-html5-1.2.2/r-2.1.0/rr-1.1.2/sc-1.4.2/se-1.2.0/datatables.min.css">
+      <!-- Base Styles -->
+      <link rel="stylesheet" href="../css/styles.css">
+      <!-- Non-Critical CSS -->
+      <script>
+        // loadCSS: load a CSS file asynchronously. [c]2016 @scottjehl, Filament Group, Inc. Licensed MIT
+        (function(a){var b=function(c,k,d){var l=a.document;var m=l.createElement("link");var e;if(k){e=k}else{var i=(l.body||l.getElementsByTagName("head")[0]).childNodes;e=i[i.length-1]}var f=l.styleSheets;m.rel="stylesheet";m.href=c;m.media="only x";function j(n){if(l.body){return n()}setTimeout(function(){j(n)})}j(function(){e.parentNode.insertBefore(m,(k?e:e.nextSibling))});var h=function(o){var n=m.href;var p=f.length;while(p--){if(f[p].href===n){return o()}}setTimeout(function(){h(o)})};function g(){if(m.addEventListener){m.removeEventListener("load",g)}m.media=d||"all"}if(m.addEventListener){m.addEventListener("load",g)}m.onloadcssdefined=h;h(g);return m};if(typeof exports!=="undefined"){exports.loadCSS=b}else{a.loadCSS=b}}(typeof global!=="undefined"?global:this));loadCSS("../css/async.css");
+      </script>
+    </head>
+
+<body class="logged-in sales-person">
+      <!--[if lt IE 10]>
+        <p class="update-browser">This browser version is not recommended. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+  <!-- New Lead Form -->
+  <div data-replace="../../global-partials/panels/panel-new-lead-form.html"></div>
+
+  <!-- Site Wrap  -->
+  <div class="site-wrap">
+    
+    <!-- Header -->  
+    <div data-replace="sp-partials/sp-header-logged-in-white.html"></div>
+
+    <!-- Main Content -->
+    <main class="main-content pt-1 pb-3">
+      
+      <!-- Main Promo (no media) -->
+      <section class="hero-banner tc-blue-m">
+        <div class="container md-pt-pb-1">
+          
+          <!-- Post -->
+          <article class="text-center">
+            <!-- Post Content -->
+            <div class="post-content">
+              <!-- Text -->
+              <div class="text-wrap">
+                <h2 class="mb-sm">Manage Leads</h2>
+                <p class="h3 antialiased mb-0 mr-ml-a mw-35em text-lg">This is where a "Super Admin" or authorized user can manage sales groups.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="manage-leads">
+
+        <!-- Sales Person Table -->          
+        <section class="data-table pt-pb-3 md-pb-0">
+          <div class="container tabs">
+            <nav class="tabnav"></nav>
+            <!-- Current Lead Data Table : TAB -->
+            <div class="collapsible collapsible-expanded" data-collapsible-set="admin-tabs">
+              <!-- Current Leads -->
+              <h3>Current Leads</h3>               
+              <!-- Current Lead Data -->
+              <div>
+                <table id="manage-leads" class="display responsive nowrap" cellspacing="0" width="100%">
+                  <thead>
+                    <tr>               
+                      <th>Lead ID</th>
+                      <th>Biz Name</th>
+                      <th>Biz Type</th>
+                      <th>Contact Name</th>
+                      <th>Contact Email</th>
+                      <th>Contact Number</th>
+                      <th>Gender</th>
+                      <th>Address</th>
+                      <th>Branches</th>
+                      <th>Users</th>
+                      <th>Interest</th>
+                      <th>Current System</th>
+                      <th>Mode</th>
+                      <th>Set Action</th>
+                      <th>Pending Actions</th>
+                      <th>Action Log</th>
+                      <th>Comments</th>
+                      <th class="manage-th">Manage</th>
+                    </tr>
+                  </thead>
+                </table>
+              </div>
+
+              <!-- end / TAB -->
+            </div>
+
+            <!-- Pending Actions : TAB 2 -->
+            <div class="collapsible collapsible-collapsed" data-collapsible-set="admin-tabs">
+
+              <!-- Pending Actions -->
+              <h3>Pending Actions</h3>
+              <div>
+                <h4>Pending Actions</h4>
+              </div>
+
+              <!-- end / TAB -->
+            </div>
+          
+          <!-- end / -->
+          </div>
+        </section>
+
+        <!-- Form - Add Retail User -->
+        <section class="admin-form pt-3 pb-1 md-pb-0">
+          <div class="container">
+
+            <!-- Form Build -->
+            <div class="form-section">
+              <form name="AddLead">
+                
+                <!-- Form Header -->
+                <div class="function-header">
+                  
+                  <h2 class="text-center text-lg mb-0 sm-text-left sm-mr-1 sm-w-60">Manage Lead</h2>
+                
+                  <!-- Admin ID -->
+                  <div class="form-row text-center mb-1 sm-text-sm sm-flex sm-flex-g-0 sm-ai-center sm-jc-between sm-mb-0 sm-w-40">
+                  <label for="-ariaLabel" class="inline-label sm-text-right sm-pr-sm sm-w-80">Lead ID</label>
+                  <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="input-sm mw-8em disabled" value="718" disabled>
+                  </div>
+
+                </div>
+                
+                <div class="form-wrap">
+                  
+                  <!-- Name / Title / D.O.B. -->
+                  <div class="form-group pb-0 sm-flex sm-flex-wrap sm-jc-between md-flex-no-wrap">
+                    
+                    <!-- Business Name -->
+                    <div class="form-row mb-1 sm-flex-g-1 sm-mr-tiny sm-w-45 md-mb-0 md-w-30">
+                      <label for="" id="-ariaLabel">Business Name <span class="req-mark">*</span></label>
+                      <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="required" title="This is a required input" required>
+                    </div>
+                    
+                    <!-- Business Type -->
+                    <div class="form-row mb-1 sm-flex-g-1 sm-ml-tiny sm-w-45 md-mr-tiny md-mb-0 md-w-30">
+                      <label for="" id="-ariaLabel">Business Type <span class="req-mark">*</span></label>
+                      <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="required" title="This is a required input" required>
+                    </div>
+                    
+                    <!-- Contact Name -->
+                    <div class="form-row sm-flex-g-1 sm-mr-tiny sm-w-45 md-ml-tiny md-mb-0 md-w-30">
+                      <label for="" id="-ariaLabel">Contact Name <span class="req-mark">*</span></label>
+                      <input id="" name="" type="text" aria-labelledby="-ariaLabel" required>
+                    </div>
+                    
+                    <!-- Gender -->
+                    <div class="form-row sm-flex-g-1 sm-ml-tiny sm-w-45 md-w-10">
+                      <label for="" id="-ariaLabel">Gender</label>
+                      <input id="" name="" type="text" aria-labelledby="-ariaLabel">
+                    </div>
+                    
+                  </div>
+                  
+                  <!-- Location -->
+                  <div class="form-group pb-0 sm-flex sm-jc-between">
+                    
+                    <!-- Address -->
+                    <div class="form-row mb-1 sm-flex-g-1 sm-mr-tiny sm-mb-0 sm-w-60">
+                      <label for="" id="-ariaLabel">Address</label>
+                      <input id="" name="" type="text" aria-labelledby="-ariaLabel">
+                    </div>
+                    <!-- Unit -->
+                    <div class="form-row sm-flex-g-1 sm-ml-tiny sm-w-40">
+                      <label for="" id="-ariaLabel">Unit</label>
+                      <input id="" name="" type="text" aria-labelledby="-ariaLabel">
+                    </div>
+                                          
+                    <!-- end / -->
+                  </div>
+                  
+                  <!-- Location cont. -->
+                  <div class="form-group pb-0 sm-flex sm-jc-between">
+                    
+                  <!-- Country -->
+                  <div class="form-row mb-1 sm-flex-g-1 sm-mb-0 sm-mr-tiny sm-w-50">
+                      <label for="" id="-ariaLabel">Country</label>
+                      <div class="custom-select">
+                        <select>
+                          <option value="-1" selected disabled>select</option>
+                          <option value="IN">India</option>
+                          <option value="NZ">New Zealand</option>
+                          <option value="US">United States</option>
+                        </select>
+                      </div>
+                    </div>
+                                                              
+                  <!-- U.S. States -->
+                  <div id="US-states" class="form-row mb-1 sm-flex-g-1 sm-mb-0 sm-mr-ml-tiny sm-w-30">
+                      <label for="" id="-ariaLabel">State</label>
+                      <div class="custom-select">
+                        <select>
+                          <option value="-1" selected disabled>select</option>
+                          <option value="AL">Alabama</option>
+                          <option value="AK">Alaska</option>
+                          <option value="AZ">Arizona</option>
+                          <option value="AR">Arkansas</option>
+                          <option value="CA">California</option>
+                          <option value="CO">Colorado</option>
+                          <option value="CT">Connecticut</option>
+                          <option value="DE">Delaware</option>
+                          <option value="FL">Florida</option>
+                          <option value="GA">Georgia</option>
+                          <option value="HI">Hawaii</option>
+                          <option value="ID">Idaho</option>
+                          <option value="IL">Illinois</option>
+                          <option value="IN">Indiana</option>
+                          <option value="IA">Iowa</option>
+                          <option value="KS">Kansas</option>
+                          <option value="KY">Kentucky</option>
+                          <option value="LA">Louisiana</option>
+                          <option value="ME">Maine</option>
+                          <option value="MD">Maryland</option>
+                          <option value="MA">Massachusetts</option>
+                          <option value="MI">Michigan</option>
+                          <option value="MN">Minnesota</option>
+                          <option value="MS">Mississippi</option>
+                          <option value="MO">Missouri</option>
+                          <option value="MT">Montana</option>
+                          <option value="NE">Nebraska</option>
+                          <option value="NV">Nevada</option>
+                          <option value="NH">New Hampshire</option>
+                          <option value="NJ">New Jersey</option>
+                          <option value="NM">New Mexico</option>
+                          <option value="NY">New York</option>
+                          <option value="NC">North Carolina</option>
+                          <option value="ND">North Dakota</option>
+                          <option value="OH">Ohio</option>
+                          <option value="OK">Oklahoma</option>
+                          <option value="OR">Oregon</option>
+                          <option value="PA">Pennsylvania</option>
+                          <option value="RI">Rhode Island</option>
+                          <option value="SC">South Carolina</option>
+                          <option value="SD">South Dakota</option>
+                          <option value="TN">Tennessee</option>
+                          <option value="TX">Texas</option>
+                          <option value="UT">Utah</option>
+                          <option value="VT">Vermont</option>
+                          <option value="VA">Virginia</option>
+                          <option value="WA">Washington</option>
+                          <option value="WV">West Virginia</option>
+                          <option value="WI">Wisconsin</option>
+                          <option value="WY">Wyoming</option>
+                        </select>
+                      </div>
+                    </div>                                             
+                  <!-- Zip Code -->
+                  <div class="form-row sm-flex-g-1 sm-ml-tiny sm-w-20">                          
+                    <label for="" id="-ariaLabel">Zip Code</label>
+                    <input type="number" inputmode="numeric" pattern="[0-9]*" max="9" maxlength="9" aria-labelledby="-ariaLabel">                        
+                  </div>
+                    
+                  </div>
+                  
+                  <!-- Email -->
+                  <div class="form-group pb-0 sm-flex sm-jc-between">
+                    
+                    <!-- Primary Email -->                        
+                    <div class="form-row mb-1 sm-flex-g-1 sm-mb-0 sm-mr-tiny sm-w-50">
+                      <label for="" id="-ariaLabel">Primary Email <span class="req-mark">*</span></label>
+                      <input id="" name="" type="email" autocorrect="off" autocapitalize="none" spellcheck="false" aria-labelledby="-ariaLabel" class="required" title="This is a required field" required>
+                    </div>
+                    
+                    <!-- Alternative Email -->                        
+                    <div class="form-row sm-flex-g-1 sm-ml-tiny sm-w-50">
+                      <label for="" id="-ariaLabel">Alternative Email</label>
+                      <input id="" name="" type="email" autocorrect="off" autocapitalize="none" spellcheck="false" aria-labelledby="-ariaLabel">
+                    </div>
+                    
+                  </div>
+                    
+                  <!-- Phone -->
+                  <div class="form-group pb-0 sm-flex sm-jc-between">
+                    
+                    <!-- Mobile -->                        
+                    <div class="form-row mb-1 sm-flex-g-1 sm-mb-0 sm-mr-tiny sm-w-30">
+                      <label for="" id="-ariaLabel">Mobile <abbr title="number">#</abbr> <span class="req-mark">*</span></label>
+                      <input id="" name="" type="tel" pattern="[0-9]*" maxlength="10" aria-labelledby="-ariaLabel" class="required" title="This is a required field" required>
+                    
+                    </div>
+                    
+                    <!-- Work -->                        
+                    <div class="form-row mb-1 sm-flex-g-1 sm-mr-ml-tiny sm-mb-0 sm-w-30">
+                      <label for="" id="-ariaLabel">Work <abbr title="number">#</abbr></label>
+                      <input id="" name="" type="tel" pattern="[0-9]*" maxlength="10" aria-labelledby="-ariaLabel">                        
+                    </div>
+                    
+                    <!-- Alternative -->                        
+                    <div class="form-row sm-flex-g-1 sm-ml-tiny sm-w-30">
+                      <label for="" id="-ariaLabel">Alternative <abbr title="number">#</abbr></label>
+                      <input id="" name="" type="tel" pattern="[0-9]*" maxlength="10" aria-labelledby="-ariaLabel">
+                    
+                    </div>
+                    
+                  </div>
+                  
+                  <!-- Business Details -->
+                  <div class="form-group pb-0 sm-flex sm-jc-between">
+                    
+                    <!-- # of Branches -->                        
+                    <div class="form-row mb-1 sm-flex-g-1 sm-mr-tiny sm-mb-0 sm-w-50">
+                      <label for="" id="-ariaLabel"># of Branches</label>
+                      <input id="" name="" type="text" aria-labelledby="-ariaLabel">                        
+                    </div>
+                    
+                    <!-- # of Users -->                        
+                    <div class="form-row sm-flex-g-1 sm-ml-tiny sm-w-50">
+                      <label for="" id="-ariaLabel"># of Users</label>
+                      <input id="" name="" type="text" aria-labelledby="-ariaLabel">                        
+                    </div>
+                    
+                  </div>
+                  
+                  <!-- Misc Info -->
+                  <div class="form-group pb-0 sm-flex sm-flex-wrap sm-jc-between md-flex-no-wrap">
+                    <!-- Interested In -->                        
+                    <div class="form-row mb-1 sm-flex-g-1 sm-mb-0 sm-mr-tiny sm-w-45 md-w-20">
+                      <label for="" id="-ariaLabel">Interested In</label>
+                      <input id="" name="" type="text" aria-labelledby="-ariaLabel">                        
+                    </div>
+                    <!-- Current System -->                        
+                    <div class="form-row mb-1 sm-flex-g-1 sm-ml-tiny sm-w-45 md-mb-0 md-mr-ml-tiny md-w-20">
+                      <label for="" id="-ariaLabel">Current System</label>
+                      <input id="" name="" type="text" aria-labelledby="-ariaLabel">
+                    </div>
+                    <!-- Preferred Contact Mode -->
+                    <div class="form-row mb-1 sm-flex-g-1 sm-mr-tiny sm-w-45 md-mb-0 md-mr-ml-tiny md-w-20">
+                      <label for="" id="-ariaLabel">Contact Mode</label>
+                      <input id="" name="" type="text" aria-labelledby="-ariaLabel">
+                    </div>
+                    <!-- Action -->
+                    <div class="form-row sm-flex-g-1 sm-ml-tiny sm-w-45 md-w-40">
+                      <label for="" id="-ariaLabel">Action</label>
+                      <input id="" name="" type="text" aria-labelledby="-ariaLabel">
+                    </div>
+                  </div>
+                  
+                  <!-- Comments -->
+                  <div class="form-group mb-1-pt5 sm-flex sm-jc-between">
+                  <div class="form-row w-100">
+                      <label for="" id="-ariaLabel">Comments</label>
+                      <textarea aria-labelledby="-ariaLabel"></textarea>
+                  </div>
+                  </div>
+
+                  <!-- Buttons -->
+                  <div class="form-row button-wrap">
+                    <!-- cancel button -->
+                    <button class="btn-cancel" type="reset">Cancel</button>
+                    <!-- save button (primary) -->
+                    <input class="btn-primary" type="submit" value="Save" data-remodal-target="save-confirm">
+                  </div>
+
+                  <!-- end / form-wrap -->
+                </div>
+              </form>
+            </div>
+            
+            <!-- end / -->
+          </div>
+        </section>
+
+      </section>
+
+      <!-- end / main-content -->
+    </main>
+
+    <!-- Footer -->
+    <div data-replace="../global-partials/footer/footer-logged-in-blue.html"></div>
+    
+    <!-- end / site-wrap-->
+  </div>
+     
+    <!-- Lead Saved Confirmation -->
+    <div class="remodal alert-success" data-remodal-id="save-confirm" role="dialog" aria-labelledby="lead-created-title" aria-describedby="lead-created-desc">
+      
+      <div data-replace="../global-partials/modals/modal-lead-created-content.html"></div>
+      
+      <!-- end / -->
+    </div>
+
+    <!-- Delete Confirmation -->
+    <div class="remodal" data-remodal-id="delete-confirm" role="dialog" aria-labelledby="delete-confirm-title" aria-describedby="delete-confirm-desc">
+      
+      <div data-replace="../global-partials/modals/modal-delete-confirm-content.html"></div>
+      
+      <!-- end / -->
+    </div>
+    
+    <!-- Demo Video -->
+    <div class="remodal video-modal" data-remodal-id="demo-video" role="dialog" aria-labelledby="demo-video-title" aria-describedby="demo-video-desc">
+      
+      <div data-replace="../global-partials/modals/modal-demo-video-content.html"></div>
+      
+      <!-- end / -->
+    </div>
+
+    
+    <!-- Contact Us form (modal) -->
+    <div class="remodal quick-contact-form" data-remodal-id="quick-contact-form" role="dialog" aria-labelledby="quick-contact-title"
+      aria-describedby="quick-contact-desc">
+              
+      <div data-replace="../global-partials/modals/modal-contact-content.html"></div>
+      
+      <!-- end / -->
+    </div>
+
+  <!-- Dependencies -->
+  <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../js/libs/jquery.1.11.2.min.js"><\/script>')</script>
+  <script src="../js/min/script.min.js"></script>
+  <script src="../js/libs/jquery-ui.datepicker.js"></script>
+  <script src="//cdn.datatables.net/v/dt/dt-1.10.12/af-2.1.2/b-1.2.2/b-colvis-1.2.2/b-html5-1.2.2/r-2.1.0/rr-1.1.2/sc-1.4.2/se-1.2.0/datatables.min.js"></script>
+  <!-- DataTables -->
+  <script>
+    // Manage Sales Group
+    $('#manage-leads').DataTable({
+      responsive:     true,
+      keys:           true,
+      ajax:           'data/current-leads-data.txt',
+      deferRender:    true,
+      columns: [
+        { "data": "id" },
+        { "data": "biz_name" },
+        { "data": "biz_type" },          
+        { "data": "contact" },
+        { "data": "contact_email" },
+        { "data": "contact_number" },
+        { "data": "gender" },
+        { "data": "address" },          
+        { "data": "branches" },
+        { "data": "users" },
+        { "data": "interest" },
+        { "data": "current_system" },
+        { "data": "mode" },          
+        { "data": "set_action" },
+        { "data": "pending_actions" },
+        { "data": "action_log" },
+        { "data": "comments" },
+        { "data": "manage" }
+      ]        
+    });
+  </script>
+</body>
+</html>

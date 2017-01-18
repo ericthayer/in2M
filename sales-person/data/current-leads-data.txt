@@ -14,9 +14,11 @@
       "interest": "1",
       "current_system": "excel",
       "mode": "1",
-      "action": "call",
+      "set_action": "<form class='action-select'><select><option value='-1' selected disabled>select</option><option value='follow up reminder'>set reminder</option><option value='setup appoinment'>set appointment</option></select><input class='btn action-select-btn' type='submit' value='»'/></form>",
+      "pending_actions": "<div class='table-cell-row'><span class='icon' title='setup call'><img src='../images/UI/ui-icons/icon-phone-blue.svg' alt='phone icon' /></span>&nbsp; CALL - 11/20/16 @ 2:30pm MST &nbsp;<a class='pl-tiny' href='#'>Edit</a></div>",
+      "action_log": "<span class='block text-tiny'>10/25/16 - Setup meeting in person</span><span class='block pt-tiny text-tiny'>10/30/16 - Met customer at location</span>",
       "comments": "small comment goes here",
-      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sm'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='#'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
     },
     {
       "id": "2",
@@ -32,46 +34,11 @@
       "interest": "1",
       "current_system": "excel",
       "mode": "1",
-      "action": "call",
+      "set_action": "<a class='icon' href='#' title='set reminder'><img src='../images/UI/ui-icons/icon-alert-bang-blue.svg' alt='exclaimation mark' /><span class='sr-only'>Set Action Reminder</span></a> &nbsp;<a class='icon' href='#' title='setup appointment'><img src='../images/UI/ui-icons/icon-calendar-blue.svg' alt='calendar icon' /><span class='sr-only'>Setup Appointment</span></a>",
+      "pending_actions": "<div class='table-cell-row'><span class='icon' title='setup call'><img src='../images/UI/ui-icons/icon-phone-blue.svg' alt='phone icon' /></span>&nbsp; CALL - 11/20/16 @ 2:30pm MST &nbsp;<a class='pl-tiny' href='#'>Edit</a></div>",
+      "action_log": "<span class='block text-tiny'>10/25/16 - Setup meeting in person</span><span class='block pt-tiny text-tiny'>10/30/16 - Met customer at location</span>",
       "comments": "small comment goes here",
-      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sm'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
-    },
-    {
-      "id": "3",
-      "biz_name": "Company Name, Inc.",
-      "biz_type": "farm",
-      "contact": "Lee Harvey",
-      "contact_email": "<a href='mailto:email@domain.com'>email@domain.com</a>",
-      "contact_number": "<a href='tel:8885551234'>888-555-1234</a>",
-      "gender": "transgender",
-      "address": "1234 Streetname Rd. San Mateo, CA 94402",
-      "branches": "10",
-      "users": "87",
-      "interest": "1",
-      "current_system": "excel",
-      "mode": "1",
-      "action": "call",
-      "comments": "small comment goes here",
-      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sm'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
-    },
-    {
-      "id": "4",
-      "biz_name": "Company Name, Inc.",
-      "biz_type": "farm",
-      "contact": "Pat Username",
-      "contact_email": "<a href='mailto:email@domain.com'>email@domain.com</a>",
-      "contact_number": "<a href='tel:8885551234'>888-555-1234</a>",
-      "gender": "n/a",
-      "address": "1234 Streetname Rd. San Mateo, CA 94402",
-      "branches": "10",
-      "users": "87",
-      "interest": "1",
-      "current_system": "excel",
-      "mode": "1",
-      "action": "call",
-      "comments": "small comment goes here",
-      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sm'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
-    }
-    
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='#'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    }    
   ]
 }
