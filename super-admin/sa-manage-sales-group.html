@@ -39,7 +39,7 @@
       <main class="main-content pb-3">
         
         <!-- Main Promo (no media) -->
-        <section class="hero-banner bg-orange c-white pt-pb-4 text-s-black-50 hidden">
+        <section class="hero-banner tc-orange-m">
           <div class="container md-pt-pb-1">
             
             <!-- Post -->
@@ -55,160 +55,143 @@
             </article>
           </div>
         </section>
-        
-        <!-- Form - Manage Sales Group -->
-        <section class="admin-form pt-3 pb-1">
-          <div class="container">
 
-            <!-- Form Build -->
-            <div class="form-section mr-ml-a">
-              <form name="ManageSalesGroups">
-                
-                <!-- Form Header -->
-                <div class="function-header">
-                  
-                  <h2 class="text-center text-lg mb-1 sm-text-left sm-mr-1 sm-mb-0 sm-w-40">Manage Sales Group</h2>
-                 
-                  <!-- Group Name -->
-                  <div class="form-row text-center mb-1 sm-text-sm sm-flex sm-flex-g-0 sm-ai-center sm-jc-between sm-mb-0 sm-w-60">
-                   <label for="-ariaLabel" class="inline-label sm-text-right sm-pr-sm sm-w-60">Group Name <span class="req-mark">*</span></label>
-                   <div class="custom-select bor-1 bor-solid bor-c-DDD sm-w-60">
-                    <select required>
-                      <option disabled>select</option>
-                      <option value="Group One" selected>Group One</option>
-                      <option value="Group Two">Group Two</option>
-                      <option value="Group Three">Group Three</option>
-                    </select>
-                   </div>
-                  </div>
-                  
-                  <!-- end / -->
-                </div>                  
-                
-                <!-- inputs start here -->
-                <div class="form-wrap"> 
-                  
-                  <!-- Group ID & Team -->
-                  <div class="form-group pb-0 sm-flex sm-jc-between">
-                    
-                    <!-- ID -->
-                    <div class="form-row sm-flex-g-1 mb-1 sm-mr-tiny sm-mb-0 sm-w-20">
-                      <label for="" id="-ariaLabel">Group ID</label>
-                      <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="disabled" title="This is a required field" value="358" disabled>
+        <!-- Sales Person Table -->          
+          <section class="data-table pt-3">
+            <div class="container">
+              
+              <!-- Group Sales Persons -->
+      		    <h3 class="function-header"><span class="mb-sm sm-mb-0">Current Sales Groups</span><span class="icon-group"><a class="ml-1" href="sa-create-sales-group.html"><svg class="icon mr-tiny ml-0"><use xlink:href="#icon-plus" /></svg><span class="text-base">Add</span></a></span></h3>
+      		    
+      		    <!-- Data -->
+              <table id="manage-sales-group" class="display responsive nowrap" cellspacing="0" width="100%">
+                <thead>
+                  <tr>               
+                    <th>Group ID</th>
+                    <th>Team</th>
+                    <th>Area</th>                    
+                    <th>Date Created</th>
+                    <th>Date Changed</th>
+                    <th>Coverage Area</th>
+                    <th>Line of Business</th>
+                    <th>Status</th>
+                    <th class="manage-th">Manage</th>
+                  </tr>
+                </thead>
+              </table>
+            
+             <!-- end / -->
+            </div>
+          </section>
 
-                    </div>
-                    
-                    <!-- Team -->
-                    <div class="form-row sm-flex-g-1 mb-1 sm-mr-ml-tiny sm-mb-0 sm-w-40">
-                      <label for="" id="-ariaLabel">Team <span class="req-mark">*</span></label>
-                      <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="required" title="This is a required field" required>
-                    </div>
-                    
-                    <!-- Area -->
-                    <div class="form-row sm-flex-g-1 sm-ml-tiny sm-w-40">
-                      <label for="" id="-ariaLabel">Area <span class="req-mark">*</span></label>
-                      <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="required" title="This is a required field" required>
-                    </div>                      
+          <!-- Form - Manage Sales Group -->
+          <section class="admin-form pb-2">
+            <div class="container">
 
-                    <!-- end / -->
-                  </div>
-                  
-                  <!-- Status -->
-                  <div class="form-group pb-0 sm-flex sm-jc-between">
+              <!-- Form Build -->
+              <div class="form-section mr-ml-a mb-3">
+                <form name="ManageSalesGroups">
+                  <!-- Form Header -->
+                  <div class="function-header">
                     
-                    <!-- dropdown -->                        
-                    <div class="form-row mb-1 sm-flex-g-1 sm-mb-0 sm-mr-tiny sm-w-50">
-                    <label for="-ariaLabel" class="sm-pr-sm sm-w-60">Status</label>
-                     <div class="custom-select">
-                      <select>
-                        <option selected disabled>select</option>
-                        <option value="Active">Active</option>
-                        <option value="Inactive">Inactive</option>
+                    <h2 class="text-center text-lg mb-1 sm-text-left sm-mr-1 sm-mb-0 sm-w-60">Manage Sales Group</h2>
+                    
+                    <!-- Group Name -->
+                    <div class="form-row text-center mb-1 sm-text-sm sm-flex sm-flex-g-0 sm-ai-center sm-jc-between sm-mb-0 sm-w-60">
+                     <label for="-ariaLabel" class="inline-label sm-text-right sm-pr-sm sm-w-60">Group Name <span class="req-mark">*</span></label>
+                     <div class="custom-select bor-1 bor-solid bor-c-DDD sm-w-60">
+                      <select required>
+                        <option disabled>select</option>
+                        <option value="Group One" selected>Group One</option>
+                        <option value="Group Two">Group Two</option>
+                        <option value="Group Three">Group Three</option>
                       </select>
                      </div>
+                    </div>
+
+                  </div>                 
+                  
+                  <div class="form-wrap">
+                    
+                    <!-- Group ID & Team -->
+                    <div class="form-group pb-0 sm-flex sm-jc-between">
                       
-                    </div>
-                    
-                    <!-- Manage Buttons -->                        
-                    <div class="form-row sm-flex-g-1 sm-ml-tiny sm-w-50">
-                      <label for="" id="-ariaLabel">Reason for change</label>
-                      <input id="" name="" type="text" aria-labelledby="-ariaLabel">
-                    </div>
-                  </div>
+                      <!-- ID -->
+                      <div class="form-row sm-flex-g-1 mb-1 sm-mr-tiny sm-mb-0 sm-w-25">
+                        <label for="" id="-ariaLabel">Group ID <span class="req-mark">*</span></label>
+                        <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="required" title="This is a required field" required>
 
-                  <!-- Dates -->
-                  <div class="form-group pb-0 sm-flex sm-jc-between">
-                                          
-                    <!-- Creation Date -->
-                    <div class="form-row mb-1 sm-flex-g-1 sm-mr-tiny sm-mb-0 sm-w-50">
-                      <label for="" id="-ariaLabel">Creation Date <span class="req-mark">*</span></label>
-                      <input id="" name="-ariaLabel" type="text" placeholder="&nbsp;" class="date-input required" aria-labelledby="-ariaLabel" class="required" title="This is a required input" required>
+                      </div>
+                      
+                      <!-- Team -->
+                      <div class="form-row sm-flex-g-1 sm-mr-ml-tiny sm-w-25">
+                        <label for="" id="-ariaLabel">Team <span class="req-mark">*</span></label>
+                        <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="required" title="This is a required field" required>
+                      </div>
+                      
+                      <!-- Team Size -->
+                      <div class="form-row sm-flex-g-1 sm-mr-ml-tiny sm-w-25">
+                        <label for="" id="-ariaLabel">Team Size<span class="req-mark">*</span></label>
+                        <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="required" title="This is a required field" required>
+                      </div>
+                      
+                      <!-- Area -->
+                      <div class="form-row sm-flex-g-1 sm-ml-tiny sm-w-25">
+                        <label for="" id="-ariaLabel">Area <span class="req-mark">*</span></label>
+                        <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="required" title="This is a required field" required>
+                      </div>                      
+
+                      <!-- end / -->
+                    </div>
+
+                    <!-- Dates -->
+                    <div class="form-group pb-0 sm-flex sm-jc-between">
+                                            
+                      <!-- Creation Date -->
+                      <div class="form-row mb-1 sm-flex-g-1 sm-mr-tiny sm-mb-0 sm-w-50">
+                        <label for="" id="-ariaLabel">Creation Date <span class="req-mark">*</span></label>
+                        <input id="" name="-ariaLabel" type="text" placeholder="&nbsp;" class="date-input required" aria-labelledby="-ariaLabel" class="required" title="This is a required input" required>
+                      </div>
+                      
+                      <!-- Last Changed Date -->
+                      <div class="form-row sm-flex-g-1 sm-ml-tiny sm-mb-0 sm-w-50">
+                        <label for="" id="-ariaLabel">Last Changed </label>
+                        <input id="" name="-ariaLabel" type="text" placeholder="&nbsp;" class="date-input" aria-labelledby="-ariaLabel">
+                      </div>
+                      
+                      <!-- end / -->
                     </div>
                     
-                    <!-- Last Changed Date -->
-                    <div class="form-row sm-flex-g-1 sm-ml-tiny sm-mb-0 sm-w-50">
-                      <label for="" id="-ariaLabel">Last Changed</label>
-                      <input id="" name="-ariaLabel" type="text" placeholder="&nbsp;" class="date-input" aria-labelledby="-ariaLabel">
+                    <!-- Coverage Area & Business Description -->
+                    <div class="form-group mb-1-pt5 sm-flex sm-jc-between">
+                      <!-- Coverage -->
+                      <div class="form-row mb-1 sm-flex-g-1 sm-mr-tiny sm-mb-0 sm-w-50">
+                        <label for="" id="-ariaLabel">Coverage Area</label>
+                        <textarea maxlength="100" aria-labelledby="-ariaLabel"></textarea>
+                      </div>
+                      <!-- Line of -->
+                      <div class="form-row sm-flex-g-1 sm-ml-tiny sm-mb-0 sm-w-50">
+                        <label for="" id="-ariaLabel">Line of Business</label>
+                        <textarea maxlength="100" aria-labelledby="-ariaLabel"></textarea>
+                      </div>
+                    </div>                    
+
+                    <!-- Buttons -->
+                    <div class="form-row button-wrap">
+                      <!-- delete button -->
+                      <button class="btn-delete" type="reset" data-remodal-target="delete-confirm"><svg class="icon icon-delete"><use xlink:href="#icon-minus" /></svg> Delete</button>
+                      <!-- save button (primary) -->
+                      <input class="btn-primary" type="submit" value="Save" data-remodal-target="save-confirm">
                     </div>
                     
-                    <!-- end / -->
+                    <!-- end / form-wrap -->
                   </div>
-                  
-                  <!-- Coverage Area & Business Description -->
-                  <div class="form-group mb-1-pt5 sm-flex sm-jc-between">
-                    <!-- Coverage -->
-                    <div class="form-row mb-1 sm-flex-g-1 sm-mr-tiny sm-mb-0 sm-w-50">
-                      <label for="" id="-ariaLabel">Coverage Area</label>
-                      <textarea maxlength="100" aria-labelledby="-ariaLabel"></textarea>
-                    </div>
-                    <!-- Line of Business -->
-                    <div class="form-row sm-flex-g-1 sm-ml-tiny sm-mb-0 sm-w-50">
-                      <label for="" id="-ariaLabel">Line of Business</label>
-                      <textarea maxlength="100" aria-labelledby="-ariaLabel"></textarea>
-                    </div>
-                  </div>
-                  
-                  <!-- Buttons -->
-                  <div class="form-row button-wrap">
-                    <!-- delete button -->
-                    <button class="btn-delete" type="reset" data-remodal-target="delete-confirm"><svg class="icon icon-delete"><use xlink:href="#icon-minus" /></svg> Delete</button>
-                    <!-- save button (primary) -->
-                    <input class="btn-primary" type="submit" value="Save" data-remodal-target="save-confirm">
-                  </div>
-                  
-                  <!-- end / form-wrap -->
-                </div>
-              </form>
+                </form>
+              </div>
+
+              <!-- end / -->
             </div>
-
-            <!-- end / -->
-          </div>
-        </section>
-        
-        <!-- Sales Person Table -->          
-        <section class="data-table pt-pb-3">
-          <div class="container mw-48em">
-            
-            <!-- Group Sales Persons -->
-    		    <h3 class="function-header"><span class="mb-sm sm-mb-0">Sales Persons</span><span class="icon-group"><a class="ml-1" href="sa-create-sales-person.html"><svg class="icon mr-tiny ml-0"><use xlink:href="#icon-plus" /></svg><span class="text-base">Add</span></a></span></h3>
-    		    
-    		    <!-- Data -->
-            <table id="manage-sales-group" class="display responsive nowrap" cellspacing="0" width="100%">
-              <thead>
-                <tr>               
-                  <th>User ID</th>
-                  <th>Sales Person</th>
-                  <th>Group</th>
-                  <th>Date Created</th>
-                  <th>Status</th>
-                  <th class="manage-th">Manage</th>
-                </tr>
-              </thead>
-            </table>
-          
-           <!-- end / -->
-          </div>
-        </section>
+          </section>
 
         <!-- end / main-content -->
       </main>
@@ -259,13 +242,16 @@
         ajax:           'data/sales-group-data.txt',
         deferRender:    true,
         columns: [
-          { "data": "id" },
-          { "data": "sales_person" },
-          { "data": "group" },          
-          { "data": "date_created" },
-          { "data": "status" },
-          { "data": "manage" }
-        ]        
+            { "data": "id" },            
+            { "data": "team" },
+            { "data": "area" },          
+            { "data": "date_created" },
+            { "data": "date_changed" },
+            { "data": "coverage_area" },
+            { "data": "line_of_business" },
+            { "data": "status" },
+            { "data": "manage" }
+          ]        
       });
     </script>
   </body>

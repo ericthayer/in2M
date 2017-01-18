@@ -5907,6 +5907,12 @@
 		"oAP": "\/sales-company-admin\/data\/sales-org-data.txt",
 		"oF": 0
 		},
+	"\/sales-company-admin\/data\/sales-person-data.txt": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sales-company-admin\/data\/sales-person-data.txt",
+		"oF": 0
+		},
 	"\/sales-company-admin\/data\/short-code-data.txt": {
 		"ft": 8192,
 		"oA": 2,
@@ -5935,6 +5941,12 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/sales-company-admin\/sca-create-sales-person.html",
+		"oF": 0
+		},
+	"\/sales-company-admin\/sca-manage-retail-admins.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sales-company-admin\/sca-manage-retail-admins.html",
 		"oF": 0
 		},
 	"\/sales-company-admin\/sca-manage-retail-customers copy.html": {

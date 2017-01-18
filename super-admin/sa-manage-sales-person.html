@@ -36,7 +36,50 @@
       <div data-replace="sa-partials/sa-header-logged-in.html"></div>
       
       <!-- Main Content -->
-      <main class="main-content pt-pb-3">
+      <main class="main-content pb-3">
+
+        <!-- Main Promo (no media) -->
+        <section class="hero-banner tc-orange-m">
+          <div class="container md-pt-pb-1">
+            
+            <!-- Post -->
+            <article class="text-center">
+              <!-- Post Content -->
+              <div class="post-content">
+                <!-- Text -->
+                <div class="text-wrap">
+                  <h2 class="mb-sm">Manage Sales Person</h2>
+                  <p class="h3 antialiased mb-0 mr-ml-a mw-35em text-lg">This is where an or authorized user can view all sales company organization details.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- Sales Person Table -->          
+        <section class="data-table pt-3">
+          <div class="container">
+            
+            <!-- Group Sales Persons -->
+    		    <h3 class="function-header"><span class="mb-sm sm-mb-0">Group Sales Persons</span><span class="icon-group"><a class="ml-1" href="sa-create-sales-person.html"><svg class="icon mr-tiny ml-0"><use xlink:href="#icon-plus" /></svg><span class="text-base">Add</span></a></span></h3>
+    		    
+    		    <!-- Sales Person Data -->
+            <table id="manage-sales-group" class="display responsive nowrap" cellspacing="0" width="100%">
+              <thead>
+                <tr>               
+                  <th>User ID</th>
+                  <th>Sales Person</th>
+                  <th>Group</th>
+                  <th>Date Created</th>
+                  <th>Status</th>
+                  <th class="manage-th">Manage</th>
+                </tr>
+              </thead>
+            </table>
+          
+           <!-- end / -->
+          </div>
+        </section>
 
         <!-- Form - Create Profile -->
         <section class="admin-form pb-2">
@@ -909,31 +952,6 @@
             </div>
 
         	</div>
-        </section>
-        
-        <!-- Sales Person Table -->          
-        <section class="data-table pt-pb-3">
-          <div class="container mw-48em">
-            
-            <!-- Group Sales Persons -->
-    		    <h3 class="function-header"><span class="mb-sm sm-mb-0">Group Sales Persons</span><span class="icon-group"><a class="ml-1" href="sa-create-sales-person.html"><svg class="icon mr-tiny ml-0"><use xlink:href="#icon-plus" /></svg><span class="text-base">Add</span></a></span></h3>
-    		    
-    		    <!-- Sales Person Data -->
-            <table id="manage-sales-group" class="display responsive nowrap" cellspacing="0" width="100%">
-              <thead>
-                <tr>               
-                  <th>User ID</th>
-                  <th>Sales Person</th>
-                  <th>Group</th>
-                  <th>Date Created</th>
-                  <th>Status</th>
-                  <th class="manage-th">Manage</th>
-                </tr>
-              </thead>
-            </table>
-          
-           <!-- end / -->
-          </div>
         </section>
 
         <!-- end / main-content -->

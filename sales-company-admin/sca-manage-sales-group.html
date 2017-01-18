@@ -37,7 +37,7 @@
         <div data-replace="sca-partials/sca-header-logged-in.html"></div>
 
         <!-- Main Content -->
-        <main class="main-content pt-1 pb-3">
+        <main class="main-content pb-3">
           
           <!-- Main Promo (no media) -->
           <section class="hero-banner tc-purple-m">
@@ -57,12 +57,40 @@
             </div>
           </section>
 
+          <!-- Sales Person Table -->          
+          <section class="data-table pt-3">
+            <div class="container">
+              
+              <!-- Group Sales Persons -->
+      		    <h3 class="function-header"><span class="mb-sm sm-mb-0">Current Sales Groups</span><span class="icon-group"><a class="ml-1" href="sca-create-sales-group.html"><svg class="icon mr-tiny ml-0"><use xlink:href="#icon-plus" /></svg><span class="text-base">Add</span></a></span></h3>
+      		    
+      		    <!-- Data -->
+              <table id="manage-sales-group" class="display responsive nowrap" cellspacing="0" width="100%">
+                <thead>
+                  <tr>               
+                    <th>Group ID</th>
+                    <th>Team</th>
+                    <th>Area</th>                    
+                    <th>Date Created</th>
+                    <th>Date Changed</th>
+                    <th>Coverage Area</th>
+                    <th>Line of Business</th>
+                    <th>Status</th>
+                    <th class="manage-th">Manage</th>
+                  </tr>
+                </thead>
+              </table>
+            
+             <!-- end / -->
+            </div>
+          </section>
+
           <!-- Form - Manage Sales Group -->
-          <section class="admin-form pt-3 pb-1">
+          <section class="admin-form pb-2">
             <div class="container">
 
               <!-- Form Build -->
-              <div class="form-section mr-ml-a mb-3">
+              <div class="form-section">
                 <form name="ManageSalesGroups">
                   <!-- Form Header -->
                   <div class="function-header">
@@ -166,31 +194,6 @@
             </div>
           </section>
           
-          <!-- Sales Person Table -->          
-          <section class="data-table pt-pb-3">
-            <div class="container mw-48em">
-              
-              <!-- Group Sales Persons -->
-      		    <h3 class="function-header"><span class="mb-sm sm-mb-0">Sales Persons</span><span class="icon-group"><a class="ml-1" href="sca-create-sales-person.html"><svg class="icon mr-tiny ml-0"><use xlink:href="#icon-plus" /></svg><span class="text-base">Add</span></a></span></h3>
-      		    
-      		    <!-- Data -->
-              <table id="manage-sales-group" class="display responsive nowrap" cellspacing="0" width="100%">
-                <thead>
-                  <tr>               
-                    <th>User ID</th>
-                    <th>Sales Person</th>
-                    <th>Group</th>
-                    <th>Date Created</th>
-                    <th>Status</th>
-                    <th class="manage-th">Manage</th>
-                  </tr>
-                </thead>
-              </table>
-            
-             <!-- end / -->
-            </div>
-          </section>
-
           <!-- end / main-content -->
         </main>
 
@@ -240,10 +243,13 @@
           ajax:           'data/sales-group-data.txt',
           deferRender:    true,
           columns: [
-            { "data": "id" },
-            { "data": "sales_person" },
-            { "data": "group" },          
+            { "data": "id" },            
+            { "data": "team" },
+            { "data": "area" },          
             { "data": "date_created" },
+            { "data": "date_changed" },
+            { "data": "coverage_area" },
+            { "data": "line_of_business" },
             { "data": "status" },
             { "data": "manage" }
           ]        

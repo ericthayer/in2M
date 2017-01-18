@@ -1,0 +1,164 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "sales_person": "<a href='mailto:email@domain.com'>Jacob Adminson</a>",
+      "group": "Group Name",      
+      "date_created": "08/16/16",
+      "status": "Active",
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sa-manage-sales-person.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },
+    {
+      "id": "2",
+      "sales_person": "<a href='mailto:email@domain.com'>Jacob Adminson</a>",
+      "group": "Group Name",      
+      "date_created": "08/16/16",
+      "status": "Active",
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sa-manage-sales-person.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },
+    {
+      "id": "3",
+      "sales_person": "<a href='mailto:email@domain.com'>Jacob Adminson</a>",
+      "group": "Group Name",      
+      "date_created": "08/16/16",
+      "status": "Active",
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sa-manage-sales-person.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },
+    {
+      "id": "4",
+      "sales_person": "<a href='mailto:email@domain.com'>Jacob Adminson</a>",
+      "group": "Group Name",      
+      "date_created": "08/16/16",
+      "status": "Active",
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sa-manage-sales-person.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },
+    {
+      "id": "5",
+      "sales_person": "<a href='mailto:email@domain.com'>Jacob Adminson</a>",
+      "group": "Group Name",      
+      "date_created": "08/16/16",
+      "status": "Active",
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sa-manage-sales-person.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },
+    {
+      "id": "6",
+      "sales_person": "<a href='mailto:email@domain.com'>Jacob Adminson</a>",
+      "group": "Group Name",      
+      "date_created": "08/16/16",
+      "status": "Active",
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sa-manage-sales-person.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },
+    {
+      "id": "7",
+      "sales_person": "<a href='mailto:email@domain.com'>Jacob Adminson</a>",
+      "group": "Group Name",      
+      "date_created": "08/16/16",
+      "status": "Active",
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sa-manage-sales-person.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },
+    {
+      "id": "8",
+      "sales_person": "<a href='mailto:email@domain.com'>Jacob Adminson</a>",
+      "group": "Group Name",      
+      "date_created": "08/16/16",
+      "status": "Active",
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sa-manage-sales-person.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },
+    {
+      "id": "9",
+      "sales_person": "<a href='mailto:email@domain.com'>Jacob Adminson</a>",
+      "group": "Group Name",      
+      "date_created": "08/16/16",
+      "status": "Active",
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sa-manage-sales-person.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },
+    {
+      "id": "10",
+      "sales_person": "<a href='mailto:email@domain.com'>Jacob Adminson</a>",
+      "group": "Group Name",      
+      "date_created": "08/16/16",
+      "status": "Active",
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sa-manage-sales-person.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },
+    {
+      "id": "11",
+      "sales_person": "<a href='mailto:email@domain.com'>Jacob Adminson</a>",
+      "group": "Group Name",      
+      "date_created": "08/16/16",
+      "status": "Active",
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sa-manage-sales-person.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },
+    {
+      "id": "12",
+      "sales_person": "<a href='mailto:email@domain.com'>Jacob Adminson</a>",
+      "group": "Group Name",      
+      "date_created": "08/16/16",
+      "status": "Active",
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sa-manage-sales-person.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },
+    {
+      "id": "13",
+      "sales_person": "<a href='mailto:email@domain.com'>Jacob Adminson</a>",
+      "group": "Group Name",      
+      "date_created": "08/16/16",
+      "status": "Active",
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sa-manage-sales-person.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },
+    {
+      "id": "14",
+      "sales_person": "<a href='mailto:email@domain.com'>Jacob Adminson</a>",
+      "group": "Group Name",      
+      "date_created": "08/16/16",
+      "status": "Active",
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sa-manage-sales-person.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },
+    {
+      "id": "15",
+      "sales_person": "<a href='mailto:email@domain.com'>Jacob Adminson</a>",
+      "group": "Group Name",      
+      "date_created": "08/16/16",
+      "status": "Active",
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sa-manage-sales-person.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },
+    {
+      "id": "16",
+      "sales_person": "<a href='mailto:email@domain.com'>Jacob Adminson</a>",
+      "group": "Group Name",      
+      "date_created": "08/16/16",
+      "status": "Active",
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sa-manage-sales-person.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },
+        {
+      "id": "17",
+      "sales_person": "<a href='mailto:email@domain.com'>Jacob Adminson</a>",
+      "group": "Group Name",      
+      "date_created": "08/16/16",
+      "status": "Active",
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sa-manage-sales-person.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },
+    {
+      "id": "18",
+      "sales_person": "<a href='mailto:email@domain.com'>Jacob Adminson</a>",
+      "group": "Group Name",      
+      "date_created": "08/16/16",
+      "status": "Active",
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sa-manage-sales-person.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },    
+    {
+      "id": "19",
+      "sales_person": "<a href='mailto:email@domain.com'>Jacob Adminson</a>",
+      "group": "Group Name",      
+      "date_created": "08/16/16",
+      "status": "Active",
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sa-manage-sales-person.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    },
+    {
+      "id": "20",
+      "sales_person": "<a href='mailto:email@domain.com'>Jacob Adminson</a>",
+      "group": "Group Name",      
+      "date_created": "08/16/16",
+      "status": "Active",
+      "manage": "<a class='icon' data-remodal-target='delete-confirm'><img src='../images/UI/ui-icons/icon-delete-red.svg' alt='delete icon' /><span class='sr-only'>Delete</span></a>&nbsp;<a class='icon' href='sa-manage-sales-person.html'><img src='../images/UI/ui-icons/icon-edit-blue.svg' alt='pencil icon' /><span class='sr-only'>Edit</span></a>"
+    }
+  ]
+}
