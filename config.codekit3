@@ -7,7 +7,7 @@
 		"uuidString": "5A354D1D-5E13-49CD-ADF2-EA51195CD3FA"
 		}
 	],
-"creatorBuild": "25479",
+"creatorBuild": "25504",
 "files": {
 	"\/.gitignore": {
 		"ft": 8192,
@@ -5715,6 +5715,12 @@
 		"oAP": "\/retail-admin\/data\/retail-customer-data.txt",
 		"oF": 0
 		},
+	"\/retail-admin\/data\/retail-package-data.txt": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/retail-admin\/data\/retail-package-data.txt",
+		"oF": 0
+		},
 	"\/retail-admin\/data\/retail-usage-data.txt": {
 		"ft": 8192,
 		"oA": 2,
@@ -7074,6 +7080,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-await-in-loop": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-bitwise": {
 			"active": 0,
 			"optionString": "{'allow': ['~'], 'int32Hint': true}"
@@ -7613,6 +7623,10 @@
 		"prefer-const": {
 			"active": 0,
 			"optionString": "{'destructuring': 'any', 'ignoreReadBeforeAssign': false}"
+			},
+		"prefer-destructuring": {
+			"active": 0,
+			"optionString": "{'array': true, 'object': true}, {'enforceForRenamedProperties': false}"
 			},
 		"prefer-numeric-literals": {
 			"active": 0,
