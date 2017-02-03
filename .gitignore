@@ -40,3 +40,5 @@ js/libs/jquery-ui-1.12.1.datepicker/index.html
 js/libs/jquery-ui-1.12.1.datepicker/external/jquery/jquery.js
 
 js/libs/jquery-ui-1.12.1.datepicker/AUTHORS.txt
+
+*.codekit3

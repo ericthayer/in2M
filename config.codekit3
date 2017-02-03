@@ -23,12 +23,6 @@
 		"oO": 0,
 		"oS": 1
 		},
-	"\/_sandbox.html": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/_sandbox.html",
-		"oF": 0
-		},
 	"\/bower_components\/eq.js\/.bower.json": {
 		"ft": 524288,
 		"oA": 2,
@@ -249,12 +243,6 @@
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
-		},
-	"\/collapsible-master.zip": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/collapsible-master.zip",
-		"oF": 0
 		},
 	"\/collapsible-master\/.gitignore": {
 		"ft": 8192,
@@ -3249,18 +3237,6 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/global-partials\/panels\/panel-trial-form.html",
-		"oF": 0
-		},
-	"\/html-review 2.html": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/html-review 2.html",
-		"oF": 0
-		},
-	"\/html-review copy2.html": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/html-review copy2.html",
 		"oF": 0
 		},
 	"\/html-review.html": {
