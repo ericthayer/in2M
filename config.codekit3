@@ -5189,6 +5189,12 @@
 		"oAP": "\/public-site\/user-logged-in.html",
 		"oF": 0
 		},
+	"\/retail-admin\/data\/retail-campaign-data.txt": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/retail-admin\/data\/retail-campaign-data.txt",
+		"oF": 0
+		},
 	"\/retail-admin\/data\/retail-consumer-data.txt": {
 		"ft": 8192,
 		"oA": 2,
@@ -5223,6 +5229,18 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/retail-admin\/ra-create-campaign.html",
+		"oF": 0
+		},
+	"\/retail-admin\/ra-create-consumer.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/retail-admin\/ra-create-consumer.html",
+		"oF": 0
+		},
+	"\/retail-admin\/ra-manage-campaigns.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/retail-admin\/ra-manage-campaigns.html",
 		"oF": 0
 		},
 	"\/retail-admin\/ra-manage-consumers.html": {
@@ -5379,6 +5397,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/sales-company-admin\/data\/package-data.txt",
+		"oF": 0
+		},
+	"\/sales-company-admin\/data\/retail-admin-data.txt": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sales-company-admin\/data\/retail-admin-data.txt",
 		"oF": 0
 		},
 	"\/sales-company-admin\/data\/retail-customer-data.txt": {

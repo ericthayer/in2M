@@ -49,7 +49,7 @@
                 <div class="post-content">
                   <!-- Text -->
                   <div class="text-wrap">
-                    <h2 class="mb-sm">Manage Retail Customers</h2>
+                    <h2 class="mb-sm">Manage Retail Admins</h2>
                     <p class="h3 antialiased mb-0 mr-ml-a mw-35em text-lg">This is where a "Sales Company Admin" or authorized user can manage retail customers.</p>
                   </div>
                 </div>
@@ -57,34 +57,33 @@
             </div>
           </section>
 
-          <!-- Retail Customers Table -->          
-          <section class="data-table pt-3">
+          <!-- Retail Admins Table -->          
+          <section class="data-table pt-pb-1">
             <div class="container">
               
               <!-- Retail Customers -->
-      		    <h3 class="function-header"><span class="mb-sm sm-mb-0">Manage Retail Customers</span><span class="icon-group"><a class="ml-1" href="sca-create-retail-customer.html"><svg class="icon mr-tiny ml-0"><use xlink:href="#icon-plus" /></svg><span class="text-base">Add</span></a></span></h3>
+      		    <h3 class="function-header"><span class="mb-sm sm-mb-0">Current Retail Admins</span><span class="icon-group"><a class="ml-1" href="sca-create-sales-customer.html"><svg class="icon mr-tiny ml-0"><use xlink:href="#icon-plus" /></svg><span class="text-base">Add</span></a></span></h3>
       		    
       		    <!-- Customer Data -->
-              <table id="manage-retail-customers" class="display responsive nowrap" cellspacing="0" width="100%">
+              <table id="manage-retail-admins" class="display responsive nowrap" cellspacing="0" width="100%">
                 <thead>
                   <tr>               
                     <th>ID</th>
-                    <th>S.P.</th>
-                    <th>Biz Name</th>
-                    <th>Biz Type</th>
-                    <th>R.A.</th>
+                    <th>Name</th>                    
+                    <th>Mobile</th>
+                    <th>Alt. Mobile</th>
                     <th>Email</th>
-                    <th>Contact #</th>
-                    <th>M/F</th>
+                    <th>Alt. Mobile</th>
                     <th>Address</th>
-                    <th>Signup</th>
-                    <th>Package</th>
-                    <th>Add On</th>
-                    <th>Signup Fees</th>
-                    <th>Mo. Fees</th>
-                    <th>Commission</th>
-                    <th>Docs</th>
-                    <th>Action</th>
+                    <th>D.O.B.</th>
+                    <th>Profile</th>
+                    <th>Group</th>
+                    <th>Location</th> 
+                    <th>Biz Name</th>
+                    <th>Biz Type</th>                                       
+                    <th>FB ID</th>
+                    <th>Twitter ID</th>
+                    <th>Description</th>
                     <th class="manage-th">Manage</th>
                   </tr>
                 </thead>
@@ -94,79 +93,90 @@
             </div>
           </section>
           
-          <!-- Form - Add Retail User -->
-          <section class="admin-form pb-2">
-            <div class="container">
-
+          <!-- Form - Create Profile -->
+          <section class="admin-form pb-3">
+          	<div class="container">
+              
               <!-- Form Build -->
-              <div class="form-section mr-ml-a mb-3 mw-48em">
-                <form name="AddRetailUser">
+              <div class="form-section">                  
+                <form name="RegisterAdmin">
                   
                   <!-- Form Header -->
-                  <div class="bor-bot-1 bor-c-DDD mb-1 pb-sm sm-flex sm-ai-center sm-jc-between">
+                  <div class="function-header">
                     
-                    <h2 class="text-center text-lg mb-0 sm-text-left sm-mr-1 sm-w-60">Add New Retail Customer</h2>
-                   
-                    <!-- Admin ID -->
-                    <div class="form-row text-center mb-1 sm-text-sm sm-flex sm-flex-g-0 sm-ai-end sm-jc-between sm-mb-0 sm-w-40 disabled">
-                     <label for="-ariaLabel" class="inline-label sm-text-right sm-pr-sm sm-w-80">Retail Admin</label>
-                     <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="input-sm w-a" value="RetailAdmin" disabled>
+                    <h2 class="text-center text-lg mb-1 sm-text-left sm-mr-1 sm-mb-0 sm-w-60">Retail Admin Registration</h2>
+                    
+                    <!-- Group Name -->
+                    <div class="form-row text-center mb-1 sm-text-sm sm-flex sm-flex-g-0 sm-ai-center sm-jc-between sm-mb-0 sm-w-60">
+                     <label for="-ariaLabel" class="inline-label sm-text-right sm-pr-sm sm-w-60">Group Name <span class="req-mark">*</span></label>
+                     <div class="custom-select bor-1 bor-solid bor-c-DDD sm-w-60">
+                      <select required>
+                        <option selected disabled>select</option>
+                        <option value="Group One">Group One</option>
+                        <option value="Group Two">Group Two</option>
+                        <option value="Group Three">Group Three</option>
+                      </select>
+                     </div>
                     </div>
 
                   </div>
                   
                   <div class="form-wrap">
+       
+                    <!-- Personal Information -->
+                    <h3 class="title-sm text-md text-center mb-sm pt-sm w-100 sm-text-left">Personal Information</h3>                      
                     
-                    <!-- User Information -->
-                    <h3 class="title-sm text-md text-center flex-1 mb-1 pt-sm w-100 sm-text-left">User Information</h3>
-
                     <!-- Name / Title / D.O.B. -->
-                    <div class="form-group pb-0 sm-flex sm-jc-between">
+                    <div class="form-group mb-1-pt5 sm-flex sm-jc-between">
                       
                       <!-- First Name -->
                       <div class="form-row mb-1 sm-flex-g-1 sm-mb-0 sm-mr-tiny sm-w-30">
                         <label for="" id="-ariaLabel">First Name <span class="req-mark">*</span></label>
-                        <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="required" title="This is a required input" required>
+                        <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="required" title="This is a required input" value="Retail" required>
                       </div>
                       
                       <!-- Last Name -->
                       <div class="form-row mb-1 sm-flex-g-1 sm-mr-ml-tiny sm-mb-0 sm-w-30">
-                        <label for="" id="-ariaLabel">Last Name<span class="req-mark">*</span></label>
-                        <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="required" title="This is a required input" required>
+                        <label for="" id="-ariaLabel">Last Name <span class="req-mark">*</span></label>
+                        <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="required" title="This is a required input" value="Admin" required>
                       </div>
 
                       <!-- Title -->
                       <div class="form-row mb-1 sm-mb-0 sm-flex-g-1 sm-mr-ml-tiny sm-w-15">
                         <label for="" id="-ariaLabel">Title</label>
-                        <input id="" name="" type="text" aria-labelledby="-ariaLabel">
+                        <input id="" name="" type="text" aria-labelledby="-ariaLabel" value="Mrs.">
                       </div>
                       
                       <!-- Date of Birth -->
                       <div class="form-row sm-flex-g-1 sm-ml-tiny sm-w-25">
                         <label for="" id="-ariaLabel">Date of Birth <span class="req-mark">*</span></label>
-                        <input id="" name="activeDate-ariaLabel" type="text" placeholder="&nbsp;" class="dob-input required" aria-labelledby="-ariaLabel" required>
-                      </div>                  
+                        <input id="" name="activeDate-ariaLabel" type="text" placeholder="&nbsp;" class="dob-input required" aria-labelledby="-ariaLabel" value="12/01/1998" required>
+                      </div>
+                      
                     </div>
+                    
+                    <!-- Address -->
+                    <h3 class="title-sm text-center text-md flex-1 mb-sm pt-sm w-100 sm-text-left">Personal Location</h3>
                     
                     <!-- Location -->
                     <div class="form-group pb-0 sm-flex sm-jc-between">
                       
                       <!-- Address -->
-                      <div class="form-row mb-1 sm-flex-g-1 sm-mr-tiny sm-mb-0 sm-w-60">
+                      <div class="form-row mb-1 sm-flex-g-1 sm-mr-tiny sm-mb-0 sm-w-75">
                         <label for="" id="-ariaLabel">Address</label>
                         <input id="" name="" type="text" aria-labelledby="-ariaLabel">
                       </div>
                       <!-- Unit -->
-                      <div class="form-row sm-flex-g-1 sm-ml-tiny sm-w-40">
+                      <div class="form-row sm-flex-g-1 sm-ml-tiny sm-w-25">
                         <label for="" id="-ariaLabel">Unit</label>
                         <input id="" name="" type="text" aria-labelledby="-ariaLabel">
                       </div>
                                             
-                      <!-- end / -->
-                    </div>
+                    <!-- end / -->
+                  </div>
                     
                     <!-- Location cont. -->
-                    <div class="form-group pb-0 sm-flex sm-jc-between">
+                    <div class="form-group mb-1-pt5 sm-flex sm-jc-between">
                       
                      <!-- Country -->
                      <div class="form-row mb-1 sm-flex-g-1 sm-mb-0 sm-mr-tiny sm-w-50">
@@ -248,6 +258,9 @@
                        
                     </div>
                     
+                    <!-- Contact Information -->
+                    <h3 class="title-sm text-md text-center mb-sm pt-sm w-100 sm-text-left">Contact Information</h3>
+                    
                     <!-- Email -->
                     <div class="form-group pb-0 sm-flex sm-jc-between">
                       
@@ -269,68 +282,407 @@
                     <div class="form-group pb-0 sm-flex sm-jc-between">
                       
                       <!-- Mobile -->                        
-                      <div class="form-row mb-1 sm-flex-g-1 sm-mb-0 sm-mr-tiny sm-w-30">
+                      <div class="form-row mb-1 sm-flex-g-1 sm-mb-0 sm-mr-tiny sm-w-50">
                         <label for="" id="-ariaLabel">Mobile <abbr title="number">#</abbr> <span class="req-mark">*</span></label>
                         <input id="" name="" type="tel" pattern="[0-9]*" maxlength="10" aria-labelledby="-ariaLabel" class="required" title="This is a required field" required>
                       
                       </div>
                       
                       <!-- Work -->                        
-                      <div class="form-row mb-1 sm-flex-g-1 sm-mr-ml-tiny sm-mb-0 sm-w-30">
+                      <div class="form-row sm-flex-g-1 sm-ml-tiny sm-w-50">
                         <label for="" id="-ariaLabel">Work <abbr title="number">#</abbr></label>
                         <input id="" name="" type="tel" pattern="[0-9]*" maxlength="10" aria-labelledby="-ariaLabel">                        
                       </div>
                       
+                    </div>
+                    
+                    <!-- Phone cont. -->
+                    <div class="form-group mb-1-pt5 sm-flex sm-jc-between">
+                      
                       <!-- Alternative -->                        
-                      <div class="form-row sm-flex-g-1 sm-ml-tiny sm-w-30">
+                      <div class="form-row mb-1 sm-flex-g-1 sm-mb-0 sm-mr-tiny sm-w-50">
                         <label for="" id="-ariaLabel">Alternative <abbr title="number">#</abbr></label>
                         <input id="" name="" type="tel" pattern="[0-9]*" maxlength="10" aria-labelledby="-ariaLabel">
                       
                       </div>
-                      
-                    </div>
-                    
-                    <!-- Business Details -->
-                    <div class="form-group pb-0 sm-flex sm-jc-between">
-                      
-                      <!-- Groups -->                        
-                      <div class="form-row mb-1 sm-flex-g-1 sm-mr-tiny sm-mb-0 sm-w-50">
-                        <label for="" id="-ariaLabel">Group(s)</label>
-                        <input id="" name="" type="text" aria-labelledby="-ariaLabel">                        
-                      </div>
-                      
-                      <!-- Business Hours -->                        
+                      <!-- Fax -->                        
                       <div class="form-row sm-flex-g-1 sm-ml-tiny sm-w-50">
-                        <label for="" id="-ariaLabel">Business Hours</label>
-                        <input id="" name="" type="text" aria-labelledby="-ariaLabel">                        
+                        <label for="" id="-ariaLabel">Fax <abbr title="number">#</abbr></label>
+                        <input id="" name="" type="tel" pattern="[0-9]*" maxlength="10" aria-labelledby="-ariaLabel">                        
                       </div>
                       
                     </div>
                     
+                    <!-- Social & Personal Accounts -->
+                    <h3 class="title-sm text-center text-md flex-1 mb-sm pt-sm w-100 sm-text-left">Personal Accounts</h3>
+
                     <!-- Social Media Links -->
-                    <div class="form-group mb-1-pt5 sm-flex sm-jc-between">
+                    <div class="form-group pb-0 sm-flex sm-jc-between">
                       <!-- Facebook ID -->                        
-                      <div class="form-row mb-1 sm-flex-g-1 sm-mb-0 sm-mr-tiny sm-w-50 md-w-25">
+                      <div class="form-row mb-1 sm-flex-g-1 sm-mb-0 sm-mr-tiny sm-w-30">
                         <label for="" id="-ariaLabel">Facebook</label>
                         <input id="" name="" type="text" aria-labelledby="-ariaLabel">                        
                       </div>
                       <!-- Twitter ID -->                        
-                      <div class="form-row mb-1 sm-flex-g-1 sm-mr-ml-tiny sm-mb-0 sm-w-50 md-w-25">
+                      <div class="form-row mb-1 sm-flex-g-1 sm-mr-ml-tiny sm-mb-0 sm-w-30">
                         <label for="" id="-ariaLabel">Twitter</label>
                         <input id="" name="" type="text" aria-labelledby="-ariaLabel">
                       </div>
                       <!-- LinkedIn ID -->
-                      <div class="form-row mb-1 sm-flex-g-1 sm-mr-ml-tiny sm-mb-0 sm-w-50 md-w-25">
+                      <div class="form-row sm-flex-g-1 sm-ml-tiny sm-w-30">
                         <label for="" id="-ariaLabel">LinkedIn</label>
-                        <input id="" name="" type="text" aria-labelledby="-ariaLabel">
-                      </div>
-                      <!-- Instagram ID -->
-                      <div class="form-row sm-flex-g-1 sm-ml-tiny sm-w-50 md-w-25">
-                        <label for="" id="-ariaLabel">Instagram</label>
                         <input id="" name="" type="text" aria-labelledby="-ariaLabel">
                       </div>
                     </div>
                     
+                    <!-- Website / Conference # -->
+                    <div class="form-group mb-1-pt5 sm-flex sm-jc-between">
+                      
+                      <!-- Website -->                        
+                      <div class="form-row mb-1 sm-flex-g-1 sm-mr-tiny sm-mb-0 sm-w-30">
+                        <label for="" id="-ariaLabel">Website</label>
+                        <input id="" name="" type="url" aria-labelledby="-ariaLabel">
+                      </div>
+                      
+                      <!-- Conference Phone -->
+                      <div class="form-row sm-flex-g-1 sm-ml-tiny sm-w-30">
+                        <label for="" id="-ariaLabel">Conference</label>
+                        <input id="" name="" type="tel" pattern="[0-9]*" maxlength="10" aria-labelledby="-ariaLabel">
+                      </div>
+                      
+                    </div>
+                    
+                    <!-- Business Information -->
+                    <h3 class="title-sm text-center text-md flex-1 mb-sm pt-sm w-100 sm-text-left">Business Information</h3>
+                    
+                    <!-- Refferal / Point of Sale -->
+                    <div class="form-group pb-0 sm-flex sm-jc-between">
+                      
+                     <!-- Refferal -->
+                     <div class="form-row sm-flex-g-1 md-w-50 mb-1 sm-mb-0 sm-mr-tiny">
+                        <label for="" id="-ariaLabel">Referral</label>
+                        <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="required" title="This input is required" required>
+                      </div>
+                     
+                     <!-- Point of Sale -->
+                     <div class="form-row sm-flex-g-1 md-w-50 mb-0 sm-ml-tiny">
+                        <label for="" id="-ariaLabel">Point of Sale <span class="req-mark">*</span></label>
+                        <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="required" title="This is a required input" required>
+                      </div>
+                      
+                      <!-- end / -->
+                    </div>
+                                        
+                    <!-- Business Hours / # of Outlets / # of Users -->
+                    <div class="form-group mb-1-pt5 sm-flex sm-jc-between">
+                       
+                       <!-- Business Hours -->
+                       <div class="form-row mb-1 sm-flex-g-1 sm-mr-tiny sm-mb-0 sm-w-35">
+                        <label for="" id="-ariaLabel">Business Hours</label>
+                        <input id="" name="" type="text" aria-labelledby="-ariaLabel">
+                        
+                      </div>
+                      
+                       <!-- # of Outlets -->
+                       <div class="form-row mb-1 sm-flex-g-1 sm-mb-0 sm-mr-tiny sm-ml-tiny sm-w-35">
+                          <label for="" id="-ariaLabel"># of Outlets</label>
+                          <input type="number" inputmode="numeric" pattern="[0-9]*" aria-labelledby="-ariaLabel">
+                        </div>
+                       
+                       <!-- # of Users -->
+                       <div class="form-row sm-flex-g-1 sm-ml-tiny sm-w-30">
+                        <label for="" id="-ariaLabel"># of Users</label>
+                          <input type="number" inputmode="numeric" pattern="[0-9]*" aria-labelledby="-ariaLabel">
+                      </div>
+                      
+                      <!-- end / -->
+                    </div>
+                    
+                    <!-- Package / Add-Ons -->
+                    <h3 class="title-sm text-center text-md flex-1 mb-sm pt-sm w-100 sm-text-left">Package & Add-Ons</h3>
+                                        
+                    <!-- Package / Add-On Selects -->
+                    <div class="form-group mb-1-pt5 sm-flex sm-jc-between">
+                      <!-- Package -->                        
+                      <div class="form-row mb-1 sm-flex-g-1 sm-mb-0 sm-mr-tiny sm-w-50">
+                        <label for="" id="-ariaLabel">Package</label>
+                        <div class="custom-select">
+                          <select>
+                            <option value="-1" selected disabled>select</option>
+                            <option value="Basic">Basic</option>
+                            <option value="Super">Super</option>
+                            <option value="Premium">Premium</option>
+                            <option value="Enterprise">Enterprise</option>
+                					</select>
+                        </div>
+                      </div>
+                      <!-- Add-On -->                        
+                      <div class="form-row sm-flex-g-1 sm-ml-tiny sm-w-50">
+                        <label for="" id="-ariaLabel">Add-On</label>
+                        <div class="custom-select">
+                          <select>
+                            <option value="-1" selected disabled>select</option>
+                            <option value="$20">$20</option>
+                            <option value="$50">$50</option>
+                            <option value="$100">$100</option>
+                            <option value="$200">$200</option>
+                					</select>
+                        </div>
+                      </div>
+                    </div>
+                     
+                    <!-- Payment Details -->
+                    <h3 class="title-sm text-center text-md flex-1 mb-sm pt-sm w-100 sm-text-left hidden">Payment Details</h3>
+                    
+                    <!-- Credit Card -->
+                    <div class="form-group pb-0 sm-flex sm-jc-between hidden">
+                      
+                      <!-- Card Number -->
+                      <div class="form-row mb-1 w-100 sm-flex-g-1 sm-mr-tiny sm-mb-0 sm-w-60 md-w-70">
+                        <label for="" id="-ariaLabel">Card Number <span class="req-mark">*</span></label>
+                        <input type="number" inputmode="numeric" pattern="[0-9]*" maxlength="16" placeholder="0000 0000 0000 0000" class="required" aria-labelledby="-ariaLabel" title="This is a required field" required>
+                      </div>          
+                      <!-- Card Types -->
+                      <div class="form-row w-100 sm-flex-g-1 sm-ml-tiny sm-w-40 md-w-30">
+                        <div class="cc-icons">
+                          <p class="form-label mb-0">We accept:</p>
+                          <div class="sm-flex">
+                            <span class="creditcard-icon creditcarddisplay_type-visa icon-card-visa">Visa</span>
+                            <span class="creditcard-icon creditcarddisplay_type-mastercard icon-card-mastercard">Mastercard</span>
+                            <span class="creditcard-icon creditcarddisplay_type-amex icon-card-amex">AMEX</span>
+                            <span class="creditcard-icon creditcarddisplay_type-discover icon-card-discover">Discover</span>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <!-- end / -->
+                    </div>
+                    
+                    <!-- Credit Card cont. -->
+                    <div class="form-group pb-0 sm-flex sm-jc-between hidden">
+                  
+                      <!-- Month -->
+                      <div class="form-row mb-1 sm-mb-0 sm-mr-tiny sm-flex-g-1 sm-w-40">
+                        <label for="" id="-ariaLabel">Expires <span class="req-mark">*</span></label>
+                        <div class="custom-select">
+                          <select aria-labelledby="-ariaLabel" required>
+                            <option value="-1" selected disabled>Month</option>
+                            <option value="1">01 - January</option>
+                            <option value="2">02 - February</option>
+                            <option value="3">03 - March</option>
+                            <option value="4">04 - April</option>
+                            <option value="5">05 - May</option>
+                            <option value="6">06 - June</option>
+                            <option value="7">07 - July</option>
+                            <option value="8">08 - August</option>
+                            <option value="9">09 - September</option>
+                            <option value="10">10 - October</option>
+                            <option value="11">11 - November</option>
+                            <option value="12">12 - December</option>
+                          </select>
+                        </div>
+                        <!-- end / custom select -->
+                      </div>
+          
+                      <!-- Year -->
+                      <div class="form-row mb-1 sm-mb-0 sm-mr-ml-tiny sm-flex-g-1 sm-w-40">
+                        <label for="" id="-ariaLabel">Year <span class="req-mark">*</span></label>
+                        <div class="custom-select">
+                          <select aria-labelledby="-ariaLabel" required>
+                            <option value="-1" selected disabled>Year</option>
+                            <option value="2016">2016</option>
+                            <option value="2017">2017</option>
+                            <option value="2018">2018</option>
+                            <option value="2019">2019</option>
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                          </select>
+                        </div>
+                        <!-- end / custom select -->
+                      </div>
+                      <!-- Security Code -->
+                      <div class="form-row sm-flex-g-1 sm-ml-tiny sm-w-30">
+                        <label for="" id="-ariaLabel">Security Code <span class="req-mark">*</span></label>
+                        <input type="number" inputmode="numeric" pattern="[0-9]*" max="4" maxlength="4" placeholder="0000" class="required" aria-labelledby="-ariaLabel" title="This is a required field" required>
+                      </div>   
+          
+                      <!-- end / -->
+                    </div>
+                    
+                    <!-- Credit Card cont. -->
+                    <div class="form-group mb-1 sm-flex sm-jc-between hidden">
+                      
+                      <!-- Name on Card -->
+                      <div class="form-row mb-1 w-100 sm-flex-g-1 sm-mr-tiny sm-mb-0 sm-w-35">
+                        <label for="" id="-ariaLabel">Name on Card <span class="req-mark">*</span></label>
+                        <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="required" title="This is a required field" required>
+                      </div>
+                      <!-- Zip Code -->
+                      <div class="form-row sm-flex-g-1 sm-ml-tiny sm-w-30">
+                        <label for="" id="-ariaLabel">Zip Code <span class="req-mark">*</span></label>
+                        <input type="number" inputmode="numeric" pattern="[0-9]*" max="9" maxlength="9" placeholder="00000" class="required" aria-labelledby="-ariaLabel" title="This is a required field" required>
+                      </div>
+                      
+                      <!-- end / -->
+                    </div>
+
+                    <!-- Business Profile -->
+                    <h3 class="title-sm text-center text-md flex-1 mb-sm pt-sm w-100 sm-text-left">Business Profile</h3>
+                    
+                    <!-- Name & DBA -->
+                    <div class="form-group pb-0 sm-flex sm-jc-between">
+                      
+                     <!-- Legal Name -->
+                     <div class="form-row sm-flex-g-1 md-w-50 mb-1 sm-mb-0 sm-mr-tiny">
+                        <label for="" id="-ariaLabel">Legal Name <span class="req-mark">*</span></label>
+                        <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="required" title="This input is required" required>
+                      </div>
+                     
+                     <!-- DBA -->
+                     <div class="form-row sm-flex-g-1 md-w-50 mb-0 sm-ml-tiny">
+                        <label for="" id="-ariaLabel">DBA <span class="req-mark">*</span></label>
+                        <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="required" title="This is a required input" required>
+                      </div>
+                      
+                      <!-- end / -->
+                    </div>
+                                        
+                    <!-- Tax ID / Type of Business / State -->
+                    <div class="form-group pb-0 sm-flex sm-jc-between">
+                       
+                       <!-- Tax ID -->
+                       <div class="form-row mb-1 sm-flex-g-1 sm-mr-tiny sm-mb-0 md-w-25">
+                        <label for="" id="-ariaLabel">Tax ID <span class="req-mark">*</span></label>
+                        <input type="number" inputmode="numeric" pattern="[0-9]*" maxlength="9" class="required" aria-labelledby="-ariaLabel" title="This is a required field" required>
+                      </div>
+                      
+                       <!-- Type of Business -->
+                       <div class="form-row mb-1 sm-flex-g-1 sm-mb-0 sm-mr-tiny sm-ml-tiny md-w-50">
+                          <label for="" id="-ariaLabel">Type of Business <span class="req-mark">*</span></label>
+                          <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="required" title="This is a required input" required>
+                        </div>
+                       
+                       <!-- State -->
+                       <div class="form-row sm-flex-g-1 sm-ml-tiny md-w-25">
+                        <label for="" id="-ariaLabel">State <span class="req-mark">*</span></label>
+                        <div class="custom-select">
+                          <select aria-labelledby="-ariaLabel" required>
+                            <option value="-1" selected disabled>select</option>
+                						<option value="AL">Alabama</option>
+                						<option value="AK">Alaska</option>
+                						<option value="AZ">Arizona</option>
+                						<option value="AR">Arkansas</option>
+                						<option value="CA">California</option>
+                						<option value="CO">Colorado</option>
+                						<option value="CT">Connecticut</option>
+                						<option value="DE">Delaware</option>
+                						<option value="FL">Florida</option>
+                						<option value="GA">Georgia</option>
+                						<option value="HI">Hawaii</option>
+                						<option value="ID">Idaho</option>
+                						<option value="IL">Illinois</option>
+                						<option value="IN">Indiana</option>
+                						<option value="IA">Iowa</option>
+                						<option value="KS">Kansas</option>
+                						<option value="KY">Kentucky</option>
+                						<option value="LA">Louisiana</option>
+                						<option value="ME">Maine</option>
+                						<option value="MD">Maryland</option>
+                						<option value="MA">Massachusetts</option>
+                						<option value="MI">Michigan</option>
+                						<option value="MN">Minnesota</option>
+                						<option value="MS">Mississippi</option>
+                						<option value="MO">Missouri</option>
+                						<option value="MT">Montana</option>
+                						<option value="NE">Nebraska</option>
+                						<option value="NV">Nevada</option>
+                						<option value="NH">New Hampshire</option>
+                						<option value="NJ">New Jersey</option>
+                						<option value="NM">New Mexico</option>
+                						<option value="NY">New York</option>
+                						<option value="NC">North Carolina</option>
+                						<option value="ND">North Dakota</option>
+                						<option value="OH">Ohio</option>
+                						<option value="OK">Oklahoma</option>
+                						<option value="OR">Oregon</option>
+                						<option value="PA">Pennsylvania</option>
+                						<option value="RI">Rhode Island</option>
+                						<option value="SC">South Carolina</option>
+                						<option value="SD">South Dakota</option>
+                						<option value="TN">Tennessee</option>
+                						<option value="TX">Texas</option>
+                						<option value="UT">Utah</option>
+                						<option value="VT">Vermont</option>
+                						<option value="VA">Virginia</option>
+                						<option value="WA">Washington</option>
+                						<option value="WV">West Virginia</option>
+                						<option value="WI">Wisconsin</option>
+                						<option value="WY">Wyoming</option>
+                					</select>
+                        </div>
+                      </div>
+                      
+                      <!-- end / -->
+                    </div>
+
+                    <!-- Headquarter Location -->
+                    <div class="form-group pb-0 sm-flex sm-jc-between">
+                      
+                      <!-- HQ Location -->
+                      <div class="form-row mb-1 sm-flex-g-1 sm-mr-tiny sm-mb-0 sm-w-35">
+                        <label for="" id="-ariaLabel"><abbr title="headquarter">HQ</abbr> Location</label>
+                        <input id="" name="" type="text" aria-labelledby="-ariaLabel">
+                      </div>
+                      
+                      <!-- Alternative Location -->
+                      <div class="form-row mb-1 sm-flex-g-1 sm-mr-ml-tiny sm-mb-0 sm-w-35">
+                        <label for="" id="-ariaLabel"><abbr title="alternative">Alt.</abbr> Location</label>
+                        <input id="" name="" type="text" aria-labelledby="-ariaLabel">
+                      </div>
+                      
+                      <!-- Website -->
+                      <div class="form-row sm-flex-g-1 sm-ml-tiny sm-w-30">
+                        <label for="" id="-ariaLabel">Website</label>
+                        <input id="" name="" type="url" aria-labelledby="-ariaLabel">
+                      </div>
+                                            
+                    <!-- end / -->
+                   </div>
+                    
+                    <!-- Area Covered / Employees / Products Carried -->
+                    <div class="form-group pb-0 sm-flex sm-jc-between">
+                      
+                      <!-- Area Covered -->                        
+                      <div class="form-row mb-1 sm-flex-g-1 sm-mb-0 sm-mr-tiny sm-w-35">
+                        <label for="" id="-ariaLabel"><abbr title="Geological">Geo.</abbr> Area Covered <span class="req-mark">*</span></label>
+                        <input id="" name="" type="text" aria-labelledby="-ariaLabel" class="required" title="This input is required" required>
+                      </div>
+                      
+                      <!-- Employees -->                        
+                      <div class="form-row mb-1 sm-flex-g-1 sm-mb-0 sm-mr-ml-tiny sm-w-35">
+                        <label for="" id="-ariaLabel"># of Employees</label>
+                        <input id="" name="" type="text" aria-labelledby="-ariaLabel">
+                      </div>
+                      
+                      <!-- Products, Services, Content, etc. Carried -->                        
+                      <div class="form-row sm-flex-g-1 sm-ml-tiny sm-w-30">
+                        <label for="" id="-ariaLabel">Product or Service Type</label>
+                        <input id="" name="" type="text" aria-labelledby="-ariaLabel">
+                      </div>
+                      
+                    </div>                   
+                    
+                    <!-- Summary Description -->
+                    <div class="form-group mb-1">
+                      <div class="form-row">
+                        <label for="" id="-ariaLabel">Summary Description</label>
+                        <textarea maxlength="300" aria-labelledby="-ariaLabel"></textarea>
+                      </div>
+                    </div>
+
                     <!-- Buttons -->
                     <div class="form-row button-wrap">
                       <!-- cancel button -->
@@ -338,14 +690,13 @@
                       <!-- save button (primary) -->
                       <input class="btn-primary" type="submit" value="Save" data-remodal-target="account-created">
                     </div>
-
+                    
                     <!-- end / form-wrap -->
                   </div>
                 </form>
               </div>
-
-              <!-- end / -->
-            </div>
+	
+          	</div>
           </section>
 
           <!-- end / main-content -->
@@ -399,29 +750,28 @@
     <!-- DataTables -->
     <script>
       // Manage Retail Customers
-      $('#manage-retail-customers').DataTable({
+      $('#manage-retail-admins').DataTable({
         responsive:     true,
         keys:           true,
-        ajax:           'data/retail-customer-data.txt',
+        ajax:           'data/retail-admin-data.txt',
         deferRender:    true,
-        columns: [
+        columns: [     
           { "data": "id" },
-          { "data": "sales_person" },
-          { "data": "biz_name" },
-          { "data": "biz_type" },
-          { "data": "retail_admin" },
-          { "data": "email" },
-          { "data": "phone" },          
-          { "data": "gender" },
+          { "data": "admin_name" },
+          { "data": "primary_phone" },
+          { "data": "alt_phone" },          
+          { "data": "primary_email" },
+          { "data": "alt_email" },
           { "data": "address" },
-          { "data": "signup_date" },
-          { "data": "package" },
-          { "data": "addon" },
-          { "data": "setup_fee" },
-          { "data": "monthly_fee" },
-          { "data": "commission" },
-          { "data": "docs" },
-          { "data": "action" },
+          { "data": "dob" },
+          { "data": "profile" },
+          { "data": "group" },
+          { "data": "location" },
+          { "data": "biz_name" },
+          { "data": "biz_type" },  
+          { "data": "fb_id" },
+          { "data": "twitter_id" },                  
+          { "data": "description" },
           { "data": "manage" }
         ]        
       });

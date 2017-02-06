@@ -7,31 +7,37 @@
     <head>
       <meta charset="utf-8">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
-      <title>in2Marketplace :: Register Retail Admin</title>
+      <title>in2Marketplace :: Retail Admin Manage Consumer</title>
       <meta name="description" content="A powerful retail marketing platform and brand management tool">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="msapplication-TileColor" content="#302A2A">
       <meta name="msapplication-TileImage" content="../images/icons/favicon-144.png">
       <!--[if IEMobile]>
-      <meta http-equiv="cleartype" content="on" />
-      <![endif]-->
+<meta http-equiv="cleartype" content="on" />
+<![endif]-->
       <link rel="apple-touch-icon" href="../images/icons/favicon-180.png">
       <link rel="shortcut icon" href="../favicon.ico">
+      <!-- DataTables.net styles -->
+      <link rel="stylesheet" href="//cdn.datatables.net/v/dt/dt-1.10.12/af-2.1.2/b-1.2.2/b-colvis-1.2.2/b-html5-1.2.2/r-2.1.0/rr-1.1.2/sc-1.4.2/se-1.2.0/datatables.min.css">
+      <!-- Base Styles -->
       <link rel="stylesheet" href="../css/styles.css">
-      <!-- Non-Critical CSS - loadCSS: load a CSS file asynchronously. [c]2016 @scottjehl, Filament Group, Inc. Licensed MIT -->
-      <script>(function(a){var b=function(c,k,d){var l=a.document;var m=l.createElement("link");var e;if(k){e=k}else{var i=(l.body||l.getElementsByTagName("head")[0]).childNodes;e=i[i.length-1]}var f=l.styleSheets;m.rel="stylesheet";m.href=c;m.media="only x";function j(n){if(l.body){return n()}setTimeout(function(){j(n)})}j(function(){e.parentNode.insertBefore(m,(k?e:e.nextSibling))});var h=function(o){var n=m.href;var p=f.length;while(p--){if(f[p].href===n){return o()}}setTimeout(function(){h(o)})};function g(){if(m.addEventListener){m.removeEventListener("load",g)}m.media=d||"all"}if(m.addEventListener){m.addEventListener("load",g)}m.onloadcssdefined=h;h(g);return m};if(typeof exports!=="undefined"){exports.loadCSS=b}else{a.loadCSS=b}}(typeof global!=="undefined"?global:this));loadCSS("../css/async.css");</script>
+      <!-- Non-Critical CSS -->
+      <script>
+        // loadCSS: load a CSS file asynchronously. [c]2016 @scottjehl, Filament Group, Inc. Licensed MIT
+        (function(a){var b=function(c,k,d){var l=a.document;var m=l.createElement("link");var e;if(k){e=k}else{var i=(l.body||l.getElementsByTagName("head")[0]).childNodes;e=i[i.length-1]}var f=l.styleSheets;m.rel="stylesheet";m.href=c;m.media="only x";function j(n){if(l.body){return n()}setTimeout(function(){j(n)})}j(function(){e.parentNode.insertBefore(m,(k?e:e.nextSibling))});var h=function(o){var n=m.href;var p=f.length;while(p--){if(f[p].href===n){return o()}}setTimeout(function(){h(o)})};function g(){if(m.addEventListener){m.removeEventListener("load",g)}m.media=d||"all"}if(m.addEventListener){m.addEventListener("load",g)}m.onloadcssdefined=h;h(g);return m};if(typeof exports!=="undefined"){exports.loadCSS=b}else{a.loadCSS=b}}(typeof global!=="undefined"?global:this));loadCSS("../css/async.css");loadCSS("../css/scss/vendor/jquery-ui/jquery-ui.css");</script>
     </head>
+
     <body class="logged-in retail-admin">
       <!--[if lt IE 10]>
-      <p class="update-browser">This browser version is not recommended. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-      <![endif]-->
+<p class="update-browser">This browser version is not recommended. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
 
       <!-- Site Wrap  -->
       <div class="site-wrap">
         
         <!-- Header -->  
-        <div data-replace="ra-partials/ra-header-logged-in.html"></div>       
-        
+        <div data-replace="ra-partials/ra-header-logged-in.html"></div>
+
         <!-- Main Content -->
         <main class="main-content pb-3">
           
@@ -45,24 +51,53 @@
                 <div class="post-content">
                   <!-- Text -->
                   <div class="text-wrap">
-                    <h2 class="mb-sm">Retail Admin Create Campaign</h2>
-                    <p class="h3 antialiased mb-0 mr-ml-a mw-35em text-lg ">This is the <strong>Retail Admin</strong> campaign creation page.</p>
+                    <h2 class="mb-sm">Manage Campaigns</h2>
+                    <p class="h3 antialiased mr-ml-a mw-35em text-lg ">This is where a <strong>Retail Admin</strong> or authorized user can manage campaigns.</p>
                   </div>
                 </div>
               </article>
             </div>
           </section>
 
-          <!-- Form - Create Campaign -->
-          <section class="admin-form pt-pb-3">
+          <!-- Campaign Table -->          
+          <section class="data-table pt-3 pb-1">
+            <div class="container">
+              
+              <!-- Campaigns -->
+      		    <h3 class="function-header"><span class="mb-sm sm-mb-0">View Campaigns</span></h3>
+      		    
+      		    <!-- Data -->
+              <table id="manage-campaigns" class="display responsive nowrap" cellspacing="0" width="100%">
+                <thead>
+                  <tr>               
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Retail Attached</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>SMS used</th>
+                    <th>Emails used</th>                    
+                    <th>Comments</th>
+                    <th>Status</th>
+                    <th class="manage-th">Manage</th>
+                  </tr>
+                </thead>
+              </table>
+            
+             <!-- end / -->
+            </div>
+          </section>
+
+          <!-- Form - Manage Campaign -->
+          <section class="admin-form pt-pb-1">
           	<div class="container">
               
               <!-- Form Build -->
               <div class="form-section">                  
-                <form name="CreateCampaign">
+                <form name="ManageCampaign">
                   
                   <!-- Form Header -->
-          		    <h3 class="function-header"><span class="mb-sm sm-mb-0">Create Campaign</span></h3>
+          		    <h3 class="function-header"><span class="mb-sm sm-mb-0">Manage Campaign</span></h3>
                   
                   <div class="form-wrap">
                     
@@ -145,7 +180,7 @@
                     </div>
                     
                     <!-- Campaign Start Date & Time -->
-                    <div class="form-group pt-sm pb-0 sm-flex sm-jc-between">
+                    <div class="form-group pt-pb-sm sm-flex sm-jc-between">
                       
                       <!-- Start Date -->
                       <div class="form-row mb-1 sm-flex-g-1 sm-mb-0 sm-mr-tiny sm-w-50">
@@ -350,20 +385,28 @@
 
           <!-- end / main-content -->
         </main>
-        
+
         <!-- Footer -->
         <div data-replace="../global-partials/footer/footer-logged-in-blue.html"></div>
         
         <!-- end / site-wrap-->
       </div>
       
-      <!-- Campaign Setup Confirmation -->
-    <div class="remodal alert-success" data-remodal-id="setup-campaign" role="dialog" aria-labelledby="setup-campaign-title" aria-describedby="setup-campaign-desc">
+      <!-- Consumer Saved Confirmation -->
+      <div class="remodal alert-success" data-remodal-id="save-confirm" role="dialog" aria-labelledby="save-confirm-title" aria-describedby="save-confirm-desc">
+        
+        <div data-replace="../global-partials/modals/modal-save-confirm-content.html"></div>
+        
+        <!-- end / -->
+      </div>
       
-      <div data-replace="../global-partials/modals/modal-campaign-setup-content.html"></div>
-      
-      <!-- end / -->
-    </div>
+      <!-- File Sample -->
+      <div class="remodal alert-success" data-remodal-id="sample-file" role="dialog" aria-labelledby="sample-file-title" aria-describedby="sample-file-desc">
+        
+        <div data-replace="../global-partials/modals/modal-file-sample-content.html"></div>
+        
+        <!-- end / -->
+      </div>
   
       <!-- Delete Confirmation -->
       <div class="remodal" data-remodal-id="delete-confirm" role="dialog" aria-labelledby="delete-confirm-title" aria-describedby="delete-confirm-desc">
@@ -380,11 +423,56 @@
         <div data-replace="../global-partials/modals/modal-contact-content.html"></div>
         
         <!-- end / -->
-      </div>
+      </div>      
       
       <!-- Dependencies -->
       <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
       <script>window.jQuery || document.write('<script src="../js/libs/jquery.1.11.2.min.js"><\/script>')</script>
       <script src="../js/min/script.min.js"></script>
+      <script src="../js/libs/jquery-ui.datepicker.js"></script>
+      <script src="../js/libs/dropzone.js"></script>
+      <script>
+        Dropzone.options.fileTest = {
+          paramName: "file",
+          uploadMultiple: false,
+          addRemoveLinks: true,
+          dictCancelUpload: "cancel",
+          dictRemoveFile: "remove",
+          maxFilesize: 2, // MB
+          //acceptedFiles: ".csv,.pdf",
+          accept: function(file, done) {
+            if (file.type != "text/csv" && file.type != "application/pdf" && file.type != "application/vnd.ms-excel") {
+              done('File not supported!');
+              $('.dz-image, .dz-details').hide();
+            }
+            else { 
+              done('File accepted!');                            
+            }
+          }
+        };
+      </script> 
+      <!-- DataTables -->
+      <script src="//cdn.datatables.net/v/dt/dt-1.10.12/af-2.1.2/b-1.2.2/b-colvis-1.2.2/b-html5-1.2.2/r-2.1.0/rr-1.1.2/sc-1.4.2/se-1.2.0/datatables.min.js"></script>
+    <script>
+      // Manage Campaigns
+      $('#manage-campaigns').DataTable({
+        responsive:     true,
+        keys:           true,
+        ajax:           'data/retail-campaign-data.txt',
+        deferRender:    true,
+        columns: [
+          { "data": "id" },
+          { "data": "campaign_name" },
+          { "data": "retail_attached" },
+          { "data": "start_date" },          
+          { "data": "end_date" },
+          { "data": "sms_used" },
+          { "data": "emails_used" },
+          { "data": "comments" },
+          { "data": "status" },
+          { "data": "manage" }
+        ]        
+      });
+    </script>
     </body>
   </html>
